@@ -1,0 +1,75 @@
+[build]
+publish = "public"
+command = "hugo"
+
+[context.production.environment]
+HUGO_VERSION = "0.68.3"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "false"
+
+[context.split1]
+command = "hugo --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.68.3"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.68.3"
+
+[context.branch-deploy]
+command = "hugo -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.68.3"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+[[redirects]]
+from = "https://kqh.life/*"
+to = "https://kqh.me/:splat"
+status = 301
+force = true
+[[redirects]]
+from = "https://kqh.ac/*"
+to = "https://kqh.me/:splat"
+status = 301
+force = true
+[[redirects]]
+from = "https://keke.life/*"
+to = "https://kqh.me/:splat"
+status = 301
+force = true
+[[redirects]]
+from = "https://kujihhoe.com/blog/"
+to = "https://kqh.me/post/"
+status = 301
+force = true
+[[redirects]]
+from = "https://kujihhoe.com/*"
+to = "https://kqh.me/:splat"
+status = 301
+force = true
+[[redirects]]
+from = "https://master--kqh.netlify.com/*"
+to = "https://kqh.me/:splat"
+status = 301
+force = true
+[[redirects]]
+from = "https://master.kqh.netlify.com/*"
+to = "https://kqh.me/:splat"
+status = 301
+force = true
+[[redirects]]
+from = "https://kqh.netlify.com/*"
+to = "https://kqh.me/:splat"
+status = 301
+force = true
+[[redirects]]
+from = "https://kqh.ac/en/*"
+to = "https://kqh.me/"
+status = 301
+force = true
