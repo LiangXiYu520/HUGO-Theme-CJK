@@ -66,9 +66,9 @@ margin: 0 1.5px;
 }
 .vertical-wrap{
   text-align: center;
-    margin: 0 auto;
 }
 .vertical{
+      border: 5px solid #8c8c8c;
   word-wrap: break-word;
   text-align: justify;
   text-justify: inter-ideograph;
@@ -76,8 +76,9 @@ margin: 0 1.5px;
     overflow: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    height: 90%;
-    width: 100%;
+    height: 95%;
+    width: 97%;
+      margin: 0 auto;
     max-height:38em;
 }
 .vertical a{
@@ -155,6 +156,7 @@ main {
 
 img {
   max-width: 100%;
+  max-height: 100%;
   border-radius: 0.5rem;
   border: 1px #2b2b2b solid;
   -webkit-box-shadow: 0 2px 20px -5px  #2b2b2b ;
