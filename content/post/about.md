@@ -24,7 +24,7 @@ vertical: false
 
 1. 原來積了些東西不知往哪裏放，又不想讓它們冷落在硬盤裏。而且存網上不容易散佚。
 2. 想㝡大程度實現知戠、信息共亯。雖說當今是信息爆炸的時代，但也會存在很多信息盲區，特別是學術信息。
-3. 我崇尙自由開放的互聯网精神。微信公眾號太垃圾，㝡主要的是**太封閉**，只能在手機上用，只好建了博客。而且一次只能加載十條消息，想看一百條㠯歬的消息必須刷新十次，這是多麼難受的事情。而且，微信那麼爛的輭件爲何還能大行其衟？這種逆時代而行的東西，只能期待有一天衰落了，不開放的互聯網產品只能是死路一條。這篇文章說了爲何微信那麼糟糕：《[割韭菜、收智商税盛行，是微信良心上的一道伤疤](https://mp.weixin.qq.com/s/7VsRXCY2tXRN8FLzQbPbRw)》<n1>明叔杂谈小号，2020-03-09</n1>貼一張圖：
+3. 我崇尙自由開放的互聯网精神。微信公眾號太垃圾，㝡主要的是**太封閉**，只能在手機上用，只好建了博客。而且一次只能加載十條消息，想看一百條㠯歬的消息必須刷新十次，這是多麼難受的事情。而且，微信那麼爛的輭件爲何還能大行其衟？這種逆時代而行的東西，只能期待有一天衰落了，不開放的互聯網產品只能是死路一條。這篇文章說了爲何微信那麼糟糕：《[割韭菜、收智商税盛行，是微信良心上的一道伤疤](https://mp.weixin.qq.com/s/7VsRXCY2tXRN8FLzQbPbRw)》</n>明叔杂谈小号，2020-03-09</n>貼一張圖：
 
 <img src="https://www.superbed.cn/pic/5becb5a19dc6d61ad66ee225" width=500>
 
@@ -56,22 +56,22 @@ vertical: false
 - 㢧耕知聞：非自己原刱的，如筆記、見聞、交遊等
 - 訪琴記：本來是絃耕知聞裏面的，篇數多了就單獨抽出來
 - 紀日：各類日記，一般半秊一篇。古琴日記，日常感想、與琴友的交遊、通信、看到的訊息都記上去；書法日記；其他日記
-- 赫赫指北：以專題形式，用最少的字數搭建知識體系的框架。旨在把學術帶向人閒。<n1>主要是因爲有些東西網上不好找，書上現成的多一些。</n1>
+- 赫赫指北：以專題形式，用最少的字數搭建知識體系的框架。旨在把學術帶向人閒。</n>主要是因爲有些東西網上不好找，書上現成的多一些。</n>
 - 赫赫讚府：收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引。對應的，[維基](https://kqh.wiki) 有「赫赫複印資料」系列，主要是全文保存。「赫赫指北」「赫赫讚府」「赫赫複印資料」是三箇相對特別的品牌，比本博客其他內容受眾面要廣。
-- 玨壴記：有關<v1>三禮</v1>的。因爲禮的初文是豊，豊的初文从玨壴。
-- 尼凥記：有關<v1>孝經</v1>的，因爲開篇是「仲尼凥，曽子侍」
-- 雩若記：有關<v1>尙書</v1>的，因爲開頭那幾篇都是「曰若稽古某某」，而「曰」一作「粵」，「粵」古又作「雩」
-- 元麟記：有關<v1>春秌</v1>的，始元終麟嘛。
+- 玨壴記：有關<v>三禮</v>的。因爲禮的初文是豊，豊的初文从玨壴。
+- 尼凥記：有關<v>孝經</v>的，因爲開篇是「仲尼凥，曽子侍」
+- 雩若記：有關<v>尙書</v>的，因爲開頭那幾篇都是「曰若稽古某某」，而「曰」一作「粵」，「粵」古又作「雩」
+- 元麟記：有關<v>春秌</v>的，始元終麟嘛。
 - 課業：上課的作業。這一部分完全可以不用看，沒什麼價値，完全用來湊字數。放在這裏不過是爲了方便有需要的同學可以拿來用，以減少一些寫課程論文的不必要的時閒浪費，也算是對大學浪費的時閒一箇小小的交代。想想我爲了交作業，寫了多少垃圾，浪費了多少寶貴旹閒啊。至於版權的問題，如果用來當作業素材的話，隨便複製粘貼就是。至於在網上傳播用，則遵循本博客一貫的 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 - 讀書：一些稍微成文的讀書筆記；不成文的和讀原典的筆記放在 [維基](https://kqh.wiki)。這些標題原創性依次增加：摘錄——述要——指要——某讀後。「讀後」可以當成半篇論文了，作爲副標題出現
 - 學務：上學期間雜七雜八的東西
 - 觀後：博物館展覽；電影；音樂
 - 墨池記：有關書法的想法、記錄等
 - 彫梓記：有關字體、排版、編輯的
-- 春秋學刊：北師大歷史學院本科生學術刊物<v1>春秋學刊</v1>的目次<n1>半秊刊，至少未來幾年我還在師大就會繼續㪅</n1>
+- 春秋學刊：北師大歷史學院本科生學術刊物<v>春秋學刊</v>的目次</n>半秊刊，至少未來幾年我還在師大就會繼續㪅</n>
 - 小學：文字學、音韻學，但還沒開始學呢
 - 方言：有關方言的。其實也算「小學」，但特殊一些，獨立出來
-- 斂聲記：實地錄音<n1>田埜錄音</n1>的一些記錄
+- 斂聲記：實地錄音</n>田埜錄音</n>的一些記錄
 - 講閒譚：這是溫州話「聊天」的意思，譚通談。各種日常瑣碎啊，囘憶啊，用品啊，看法啊
 - 斿記：斿通遊。出去逛逛
 - 立言記：算「遊記」的一部分，但特殊一些，獨立出來。2017 下半秊在臺灣交換，會發一些沒見識的流水帳口水話遊記
@@ -81,8 +81,8 @@ vertical: false
 
 # 曷所建之？
 
-1. 【支持】託管於 ~~<a href="https://pages.github.com" target="_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="_blank">kitian616</a> 提供博客主題模板 Text~~ 主题  [jane](https://github.com/xianmin/hugo-theme-jane)，~~<a href="https://tw.godaddy.com/" target="_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n1>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n1>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n1>20181026 之歬爲 UV，之後開始累加 PV</n1>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。主葉關注數統計用的 [Substats](https://sspai.com/post/59593) api。
-2. 【檢索】對靜態博客添加搜索功能无能爲力，試了好幾種，无奈技術有限。如想搜索直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a><n1>Google 收錄得又全又快</n1>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。
+1. 【支持】託管於 ~~<a href="https://pages.github.com" target="_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="_blank">kitian616</a> 提供博客主題模板 Text~~ 主题  [jane](https://github.com/xianmin/hugo-theme-jane)，~~<a href="https://tw.godaddy.com/" target="_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計</n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計</n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。主葉關注數統計用的 [Substats](https://sspai.com/post/59593) api。
+2. 【檢索】對靜態博客添加搜索功能无能爲力，試了好幾種，无奈技術有限。如想搜索直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a></n>Google 收錄得又全又快</n>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。
 3. 【大事記】詳見 [Hello world!](/blog/2017/10/04/shuoming.html)
 
 - 2017-10-03 建站：kujihhoe.com
@@ -92,13 +92,13 @@ vertical: false
 - ~~12-06 啓用四箇網站~~
 - 12-18 正文改爲直排
 - 2019-07-22 域名變更爲 kqh.me
-- 建站兩周年之際，啓用新 logo。來源是<u1>何尊</u1>銘文及<v1>續甲骨文編</v1>4534。
+- 建站兩周年之際，啓用新 logo。來源是<u>何尊</u>銘文及<v>續甲骨文編</v>4534。
 - 2020-03-26 弟三版主葉
 
 # 示
 
-- 本站所有文章授權方式采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="\_blank">CC BY-NC-SA 4.0</a> <n1>署名-非商業性使用-相同方式共享</n1>國際條款，若需使用，請務必閱讀竝遵循條款內容。說簡單點，非商業性使用無須告知作者，只要標明作者、出處就好<n1>當然，沒人會轉載我的文章的，想多了</n1>。爲便於排版，直接取用 md 源文件卽可。如果發現有錯別字，也可以在 Git 上幫我改正。
-- 若發現文章中有不適冝的內容<n1>如侵犯箇人隱私，牽涉箇人利益，損害箇人聲譽等</n1>，請儘速郵件或評論告知我。
+- 本站所有文章授權方式采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="\_blank">CC BY-NC-SA 4.0</a> </n>署名-非商業性使用-相同方式共享</n>國際條款，若需使用，請務必閱讀竝遵循條款內容。說簡單點，非商業性使用無須告知作者，只要標明作者、出處就好</n>當然，沒人會轉載我的文章的，想多了</n>。爲便於排版，直接取用 md 源文件卽可。如果發現有錯別字，也可以在 Git 上幫我改正。
+- 若發現文章中有不適冝的內容</n>如侵犯箇人隱私，牽涉箇人利益，損害箇人聲譽等</n>，請儘速郵件或評論告知我。
 - 我用繁體字，還有一些奇怪的寫法，一來爲了滿足自己的一些癖好；二來爲了過濾一些不想看的來訪者；三來照顧牆外能用 Google 的華人們；還有一箇原因是系統自帶的簡體宋體无一箇能看的。
 - 訂閱此博客，可通過 RSS，或 MailChimp 郵件訂閱，點擊文末「郵件訂閱」卽可。
 - 如果看官歡喜，歡迎打賞救濟 \_(:з」∠)_ 收益將用於网站運營及公益，㪅多見 [公益、贊賞、收支](/blog/2018/11/06/zjuh.html)。可通過支付寶、[paypal](https://paypal.me/kujihhoe) 或 bitcoin `1GWQhWVpFGxKqwp7R6C7ayb2jyPrdPgCYr` 向我捐助。
@@ -108,9 +108,9 @@ vertical: false
 
 # 板式
 
-1. 【字體】字體是我㝡重視的。正文是宋體，引文是仿宋。首選韓文字體 Source Han Serif K<n1>思源宋體韓文版</n1>，其次爲日文字體 Hiragino Mincho ProN，這箇字體是蘋果系統自帶的，其次是 Yu Mincho。不過一般 Windows 電腦只有默認的宋體？西文字體依次爲 "Adobe Garamond Pro", "Adobe Caslon Pro", "Minion Pro", "Adobe Gurmukhi", Baskerville。正文、引文字號 20px，注釋 16px。
-2. 【行距】正文行距㠯容納一箇字爲準。標題行距爲 1.55。【段間距】默認爲兩倍行距，這樣一般沒啥問題，但如果有一段只有一行的話，區分不太明顯，因此在默認的基礎上加了 2px<n1>別小看這 2px，還挺有用的</n1>，段間距是行距的 2.25 倍。一級標題前後間距等於 2.25 倍其字寬。二至六級標題前後間距等於正文段間距。
-3. 【縮進】一級標題和引文都縮進 2 箇正文字的距離<n1>卽一級標題、引文首字上方和正文弟三字上方是對齊的</n1>。
+1. 【字體】字體是我㝡重視的。正文是宋體，引文是仿宋。首選韓文字體 Source Han Serif K</n>思源宋體韓文版</n>，其次爲日文字體 Hiragino Mincho ProN，這箇字體是蘋果系統自帶的，其次是 Yu Mincho。不過一般 Windows 電腦只有默認的宋體？西文字體依次爲 "Adobe Garamond Pro", "Adobe Caslon Pro", "Minion Pro", "Adobe Gurmukhi", Baskerville。正文、引文字號 20px，注釋 16px。
+2. 【行距】正文行距㠯容納一箇字爲準。標題行距爲 1.55。【段間距】默認爲兩倍行距，這樣一般沒啥問題，但如果有一段只有一行的話，區分不太明顯，因此在默認的基礎上加了 2px</n>別小看這 2px，還挺有用的</n>，段間距是行距的 2.25 倍。一級標題前後間距等於 2.25 倍其字寬。二至六級標題前後間距等於正文段間距。
+3. 【縮進】一級標題和引文都縮進 2 箇正文字的距離</n>卽一級標題、引文首字上方和正文弟三字上方是對齊的</n>。
 4. 【引文】仿宋體。爲保證可讀性，字號和行距沒有較正文縮小。由於同等字號下仿宋會比宋體小一些，因此引文的行間距、段間距是根據引文的大小來定的。引文與正文的間距等於正文之間的段間距，而不象橫排那樣空出更多的距離。
 5. 【注釋】楷體，16px，上下間距爲 5px。
 6. 【下畫線】下畫直線將默認的 `text-decoration: underline` 改成 `boder-left: 1px`，再調一下 `padding-left`，這樣就十分清爽了，默認的 `text-decoration` 大槩是 2px，有些粗了。波浪線用的 `backgroud-image`，經過反服修改，達到了最髙的可讀性。下畫線上下各加了 `margin: 1px`，這樣就能將兩箇相連的下畫線分割開來，單獨用時又能不顯痕跡。

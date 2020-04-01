@@ -24,7 +24,7 @@ ljp boux giex
 
 chjeh ngrax ngrauk cqi theh jax。
 
-<n1>刺雅樂之替也。</n1>
+</n>刺雅樂之替也。</n>
 
 ljp boux giex，koox dek hyaon。
 
@@ -85,9 +85,9 @@ chqyjn chiuu keng yaot：
 
 《春秋》經曰：
 
-<n1>qaui kung</n1>zqjp iuux sjh nen，chqyjn，se squuh ghuraek ljn。
+</n>qaui kung</n>zqjp iuux sjh nen，chqyjn，se squuh ghuraek ljn。
 
-<n1>哀公</n1>十有四年，春，西狩獲麟。
+</n>哀公</n>十有四年，春，西狩獲麟。
 
 ### 2
 

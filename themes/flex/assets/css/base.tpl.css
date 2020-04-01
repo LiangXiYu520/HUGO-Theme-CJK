@@ -36,7 +36,6 @@ transition: .3s;
 a:hover{
   border:none ;
   color:#b89001;
-  border-bottom: .15em solid #fffae8 ;
 }
 strong{
   font-family: helvetica,"Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
@@ -45,6 +44,79 @@ em{
   font-family:"Adobe Garamond Pro",AdobeGaramondPro,Garamond,"Adobe Caslon Pro",AdobeGaramondPro,Caslon,"Minion Pro",Minion,"Adobe Gurmukhi",AdobeGurmukhi,Baskerville,"Times New Roman","方正新楷体_GB18030",FZNewKai_GB18030-Z03,STKaiti,Kai,"楷体",Kaiti,"Kaiti TC";
   font-style: normal;
 }
+v{
+background-image: url(/v1.png);
+background-repeat: repeat-x;
+background-size: 10px;
+background-position: left bottom;
+padding-bottom: 3px;
+margin: 0 1.5px ;
+}
+n{
+  font-family: "Adobe Garamond Pro",AdobeGaramondPro,Garamond,"Adobe Caslon Pro",AdobeGaramondPro,Caslon,"Minion Pro",Minion,"Adobe Gurmukhi",AdobeGurmukhi,Baskerville,"Times New Roman","方正新楷体_GB18030",FZNewKai_GB18030-Z03,STKaiti,Kai,"楷体",Kaiti,"Kaiti TC";
+  font-size: 16px;
+  padding:  0 5px;
+  letter-spacing: 0;
+}
+u{
+border-bottom: 1px solid #2b2b2b;
+padding-bottom: 1px;
+text-decoration: none;
+margin: 0 1.5px;
+}
+.vertical-wrap{
+  text-align: center;
+    margin: 0 auto;
+}
+.vertical{
+  word-wrap: break-word;
+  text-align: justify;
+  text-justify: inter-ideograph;
+    writing-mode: vertical-rl;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    height: 90%;
+    width: 130%;
+    max-height:38em;
+}
+.vertical a{
+  color:#2b2b2b;
+  text-decoration:none;
+border-left: .15em solid rgb(241,188,0) ;
+border-bottom: none;
+-webkit-transition: .3s;
+transition: .3s;
+}
+.vertical a:hover{
+  border:none ;
+  color:#b89001;
+}
+.vertical v{
+  background-image: url(/v.png);
+  background-repeat: repeat-y;
+  background-size: 2.6px;
+  background-position: left bottom;
+  padding-left: 2.5px;
+  margin: 1.5px 0 ;
+  }
+.vertical n{
+    font-family: "Adobe Garamond Pro",AdobeGaramondPro,Garamond,"Adobe Caslon Pro",AdobeGaramondPro,Caslon,"Minion Pro",Minion,"Adobe Gurmukhi",AdobeGurmukhi,Baskerville,"Times New Roman","方正新楷体_GB18030",FZNewKai_GB18030-Z03,STKaiti,Kai,"楷体",Kaiti,"Kaiti TC";
+    font-size: 16px;
+    padding: 5px 0;
+    letter-spacing: 0;
+  }
+.vertical u{
+  border-left: 1px solid #2b2b2b;
+  border-bottom: none;
+  padding-left: 0px;
+  text-decoration: none;
+  margin: 1.5px 0 ;
+  }
+  .vertical h1{
+      text-align: left;
+      margin-top: 2em;
+  }
 h1{
   text-align: center;
 letter-spacing: .25em;

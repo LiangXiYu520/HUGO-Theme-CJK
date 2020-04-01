@@ -4,8 +4,14 @@
     {{ partial "heading.html" . }}
     {{ partial "tags.html" . }}
     <hr>
+    {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
+<div class="vertical-wrap">
+    <div class="vertical">
     {{ .Content }}
-    {{ partial "comments.html" . }}
+    </div></div>
+      {{ else }}
+          {{ .Content }}
+    {{ end }}
+  {{ partial "comments.html" . }}
   </article>
-
 {{ end }}
