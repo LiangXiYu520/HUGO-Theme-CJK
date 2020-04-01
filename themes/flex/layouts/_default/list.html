@@ -1,15 +1,23 @@
 {{ define "main" }}
   {{ partial "heading.html" . }}
   {{ .Content }}
+  {{- $paginator := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 5) }}
 <div class="count">
   {{- $length := len .Data.Pages }}
   <p style="text-align:center"><strong>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</strong></p>
 全部博文 IPFS hash：QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX
 <br>「作者」「分類」「系列」均可點擊
 <br>2020-04-01 博客、主葉弟四板</div>
+<div class="lastmod">
+  <p>最近修改</p>
+  {{- range $element := $paginator.Pages -}}
+            <div class="lastmod-wrap">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </div>
+  {{ end }}
+</div>
   {{ range .Pages.GroupByPublishDate "2006" }}
-    <h3>{{ .Key }}</h3>
-
+<h3>{{ .Key }}</h3>
       {{ range .Pages }}
               <div class="archive-wrap">
                 <div class="archive-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
