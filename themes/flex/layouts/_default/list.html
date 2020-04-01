@@ -1,4 +1,6 @@
 {{ define "main" }}
+<div class="u-wrapper">
+  <div class="u-padding">
   {{ partial "heading.html" . }}
   {{ .Content }}
   {{- $paginator := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 5) }}
@@ -42,4 +44,5 @@
     </div>
     {{ end }}
   {{ end }}
+  </div></div>
 {{ end }}

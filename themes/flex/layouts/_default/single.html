@@ -9,8 +9,14 @@
     {{ .Content }}
     </div></div>
       {{ else }}
+      <div class="u-wrapper">
+        <div class="u-padding">
           {{ .Content }}
+          </div></div>
     {{ end }}
+    <div class="u-wrapper">
+      <div class="u-padding">
   {{ partial "comments.html" . }}
+  </div></div>
   </article>
 {{ end }}

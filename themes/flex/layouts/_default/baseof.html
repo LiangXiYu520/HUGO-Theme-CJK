@@ -15,11 +15,7 @@
 <body>
   {{ partialCached "banner.html" . }}
   <main>
-    <div class="u-wrapper">
-      <div class="u-padding">
         {{ block "main" . }}{{ end }}
-      </div>
-    </div>
   </main>
   {{ partialCached "footer.html" . }}
 </body>
