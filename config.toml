@@ -1,0 +1,27 @@
+baseURL = "https://kqh.me/"
+languageCode = "en-us"
+title = "赫赫文王"
+enableRobotsTXT = true
+theme = "flex"
+disablePathToLower = true
+hasCJKLanguage = true     # has chinese/japanese/korean ?
+uglyURLs = false         # more info: https://gohugo.io/content-management/urls/#ugly-urls
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+# Enable author pages
+[taxonomies]
+ author = "author"
+ tag = "tags"
+ category = "categories"
+[author]                  # essential
+  name = "柯棋瀚"
+[sitemap]                 # essential
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+[params]
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
+  linkToMarkDown = true
+  vertical = true

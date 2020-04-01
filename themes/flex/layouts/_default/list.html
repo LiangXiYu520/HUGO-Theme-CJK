@@ -1,0 +1,37 @@
+{{ define "main" }}
+  {{ partial "heading.html" . }}
+  {{ .Content }}
+<div class="count">
+  {{- $length := len .Data.Pages }}
+  <p style="text-align:center"><strong>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</strong></p>
+全部博文 IPFS hash：QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX
+<br>「作者」「分類」「系列」均可點擊
+<br>2020-04-01 博客、主葉弟四板</div>
+  {{ range .Pages.GroupByPublishDate "2006" }}
+    <h3>{{ .Key }}</h3>
+
+      {{ range .Pages }}
+              <div class="archive-wrap">
+                <div class="archive-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+                <span class="archive-info"><a href="/author/{{ .Params.author }}">{{ .Params.author }}</a><strong>　</strong> {{ .PublishDate.Format "2006-01-02" }}<strong> > </strong>{{ .Lastmod.Format "2006-01-02" }}　
+            {{ with .Params.categories -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+                  　<strong>分類</strong> <a href="/categories/{{ $name }}" >{{ $name }}</a> /
+                {{ end -}}
+                {{ end }}
+            {{- end }}
+            {{ with .Params.tags -}}
+                　<strong>系列</strong> {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+                <a href="/tags/{{ $name }}" >{{ $name }}</a> /
+                {{ end -}}
+                {{ end }}
+            {{- end }}
+          </span>
+    </div>
+    {{ end }}
+  {{ end }}
+{{ end }}

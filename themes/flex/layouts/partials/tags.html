@@ -1,0 +1,46 @@
+    <div class="Tag"><div class="Tags">
+  <li class="Tags-item">{{- $author_id := .Params.author | default .Site.Author.name -}}
+  {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+  {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+  {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
+  {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
+      <li class="Tags-item"><strong>作者</strong>　<a href="/author/{{ $author_name }}">{{ $author_name | safeHTML }}</a>
+  {{- else -}}
+  <li class="Tags-item"><strong>作者</strong>　<a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}</a>
+  {{- end -}}
+  <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
+    　　<strong>發布</strong>　{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}　　<strong>修改</strong>　{{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+  </time></li>
+<li class="Tags-item"><strong>字數</strong>　{{ .WordCount }}
+{{ with .Params.categories -}}
+    {{ range . }}
+    {{- $name := . -}}
+    {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+    　　<strong>分類</strong>　<a href="/categories/{{ $name }}">{{ $name }}</a> /
+    {{ end -}}
+    {{ end }}
+{{- end }}
+
+{{ with .Params.tags -}}
+    　　<strong>系列</strong>　{{ range . }}{{- $name := . -}}
+    {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+    <a href="/tags/{{ $name }}">{{ $name }}</a> /
+    {{ end -}}
+    {{ end }}
+{{- end }}</li>
+<li class="Tags-item">
+{{- if .Params.contentCopyright -}}
+<strong>版權</strong>　{{ .Params.contentCopyright | safeHTML }}
+{{- else -}}
+  <strong>版權</strong>　{{ .Site.Params.contentCopyright | safeHTML }}
+{{- end -}}
+</li>
+    {{ if .Description }}
+    <li class="Tags-item"><strong>前言</strong>　{{ .Params.Description | safeHTML }}</li>
+    {{ end }}
+      </div></div>
+    <div class="toc">
+        {{ if .TableOfContents }}
+          <li class="toc-item">{{ .TableOfContents }}</li>
+        {{ end }}
+      </div>
