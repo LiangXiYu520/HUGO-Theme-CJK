@@ -1140,7 +1140,7 @@ Hugo 0.57.1
 
 `.vertical hr`
 
-### 4.1.2
+#### 4.1.2
 
 `.des` 變成沒有邊欄的副標題
 
@@ -1148,3 +1148,8 @@ Hugo 0.57.1
 
 `a.footnote-backref{` 刪除 `writing-mode:horizontal-tb;`
 
+#### 4.1.3
+
+`.vertical h1;blockquote`
+
+加入上下篇。

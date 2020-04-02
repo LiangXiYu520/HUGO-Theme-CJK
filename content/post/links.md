@@ -278,6 +278,8 @@ vertical: false
 
 ### 設計類
 
+[Kevin](https://www.kevinpowell.co/)　〔小清新界面〕
+
 [设计乘数](https://www.infoier.com/)　〔清華美院高材生。网站超棒〕
 
 [KenjiEndo](http://kenjiendo.com)　〔很有設計感〕
