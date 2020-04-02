@@ -3,7 +3,7 @@
   <div class="u-padding">
   {{ partial "heading.html" . }}
   {{ .Content }}
-  {{- $paginator := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 20) }}
+  {{- $lastmod := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 15) }}
 <div class="count">
   {{- $length := len .Data.Pages }}
   <p style="text-align:center"><strong>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</strong></p>
@@ -12,14 +12,12 @@
 <br>2020-04-01 博客、主葉弟四板</div>
 <div class="lastmod">
   <p>最近修改</p>
-  {{- range $element := $paginator.Pages -}}
+  {{- range $element := $lastmod.Pages -}}
             <div class="lastmod-wrap">
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>　<span style="color:#8c8c8c">{{ .Lastmod.Format "2006-01-02" }}</span>
             </div>
   {{ end }}
 </div>
-  {{ range .Pages.GroupByPublishDate "2006" }}
-<h3>{{ .Key }}</h3>
       {{ range .Pages }}
               <div class="archive-wrap">
                 <div class="archive-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
@@ -43,6 +41,5 @@
           </span>
     </div>
     {{ end }}
-  {{ end }}
   </div></div>
 {{ end }}

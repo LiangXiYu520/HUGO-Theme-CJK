@@ -26,6 +26,12 @@ hr{
   border: none;
   background-color: #2b2b2b;
 }
+.vertical hr{
+  margin:auto 4em;
+  height:100%;
+  width: .35em;
+  border-radius: 0;
+}
 a{
   color:#2b2b2b;
   text-decoration:none;
@@ -354,6 +360,9 @@ ont-family: "Minion Pro",Minion,"Adobe Gurmukhi",AdobeGurmukhi,Baskerville,"Pala
   display: inline-block;
   font-size: .9em;
 }
+a.Banner-link.u-clickable:hover{
+  font-weight: 700;
+}
 .archive-wrap{
     list-style: none;
     margin: 1.5em auto;
@@ -383,7 +392,7 @@ font-size: .8em;
   box-shadow:  0 2px 20px -5px  #8c8c8c ;
   line-height: 1.9;
   font-size: .9em;
-  margin: 2em auto;
+  margin: 2em auto 3em auto;
   max-height: 11.5em;
   overflow:scroll;
 }
@@ -432,4 +441,45 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
 }
 .comment p a{
   border:none
+}
+a.footnote-ref{
+  font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace;
+  display: inline-flex;
+  text-align: center;
+  width:17px;
+  height:17px;
+  font-size: 14px;
+  border: none;
+color: #fffae8;
+background-color: #8c8c8c;
+padding: 0px 3px 7px 1px;
+writing-mode:horizontal-tb;
+}
+ a.footnote-ref:hover{
+color: #2b2b2b;
+background-color: #fffae8;
+}
+a.footnote-backref{
+  display: inline-flex;
+  text-align: center;
+  width:17px;
+  height:12px;
+  font-size: 14px;
+  border: none;
+color: #fffae8;
+background-color: #8c8c8c;
+padding: 0px 2px 5px 2px;
+writing-mode:horizontal-tb;
+}
+a.footnote-backref:hover{
+color: #2b2b2b;
+background-color: #fffae8;
+}
+.footnotes{
+  font-size: .9em;
+  line-height: 1.7;
+  border-top:.1em solid #2b2b2b;
+}
+.vertical .footnotes{
+  border-top: none;
 }

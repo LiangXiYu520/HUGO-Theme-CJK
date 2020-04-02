@@ -1128,6 +1128,15 @@ Hugo 0.57.1
 
 `lastmod{max-height: 6em;}`
 
-加入 `pagination.html`
+加入 `pagination.html`？？反正生成時間從 1000ms 降到了 200ms。奇怪。
 
 `cate-wrap`
+
+#### 4.1.1
+
+調整 `.footnotes   `
+
+`a.footnote-ref`
+
+`.vertical hr`
+
