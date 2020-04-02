@@ -289,7 +289,8 @@ text-align:center;
   font-weight: 400;
 }
 .cate-wrap{
-  margin:.3em;
+  margin: -.3em auto;
+  font-size: 1em;
 }
 {{ with site.Params.divider }}
 
@@ -351,7 +352,7 @@ ont-family: "Minion Pro",Minion,"Adobe Gurmukhi",AdobeGurmukhi,Baskerville,"Pala
   font-weight: 400;
   text-decoration: none;
   display: inline-block;
-  font-size: .8em;
+  font-size: .9em;
 }
 .archive-wrap{
     list-style: none;

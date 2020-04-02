@@ -1124,7 +1124,10 @@ Hugo 0.57.1
 
 主葉圖片替換爲 webp，減少 37kb。
 
-#### 4.0.5
+#### 4.1.0
 
 `lastmod{max-height: 6em;}`
 
+加入 `pagination.html`
+
+`cate-wrap`
