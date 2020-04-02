@@ -3,7 +3,7 @@
   <div class="u-padding">
   {{ partial "heading.html" . }}
   {{ .Content }}
-  {{- $paginator := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 7) }}
+  {{- $paginator := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 20) }}
 <div class="count">
   {{- $length := len .Data.Pages }}
   <p style="text-align:center"><strong>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</strong></p>

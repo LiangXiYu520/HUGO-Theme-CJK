@@ -351,6 +351,7 @@ ont-family: "Minion Pro",Minion,"Adobe Gurmukhi",AdobeGurmukhi,Baskerville,"Pala
   font-weight: 400;
   text-decoration: none;
   display: inline-block;
+  font-size: .8em;
 }
 .archive-wrap{
     list-style: none;
@@ -382,6 +383,8 @@ font-size: .8em;
   line-height: 1.9;
   font-size: .9em;
   margin: 2em auto;
+  max-height: 11.5em;
+  overflow:scroll;
 }
 .lastmod a{
   border: none;

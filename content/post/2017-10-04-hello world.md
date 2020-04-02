@@ -1123,3 +1123,8 @@ Hugo 0.57.1
 文件增刪
 
 主葉圖片替換爲 webp，減少 37kb。
+
+#### 4.0.5
+
+`lastmod{max-height: 6em;}`
+
