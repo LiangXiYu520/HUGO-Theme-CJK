@@ -21,7 +21,7 @@ vertical: false
 
 ##  Vol. 1　臺南十二月二十四日 Tainan on December 24
 
-<listen1>[網易](https://music.163.com/#/program?id=1369247249)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/tainan)</listen1>　<time2>2018-05-13</time2>　<time2>采集於 2017-12-23/24/25</time2>
+<listen>[網易](https://music.163.com/#/program?id=1369247249)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/tainan)</listen>　<date>2018-05-13</date>　<date>采集於 2017-12-23/24/25</date>
 
 聖誕節那天臺南的人們。在想用什麼方式組織起來，那就這樣吧，由三條線構成：傳統—西方—戒嚴時期，㞡現平安夜臺南各種文化的神奇交匯。但素材不夠，內容還不夠豐富，㠯後吸取經驗了，要廣泛搜集素材。（㝡巧的是 3:47 左右那箇唱跑調的小朋友的頻率和後面嗩吶的頻率竟然蜜汁接近，歬後竟然可㠯完美融合！）㪅多見 [我❤府城──府城客運](/blog/2017/12/26/tdnj.html)。
 
@@ -33,7 +33,7 @@ The first recording of life. Most of them recorded with Zoom H2N. Felt the power
 
 ##  Vol. 2　臺北十二月三十一日 Taipei on December 31
 
-<listen1>[網易](https://music.163.com/#/program?id=1369247248)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391758)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/wdhlvqxitfb4)</listen1>　<time2>2018-05-13</time2>　<time2>采集於 2017-12-31</time2>
+<listen>[網易](https://music.163.com/#/program?id=1369247248)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391758)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/wdhlvqxitfb4)</listen>　<date>2018-05-13</date>　<date>采集於 2017-12-31</date>
 
 臺北跨年夜的熱鬧。這次比臺南的那箇滿意一些，素材收集得多了，用起來順手一點。一共翦了 4 箇小時。用了三處混音，把環境聲和要突出的聲音分開來錄，效果的確好一些。㪅多見 [2018 二〇一八](/blog/2018/01/01/xbnm.html)。
 
@@ -41,7 +41,7 @@ The fun of Taipei’s New Year’s Eve. This is more satisfactory than *Tainan*,
 
 ##  Vol. 3　宿舍下打乒乓球的大媽 Aunt playing table tennis under my dormitory
 
-<listen1>[網易](https://music.163.com/#/program?id=1369269643)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219795558)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/aunt)</listen1>　<time2>2018-05-13</time2>
+<listen>[網易](https://music.163.com/#/program?id=1369269643)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219795558)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/aunt)</listen>　<date>2018-05-13</date>
 
 宿舍下打乒乓球的大媽。後來，那幾張乒乓球桌一夜之閒沒了，我們終於獲得了寧靜。
 
@@ -49,7 +49,7 @@ gear: Mixpre 3, a pair of SE 8. Aunt playing table tennis under my dormitory. La
 
 ## Vol. 4　凌晨三點的新發地 Sinfati at 3 am
 
-<listen1>[網易](https://music.163.com/#/program?id=1369475470)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219796227)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/sinfati)</listen1>　<time2>2018-05-29</time2>
+<listen>[網易](https://music.163.com/#/program?id=1369475470)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219796227)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/sinfati)</listen>　<date>2018-05-29</date>
 
 ### 介紹
 
@@ -91,7 +91,7 @@ The South Second Ring Road is quite desolate. Beijing is all developing to the n
 
 ##  Vol. 5　六月七日高考開始 Beginning of the college entrance examination
 
-<listen1>[網易](https://music.163.com/#/program?id=1369623908)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219796591)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/cee1)</listen1>　<time2>2018-06-08</time2>
+<listen>[網易](https://music.163.com/#/program?id=1369623908)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219796591)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/cee1)</listen>　<date>2018-06-08</date>
 
 45 分鐘的素材剪成的。時閒：2018年6月7日，事件：高考語文開考之前，地點：N大三附中考點。聲音最好的一點是你沒法直接判斷出時閒，所以我就按邏輯順序剪出來，很多都是打亂了時閒先後的。從呼朋引伴，老師招呼學生，到看考點，複習，到家長、老師最後的叮囑、加油，到進考場，確定幾箇遲到的學生是否來了，最後是老師、家長的閑聊。
 
@@ -99,7 +99,7 @@ gear: Mixpre 3, a pair of SE 8. 45 minutes of material. Time: June 7th, 2018. Ev
 
 ##  Vol. 6　六月八日高考結束 End of the college entrance examination
 
-<listen1>[網易](https://music.163.com/#/program?id=1369627228)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219796882)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/cee2)</listen1>　<time2>2018-06-09</time2>
+<listen>[網易](https://music.163.com/#/program?id=1369627228)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219796882)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/cee2)</listen>　<date>2018-06-09</date>
 
 30 分鐘的素材剪成的。時閒：2018 年 6 月 8 日，事件：高考英語考完之後，地點：N 大三附中考點。時閒快到了，家長越來越多。考生出來後，各種照相的。人全部走了，工作人員拆大門的橫幅、考場圖，還有零星的幾箇考生家長在聊天。7 分多鐘的汽車聲，是警車開走了。
 
@@ -107,7 +107,7 @@ gear: Mixpre 3, a pair of SE 8. 30 minutes of material. Time: June 8th, 2018. Ev
 
 ##  Vol. 7　午夜交響曲 Midnight chorus
 
-<listen1>[網易](https://music.163.com/#/program?id=2058625601)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391759)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/snoring)</listen1>　<time2>2018-12-26</time2>
+<listen>[網易](https://music.163.com/#/program?id=2058625601)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391759)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/snoring)</listen>　<date>2018-12-26</date>
 
 150 分钟的素材剪成的，也是有起承转合的。
 
@@ -115,7 +115,7 @@ gear: Mixpre 3, a pair of SE 8. 150 minutes of material. The sound of snoring. I
 
 ## Vol. 8　嘴皮發出的奇妙聲響 Wonderful sound of mouth
 
-<listen1>[網易](https://music.163.com/#/program?id=2059109204)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391760)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/mouth)</listen1>　<time2>2019-01-19</time2>
+<listen>[網易](https://music.163.com/#/program?id=2059109204)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391760)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/mouth)</listen>　<date>2019-01-19</date>
 
 某日午睡醒了之後發現嘴皮能發出奇怪的口哨聲，就用手機錄下來了。有一箇頻率很高的片段，看了下頻譜，基頻是 3—4 kHz，絕了。手機錄的，原始格式是 22khz，音質很渣。
 
@@ -123,7 +123,7 @@ gear: Mixpre 3, a pair of SE 8. When I woke up one afternoon, I found that my mo
 
 ## Vol. 9　夜晚田野交響曲 Night field Chorus
 
-<listen1>[網易](https://music.163.com/dj?id=2061605723&userid=275990862)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391761)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/field1)</listen1>　<time2>2019-06-12</time2>　<time2>采集於 2019-06-09 21:00</time2>
+<listen>[網易](https://music.163.com/dj?id=2061605723&userid=275990862)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391761)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/field1)</listen>　<date>2019-06-12</date>　<date>采集於 2019-06-09 21:00</date>
 
 在儀徵與揚州交界的田野。有一些在路上，有一些下到田裏面，距離聲源大槩 2 米。辳邨眞是太安靜了，一點嘈雜的聲音都沒有。遠處有鐵路橋，不時有火車開過，有些想去錄。九點還有寺廟的鐘聲，但很遠，不知從哪發出來的，下次去的時候一定要找到。
 
@@ -135,7 +135,7 @@ Divided into four segments: 1, insects, 2, added high-frequency insects, 3, frog
 
 ## Vol. 10　本科畢業生跳蚤市場 Undergraduate graduate flea market
 
-<listen1>[網易](https://music.163.com/dj?id=2061805693&userid=275990862)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391762)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/flea-market)</listen1>　<time2>2019-06-24</time2>　<time2>采集於 2019-06-22、23</time2>
+<listen>[網易](https://music.163.com/dj?id=2061805693&userid=275990862)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391762)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/flea-market)</listen>　<date>2019-06-24</date>　<date>采集於 2019-06-22、23</date>
 
 2015 級本科畢業生跳蚤市場，一共兩天，我在兩箇上午各錄了半小時。北京的天氣慘無人道，雖然是九十點鐘，依然被曬得要死。下午我們守攤，小風扇已經沒有任何用處了。又發現只要鋪子上一直有人，生意做著就會有意思，我媽說的沒錯。一箇很藝術笵的哥子：「同學你是學錄音的嗎」「啊，我學歷史的」「哦哦，我學攝影的，我們加箇微信吧，有什麼好東西可以分享一下。」地上一隻斑衣蠟蟬若蟲，一直圍著我，還爬腳上，嚇死了，還能跳老遠。
 
@@ -151,7 +151,7 @@ The original material of the flea market seems to have no logical connection. I 
 
 ## Vol. 11　東東 Tung Tung
 
-<listen1>[網易](https://music.163.com/dj?id=2061883435&userid=275990862)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391763)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/tung)</listen1>　<time2>2019-06-28</time2>
+<listen>[網易](https://music.163.com/dj?id=2061883435&userid=275990862)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391763)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/tung)</listen>　<date>2019-06-28</date>
 
 寢室解散前兩天錄的。這寢室文化似乎是大三下期發展起來的。
 
@@ -161,7 +161,7 @@ Gear: Mixpre 3, a pair of SE 8. Recorded two days before the dissolution of our 
 
 ## Vol. 12　 Dormitory at 23:00 宿舍睡前
 
-<listen1>[網易](https://music.163.com/#/program?id=2063919889)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/224820001)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/dormitory-at-2300)</listen1>　<time2>2019-11-01</time2>
+<listen>[網易](https://music.163.com/#/program?id=2063919889)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/224820001)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/dormitory-at-2300)</listen>　<date>2019-11-01</date>
 
 第一次全指向的錄音，主要聽下效果。真是震撼到了，聲場非常廣闊，幾乎沒有音染。
 
@@ -171,7 +171,7 @@ My first recording with omni microphones. I'm surprised by the wide image and ra
 
 ## Vol. 13　 氫能源汽車排氣 Hydrogen energy bus releasing gas
 
-<listen1>[網易](https://music.163.com/dj?id=2061883435&userid=275990862)</listen1>　<listen1>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/226829756)</listen1>　<listen1>[SoundCloud](https://soundcloud.com/kujihhoe/hydrogen-energy-bus-releasing-gas)</listen1>　<time2>2019-11-08</time2>
+<listen>[網易](https://music.163.com/dj?id=2061883435&userid=275990862)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/226829756)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/hydrogen-energy-bus-releasing-gas)</listen>　<date>2019-11-08</date>
 
 非常有意思，聲音是全頻的，從最低頻一直到 20khz 以上都有。所以對於這些聲音，要用能錄超聲波的麥克風才能完整捕捉（如 Sony C100）。音量非常大，至少 80dB，在旁邊耳朵都快聾了。前面有一下聲音突然減小，是一個人走過。沒想到人對聲音的遮擋效果那麼強。
 

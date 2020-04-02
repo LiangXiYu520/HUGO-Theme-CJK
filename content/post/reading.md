@@ -11,12 +11,12 @@ vertical: false
 description: '<p>我又自詡對語言的敏感度比常人畧高一些。暑假突肰對古音感興趣，上古音難度太大，那就中古音吧，便用了半箇月來突擊，知道了一箇大槩。用古音讀書豈不是很美妙的事情？</p><p>計畫先把尙書讀完，可能的話兩周一篇。</p>'
 ---
 
-我的 B 站頻道：<listen1>[讀切韻擬音](https://space.bilibili.com/176570453/channel/detail?cid=70633)</listen1>
+我的 B 站頻道：<listen>[讀切韻擬音](https://space.bilibili.com/176570453/channel/detail?cid=70633)</listen>
 
 ## No.1　立部伎
 
-<listen1>[立卽觀看](https://www.bilibili.com/video/av27778077)</listen1>
-<time2>2018-07-26</time2>
+<listen>[立卽觀看](https://www.bilibili.com/video/av27778077)</listen>
+<date>2018-07-26</date>
 
 ljp boux giex
 
@@ -24,7 +24,7 @@ ljp boux giex
 
 chjeh ngrax ngrauk cqi theh jax。
 
-</n>刺雅樂之替也。</n>
+<n>刺雅樂之替也。</n>
 
 ljp boux giex，koox dek hyaon。
 
@@ -76,8 +76,8 @@ kung srii ngioo zjenh qan ciook yuun，thad zqaong sam khiang njex gha nqjn。
 
 ## No.2　春秋獲麟
 
-<listen1>[立卽觀看](https://www.bilibili.com/video/av29500316)</listen1>
-<time2>2018-08-16</time2>
+<listen>[立卽觀看](https://www.bilibili.com/video/av29500316)</listen>
+<date>2018-08-16</date>
 
 ### 1
 
@@ -85,9 +85,9 @@ chqyjn chiuu keng yaot：
 
 《春秋》經曰：
 
-</n>qaui kung</n>zqjp iuux sjh nen，chqyjn，se squuh ghuraek ljn。
+<n>qaui kung</n>zqjp iuux sjh nen，chqyjn，se squuh ghuraek ljn。
 
-</n>哀公</n>十有四年，春，西狩獲麟。
+<n>哀公</n>十有四年，春，西狩獲麟。
 
 ### 2
 

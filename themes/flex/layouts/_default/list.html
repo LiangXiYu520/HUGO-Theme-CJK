@@ -6,7 +6,7 @@
   {{- $lastmod := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 15) }}
 <div class="count">
   {{- $length := len .Data.Pages }}
-  <p style="text-align:center"><strong>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</strong></p>
+<p>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</p>
 全部博文 IPFS hash：QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX
 <br>「作者」「分類」「系列」均可點擊
 <br>2020-04-01 博客、主葉弟四板</div>

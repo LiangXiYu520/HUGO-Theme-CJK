@@ -14,13 +14,13 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 1、在江南大酒店喫酒，佩蘭
 
-<time1>2015-07</time1>
+<date>2015-07</date>
 
 第一次表演。
 
 #### 2、學院迎新晚会，佩蘭、平沙
 
-<time1>2015-09-19</time1>
+<date>2015-09-19</date>
 
 <img src="https://api.superbed.cn/pic/5bfad989c4ff9e05833a0a41" width="400">
 
@@ -34,7 +34,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 3、燕歸來，學活，梅花三弄
 
-<time1>2015-11-14</time1>
+<date>2015-11-14</date>
 
 <img src="https://api.superbed.cn/pic/5bfadcb0c4ff9e05824602c8"  width="400">
 
@@ -44,7 +44,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 4、乾坤琴社秊會，溫江，佩蘭
 
-<time1>2016-01-24</time1>
+<date>2016-01-24</date>
 
 <img src="https://api.superbed.cn/pic/5bfae0eec4ff9e05833a0a45"  width="400">
 
@@ -52,7 +52,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 5、輔仁校區，猿鶴雙清、佩蘭、梅花三弄
 
-<time1>2016-03</time1>
+<date>2016-03</date>
 
 一箇什麼傳統文化班叫我去，臺下是寫油膩進修老師。記得猿鶴雙清差點忘了。也做了箇背景：
 
@@ -60,7 +60,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 6、第八屆全國大學生古琴音樂會，武漢大學，猿鶴雙清
 
-<time1>2016-05-01</time1>
+<date>2016-05-01</date>
 
 <img src="https://api.superbed.cn/pic/5bfad58dc4ff9e05833a0a38" width="400">
 
@@ -68,7 +68,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 7、松風琴社八周年社慶，輔仁校區
 
-<time1>2016-05-14</time1>
+<date>2016-05-14</date>
 
 <img src="https://api.superbed.cn/pic/5bfadfc1c4ff9e05824602c9" width="400">
 
@@ -78,7 +78,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 8、學院畢業晚會，與王佳玥古箏合奏梅花
 
-<time1>2016-06-03</time1>
+<date>2016-06-03</date>
 
 <img src="https://api.superbed.cn/pic/5bfad6dec4ff9e05833a0a3a" width="400">
 
@@ -88,13 +88,13 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 9、學院會議室，渔樵問荅
 
-<time1>2016-09</time1>
+<date>2016-09</date>
 
 日本一所大學的代表團來，王東平老師主持見面會。很是尷尬，不過似乎日本同學感覺還不錯。
 
 #### 10、燕歸來，學活，漁樵，有茶藝書法
 
-<time1>2016-11-12</time1>
+<date>2016-11-12</date>
 
 <img src="https://api.superbed.cn/pic/5bfadc16c4ff9e05833a0a42" width="400">
 
@@ -104,7 +104,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 11、第八屆北京大學生古琴音樂會，敬文講堂，髙山流水
 
-<time1>2017-04-23</time1>
+<date>2017-04-23</date>
 
 <img src="https://api.superbed.cn/pic/5bfad46fc4ff9e05824602c4" width="400">
 
@@ -118,17 +118,17 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 12、松風琴社九周秊，梅花三弄、陽春
 
-<time1>2017-05-20</time1>
+<date>2017-05-20</date>
 
 活動詳情見：[松风琴社九岁啦！九周年社庆兼换届仪式完美落幕](https://mp.weixin.qq.com/s/tv_Wuy8mIo9cjup_BvopBA)
 
 #### 13、文學院社團宣講，教九 502，廣陵散一分鐘
 
-<time1>2017-09</time1>
+<date>2017-09</date>
 
 #### 14、臺大琴社在臺北故宮的雅集，梅花三弄刪宋、髙山、陽春
 
-<time1>2017-12</time1>
+<date>2017-12</date>
 
 <img src="https://api.superbed.cn/pic/5bfad2cac4ff9e05833a0a34" width="400">
 
@@ -148,7 +148,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 15、乾坤琴社秊會，泛滄浪、神人暢
 
-<time1>2018-02-03</time1>
+<date>2018-02-03</date>
 
 <img src="https://api.superbed.cn/pic/5bfad039c4ff9e05824602c1" width="400">
 
@@ -156,7 +156,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 16、南山詩社，學活，佩蘭
 
-<time1>2018-04-20</time1>
+<date>2018-04-20</date>
 
 <img src="https://api.superbed.cn/pic/5bfacfa3c4ff9e05824602c0" width="400">
 
@@ -166,7 +166,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 17、韶兮國樂社，學活，白雪
 
-<time1>2018-04-24</time1>
+<date>2018-04-24</date>
 
 <img src="https://api.superbed.cn/pic/5bface6ac4ff9e05824602bf" width="400">
 
@@ -178,7 +178,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 18、松風琴社十周年，憶故人
 
-<time1>2018-05-20</time1>
+<date>2018-05-20</date>
 
 <img src="https://api.superbed.cn/pic/5bfad3aac4ff9e05824602c3" width="400">
 
@@ -188,17 +188,17 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 19、文學院社團宣講，敬文講堂，髙山開頭
 
-<time1>2018-09-06</time1>
+<date>2018-09-06</date>
 
 #### 20、世界課例大會閉幕式，敬文講堂，幽蘭二至四段
 
-<time1>2018-11-25</time1>
+<date>2018-11-25</date>
 
 本來說是在開幕式的，開幕式有直播，不過事先他們沒安排好，前一箇節目太長，便把我的時間擠掉了。
 
 #### 21、「誦讀經典 禮讚輝煌」北京高校中華經典詩詞誦讀吟唱比賽決賽，學活，幽蘭三四段
 
-<time1>2018-11-29</time1>
+<date>2018-11-29</date>
 
 [直播地址](https://app.bjtitle.com/8816/videoshow.php?newsid=5199592&mood=wx&typeid=&did=659ca82cbfd14ccc9079957033cdce89&ntype=0)，我在 1 小旹 54 分。
 
@@ -210,7 +210,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 22、華章漢服社「花間拾夢——錦繡花神傳」專場，學活，酒狂
 
-<time1>2019-05-18</time1>
+<date>2019-05-18</date>
 
 <img src="https://pic.superbed.cn/item/5ce4fa90697df1fd0c299bf8.jpg" width="400">
 
@@ -222,13 +222,13 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 23、松風琴社十一周年，酒狂
 
-<time1>2019-05-18</time1>
+<date>2019-05-18</date>
 
 活動詳情見 [活动 | 松风琴社十一周年社庆](https://mp.weixin.qq.com/s/jtow1h65RGcKF1qo5TsdeQ)
 
 #### 24、琴心獨具論壇，大雅
 
-<time1>2019-05-25</time1>
+<date>2019-05-25</date>
 
 <img src="https://pic.superbed.cn/item/5ceea17b451253d178236d87" width="400">
 
@@ -238,7 +238,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 25、學院畢業晚會，學活，廣陵散<n>正聲節選</n>
 
-<time1>2019-06-06</time1>
+<date>2019-06-06</date>
 
 活動詳情見 [梧叙玖别|历史学院2019届毕业生晚会圆满落幕](https://mp.weixin.qq.com/s/Odb2bfTOIq_lP31zxy4M9A)
 
@@ -250,7 +250,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 26、揚州大學第十一屆全國大學生古琴音樂會，玄默
 
-<time1>2019-06-08</time1>
+<date>2019-06-08</date>
 
 活動詳情見 [音乐会进行时|斫琴分享会&音乐会现场](https://mp.weixin.qq.com/s/roQGABitXlxbIRdZkmzoig)
 
@@ -260,7 +260,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 27、第五屆孔子新漢學計劃·京師哲學暑期學堂開學典禮，高山、流水、酒狂、招隱
 
-<time1>2019-07-02</time1>
+<date>2019-07-02</date>
 
 活動詳情見 [第五届孔子新汉学计划·京师哲学暑期学堂开学典礼顺利举办](http://phil.bnu.edu.cn/?newshow/id/1958.html)
 
@@ -278,11 +278,11 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 28、文院社團宣講，半分鐘洞庭
 
-<time1>2019-09-06</time1>
+<date>2019-09-06</date>
 
 #### 29、「青年杯」北京市大學生人文知識競賽，學活，高山、流水、猿鶴雙清
 
-<time1>2019-11-02</time1>
+<date>2019-11-02</date>
 
 活動詳情見 [北师学子在2019年“青年杯”北京市大学生人文知识竞赛中获一等奖](http://news.bnu.edu.cn/zx/zhxw/113117.htm)，[真有才，15分钟做律诗！北京市大学生人文知识竞赛团队赛决赛揭晓](https://mp.weixin.qq.com/s?src=11&timestamp=1573266196&ver=1963&signature=mCYUaeG8HZxyLbX7L-Xg5y21W-Of4OZJNTDf-uQJFHI-d2p-R3n*uP2i1IDsaF-nwZelqQXb22awTBoaA9OrdoccN3UFVbn8wAt1jrykN7txHphI4wwjdXn487aMtHhw&new=1)
 
@@ -298,7 +298,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 30、第三屆天津高校古琴文化節，天津大學大學生活動中心，泛滄浪
 
-<time1>2019-11-10</time1>
+<date>2019-11-10</date>
 
 <img src="https://pic.superbed.cn/item/5dc8f1d18e0e2e3ee93417a4.jpg" width="600">
 
@@ -316,7 +316,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 #### 1、南開大學瑚璉琴社，律學與琴律學入門
 
-<time1>2019-11-10</time1>講了 70 分鐘
+<date>2019-11-10</date>講了 70 分鐘
 
 下午參加第三屆天津高校古琴文化節，晚上到瑚璉琴社的琴房講了講，就六七個人聽，非常小型的分享。沒想到好幾個同學不會彈琴，很驚喜。但我覺得一定讓他們失望了，可能與預想的不一樣，我也不怎麼懂，講得很爛。講義就用的博客上的兩篇：[西方律學入門](/blog/2017/12/11/lvxue.html)、[琴律學入門](/blog/2018/03/07/qinlv.html)。有同學問：爲何準法律替代了徽法律，準法律有什麼優勢嗎？準法律最早見諸文獻是什麼時候？
 

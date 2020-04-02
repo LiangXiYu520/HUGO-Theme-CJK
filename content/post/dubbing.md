@@ -14,19 +14,19 @@ description: '<p>播音是初二變聲的時候誕生的一箇想法。那時模
 
 ## No.1　北師大政府管理學院四名學生深入彌勒市林區 探訪護林員
 
-<listen>[立卽觀看](https://v.youku.com/v_show/id_XMTczMjYwMDEzNg==.html?spm=a2h0k.11417342.soresults.dtitle)</listen><time1>2016-09-21</time1>
+<listen>[立卽觀看](https://v.youku.com/v_show/id_XMTczMjYwMDEzNg==.html?spm=a2h0k.11417342.soresults.dtitle)</listen><date>2016-09-21</date>
 
 2016 暑期實踐。一位髙中同學叫我幫忙錄的。用的一箇類似採訪用的小蜜蜂那樣的拾音設備。㝡奇怪的是爲何做視頻的人要把我的旁白調快？？這樣很奇怪很彆扭。
 
 ## No.2　阿昌刀鍛造工藝——2016暑期實踐紀實
 
-<listen>[立卽觀看](https://www.bilibili.com/video/av35467511/)</listen><time1>2018-11-07</time1><time1>製作於 2016-09</time1>
+<listen>[立卽觀看](https://www.bilibili.com/video/av35467511/)</listen><date>2018-11-07</date><date>製作於 2016-09</date>
 
 㪅多見 [記二〇一六秊戶撒刀暑期實踐](/post/134husa)。
 
 ## No.3　資訊縱橫 1
 
-<listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/172735988)</listen><time1>2019-04-01</time1>
+<listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/172735988)</listen><date>2019-04-01</date>
 
 [微信公眾號推送](https://mp.weixin.qq.com/s/9Ra3m83adeVgkHKMjx_PBg)
 
@@ -72,7 +72,7 @@ description: '<p>播音是初二變聲的時候誕生的一箇想法。那時模
 
 ## No.4　資訊縱橫 2
 
-<listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/176380007)</listen><time1>2019-04-15</time1>
+<listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/176380007)</listen><date>2019-04-15</date>
 
 [微信公眾號推送](https://mp.weixin.qq.com/s/FK0MWyR2RBWWNnd1lx_Isw)
 
@@ -104,7 +104,7 @@ description: '<p>播音是初二變聲的時候誕生的一箇想法。那時模
 
 ## No.5　資訊縱橫 3
 
-<listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/180019799)</listen><time1>2019-04-29</time1>
+<listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/180019799)</listen><date>2019-04-29</date>
 
 （片花：北京师范大学广播台，<v>资讯纵横</v>） 
 

@@ -10,7 +10,7 @@ markdown: 'https://github.com/kujihhoe/blogac/blob/master/content/calligraphy.md
 description: '<p>放一些寫的字，一點沒有也不行。</p>'
 ---
 
-臨北大簡<v>趙正書</v><time1>2018-06</time1>
+臨北大簡<v>趙正書</v><date>2018-06</date>
 
 <img src="https://pic3.superbed.cn/item/5d359db2451253d178943143.jpg" width="600">
 
