@@ -1,8 +1,10 @@
 {{ define "main" }}
   <article>
     {{ partial "heading.html" . }}
+    <div class="u-wrapper">
+      <div class="u-padding">
     {{ partial "tags.html" . }}
-    <hr>
+    </div></div>  
     {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
 <div class="vertical-wrap">
     <div class="vertical">
@@ -11,6 +13,7 @@
       {{ else }}
       <div class="u-wrapper">
         <div class="u-padding">
+          <hr>
           {{ .Content }}
           </div></div>
     {{ end }}

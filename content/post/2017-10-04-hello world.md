@@ -1084,4 +1084,20 @@ Hugo 0.57.1
 
 博客第四版上線。詳見 [網站歷次改版](/221)。
 
-原生的 RSS 有問題，每個頁面都把全站的生成一遍，導致非常臃腫。
+4.0.1 原生的 RSS 有問題，每個頁面都把全站的生成一遍，導致非常臃腫。
+
+4.0.2 `img{max-height: 100%;}`
+
+ `vertical` 加框。
+
+### 4 月 2 日
+
+4.0.3 `h{line-height}`
+
+`vertical{width}`
+
+`hr{width;height}`
+
+`vertical` 取消上 hr
+
+`tag` 納入 `u-wrappe`

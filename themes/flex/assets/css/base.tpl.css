@@ -20,8 +20,8 @@ font-size: 1em;
 }
 hr{
   margin:4em auto;
-  max-width:8em;
-  height: .25em;
+  max-width:6.7em;
+  height: .3em;
   border-radius: 1rem;
   border: none;
   background-color: #2b2b2b;
@@ -77,8 +77,8 @@ margin: 0 1.5px;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     height: 95%;
-    width: 97%;
-      margin: 0 auto;
+    width: 98%;
+      margin: 3em auto 0 auto;
     max-height:38em;
 }
 .vertical a{
@@ -122,12 +122,15 @@ h1{
   text-align: center;
 letter-spacing: .25em;
 font-size: 1.8em;
+line-height: 1.5;
 }
 h2{
   font-size: 1.4em;
+  line-height: 1.6;
 }
 h3{
   font-size: 1.2em;
+  line-height: 1.6;
   font-family: helvetica,"Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
 }
 h4{
@@ -228,7 +231,7 @@ code {
   color:#616161;
   display:inline-block;
   list-style: none;
-  margin: 3rem auto;
+  margin: 2rem auto 3rem auto;
   padding: .4em .4em .3em .4em;
     text-align:left;
 font-size:.9em;
