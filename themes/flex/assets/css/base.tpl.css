@@ -212,6 +212,9 @@ h6{
   color:#8c8c8c;
   margin: 1.5em  1em auto 1em;
 }
+.des a{
+  border: none;
+}
 blockquote {
 margin:  1em 0em 1.18em 2.05em;
 position: relative;
