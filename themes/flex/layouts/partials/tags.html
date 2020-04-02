@@ -41,10 +41,6 @@
     <strong>源碼</strong>　<a class="link-to-markdown" href="{{ .Params.markdown | safeHTML }}" rel="noopener" target="_blank">査看下載</a> 源文件</span>
   </li>
   {{- end }}
-
-    {{ if .Description }}
-    <li class="Tags-item"><strong>前言</strong>　{{ .Params.Description | safeHTML }}</li>
-    {{ end }}
       </div></div>
     <div class="toc">
         {{ if .TableOfContents }}

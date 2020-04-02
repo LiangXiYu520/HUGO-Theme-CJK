@@ -1140,3 +1140,11 @@ Hugo 0.57.1
 
 `.vertical hr`
 
+### 4.1.2
+
+`.des` 變成沒有邊欄的副標題
+
+`.vertical{width: 97%;`
+
+`a.footnote-backref{` 刪除 `writing-mode:horizontal-tb;`
+
