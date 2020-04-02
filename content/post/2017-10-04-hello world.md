@@ -1084,6 +1084,8 @@ Hugo 0.57.1
 
 博客第四版上線。詳見 [網站歷次改版](/221)。
 
+以前橫排的下劃線、波浪線、註釋都要另外標註，現在在 css 裏面設置一下，所有的都可以統一了，非常舒適了。
+
 4.0.1 原生的 RSS 有問題，每個頁面都把全站的生成一遍，導致非常臃腫。
 
 4.0.2 `img{max-height: 100%;}`
@@ -1092,7 +1094,9 @@ Hugo 0.57.1
 
 ### 4 月 2 日
 
-4.0.3 `h{line-height}`
+#### 4.0.3
+
+ `h{line-height}`
 
 `vertical{width}`
 
@@ -1101,3 +1105,21 @@ Hugo 0.57.1
 `vertical` 取消上 hr
 
 `tag` 納入 `u-wrappe`
+
+#### 4.0.4
+
+`tag a{color}`
+
+`lastmod p`
+
+`.vertical{`
+
+`vertical { border:}` 
+
+`line-height`
+
+`vertical-info`
+
+文件增刪
+
+主葉圖片替換爲 webp，減少 37kb。

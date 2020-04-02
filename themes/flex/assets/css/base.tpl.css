@@ -2,7 +2,7 @@ body {
   font-family: "Adobe Garamond Pro",AdobeGaramondPro,Garamond,"Adobe Caslon Pro",AdobeGaramondPro,Caslon,"Minion Pro",Minion,"Adobe Gurmukhi",AdobeGurmukhi,Baskerville,"Palatino Linotype",Palatino,"Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
 color:#2b2b2b;
 font-size: 1em;
-  line-height: 1.9;
+  line-height: 1.85;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -68,7 +68,8 @@ margin: 0 1.5px;
   text-align: center;
 }
 .vertical{
-      border: 5px solid #8c8c8c;
+    line-height: 1.75;
+      border: .35em solid #2b2b2b;
   word-wrap: break-word;
   text-align: justify;
   text-justify: inter-ideograph;
@@ -117,6 +118,13 @@ transition: .3s;
   .vertical h1{
       text-align: left;
       margin-top: 2em;
+  }
+  .vertical-info{
+    text-align: center;
+    font-size: .9em;
+    color:#8c8c8c;
+  font-family: "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
+margin:3.5em auto -3em auto;
   }
 h1{
   text-align: center;
@@ -246,7 +254,8 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
 .Tags a{
   text-decoration: none;
   border: none;
-  color:#616161;
+  color:black;
+  font-family: "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
 }
 .Tags a:hover{
  color:#b89001;
@@ -256,6 +265,9 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
   text-justify: inter-ideograph;
   margin: 0.2rem;
   padding: 0 0.3rem;
+}
+.Tags-item strong{
+  color:#8c8c8c;
 }
 .toc{
   text-align: left;
@@ -324,8 +336,19 @@ text-align:center;
   background: #fffae8;
 }
 
-.u-clickable {
+.u-clickable1 {
   font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1em;
+  font-family: "Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
+}
+.u-clickable2{
+font-weight: 700;
+ont-family: "Minion Pro",Minion,"Adobe Gurmukhi",AdobeGurmukhi,Baskerville,"Palatino Linotype",Palatino,"Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
+}
+.u-clickable {
+  font-weight: 400;
   text-decoration: none;
   display: inline-block;
 }
@@ -366,7 +389,7 @@ font-size: .8em;
 .lastmod p{
   color:#8c8c8c;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.15em;
   line-height: 1;
   font-family:  "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
 }

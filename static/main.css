@@ -34,7 +34,7 @@ font-family: "Palatino Linotype",Palatino,"Hiragino Mincho ProN",HiraginoMinchoP
 		border: 20px solid #2b2b2b;
 		-webkit-box-shadow: 0 2px 35px -5px  black;
 		box-shadow: 0 2px 35px -5px black;
-		background-image:url('/background.jpg');
+		background-image:url('/background.webp');
 		background-size:cover;
 		transform: perspective(1000px) rotateX(60deg) rotateY(20deg) ;
 		-webkit-transition: 1s;

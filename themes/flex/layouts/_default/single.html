@@ -4,8 +4,10 @@
     <div class="u-wrapper">
       <div class="u-padding">
     {{ partial "tags.html" . }}
-    </div></div>  
+    </div></div>
     {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
+      <div class="vertical-info">← 使用觸控板左右滑動 →<br>
+      電腦上直排空間利用率高80%</div>
 <div class="vertical-wrap">
     <div class="vertical">
     {{ .Content }}
