@@ -237,17 +237,18 @@ img {
 
 pre {
   overflow-x: auto;
-    background-color: #f1e5ba;
   padding: 1rem;
   border-radius: 1rem;
-  border: 1px #2b2b2b solid;
   -webkit-box-shadow: 0 2px 20px -5px  #2b2b2b ;
   box-shadow:  0 2px 20px -5px  #2b2b2b ;
+  background-color:black;
 }
 code {
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace, "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,PingFangSC,Sans-serif;
   font-size: .8em;
-  background-color: #f1e5ba;
+  color: #fffae8;
+      background-color:#2b2b2b;
+        border-radius: .2rem;
 }
 .Banner {
   list-style: none;
