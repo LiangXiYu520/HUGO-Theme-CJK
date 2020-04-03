@@ -23,10 +23,10 @@
   <div class="pagi-wrap">
   <div class="pagi">
     {{ with .PrevInSection }}
-      <span class=".pagi-prev">上篇　<a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+      <span class=".pagi-prev">« <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
       {{- end }}
   {{ with .NextInSection }}
-        <span class=".pagi-next">　　下篇　<a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> »</span>
   {{- end }}
   </div></div>
   <div class="u-wrapper">
