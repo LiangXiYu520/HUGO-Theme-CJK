@@ -180,6 +180,7 @@ transition: .3s;
     color:#8c8c8c;
   font-family: "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
 margin:3.5em auto -3em auto;
+line-height: 1.6;
   }
   sup{
     vertical-align:baseline;
