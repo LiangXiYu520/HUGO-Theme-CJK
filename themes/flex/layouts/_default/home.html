@@ -1,11 +1,4 @@
 {{ define "load_page_assets" }}
-
-  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-
-  {{ $paginator := .Paginate $pages }}
-
-  {{ range $paginator.Pages }}
-    {{ with .Content }}{{ end }}
     {{ $page_css := .Scratch.Get "css" }}
     {{ with $page_css }}
       {{ $css_list := $.Scratch.Get "css" }}
@@ -16,36 +9,106 @@
       {{ $js_list := $.Scratch.Get "js" }}
       {{ . | merge $js_list | $.Scratch.Set "js" }}
     {{ end }}
-  {{ end }}
+<index>
+  <div class="cover">
+  <div class="time">
+  </div>
+  <div class="in"> </div>
+      <div class="in1"> </div>
+  <br><img src="/logo.webp" width="90px"><div class="cate" style="margin-bottom:70px">（ 赫 赫 文 王 ）</div>
+  <div class="cover-hr">○ ● ○ ● ○ ● ○ ● ○</div>
+  <p class="label">永嘉田家後/　生於九五後/</p><p class="label">長于錦官城/　讀的厤史系/</p>
+  <div class="cover-hr">○ ● ○ ● ○ ● ○ ● ○</div>
+  <div class="mail">
+              <table cellpadding=0px style="text-align:left;margin:0 auto 40px auto;">
+              <tr>
+              <td style="text-align:right;font-family: Noto Sans CJK Kr,NotoSansCJKKr,Noto Sans CJK SC,NotoSansCJKSC, PingFang,PingFang SC,Microsoft YaHei,Sans-serif">PGP //&nbsp </td>
+              <td><a href="/kujihhoe (E2269D07) public.asc" target="_blank">E2269D07</a></td>
+              </tr>
+              <tr>
+              <td style="text-align:right;font-family: Noto Sans CJK Kr,NotoSansCJKKr,Noto Sans CJK SC,NotoSansCJKSC, PingFang,PingFang SC,Microsoft YaHei,Sans-serif">email&iMessage //&nbsp </td>
+              <td><span>me (at) kqh.me</span></td>
+              </tr>
+              </table>
+  						</div>
+                  <div class="in2"> </div>
+        </div>
+  <br>
+  <div class="bigcard">
+          <div class="card-container" >
+              <a href="/post" target="_blank"> <div class="card">
+                   <div class="title" >博客</div>
+                   <span class="time" >{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</span><br><br>
+                   <p><img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=Feedly%20RSS&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dfeedly%26queryKey%3Dhttps%3A%2F%2Fkqh.me%2Fpost%2Findex.xml" height="22px"></p>
+          </div></a></div>
 
-  {{ $paginator | .Scratch.Set "paginator" }}
+          <div class="card-container">
+              <a href="https://kqh.wiki" target="_blank"> <div class="card">
+                   <div class="title" >維基×琴譜網</div>
+                   <span class="time" ></span><br><br>
+                   <p>琴譜網｜傳世琴譜數字文本化工程</p>
+          </div></a></div>
+        </div>
 
-{{ end }}
-
-{{ define "main" }}
-
-  {{ $paginator := .Scratch.Get "paginator" }}
-
-  {{ range $paginator.Pages }}
-    <article>
-      {{ partial "heading.html" . }}
-      {{ if site.Params.summaries }}
-        {{ .Summary }}
-        {{ if .Truncated }}
-          <p>
-            <a class="u-clickable" href="{{ .RelPermalink }}">Read More…</a>
-          </p>
-        {{ end }}
-      {{ else }}
-        {{ .Content }}
-      {{ end }}
-      {{ partial "tags.html" . }}
-    </article>
-    {{ with site.Params.divider }}
-      <div class="Divider"></div>
-    {{ end }}
-  {{ end }}
-
-  {{ partial "pagination.html" . }}
-
+  <br>
+  <div class="bigcard">
+  <div class="card-container">
+      <a href="/guqin" target="_blank"> <div class="card"  style="background-color: #444444">
+           <div class="title" style="color:#fffae8">古琴</div>
+           <span class="time" style="color:#c7c7c7">2019-11-09</span><br>
+       <br><p style="color:#c7c7c7">赫赫文王｜<img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=%E7%B6%B2%E6%98%93%E9%9B%B2%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DneteaseMusic%26queryKey%3D275990862"  height="23px">
+    <img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=bilibili%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D176570453"  height="23px"></p>
+  </div></a></div>
+  <div class="card-container">
+      <a href="/recording" target="_blank"> <div class="card" style="background-color: #90b993">
+           <div class="title" style="letter-spacing:0">實地録音 field recording</div>
+           <span class="time" style="color:#daf4dc">2019-11-09</span><br><br>
+           <p  style="color:#daf4dc">情形于聲｜</p>
+  </div></a></div>
+  </div>
+  <div class="bigcard">
+  <div class="card-container">
+      <a href="/calligraphy" target="_blank"> <div class="card"   style="background-color: #f8eec8">
+           <div class="title">書法</div>
+           <span class="time" style="color:#8c7524">2019-06-12</span><br><br>
+           <p style="color:#8c7524">九歲開始練字，正常水平</p>
+  </div></a></div>
+  <div class="card-container">
+      <a href="/design" target="_blank"> <div class="card" style="background-color: #6b0dd5">
+              <div class="title" style="color:#fffae8">平面</div>
+           <span class="time" style="color:#d9bafd">2019-07-08</span><br><br>
+           <p style="color:#d9bafd">一些封面、海報、幻燈，菜鳥水平</p>
+  </div></a></div>
+  </div>
+  <div class="bigcard">
+  <div class="card-container">
+      <a href="/reading" target="_blank"> <div class="card"  style="background-color: #8f0b0c">
+              <div class="title" style="color:#fffae8">讀切韻擬音</div>
+           <span class="time" style="color:#ffbbbc">2019-03-20</span><br><br>
+           <p style="color:#ffbbbc">純娛樂向，沒有學術價値</p>
+  </div></a></div>
+  <div class="card-container">
+      <a href="/dubbing" target="_blank"> <div class="card" style="background-color: #ffffff">
+       <div class="title">旁白×播音</div>
+           <span class="time">2019-04-30</span><br><br>
+           <p>捂臉🤦‍♀️逃走</p>
+  </div></a></div>
+  </div>
+  <br>
+  <div class="paper">
+  	<div class="paper-title">文章發表</div>
+  <p>我這發上來完全是貽笑大方，無視便是。竝非爲了誇耀，其實這些文章沒什麼水平，只是想鞭策自己努力。如果以後能走上學術道路，那這些也筭作一箇起點。（內部刊物指沒有公開發行刊號的刊物）</p>
+  <div class="paper-num"><span class="paper-num-num1"> 1</span>　<a href="/blog/2018/02/09/houzuowu.html"  target="_blank">蜀中琴人侯作吾先生</a></div>
+  <div class="paper-des">錦江琴刊｜第二期丁酉刊（川派古琴學會會刊，內部刊物）</div>
+  <div class="paper-num"><span class="paper-num-num1">2</span>　<a href="/blog/2017/10/28/fuchou.html"  target="_blank">公羊傳 齊襄復讎事詮釋史</a></div>
+  <div class="paper-des">2017 秊「白壽彝史學論著獎‧本科生獎」三等獎<br>
+  春秋學刊｜2017 秊秌季卷（內部刊物）<br>
+  唐山師笵學院學報｜2018 秊第 5 期　弟 46—53 葉</div>
+  <div class="paper-num"><span class="paper-num-num1">3</span>　<a href="/178"  target="_blank">雷次宗 略注喪服經傳 疏議</a>　<sup><span class="paper-num-brand">NEW!</span></sup></div>
+  <div class="paper-des">2018 秊「 白壽彝史學論著獎‧本科生獎」三等獎<br>
+  新經學｜第四輯，鄧秉元主編，上海人民出版社，2019 秊 9 月，弟 4—57 葉</div>
+  <div class="paper-num"><span class="paper-num-num1">4</span>　釋琴指法「卩」</div>
+  <div class="paper-des">卽將出版，敬請期待</div>
+    </div>
+</index>
 {{ end }}
