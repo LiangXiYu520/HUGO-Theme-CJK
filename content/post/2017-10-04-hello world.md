@@ -1192,3 +1192,9 @@ Hugo 0.57.1
 `.code{background-color`
 
 `footer.html`
+
+#### 4.1.7
+
+`.archive-info a`
+
+調整 list
