@@ -1,6 +1,15 @@
 {{ define "main" }}
   <article>
     {{ partial "heading.html" . }}
+    <div class="pagi-wrap">
+    <div class="pagi">
+      {{ with .PrevInSection }}
+        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        {{- end }}
+    {{ with .NextInSection }}
+          　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
+    {{- end }}
+    </div></div>
     <div class="u-wrapper">
       <div class="u-padding">
     {{ partial "tags.html" . }}
@@ -15,7 +24,6 @@
       {{ else }}
       <div class="u-wrapper">
         <div class="u-padding">
-          <hr>
           {{ .Content }}
           <hr>
           </div></div>
