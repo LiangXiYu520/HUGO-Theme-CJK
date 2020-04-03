@@ -3,7 +3,7 @@
   <div class="u-padding">
   {{ partial "heading.html" . }}
   {{ .Content }}
-  {{- $lastmod := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 15) }}
+  {{- $lastmod := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 10) }}
 <div class="count">
   {{- $length := len .Data.Pages }}
 <p>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</p>
@@ -11,14 +11,16 @@
 <br>「作者」「分類」「系列」均可點擊
 <br>2020-04-01 博客、主葉弟四板</div>
 <div class="lastmod">
-  <p>最近修改</p>
+  <h2>最近修改</h2>
   {{- range $element := $lastmod.Pages -}}
             <div class="lastmod-wrap">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>　<span style="color:#8c8c8c">{{ .Lastmod.Format "2006-01-02" }}</span>
+              <span class="time">{{ .Lastmod.Format "2006-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </div>
   {{ end }}
 </div>
-      {{ range .Pages }}
+{{ range .Pages.GroupByPublishDate "2006" }}
+  <h2>{{ .Key }}</h2>
+  {{- range .Pages -}}
               <div class="archive-wrap">
                 <div class="archive-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
                 <span class="archive-info"><a href="/author/{{ .Params.author }}">{{ .Params.author }}</a><strong>　</strong> {{ .PublishDate.Format "2006-01-02" }}<strong> > </strong>{{ .Lastmod.Format "2006-01-02" }}　
@@ -40,6 +42,6 @@
             {{- end }}
           </span>
     </div>
-    {{ end }}
+    {{ end }}{{ end }}
   </div></div>
 {{ end }}

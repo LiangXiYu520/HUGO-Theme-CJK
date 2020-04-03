@@ -2,7 +2,7 @@
 author: "柯棋瀚"
 title: "Hello world!"
 date: 2017-10-04
-lastmod: 2020-04-01
+lastmod: 2020-04-03
 categories: ["站務"]
 tags: ["公吿"]
 url: /blog/2017/10/04/shuoming.html
@@ -1177,3 +1177,13 @@ Hugo 0.57.1
 為了腳注序號不增大行距，把 `<sup>` hack 了。
 
 取消頁腳上面的分割。
+
+### 4 月 3 日
+
+#### 4.1.6
+
+`.lastmod`
+
+`.count`
+
+減少距離
