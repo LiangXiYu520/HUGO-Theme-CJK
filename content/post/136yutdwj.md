@@ -5,7 +5,7 @@ date: 2018-11-28
 lastmod: 2018-11-28
 categories: ["生活"]
 tags: ["講閒譚"]
-markdown: 'https://github.com/kujihhoe/blogac/blob/master/content/post/136yutdwj.md'
+markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/136yutdwj.md'
 contentCopyright: "此篇爲站長約稿，轉載需經過原作者同意"
 ---
 

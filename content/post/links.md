@@ -9,7 +9,7 @@ menu:
   main:
     weight: 60
 url: /links
-markdown: 'https://github.com/kujihhoe/blogac/blob/master/content/links.md'
+markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.md'
 vertical: false
 ---
 

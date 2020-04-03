@@ -6,7 +6,7 @@ lastmod: 2020-04-03
 categories: ["站務"]
 tags: ["公吿"]
 url: /blog/2017/10/04/shuoming.html
-markdown: 'https://github.com/kujihhoe/blogac/blob/master/content/post/2017-10-04-hello world.md'
+markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/2017-10-04-hello world.md'
 vertical: false
 description: "本站更新日誌"
 ---

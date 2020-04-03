@@ -5,7 +5,7 @@ date: 2018-11-24
 lastmod: 2018-11-24
 categories: ["㕜"]
 tags: ["課業"]
-markdown: 'https://github.com/kujihhoe/blogac/blob/master/content/post/132jmbo.md'
+markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/132jmbo.md'
 description: '大三下專選<v>漢唐出土文獻</v>期中展示。繁簡自動轉換，可能有錯。展示前一天整箇小組熬夜準備，印象還蠻深刻。我負責的是「傳」「符」「過所」「棨」「致籍」「檢」等槩念的辨析。不過我講㝵很爛，老師說「後來的同學可以想一想怎麼講好一點。」後來保硏面試的旹候，老師說「這箇同學性格很沈穩，在我的課上也是，不過基礎很好。」看來給老師印象不太好……'
 ---
 

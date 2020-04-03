@@ -9,7 +9,7 @@ menu:
   main:
     weight: 50
 url: /about
-markdown: 'https://github.com/kujihhoe/blogac/blob/master/content/about.md'
+markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/about.md'
 description: '此文爲本站緫序，包含介紹、說明書與聲明。除了這箇緫序，「古琴」「實地錄音」「書法」「讀切韻音」「旁白配音」均有各自的小序，介紹我爲什麼做這些事情。'
 vertical: false
 ---
