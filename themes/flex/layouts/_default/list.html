@@ -19,19 +19,20 @@
 </div>
 <br>
   <div class="archive-wrap">
-<div class="archive-title">標題　<span class="archive-info"> 作者　　「作者」「分類」「系列」均可點擊</span></div>
-<span class="archive-info">發布時間 > 修改時間 〔分類〕 (系列)</span>
+<div class="archive-title">標題　<span class="archive-info"></span></div>
+<span class="archive-info">發布時間 > 修改時間 <span class="archive-info archive-info-author">作者</span> <span class="archive-info archive-info-cate">分類</span> <span class="archive-info archive-info-tag">系列</span></span>
 {{ range .Pages.GroupByPublishDate "2006" }}
   <h2>{{ .Key }}</h2>
   {{- range .Pages -}}
               <div class="archive-wrap">
-                <div class="archive-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a>　<span class="archive-info"><a href="/author/{{ .Params.author }}">{{ .Params.author }}</a></span></div>
+                <div class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></div>
                 <span class="archive-info">{{ .PublishDate.Format "2006-01-02" }} > {{ .Lastmod.Format "2006-01-02" }}
+                  <a href="/author/{{ .Params.author }}" target="_blank"><span class="archive-info archive-info-author">{{ .Params.author }}</span></a>
             {{ with .Params.categories -}}
                 {{ range . }}
                 {{- $name := . -}}
                 {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-                  〔<a href="/categories/{{ $name }}" >{{ $name }}</a>〕
+                  <a href="/categories/{{ $name }}"  target="_blank"><span class="archive-info archive-info-cate">{{ $name }}</span></a>
                 {{ end -}}
                 {{ end }}
             {{- end }}
@@ -39,7 +40,7 @@
                 {{ range . }}
                 {{- $name := . -}}
                 {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-                (<a href="/tags/{{ $name }}" >{{ $name }}</a>)
+                <a href="/tags/{{ $name }}"  target="_blank"><span class="archive-info archive-info-tag">{{ $name }}</span></a>
                 {{ end -}}
                 {{ end }}
             {{- end }}
