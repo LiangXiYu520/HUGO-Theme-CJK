@@ -15,7 +15,7 @@
   </div>
   <div class="in"> </div>
       <div class="in1"> </div>
-  <br><img src="/logo.webp" width="90px"><div class="cate" style="margin-bottom:70px">（ 赫 赫 文 王 ）</div>
+  <br><img src="/logo.webp" width="90px"><div class="cate" style="margin:1em auto 4em auto">（ 赫 赫 文 王 ）</div>
   <div class="cover-hr">○ ● ○ ● ○ ● ○ ● ○</div>
   <p class="label">永嘉田家後/　生於九五後/</p><p class="label">長于錦官城/　讀的厤史系/</p>
   <div class="cover-hr">○ ● ○ ● ○ ● ○ ● ○</div>
@@ -33,24 +33,24 @@
   						</div>
                   <div class="in2"> </div>
         </div>
-  <br>
-  <div class="bigcard">
-          <div class="card-container" >
-              <a href="/post" target="_blank"> <div class="card">
-                   <div class="title" >博客</div>
-                   <span class="time" >{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</span><br><br>
-                   <p><img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=Feedly%20RSS&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dfeedly%26queryKey%3Dhttps%3A%2F%2Fkqh.me%2Fpost%2Findex.xml" height="22px"></p>
-          </div></a></div>
-
-          <div class="card-container">
-              <a href="https://kqh.wiki" target="_blank"> <div class="card">
-                   <div class="title" >維基×琴譜網</div>
-                   <span class="time" ></span><br><br>
-                   <p>琴譜網｜傳世琴譜數字文本化工程</p>
-          </div></a></div>
+<div class="paper" style="margin-bottom:0">
+     <h1 style="margin-top:0"><a href="/post" target="_blank">博客</a></h1>
+        <div class="lastmod">
+          <h2>最近修改</h2>
+            {{- $lastmod := .Paginate (where .Site.Pages.ByLastmod.Reverse "Type" "post") (index 20) }}
+          {{- range $lastmod.Pages -}}
+                    <div class="lastmod-wrap">
+                      <span class="time">{{ .Lastmod.Format "2006-01-02" }} < {{ .Date.Format "2006-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </div>
+          {{ end }}
         </div>
-
-  <br>
+</div>
+<div class="card-container" style="margin:180px auto">
+<a href="https://kqh.wiki" target="_blank"> <div class="card">
+<div class="title" >維基×琴譜網</div>
+<span class="time" ></span><br><br>
+<p>琴譜網｜傳世琴譜數字文本化工程</p>
+</div></a></div>
   <div class="bigcard">
   <div class="card-container">
       <a href="/guqin" target="_blank"> <div class="card"  style="background-color: #444444">

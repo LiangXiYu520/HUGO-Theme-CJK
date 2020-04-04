@@ -1,7 +1,5 @@
 {{ $base_css := resources.Get "css/base.tpl.css" | resources.ExecuteAsTemplate "css/base.css" . }}
-
 {{ $site_css := $base_css }}
-
 {{ with site.Params.css }}
   {{ $css_list := slice $site_css }}
   {{ range . }}
@@ -10,9 +8,7 @@
   {{ end }}
   {{ $site_css = $css_list | resources.Concat "css/base.css" }}
 {{ end }}
-
 {{ minify $site_css | fingerprint | .Page.Scratch.SetInMap "css" "base" }}
-
 {{ with site.Params.js }}
   {{ $js_list := slice }}
   {{ range . }}

@@ -379,6 +379,7 @@ text-align:center;
   text-align: center;
   margin: 3rem auto 1rem auto;
   font-size: .85em;
+  font-family:"Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   color:#8c8c8c;
   line-height: 1.6;
 }
@@ -414,8 +415,8 @@ a.Banner-link.u-clickable:hover{
 }
 .archive-wrap{
     list-style: none;
+    text-align: center;
     margin: 1.5em auto;
-    display: block;
 line-height: 1.4;
 color:#616161;
 }
@@ -424,12 +425,23 @@ color:#616161;
 }
 .archive-wrap  a:hover{
 color:#b89001;}
+.archive-left{
+    font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace;
+    margin: auto .6em auto 0;
+font-size: 1.85em;
+font-weight: 700;
+float: left;
+color: #ffda56;
+}
+.archive-right{
+text-align:left;
+}
 .archive-title a{
   color: #2b2b2b;
 }
 .archive-info {
-  font-size: .8em;
-  margin-right: 6px;
+  font-size: .9em;
+  margin: auto .5em auto 0em;
   color:#616161;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 }
@@ -442,27 +454,30 @@ color:#b89001;}
 }
 .archive-info-cate{
     border: 1px solid #616161;
-        padding: 3px 4px;
+        padding: 2px 4px;
 }
 .archive-info-author{
   border-radius: 15px;
-      padding: 3px 6px;
+      padding: 2px 6px;
     border: 1px solid #616161;
 }
 .archive-info-tag{
   border: 1px dashed #616161;
-      padding: 3px 4px;
+      padding:2px 4px;
 }
 .lastmod{
   line-height: 1.9;
-  font-size: .9em;
+  font-size: 1em;
   margin: 2em auto 0em auto;
 }
 .lastmod a{
   border: none;
 }
+.lastmod h2{
+  margin-top: 0;
+}
 .count{
-  margin: -1em auto -1em auto;
+  margin: -1em auto 3em auto;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   color:#8c8c8c;
   font-size: .8em;
@@ -563,6 +578,50 @@ margin:2em 1em 0 1em;
       padding: 0px 8px;
 }
 
+.pagination {
+  margin-top: 3.5em;
+  text-align: center;}
+  .pagination li {
+    display: inline-block;
+    font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace;
+ }
+  .pagination li  a {
+      font-family: $code-font-family;
+      font-size: .9em;
+      background:;
+      margin: 0 .6em;
+      color: #2b2b2b;
+      line-height: 1.4;
+      padding: .5em .7em .4em;
+      position: relative;
+      border-radius: 8px;
+      border: none;
+      text-decoration: none;
+      -webkit-transition: .3s;
+      transition: .3s;
+      -webkit-box-shadow: 0 2px 10px -5px #2b2b2b;
+    	box-shadow: 0 2px 10px -5px #2b2b2b;
+    }
+  .pagination li  a:hover{
+      background: #fee56f;
+      -webkit-box-shadow: 0 2px 20px -5px #2b2b2b;
+    	box-shadow: 0 2px 20px -5px #2b2b2b;
+    }
+  .pagination   .active a{
+      background: #fee56f;
+      color: #2b2b2b;
+      cursor: default;
+      z-index: 2;
+      font-weight: 800;
+    }
+      .pagination   .active a:hover{
+      -webkit-box-shadow: 0 2px 10px -5px #2b2b2b;
+      box-shadow: 0 2px 10px -5px #2b2b2b;
+    }
+
+
+
+
 
 
 
@@ -593,7 +652,8 @@ text-align:justify;
 text-justify: inter-ideograph;
 word-break: break-all;
 font-family: "Palatino Linotype",Palatino,"Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
-	}
+padding: 1em;
+  }
 	.cover{
 		background: #fffae8;
 		word-wrap:break-word;
@@ -754,7 +814,7 @@ box-shadow:  0 2px 30px -5px  #2b2b2b ;
   text-align: left;
 	background: #fffae8;
 	line-height: 1.5;
-	max-width: 650px;
+	max-width: 40em;
 	padding:  2em 3em;
 	margin: 3em auto 10em auto;
 	border: 1px #2b2b2b solid;
@@ -838,7 +898,7 @@ box-shadow:  0 2px 30px -5px  #2b2b2b ;
 			.card .title{	font-size: 22px; letter-spacing: 3px;}
 			.card p{	font-size: 16px;}
 .paper{
-  margin:2em 1em 6em 1em;
+  margin:2em auto 6em auto;
 }
 			.paper .title {
 					font-size: 1.3em; letter-spacing: .2em;

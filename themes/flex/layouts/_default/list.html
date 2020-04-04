@@ -3,30 +3,20 @@
   <div class="u-padding">
   {{ partial "heading.html" . }}
   {{ .Content }}
-  {{- $lastmod := .Paginate (where .Pages.ByLastmod.Reverse "Type" "post") (index 10) }}
 <div class="count">
   {{- $length := len .Data.Pages }}
 <p>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</p>
 全部博文 IPFS hash：QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX
-<br>2020-04-01 博客、主葉弟四板上線　2020-04-03 v4.1.8</div>
-<div class="lastmod">
-  <h2>最近修改</h2>
-  {{- range $element := $lastmod.Pages -}}
-            <div class="lastmod-wrap">
-              <span class="time">{{ .Lastmod.Format "2006-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </div>
-  {{ end }}
-</div>
-<br>
+<br>2020-04-01 弟四板上線　2020-04-04 v4.3.0</div>
   <div class="archive-wrap">
-<div class="archive-title">標題　<span class="archive-info"></span></div>
-<span class="archive-info">發布時間 > 修改時間 <span class="archive-info archive-info-author">作者</span> <span class="archive-info archive-info-cate">分類</span> <span class="archive-info archive-info-tag">系列</span></span>
-{{ range .Pages.GroupByPublishDate "2006" }}
-  <h2>{{ .Key }}</h2>
-  {{- range .Pages -}}
+{{ $coun := add $length 1 }}
+{{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
+  {{- range $paginator.Pages -}}
               <div class="archive-wrap">
-                <div class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></div>
-                <span class="archive-info">{{ .PublishDate.Format "2006-01-02" }} > {{ .Lastmod.Format "2006-01-02" }}
+                <span class="archive-left">
+            {{ $coun = sub $coun 1  }}{{ $coun }}</span>
+                <span class="archive-right"><div class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></div>
+                <div class="archive-info">{{ .PublishDate.Format "2006-01-02" }} > {{ .Lastmod.Format "2006-01-02" }}
                   <a href="/author/{{ .Params.author }}" target="_blank"><span class="archive-info archive-info-author">{{ .Params.author }}</span></a>
             {{ with .Params.categories -}}
                 {{ range . }}
@@ -44,8 +34,10 @@
                 {{ end -}}
                 {{ end }}
             {{- end }}
-          </span>
+          </span></div>
     </div>
-    {{ end }}{{ end }}
-  </div></div>
+    {{ end }}
+    </div>
+    {{ partial "pagination.html" . }}
+  </div>
 {{ end }}

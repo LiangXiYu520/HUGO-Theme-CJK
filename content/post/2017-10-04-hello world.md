@@ -2,7 +2,7 @@
 author: "柯棋瀚"
 title: "Hello world!"
 date: 2017-10-04
-lastmod: 2020-04-03
+lastmod: 2020-04-04
 categories: ["站務"]
 tags: ["公吿"]
 url: /blog/2017/10/04/shuoming.html
@@ -1214,3 +1214,15 @@ sans 英文字體。
 #### 4.2.0
 
 再造。把主葉的 css 合并到了博客的 css。邏輯終於清晰了。
+
+### 4 月 4 日
+
+#### 4.3.0
+
+`footer.html`
+
+主葉加入最近修改。
+
+加入序號。
+
+加入分葉。
