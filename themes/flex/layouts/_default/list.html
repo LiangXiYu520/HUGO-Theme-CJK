@@ -8,7 +8,7 @@
   {{ $count1 := add $length 1 }}
 <p>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</p>
 全部博文 IPFS hash：QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX
-<br>2020-04-01 弟四板上線　2020-04-04 v4.3.5</div>
+<br>2020-04-01 弟四板上線　2020-04-04 v4.4.0 採用顛覆式的卡片式頁腳，取消了頁首</div>
 {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
 </div></div>
   {{ $count0 := $paginator.PageNumber }}
@@ -16,7 +16,6 @@
 {{ $count3 := mul 50 $count2}}
 {{ $count4 := sub $count1 $count3 }}
 
-<div class="archive-wrapper">
   <div class="u-wrapper">
     <div class="u-padding">
       <nav class="pagination">
@@ -66,5 +65,5 @@
       </nav></div>
     </div>
   {{ partialCached "footer.html" . }}
-</div>
+
 {{ end }}

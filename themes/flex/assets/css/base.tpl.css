@@ -8,7 +8,6 @@ font-size: 1em;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #fffae8;
 -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: scroll;
@@ -18,27 +17,9 @@ font-size: 1em;
     text-align: justify;
     text-justify: inter-ideograph;
     min-height:100%;
+      background-color: #fffae8;
+
 }
-.col-wrap{
-  margin-top: 0em;
-  text-align: center;
-  display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-  background-color: #fffae8;
-}
-.col {
-  text-align: left;
-    margin: 0 auto;
-  display:flex;
-}
- .col li{
-      list-style:none;
-}
-.col a{border: none;}
 hr{
   margin:2em auto;
   max-width:6.7em;
@@ -267,6 +248,9 @@ img {
   border: 1px #2b2b2b solid;
   -webkit-box-shadow: 0 2px 20px -5px  #2b2b2b ;
   box-shadow:  0 2px 20px -5px  #2b2b2b ;
+  margin: auto;
+  text-align: center;
+  display: flex;
 }
 
 pre {
@@ -291,6 +275,12 @@ code {
   justify-content: space-between;
   margin: 0;
   padding: 0 1em;
+  box-shadow:  0 2px 30px -5px  #2b2b2b ;
+  border-bottom: 3px solid #2b2b2b;
+  background: -webkit-linear-gradient(left, #c41011 , #4300db);
+           background: -o-linear-gradient(right, #c41011, #4300db);
+           background: -moz-linear-gradient(right, #c41011, #4300db);
+           background: linear-gradient(to right, #c41011 , #4300db);
 }
 {{ $len := len site.Menus.nav }}
 {{ range seq $len }}
@@ -304,7 +294,7 @@ code {
 .Banner-link {
   font-size: .9rem;
   font-family: "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
-  color: #2b2b2b;
+  color: #fffae8;
   padding: 0.5rem .6rem;
   border: none;
 }
@@ -399,16 +389,19 @@ text-align:center;
 }
 .Footer {
   text-align: center;
-  margin: 3em auto -5em auto;
+  margin: 3em auto 0em auto;
   font-size: .85em;
   font-family:"Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
-  color:#8c8c8c;
+  color:#d5d5d5;
   line-height: 1.6;
-  padding-bottom: 5em;
-  border-bottom: 5px solid #2b2b2b;
+  padding-bottom: 2em;
 }
 .Footer a{
   border: none;
+  color: #fffae8;
+}
+.Footer a:hover{
+  color:#2b2b2b;
 }
 .u-wrapper {
   {{ with site.Params.width }}max-width: {{ . }};{{ end }}
@@ -424,6 +417,9 @@ text-align:center;
   font-size: 1.1em;
   font-family: "Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
 }
+.u-clickable1:hover{
+  color:#2b2b2b;
+}
 .u-clickable2{
 font-weight: 700;
 font-family: "Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
@@ -437,22 +433,47 @@ font-family: "Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Noto Seri
 a.Banner-link.u-clickable:hover{
   font-weight: 700;
 }
-.archive-wrapper{
-  margin-top:4em;padding-top:0.1em;box-shadow:  0 -40px 50px -25px  #808080;
-  	position:relative;
+.footer-wrapper{
+  margin-top:4em;
+  box-shadow:  0px 0px 70px 5px  #2b2b2b;
     background-color: #fffae8;
+border: .8em solid #2b2b2b;
+  border-radius: 60px;
+  margin: 6em 1em 2em 1em;
+  padding-top:0.1em;
+   background: -webkit-linear-gradient(left, #c41011 , #4300db);
+             background: -o-linear-gradient(right,#c41011, #4300db);
+             background: -moz-linear-gradient(right,#c41011, #4300db);
+             background: linear-gradient(to right, #c41011,  #4300db);
 }
-  .archive-wrapper:hover{ animation-name: wrapper;
-animation-duration:.5s;
-animation-iteration-count:1;
-animation-timing-function: ease-in;
-animation-direction:alternate;
-animation-fill-mode:forwards;
-    background-color: #fffae8;
+.col-wrap{
+  text-align: center;
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+  background-color: #fffae8;
 }
-@keyframes wrapper{
-  from {bottom:0em;}
-  to{ bottom:9em;}
+.col {
+  text-align: left;
+    margin: 0 auto;
+  display:flex;
+  color: #fffae8;
+}
+ .col li{
+      list-style:none;
+      line-height: 1.5;
+}
+.col a{
+  font-size: .9em;
+  border: none;
+    color: #fffae8;
+  font-family:  "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+}
+.col a:hover{
+  color:#2b2b2b
 }
 .archive-wrap{
     list-style: none;
@@ -642,40 +663,24 @@ margin:2em 1em 0 1em;
       padding: .5em .7em .4em;
       position: relative;
       border-radius: 8px;
-      border: none;
+      border: 1px solid #2b2b2b;
       text-decoration: none;
       -webkit-transition: .3s;
       transition: .3s;
-      -webkit-box-shadow: 0 2px 10px -5px #2b2b2b;
-    	box-shadow: 0 2px 10px -5px #2b2b2b;
     }
-  .pagination li  a:hover{
-      -webkit-box-shadow: 0 2px 20px -5px #2b2b2b;
-    	box-shadow: 0 2px 20px -5px #2b2b2b;
+  .pagination li a:hover{
+    border: 1px solid #fffae8;
+        box-shadow: none;
     }
   .pagination   .active a{
-      color: #2b2b2b;
+      color: #eec73c;
       cursor: default;
-      z-index: 2;
       font-weight: 800;
-      -webkit-box-shadow: 0 2px 20px -5px #2b2b2b;
-    	box-shadow: 0 2px 20px -5px #2b2b2b;
+      border:1px solid  #eec73c;
     }
       .pagination   .active a:hover{
-      -webkit-box-shadow: 0 2px 10px -5px #2b2b2b;
-      box-shadow: 0 2px 10px -5px #2b2b2b;
+  border:1px solid  #eec73c;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

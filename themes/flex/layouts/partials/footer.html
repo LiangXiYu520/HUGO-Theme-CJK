@@ -1,26 +1,30 @@
-<div class="archive-wrapper">
-  <div class="col-wrap">
+
+  <div class="footer-wrapper col-wrap">
   <div class="col">
     <ul>
-      <h3 class="">分類</h3>
+      <li><h2><a href="/" target="_blank">主葉</a></h2></li>
+          <li><h2><a href="/post" target="_blank">博客</a></h2></li>
+              <li><h2><a href="/about" target="_blank">關於</a></h2></li>
+                <li><h2><a href="/links" target="_blank">友鏈</a></h2></li>
+                <li><h2><a href="https://kqh.wiki" target="_blank">維基</a></h2></li>
+            </ul>
+    <ul>
+      <h2>分類</h2>
         {{ range .Site.Taxonomies.categories }}
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+        <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
         {{ end }}
+        <h2>作者</h2>
+          {{ range .Site.Taxonomies.author }}
+          <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
+          {{ end }}
     </ul>
     <ul>
-      <h3 class="">系列</h3>
+      <h2>系列</h2>
         {{ range .Site.Taxonomies.tags }}
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
-        {{ end }}
-    </ul>
-    <ul>
-      <h3 class="">作者</h3>
-        {{ range .Site.Taxonomies.author }}
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+        <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
         {{ end }}
     </ul>
   </div>
-    </div>
   <footer class="Footer">
     <div class="u-wrapper">
       <div class="u-padding">
@@ -30,4 +34,4 @@
       </div>
     </div>
   </footer>
-</div>
+    </div>
