@@ -26,15 +26,7 @@ menu:
   - name: 博客
     url: /post
     weight: 1
-  - name: 分類
-    url: /categories
-    weight: 2
-  - name: 系列
-    url: /tags
-    weight: 3
-  - name: 作者
-    url: /author
-    weight: 4
+
   - name: 總序
     url:  /about
     weight: 5

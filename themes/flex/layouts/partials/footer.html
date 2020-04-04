@@ -1,4 +1,26 @@
-
+<div class="archive-wrapper">
+  <div class="col-wrap">
+  <div class="col">
+    <ul>
+      <h3 class="">分類</h3>
+        {{ range .Site.Taxonomies.categories }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+        {{ end }}
+    </ul>
+    <ul>
+      <h3 class="">系列</h3>
+        {{ range .Site.Taxonomies.tags }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+        {{ end }}
+    </ul>
+    <ul>
+      <h3 class="">作者</h3>
+        {{ range .Site.Taxonomies.author }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+        {{ end }}
+    </ul>
+  </div>
+    </div>
   <footer class="Footer">
     <div class="u-wrapper">
       <div class="u-padding">
@@ -8,3 +30,4 @@
       </div>
     </div>
   </footer>
+</div>

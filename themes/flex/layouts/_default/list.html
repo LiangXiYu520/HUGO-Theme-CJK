@@ -8,33 +8,40 @@
   {{ $count1 := add $length 1 }}
 <p>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</p>
 全部博文 IPFS hash：QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX
-<br>2020-04-01 弟四板上線　2020-04-04 v4.3.0</div>
+<br>2020-04-01 弟四板上線　2020-04-04 v4.3.5</div>
 {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
-<nav class="pagination">
-  <ul>
-    {{ range $paginator.Pagers }}
-    <li {{ if eq . $paginator }} class="active" {{end}}>
-      <a href="{{ .URL }}">{{ .PageNumber }}</a>
-    </li>{{ end }}
-  </ul>
-  </nav>
+</div></div>
   {{ $count0 := $paginator.PageNumber }}
 {{ $count2 := sub $count0 1 }}
 {{ $count3 := mul 50 $count2}}
 {{ $count4 := sub $count1 $count3 }}
-  <div class="archive-wrap">
-      {{- range $paginator.Pages -}}
+
+<div class="archive-wrapper">
+  <div class="u-wrapper">
+    <div class="u-padding">
+      <nav class="pagination">
+        <ul>
+          {{ range $paginator.Pagers }}
+          <li {{ if eq . $paginator }} class="active" {{end}}>
+            <a href="{{ .URL }}">{{ .PageNumber }}</a>
+          </li>{{ end }}
+        </ul>
+        </nav>
+        {{- range $paginator.Pages -}}
               <div class="archive-wrap">
         <span class="archive-left">
         {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
-                <span class="archive-right"><div class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a></div>
-                <div class="archive-info">{{ .PublishDate.Format "2006-01-02" }} > {{ .Lastmod.Format "2006-01-02" }}
-                  <a href="/author/{{ .Params.author }}" target="_blank"><span class="archive-info archive-info-author">{{ .Params.author }}</span></a>
+                <span class="archive-right">
+                  <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">{{- .Params.author -}}</a></span>
+                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
+                </div>
+                <div class="archive-info">{{ .PublishDate.Format "2006-01-02" }} > {{ .Lastmod.Format "2006-01-02" }}&nbsp
+
             {{ with .Params.categories -}}
                 {{ range . }}
                 {{- $name := . -}}
                 {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-                  <a href="/categories/{{ $name }}"  target="_blank"><span class="archive-info archive-info-cate">{{ $name }}</span></a>
+                  <span class="archive-info archive-info-cate"> <a href="/categories/{{ $name }}"  target="_blank">{{ $name -}}</a></span>
                 {{ end -}}
                 {{ end }}
             {{- end }}
@@ -42,22 +49,22 @@
                 {{ range . }}
                 {{- $name := . -}}
                 {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-                <a href="/tags/{{ $name }}"  target="_blank"><span class="archive-info archive-info-tag">{{ $name }}</span></a>
+                <span class="archive-info archive-info-tag"><a href="/tags/{{ $name }}"  target="_blank">{{- $name -}}</a></span>
                 {{ end -}}
                 {{ end }}
-            {{- end }}
-          </span></div>
+            {{- end }}</div>
+          </span>
     </div>
     {{ end }}
-    <nav class="pagination" style="margin-bottom:0">
+    <nav class="pagination">
       <ul>
         {{ range $paginator.Pagers }}
         <li {{ if eq . $paginator }} class="active" {{end}}>
           <a href="{{ .URL }}">{{ .PageNumber }}</a>
         </li>{{ end }}
       </ul>
-      </nav>
+      </nav></div>
     </div>
-  </div>
-
+  {{ partialCached "footer.html" . }}
+</div>
 {{ end }}
