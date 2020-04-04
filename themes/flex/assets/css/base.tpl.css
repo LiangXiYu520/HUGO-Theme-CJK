@@ -579,7 +579,7 @@ margin:2em 1em 0 1em;
 }
 
 .pagination {
-  margin-top: 3.5em;
+  margin: 3.5em auto;
   text-align: center;}
   .pagination li {
     display: inline-block;
