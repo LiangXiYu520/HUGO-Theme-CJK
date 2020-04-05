@@ -15,8 +15,8 @@
 <body>
   <main>
         {{ block "main" . }}{{ end }}
+        {{ partialCached "footer.html" . }}
   </main>
-
 </body>
 
 </html>

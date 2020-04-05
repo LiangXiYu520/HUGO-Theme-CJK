@@ -1,46 +1,24 @@
 {{ define "main" }}
   <article>
     {{ partial "heading.html" . }}
-    <div class="pagi-wrap">
-    <div class="pagi">
-      {{ with .PrevInSection }}
-        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-        {{- end }}
-    {{ with .NextInSection }}
-          　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
-    {{- end }}
-    </div></div>
     <div class="u-wrapper">
       <div class="u-padding">
     {{ partial "tags.html" . }}
     </div></div>
     {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
-      <div class="vertical-info">← 使用觸控板左右滑動 →<br>
-      電腦上直排空間利用率比橫排高80%</div>
 <div class="vertical-wrap">
     <div class="vertical">
     {{ .Content }}
     </div></div>
       {{ else }}
-      <div class="u-wrapper">
-        <div class="u-padding">
+          <div class="vertical-false">
           {{ .Content }}
-          <hr>
-          </div></div>
+          </div>
+
     {{ end }}
-  <div class="pagi-wrap">
-  <div class="pagi">
-    {{ with .PrevInSection }}
-      <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-      {{- end }}
-  {{ with .NextInSection }}
-        　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
-  {{- end }}
-  </div></div>
   <div class="u-wrapper">
     <div class="u-padding">
 {{ partial "comments.html" . }}
 </div></div>
   </article>
-    {{ partialCached "footer.html" . }}
 {{ end }}
