@@ -136,6 +136,8 @@ vertical: false
 
 [博文历史列表](https://liebiao.qian.lu/)　〔也是格子老師運營的，最大的亮點是 RSS 聚合！！〕
 
+[寻我](https://seekbetter.me/?sort=recommend&mode=blog&page=1)　优秀个人独立博客
+
 [时间物质](https://matterofti.me/)　<n>20200309正式上線。一个弱社交型博客網站，利用 writefreely 搭建</n>
 
 [spotify的播客收藏](https://www.douban.com/note/752408893/)
@@ -204,6 +206,8 @@ vertical: false
 
 [Tonis Foto Haus](http://www.tonichan.xyz)　Amateur Photographer. Novice Data Scientist.Zhejiang University, Chu Ko Chen Honors College.
 
+[夏泉的后院](https://www.hxueh.net/)　在深圳长大，于深圳大学毕业，目前在深圳生活。
+
 ### 高材生
 
 [BYvoid](https://www.byvoid.com)　〔韻典網那清華大神〕
@@ -265,6 +269,8 @@ vertical: false
 [燴餅](https://zhb.xyz/)　本科在读，计算机科学与技术专业，家乡山西太原，现居北京。现状：读书、练字、健身、学习乐器、算法训练、不听课。
 
 [无文字 | 三无计划](https://blog.imalan.cn/about/)　在首都念书的大学生。是个好人
+
+[笛声](https://hqidi.com/)
 
 ### 旅行類
 
