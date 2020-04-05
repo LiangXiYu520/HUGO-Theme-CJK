@@ -19,11 +19,9 @@ vertical: false
 
 # 錄音
 
-<img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=%E7%B6%B2%E6%98%93%E9%9B%B2%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DneteaseMusic%26queryKey%3D275990862"  height="23px">
+我的網易音樂人<listen>[赫赫文王](https://music.163.com/#/artist?id=13612790)</listen><img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=%E7%B6%B2%E6%98%93%E9%9B%B2%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DneteaseMusic%26queryKey%3D275990862"  height="23px">
 
-​    <img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=bilibili%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D176570453"  height="23px">
-
-我的網易音樂人<listen>[赫赫文王](https://music.163.com/#/artist?id=13612790)</listen>
+視頻發在 B 站上<listen>[赫赫文王](https://space.bilibili.com/176570453)</listen><img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=bilibili%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D176570453"  height="23px">
 
 ## No.1　臞仙曰
 
@@ -72,8 +70,6 @@ vertical: false
 5. 醉漁唱晚
 
 # 視頻
-
-視頻發在 B 站上：[kujihhoe](https://space.bilibili.com/176570453)。
 
 ## No.1　二〇一九
 
