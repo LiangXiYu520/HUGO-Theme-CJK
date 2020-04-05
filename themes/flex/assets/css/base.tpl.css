@@ -793,10 +793,7 @@ animation-direction:alternate;
 	from {bottom:0px;}
 	to{ bottom:.5em;background:#9a9a9a}
 }
-@media screen and (max-width:1000px){
-  .footer-img{
-    display:none;
-  }
+@media screen and (max-width:900px){
   .cover{
     transform: none;
   }
