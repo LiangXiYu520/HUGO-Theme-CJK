@@ -766,14 +766,14 @@ float:right;
 	line-height: 1.2;
 	}
   .cover .mail{
-		font-size: 1em;
+		font-size:.9em;
 	}
 .cover .mail a{
 border-bottom: .15em solid #d6a700 ;
 }
 .cover-hr{
 	text-align: center;
-	font-size: .6em;
+	font-size: .35em;
 	color:#c5a031;
 	margin:4em auto;
 	letter-spacing: 2px;
