@@ -4,7 +4,7 @@ title: "旁白配音×播音"
 date: 2018-11-19
 lastmod: 2019-04-29
 categories: ["錄音"]
-tags: ["主枼"]
+tags: ["枼腳"]
 url: /dubbing
 vertical: false
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/dubbing.md'

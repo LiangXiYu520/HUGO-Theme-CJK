@@ -4,7 +4,7 @@ title: "古琴表演、講座記錄"
 date: 2018-12-07
 lastmod: 2019-11-15
 categories: ["琴"]
-tags: ["主枼"]
+tags: ["枼腳"]
 url: /performing
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/performing.md'
 description: "天殺的微信，信息檢索太不方便，搜也搜不到，只能挨箇去翻，翻也不方便，兩年前的推送翻了五分鐘。微信什麼時候能倒閉啊？我把我所有用過話筒的場合都記下來，可能很多雞毛蒜皮的，純粹是我箇人的記錄，不用在意。"

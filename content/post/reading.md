@@ -4,7 +4,7 @@ title: "讀切韻擬音"
 date: 2018-11-19
 lastmod: 2019-03-20
 categories: ["漢語"]
-tags: ["主枼"]
+tags: ["枼腳"]
 url: /reading
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/reading.md'
 vertical: false

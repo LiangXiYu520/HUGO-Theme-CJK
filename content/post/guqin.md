@@ -4,7 +4,7 @@ title: "古琴錄音錄象"
 date: 2018-11-19
 lastmod: 2019-06-12
 categories: ["琴"]
-tags: ["主枼"]
+tags: ["枼腳"]
 url: /guqin
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/guqin.md'
 description: '學琴五秊，自以爲小有所成，便想發布錄音。弟 1—4 㫷是 2018 秊四月初錄的，不怎麼滿意，在錄音棚狀態跟平時彈不太一樣。計畫以後每秊二月㪅新。'

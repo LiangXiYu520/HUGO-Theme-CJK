@@ -4,7 +4,7 @@ title: "我的書法"
 date: 2019-07-22
 lastmod: 2019-07-22
 categories: ["書"]
-tags: ["主枼"]
+tags: ["枼腳"]
 url: /calligraphy
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/calligraphy.md'
 description: '<p>放一些寫的字，一點沒有也不行。</p>'

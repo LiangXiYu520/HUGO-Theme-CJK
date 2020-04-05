@@ -4,7 +4,7 @@ title: "文章發表"
 date: 2018-11-10
 lastmod: 2019-09-30
 categories: ["經"]
-tags: ["主枼"]
+tags: ["枼腳"]
 url: /paper
 vertical: false
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/paper.md'

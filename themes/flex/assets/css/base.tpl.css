@@ -574,7 +574,7 @@ color:#2b2b2b
   margin-top: 0;
 }
 .count{
-  margin: -1em auto 3em auto;
+  margin: -1em auto 3em;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   color:#2b2b2b;
   font-size: .9em;
@@ -674,16 +674,15 @@ margin:2em 1em 0 1em;
   transition: .3s;
       padding: 0px 8px;
 }
-
+.pagination-wrap{
+    text-align: center;
+}
 .pagination {
   margin: 3.5em auto;
-  text-align: center;}
-  .pagination li {
-    display: inline-block;
-    font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace;
-
- }
-  .pagination li  a {
+  display: inline-block;
+  font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace;
+}
+  .pagination  a {
     background:#fffae8;
 box-shadow:  0 2px 20px -5px  #8c8c8c ;
       font-size: .9em;
@@ -698,7 +697,7 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
       -webkit-transition: .3s;
       transition: .3s;
     }
-  .pagination li a:hover{
+  .pagination a:hover{
     border: 2px solid #fffae8;
         box-shadow: none;
         background: none;

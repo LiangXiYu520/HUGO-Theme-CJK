@@ -12,14 +12,14 @@
 {{ $count2 := sub $count0 1 }}
 {{ $count3 := mul 50 $count2}}
 {{ $count4 := sub $count1 $count3 }}
-      <nav class="pagination">
-        <ul>
+      <div class="pagination-wrap"><nav class="pagination">
+        <div>
           {{ range $paginator.Pagers }}
-          <li {{ if eq . $paginator }} class="active" {{end}}>
+          <span {{ if eq . $paginator }} class="active" {{end}}>
             <a href="{{ .URL }}">{{ .PageNumber }}</a>
-          </li>{{ end }}
-        </ul>
-        </nav>
+          </span>{{ end }}
+        </div>
+        </nav></div>
         <div class="archive-wrapper">
         {{- range $paginator.Pages -}}
               <div class="archive-wrap">
@@ -49,12 +49,12 @@
           </span>
     </div>
     {{ end }}</div>
-    <nav class="pagination">
-      <ul>
+    <div class="pagination-wrap"><nav class="pagination">
+      <div>
         {{ range $paginator.Pagers }}
-        <li {{ if eq . $paginator }} class="active" {{end}}>
+        <span {{ if eq . $paginator }} class="active" {{end}}>
           <a href="{{ .URL }}">{{ .PageNumber }}</a>
-        </li>{{ end }}
-      </ul>
-      </nav>
+        </span>{{ end }}
+      </div>
+      </nav></div>
 {{ end }}
