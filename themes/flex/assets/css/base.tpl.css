@@ -465,6 +465,16 @@ color:#f88788;
 .Footer a:hover{
   color:#2b2b2b;
 }
+.footer-img{
+  width: 24em;
+  height:24em;
+  background-image:url('/seal.webp');
+  background-size:cover;
+  opacity: .15;
+  text-align: right;
+  position: sticky;
+  margin: 27em 0 0 auto;
+}
 .u-wrapper {
   {{ with site.Params.width }}max-width: {{ . }};{{ end }}
   margin: auto;
@@ -600,7 +610,7 @@ border-radius: 2.5rem;
   box-shadow:  0 2px 30px 2px  #2b2b2b ;
   padding: .7em 1.7em 0em;
   font-size: 1em;
-  margin: 10em auto 12em;
+  margin: 6em auto 12em;
   font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 }
 .comment p{
@@ -790,6 +800,9 @@ animation-direction:alternate;
 	to{ bottom:.5em;background:#9a9a9a}
 }
 @media screen and (max-width:1000px){
+  .footer-img{
+    display:none;
+  }
   .cover{
     transform: none;
   }

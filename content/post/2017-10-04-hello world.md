@@ -2,7 +2,7 @@
 author: "柯棋瀚"
 title: "Hello world!"
 date: 2017-10-04
-lastmod: 2020-04-04
+lastmod: 2020-04-05
 categories: ["站務"]
 tags: ["公吿"]
 url: /blog/2017/10/04/shuoming.html
@@ -1255,3 +1255,6 @@ sans 英文字體。
 
 調整頁碼不在中間的問題。調整頁腳左側一列左邊空隙大的問題。都是因為 `<li>`
 
+#### 4.4.2
+
+葉腳加入印章。

@@ -14,8 +14,16 @@
           <div class="vertical-false">
           {{ .Content }}
           </div>
-
     {{ end }}
+    <div class="pagi-wrap">
+    <div class="pagi" style="  text-shadow: 0px 0px 7px white;">
+      {{ with .PrevInSection }}
+        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        {{- end }}
+    {{ with .NextInSection }}
+          　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
+    {{- end }}
+    </div></div>
   <div class="u-wrapper">
     <div class="u-padding">
 {{ partial "comments.html" . }}
