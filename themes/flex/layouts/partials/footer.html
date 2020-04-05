@@ -29,7 +29,6 @@
         {{ range .Site.Taxonomies.categories }}
         <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
         {{ end }}
-          <li style="font-size:.7em;  color:#d5d5d5;margin-top:1em">● ○ ● ○ ● ○ ●</li>
         <h2>作者</h2>
           {{ range .Site.Taxonomies.author }}
           <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
