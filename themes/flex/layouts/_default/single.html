@@ -102,15 +102,16 @@
 </div>
 <div class="recommend1">
 <h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據索引重合度生成</span></h2>
-<div>
+<ul>
 {{- range (shuffle (first 10 $recommendedArticles)) -}}
-<div>
+<li>
   <a href="{{ .Permalink }}">
     {{ .Title }}
   </a>
-</div>
+</li>
 {{ end }}
-</div></div>
+</ul>
+</div>
 </div>
 {{ partial "comments.html" . }}
 </div></div>
