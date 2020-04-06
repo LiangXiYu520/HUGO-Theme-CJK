@@ -4,21 +4,21 @@ title = "赫赫文王"
 enableRobotsTXT = true
 theme = "flex"
 disablePathToLower = true
-hasCJKLanguage = true     # has chinese/japanese/korean ?
-uglyURLs = false         # more info: https://gohugo.io/content-management/urls/#ugly-urls
+hasCJKLanguage = true
+uglyURLs = false  
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 [markup.tableOfContents]
         startLevel = 1
-        endLevel = 4
+        endLevel = 3
 
 # Enable author pages
 [taxonomies]
- author = "author"
- tag = "tags"
- category = "categories"
+author = "author"
+tag = "tags"
+category = "categories"
 [author]                  # essential
   name = "柯棋瀚"
 [sitemap]                 # essential
@@ -30,3 +30,9 @@ uglyURLs = false         # more info: https://gohugo.io/content-management/urls/
   linkToMarkDown = true
   vertical = true
 rssFullContent = false
+  width ="42rem"          # Any length in CSS syntax
+  summaries= false      # Set to true to show summaries of posts on homepage
+  divider= false        #\a0 Set to false to remove divider below posts on homepage
+  schema= false         # Set to true to add Schema.org metadata
+  opengraph= false      # Set to true to add Open Graph metadata
+  twittercards= false   # Set to true to add Twitter Cards metadata

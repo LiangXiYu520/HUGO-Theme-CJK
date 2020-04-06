@@ -16,11 +16,11 @@ font-size: 1em;
     word-wrap: break-word;
     text-align: justify;
     text-justify: inter-ideograph;
-      background-color:#fffff8;
-    	background-image: linear-gradient(#e08282 8px, transparent 10px),
-    	linear-gradient(#95bbe7 8px, transparent 10px),
-    		linear-gradient(90deg, #95bbe7 8px, transparent 10px),
-    linear-gradient(90deg, #e08282 8px, transparent 10px);
+      background-color:white;
+    	background-image: linear-gradient(#ddb8b8 8px, transparent 10px),
+    	linear-gradient(#b7cce3 8px, transparent 10px),
+    		linear-gradient(90deg, #b7cce3 8px, transparent 10px),
+    linear-gradient(90deg, #ddb8b8 8px, transparent 10px);
     	background-size: 240px 240px, 240px 240px, 240px 240px, 240px 240px;
     	background-position:70px 70px, 190px 190px,190px 190px,70px 70px ;
 }
@@ -36,13 +36,13 @@ hr{
   margin:auto 4em;
   height:100%;
   width: .35em;
-    background-color: #f1c836;
+    background-color: #2b2b2b;
   border-radius: 0;
 }
 a{
   color:#2b2b2b;
   text-decoration:none;
-border-bottom: .15em solid rgb(241,188,0) ;
+border-bottom: .15em solid #f1bc00;
 -webkit-transition: .3s;
 transition: .3s;
 }
@@ -158,7 +158,7 @@ date{
 .vertical a{
   color:#2b2b2b;
   text-decoration:none;
-border-left: .15em solid rgb(241,188,0) ;
+border-left: .15em solid #f1bc00 ;
 border-bottom: none;
 -webkit-transition: .3s;
 transition: .3s;
@@ -283,39 +283,6 @@ code {
       background-color:#2b2b2b;
         border-radius: .2rem;
 }
-.Banner {
-  list-style: none;
-  display: flex;
-  flex-flow: row-reverse wrap-reverse;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0 1em;
-  box-shadow:  0 2px 30px -5px  #2b2b2b ;
-  border-bottom: 3px solid #2b2b2b;
-  background: -webkit-linear-gradient(left, #c41011 , #4300db);
-           background: -o-linear-gradient(right, #c41011, #4300db);
-           background: -moz-linear-gradient(right, #c41011, #4300db);
-           background: linear-gradient(to right, #c41011 , #4300db);
-}
-{{ $len := len site.Menus.nav }}
-{{ range seq $len }}
-  .Banner-item:nth-child({{ . }}) {
-    order: {{ sub $len . | add 1 }};
-  }
-{{ end }}
-.Banner-item--title {
-  flex-grow: 1;
-}
-.Banner-link {
-  font-size: .9rem;
-  font-family: "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
-  color: #fffae8;
-  padding: 0.5rem .6rem;
-  border: none;
-}
-.Banner-link a:hover{
-  border: none;
-}
 .heading-wrap{
   background-color: #fffae8;
   padding: 3em  1em 3em;
@@ -391,11 +358,10 @@ text-align:center;
 }
 .footer-wrapper{
         font-family:  "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
-  margin-top:4em;
   box-shadow:  0px 0px 70px 5px  #2b2b2b;
-border: .8em solid #2b2b2b;
-  border-radius: 60px;
-  margin: 6em 5em 1em;
+border: 1em solid #2b2b2b;
+  border-radius: 80px;
+  margin: 3em 5em 1em;
   padding:.5em 0 0;
   text-align: center;
   display: -webkit-box;
@@ -420,13 +386,16 @@ border: .8em solid #2b2b2b;
   }
 .col1-title{
   font-weight: 700;
-  font-size: 1.7em;
+  font-size: 1.8em;
   color: #fffae8;
 }
 .col1-title:hover{
   color: #2b2b2b;
   -webkit-transition: .3s;
   transition: .3s;
+}
+.col2{
+    font-size: 1.5em;
 }
 .col {
   text-align: left;
@@ -552,7 +521,7 @@ text-align:left;
   color:#b89001;
 }
 .archive-info-cate a{
-  color:#c41011
+  color:#640001
 }
 .archive-info-author{
 margin: 0;
@@ -578,7 +547,7 @@ color:#2b2b2b
   margin-top: 0;
 }
 .count{
-  margin: -1em auto 3em;
+  margin: -1em auto;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   color:#2b2b2b;
   font-size: .9em;
@@ -604,7 +573,7 @@ border-radius: 2.5rem;
   box-shadow:  0 2px 30px 2px  #2b2b2b ;
   padding: .7em 1.7em 0em;
   font-size: 1em;
-  margin: 6em auto 12em;
+  margin: 4em auto 10em;
   font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 }
 .comment p{
@@ -614,6 +583,17 @@ border-radius: 2.5rem;
 }
 .comment p a{
   border:none
+}
+.recommend{
+  margin: 8em auto 3em;
+  font-family: "Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
+}
+.recommend h2{
+  font-size: 1.25em;
+  margin: .5em auto;
+}
+.recommend li a{
+border:none;
 }
 .footnote-ref{
   font-size: .8em;
@@ -702,7 +682,7 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
       transition: .3s;
     }
   .pagination a:hover{
-    border: 2px solid #fffae8;
+    border: 2px solid white;
         box-shadow: none;
         background: none;
     }
@@ -756,12 +736,15 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
 	}
   .cover .mail{
 		font-size:.9em;
-    text-align: left;
+    text-align: center;
     margin:0 auto 2em;
     font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace;
 	}
 .cover .mail a{
 border-bottom: .15em solid #d6a700 ;
+}
+.cover .mail a:hover{
+border-bottom: none ;
 }
 .cover .img{
   margin:3em auto 5em;
@@ -794,8 +777,14 @@ animation-direction:alternate;
 	to{ bottom:.5em;background:#9a9a9a}
 }
 @media screen and (max-width:900px){
+  body {
+      	background:white;
+  }
   .cover{
     transform: none;
+  }
+  .count{
+    margin: -1em auto 3em;
   }
   .lastmod{
     line-height: 1.8;
@@ -835,13 +824,23 @@ animation-direction:alternate;
     border: .2em solid #2b2b2b;
   border-radius: 1.7rem;
   padding: .5em;
-  margin: 8em auto;
+  margin: 5em auto;
+}
+.pagination {
+  margin: 0em auto;
 }
   .footer-wrapper{
   margin: 4em 0 0;
   border: .2em solid #2b2b2b;
   border-radius: 2.2rem;
   padding: .1em;
+  background-image: url('/seal.png'),-webkit-linear-gradient(left, #c41011 , #6f00a8);
+     background-image:url('/seal.png'),-o-linear-gradient(right,#c41011, #6f00a8);
+     background-image:url('/seal.png'),-moz-linear-gradient(right,#c41011, #6f00a8);
+     background-image: url('/seal.png'),linear-gradient(to right, #c41011,  #6f00a8);
+           background-repeat: no-repeat;
+       background-position: bottom left;
             background-size:contain;
   }
+
 }

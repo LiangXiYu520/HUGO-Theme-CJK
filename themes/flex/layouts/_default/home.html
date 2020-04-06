@@ -18,14 +18,14 @@
   <div class="img"><img src="/logo.webp" width="90px" height="195px"></div>
   <div class="label">永嘉田家後/　生於九五後/<br>長于錦官城/　讀的厤史系/</div>
   <div class="mail">
-              <table cellpadding=0px>
+              <table cellpadding=0px style="margin:auto">
               <tr>
               <td style="text-align:right;">PGP//</td>
-              <td><a href="/kujihhoe (E2269D07) public.asc" target="_blank">E2269D07</a></td>
+              <td style="text-align:left;"><a href="/kujihhoe (E2269D07) public.asc" target="_blank">E2269D07</a></td>
               </tr>
               <tr>
               <td style="text-align:right">email&iMessage//</td>
-              <td><span>me#kqh.me</span></td>
+              <td style="text-align:left;"><span>me#kqh.me</span></td>
               </tr>
               </table>
   </div>
@@ -37,7 +37,7 @@
             {{- $lastmod := .Paginate (where .Site.Pages.ByLastmod.Reverse "Type" "post") (index 25) }}
           {{- range $lastmod.Pages -}}
                     <div class="lastmod-wrap">
-                      <span class="archive-info">{{ .Lastmod.Format "2006-01-02" }} < {{ .Date.Format "2006-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                      <span class="archive-info">{{ .Lastmod.Format "06-01-02" }} < {{ .Date.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
                     </div>
           {{ end }}
         </div>

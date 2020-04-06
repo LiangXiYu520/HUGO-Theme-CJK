@@ -9,7 +9,7 @@
   <li class="Tags-item"><strong>作者</strong>　<a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}</a>
   {{- end -}}
   <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
-    　　<strong>發布</strong>　{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}　　<strong>修改</strong>　{{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+    　　<strong>時閒</strong>　{{ .Date.Format (.Site.Params.dateFormatToUse | default "06-01-02") }} > {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "06-01-02") }}
   </time></li>
 <li class="Tags-item"><strong>字數</strong>　{{ .WordCount }}
 {{ with .Params.categories -}}

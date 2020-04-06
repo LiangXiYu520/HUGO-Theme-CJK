@@ -5,7 +5,7 @@
   {{- $length := len .Data.Pages }}
 <p>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</p>
 全部博文 IPFS hash：QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX
-<br>2020-04-01 弟四板上線。採用顛覆式的全卡片式，取消了頁首　2020-04-05 v4.4.2</div>
+<br>2020-04-01 弟四板上線。採用顛覆式的全卡片式，取消了頁首　2020-04-06 v4.4.5</div>
 {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
   {{ $count1 := add $length 1 }}
   {{ $count0 := $paginator.PageNumber }}
@@ -29,7 +29,7 @@
                   <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">{{- .Params.author -}}</a></span>
                   <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
                 </div>
-                <div class="archive-info">{{ .PublishDate.Format "2006-01-02" }} > {{ .Lastmod.Format "2006-01-02" }}&nbsp
+                <div class="archive-info">{{ .PublishDate.Format "06-01-02" }} > {{ .Lastmod.Format "06-01-02" }}&nbsp
             {{ with .Params.categories -}}
                 {{ range . }}
                 {{- $name := . -}}

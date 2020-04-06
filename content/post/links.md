@@ -138,6 +138,8 @@ vertical: false
 
 [寻我](https://seekbetter.me/?sort=recommend&mode=blog&page=1)　优秀个人独立博客
 
+[优秀博客集锦](https://woodwhales.cn/2018/12/22/002/)
+
 [时间物质](https://matterofti.me/)　<n>20200309正式上線。一个弱社交型博客網站，利用 writefreely 搭建</n>
 
 [spotify的播客收藏](https://www.douban.com/note/752408893/)

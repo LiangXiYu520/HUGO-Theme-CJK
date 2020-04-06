@@ -2,7 +2,7 @@
 author: "柯棋瀚"
 title: "Hello world!"
 date: 2017-10-04
-lastmod: 2020-04-05
+lastmod: 2020-04-06
 categories: ["站務"]
 tags: ["公吿"]
 url: /blog/2017/10/04/shuoming.html
@@ -511,10 +511,10 @@ Google AdSense 審核通過。開通了鏡象公眾號
         return function() {
             var now = new Date,
                 remaining = wait - (now - lastCalled);
-    
+
             args = arguments;
             thisArg = this;
-    
+
             if (remaining <= 0) {
                 clearTimeout(timeoutId);
                 timeoutId = null;
@@ -536,7 +536,7 @@ Google AdSense 審核通過。開通了鏡象公眾號
         var $articleAside = $('.js-article-aside');
         var $toc = $('.js-toc');
         var hasTitle = $articleContent.find('h1, h2, h3').length > 0;
-    
+
         function asideSticky() {
             return $window.outerWidth() > 1150 && $pageStage.hasClass('has-toc');
         }
@@ -545,16 +545,16 @@ Google AdSense 審核通過。開通了鏡象公眾號
                 !$pageStage.hasClass('has-toc') && $pageStage.addClass('has-toc');
             }
         }
-    
+
         setTocClass();
-    
+
         function setAsideTOC() {
             var asideTop,
                 asideLeft,
                 scrollBottom,
                 asideBottomTop,
                 lastScrollTop;
-    
+
             function init() {
                 var asideOffset = $articleAside.offset();
                 var footerOffset = $pageFooter.offset();
@@ -600,7 +600,7 @@ Google AdSense 審核通過。開通了鏡象公眾號
             setTimeout(init, 4000);
         }
         setTimeout(setAsideTOC, 1000);
-    
+
         $toc.toc({
             'selectors': 'h1,h2,h3',
             'container': '.js-article-content',
@@ -1258,3 +1258,21 @@ sans 英文字體。
 #### 4.4.2
 
 葉腳加入印章。
+
+### 4 月 6 日
+
+#### 4.4.5
+
+加入智能推薦。感謝 [ops.tips](https://ops.tips/blog/article-recommendation-using-hugo/)
+
+統一 `config.toml`
+
+調低背景飽和度。
+
+調整間距。
+
+`.cover` hover 和居中。
+
+`.col2`
+
+手機端：調整間距；取消背景；調整葉腳顏色。
