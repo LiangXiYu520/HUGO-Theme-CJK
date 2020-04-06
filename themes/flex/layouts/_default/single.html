@@ -39,28 +39,29 @@
 {{ range $relevantArticles }}
         {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
-<h2>您可能還喜歡：</h2>
-<ul>
+<div class="recommend1">
+<h2>上篇</h2>
+{{ with .PrevInSection }}
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{- end }}
+  <h2>下篇</h2>
+{{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{- end }}
+</div>
+<div class="recommend1">
+<h2>您可能還喜歡</h2>
+<div>
 {{ range (shuffle (first 10 $recommendedArticles)) }}
-<li>
+<div>
   <a href="{{ .Permalink }}">
     {{ .Title }}
   </a>
-</li>
+</div>
 {{ end }}
-</ul>
+</div></div>
 </div></div></div>
-
-    <div class="pagi-wrap">
-    <div class="pagi" style="  text-shadow: 0px 0px 7px white;">
-      {{ with .PrevInSection }}
-        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
-        {{- end }}
-    {{ with .NextInSection }}
-          　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
-    {{- end }}
-    </div></div>
-  <div class="u-wrapper">
+<div class="u-wrapper">
     <div class="u-padding">
 {{ partial "comments.html" . }}
 </div></div>
