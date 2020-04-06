@@ -374,9 +374,9 @@ border: 1em solid #2b2b2b;
      background-image:url('/seal.png'),-o-linear-gradient(right,#c41011, #4300db);
      background-image:url('/seal.png'),-moz-linear-gradient(right,#c41011, #4300db);
      background-image: url('/seal.png'),linear-gradient(to right, #c41011,  #4300db);
-            background-size:50%,contain;
+            background-size:13em,contain;
            background-repeat: no-repeat;
-       background-position: bottom left;
+       background-position: center;
 }
 .col1{
   font-size:.9em;
@@ -833,9 +833,8 @@ animation-direction:alternate;
      background-image:url('/seal.png'),-o-linear-gradient(right,#c41011, #6f00a8);
      background-image:url('/seal.png'),-moz-linear-gradient(right,#c41011, #6f00a8);
      background-image: url('/seal.png'),linear-gradient(to right, #c41011,  #6f00a8);
-           background-repeat: no-repeat;
-       background-position: bottom left;
-            background-size:contain;
+       background-position: right bottom;
+           background-size:10em,contain;
   }
 
 }
