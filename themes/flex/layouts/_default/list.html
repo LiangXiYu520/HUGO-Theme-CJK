@@ -20,10 +20,10 @@
           </span>{{ end }}
         </div>
         </nav></div>
+                {{ range $paginator.Pages.GroupByPublishDate "2006" }}
+                  <div class="year"><h2>{{ .Key }}</h2></div>
         <div class="archive-wrapper">
-
-
-        {{- range $paginator.Pages -}}
+        {{- range .Pages -}}
               <div class="archive-wrap">
         <span class="archive-left">
         {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
@@ -50,7 +50,7 @@
             {{- end }}</div>
           </span>
     </div>
-    {{ end }}</div>
+    {{ end }}</div>    {{ end }}
     <div class="pagination-wrap"><nav class="pagination">
       <div>
         {{ range $paginator.Pagers }}
