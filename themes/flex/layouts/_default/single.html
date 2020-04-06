@@ -60,16 +60,21 @@
 {{ $1RelevantArticles := slice }}
 {{ $2RelevantArticles := slice }}
 {{ $3RelevantArticles := slice }}
+{{ $4RelevantArticles := slice }}
 {{ range $idx, $article := $articles }}
 {{ $1numberOfIntersection := len (intersect $article.Params.tags $currentArticle.Params.Tags) }}
 {{ $2numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.Categories) }}
-{{ $3numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
-{{ if (ge $3numberOfIntersection 3) }}
-{{ $1RelevantArticles = $1RelevantArticles | append $article }}
-{{ else if (eq $3numberOfIntersection 2) }}
-  {{ $2RelevantArticles = $2RelevantArticles | append $article }}
-  {{ else if (eq $3numberOfIntersection 1) }}
-    {{ $3RelevantArticles = $3RelevantArticles | append $article }}
+{{ $3numberOfIntersection := len (intersect $article.Params.authors $currentArticle.Params.Authors) }}
+{{ $4numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
+{{ $5numberOfIntersection := add $3numberOfIntersection $4numberOfIntersection }}
+{{ if (ge $5numberOfIntersection 4) }}
+{{ $4RelevantArticles = $4RelevantArticles | append $article }}
+{{ else if (eq $5numberOfIntersection 3) }}
+  {{ $3RelevantArticles = $3RelevantArticles | append $article }}
+  {{ else if (eq $5numberOfIntersection 2) }}
+    {{ $2RelevantArticles = $2RelevantArticles | append $article }}
+ {{ else if (eq $5numberOfIntersection 1) }}
+      {{ $1RelevantArticles = $1RelevantArticles | append $article }}
 {{ end }}
 {{ end }}
 {{ $recommendedArticles := slice }}
@@ -82,6 +87,9 @@
 {{ range $3RelevantArticles }}
     {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
+{{ range $4RelevantArticles }}
+     {{ $recommendedArticles = $recommendedArticles | append . }}
+{{ end }}
 <div class="recommend1">
 <h2>上篇</h2>
 {{ with .PrevInSection }}
@@ -93,9 +101,9 @@
 {{- end }}
 </div>
 <div class="recommend1">
-<h2>同分類系列算法推薦</h2>
+<h2>據索引重合度算法推薦</h2>
 <div>
-{{ range (shuffle (first 10 $recommendedArticles)) }}
+{{- range (shuffle (first 10 $recommendedArticles)) -}} 
 <div>
   <a href="{{ .Permalink }}">
     {{ .Title }}
