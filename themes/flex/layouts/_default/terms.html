@@ -1,6 +1,8 @@
 {{ define "main" }}
+  <div class="heading-wrap">
   {{ partial "heading.html" . }}
   {{ .Content }}
+  </div>
   <div class="cate">
     {{ range .Pages }}
       <div class="cate-wrap"><a class="Tags-link u-clickable" href="{{ .RelPermalink }}">{{ .Title }}</a></div>

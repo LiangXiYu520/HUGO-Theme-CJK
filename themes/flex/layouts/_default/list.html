@@ -1,11 +1,11 @@
 {{ define "main" }}
+<div class="heading-wrap">
 {{ partial "heading.html" . }}
 {{ .Content }}
-<div class="count">
   {{- $length := len .Data.Pages }}
-<p>凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字</p>
-全部博文 IPFS hash：QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX
-<br>2020-04-01 弟四板上線。採用顛覆式的全卡片式，取消了頁首　2020-04-06 v4.4.5</div>
+<div class="count">
+凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
+</div></div>
 {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
   {{ $count1 := add $length 1 }}
   {{ $count0 := $paginator.PageNumber }}

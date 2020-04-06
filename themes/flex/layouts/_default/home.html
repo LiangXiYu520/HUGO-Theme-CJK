@@ -10,7 +10,10 @@
       {{ . | merge $js_list | $.Scratch.Set "js" }}
     {{ end }}
 <body>
+	  <div class="heading-wrap">
   {{ partial "heading.html" . }}
+  <div class="count">你好！</div>
+  </div>
   <div class="cover">
   <div class="time">
   </div>
@@ -33,6 +36,10 @@
         </div>
 <div class="archive-wrapper" style="padding-bottom:1.5em;margin:6em auto 8em;">
         <div class="lastmod">
+
+          <div class="lastmod-wrap">全部博文 <span class="archive-info">IPFS hash：QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX</span></div>
+        <div class="lastmod-wrap"><span class="archive-info">2020-04-01</span>弟四板上線。採用顛覆式的全卡片式，取消了頁首</div>
+          <div class="lastmod-wrap"><span class="archive-info">2020-04-06</span>v4.4.5</div>
           <h2>最近修改</h2>
             {{- $lastmod := .Paginate (where .Site.Pages.ByLastmod.Reverse "Type" "post") (index 25) }}
           {{- range $lastmod.Pages -}}

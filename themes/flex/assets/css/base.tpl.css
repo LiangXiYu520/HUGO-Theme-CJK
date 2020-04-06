@@ -285,7 +285,7 @@ code {
 }
 .heading-wrap{
   background-color: #fffae8;
-  padding: 3em  1em 3em;
+  padding: 2em  1em 3em;
   margin: -1em -1em 3em;
   box-shadow:  0px 0px 70px 5px  #2b2b2b;
   border-bottom:  .4em solid #2b2b2b;
@@ -508,6 +508,7 @@ text-align:left;
   color: #2b2b2b;
 }
 .archive-info {
+  word-break: break-all;
   text-align: left;
   font-size: .9em;
   margin: auto .3em auto 0em;
@@ -544,22 +545,16 @@ color:#2b2b2b
   border: none;
 }
 .lastmod h2{
-  margin-top: 0;
+  margin:.5em auto;
 }
 .count{
   margin: -1em auto;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
-  color:#2b2b2b;
-  font-size: .9em;
+font-weight: 400;
+  color:#8c8c8c;
   line-height: 1.8;
-  text-align:center;
-  text-shadow: 0px 0px 7px white;
-}
-.count p{
-  font-weight: 700;
   text-align: center;
   font-size: 1.2em;
-  margin-bottom: .5em;
 }
 .time{
   color:#8c8c8c;
@@ -784,7 +779,7 @@ animation-direction:alternate;
     transform: none;
   }
   .count{
-    margin: -1em auto 3em;
+    margin: -1em auto 0em;
   }
   .lastmod{
     line-height: 1.8;
