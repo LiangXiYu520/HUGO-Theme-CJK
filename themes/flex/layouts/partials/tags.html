@@ -1,45 +1,25 @@
     <div class="Tag"><div class="Tags">
-  <li class="Tags-item">{{- $author_id := .Params.author | default .Site.Author.name -}}
-  {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
-  {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
-  {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
-  {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
-      <li class="Tags-item"><strong>作者</strong>　<a href="/author/{{ $author_name }}">{{ $author_name | safeHTML }}</a>
-  {{- else -}}
-  <li class="Tags-item"><strong>作者</strong>　<a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}</a>
-  {{- end -}}
-  <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
-    　　<strong>時閒</strong>　{{ .Date.Format (.Site.Params.dateFormatToUse | default "06-01-02") }} > {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "06-01-02") }}
-  </time></li>
-<li class="Tags-item"><strong>字數</strong>　{{ .WordCount }}
-{{ with .Params.categories -}}
-    {{ range . }}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-    　　<strong>分類</strong>　<a href="/categories/{{ $name }}">{{ $name }}</a> /
-    {{ end -}}
-    {{ end }}
-{{- end }}
-
-{{ with .Params.tags -}}
-    　　<strong>系列</strong>　{{ range . }}{{- $name := . -}}
-    {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-    <a href="/tags/{{ $name }}">{{ $name }}</a> /
-    {{ end -}}
-    {{ end }}
-{{- end }}</li>
-<li class="Tags-item">
-{{- if .Params.contentCopyright -}}
-<strong>版權</strong>　{{ .Params.contentCopyright | safeHTML }}
-{{- else -}}
-  <strong>版權</strong>　{{ .Site.Params.contentCopyright | safeHTML }}
-{{- end -}}
+  <li class="Tags-item">
+      <li class="Tags-item">
+  <time datetime="{{ .Date.Format "2006-01-02" }}" style="font-family: Source Code Pro,Menlo, Inconsolata,Courier New,Anonymous Pro,monospace">
+  <strong>時閒</strong>　{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} > {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+  </time>
 </li>
+<li class="Tags-item">
+    <strong>字數</strong>　<span style="font-family: Source Code Pro,Menlo, Inconsolata,Courier New,Anonymous Pro,monospace">{{ .WordCount }}</span>
+    　　<strong>源碼</strong>　<a class="link-to-markdown" href="{{ .Params.markdown | safeHTML }}" rel="noopener" target="_blank">點此査看</a>
+  </li>
+  <li class="Tags-item">
+  {{- if .Params.contentCopyright -}}
+  <strong>版權</strong>　{{ .Params.contentCopyright | safeHTML }}
+  {{- else -}}
+    <strong>版權</strong>　{{ .Site.Params.contentCopyright | safeHTML }}
+  {{- end -}}
+  </li>
+<li class="Tags-item"><strong>目錄</strong></li>
 
 {{ if $.Site.Params.linkToMarkDown -}}
-<li class="Tags-item">
-    <strong>源碼</strong>　<a class="link-to-markdown" href="{{ .Params.markdown | safeHTML }}" rel="noopener" target="_blank">源文件</a>
-  </li>
+
   {{- end }}
   {{ if .TableOfContents }}
     <li class="toc-item">{{ .TableOfContents }}</li>

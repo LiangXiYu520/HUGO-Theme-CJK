@@ -2,6 +2,41 @@
   <article>
     <div class="heading-wrap">
     {{ partial "heading.html" . }}
+    {{- $author_id := .Params.author | default .Site.Author.name -}}
+    {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+    {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+    {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
+    {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
+    <div class="des1">作者<a href="/author/{{ $author_name }}">{{ $author_name | safeHTML }}</a>
+    {{- else -}}
+    <div class="des1">作者<a href="/author/{{ $author_name }}">{{ $author_name | safeHTML }}</a>
+    {{- end -}}
+
+    {{ with .Params.categories -}}
+        　分類{{ range . }}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+      <span class="des1-cate"><a href="/categories/{{ $name }}">{{ $name }}</a></span>
+        {{ end -}}
+        {{ end }}
+    {{- end }}
+
+    {{ with .Params.tags -}}
+        　系列{{ range . }}{{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+        <span class="des1-tag"><a href="/tags/{{ $name }}">{{ $name }}</a></span>
+        {{ end -}}
+        {{ end }}
+    {{- end }}</div>
+    <div class="pagi-wrap">
+    <div class="pagi">
+      {{ with .PrevInSection }}
+        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        {{- end }}
+    {{ with .NextInSection }}
+          　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
+    {{- end }}
+    </div></div>
     </div>
     <div class="u-wrapper">
       <div class="u-padding">
@@ -19,25 +54,33 @@
     {{ end }}
     <div class="u-wrapper">
       <div class="u-padding">
-<div class="comment recommend" >
+<div class="Tags  recommend" >
 {{ $currentArticle := . }}
 {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page") ".Title" "!=" $currentArticle.Title }}
-{{ $veryRelevantArticles := slice }}
-{{ $relevantArticles := slice }}
+{{ $1RelevantArticles := slice }}
+{{ $2RelevantArticles := slice }}
+{{ $3RelevantArticles := slice }}
 {{ range $idx, $article := $articles }}
-{{ $numberOfIntersections := len (intersect $article.Params.tags $currentArticle.Params.Tags) }}
-{{ if (ge $numberOfIntersections 2) }}
-{{ $veryRelevantArticles = $veryRelevantArticles | append $article }}
-{{ else if (eq $numberOfIntersections 1) }}
-  {{ $relevantArticles = $relevantArticles | append $article }}
+{{ $1numberOfIntersection := len (intersect $article.Params.tags $currentArticle.Params.Tags) }}
+{{ $2numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.Categories) }}
+{{ $3numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
+{{ if (ge $3numberOfIntersection 3) }}
+{{ $1RelevantArticles = $1RelevantArticles | append $article }}
+{{ else if (eq $3numberOfIntersection 2) }}
+  {{ $2RelevantArticles = $2RelevantArticles | append $article }}
+  {{ else if (eq $3numberOfIntersection 1) }}
+    {{ $3RelevantArticles = $3RelevantArticles | append $article }}
 {{ end }}
 {{ end }}
 {{ $recommendedArticles := slice }}
-{{ range $veryRelevantArticles }}
+{{ range $1RelevantArticles }}
+     {{ $recommendedArticles = $recommendedArticles | append . }}
+{{ end }}
+{{ range $2RelevantArticles }}
     {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
-{{ range $relevantArticles }}
-        {{ $recommendedArticles = $recommendedArticles | append . }}
+{{ range $3RelevantArticles }}
+    {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
 <div class="recommend1">
 <h2>上篇</h2>
@@ -50,7 +93,7 @@
 {{- end }}
 </div>
 <div class="recommend1">
-<h2>您可能還喜歡</h2>
+<h2>同分類系列算法推薦</h2>
 <div>
 {{ range (shuffle (first 10 $recommendedArticles)) }}
 <div>
@@ -60,9 +103,7 @@
 </div>
 {{ end }}
 </div></div>
-</div></div></div>
-<div class="u-wrapper">
-    <div class="u-padding">
+</div>
 {{ partial "comments.html" . }}
 </div></div>
   </article>

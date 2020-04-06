@@ -30,13 +30,13 @@ hr{
   height: .3em;
   border-radius: 1rem;
   border: none;
-  background-color: #2b2b2b;
+  background: #2b2b2b;
 }
 .vertical hr{
   margin:auto 4em;
   height:100%;
   width: .35em;
-    background-color: #2b2b2b;
+    background: #2b2b2b;
   border-radius: 0;
 }
 a{
@@ -138,7 +138,7 @@ date{
       padding: 1em 0;
       width: 96%;
     height:38em;
-          background-color: #fffae8;
+          background: #fffae8;
           border: .5em solid #2b2b2b;
         border-radius: 2.5rem;
         box-shadow:  0 2px 30px 2px  #2b2b2b ;
@@ -147,7 +147,7 @@ date{
   margin:8em auto;
   max-width: 38em;
         padding: 1em 2em;
-        background-color: #fffae8;
+        background: #fffae8;
         border: .5em solid #2b2b2b;
       border-radius: 3.5rem;
       box-shadow:  0 2px 30px 2px  #2b2b2b ;
@@ -233,7 +233,7 @@ h6{
 }
 
 .des{
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 200;
   text-align: center;
   line-height: 1.7;
@@ -242,6 +242,46 @@ h6{
 }
 .des a{
   border: none;
+}
+.des1{
+  margin-top: 2em;
+  font-size: .7em;
+  color:#8c8c8c;
+  text-align:center;
+  font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+}
+.des1 a{
+     font-weight: 700;
+     font-size: 1.4em;
+     margin-left:.4em;
+     letter-spacing: .1em;
+}
+.des1-cate a{
+  color:#9c0001;
+  font-size: 1.4em;
+   border: none;
+   background: #ffb3b3;
+   padding: .2em .5em .3em;
+margin-left:.4em;
+   font-weight: 700;
+   letter-spacing: .1em;
+ }
+.des1-cate a:hover{
+  background: #fffae8;
+}
+.des1-tag a{
+  color:#005fa8;
+  letter-spacing: .1em;
+  font-size: 1.4em;
+   border: none;
+   border-radius: 1em;
+     background: #b3e3ff;
+     padding: .2em .7em .3em;
+     margin-left:.4em;
+     font-weight: 700;
+ }
+.des1-tag a:hover{
+  background: #fffae8;
 }
 blockquote {
 margin:  0 0 0 2em;
@@ -274,17 +314,17 @@ pre {
   border-radius: 1rem;
   -webkit-box-shadow: 0 2px 20px -5px  #2b2b2b ;
   box-shadow:  0 2px 20px -5px  #2b2b2b ;
-  background-color:#2b2b2b;
+  background:#2b2b2b;
 }
 code {
   font-family:"Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   font-size: .8em;
   color: #fffae8;
-      background-color:#2b2b2b;
+      background:#2b2b2b;
         border-radius: .2rem;
 }
 .heading-wrap{
-  background-color: #fffae8;
+  background: #fffae8;
   padding: 2em  1em 3em;
   margin: -1em -1em 3em;
   box-shadow:  0px 0px 70px 5px  #2b2b2b;
@@ -321,7 +361,7 @@ code {
     text-align:left;
 font-size:.9em;
 line-height: 1.6;
-background-color: #fffae8;
+background: #fffae8;
   border: .5em solid #2b2b2b;
 border-radius: 2.5rem;
 box-shadow:  0 2px 30px 2px  #2b2b2b ;
@@ -476,7 +516,7 @@ a.Banner-link.u-clickable:hover{
   padding: .5em 2em;
   margin:0 auto;
   max-width: 39em;
-background-color: #fffae8;
+background: #fffae8;
 border: .5em solid #2b2b2b;
 border-radius: 3.5rem;
 box-shadow:  0 2px 30px 2px  #2b2b2b ;
@@ -526,7 +566,7 @@ text-align:left;
   color:#b89001;
 }
 .archive-info-cate a{
-  color:#640001
+  color:#c41011;
 }
 .archive-info-author{
 margin: 0;
@@ -535,7 +575,7 @@ margin: 0;
   color:#b2b2b2
 }
 .archive-info-tag a{
-color:#b89001
+color:#3a84c3
 }
 .archive-info-tag a:hover{
 color:#2b2b2b
@@ -552,7 +592,7 @@ color:#2b2b2b
   margin:.5em auto;
 }
 .count{
-  margin: -1em auto;
+  margin: .5em auto 0;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 font-weight: 400;
   color:#8c8c8c;
@@ -566,7 +606,7 @@ font-weight: 400;
   font-size: .8em;
 }
 .comment{
-  background-color:#fffae8;
+  background:#fffae8;
   border: .5em solid #2b2b2b;
 border-radius: 2.5rem;
   box-shadow:  0 2px 30px 2px  #2b2b2b ;
@@ -584,8 +624,12 @@ border-radius: 2.5rem;
   border:none
 }
 .recommend{
+  text-align:center;
+  line-height: 1.9;
   display: flex;
   padding-bottom: 1.5em;
+  font-size: 1em;
+  max-width: 42em;
   font-family: "Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
 }
 .recommend h2{
@@ -596,7 +640,7 @@ border-radius: 2.5rem;
 border:none;
 }
 .recommend1{
-  margin: auto .5em
+  margin: 0 auto;
 }
 .footnote-ref{
   font-size: .8em;
@@ -607,14 +651,14 @@ a.footnote-ref{
   text-align: center;
   border: none;
 color: #fffae8;
-background-color: #b6b5b5;
+background: #b6b5b5;
 padding: 0 0 .4em 0 ;
 max-height: 1.7em;
 width:1.5em;
 }
  a.footnote-ref:hover{
 color: #2b2b2b;
-background-color: #fffae8;
+background: #fffae8;
 }
 .vertical a.footnote-ref{
 padding: 0 0 .4em 0;
@@ -630,12 +674,12 @@ a.footnote-backref{
   font-size: 14px;
   border: none;
 color: #fffae8;
-background-color: #b6b5b5;
+background: #b6b5b5;
 padding: 0px 2px 5px 2px;
 }
 a.footnote-backref:hover{
 color: #2b2b2b;
-background-color: #fffae8;
+background: #fffae8;
 }
 .footnotes{
   font-size: .9em;
@@ -697,7 +741,7 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
     }
       .pagination   .active a:hover{
   border:2px solid  #eec73c;
-  background-color: #fffae8;
+  background: #fffae8;
   box-shadow:  0 2px 20px -5px  #8c8c8c ;
     }
 
