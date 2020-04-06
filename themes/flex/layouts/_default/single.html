@@ -64,7 +64,7 @@
 {{ range $idx, $article := $articles }}
 {{ $1numberOfIntersection := len (intersect $article.Params.tags $currentArticle.Params.Tags) }}
 {{ $2numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.Categories) }}
-{{ $3numberOfIntersection := len (intersect $article.Params.authors $currentArticle.Params.Authors) }}
+{{ $3numberOfIntersection := len (intersect $article.Params.author $currentArticle.Params.Authors) }}
 {{ $4numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
 {{ $5numberOfIntersection := add $3numberOfIntersection $4numberOfIntersection }}
 {{ if (ge $5numberOfIntersection 4) }}
@@ -78,16 +78,16 @@
 {{ end }}
 {{ end }}
 {{ $recommendedArticles := slice }}
-{{ range $1RelevantArticles }}
+{{ range $4RelevantArticles }}
      {{ $recommendedArticles = $recommendedArticles | append . }}
-{{ end }}
-{{ range $2RelevantArticles }}
-    {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
 {{ range $3RelevantArticles }}
     {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
-{{ range $4RelevantArticles }}
+{{ range $2RelevantArticles }}
+    {{ $recommendedArticles = $recommendedArticles | append . }}
+{{ end }}
+{{ range $1RelevantArticles }}
      {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
 <div class="recommend1">
@@ -101,9 +101,9 @@
 {{- end }}
 </div>
 <div class="recommend1">
-<h2>據索引重合度算法推薦</h2>
+<h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據索引重合度排序</span></h2>
 <div>
-{{- range (shuffle (first 10 $recommendedArticles)) -}} 
+{{- range (shuffle (first 10 $recommendedArticles)) -}}
 <div>
   <a href="{{ .Permalink }}">
     {{ .Title }}

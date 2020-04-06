@@ -709,7 +709,7 @@ margin:2em 1em 0 1em;
     text-align: center;
 }
 .pagination {
-  margin: 3.5em auto 1em;
+  margin: 3.5em auto;
   display: inline-block;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace;
 }
@@ -831,7 +831,7 @@ animation-direction:alternate;
     transform: none;
   }
   .count{
-    margin: -1em auto 0em;
+    margin: 0em auto;
   }
   .lastmod{
     line-height: 1.8;
