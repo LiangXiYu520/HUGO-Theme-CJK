@@ -1,11 +1,12 @@
 baseURL = "https://kqh.me/"
-languageCode = "en-us"
+languageCode = "zh-TW"
 title = "赫赫文王"
 enableRobotsTXT = true
 theme = "flex"
 disablePathToLower = true
 hasCJKLanguage = true
-uglyURLs = false  
+uglyURLs = false
+rssLimit = 30
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

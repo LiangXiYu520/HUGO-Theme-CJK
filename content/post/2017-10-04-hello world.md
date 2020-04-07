@@ -511,10 +511,10 @@ Google AdSense 審核通過。開通了鏡象公眾號
         return function() {
             var now = new Date,
                 remaining = wait - (now - lastCalled);
-
+    
             args = arguments;
             thisArg = this;
-
+    
             if (remaining <= 0) {
                 clearTimeout(timeoutId);
                 timeoutId = null;
@@ -536,7 +536,7 @@ Google AdSense 審核通過。開通了鏡象公眾號
         var $articleAside = $('.js-article-aside');
         var $toc = $('.js-toc');
         var hasTitle = $articleContent.find('h1, h2, h3').length > 0;
-
+    
         function asideSticky() {
             return $window.outerWidth() > 1150 && $pageStage.hasClass('has-toc');
         }
@@ -545,16 +545,16 @@ Google AdSense 審核通過。開通了鏡象公眾號
                 !$pageStage.hasClass('has-toc') && $pageStage.addClass('has-toc');
             }
         }
-
+    
         setTocClass();
-
+    
         function setAsideTOC() {
             var asideTop,
                 asideLeft,
                 scrollBottom,
                 asideBottomTop,
                 lastScrollTop;
-
+    
             function init() {
                 var asideOffset = $articleAside.offset();
                 var footerOffset = $pageFooter.offset();
@@ -600,7 +600,7 @@ Google AdSense 審核通過。開通了鏡象公眾號
             setTimeout(init, 4000);
         }
         setTimeout(setAsideTOC, 1000);
-
+    
         $toc.toc({
             'selectors': 'h1,h2,h3',
             'container': '.js-article-content',
@@ -1294,3 +1294,9 @@ sans 英文字體。
 每葉的作者分類系列移到葉眉。
 
 歸檔按年分塊。
+
+#### 4 月 7 日
+
+改用官方 RSS，限制 30 篇。
+
+主葉的最近更新，原來是所有排完，現在加上限制。

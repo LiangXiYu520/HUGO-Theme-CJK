@@ -37,8 +37,7 @@
 <div class="archive-wrapper" style="padding-bottom:1.5em;margin:6em auto 8em;">
         <div class="lastmod">
           <h2>最近修改</h2>
-            {{- $lastmod := .Paginate (where .Site.Pages.ByLastmod.Reverse "Type" "post") (index 25) }}
-          {{- range $lastmod.Pages -}}
+          {{ range first 25   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
                     <div class="lastmod-wrap">
                       <span class="archive-info">{{ .Lastmod.Format "06-01-02" }} < {{ .Date.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
                     </div>
