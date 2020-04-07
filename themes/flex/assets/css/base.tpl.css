@@ -867,7 +867,7 @@ max-width: 26em;
 
 .bigcard{
 	text-align: center;
-	margin: 5em auto;
+	margin: 2em auto 5em;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -876,12 +876,12 @@ max-width: 26em;
 	flex-flow: row wrap;
   	max-width: 100%;
     height:17em;
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
     overflow: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    border-top: .5em solid #2b2b2b;
-    border-bottom: .5em solid #2b2b2b;
+    border-top: .4em solid #2b2b2b;
+    border-bottom: .4em solid #2b2b2b;
     -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   -webkit-box-shadow: 0 0px 40px 0px  #2b2b2b ;

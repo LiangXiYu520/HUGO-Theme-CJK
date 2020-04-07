@@ -19,17 +19,17 @@
   </div>
             <ul>
 
-              <h2>系列</h2>
+              <h2>系列<span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.tags }}</span></h2>
                 {{ range .Site.Taxonomies.tags.ByCount  }}
                 <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
                 {{ end }}
             </ul>
     <ul>
-      <h2>分類</h2>
+      <h2>分類<span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.categories }}</span></h2>
         {{ range .Site.Taxonomies.categories.ByCount }}
         <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
         {{ end }}
-        <h2>作者</h2>
+        <h2>作者<span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.author }}</span></h2>
           {{ range .Site.Taxonomies.author.ByCount }}
           <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
           {{ end }}

@@ -52,7 +52,7 @@
           </div>
           </div>
 </div>
-<div class="discover-wrap" >
+<div class="discover-wrap" style="max-height:none">
   <h1>年度🔝</h1>
   <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
 <div class="discover" >
@@ -84,20 +84,26 @@
 </ol>
 </div>
 </div>
-<h1 style="margin:2em auto -2em">分類</h1>
+<h1 style="margin:2em auto 0em">分類</h1>
+  <div class="discover-des" style="margin: 0 auto">隨機生成五項</div>
 <div class="bigcard">
 {{ range .Site.Taxonomies.categories.ByCount  }}
 <div class="card-container">
 <div class="card">
 <div class="title"><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></div>
-{{ $pages := .Pages }}
-    {{ range first 5  $pages }}
+{{ $pages := .Pages | shuffle  }}
+    {{ range first 5 $pages }}
 <div class="item"><a href="{{ .RelPermalink }}" class="archive-post-link">{{ .Title }}</a></div>
 {{ end }}
 </div>
 </div>
 {{ end }}
 </div>
+
+
+
+
+
 
 </body>
 {{ end }}
