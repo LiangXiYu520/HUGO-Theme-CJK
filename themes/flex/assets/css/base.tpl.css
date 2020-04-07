@@ -832,7 +832,7 @@ animation-direction:alternate;
 }
 @media screen and (max-width:900px){
   body {
-      	background:white;
+      	background:#e0f6ff;
   }
   .cover{
     transform: none;

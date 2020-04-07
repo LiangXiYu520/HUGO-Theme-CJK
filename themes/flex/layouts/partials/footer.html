@@ -20,17 +20,17 @@
             <ul>
 
               <h2>系列</h2>
-                {{ range .Site.Taxonomies.tags }}
+                {{ range .Site.Taxonomies.tags.ByCount  }}
                 <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
                 {{ end }}
             </ul>
     <ul>
       <h2>分類</h2>
-        {{ range .Site.Taxonomies.categories }}
+        {{ range .Site.Taxonomies.categories.ByCount }}
         <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
         {{ end }}
         <h2>作者</h2>
-          {{ range .Site.Taxonomies.author }}
+          {{ range .Site.Taxonomies.author.ByCount }}
           <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
           {{ end }}
     </ul>
@@ -42,11 +42,12 @@
 <div style="margin:1em auto">——— 提 示 ———</div>
 <li>本站提供兩種訂閱方式:MailChimp郵件,近30篇RSS</li>
 <li>推薦在電腦端使用Chromium內核 Firefox瀏覽</li>
-<li>【隱私】本站使用 Google Analytics 進行流量分析；評論系統使用诏预 Isso 开放服务；托管於 Netlify。除此之外我們不掌握其他信息</li>
+<li>【隱私】本站使用Google Analytics進行流量分析；評論系統使用诏预Isso开放服务；托管於Netlify。除此之外我們不掌握其他信息</li>
 <li>【全部博文 IPFS hash】QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX</li>
-<li>更多見關於頁面</li>
+<li>更多見 關於</li>
 <div style="margin:1em auto">——— 更 新 ———</div>
 <li>2020-04-01 弟四板。採用顛覆式的全卡片式，取消了頁首</li>
-<li>2020-04-07 v4.4.7</li>
+<li>2020-04-07 v4.4.8</li>
+<li>更多見 hello world!</li>
   </footer>
     </div>
