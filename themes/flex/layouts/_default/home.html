@@ -12,7 +12,7 @@
 <body>
 	  <div class="heading-wrap">
   {{ partial "heading.html" . }}
-  <div class="count">你好！</div>
+  <div class="count">主葉//發現</div>
   </div>
   <div class="cover">
   <div class="time">
@@ -31,27 +31,33 @@
               <td style="text-align:left;"><span>me#kqh.me</span></td>
               </tr>
               </table>
+    </div>
+         <div class="in2"> </div>
   </div>
-                  <div class="in2"> </div>
-        </div>
-<div class="archive-wrapper" style="padding-bottom:1.5em;margin:6em auto 8em;">
-        <div class="lastmod">
-          <h1>最近修改</h1>
+<div class="discover-wrap">
+  <h1><a href="/post">博客</a></h1>
+     <div class="discover">
+       <div class="discover-wwrap"><h2>最近發布</h2>
+  {{ range first 10   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+            <div >
+              <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </div>
+  {{ end }}</div><div class="discover-wwrap">
+<h2>最近修改</h2>
           {{ range first 25   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
-                    <div class="lastmod-wrap">
-                      <span class="archive-info">{{ .Lastmod.Format "06-01-02" }} < {{ .Date.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <div >
+                      <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
                     </div>
           {{ end }}
-        </div>
+          </div>
+          </div>
 </div>
-<div class="archive-wrapper" >
-      <div class="lastmod">
-
-<h1>年度🔝</h1>
-<div class="Footer" style="color:#8c8c8c">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量。排除索引、非原創頁面</div>
-<h2 style="font-family: Source Code Pro,Menlo, Inconsolata,Courier New,Anonymous Pro,monospace">2017-2018</h2>
-
+<div class="discover-wrap" >
+  <h1>年度🔝</h1>
+  <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
+<div class="discover" >
 <ol>
+  <h2>2017-2018</h2>
 <li><a href="/blog/2018/01/24/tiyj.html" target="_blank">立言記·終篇｜來輔大交換是一種怎樣的體驗？</a></li>
 <li><a href="/blog/2017/10/28/fuchou.html" target="_blank">元麟記｜構建與瓦解──《公羊》齊襄復讎事詮釋史</a></li>
 <li><a href="/blog/2017/10/04/shuoming.html" target="_blank">博客開通啦！</a></li>
@@ -63,9 +69,8 @@
 <li><a href="/blog/2017/10/16/sizhong.html" target="_blank">彫梓記｜四種字形標準的小比較</a></li>
 <li> <a href="/blog/2017/11/19/tangmei.html" target="_blank">絃耕記｜梅花三弄刪宋</a></li>
 </ol>
-
-<h2 style="font-family: Source Code Pro,Menlo, Inconsolata,Courier New,Anonymous Pro,monospace">2018-2019</h2>
 <ol>
+  <h2>2018-2019</h2>
 <li><a href="/143" target="_blank">鄭玄地位的升降——《禮是鄭學》讀後</a></li>
 <li><a href="/blog/2018/10/08/wfvz.html" target="_blank">溫州話璅紀</a></li>
 <li><a href="/blog/2018/11/13/ifhssf.html" target="_blank">陳鴻森先生論文集合</a></li>
@@ -79,5 +84,20 @@
 </ol>
 </div>
 </div>
+<h1 style="margin:2em auto -2em">分類</h1>
+<div class="bigcard">
+{{ range .Site.Taxonomies.categories.ByCount  }}
+<div class="card-container">
+<div class="card">
+<div class="title"><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></div>
+{{ $pages := .Pages }}
+    {{ range first 5  $pages }}
+<div class="item"><a href="{{ .RelPermalink }}" class="archive-post-link">{{ .Title }}</a></div>
+{{ end }}
+</div>
+</div>
+{{ end }}
+</div>
+
 </body>
 {{ end }}

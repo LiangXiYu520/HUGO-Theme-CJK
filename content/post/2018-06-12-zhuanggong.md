@@ -3,7 +3,7 @@ author: "柯棋瀚"
 title: "左傳中的鄭莊公"
 date: 2018-06-12
 lastmod: 2018-06-12
-categories: ["㕜"]
+categories: ["史"]
 tags: ["課業"]
 url: /blog/2018/06/12/zhuanggong.html
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/2018-06-12-zhuanggong.md'
