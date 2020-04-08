@@ -136,7 +136,7 @@ date{
     line-height: 1.8em;
       margin: 6em auto;
       padding: 1em 0;
-      width: 96%;
+      width: 92%;
     height:38em;
           background: #fffae8;
           border: .5em solid #2b2b2b;
@@ -270,13 +270,13 @@ margin-left:.4em;
   background: #fffae8;
 }
 .des1-tag a{
-  color:#005fa8;
+  color:#00508e;
   letter-spacing: .1em;
   font-size: 1.4em;
    border: none;
    border-radius: 1em;
      background: #b3e3ff;
-     padding: .2em .7em .3em;
+     padding: .2em .6em .3em;
      margin-left:.4em;
      font-weight: 700;
  }
@@ -326,7 +326,7 @@ code {
 .heading-wrap{
   background: #fffae8;
   padding: 2em  1em 3em;
-  margin: -1em -1em 3em;
+  margin: -1em 0 3em;
   box-shadow:  0px 0px 70px 5px  #2b2b2b;
   border-bottom:  .4em solid #2b2b2b;
 }
@@ -401,7 +401,8 @@ text-align:center;
   box-shadow:  0px 0px 70px 5px  #2b2b2b;
 border: 1em solid #2b2b2b;
   border-radius: 80px;
-  margin: 8em 5em 1em;
+margin: 8em auto 1.5em;
+  max-width: 85%;
   padding:.5em 0 0;
   text-align: center;
   display: -webkit-box;
@@ -559,26 +560,17 @@ text-align:left;
   color:#616161;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 }
+.archive-info a{
+    color:#616161;
+}
 .archive-info a:hover{
   border:none;
   -webkit-transition: .3s;
   transition: .3s;
   color:#b89001;
 }
-.archive-info-cate a{
-  color:#c41011;
-}
 .archive-info-author{
 margin: 0;
-}
-.archive-info-author a{
-  color:#b2b2b2
-}
-.archive-info-tag a{
-color:#3a84c3
-}
-.archive-info-tag a:hover{
-color:#2b2b2b
 }
 .count{
   margin: .5em auto 0;
@@ -863,33 +855,31 @@ max-width: 26em;
 	from {bottom:0px;}
 	to{ bottom:.5em;background:#9a9a9a}
 }
-
-
 .bigcard{
 	text-align: center;
 	margin: 2em auto 5em;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-  	max-width: 100%;
+  	width: 85%;
     height:17em;
     writing-mode: vertical-lr;
     overflow: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    border-top: .4em solid #2b2b2b;
-    border-bottom: .4em solid #2b2b2b;
+    border: .5em solid #2b2b2b;
+    border-radius: 3em;
     -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  -webkit-box-shadow: 0 0px 40px 0px  #2b2b2b ;
-  box-shadow:  0 0px 40px 0px  #2b2b2b ;
+  -webkit-box-shadow: 0 0px 20px 0px  #2b2b2b ;
+  box-shadow:  0 0px 20px 0px  #2b2b2b ;
 }
 .card-container{
 	margin:1em auto;
     writing-mode:horizontal-tb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 .card{
 background-color: #fffae8;
@@ -923,61 +913,91 @@ overflow:scroll;
 }
 
 
-@media screen and (max-width:940px){
+@media screen and (max-width:1000px){
   body {
-      	background:#e0f6ff;
+      	background:#fffae8;
   }
+  listen{-webkit-box-shadow:none ;
+  box-shadow:none}
+img{-webkit-box-shadow:none ;
+  box-shadow:none}
+pre{-webkit-box-shadow:none ;
+  box-shadow:none}
   .cover{
     transform: none;
-  }
-  .discover ol{
-    max-width:20em;
-  }
-  .discover-wwraper{
-        max-width:20em;
+    -webkit-box-shadow:none ;
+      box-shadow:none
   }
   .count{
     margin: 0em auto;
   }
   .heading-wrap{
     padding: .1em  .5em 1em;
-    margin: -1em -1em 3em;
+    margin: -1em 0 3em;
     border-bottom:  .2em solid #2b2b2b;
+    -webkit-box-shadow:none ;
+      box-shadow:none
   }
-
 .archive-wrapper,  .discover-wrap{
       border: .2em solid #2b2b2b;
       border-radius: 1.7rem;
       padding: .5em;
       margin: 4em auto;
+      -webkit-box-shadow:none ;
+        box-shadow:none
 }
+.archive-wrapper {
+  -webkit-box-shadow:none ;
+  box-shadow:none}
+  .discover-wrap{
+    max-height:none;
+    }
+.discover ol{
+      max-width:20em;
+    }
+  .discover-wwraper{
+    max-width:20em;
+    }
 .Tags {
       border: .2em solid #2b2b2b;
       border-radius: 1.7rem;
       padding: .5em;
       margin: 3em auto 1em;
+      -webkit-box-shadow:none ;
+        box-shadow:none
 }
 .vertical{
         border: .2em solid #2b2b2b;
         border-radius: 1.7rem;
         padding: .5em;
         margin: 4em auto;
+        width:88%;
+        -webkit-box-shadow:none ;
+          box-shadow:none
 }
 .vertical-false{
       border: .2em solid #2b2b2b;
       border-radius: 1.7rem;
       padding: .5em;
       margin: 4em auto;
+      -webkit-box-shadow:none ;
+        box-shadow:none
 }
   .comment{
     border: .2em solid #2b2b2b;
   border-radius: 1.7rem;
   padding: .5em;
   margin: 5em auto;
+  -webkit-box-shadow:none ;
+    box-shadow:none
 }
 .pagination {
   margin: 0em auto;
 }
+  .pagination  a{-webkit-box-shadow:none ;
+  box-shadow:none}
+.pagination   .active a:hover{-webkit-box-shadow:none ;
+  box-shadow:none}
 .recommend{
   display: block;
 }
@@ -985,17 +1005,44 @@ overflow:scroll;
   margin: auto 0;
 }
   .footer-wrapper{
-  margin: 7em 0 0;
-  border: .2em solid #2b2b2b;
-  border-radius: 2.2rem;
-  padding: .1em;
+  margin: 7em auto 0;
+  padding: .5em;
+  width:100%;
+  border:none;
+  border-radius: 0;
+  box-shadow: none;
   background-image: url('/seal.png'),-webkit-linear-gradient(left, #c41011 , #6f00a8);
      background-image:url('/seal.png'),-o-linear-gradient(right,#c41011, #6f00a8);
      background-image:url('/seal.png'),-moz-linear-gradient(right,#c41011, #6f00a8);
      background-image: url('/seal.png'),linear-gradient(to right, #c41011,  #6f00a8);
        background-position: right bottom;
            background-size:10em,contain;
+           -webkit-box-shadow:none ;
+          box-shadow:none
   }
-  .discover-wrap{
-    max-height:none;}
+  .col1{
+    margin:1em 0 1em .5em;
+    }
+.bigcard{
+    -webkit-backdrop-filter:none;
+  backdrop-filter: none;
+  background: white;
+    writing-mode:horizontal-tb;
+        padding: .5em;
+    margin: 4em auto;
+   height:35em;
+    overflow:scroll;
+    background: #fffae8;
+    border: .2em solid #2b2b2b;
+    border-radius: 1.7rem;
+    -webkit-box-shadow:none ;
+      box-shadow:none
+}
+.card{
+padding: .8em .3em .1em .5em;
+margin: 1.2em auto;
+border-radius: 1.2em;
+max-height: 18em;
+width: 18em;
+}
 }

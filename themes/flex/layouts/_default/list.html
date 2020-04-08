@@ -28,7 +28,7 @@
         <span class="archive-left">
         {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
                 <span class="archive-right">
-                  <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">{{- .Params.author -}}</a></span>
+                  <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">{{- .Params.author -}}/</a></span>
                   <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
                 </div>
                 <div class="archive-info">{{ .PublishDate.Format "06-01-02" }} > {{ .Lastmod.Format "06-01-02" }}&nbsp
@@ -36,7 +36,7 @@
                 {{ range . }}
                 {{- $name := . -}}
                 {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-                  <span class="archive-info archive-info-cate"> <a href="/categories/{{ $name }}"  target="_blank">{{ $name -}}</a></span>
+                  <span class="archive-info"> <a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a></span>
                 {{ end -}}
                 {{ end }}
             {{- end }}
@@ -44,7 +44,7 @@
                 {{ range . }}
                 {{- $name := . -}}
                 {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-                <span class="archive-info archive-info-tag"><a href="/tags/{{ $name }}"  target="_blank">{{- $name -}}</a></span>
+                <span class="archive-info"><a href="/tags/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
                 {{ end -}}
                 {{ end }}
             {{- end }}</div>
