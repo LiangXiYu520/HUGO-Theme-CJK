@@ -1,8 +1,8 @@
 ---
 author: "柯棋瀚"
-title: "Hello world!"
+title: "Hello world!　更新日誌"
 date: 2017-10-04
-lastmod: 2020-04-06
+lastmod: 2020-04-08
 categories: ["站務"]
 tags: ["公吿"]
 url: /blog/2017/10/04/shuoming.html
