@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode }}">
+<head>
+  {{ partial "meta.html" . }}
+  {{ partial "title.html" . }}
+  {{ partial "link.html" . }}
+  {{ partial "load_site_assets.html" . }}
+  {{ block "load_page_assets" . }}
+    {{ with .Content }}{{ end }}
+  {{ end }}
+  {{ partial "assets.html" . }}
+</head>
+<body>
+  <main>
+    <article>
+      <div class="heading-wrap">
+      {{ partial "heading.html" . }}
+      </div>
+      <div class="u-wrapper">
+        <div class="u-padding">
+          {{ if .TableOfContents }}
+            <li class="toc-item" style="border:none">{{ .TableOfContents }}</li>
+          {{ end }}
+      {{ .Content }}
+        </div>
+       </div>
+      <div class="u-wrapper">
+        <div class="u-padding">
+  {{ partial "comments.html" . }}
+  </div></div>
+    </article>
+  </main>
+</body>
+
+</html>

@@ -1,15 +1,24 @@
 ---
+layout: "gallery"
 author: "柯棋瀚"
-title: "古琴錄音錄象"
+title: "古琴"
 date: 2018-11-19
 lastmod: 2019-06-12
 categories: ["琴"]
-tags: ["枼腳"]
+tags: ["作品"]
 url: /guqin
+menu:
+  main1:
+    weight: 2
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/guqin.md'
-description: '學琴五秊，自以爲小有所成，便想發布錄音。弟 1—4 㫷是 2018 秊四月初錄的，不怎麼滿意，在錄音棚狀態跟平時彈不太一樣。計畫以後每秊二月㪅新。'
+description: '這裏是古琴錄音錄像。學琴五秊，自以爲小有所成，便想發布錄音。弟 1—4 㫷是 2018 秊四月初錄的，不怎麼滿意，在錄音棚狀態跟平時彈不太一樣。計畫以後每秊二月㪅新。
+<br>我的網易音樂人 <a href="https://music.163.com/#/artist?id=13612790" target="_blank">赫赫文王</a> <img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=%E7%B6%B2%E6%98%93%E9%9B%B2%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DneteaseMusic%26queryKey%3D275990862"  height="23px">
+
+視頻發在 B 站上 <a href="https://space.bilibili.com/176570453" target="_blank">赫赫文王</a> <img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=bilibili%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D176570453"  height="23px">'
 vertical: false
 ---
+
+<div class="vertical-false" style="margin-top:8em">
 
 # 琴自述
 
@@ -17,11 +26,13 @@ vertical: false
 
 柯棋瀚，1997 秊生，現爲北京師範大學歷史學院本科生，硏究方向爲經學。2013 秊初開始學琴，啓蒙於董雯雯師，後跟隨何大治師學琴至今。彈琴以求古發微爲旨歸，注重實學，不善虛談。能彈三十餘曲，其中，隨何大治師學<v>佩蘭</v>、<v>猿鶴雙清</v>等十餘王華德傳譜曲目，獨立打譜<v>髙山</v>、<v>陽春</v>等十餘<v>神奇祕譜</v>曲目，獨立譯譜、打譜唐鈔本<v>碣石調幽蘭</v>。改編有<v>高山流水復唐</v>、<v>梅花三弄刪宋</v>等曲目。記錄竝恢復<v>佩蘭</v>、<v>猿鶴雙清</v>等數曲王華德錄音曲目，整理、發布了王華德未出版錄音，爲保存王氏琴藝提供了重要資料。潛心古琴理論探索，寫有<v>神奇秘譜的指法蠲</v>等文章，辨章指法，發前人所未發。<v>試論琴樂諸要素──構形、節奏與氣息</v>等文，提出琴樂結構的分析方法。寫有數篇關於琴律、琴調的科普文章，格調髙達。發起「傳世琴譜數字文本化工程」，但求遺澤後世。<n>這是爲了一本書寫的，老師說不用寫㝵那麼謙虛，那我就把自己吹㝵厲害一點。</n>
 
+</div>
+
 # 錄音
 
-我的網易音樂人<listen>[赫赫文王](https://music.163.com/#/artist?id=13612790)</listen><img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=%E7%B6%B2%E6%98%93%E9%9B%B2%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DneteaseMusic%26queryKey%3D275990862"  height="23px">
-
-視頻發在 B 站上<listen>[赫赫文王](https://space.bilibili.com/176570453)</listen><img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=bilibili%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D176570453"  height="23px">
+<div class="gallery" style="margin-top:1em">
+<div class="paper-wrap">
+<div class="paper-card perform">
 
 ## No.1　臞仙曰
 
@@ -39,6 +50,10 @@ vertical: false
 8. 廣陵散
 9. 汎滄浪
 
+</div></div>
+<div class="paper-wrap">
+<div class="paper-card perform">
+
 ## No.2　芝仙曰
 
 <listen>[査看詳情](https://music.163.com/#/album?id=38104505)</listen><date>2018-04-01</date>
@@ -48,6 +63,10 @@ vertical: false
 1. 洞庭秋思
 2. 神人暢
 
+</div></div>
+<div class="paper-wrap">
+<div class="paper-card perform">
+
 ## No.3　古風
 
 <listen>[査看詳情](https://music.163.com/#/album?id=38082731)</listen><date>2018-04-01</date>
@@ -56,6 +75,10 @@ vertical: false
 
 1. 碣石調·幽蘭
 2. 梅花三弄刪宋
+
+</div></div>
+<div class="paper-wrap">
+<div class="paper-card perform">
 
 ## No.4　王門紹灮
 
@@ -69,7 +92,13 @@ vertical: false
 4. 猿鶴雙清
 5. 醉漁唱晚
 
+</div></div></div>
+
 # 視頻
+
+<div class="gallery" style="margin-top:1em">
+<div class="paper-wrap">
+<div class="paper-card perform">
 
 ## No.1　二〇一九
 
@@ -81,6 +110,12 @@ vertical: false
 4. 泛滄浪
 5. 髙山
 
+</div></div>
+<div class="paper-wrap">
+<div class="paper-card perform">
+
 ## No.2　第十一屆全國大學生古琴音樂會
 
 <listen>[玄默（神奇祕譜）](https://www.bilibili.com/video/av55325078)</listen>
+
+</div></div></div>

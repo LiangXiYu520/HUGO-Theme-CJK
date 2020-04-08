@@ -1,13 +1,13 @@
 ---
 author: "柯棋瀚"
-title: "友鏈"
+title: "links"
 date: 2018-10-27
 lastmod: 2019-10-06
 categories: ["站務"]
 tags: ["公吿"]
 menu:
   main:
-    weight: 60
+    weight: 2
 url: /links
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.md'
 vertical: false
@@ -100,11 +100,11 @@ vertical: false
 
 [博客志 - 優秀箇人獨立博客導航](http://www.jetli.com.cn)　<n>20191117　耶✌️</n>
 
-[Blog We](https://blogwe.com/allblogs.html)<n>20190309—20190929　感謝收錄我，現爲友情特約博客　<a href="https://blogwe.com/kqh-me.html" target="_blank">收錄葉</a></n>
+[Blog We](https://blogwe.com/allblogs.html)<n>20190309—20190929　感謝收錄我，現爲友情特約博客　<a href="https://blogwe.com/kqh-me.html" target="\_blank">收錄葉</a></n>
 
 [博客樹](https://manman.qian.lu/bokeshu)<n>20181111</n>
 
-[个站商店](http://storeweb.cn)　<n>20181030　<a href="https://storeweb.cn/site/one/661" target="_blank">收錄葉</a></n>
+[个站商店](http://storeweb.cn)　<n>20181030　<a href="https://storeweb.cn/site/one/661" target="\_blank">收錄葉</a></n>
 
 [奇草導航](https://www.qicao.cn/?keyword=%E8%B5%AB%E8%B5%AB%E6%96%87%E7%8E%8B)
 
@@ -112,21 +112,21 @@ vertical: false
 
 ### 二類
 
-<a href="https://zgboke.org" title="收录国内优秀独立博客！" target="_blank">中国博客联盟</a><n>20181027　<a href="https://zgboke.org/site/kujihhoe.com/blog.html" target="_blank">收錄葉</a></n>
+<a href="https://zgboke.org" title="收录国内优秀独立博客！" target="\_blank">中国博客联盟</a><n>20181027　<a href="https://zgboke.org/site/kujihhoe.com/blog.html" target="\_blank">收錄葉</a></n>
 
-<a href="http://sl.laolibab.cn/" target="_blank">老李收录网</a><n>20181029　<a href="http://sl.laolibab.cn/bk/246.html" target="_blank">收錄葉</a></n>
+<a href="http://sl.laolibab.cn/" target="\_blank">老李收录网</a><n>20181029　<a href="http://sl.laolibab.cn/bk/246.html" target="\_blank">收錄葉</a></n>
 
 [網址大全](http://www.98du.net/bk/246.html)
 
-[博客之家](https://likinming.com)<n>20181027　<a href="https://likinming.com/post-3878.html" target="_blank">收錄葉</a></n>
+[博客之家](https://likinming.com)<n>20181027　<a href="https://likinming.com/post-3878.html" target="\_blank">收錄葉</a></n>
 
 [鹏仔网站导航](http://dh.iqzhan.cn)<n>20181031　<a href="http://dh.iqzhan.cn/?id=130" target="\_blank">收錄葉</a></n>
 
-[网址免费提交](http://submit-url-free.com)<n>20181027　<a href="http://submit-url-free.com/?mod=siteinfo&wid=5599" target="_blank">收錄葉</a></n>
+[网址免费提交](http://submit-url-free.com)<n>20181027　<a href="http://submit-url-free.com/?mod=siteinfo&wid=5599" target="\_blank">收錄葉</a></n>
 
 [爲簡收錄](http://navi.cnfunny.cn/bk/246.html)
 
-~~[boke112导航](https://boke112.com)<n>20181028　<a href="https://boke112.com/bkml/5976.html" target="_blank">收錄葉</a>　201909 再看，沒了</n>~~
+~~[boke112导航](https://boke112.com)<n>20181028　<a href="https://boke112.com/bkml/5976.html" target="\_blank">收錄葉</a>　201909 再看，沒了</n>~~
 
 ~~[博客大全](http://daohang.zbzmtbk.com)<n>20181108　<a href="http://daohang.zbzmtbk.com/siteinfo/261.html" target="\_blank">收錄葉</a>　201909 再看，網站掛了</n>~~
 

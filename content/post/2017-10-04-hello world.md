@@ -8,6 +8,9 @@ tags: ["公吿"]
 url: /blog/2017/10/04/shuoming.html
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/2017-10-04-hello world.md'
 vertical: false
+menu:
+  top2018:
+    weight: 3
 description: "本站更新日誌"
 ---
 
@@ -1328,3 +1331,11 @@ sans 英文字體。
 `.des1-tag a{color:}`
 
 評論、谷歌分析腳本移到 `footer`。評論腳本放到本地，這樣只剩 XHR 了。
+
+#### 4.5.3
+
+葉腳左側鏈接自動化。
+
+年度🔝自動化。
+
+`layout` 加入 `gallery` `blcok`，作品全放在這裏。又完成一項麻煩的大工程。

@@ -1,17 +1,22 @@
 ---
+layout: "block"
 author: "柯棋瀚"
-title: "讀切韻擬音"
+title: "讀切韻"
 date: 2018-11-19
 lastmod: 2019-03-20
 categories: ["漢語"]
-tags: ["枼腳"]
+tags: ["作品"]
 url: /reading
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/reading.md'
 vertical: false
-description: '<p>我又自詡對語言的敏感度比常人畧高一些。暑假突肰對古音感興趣，上古音難度太大，那就中古音吧，便用了半箇月來突擊，知道了一箇大槩。用古音讀書豈不是很美妙的事情？</p><p>計畫先把尙書讀完，可能的話兩周一篇。</p>'
+menu:
+  main1:
+    weight: 7
+description: '我又自詡對語言的敏感度比常人畧高一些。暑假突肰對古音感興趣，上古音難度太大，那就中古音吧，便用了半箇月來突擊，知道了一箇大槩。用古音讀書豈不是很美妙的事情？<br>
+我的 B 站頻道：<a href="https://space.bilibili.com/176570453/channel/detail?cid=70633" target="\_blank">讀切韻擬音</a>'
 ---
 
-我的 B 站頻道：<listen>[讀切韻擬音](https://space.bilibili.com/176570453/channel/detail?cid=70633)</listen>
+<div class="vertical-false" style="margin-top:2em">
 
 ## No.1　立部伎
 
@@ -74,12 +79,15 @@ kung srii ngioo zjenh qan ciook yuun，thad zqaong sam khiang njex gha nqjn。
 
 工師愚賤安足云，太常三卿爾何人。
 
+</div>
+<div class="vertical-false">
+
 ## No.2　春秋獲麟
 
 <listen>[立卽觀看](https://www.bilibili.com/video/av29500316)</listen>
 <date>2018-08-16</date>
 
-### 1
+#### 1
 
 chqyjn chiuu keng yaot：
 
@@ -89,7 +97,7 @@ chqyjn chiuu keng yaot：
 
 <n>哀公</n>十有四年，春，西狩獲麟。
 
-### 2
+#### 2
 
 kung jaong dryenh yaot：
 
@@ -107,7 +115,7 @@ nqjen cauk zquk squuh cq？sjn chauix cqax jax。
 
 然則孰狩之？薪采者也。
 
-### 3
+#### 3
 
 sjn chauix cqax，cauk myoei cqax jax。ghat ye jx squuh ngiaon cq？dad cq jax。
 
@@ -129,7 +137,7 @@ iuux jx kauh cqax yaot：「iuux kyn nq krauk cqax。」
 
 有以告者曰：「有麕而角者。」
 
-### 4
+#### 4
 
 khungx cix yaot：「zquk yeh laui caui？zquk yeh laui caui？」
 
@@ -151,7 +159,7 @@ se squuh ghuraek ljn，khungx cix yaot：「ngoo daux giung ix！」
 
 西狩獲麟，孔子曰：「吾道窮矣！」
 
-### 5
+#### 5
 
 《chqyjn chiuu》gha jx sqx ghoo qioenx？
 
@@ -173,7 +181,7 @@ kyun cix ghat yeh ye《chqyjn chiuu》？
 
 君子曷爲爲《春秋》？
 
-### 6
+#### 6
 
 puat luanh sqjed，pyaonx cqoe cqengh，mak gioenh cqoe《chqyjn chiuu》。
 
@@ -199,7 +207,7 @@ jx kyun cix cq ye jek iuux ngrauh ghoo chjex jax。
 
 以君子之爲亦有樂乎此也。
 
-### 7
+#### 7
 
 kuk liaong dryenh yaot：
 
@@ -221,9 +229,12 @@ gi piuu ngiaon iuux，piuu srix ljn piuu ghaung qioe triung kuauk jax。
 
 其不言有，不使麟不恆於中國也。
 
+</div>
+<div class="vertical-false">
+
 ## No.3　尙書‧堯典
 
-### 1
+#### 1
 
 ngeu tenx
 
@@ -237,7 +248,7 @@ ciang soonh ioo rwjh，nqaongh ioo ngioo sqwjnh，cooh ngeu tenx。
 
 將遜于位，讓于虞舜，作《堯典》。
 
-### 2
+#### 2
 
 yoot nqaok ke koox teh ngeu，yoot pyaongh hyn khrjm mrjang myn si qan qan，
 
@@ -259,7 +270,7 @@ prak sjengh cqjeu mrjang，ghep ghwa myoonh prong，
 
 百姓昭明，協和萬邦，
 
-### 3
+#### 3
 
 le mjn qioe prjenh zq qioong。
 
@@ -281,7 +292,7 @@ jjn pjn chqwjt nqjt，brjang drjt tung cooh。
 
 寅賓出日，平秩東作。
 
-### 4
+#### 4
 
 nqjt triung seng teux，jx qin driungh chqwjn。
 
@@ -303,7 +314,7 @@ nqjt rwjangx seng hwax，jx cqjengh driungh ghrax。
 
 日永星火，以正仲夏。
 
-### 5
+#### 5
 
 kyt mjn qjn，teux squh hii kraek。
 
@@ -325,7 +336,7 @@ kyt mjn jj，teux squh mau srein[^3]。
 
 厥民夷，鳥獸毛毨。
 
-### 6
+#### 6
 
 sqjn mrjangh ghwa squk drak srok pyaong yoot qju too，
 
@@ -347,7 +358,7 @@ teh yoot：「cj，nqoex hrje grjh ghwa！」
 
 帝曰：「咨，汝羲暨和！
 
-### 7
+#### 7
 
 gi sam prak iux liuk zswjn iux liuk nqjt，
 
@@ -369,7 +380,7 @@ pyaongh ze yoot：「jjnh cix cqoo khex mrjang。」
 
 放齊曰：「胤子 朱啓明。」
 
-### 8
+#### 8
 
 teh yoot：「hioo！ngrjn zsioong，khax ghoo？」
 
@@ -391,7 +402,7 @@ teh yoot：「cj，sjh ngrok！sqaong sqaong ghung sqwjx pyaong kat，」
 
 帝曰：「咨，四岳！湯湯洪水方割，
 
-### 9
+#### 9
 
 dangx dangx ghrwaei sraen siaong ling，ghaux ghaux thau then。
 
@@ -413,7 +424,7 @@ ngrok yoot：「jh coi！sqh khax，noix jx。」
 
 岳曰：「异哉！試可，乃已。」
 
-### 10
+#### 10
 
 teh yoot：「yaongx，khrjm coi！kiux coix，cek joongh pyt zqjeng。」
 
@@ -435,7 +446,7 @@ yoot：「mrjang mrjang jaong crik luh。」
 
 曰：「明明揚側陋。」
 
-### 11
+#### 11
 
 srj sjeh teh yoot：「iux krwaen zoix ghrax，yoot ngioo sqwjnh。」
 
@@ -453,7 +464,7 @@ khok ghraei jx hrauh，cqng cqng ngiaod，piu krak kran。」
 
 克諧以孝，烝烝乂，不格姦。」
 
-### 12
+#### 12
 
 teh yoot：「ngax gi sqh coi！nqoex ioo zq
 
@@ -477,4 +488,5 @@ teh yoot：「khrjm coi
 [^2]: 《經典釋文》本條：「孳，音字。」
 [^3]: 《經典釋文》本條：「毨，先典反（senx）。」《康熙字典》：「《唐韻》《集韻》《韻會》《正韻》蘇典切（senx），音詵（srein）。」
 
-<br>
+
+</div>

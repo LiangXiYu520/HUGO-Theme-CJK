@@ -1,23 +1,32 @@
 ---
+layout: "block"
 author: "柯棋瀚"
-title: "實地錄音 Field Recording"
+title: "實地錄音"
 date: 2018-11-19
 lastmod: 2019-11-09
 categories: ["錄音"]
-tags: ["枼腳"]
+tags: ["作品"]
 url: /recording
+menu:
+  main1:
+    weight: 4
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/recording.md'
-description: '在日常生活中，耳朵聽到的聲音往往被我们忽畧。而現在，我将在這裏發布我的實地錄音，帶大家重新理解聆聽，感受聲音的彊大表現力。請在安静的地方戴著耳機聽。<br>In daily life, the sound heard by the ear is often overlooked by us. Now, I will post my field recording here, trying to lead everyone re-understand listening, and feel the expressive power of the sound. Please wear headphones in a quiet place.'
+description: '在日常生活中，耳朵聽到的聲音往往被我们忽畧。而現在，我将在這裏發布我的實地錄音，帶大家重新理解聆聽，感受聲音的彊大表現力。請在安静的地方戴著耳機聽。<br>In daily life, the sound heard by the ear is often overlooked by us. Now, I will post my field recording here, trying to lead everyone re-understand listening, and feel the expressive power of the sound. Please wear headphones in a quiet place when listening.'
 vertical: false
 ---
 
+<div class="vertical-false" style="margin-top:3em">
+
 以下三箇平臺同步發布，內容完全一致：
 
-- [RSS](http://www.ximalaya.com/album/30113938.xml)</n>喜馬拉雅提供</n>
-- Soundcloud　[https://soundcloud.com/kujihhoe](Kujihhoe)</n>需要翻牆</n>
-- 播客 Podcast　<a href="https://podcasts.apple.com/hk/podcast/%E6%83%85%E5%BD%A2%E4%BA%8E%E5%A3%B0-endless-sound/id1483568121" target="_blank">情形于声 Endless Sound</a></n>似乎鏈接打不開，直接在 app 上搜索吧</n>
-- 喜馬拉雅　<a href="https://www.ximalaya.com/renwen/30113938/" target="_blank">情形于声</a>
-- 網易雲音樂電臺　<a href="http://music.163.com/#/radio/527105637?userid=275990862" target="_blank">情形于声</a>
+- [RSS](http://www.ximalaya.com/album/30113938.xml)<n>喜馬拉雅提供</n>
+- Soundcloud　[https://soundcloud.com/kujihhoe](Kujihhoe)<n>需要翻牆</n>
+- 播客 Podcast　<a href="https://podcasts.apple.com/hk/podcast/%E6%83%85%E5%BD%A2%E4%BA%8E%E5%A3%B0-endless-sound/id1483568121" target="\_blank">情形于声 Endless Sound</a><n>似乎鏈接打不開，直接在 app 上搜索吧</n>
+- 喜馬拉雅　<a href="https://www.ximalaya.com/renwen/30113938/" target="\_blank">情形于声</a>
+- 網易雲音樂電臺　<a href="http://music.163.com/#/radio/527105637?userid=275990862" target="\_blank">情形于声</a>
+
+</div>
+<div class="vertical-false">
 
 ##  Vol. 1　臺南十二月二十四日 Tainan on December 24
 
@@ -31,6 +40,9 @@ People in Tainan on Christmas Day. The recording consists of three lines: the tr
 
 The first recording of life. Most of them recorded with Zoom H2N. Felt the power of it, it feels more difficult than listen1ing to the ear, all kinds of sounds can be discerned. Surprised.
 
+</div>
+<div class="vertical-false">
+
 ##  Vol. 2　臺北十二月三十一日 Taipei on December 31
 
 <listen>[網易](https://music.163.com/#/program?id=1369247248)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391758)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/wdhlvqxitfb4)</listen>　<date>2018-05-13</date>　<date>采集於 2017-12-31</date>
@@ -39,6 +51,9 @@ The first recording of life. Most of them recorded with Zoom H2N. Felt the power
 
 The fun of Taipei’s New Year’s Eve. This is more satisfactory than *Tainan*, as the material was collected much more. I spent a total of 4 hours. I recorded the sound to be highlighted and the ambience separately, and used three remixes. The effect is definitely better. See [2018 2018](/blog/2018/01/01/xbnm.html) for details.
 
+</div>
+<div class="vertical-false">
+
 ##  Vol. 3　宿舍下打乒乓球的大媽 Aunt playing table tennis under my dormitory
 
 <listen>[網易](https://music.163.com/#/program?id=1369269643)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219795558)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/aunt)</listen>　<date>2018-05-13</date>
@@ -46,6 +61,9 @@ The fun of Taipei’s New Year’s Eve. This is more satisfactory than *Tainan*,
 宿舍下打乒乓球的大媽。後來，那幾張乒乓球桌一夜之閒沒了，我們終於獲得了寧靜。
 
 gear: Mixpre 3, a pair of SE 8. Aunt playing table tennis under my dormitory. Later, the  table tennis tables were gone for a night, and we finally got peace.
+
+</div>
+<div class="vertical-false">
 
 ## Vol. 4　凌晨三點的新發地 Sinfati at 3 am
 
@@ -89,6 +107,9 @@ The biggest difficult I encountered was the heavy crowd. Shops were squatting, a
 
 The South Second Ring Road is quite desolate. Beijing is all developing to the north. When I read a webpage saying that the open-air trade would disappear in the next five years in Sinfati, I thought the fun would be greatly reduced.
 
+</div>
+<div class="vertical-false">
+
 ##  Vol. 5　六月七日高考開始 Beginning of the college entrance examination
 
 <listen>[網易](https://music.163.com/#/program?id=1369623908)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/219796591)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/cee1)</listen>　<date>2018-06-08</date>
@@ -96,6 +117,9 @@ The South Second Ring Road is quite desolate. Beijing is all developing to the n
 45 分鐘的素材剪成的。時閒：2018年6月7日，事件：高考語文開考之前，地點：N大三附中考點。聲音最好的一點是你沒法直接判斷出時閒，所以我就按邏輯順序剪出來，很多都是打亂了時閒先後的。從呼朋引伴，老師招呼學生，到看考點，複習，到家長、老師最後的叮囑、加油，到進考場，確定幾箇遲到的學生是否來了，最後是老師、家長的閑聊。
 
 gear: Mixpre 3, a pair of SE 8. 45 minutes of material. Time: June 7th, 2018. Event: before the college entrance examination (Chinese). Location: the third affiliated secondary school. The best thing about sound is that you can't judge the time order, so I cut it out in a logical order, and many of them are disrupted. Greeting, seeing the test sites, reviewing, the parents' and teacher's last exhorting, and finally the chat between the teacher and the parents.
+
+</div>
+<div class="vertical-false">
 
 ##  Vol. 6　六月八日高考結束 End of the college entrance examination
 
@@ -105,6 +129,9 @@ gear: Mixpre 3, a pair of SE 8. 45 minutes of material. Time: June 7th, 2018. Ev
 
 gear: Mixpre 3, a pair of SE 8. 30 minutes of material. Time: June 8th, 2018. Event: After the college entrance examination(English). location: the third affiliated secondary school. Time was up, more and more parents were coming. After the students came out, all the people were taking photos. Later, All have gone. The staff took off the door banner and the examination room map. A few parents were chatting.
 
+</div>
+<div class="vertical-false">
+
 ##  Vol. 7　午夜交響曲 Midnight chorus
 
 <listen>[網易](https://music.163.com/#/program?id=2058625601)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391759)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/snoring)</listen>　<date>2018-12-26</date>
@@ -112,6 +139,9 @@ gear: Mixpre 3, a pair of SE 8. 30 minutes of material. Time: June 8th, 2018. Ev
 150 分钟的素材剪成的，也是有起承转合的。
 
 gear: Mixpre 3, a pair of SE 8. 150 minutes of material. The sound of snoring. It indeed has a structure.
+
+</div>
+<div class="vertical-false">
 
 ## Vol. 8　嘴皮發出的奇妙聲響 Wonderful sound of mouth
 
@@ -121,6 +151,9 @@ gear: Mixpre 3, a pair of SE 8. 150 minutes of material. The sound of snoring. I
 
 gear: Mixpre 3, a pair of SE 8. When I woke up one afternoon, I found that my mouth could make a strange whistle, and I recorded it on my mobile phone. There is a very high frequency segment. The spectrum shows the fundamental frequency is 3-4 kHz. The original format of the mobile phone is 22kHz, and the sound quality is terrible.
 
+</div>
+<div class="vertical-false">
+
 ## Vol. 9　夜晚田野交響曲 Night field Chorus
 
 <listen>[網易](https://music.163.com/dj?id=2061605723&userid=275990862)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/220391761)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/field1)</listen>　<date>2019-06-12</date>　<date>采集於 2019-06-09 21:00</date>
@@ -129,9 +162,12 @@ gear: Mixpre 3, a pair of SE 8. When I woke up one afternoon, I found that my mo
 
 分爲四段：1、蟲鳴，2、加入了高頻的蟲鳴，3、蛙聲逐漸起來，達到高潮，4、單獨的蛙聲
 
-gear: Mixpre 3, a pair of SE 8. Location: a field in the border of Yizheng and Yangzhou. Some were on the road, some were down to the field, and the sound source is about 2 meters away. The countryside was too quiet, there was no any noise. There were railway bridges in the distance. From time to time, there were trains passing by, and I want to record, a little. There were temple bells at nine o'clock, but very far away. 
+gear: Mixpre 3, a pair of SE 8. Location: a field in the border of Yizheng and Yangzhou. Some were on the road, some were down to the field, and the sound source is about 2 meters away. The countryside was too quiet, there was no any noise. There were railway bridges in the distance. From time to time, there were trains passing by, and I want to record, a little. There were temple bells at nine o'clock, but very far away.
 
 Divided into four segments: 1, insects, 2, added high-frequency insects, 3, frog sound gradually reaching a climax, 4, separate frog sound
+
+</div>
+<div class="vertical-false">
 
 ## Vol. 10　本科畢業生跳蚤市場 Undergraduate graduate flea market
 
@@ -143,11 +179,14 @@ Divided into four segments: 1, insects, 2, added high-frequency insects, 3, frog
 
 跳蚤市場的原始素材，似乎沒什麼邏輯聯繫，我還是分成兩部分，前半部分是叫賣聲，「同學們借過一下」之後是討價還價。開頭和末尾則是彩蛋了。
 
-gear: Mixpre 3, a pair of SE 8. The graduates flea market. The weather in Beijing is inhuman. Although it was nine o'clock, it was still hot to die. 
+gear: Mixpre 3, a pair of SE 8. The graduates flea market. The weather in Beijing is inhuman. Although it was nine o'clock, it was still hot to die.
 
 The process: weaken the low frequency below 125hz by batch processing, normalize to -3db; then listen1 to each piece of material, delete or cut the useless ones; multi-track mixing, organize a large frame; adjust the connection between each segment; average sond level. In this way, you have to listen1 at least four times. Regarding the volume, some people are farther away, the voice is very small, and some of them are very loud. In this case, I will use the "voice volume level" to average to a uniform level. The other part will remain the original to reflect the spatial relationship.
 
 The original material of the flea market seems to have no logical connection. I still divide it into two parts. The first part is selling sound, and then the bargain. At the beginning and end are the bonus scenes.
+
+</div>
+<div class="vertical-false">
 
 ## Vol. 11　東東 Tung Tung
 
@@ -159,6 +198,9 @@ The original material of the flea market seems to have no logical connection. I 
 
 Gear: Mixpre 3, a pair of SE 8. Recorded two days before the dissolution of our dormitory. This dormitory subculture seems to develop in junior year.
 
+</div>
+<div class="vertical-false">
+
 ## Vol. 12　 Dormitory at 23:00 宿舍睡前
 
 <listen>[網易](https://music.163.com/#/program?id=2063919889)</listen>　<listen>[喜馬拉雅](https://www.ximalaya.com/renwen/30113938/224820001)</listen>　<listen>[SoundCloud](https://soundcloud.com/kujihhoe/dormitory-at-2300)</listen>　<date>2019-11-01</date>
@@ -168,6 +210,9 @@ Gear: Mixpre 3, a pair of SE 8. Recorded two days before the dissolution of our 
 gear: Mixpre 6 II, AT 4022 pair with Iso-binaural
 
 My first recording with omni microphones. I'm surprised by the wide image and rare coloured sounds of omni type.
+
+</div>
+<div class="vertical-false">
 
 ## Vol. 13　 氫能源汽車排氣 Hydrogen energy bus releasing gas
 
@@ -181,3 +226,4 @@ The piece has full frequency, from the lowest frequency up to more than 20khz. S
 
 There is a sudden decrease in the sound. A man was walking by at the moment. I didn't expect bodies to block the sound so effectively.
 
+</div>

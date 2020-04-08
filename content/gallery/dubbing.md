@@ -1,31 +1,53 @@
 ---
+layout: "gallery"
 author: "柯棋瀚"
-title: "旁白配音×播音"
+title: "旁白 播音"
 date: 2018-11-19
 lastmod: 2019-04-29
 categories: ["錄音"]
-tags: ["枼腳"]
+tags: ["作品"]
 url: /dubbing
 vertical: false
+menu:
+  main1:
+    weight: 8
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/dubbing.md'
-description: '<p>播音是初二變聲的時候誕生的一箇想法。那時模仿夏青，聽他的錄音，拏著稿子練。又想自己買一箇小功率無線電發射器，做一箇小型電臺，不過只停留在想法階段。我嗓子不行，唱歌音域太小，只能來讀讀東西。大四下期加了學校廣播臺，沒幾箇人聽，就當自娛自樂了。兩周一次，一共就去了三次，後來感覺太浪費時間，就沒去了。</p>'
+description: '見笑。播音是初二變聲的時候誕生的一箇想法。那時模仿夏青，聽他的錄音，拏著稿子練。又想自己買一箇小功率無線電發射器，做一箇小型電臺，不過只停留在想法階段。我嗓子不行，唱歌音域太小，只能來讀讀東西。大四下期加了學校廣播臺，沒幾箇人聽，就當自娛自樂了。兩周一次，一共就去了三次，後來感覺太浪費時間，就沒去了。'
 ---
 
-不知下一次多久能出。
+<h1 style="margin:3em auto -4em auto">旁白</h1>
 
-## No.1　北師大政府管理學院四名學生深入彌勒市林區 探訪護林員
+<div class="gallery">
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>No.1　北師大政府管理學院四名學生深入彌勒市林區 探訪護林員</h2>
 
 <listen>[立卽觀看](https://v.youku.com/v_show/id_XMTczMjYwMDEzNg==.html?spm=a2h0k.11417342.soresults.dtitle)</listen><date>2016-09-21</date>
 
-2016 暑期實踐。一位髙中同學叫我幫忙錄的。用的一箇類似採訪用的小蜜蜂那樣的拾音設備。㝡奇怪的是爲何做視頻的人要把我的旁白調快？？這樣很奇怪很彆扭。
+2016 暑期實踐。一位髙中同學叫我幫忙錄的。用的一箇類似採訪用的小蜜蜂那樣的拾音設備。遺憾的是旁白被做視頻的人調快了。
 
-## No.2　阿昌刀鍛造工藝——2016暑期實踐紀實
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>No.2　阿昌刀鍛造工藝——2016暑期實踐紀實</h2>
 
 <listen>[立卽觀看](https://www.bilibili.com/video/av35467511/)</listen><date>2018-11-07</date><date>製作於 2016-09</date>
 
 㪅多見 [記二〇一六秊戶撒刀暑期實踐](/post/134husa)。
 
-## No.3　資訊縱橫 1
+</div>
+</div>
+</div>
+
+<h1 style="margin:0 auto -4em auto">播音</h1>
+
+<div class="gallery">
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>No.1　資訊縱橫 1</h2>
 
 <listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/172735988)</listen><date>2019-04-01</date>
 
@@ -71,13 +93,18 @@ description: '<p>播音是初二變聲的時候誕生的一箇想法。那時模
 
 本期节目编辑、播音：止息，导播：岳天舒，更多内容请关注北师大广播台喜马拉雅和微信公众号，再见。
 
-## No.4　資訊縱橫 2
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>No.2　資訊縱橫 2</h2>
 
 <listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/176380007)</listen><date>2019-04-15</date>
 
 [微信公眾號推送](https://mp.weixin.qq.com/s/FK0MWyR2RBWWNnd1lx_Isw)
 
-（片花：北京师范大学广播台，<v>资讯纵横</v>） 
+（片花：北京师范大学广播台，<v>资讯纵横</v>）
 
 各位听众，下午好！今天是4月15日，星期一，农历三月十一。北京今天依然有3-4级大风，阵风可达6级，最高气温26℃，未来两天升温的势头依然不减。以下是三则今日<v>人民日报</v>摘要。
 
@@ -103,11 +130,17 @@ description: '<p>播音是初二變聲的時候誕生的一箇想法。那時模
 
 本期节目编辑、播音：止息，导播：周卉、止息，更多内容请关注北师大广播台喜马拉雅和微信公众号，再见。
 
-## No.5　資訊縱橫 3
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>No.3　資訊縱橫 3</h2>
+
 
 <listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/180019799)</listen><date>2019-04-29</date>
 
-（片花：北京师范大学广播台，<v>资讯纵横</v>） 
+（片花：北京师范大学广播台，<v>资讯纵横</v>）
 
 各位听众，下午好！今天是 4 月 29 日，星期一，农历三月二十五。五月四日是五四运动一百周年，本期节目我们来聚焦青年。首先来看师大新闻。
 
@@ -134,3 +167,8 @@ description: '<p>播音是初二變聲的時候誕生的一箇想法。那時模
 因为即将投入奋斗，所以不惧怕未来；因为曾经付出汗水，所以不叹息过去。身处新时代，每个人都恰逢其时、重任在肩。接过历史的接力棒，以青春之我、奋斗之我建功立业，中华民族伟大复兴的中国梦就将变为现实。
 
 本期节目编辑、播音：止息，导播：周卉，更多内容请关注北师大广播台喜马拉雅和微信公众号，再见。
+
+</div>
+</div>
+
+</div>

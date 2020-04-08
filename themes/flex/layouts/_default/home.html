@@ -58,29 +58,15 @@
 <div class="discover" >
 <ol>
   <h2>2017-2018</h2>
-<li><a href="/blog/2018/01/24/tiyj.html" target="_blank">立言記｜來輔大交換是一種怎樣的體驗？</a></li>
-<li><a href="/blog/2017/10/28/fuchou.html" target="_blank">元麟記｜《公羊傳》齊襄復讎事詮釋史</a></li>
-<li><a href="/blog/2017/10/04/shuoming.html" target="_blank">博客開通啦！</a></li>
-<li><a href="/blog/2017/11/01/wjqb.html" target="_blank">絃耕知聞｜我在臺灣的古琴活動</a></li>
-<li><a href="/blog/2017/10/17/jiejue.html" target="_blank">彫梓記｜比較理想的排版解決方案</a></li>
-<li><a href="/blog/2017/12/01/yinlv.html" target="_blank">金手指二｜傳統調學</a></li>
-<li><a href="/blog/2017/11/02/guoyu.html" target="_blank">方音記｜一些兩岸詞彙、讀音對照</a></li>
-<li><a href="/blog/2017/10/05/hxlm.html" target="_blank">立言記｜第一次相遇，你好花蓮</a></li>
-<li><a href="/blog/2017/10/16/sizhong.html" target="_blank">彫梓記｜四種字形標準的小比較</a></li>
-<li> <a href="/blog/2017/11/19/tangmei.html" target="_blank">絃耕記｜梅花三弄刪宋</a></li>
+  {{ range .Site.Menus.top2018  }}
+      <li><a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a></li>
+  {{ end }}
 </ol>
 <ol>
   <h2>2018-2019</h2>
-<li><a href="/143" target="_blank">鄭玄地位的升降——《禮是鄭學》讀後</a></li>
-<li><a href="/blog/2018/10/08/wfvz.html" target="_blank">溫州話璅紀</a></li>
-<li> <a href="/blog/2018/08/15/qpyy.html" target="_blank">金手指｜切韻語音</a></li>
-<li><a href="/blog/2018/10/31/jr.html" target="_blank">神奇秘譜的指法蠲</a></li>
-<li><a href="/blog/2018/11/02/dijqjp.html" target="_blank">第九屆全國大學生古琴音樂會的些許</a></li>
-<li><a href="/blog/2018/11/16/vaji.html" target="_blank">書法史札記三則</a></li>
-<li> <a href="/blog/2018/02/09/houzuowu.html" target="_blank">蜀中琴人侯作吾先生</a></li>
-<li> <a href="/blog/2018/10/16/szgz.html" target="_blank">一些較古的寫法</a></li>
-<li> <a href="/159/" target="_blank">金手指｜古代天文</a></li>
-<li> <a href="/154/" target="_blank">學御紀日</a></li>
+  {{ range .Site.Menus.top2019  }}
+      <li><a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a></li>
+  {{ end }}
 </ol>
 </div>
 </div>

@@ -1,112 +1,170 @@
 ---
+layout: "gallery"
 author: "柯棋瀚"
-title: "古琴表演、講座記錄"
+title: "古琴演出"
 date: 2018-12-07
 lastmod: 2019-11-15
 categories: ["琴"]
-tags: ["枼腳"]
+tags: ["作品"]
 url: /performing
+menu:
+  main1:
+    weight: 3
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/performing.md'
-description: "天殺的微信，信息檢索太不方便，搜也搜不到，只能挨箇去翻，翻也不方便，兩年前的推送翻了五分鐘。微信什麼時候能倒閉啊？我把我所有用過話筒的場合都記下來，可能很多雞毛蒜皮的，純粹是我箇人的記錄，不用在意。"
+description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢索太不方便，搜也搜不到，只能挨箇去翻，翻也不方便，兩年前的推送翻了五分鐘。微信什麼時候能倒閉啊？我把我所有用過話筒的場合都記下來，可能很多雞毛蒜皮的，純粹是我箇人的記錄，不用在意。"
 ---
 
-# 表演記錄
+<h1 style="margin:3em auto -4em auto">表演記錄</h1>
 
-#### 1、在江南大酒店喫酒，佩蘭
+<div class="gallery">
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>1、在江南大酒店喫酒，佩蘭</h2>
 
 <date>2015-07</date>
 
 第一次表演。
 
-#### 2、學院迎新晚会，佩蘭、平沙
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>2、學院迎新晚会，佩蘭、平沙</h2>
 
 <date>2015-09-19</date>
 
-<img src="https://api.superbed.cn/pic/5bfad989c4ff9e05833a0a41" width="400">
+<img src="https://api.superbed.cn/pic/5bfad989c4ff9e05833a0a41">
 
 活動詳情見：[迎新特辑｜"初见欢·历史学院 迎新晚会"正式开演！！！](https://mp.weixin.qq.com/s/p6rwjr2QtQ3psUXYYnu-FQ)
 
->紧接着，同学们开始各显其能。洋洋盈耳的朗诵，余音绕梁的琴筝和鸣，古风古韵的采薇之舞，妙语连珠的小品表演，青春洋溢的歌曲串烧，让晚会的气氛变得愈发欢快热烈。
+> 紧接着，同学们开始各显其能。洋洋盈耳的朗诵，余音绕梁的琴筝和鸣，古风古韵的采薇之舞，妙语连珠的小品表演，青春洋溢的歌曲串烧，让晚会的气氛变得愈发欢快热烈。
 
 當時做的背景：
 
-<img src="https://pic.superbed.cn/item/5d47c2fd451253d178724784.jpg" width="400">
+<img src="https://pic.superbed.cn/item/5d47c2fd451253d178724784.jpg">
 
-#### 3、燕歸來，學活，梅花三弄
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>3、燕歸來，學活，梅花三弄</h2>
 
 <date>2015-11-14</date>
 
-<img src="https://api.superbed.cn/pic/5bfadcb0c4ff9e05824602c8"  width="400">
+<img src="https://api.superbed.cn/pic/5bfadcb0c4ff9e05824602c8" >
 
 活動詳情見：[【“燕归来”传统文化节】闭幕式圆满落幕！](https://mp.weixin.qq.com/s/0vuiVu0f-vUBS9TZWaWVzw)
 
 > 第二篇章名为“古韵悠悠”。由松风琴社、书法协会共同带来的<v>清律逸风</v>将现场书法与古琴演奏相结合，蕴含着中国古代文人的情怀。
 
-#### 4、乾坤琴社秊會，溫江，佩蘭
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>4、乾坤琴社秊會，溫江，佩蘭</h2>
 
 <date>2016-01-24</date>
 
-<img src="https://api.superbed.cn/pic/5bfae0eec4ff9e05833a0a45"  width="400">
+<img src="https://api.superbed.cn/pic/5bfae0eec4ff9e05833a0a45" >
 
 網上新聞已經被刪除了。
 
-#### 5、輔仁校區，猿鶴雙清、佩蘭、梅花三弄
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>5、輔仁校區，猿鶴雙清、佩蘭、梅花三弄</h2>
 
 <date>2016-03</date>
 
 一箇什麼傳統文化班叫我去，臺下是寫油膩進修老師。記得猿鶴雙清差點忘了。也做了箇背景：
 
-<img src="https://pic.superbed.cn/item/5d47c2fd451253d178724788.jpg"  width="400">
+<img src="https://pic.superbed.cn/item/5d47c2fd451253d178724788.jpg" >
 
-#### 6、第八屆全國大學生古琴音樂會，武漢大學，猿鶴雙清
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>6、第八屆全國大學生古琴音樂會，武漢大學，猿鶴雙清</h2>
 
 <date>2016-05-01</date>
 
-<img src="https://api.superbed.cn/pic/5bfad58dc4ff9e05833a0a38" width="400">
+<img src="https://api.superbed.cn/pic/5bfad58dc4ff9e05833a0a38">
 
 活動詳情見：[第八届全国大学生古琴音乐会在武汉珞珈山成功举办](https://mp.weixin.qq.com/s/dc-RsUYLc3UiJv75V-b07g)
 
-#### 7、松風琴社八周年社慶，輔仁校區
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>7、松風琴社八周年社慶，輔仁校區</h2>
 
 <date>2016-05-14</date>
 
-<img src="https://api.superbed.cn/pic/5bfadfc1c4ff9e05824602c9" width="400">
+<img src="https://api.superbed.cn/pic/5bfadfc1c4ff9e05824602c9">
 
 活動詳情見：[活动 | 松风生日快乐！——辅仁雅集小记](https://mp.weixin.qq.com/s/ITszamrMnT7qbmeqF1tY_w)
 
 >千手白莲！划掉……应该是盛开的柯同学.jpg
 
-#### 8、學院畢業晚會，與王佳玥古箏合奏梅花
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>8、學院畢業晚會，與王同學古箏合奏梅花</h2>
 
 <date>2016-06-03</date>
 
-<img src="https://api.superbed.cn/pic/5bfad6dec4ff9e05833a0a3a" width="400">
+<img src="https://api.superbed.cn/pic/5bfad6dec4ff9e05833a0a3a">
 
 活動詳情見：[“历历在木”历史学院2016届毕业生晚会精彩落幕！](https://mp.weixin.qq.com/s/OGT6ZhBbL6wVqtUFxS8wtw)
 
 >器乐合奏的<v>梅花三弄</v>意境悠远，令人叹赏。
 
-#### 9、學院會議室，渔樵問荅
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>9、學院會議室，渔樵問荅</h2>
 
 <date>2016-09</date>
 
 日本一所大學的代表團來，王東平老師主持見面會。很是尷尬，不過似乎日本同學感覺還不錯。
 
-#### 10、燕歸來，學活，漁樵，有茶藝書法
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>10、燕歸來，學活，漁樵，有茶藝書法</h2>
 
 <date>2016-11-12</date>
 
-<img src="https://api.superbed.cn/pic/5bfadc16c4ff9e05833a0a42" width="400">
+<img src="https://api.superbed.cn/pic/5bfadc16c4ff9e05833a0a42">
 
 活動詳情見：[【“燕归来”传统文化节】“华光九域”专场演出](https://mp.weixin.qq.com/s/YmJo5cXbSI5lYKt1e5MPKQ)
 
 > 琴棋书画在中国传统文化中必不可少，那么<v>渔樵汲泉</v>则不容错过。春秋学社和松风琴社，北京农学院惊云书画社以及茗声茶社联合为我们展示了琴，书，画三者的完美结合。
 
-#### 11、第八屆北京大學生古琴音樂會，敬文講堂，髙山流水
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>11、第八屆北京大學生古琴音樂會，敬文講堂，髙山流水</h2>
 
 <date>2017-04-23</date>
 
-<img src="https://api.superbed.cn/pic/5bfad46fc4ff9e05824602c4" width="400">
+<img src="https://api.superbed.cn/pic/5bfad46fc4ff9e05824602c4">
 
 活動詳情見：[活动 |“挟仙游”第八届北京大学生古琴音乐会圆满落幕](https://mp.weixin.qq.com/s/4cVNGMUKDAJKIRxJ9k_4Dw)
 
@@ -116,21 +174,36 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 > 4月23日，第八届北京大学生古琴音乐会在我校举行。北京市各高校琴社代表、京内古琴界师友和我校师生共300余人观看了音乐会。音乐会以“挟仙游”为主题，演出曲目包括<v>高山流水</v>、<v>良宵引</v>等传世古琴名曲，涵盖咏物、抒情、言志等各类主旨，并以独奏、琴箫合奏、古琴琵琶二重奏等多种演奏方式呈现。整场音乐会将古琴清、和、淡、雅的音乐品格展现得淋漓尽致，让观众感受到了古琴艺术恒久的魅力。北京大学生古琴音乐会
 
-#### 12、松風琴社九周秊，梅花三弄、陽春
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>12、松風琴社九周秊，梅花三弄、陽春</h2>
 
 <date>2017-05-20</date>
 
 活動詳情見：[松风琴社九岁啦！九周年社庆兼换届仪式完美落幕](https://mp.weixin.qq.com/s/tv_Wuy8mIo9cjup_BvopBA)
 
-#### 13、文學院社團宣講，教九 502，廣陵散一分鐘
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>13、文學院社團宣講，教九 502，廣陵散一分鐘</h2>
 
 <date>2017-09</date>
 
-#### 14、臺大琴社在臺北故宮的雅集，梅花三弄刪宋、髙山、陽春
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>14、臺大琴社在臺北故宮的雅集，梅花三弄刪宋、髙山、陽春</h2>
 
 <date>2017-12</date>
 
-<img src="https://api.superbed.cn/pic/5bfad2cac4ff9e05833a0a34" width="400">
+<img src="https://api.superbed.cn/pic/5bfad2cac4ff9e05833a0a34">
 
 視頻見 [臉書](https://www.facebook.com/ntuqinclub/videos/1985472468147164/)
 
@@ -146,29 +219,44 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 >地點：臺北故宮至善園
 >影片剪輯：臺大古琴社十三屆社長　李尙謙
 
-#### 15、乾坤琴社秊會，泛滄浪、神人暢
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>15、乾坤琴社秊會，泛滄浪、神人暢</h2>
 
 <date>2018-02-03</date>
 
-<img src="https://api.superbed.cn/pic/5bfad039c4ff9e05824602c1" width="400">
+<img src="https://api.superbed.cn/pic/5bfad039c4ff9e05824602c1">
 
 活動詳情見：[阆苑仙葩-乾坤琴社2017年会](https://mp.weixin.qq.com/s/gVuO6srVvOLAeMsDe82d8g)
 
-#### 16、南山詩社，學活，佩蘭
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>16、南山詩社，學活，佩蘭</h2>
 
 <date>2018-04-20</date>
 
-<img src="https://api.superbed.cn/pic/5bfacfa3c4ff9e05824602c0" width="400">
+<img src="https://api.superbed.cn/pic/5bfacfa3c4ff9e05824602c0">
 
 活動詳情見：[南山专场 | 南山诗社十一周年专场表演<v>雨霖铃</v>圆满结束](https://mp.weixin.qq.com/s/V-5IxDPgGiSmRPW-WwiVPA)
 
 > 在此，南山诗社还要特别感谢松风琴社为我们带来的古琴曲<v>佩兰</v>和韶兮国乐社的民乐合奏<v>春江花月夜</v>! 感谢韶兮国乐社对本次专场演出的大力支持！
 
-#### 17、韶兮國樂社，學活，白雪
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>17、韶兮國樂社，學活，白雪</h2>
 
 <date>2018-04-24</date>
 
-<img src="https://api.superbed.cn/pic/5bface6ac4ff9e05824602bf" width="400">
+<img src="https://api.superbed.cn/pic/5bface6ac4ff9e05824602bf">
 
 活動詳情見：[四季弦歌｜韶兮國樂社專場音樂會圓滿閉幕](https://mp.weixin.qq.com/s/rI1gOv201XNYhOL8vUyBRw)
 
@@ -176,43 +264,66 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 這次眞是慘烈車禍。感覺都對不起觀眾。
 
-#### 18、松風琴社十周年，憶故人
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>18、松風琴社十周年，憶故人</h2>
 
 <date>2018-05-20</date>
 
-<img src="https://api.superbed.cn/pic/5bfad3aac4ff9e05824602c3" width="400">
+<img src="https://api.superbed.cn/pic/5bfad3aac4ff9e05824602c3">
 
 活動詳情見：[活动｜松风琴社成立十周年纪念活动现场回顾](https://mp.weixin.qq.com/s/WGg_z1UKNd1GS7BqpCFmBQ)
 
 >历任社长讲话之后，大家齐齐推举心目中的大佬上台弹琴，大佬们也向萌新传授了一些古琴知识。
 
-#### 19、文學院社團宣講，敬文講堂，髙山開頭
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>19、文學院社團宣講，敬文講堂，髙山開頭</h2>
 
 <date>2018-09-06</date>
 
-#### 20、世界課例大會閉幕式，敬文講堂，幽蘭二至四段
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>20、世界課例大會閉幕式，敬文講堂，幽蘭二至四段</h2>
 
 <date>2018-11-25</date>
 
 本來說是在開幕式的，開幕式有直播，不過事先他們沒安排好，前一箇節目太長，便把我的時間擠掉了。
 
-#### 21、「誦讀經典 禮讚輝煌」北京高校中華經典詩詞誦讀吟唱比賽決賽，學活，幽蘭三四段
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>21、「誦讀經典 禮讚輝煌」北京高校中華經典詩詞誦讀吟唱比賽決賽，學活，幽蘭三四段</h2>
 
 <date>2018-11-29</date>
 
 [直播地址](https://app.bjtitle.com/8816/videoshow.php?newsid=5199592&mood=wx&typeid=&did=659ca82cbfd14ccc9079957033cdce89&ntype=0)，我在 1 小旹 54 分。
 
-<img src="https://api.superbed.cn/pic/5c04db05c4ff9e0582460c53" width="400">
+<img src="https://api.superbed.cn/pic/5c04db05c4ff9e0582460c53">
 
 活動詳情見：[第三届北京高校中华经典诗词诵读吟唱比赛决赛举行](http://news.bnu.edu.cn//zx/zhxw/105568.htm)、[第三届北京高校“诵读经典 礼赞辉煌”中华经典诗词诵读吟唱比赛决赛圆满落幕](https://mp.weixin.qq.com/s/rPqhb6QVAE94XGPg-2CwzQ)
 
-> 松风琴社<v>碣石调幽兰</v>选段
+</div>
+</div>
 
-#### 22、華章漢服社「花間拾夢——錦繡花神傳」專場，學活，酒狂
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>22、華章漢服社「花間拾夢——錦繡花神傳」專場，學活，酒狂</h2>
 
 <date>2019-05-18</date>
 
-<img src="https://pic.superbed.cn/item/5ce4fa90697df1fd0c299bf8.jpg" width="400">
+<img src="https://pic.superbed.cn/item/5ce4fa90697df1fd0c299bf8.jpg">
 
 活動詳情見：[华章·专场｜<v>花间拾梦——锦绣花神传</v>专场演出圆满落幕](https://mp.weixin.qq.com/s/ThfBiERweoWqh51673Nyog)
 
@@ -220,23 +331,40 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 寫的啥啊……
 
-#### 23、松風琴社十一周年，酒狂
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>23、松風琴社十一周年，酒狂</h2>
 
 <date>2019-05-18</date>
 
 活動詳情見 [活动 | 松风琴社十一周年社庆](https://mp.weixin.qq.com/s/jtow1h65RGcKF1qo5TsdeQ)
 
-#### 24、琴心獨具論壇，大雅
+</div>
+</div>
+
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>24、琴心獨具論壇，大雅</h2>
 
 <date>2019-05-25</date>
 
-<img src="https://pic.superbed.cn/item/5ceea17b451253d178236d87" width="400">
+<img src="https://pic.superbed.cn/item/5ceea17b451253d178236d87">
 
 活動詳情見 [CAA古琴社|论坛回顾——琴心独具·“双一流”高校古琴交流传承研讨论坛圆满落幕](https://mp.weixin.qq.com/s/X5N1tUAIZgqDCugWIpjMBw)
 
 榮耀坤：[水岸山居——记20190525中国美术学院琴心独具·“双一流”高校古琴交流传承研讨论坛音乐会](https://user.qzone.qq.com/1063301167/blog/1558830296?g_f=&srctype=&ticket=&_t_=0.9849964704638958)
 
-#### 25、學院畢業晚會，學活，廣陵散<n>正聲節選</n>
+</div>
+</div>
+
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>25、學院畢業晚會，學活，廣陵散<n>正聲節選</n></h2>
 
 <date>2019-06-06</date>
 
@@ -248,7 +376,12 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 <img src="https://pic2.superbed.cn/item/5d020787451253d17835b1f0.jpg" width="500">
 
-#### 26、揚州大學第十一屆全國大學生古琴音樂會，玄默
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>26、揚州大學第十一屆全國大學生古琴音樂會，玄默</h2>
 
 <date>2019-06-08</date>
 
@@ -258,7 +391,12 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 <img src="https://pic2.superbed.cn/item/5d0208bd451253d17835cfab.jpg" width="500">
 
-#### 27、第五屆孔子新漢學計劃·京師哲學暑期學堂開學典禮，高山、流水、酒狂、招隱
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>27、第五屆孔子新漢學計劃·京師哲學暑期學堂開學典禮，高山、流水、酒狂、招隱</h2>
 
 <date>2019-07-02</date>
 
@@ -272,15 +410,26 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 <img src="https://pic.superbed.cn/item/5d1d7394451253d178d1b794.jpg" >
 
-<img src="https://pic.superbed.cn/item/5d1de060451253d178d5b5bf.jpg" width="400">
+<img src="https://pic.superbed.cn/item/5d1de060451253d178d5b5bf.jpg">
 
 這次彈琴終於是有錢的了。
 
-#### 28、文院社團宣講，半分鐘洞庭
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>28、文院社團宣講，半分鐘洞庭</h2>
 
 <date>2019-09-06</date>
 
-#### 29、「青年杯」北京市大學生人文知識競賽，學活，高山、流水、猿鶴雙清
+</div>
+</div>
+
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>29、「青年杯」北京市大學生人文知識競賽，學活，高山、流水、猿鶴雙清</h2>
 
 <date>2019-11-02</date>
 
@@ -296,7 +445,12 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 爲了配合作詩的環境，彈得超慢超輕，自己都快彈睡著了。
 
-#### 30、第三屆天津高校古琴文化節，天津大學大學生活動中心，泛滄浪
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>30、第三屆天津高校古琴文化節，天津大學大學生活動中心，泛滄浪</h2>
 
 <date>2019-11-10</date>
 
@@ -312,19 +466,39 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 > 北京师范大学松风琴社柯棋瀚演奏的《泛沧浪》，展现了“志在驾舟于五湖”的意境。
 
-# 講座紀錄
+</div>
+</div>
+</div>
 
-#### 1、南開大學瑚璉琴社，律學與琴律學入門
+<h1 style="margin:0 auto -4em auto">講座紀錄</h1>
+
+<div class="gallery">
+<div class="paper-wrap">
+<div class="paper-card perform">
+<h2>1、南開大學瑚璉琴社，律學與琴律學入門</h2>
 
 <date>2019-11-10</date>講了 70 分鐘
 
 下午參加第三屆天津高校古琴文化節，晚上到瑚璉琴社的琴房講了講，就六七個人聽，非常小型的分享。沒想到好幾個同學不會彈琴，很驚喜。但我覺得一定讓他們失望了，可能與預想的不一樣，我也不怎麼懂，講得很爛。講義就用的博客上的兩篇：[西方律學入門](/blog/2017/12/11/lvxue.html)、[琴律學入門](/blog/2018/03/07/qinlv.html)。有同學問：爲何準法律替代了徽法律，準法律有什麼優勢嗎？準法律最早見諸文獻是什麼時候？
 
-# 其他
+</div>
+</div>
+</div>
+
+<h1 style="margin:0 auto -4em auto">其他</h1>
+
+<div class="gallery">
+<div class="paper-wrap">
+<div class="paper-card perform">
 
 提到我的：《[清音幽韻｜十年風月舊相知，共憶松風當年事](https://mp.weixin.qq.com/s/yALYZdrvRZCqfQu7Okpz3g)》，松風琴社公眾號，2018-05-22
 
-# 學琴順序
+</div>
+</div>
+
+<div class="paper-wrap">
+<div class="paper-card perform">
+  <h2>學琴順序</h2>
 
 2013 秊 1—3 月跟董老師：
 
@@ -338,7 +512,7 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 8. 平沙落雁<n>何老</n>2013 秊 11 月
 9. 梅花三弄<n>何老</n>2013 秊 12 月
 10. 髙山<n>何老</n>2014 秊 3 月
-11. 滿江紅</n><n>何老據譜</n>2014 秊 4 月？
+11. 滿江紅<n>何老據譜</n>2014 秊 4 月？
 12. 醉漁唱晚<n>何老</n>？
 13. 普庵咒<n>何老</n>？
 14. 良宵引<n>何老</n>？
@@ -365,16 +539,14 @@ description: "天殺的微信，信息檢索太不方便，搜也搜不到，只
 
 下一步：
 
-山中思友人<n>神譜</n>。2 枼
+- 山中思友人<n>神譜</n>。2 枼
+- 秋月照茅亭<n>神譜</n>。4 枼
+- 颐眞<n>神譜</n>。6 枼
+- 遁世操<n>神譜</n>。8 枼
+- 获麟<n>神譜</n>。6 枼
+- 瀟湘水雲<n>何老</n>
+- 小胡笳<n>神譜</n>。13 枼
 
-秋月照茅亭<n>神譜</n>。4 枼
-
-颐眞<n>神譜</n>。6 枼
-
-遁世操<n>神譜</n>。8 枼
-
-获麟<n>神譜</n>。6 枼
-
-瀟湘水雲<n>何老</n>
-
-小胡笳<n>神譜</n>。13 枼
+</div>
+</div>
+</div>
