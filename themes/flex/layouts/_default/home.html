@@ -73,7 +73,7 @@
 <h1 style="margin:2em auto 0em">分類</h1>
   <div class="discover-des" style="margin: 0 auto">隨機生成五項</div>
 <div class="bigcard">
-{{ range .Site.Taxonomies.categories.ByCount  }}
+{{ range .Site.Taxonomies.categories.ByCount  | shuffle }}
 <div class="card-container">
 <div class="card">
 <div class="title"><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></div>

@@ -328,7 +328,7 @@ code {
 .Heading {
   text-align:center;
   align-items: baseline;
-  text-shadow: 0 0 .2em #9bbcfe;
+  text-shadow: .1em .1em 0 #fe7fb8;
 }
 .Heading a{
   text-decoration: none;
@@ -1121,4 +1121,23 @@ width: 18em;
 .paper-card.recording{
   max-height: none;
 }
+}
+.text-popup {
+    animation: textPopup 1s;
+    color: red;
+    user-select: none;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 99;
+}
+@keyframes textPopup {
+    0%, 100% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50px);
+    }
 }
