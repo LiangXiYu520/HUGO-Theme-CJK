@@ -5,7 +5,7 @@ title: "文章發表"
 date: 2018-11-10
 lastmod: 2019-09-30
 categories: ["經"]
-tags: ["作品"]
+series: ["作品"]
 url: /paper
 vertical: false
 menu:

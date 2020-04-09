@@ -3,7 +3,7 @@
     <div class="heading-wrap">
     {{ partial "heading.html" . }}
     {{- $author_id := .Params.author | default .Site.Author.name -}}
-    {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+    {{- $author := (index ($.Site.Data.author | default dict) $author_id) -}}
     {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
     {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
     {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
@@ -21,10 +21,10 @@
         {{ end }}
     {{- end }}
 
-    {{ with .Params.tags -}}
+    {{ with .Params.series -}}
         　系列{{ range . }}{{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-        <span class="des1-tag"><a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
+        {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+        <span class="des1-tag"><a href="/series/{{ $name }}">#{{- $name -}}</a></span>
         {{ end -}}
         {{ end }}
     {{- end }}</div>
@@ -56,17 +56,15 @@
       <div class="u-padding">
 <div class="Tags  recommend" >
 {{ $currentArticle := . }}
-{{ $articles := where (where $.Site.Pages ".Kind" "eq" "page") ".Title" "!=" $currentArticle.Title }}
+{{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $currentArticle.Title }}
 {{ $1RelevantArticles := slice }}
 {{ $2RelevantArticles := slice }}
 {{ $3RelevantArticles := slice }}
 {{ $4RelevantArticles := slice }}
 {{ range $idx, $article := $articles }}
-{{ $1numberOfIntersection := len (intersect $article.Params.tags $currentArticle.Params.Tags) }}
-{{ $2numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.Categories) }}
-{{ $3numberOfIntersection := len (intersect $article.Params.author $currentArticle.Params.Authors) }}
-{{ $4numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
-{{ $5numberOfIntersection := add $3numberOfIntersection $4numberOfIntersection }}
+{{ $1numberOfIntersection := len (intersect $article.Params.series $currentArticle.Params.series) }}
+{{ $2numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.categories) }}
+{{ $5numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
 {{ if (ge $5numberOfIntersection 4) }}
 {{ $4RelevantArticles = $4RelevantArticles | append $article }}
 {{ else if (eq $5numberOfIntersection 3) }}
@@ -101,16 +99,16 @@
 {{- end }}
 </div>
 <div class="recommend1">
-<h2>發現 <span style="font-size:.6em;font-weight:400">據索引重合度生成</span></h2>
-<ul>
-{{- range (shuffle (first 10 $recommendedArticles)) -}}
+<h2>發現 <span style="font-size:.6em;font-weight:400">據索引重合度排序</span></h2>
+<ol>
+{{- range (first 10 $recommendedArticles) -}}
 <li>
   <a href="{{ .Permalink }}">
     {{ .Title }}
   </a>
 </li>
 {{ end }}
-</ul>
+</ol>
 </div>
 </div>
 {{ partial "comments.html" . }}

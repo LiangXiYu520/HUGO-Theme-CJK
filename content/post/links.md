@@ -4,7 +4,7 @@ title: "links"
 date: 2018-10-27
 lastmod: 2019-10-06
 categories: ["站務"]
-tags: ["公吿"]
+series: ["公吿"]
 menu:
   main:
     weight: 2

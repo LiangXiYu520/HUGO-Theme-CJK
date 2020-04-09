@@ -5,7 +5,7 @@ title: "書法"
 date: 2019-07-22
 lastmod: 2019-07-22
 categories: ["書"]
-tags: ["作品"]
+series: ["作品"]
 url: /calligraphy
 menu:
   main1:

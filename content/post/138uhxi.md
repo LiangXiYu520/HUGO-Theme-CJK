@@ -4,7 +4,7 @@ title: "《水龍吟·次韻章質夫楊花詞》賞析"
 date: 2018-12-01
 lastmod: 2018-12-01
 categories: ["人文"]
-tags: ["課業"]
+series: ["課業"]
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/138uhxi.md'
 description: '大一上期文院的經典硏讀<v>宋詞選讀</v>期中作業。繁簡自動轉換，可能有誤。是謝老師跟過寶寶上的。我最不擅長的就是詩詞啊，太羞恥了。'
 ---

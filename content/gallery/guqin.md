@@ -5,7 +5,7 @@ title: "古琴"
 date: 2018-11-19
 lastmod: 2019-06-12
 categories: ["琴"]
-tags: ["作品"]
+series: ["作品"]
 url: /guqin
 menu:
   main1:

@@ -5,7 +5,7 @@ title: "旁白 播音"
 date: 2018-11-19
 lastmod: 2019-04-29
 categories: ["錄音"]
-tags: ["作品"]
+series: ["作品"]
 url: /dubbing
 vertical: false
 menu:

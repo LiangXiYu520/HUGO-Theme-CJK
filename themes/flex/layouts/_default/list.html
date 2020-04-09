@@ -40,11 +40,11 @@
                 {{ end -}}
                 {{ end }}
             {{- end }}
-            {{ with .Params.tags -}}
+            {{ with .Params.series -}}
                 {{ range . }}
                 {{- $name := . -}}
-                {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/tags/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
+                {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+                <span class="archive-info"><a href="/series/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
                 {{ end -}}
                 {{ end }}
             {{- end }}</div>

@@ -4,7 +4,7 @@ title: "《搗練圖》的題跋"
 date: 2018-11-27
 lastmod: 2018-11-27
 categories: ["人文"]
-tags: ["課業"]
+series: ["課業"]
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/135dclm.md'
 description: '大二下專選<v>中國古代書畫</v>小組展示的講稿。我們組選了<v>搗練圖</v>，我負責其中的題跋。繁簡自動轉換，改了一些，可能還有錯。陳殿老師這課，簡直是我上過的㝡無聊的課之一，不過並不是說他其他不好，人還是蠻熱心腸的。'
 ---

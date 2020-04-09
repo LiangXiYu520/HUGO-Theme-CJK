@@ -14,8 +14,8 @@
   </div>
             <ul>
 
-              <h2>系列<span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.tags }}</span></h2>
-                {{ range .Site.Taxonomies.tags.ByCount  }}
+              <h2>系列<span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.series }}</span></h2>
+                {{ range .Site.Taxonomies.series.ByCount  }}
                 <li><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }} {{ .Count }}</a></li>
                 {{ end }}
             </ul>

@@ -4,7 +4,7 @@ title: "Hello world!　更新日誌"
 date: 2017-10-04
 lastmod: 2020-04-09
 categories: ["站務"]
-tags: ["公吿"]
+series: ["公吿"]
 url: /blog/2017/10/04/shuoming.html
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/2017-10-04-hello world.md'
 vertical: false
@@ -1350,4 +1350,8 @@ sans 英文字體。
 
 主葉分類隨機排序。
 
+tags 全部換成 series
+
 添加點擊效果。
+
+智能推薦的作者無論如何都沒用，只好刪了。

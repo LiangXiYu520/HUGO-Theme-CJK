@@ -5,7 +5,7 @@ title: "實地錄音"
 date: 2018-11-19
 lastmod: 2019-11-09
 categories: ["錄音"]
-tags: ["作品"]
+series: ["作品"]
 url: /recording
 menu:
   main1:

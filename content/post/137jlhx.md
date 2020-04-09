@@ -4,7 +4,7 @@ title: "團員學習心得"
 date: 2018-11-29
 lastmod: 2018-11-29
 categories: ["人文"]
-tags: ["課業"]
+series: ["課業"]
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/137jlhx.md'
 description: '此三篇思想報告爲大二下寫的，我是堅決跟黨走的好公民。弟一篇爲公共必修課<v>形勢與政策</v>作業。弟二、三篇爲團日活動報告。繁簡自動轉換，可能有錯字。'
 ---

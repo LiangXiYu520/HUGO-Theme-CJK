@@ -4,7 +4,7 @@ title: "about"
 date: 2017-10-04
 lastmod: 2020-01-14
 categories: ["站務"]
-tags: ["公吿"]
+series: ["公吿"]
 menu:
   main:
     weight: 1
