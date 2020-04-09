@@ -1113,7 +1113,7 @@ max-height: 18em;
 width: 18em;
 }
 .paper-card{
-  margin-top:.5em;
+  margin:.5em auto;
 }
 .paper-wrap{
   margin:0 auto auto;
