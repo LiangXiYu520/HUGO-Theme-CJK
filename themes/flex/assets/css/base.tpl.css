@@ -1013,12 +1013,10 @@ pre{-webkit-box-shadow:none ;
       border-radius: 1.7rem;
       padding: .5em;
       margin: 4em auto;
+      width: 90%;
       -webkit-box-shadow:none ;
         box-shadow:none
 }
-.archive-wrapper {
-  -webkit-box-shadow:none ;
-  box-shadow:none}
   .discover-wrap{
     max-height:none;
     }
@@ -1077,7 +1075,6 @@ pre{-webkit-box-shadow:none ;
   .footer-wrapper{
   margin: 7em auto 0;
   padding: .5em;
-  width:100%;
   border:none;
   border-radius: 0;
   box-shadow: none;
@@ -1124,5 +1121,6 @@ width: 18em;
 .paper-card.perform{
   margin: 2em auto;
   width:90%;
+  box-shadow: none;
 }
 }
