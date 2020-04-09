@@ -11,7 +11,8 @@ menu:
   main1:
     weight: 5
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/calligraphy.md'
-description: '放一些寫的字，一點沒有也不行。'
+description: '放一些平時寫的，一點沒有也不行。'
+des: '放一些平時寫的，一點沒有也不行。'
 ---
 
 <div class="gallery">

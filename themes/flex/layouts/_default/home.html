@@ -10,10 +10,6 @@
       {{ . | merge $js_list | $.Scratch.Set "js" }}
     {{ end }}
 <body>
-	  <div class="heading-wrap">
-  {{ partial "heading.html" . }}
-  <div class="count">主葉//發現</div>
-  </div>
   <div class="cover">
   <div class="time">
   </div>
@@ -34,24 +30,49 @@
     </div>
          <div class="in2"> </div>
   </div>
-<div class="discover-wrap">
-  <h1><a href="/post">博客</a></h1>
-     <div class="discover">
-       <div class="discover-wwrap"><h2>最近發布</h2>
-  {{ range first 10   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
-            <div >
-              <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </div>
-  {{ end }}</div><div class="discover-wwrap">
-<h2>最近修改</h2>
-          {{ range first 25   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
-                    <div >
-                      <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </div>
-          {{ end }}
-          </div>
-          </div>
+
+  <div class="gallery" style="margin:2em auto 3em">
+<h1 style="margin:auto  1em"><a href="/post" taget="\_blank">博客</a></h1>
+<h1 style="margin:auto  1em"><a href="https://kqh.wiki" taget="\_blank">維基</a></h1>
 </div>
+  <h1 style="margin:2em auto 0em">作品</h1>
+  <div class="bigcard">
+    {{ range .Site.Menus.main1  }}
+  <div class="card-container"style="max-width: 16em">
+<div class="card">
+<h2><a href="{{ .URL | absLangURL | safeURL }}"  target="_blank">{{ .Name }}</a></h2>
+<div class="archive-info">{{ .Page.Lastmod.Format "2006-01-02" }}</div>
+<p> {{ .Page.Params.des }}</p>
+  </div>
+  </div>
+    {{ end }}
+  </div>
+</body>
+<div style="margin:3em 0;height:25em;width:100%;background:#fffae8;border-top:.1em solid #2b2b2b;border-bottom:.1em solid #2b2b2b">
+</div>
+<body>
+  <h1 style="margin-top:1em">發現</h1>
+  <div class="gallery" style="margin-top:2em">
+  <div class="paper-wrap">
+  <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
+<h2>最近發布</h2>
+{{ range first 10   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+          <div >
+            <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </div>
+{{ end }}
+</div></div></div>
+<div class="paper-wrap">
+<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
+  <h2>最近修改</h2>
+            {{ range first 25   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
+                      <div >
+                        <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                      </div>
+            {{ end }}
+</div></div></div>
+</div>
+
 <div class="discover-wrap" style="max-height:none">
   <h1>年度🔝</h1>
   <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
@@ -76,7 +97,7 @@
 {{ range .Site.Taxonomies.categories.ByCount  | shuffle }}
 <div class="card-container">
 <div class="card">
-<div class="title"><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></div>
+<h2><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></h2>
 {{ $pages := .Pages | shuffle  }}
     {{ range first 5 $pages }}
 <div class="item"><a href="{{ .RelPermalink }}" class="archive-post-link">{{ .Title }}</a></div>
@@ -86,4 +107,11 @@
 {{ end }}
 </div>
 </body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451819-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-108451819-1');
+</script>
 {{ end }}

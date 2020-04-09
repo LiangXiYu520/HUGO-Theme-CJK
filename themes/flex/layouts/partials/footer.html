@@ -8,6 +8,7 @@
           <div class="col1"><a href="{{ .URL | absLangURL | safeURL }}"  target="_blank"><span class="col1-title" style="font-weight:400">{{ .Name }}</span></a></div>
       {{ end }}
       <div class="col1">　</div>
+      <h2>作品<span style="color:#f88788;font-size:.7em"> {{ len .Site.Menus.main1 }}</span></h2>
       {{ range .Site.Menus.main1  }}
           <div class="col1"><a href="{{ .URL | absLangURL | safeURL }}"  target="_blank"><span class="col1-title col2">{{ .Name }}</span></a><br>{{ .Page.Lastmod.Format "2006-01-02" }}</div>
       {{ end }}

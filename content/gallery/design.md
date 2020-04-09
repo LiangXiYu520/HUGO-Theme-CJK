@@ -12,6 +12,7 @@ menu:
     weight: 6
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/design.md'
 description: '平時給社團做的一些海報封面之類的，沒有任何水平。'
+des: '平時給社團做的一些海報封面之類的，沒有任何水平。'
 ---
 
 <div class="gallery">
