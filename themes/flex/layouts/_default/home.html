@@ -9,10 +9,15 @@
       {{ $js_list := $.Scratch.Get "js" }}
       {{ . | merge $js_list | $.Scratch.Set "js" }}
     {{ end }}
-<body>
+
+    <div class="heading-wrap home">
+    <h1><div>赫赫文王</div>
+    <div><div  style=" font-size:.3em;letter-spacing:.25em;">><a href="/post" target="\_blank">博客</a></div>
+  <div  style="font-size:.3em;letter-spacing:.25em;margin-top:.2em">><a href="https://kqh.wiki" target="\_blank">維基</a></div>
+    </div></h1>
+    </div>
+<body style="padding-bottom:5em">
   <div class="cover">
-  <div class="time">
-  </div>
   <div class="in"> </div>
   <div class="img"><img src="/logo.webp" width="90px" height="195px"></div>
   <div class="label">永嘉田家後/　生於九五後/<br>長于錦官城/　讀的厤史系/</div>
@@ -30,13 +35,8 @@
     </div>
          <div class="in2"> </div>
   </div>
-
-  <div class="gallery" style="margin:2em auto 3em">
-<h1 style="margin:auto  1em"><a href="/post" taget="\_blank">博客</a></h1>
-<h1 style="margin:auto  1em"><a href="https://kqh.wiki" taget="\_blank">維基</a></h1>
-</div>
-  <h1 style="margin:2em auto 0em">作品</h1>
-  <div class="bigcard">
+  <h1 style="margin:2em 0 0em">作品</h1>
+  <div class="bigcard" style="margin-bottom:12em;width:68%">
     {{ range .Site.Menus.main1  }}
   <div class="card-container"style="max-width: 16em">
 <div class="card">
@@ -47,12 +47,12 @@
   </div>
     {{ end }}
   </div>
-</body>
-<div style="margin:3em 0;height:25em;width:100%;background:#fffae8;border-top:.1em solid #2b2b2b;border-bottom:.1em solid #2b2b2b">
-</div>
-<body>
-  <h1 style="margin-top:1em">發現</h1>
-  <div class="gallery" style="margin-top:2em">
+  <div class="heading-wrap home">
+    <h1>
+      <span style="font-size:.3em;letter-spacing:.25em">赫赫文王>博客></span>發現
+    </h1>
+  </div>
+  <div class="gallery" style="margin-top:7em">
   <div class="paper-wrap">
   <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
 <h2>最近發布</h2>
