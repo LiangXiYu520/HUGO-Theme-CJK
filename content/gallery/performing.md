@@ -19,7 +19,7 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 <div class="gallery">
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>1、在江南大酒店喫酒，佩蘭</h2>
 
 <date>2015-07</date>
@@ -27,10 +27,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 第一次表演。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>2、學院迎新晚会，佩蘭、平沙</h2>
 
 <date>2015-09-19</date>
@@ -46,10 +46,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 <img src="https://pic.superbed.cn/item/5d47c2fd451253d178724784.jpg">
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>3、燕歸來，學活，梅花三弄</h2>
 
 <date>2015-11-14</date>
@@ -61,10 +61,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 > 第二篇章名为“古韵悠悠”。由松风琴社、书法协会共同带来的<v>清律逸风</v>将现场书法与古琴演奏相结合，蕴含着中国古代文人的情怀。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>4、乾坤琴社秊會，溫江，佩蘭</h2>
 
 <date>2016-01-24</date>
@@ -74,10 +74,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 網上新聞已經被刪除了。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>5、輔仁校區，猿鶴雙清、佩蘭、梅花三弄</h2>
 
 <date>2016-03</date>
@@ -87,10 +87,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 <img src="https://pic.superbed.cn/item/5d47c2fd451253d178724788.jpg" >
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>6、第八屆全國大學生古琴音樂會，武漢大學，猿鶴雙清</h2>
 
 <date>2016-05-01</date>
@@ -100,10 +100,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 活動詳情見：[第八届全国大学生古琴音乐会在武汉珞珈山成功举办](https://mp.weixin.qq.com/s/dc-RsUYLc3UiJv75V-b07g)
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>7、松風琴社八周年社慶，輔仁校區</h2>
 
 <date>2016-05-14</date>
@@ -115,10 +115,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 >千手白莲！划掉……应该是盛开的柯同学.jpg
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>8、學院畢業晚會，與王同學古箏合奏梅花</h2>
 
 <date>2016-06-03</date>
@@ -130,10 +130,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 >器乐合奏的<v>梅花三弄</v>意境悠远，令人叹赏。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>9、學院會議室，渔樵問荅</h2>
 
 <date>2016-09</date>
@@ -141,10 +141,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 日本一所大學的代表團來，王東平老師主持見面會。很是尷尬，不過似乎日本同學感覺還不錯。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>10、燕歸來，學活，漁樵，有茶藝書法</h2>
 
 <date>2016-11-12</date>
@@ -156,10 +156,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 > 琴棋书画在中国传统文化中必不可少，那么<v>渔樵汲泉</v>则不容错过。春秋学社和松风琴社，北京农学院惊云书画社以及茗声茶社联合为我们展示了琴，书，画三者的完美结合。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>11、第八屆北京大學生古琴音樂會，敬文講堂，髙山流水</h2>
 
 <date>2017-04-23</date>
@@ -175,10 +175,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 > 4月23日，第八届北京大学生古琴音乐会在我校举行。北京市各高校琴社代表、京内古琴界师友和我校师生共300余人观看了音乐会。音乐会以“挟仙游”为主题，演出曲目包括<v>高山流水</v>、<v>良宵引</v>等传世古琴名曲，涵盖咏物、抒情、言志等各类主旨，并以独奏、琴箫合奏、古琴琵琶二重奏等多种演奏方式呈现。整场音乐会将古琴清、和、淡、雅的音乐品格展现得淋漓尽致，让观众感受到了古琴艺术恒久的魅力。北京大学生古琴音乐会
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>12、松風琴社九周秊，梅花三弄、陽春</h2>
 
 <date>2017-05-20</date>
@@ -186,19 +186,19 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 活動詳情見：[松风琴社九岁啦！九周年社庆兼换届仪式完美落幕](https://mp.weixin.qq.com/s/tv_Wuy8mIo9cjup_BvopBA)
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>13、文學院社團宣講，教九 502，廣陵散一分鐘</h2>
 
 <date>2017-09</date>
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>14、臺大琴社在臺北故宮的雅集，梅花三弄刪宋、髙山、陽春</h2>
 
 <date>2017-12</date>
@@ -220,10 +220,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 >影片剪輯：臺大古琴社十三屆社長　李尙謙
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>15、乾坤琴社秊會，泛滄浪、神人暢</h2>
 
 <date>2018-02-03</date>
@@ -233,10 +233,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 活動詳情見：[阆苑仙葩-乾坤琴社2017年会](https://mp.weixin.qq.com/s/gVuO6srVvOLAeMsDe82d8g)
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>16、南山詩社，學活，佩蘭</h2>
 
 <date>2018-04-20</date>
@@ -248,10 +248,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 > 在此，南山诗社还要特别感谢松风琴社为我们带来的古琴曲<v>佩兰</v>和韶兮国乐社的民乐合奏<v>春江花月夜</v>! 感谢韶兮国乐社对本次专场演出的大力支持！
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>17、韶兮國樂社，學活，白雪</h2>
 
 <date>2018-04-24</date>
@@ -265,10 +265,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 這次眞是慘烈車禍。感覺都對不起觀眾。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>18、松風琴社十周年，憶故人</h2>
 
 <date>2018-05-20</date>
@@ -280,19 +280,19 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 >历任社长讲话之后，大家齐齐推举心目中的大佬上台弹琴，大佬们也向萌新传授了一些古琴知识。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>19、文學院社團宣講，敬文講堂，髙山開頭</h2>
 
 <date>2018-09-06</date>
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>20、世界課例大會閉幕式，敬文講堂，幽蘭二至四段</h2>
 
 <date>2018-11-25</date>
@@ -300,10 +300,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 本來說是在開幕式的，開幕式有直播，不過事先他們沒安排好，前一箇節目太長，便把我的時間擠掉了。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>21、「誦讀經典 禮讚輝煌」北京高校中華經典詩詞誦讀吟唱比賽決賽，學活，幽蘭三四段</h2>
 
 <date>2018-11-29</date>
@@ -315,10 +315,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 活動詳情見：[第三届北京高校中华经典诗词诵读吟唱比赛决赛举行](http://news.bnu.edu.cn//zx/zhxw/105568.htm)、[第三届北京高校“诵读经典 礼赞辉煌”中华经典诗词诵读吟唱比赛决赛圆满落幕](https://mp.weixin.qq.com/s/rPqhb6QVAE94XGPg-2CwzQ)
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>22、華章漢服社「花間拾夢——錦繡花神傳」專場，學活，酒狂</h2>
 
 <date>2019-05-18</date>
@@ -332,10 +332,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 寫的啥啊……
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>23、松風琴社十一周年，酒狂</h2>
 
 <date>2019-05-18</date>
@@ -343,11 +343,11 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 活動詳情見 [活动 | 松风琴社十一周年社庆](https://mp.weixin.qq.com/s/jtow1h65RGcKF1qo5TsdeQ)
 
 </div>
-</div>
+</div></div>
 
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>24、琴心獨具論壇，大雅</h2>
 
 <date>2019-05-25</date>
@@ -359,11 +359,11 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 榮耀坤：[水岸山居——记20190525中国美术学院琴心独具·“双一流”高校古琴交流传承研讨论坛音乐会](https://user.qzone.qq.com/1063301167/blog/1558830296?g_f=&srctype=&ticket=&_t_=0.9849964704638958)
 
 </div>
-</div>
+</div></div>
 
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>25、學院畢業晚會，學活，廣陵散<n>正聲節選</n></h2>
 
 <date>2019-06-06</date>
@@ -377,10 +377,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 <img src="https://pic2.superbed.cn/item/5d020787451253d17835b1f0.jpg">
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>26、揚州大學第十一屆全國大學生古琴音樂會，玄默</h2>
 
 <date>2019-06-08</date>
@@ -392,10 +392,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 <img src="https://pic2.superbed.cn/item/5d0208bd451253d17835cfab.jpg">
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>27、第五屆孔子新漢學計劃·京師哲學暑期學堂開學典禮，高山、流水、酒狂、招隱</h2>
 
 <date>2019-07-02</date>
@@ -415,20 +415,20 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 這次彈琴終於是有錢的了。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>28、文院社團宣講，半分鐘洞庭</h2>
 
 <date>2019-09-06</date>
 
 </div>
-</div>
+</div></div>
 
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>29、「青年杯」北京市大學生人文知識競賽，學活，高山、流水、猿鶴雙清</h2>
 
 <date>2019-11-02</date>
@@ -446,10 +446,10 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 爲了配合作詩的環境，彈得超慢超輕，自己都快彈睡著了。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>30、第三屆天津高校古琴文化節，天津大學大學生活動中心，泛滄浪</h2>
 
 <date>2019-11-10</date>
@@ -467,14 +467,14 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 > 北京师范大学松风琴社柯棋瀚演奏的《泛沧浪》，展现了“志在驾舟于五湖”的意境。
 
 </div>
-</div>
+</div></div>
 </div>
 
 <h1 style="margin:0 auto -4em auto">講座紀錄</h1>
 
 <div class="gallery">
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 <h2>1、南開大學瑚璉琴社，律學與琴律學入門</h2>
 
 <date>2019-11-10</date>講了 70 分鐘
@@ -482,25 +482,28 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 下午參加第三屆天津高校古琴文化節，晚上到瑚璉琴社的琴房講了講，就六七個人聽，非常小型的分享。沒想到好幾個同學不會彈琴，很驚喜。但我覺得一定讓他們失望了，可能與預想的不一樣，我也不怎麼懂，講得很爛。講義就用的博客上的兩篇：[西方律學入門](/blog/2017/12/11/lvxue.html)、[琴律學入門](/blog/2018/03/07/qinlv.html)。有同學問：爲何準法律替代了徽法律，準法律有什麼優勢嗎？準法律最早見諸文獻是什麼時候？
 
 </div>
-</div>
+</div></div>
 </div>
 
 <h1 style="margin:0 auto -4em auto">其他</h1>
 
 <div class="gallery">
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 
 提到我的：《[清音幽韻｜十年風月舊相知，共憶松風當年事](https://mp.weixin.qq.com/s/yALYZdrvRZCqfQu7Okpz3g)》，松風琴社公眾號，2018-05-22
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
-  <h2>學琴順序</h2>
+<div class="paper-card"><div class="paper-card-in">
 
-2013 秊 1—3 月跟董老師：
+<h2>學琴順序</h2>
+
+<p>2013 秊 1—3 月跟董老師：</p>
+
+<br>
 
 1. 秋風詞。2019 年 7 月重理
 2. 湘妃怨
@@ -548,5 +551,5 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 - 小胡笳<n>神譜</n>。13 枼
 
 </div>
-</div>
+</div></div>
 </div>

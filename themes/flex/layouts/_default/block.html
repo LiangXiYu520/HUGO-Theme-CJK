@@ -21,9 +21,11 @@
           {{ if .TableOfContents }}
             <li class="toc-item" style="border:none">{{ .TableOfContents }}</li>
           {{ end }}
-      {{ .Content }}
         </div>
        </div>
+       
+      {{ .Content }}
+
       <div class="u-wrapper">
         <div class="u-padding">
   {{ partial "comments.html" . }}

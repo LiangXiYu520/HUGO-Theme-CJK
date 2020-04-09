@@ -32,7 +32,7 @@ vertical: false
 
 <div class="gallery" style="margin-top:1em">
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 
 ## No.1　臞仙曰
 
@@ -50,9 +50,9 @@ vertical: false
 8. 廣陵散
 9. 汎滄浪
 
-</div></div>
+</div></div></div>
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 
 ## No.2　芝仙曰
 
@@ -63,9 +63,9 @@ vertical: false
 1. 洞庭秋思
 2. 神人暢
 
-</div></div>
+</div></div></div>
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 
 ## No.3　古風
 
@@ -76,9 +76,9 @@ vertical: false
 1. 碣石調·幽蘭
 2. 梅花三弄刪宋
 
-</div></div>
+</div></div></div>
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 
 ## No.4　王門紹灮
 
@@ -92,13 +92,13 @@ vertical: false
 4. 猿鶴雙清
 5. 醉漁唱晚
 
-</div></div></div>
+</div></div></div></div>
 
 # 視頻
 
 <div class="gallery" style="margin-top:1em">
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 
 ## No.1　二〇一九
 
@@ -110,12 +110,12 @@ vertical: false
 4. 泛滄浪
 5. 髙山
 
-</div></div>
+</div></div></div>
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card"><div class="paper-card-in">
 
 ## No.2　第十一屆全國大學生古琴音樂會
 
 <listen>[玄默（神奇祕譜）](https://www.bilibili.com/video/av55325078)</listen>
 
-</div></div></div>
+</div></div></div></div>

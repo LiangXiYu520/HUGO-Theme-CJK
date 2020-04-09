@@ -43,8 +43,8 @@ a{
   color:#2b2b2b;
   text-decoration:none;
 border-bottom: .15em solid #f1bc00;
--webkit-transition: .3s;
-transition: .3s;
+-webkit-transition: .4s;
+transition: .4s;
 }
 a:hover{
   border:none ;
@@ -96,8 +96,6 @@ listen:hover{
   -webkit-box-shadow: none ;
   box-shadow:  none ;
   border: 1px #b89001 solid;
-  -webkit-transition: .3s;
-  transition: .3s;
   color: #b89001;
 }
 .vertical listen{
@@ -109,7 +107,7 @@ listen:hover{
 }
 date{
   margin: 0  .5em ;
-  padding: .3em .7em;
+  padding: .3em .7em .2em;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace, "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,PingFangSC,Sans-serif;
   font-weight: 400;
     font-size: .8em;
@@ -160,8 +158,6 @@ date{
   text-decoration:none;
 border-left: .15em solid #f1bc00 ;
 border-bottom: none;
--webkit-transition: .3s;
-transition: .3s;
 }
 .vertical a:hover{
   border:none ;
@@ -231,7 +227,6 @@ h6{
   font-weight: 400;
   color: #8c8c8c
 }
-
 .des{
   font-size: 1.5em;
   font-weight: 200;
@@ -403,7 +398,7 @@ border: 1em solid #2b2b2b;
   border-radius: 80px;
 margin: 8em auto 1.5em;
   max-width: 85%;
-  padding:.5em 0 0;
+  padding:.5em .1em 0;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,8 +427,8 @@ margin: 8em auto 1.5em;
 }
 .col1-title:hover{
   color: #2b2b2b;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 .col2{
     font-size: 1.5em;
@@ -490,28 +485,11 @@ max-width: 26em;
 .u-padding {
   padding: 0 1rem;
 }
-.u-clickable1 {
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.1em;
-  font-family: "Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
-}
-.u-clickable1:hover{
-  color:#2b2b2b;
-}
-.u-clickable2{
-font-weight: 700;
-font-family: "Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
-}
 .u-clickable {
   font-weight: 400;
   text-decoration: none;
   display: inline-block;
   font-size: .9em;
-}
-a.Banner-link.u-clickable:hover{
-  font-weight: 700;
 }
 .archive-wrapper{
   padding: .5em 2em;
@@ -565,8 +543,6 @@ text-align:left;
 }
 .archive-info a:hover{
   border:none;
-  -webkit-transition: .3s;
-  transition: .3s;
   color:#b89001;
 }
 .archive-info-author{
@@ -684,8 +660,6 @@ margin:2em 1em 0 1em;
   font-weight: 700;
 }
 .pagi:hover{
-  -webkit-transition: .3s;
-  transition: .3s;
       padding: 0px 8px;
 }
 .pagination-wrap{
@@ -708,8 +682,6 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
       border-radius: .7em;
       border: 2px solid #2b2b2b;
       text-decoration: none;
-      -webkit-transition: .3s;
-      transition: .3s;
     }
   .pagination a:hover{
     border: 2px solid white;
@@ -858,7 +830,7 @@ max-width: 28em;
 .bigcard{
 	text-align: center;
 	margin: 2em auto 5em;
-  	width: 85%;
+  	width: 83%;
     height:17em;
     writing-mode: vertical-lr;
     overflow: scroll;
@@ -889,8 +861,6 @@ text-align:left;
 line-height: 1.4;
 border: 1px #2b2b2b solid;
 border-radius: 1.5em;
--webkit-transition: .3s;
-transition: .3s;
 max-height: 12em;
 max-width: 18em;
 overflow:scroll;
@@ -943,47 +913,71 @@ margin: 10em 2em 2em;
 .paper-card{
   padding: 1em;
   margin:1em 2em 6em 2em;
-  width:18em;
-  height:27em;
+max-width: 18em;
+  max-height:27em;
+     overflow: scroll;
   text-align: left;
    border: 1px solid #2b2b2b;
    border-radius: 2em;
    -webkit-box-shadow: 0 2px 20px -5px  #2b2b2b ;
    box-shadow:  0 2px 20px -5px  #2b2b2b ;
-   -webkit-transition: .3s;
-   transition: .3s;
-   background-size:cover;
+   background: #fffae8;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -ms-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+.paper-card.recording{
+  max-width: 30em;
+    max-height:40em;
+    text-align: left;
+}
+.paper-card-in{
+  display: block;
+}
+.paper-cardd{
+  padding: 1em;
+  margin:1em 2em 6em 2em;
+  text-align: left;
+   border: 1px solid #2b2b2b;
+   border-radius: 2em;
+   -webkit-box-shadow: 0 2px 20px -5px  #2b2b2b ;
+   box-shadow:  0 2px 20px -5px  #2b2b2b ;
+   background: #fffae8;
+   background-size:contain;
+  width:18em;
+  height:27em;
+}
+.paper-card p listen a{
+ border:none;
+}
+.paper-card img{
+  box-shadow: none;
+}
+.paper-card p a{
+border-bottom: .15em solid #f1bc00;
+}
+.paper-card a:hover{
+  border:none ;
+  color:#b89001;
 }
 .paper-card h2{text-align: center;
 }
 .paper-card:hover{
   -webkit-box-shadow: 0 2px 40px 0px  #2b2b2b ;
   box-shadow:  0 2px 40px 0px  #2b2b2b;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 .paper-card a{
   border:none;
 }
-.paper-card.perform{
-  overflow: scroll;
-  background: #fffae8;
-}
-.paper-card.perform listen a{
- border:none;
-}
-.paper-card.perform img{
-  box-shadow: none;
-}
-.paper-card.perform a{
-border-bottom: .15em solid #f1bc00;
-}
-.paper-card.perform a:hover{
-  border:none ;
-  color:#b89001;
-}
 .toc-item li a{
   border: none;
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:900px){
   body {
       	background:#fffae8;
   }
@@ -1073,13 +1067,12 @@ pre{-webkit-box-shadow:none ;
   margin: auto 0;
 }
   .footer-wrapper{
-  margin: 7em auto 0;
-  padding: .5em;
-  border:none;
-  border-radius: 0;
+  margin: 7em auto .5em;
+  padding: 0 .5em;
+  border:.2em solid #2b2b2b;
+  border-radius: 2em;
   box-shadow: none;
   background-image: url('/seal.png'),-webkit-linear-gradient(left, #c41011 , #6f00a8);
-     background-image:url('/seal.png'),-o-linear-gradient(right,#c41011, #6f00a8);
      background-image:url('/seal.png'),-moz-linear-gradient(right,#c41011, #6f00a8);
      background-image: url('/seal.png'),linear-gradient(to right, #c41011,  #6f00a8);
        background-position: right bottom;
@@ -1112,15 +1105,20 @@ border-radius: 1.2em;
 max-height: 18em;
 width: 18em;
 }
-.paper-card{
-  margin:.5em auto;
-}
 .paper-wrap{
   margin:0 auto auto;
 }
-.paper-card.perform{
-  margin: 2em auto;
+.paper-card{
+  margin:.5em auto 3em;
   width:90%;
+    max-height: none;
+     border-radius: 1.2em;
+    box-shadow: none;
+}
+.paper-card:hover{
   box-shadow: none;
+}
+.paper-card.recording{
+  max-height: none;
 }
 }

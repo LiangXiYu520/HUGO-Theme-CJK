@@ -1,5 +1,5 @@
 ---
-layout: "block"
+layout: "gallery"
 author: "柯棋瀚"
 title: "實地錄音"
 date: 2018-11-19
@@ -15,7 +15,9 @@ description: '在日常生活中，耳朵聽到的聲音往往被我们忽畧。
 vertical: false
 ---
 
-<div class="vertical-false" style="margin-top:3em">
+
+
+<div class="vertical-false"  style="margin-top:10em">
 
 以下三箇平臺同步發布，內容完全一致：
 
@@ -26,7 +28,11 @@ vertical: false
 - 網易雲音樂電臺　<a href="http://music.163.com/#/radio/527105637?userid=275990862" target="\_blank">情形于声</a>
 
 </div>
-<div class="vertical-false">
+
+<div class="gallery">
+
+<div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ##  Vol. 1　臺南十二月二十四日 Tainan on December 24
 
@@ -40,8 +46,8 @@ People in Tainan on Christmas Day. The recording consists of three lines: the tr
 
 The first recording of life. Most of them recorded with Zoom H2N. Felt the power of it, it feels more difficult than listen1ing to the ear, all kinds of sounds can be discerned. Surprised.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ##  Vol. 2　臺北十二月三十一日 Taipei on December 31
 
@@ -51,8 +57,8 @@ The first recording of life. Most of them recorded with Zoom H2N. Felt the power
 
 The fun of Taipei’s New Year’s Eve. This is more satisfactory than *Tainan*, as the material was collected much more. I spent a total of 4 hours. I recorded the sound to be highlighted and the ambience separately, and used three remixes. The effect is definitely better. See [2018 2018](/blog/2018/01/01/xbnm.html) for details.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ##  Vol. 3　宿舍下打乒乓球的大媽 Aunt playing table tennis under my dormitory
 
@@ -62,8 +68,8 @@ The fun of Taipei’s New Year’s Eve. This is more satisfactory than *Tainan*,
 
 gear: Mixpre 3, a pair of SE 8. Aunt playing table tennis under my dormitory. Later, the  table tennis tables were gone for a night, and we finally got peace.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ## Vol. 4　凌晨三點的新發地 Sinfati at 3 am
 
@@ -107,8 +113,8 @@ The biggest difficult I encountered was the heavy crowd. Shops were squatting, a
 
 The South Second Ring Road is quite desolate. Beijing is all developing to the north. When I read a webpage saying that the open-air trade would disappear in the next five years in Sinfati, I thought the fun would be greatly reduced.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ##  Vol. 5　六月七日高考開始 Beginning of the college entrance examination
 
@@ -118,8 +124,8 @@ The South Second Ring Road is quite desolate. Beijing is all developing to the n
 
 gear: Mixpre 3, a pair of SE 8. 45 minutes of material. Time: June 7th, 2018. Event: before the college entrance examination (Chinese). Location: the third affiliated secondary school. The best thing about sound is that you can't judge the time order, so I cut it out in a logical order, and many of them are disrupted. Greeting, seeing the test sites, reviewing, the parents' and teacher's last exhorting, and finally the chat between the teacher and the parents.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ##  Vol. 6　六月八日高考結束 End of the college entrance examination
 
@@ -129,8 +135,8 @@ gear: Mixpre 3, a pair of SE 8. 45 minutes of material. Time: June 7th, 2018. Ev
 
 gear: Mixpre 3, a pair of SE 8. 30 minutes of material. Time: June 8th, 2018. Event: After the college entrance examination(English). location: the third affiliated secondary school. Time was up, more and more parents were coming. After the students came out, all the people were taking photos. Later, All have gone. The staff took off the door banner and the examination room map. A few parents were chatting.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ##  Vol. 7　午夜交響曲 Midnight chorus
 
@@ -140,8 +146,8 @@ gear: Mixpre 3, a pair of SE 8. 30 minutes of material. Time: June 8th, 2018. Ev
 
 gear: Mixpre 3, a pair of SE 8. 150 minutes of material. The sound of snoring. It indeed has a structure.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ## Vol. 8　嘴皮發出的奇妙聲響 Wonderful sound of mouth
 
@@ -151,8 +157,8 @@ gear: Mixpre 3, a pair of SE 8. 150 minutes of material. The sound of snoring. I
 
 gear: Mixpre 3, a pair of SE 8. When I woke up one afternoon, I found that my mouth could make a strange whistle, and I recorded it on my mobile phone. There is a very high frequency segment. The spectrum shows the fundamental frequency is 3-4 kHz. The original format of the mobile phone is 22kHz, and the sound quality is terrible.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ## Vol. 9　夜晚田野交響曲 Night field Chorus
 
@@ -166,8 +172,8 @@ gear: Mixpre 3, a pair of SE 8. Location: a field in the border of Yizheng and Y
 
 Divided into four segments: 1, insects, 2, added high-frequency insects, 3, frog sound gradually reaching a climax, 4, separate frog sound
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ## Vol. 10　本科畢業生跳蚤市場 Undergraduate graduate flea market
 
@@ -185,8 +191,8 @@ The process: weaken the low frequency below 125hz by batch processing, normalize
 
 The original material of the flea market seems to have no logical connection. I still divide it into two parts. The first part is selling sound, and then the bargain. At the beginning and end are the bonus scenes.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ## Vol. 11　東東 Tung Tung
 
@@ -198,8 +204,8 @@ The original material of the flea market seems to have no logical connection. I 
 
 Gear: Mixpre 3, a pair of SE 8. Recorded two days before the dissolution of our dormitory. This dormitory subculture seems to develop in junior year.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ## Vol. 12　 Dormitory at 23:00 宿舍睡前
 
@@ -211,8 +217,8 @@ gear: Mixpre 6 II, AT 4022 pair with Iso-binaural
 
 My first recording with omni microphones. I'm surprised by the wide image and rare coloured sounds of omni type.
 
-</div>
-<div class="vertical-false">
+</div></div></div><div class="paper-wrap">
+<div class="paper-card recording"><div class="paper-card-in">
 
 ## Vol. 13　 氫能源汽車排氣 Hydrogen energy bus releasing gas
 
@@ -226,4 +232,7 @@ The piece has full frequency, from the lowest frequency up to more than 20khz. S
 
 There is a sudden decrease in the sound. A man was walking by at the moment. I didn't expect bodies to block the sound so effectively.
 
+</div>
+</div>
+</div>
 </div>

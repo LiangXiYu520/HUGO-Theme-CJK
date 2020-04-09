@@ -20,7 +20,7 @@ description: '見笑。播音是初二變聲的時候誕生的一箇想法。那
 <div class="gallery">
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card recording"><div class="paper-card-in">
 <h2>No.1　北師大政府管理學院四名學生深入彌勒市林區 探訪護林員</h2>
 
 <listen>[立卽觀看](https://v.youku.com/v_show/id_XMTczMjYwMDEzNg==.html?spm=a2h0k.11417342.soresults.dtitle)</listen><date>2016-09-21</date>
@@ -28,10 +28,10 @@ description: '見笑。播音是初二變聲的時候誕生的一箇想法。那
 2016 暑期實踐。一位髙中同學叫我幫忙錄的。用的一箇類似採訪用的小蜜蜂那樣的拾音設備。遺憾的是旁白被做視頻的人調快了。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card recording"><div class="paper-card-in">
 <h2>No.2　阿昌刀鍛造工藝——2016暑期實踐紀實</h2>
 
 <listen>[立卽觀看](https://www.bilibili.com/video/av35467511/)</listen><date>2018-11-07</date><date>製作於 2016-09</date>
@@ -39,14 +39,14 @@ description: '見笑。播音是初二變聲的時候誕生的一箇想法。那
 㪅多見 [記二〇一六秊戶撒刀暑期實踐](/post/134husa)。
 
 </div>
-</div>
+</div></div>
 </div>
 
 <h1 style="margin:0 auto -4em auto">播音</h1>
 
 <div class="gallery">
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card recording"><div class="paper-card-in">
 <h2>No.1　資訊縱橫 1</h2>
 
 <listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/172735988)</listen><date>2019-04-01</date>
@@ -94,10 +94,10 @@ description: '見笑。播音是初二變聲的時候誕生的一箇想法。那
 本期节目编辑、播音：止息，导播：岳天舒，更多内容请关注北师大广播台喜马拉雅和微信公众号，再见。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card recording"><div class="paper-card-in">
 <h2>No.2　資訊縱橫 2</h2>
 
 <listen>[立卽收聽](https://www.ximalaya.com/toutiao/7032587/176380007)</listen><date>2019-04-15</date>
@@ -131,10 +131,10 @@ description: '見笑。播音是初二變聲的時候誕生的一箇想法。那
 本期节目编辑、播音：止息，导播：周卉、止息，更多内容请关注北师大广播台喜马拉雅和微信公众号，再见。
 
 </div>
-</div>
+</div></div>
 
 <div class="paper-wrap">
-<div class="paper-card perform">
+<div class="paper-card recording"><div class="paper-card-in">
 <h2>No.3　資訊縱橫 3</h2>
 
 
@@ -169,6 +169,6 @@ description: '見笑。播音是初二變聲的時候誕生的一箇想法。那
 本期节目编辑、播音：止息，导播：周卉，更多内容请关注北师大广播台喜马拉雅和微信公众号，再见。
 
 </div>
-</div>
+</div></div>
 
 </div>
