@@ -372,9 +372,9 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 
 [一段影像|明月清风](https://mp.weixin.qq.com/s/5x_YAqQgyVHWxjTho48q2g) 音質實在是感人。
 
-<img src="https://pic2.superbed.cn/item/5d020787451253d17835b1ee.jpg" width="600">
+<img src="https://pic2.superbed.cn/item/5d020787451253d17835b1ee.jpg">
 
-<img src="https://pic2.superbed.cn/item/5d020787451253d17835b1f0.jpg" width="500">
+<img src="https://pic2.superbed.cn/item/5d020787451253d17835b1f0.jpg">
 
 </div>
 </div>
@@ -387,9 +387,9 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 
 活動詳情見 [音乐会进行时|斫琴分享会&音乐会现场](https://mp.weixin.qq.com/s/roQGABitXlxbIRdZkmzoig)
 
-<img src="https://pic2.superbed.cn/item/5d0208bd451253d17835cfa9.jpg" width="500">
+<img src="https://pic2.superbed.cn/item/5d0208bd451253d17835cfa9.jpg">
 
-<img src="https://pic2.superbed.cn/item/5d0208bd451253d17835cfab.jpg" width="500">
+<img src="https://pic2.superbed.cn/item/5d0208bd451253d17835cfab.jpg">
 
 </div>
 </div>
@@ -454,9 +454,9 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 
 <date>2019-11-10</date>
 
-<img src="https://pic.superbed.cn/item/5dc8f1d18e0e2e3ee93417a4.jpg" width="600">
+<img src="https://pic.superbed.cn/item/5dc8f1d18e0e2e3ee93417a4.jpg">
 
-<img src="https://pic.superbed.cn/item/5dc8f1d18e0e2e3ee93417a2.jpg" width="500">
+<img src="https://pic.superbed.cn/item/5dc8f1d18e0e2e3ee93417a2.jpg">
 
 <v>每日新報</v> 2019-11-11 第 7 頁：
 
