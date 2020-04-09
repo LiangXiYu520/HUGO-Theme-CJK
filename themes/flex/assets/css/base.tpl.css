@@ -904,6 +904,14 @@ margin: 10em 2em 2em;
   margin-right:1em;
   margin-bottom: 1em;
 }
+.gallery-nav{
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em
+}
+.gallery-nav-span{
+  margin: 0 1em;
+}
 .paper-wrap {
   margin: 0 auto;
 }
