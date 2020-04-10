@@ -24,6 +24,38 @@ font-size: 1em;
     	background-size: 240px 240px, 240px 240px, 240px 240px, 240px 240px;
     	background-position:70px 70px, 190px 190px,190px 190px,70px 70px ;
 }
+table{
+  margin: .5em auto;
+    border-bottom: 3px solid #8c8c8c;
+    border-top: 3px solid #8c8c8c;
+    border-collapse: collapse;
+    font-size: .9em;
+  }
+    table  th {
+        text-align: left;
+          border-bottom: 3px solid #8c8c8c;
+  padding: .2em .4em .1em;
+      }
+table  td {
+    border-bottom: 1px solid #8c8c8c;
+    padding: .2em .4em .1em;
+  }
+  .vertical table{
+    margin: 0 .5em;
+    border:none;
+      border-right: 3px solid #8c8c8c;
+      border-left: 3px solid #8c8c8c;}
+.vertical  table  th {
+      text-align: left;
+      border:none;
+        border-left: 3px solid #8c8c8c;
+      padding: .4em .2em .4em 0;
+    }
+    .vertical table  td {
+      border:none;
+        border-left: 1px solid #8c8c8c;
+        padding: .4em .2em .4em 0;
+      }
 hr{
   margin:2em auto;
   max-width:6.7em;
