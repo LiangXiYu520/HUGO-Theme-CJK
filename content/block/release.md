@@ -512,10 +512,10 @@ Google AdSense 審核通過。開通了鏡象公眾號
         return function() {
             var now = new Date,
                 remaining = wait - (now - lastCalled);
-
+    
             args = arguments;
             thisArg = this;
-
+    
             if (remaining <= 0) {
                 clearTimeout(timeoutId);
                 timeoutId = null;
@@ -537,7 +537,7 @@ Google AdSense 審核通過。開通了鏡象公眾號
         var $articleAside = $('.js-article-aside');
         var $toc = $('.js-toc');
         var hasTitle = $articleContent.find('h1, h2, h3').length > 0;
-
+    
         function asideSticky() {
             return $window.outerWidth() > 1150 && $pageStage.hasClass('has-toc');
         }
@@ -546,16 +546,16 @@ Google AdSense 審核通過。開通了鏡象公眾號
                 !$pageStage.hasClass('has-toc') && $pageStage.addClass('has-toc');
             }
         }
-
+    
         setTocClass();
-
+    
         function setAsideTOC() {
             var asideTop,
                 asideLeft,
                 scrollBottom,
                 asideBottomTop,
                 lastScrollTop;
-
+    
             function init() {
                 var asideOffset = $articleAside.offset();
                 var footerOffset = $pageFooter.offset();
@@ -601,7 +601,7 @@ Google AdSense 審核通過。開通了鏡象公眾號
             setTimeout(init, 4000);
         }
         setTimeout(setAsideTOC, 1000);
-
+    
         $toc.toc({
             'selectors': 'h1,h2,h3',
             'container': '.js-article-content',
@@ -1354,7 +1354,7 @@ tags 全部換成 series
 
 智能推薦的作者無論如何都沒用，只好刪了。
 
-### 4.5.5
+#### 4.5.5
 
 主葉改版，分爲主葉和博客發現兩部分。
 
@@ -1370,6 +1370,10 @@ tags 全部換成 series
 
 精簡葉腳信息。
 
-各頁面標題和主頁一致。加上了描述。
+各頁面標題和主頁一致，變成地址欄式的。各索引加上了描述。
 
 爲歸檔葉增加 `section.html`
+
+又把 `tags.html` 拆散了。
+
+增加表格樣式。
