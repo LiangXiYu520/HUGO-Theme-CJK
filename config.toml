@@ -27,11 +27,21 @@ series = "series"
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
+  [[menu.nav]]
+     name = "博客"
+     weight = 1
+     identifier = "archives"
+     url = "/post"
+   [[menu.nav]]
+     name = "維基"
+      weight = 7
+    url = "https://kqh.wiki/"
+
 [params]
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
   linkToMarkDown = true
   vertical = true
-  width ="42rem"          # Any length in CSS syntax
+  width ="45rem"          # Any length in CSS syntax
   summaries= false      # Set to true to show summaries of posts on homepage
   divider= false        #\a0 Set to false to remove divider below posts on homepage
   schema= false         # Set to true to add Schema.org metadata

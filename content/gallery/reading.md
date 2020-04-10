@@ -4,8 +4,6 @@ author: "柯棋瀚"
 title: "讀切韻"
 date: 2018-11-19
 lastmod: 2019-03-20
-categories: ["漢語"]
-series: ["作品"]
 url: /reading
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/reading.md'
 vertical: false

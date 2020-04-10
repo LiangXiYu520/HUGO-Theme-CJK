@@ -1,13 +1,12 @@
 ---
+layout: 'block'
 author: "柯棋瀚"
-title: "links"
+title: "友鏈"
 date: 2018-10-27
 lastmod: 2019-10-06
-categories: ["站務"]
-series: ["公吿"]
 menu:
   main:
-    weight: 2
+    weight: 3
 url: /links
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.md'
 vertical: false

@@ -4,8 +4,6 @@ author: "柯棋瀚"
 title: "古琴演出"
 date: 2018-12-07
 lastmod: 2019-11-15
-categories: ["琴"]
-series: ["作品"]
 url: /performing
 menu:
   main1:

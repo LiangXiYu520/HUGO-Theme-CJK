@@ -4,8 +4,6 @@ author: "柯棋瀚"
 title: "平面"
 date: 2019-07-23
 lastmod: 2019-07-23
-categories: ["生活"]
-series: ["作品"]
 url: /design
 menu:
   main1:

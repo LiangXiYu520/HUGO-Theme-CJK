@@ -1,12 +1,12 @@
-<nav class="u-background">
-    <ul class="Banner">
-      <li class="Banner-item Banner-item--title">
-        <a class="Banner-link u-clickable1" href="{{ relURL nil }}">{{ site.Title }}</a>
-      </li>
+<nav>
+    <div class="banner">
+        <a class="" href="{{ relURL nil }}">{{ site.Title }}//發現</a>
+    </div>
+    <div class="banner banner1">
       {{ range site.Menus.nav }}
-        <li class="Banner-item">
-          <a class="Banner-link u-clickable" href="{{ relURL .URL }}">{{ .Name }}</a>
-        </li>
+        <span class="banner2">
+          <a href="{{ relURL .URL }}">{{ .Name }}</a>
+        </span>
       {{ end }}
-    </ul>
+    </div>
 </nav>

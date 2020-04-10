@@ -4,8 +4,6 @@ author: "柯棋瀚"
 title: "旁白 播音"
 date: 2018-11-19
 lastmod: 2019-04-29
-categories: ["錄音"]
-series: ["作品"]
 vertical: false
 url: dubbing
 menu:

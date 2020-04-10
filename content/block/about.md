@@ -1,10 +1,9 @@
 ---
+layout: 'block'
 author: "柯棋瀚"
-title: "about"
+title: "關於"
 date: 2017-10-04
 lastmod: 2020-01-14
-categories: ["站務"]
-series: ["公吿"]
 menu:
   main:
     weight: 1
@@ -18,7 +17,7 @@ vertical: false
 
 見 [我的主葉](/)。投稿、交換友鏈及其他任何問題都可以發郵件或在文末評論。
 
-這是一箇小朋友的小天地，爲所欲爲的自留地，自己想怎麼排版就怎麼排，想改就改想刪就刪。這博客太无聊了，而且都是沒什麼價値的口水話，相信絕大多數讀者點進來就會馬上點右上角的叉。
+這是我的小天地，爲所欲爲的自留地，自己想怎麼排版就怎麼排，想改就改想刪就刪。這博客太无聊了，而且都是沒什麼價値的口水話，相信絕大多數讀者點進來就會馬上點右上角的叉。
 
 # 曷以建茲？
 
@@ -83,17 +82,8 @@ vertical: false
 
 1. 【支持】託管於 ~~<a href="https://pages.github.com" target="\_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="\_blank">kitian616</a> 提供博客主題模板 Text~~ 主题  [jane](https://github.com/xianmin/hugo-theme-jane)，~~<a href="https://tw.godaddy.com/" target="\_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="\_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。古琴關注數統計用的 [Substats](https://sspai.com/post/59593) api。
 2. 【檢索】對靜態博客添加搜索功能无能爲力，試了好幾種，无奈技術有限。如想搜索直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a><n>Google 收錄得又全又快</n>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。
-3. 【大事記】詳見 [Hello world!](/blog/2017/10/04/shuoming.html)
-
-- 2017-10-03 建站：kujihhoe.com
-- 2017-10-27 弟二版
-- 2018-11-21 弟三版
-- 2018-12-04 域名變㪅爲 kqh.ac
-- ~~12-06 啓用四箇網站~~
-- 12-18 正文改爲直排
-- 2019-07-22 域名變更爲 kqh.me
-- 建站兩周年之際，啓用新 logo。來源是<u>何尊</u>銘文及<v>續甲骨文編</v>4534
-- 2020-04-08 弟四版完工
+3. 【大事記】見 [更新](/release)
+4. 【板式】見 [示例葉面](/149)
 
 # 示
 
@@ -104,19 +94,3 @@ vertical: false
 - 通過這箇 [邀請鏈接](https://www.superbed.cn/signup?from_id=5be2af239dc6d6b928f1a085) 註冊聚合圖床，我將會得到 30% 反現，您也可以通過這種方式支持我。聚合圖床非常好用，速度快不怕丟失。
 
 <img src="https://api.superbed.cn/pic/5bf82416c4ff9e058246008d" width="150" >
-
-# 板式
-
-1. 【字體】字體是我㝡重視的。正文是宋體，引文是仿宋。首選韓文字體 Source Han Serif K<n>思源宋體韓文版</n>，其次爲日文字體 Hiragino Mincho ProN，這箇字體是蘋果系統自帶的，其次是 Yu Mincho。不過一般 Windows 電腦只有默認的宋體？西文字體依次爲 "Adobe Garamond Pro", "Adobe Caslon Pro", "Minion Pro", "Adobe Gurmukhi", Baskerville。
-2. 【行距】正文行距㠯容納一箇字爲準。~~【段間距】默認爲兩倍行距，這樣一般沒啥問題，但如果有一段只有一行的話，區分不太明顯，因此在默認的基礎上加了 2px<n>別小看這 2px，還挺有用的</n>，段間距是行距的 2.25 倍。一級標題前後間距等於 2.25 倍其字寬。二至六級標題前後間距等於正文段間距。~~
-3. 【縮進】~~一級標題和~~引文縮進 2 箇正文字的距離<n>卽一級標題、引文首字上方和正文弟三字上方是對齊的</n>。
-4. 【引文】仿宋體。爲保證可讀性，字號和行距沒有較正文縮小。由於同等字號下仿宋會比宋體小一些，因此引文的行間距、段間距是根據引文的大小來定的。引文與正文的間距等於正文之間的段間距，而不象橫排那樣空出更多的距離。
-5. 【注釋】楷體~~上下間距爲 5px~~。
-6. 【下畫線】下畫直線將默認的 `text-decoration: underline` 改成 `boder-left: 1px`，再調一下 `padding-left`，這樣就十分清爽了，默認的 `text-decoration` 大槩是 2px，有些粗了。波浪線用的 `backgroud-image`，經過反服修改，達到了最髙的可讀性。下畫線上下各加了 `margin: 1px`，這樣就能將兩箇相連的下畫線分割開來，單獨用時又能不顯痕跡。
-7. 【字距】~~正文加了 `letter-spacing: 1px`，~~引文、注釋沒有加。這樣淸朗一點。~~一級標題爲 10px，二——六級標題爲 2px。~~
-8. 【標題】各級標題字號依次爲 `h1: 1.4em, h2: 1.3em, h3: 1.2em, h4: 1em, h5: 1em, h6: 1em`。標題均用紅色，一、二級標題用宋體，三—六級標題用黑體。
-9. ~~【顏色】紅色爲 `#c41011`，粉色爲 `fecdcd`，黑色爲 `#2b2b2b`，背景黃色爲 `#fffae8`，藍色爲 `#e0f6ff`超鏈接用紅色，懸浮時用粉色背景。~~
-10. ~~【標點】破折號 ——、間隔符 ·、省略號 …… 用的方正新書宋。~~
-11. 用直排可以將正文鋪滿整箇屏幕，還有一箇好處是可以將正文板塊變成組合式的，象雜誌一般。
-
-㪅多見 [示例葉面](/149)

@@ -83,7 +83,7 @@ listen{
   padding: .1em .2em .15em .4em;
   font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   letter-spacing: .2em;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1em;
     margin:  0 7px;
   -webkit-box-shadow: 0 2px 20px -5px  #8c8c8c ;
@@ -109,7 +109,7 @@ date{
   margin: 0  .5em ;
   padding: .3em .7em .2em;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace, "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,PingFangSC,Sans-serif;
-  font-weight: 400;
+  font-weight: normal;
     font-size: .8em;
     color: #8c8c8c;
     border-radius: 1em;
@@ -143,7 +143,7 @@ date{
 }
 .vertical-false{
   margin:7em auto;
-  max-width: 38em;
+  max-width: 42em;
         padding: 1em 2em;
         background: #fffae8;
         border: .5em solid #2b2b2b;
@@ -224,7 +224,7 @@ h5{
 }
 h6{
   font-size: 1em;
-  font-weight: 400;
+  font-weight: normal;
   color: #8c8c8c
 }
 .des{
@@ -246,7 +246,7 @@ h6{
   font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 }
 .des1 a{
-     font-weight: 700;
+     font-weight: bold;
      font-size: 1.4em;
      margin-left:.4em;
      letter-spacing: .1em;
@@ -258,7 +258,7 @@ h6{
    background: #ffb3b3;
    padding: .2em .5em .3em;
 margin-left:.4em;
-   font-weight: 700;
+   font-weight: bold;
    letter-spacing: .1em;
  }
 .des1-cate a:hover{
@@ -273,7 +273,7 @@ margin-left:.4em;
      background: #b3e3ff;
      padding: .2em .6em .3em;
      margin-left:.4em;
-     font-weight: 700;
+     font-weight: bold;
  }
 .des1-tag a:hover{
   background: #fffae8;
@@ -336,7 +336,7 @@ code {
   margin:0;
   padding:.8em 0 .6em;
   font-size: 8em;
-  font-weight: 700;
+  font-weight: bold;
 }
 .Heading {
   text-align:center;
@@ -397,7 +397,7 @@ text-align:center;
 }
 .cate a{
   border:none;
-  font-weight: 400;
+  font-weight: normal;
 }
 .cate-wrap{
   margin: -.3em auto;
@@ -433,7 +433,7 @@ margin: 8em auto 1.5em;
   line-height: 1.3;
   }
 .col1-title{
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1.8em;
   color: #fffae8;
 }
@@ -477,7 +477,7 @@ margin-bottom: .1em;
   font-family:"Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   color:#d5d5d5;
   line-height: 1.6;
-max-width: 26em;
+max-width: 27em;
 }
 .Footer a{
   border: none;
@@ -498,10 +498,24 @@ max-width: 26em;
   padding: 0 1rem;
 }
 .u-clickable {
-  font-weight: 400;
+  font-weight: normal;
   text-decoration: none;
   display: inline-block;
   font-size: .9em;
+}
+.banner{
+  display: inline-flex;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.banner.banner1{
+  float: right;
+}
+.banner a{
+  border:none;
+}
+.banner2{
+  margin-left:1.2em;
 }
 .archive-wrapper{
   padding: .5em 2em;
@@ -528,7 +542,7 @@ color:#b89001;}
     font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace;
     margin: auto .6em auto 0;
 font-size: 1.85em;
-font-weight: 700;
+font-weight: bold;
 float: left;
 color: #ffda56;
 }
@@ -563,7 +577,7 @@ margin: 0;
 .count{
   margin: .5em auto 0;
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
-font-weight: 400;
+font-weight: normal;
   color:#8c8c8c;
   line-height: 1.8;
   text-align: center;
@@ -669,7 +683,7 @@ margin:2em 1em 0 1em;
 }
 .pagi a{
   border: none;
-  font-weight: 700;
+  font-weight: bold;
 }
 .pagi:hover{
       padding: 0px 8px;
@@ -748,7 +762,7 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
 	.cover .label{
 		font-size: 1.1em;
 			letter-spacing: .1em;
-	font-weight: 700;
+	font-weight: bold;
 	text-align: center;
 	line-height: 2;
   margin:2.5em auto;
@@ -760,7 +774,7 @@ box-shadow:  0 2px 20px -5px  #8c8c8c ;
     font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace;
 	}
 .cover .mail a{
-border-bottom: .15em solid #d6a700 ;
+border-bottom: .15em solid #d6abold ;
 }
 .cover .mail a:hover{
 border-bottom: none ;
@@ -918,7 +932,7 @@ margin: 10em 2em 2em;
 }
 .gallery-nav{
   text-align: center;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1.2em
 }
 .gallery-nav-span{
@@ -1014,7 +1028,7 @@ pre{-webkit-box-shadow:none ;
   }
   .heading-wrap{
     padding: .1em  .5em 1em;
-    margin: -1em 0 3em;
+    margin: 0em 0 3em;
     border-bottom:  .2em solid #2b2b2b;
     -webkit-box-shadow:none ;
       box-shadow:none

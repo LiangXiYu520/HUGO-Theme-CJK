@@ -15,10 +15,13 @@
     <article>
       <div class="heading-wrap">
       {{ partial "heading.html" . }}
+      <div class="archive-info" style="font-size:1em;text-align:center">修改 {{ .Lastmod.Format "2006-01-02" }}</div>
       </div>
-      {{ .Content }}
       <div class="u-wrapper">
         <div class="u-padding">
+          <div class="vertical-false">
+      {{ .Content }}
+         </div>
   {{ partial "comments.html" . }}
   </div></div>
     </article>

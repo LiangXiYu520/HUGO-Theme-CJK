@@ -4,8 +4,6 @@ author: "柯棋瀚"
 title: "書法"
 date: 2019-07-22
 lastmod: 2019-07-22
-categories: ["書"]
-series: ["作品"]
 url: /calligraphy
 menu:
   main1:

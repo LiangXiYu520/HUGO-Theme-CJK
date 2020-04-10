@@ -52,7 +52,7 @@
   <div class="paper-wrap">
   <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
 <h2>最近發布</h2>
-{{ range first 10   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+{{ range first 15   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
           <div >
             <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
           </div>
@@ -61,7 +61,7 @@
 <div class="paper-wrap">
 <div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
   <h2>最近修改</h2>
-            {{ range first 25   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
+            {{ range first 15   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
                       <div >
                         <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
                       </div>
