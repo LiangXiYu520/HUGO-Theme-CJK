@@ -1,6 +1,6 @@
 <footer class="footer-wrapper">
   <div class="col">
-        <div class="col1" style="margin-top:.8em">
+        <div class="col1" style="margin-top:1em">
       {{ range .Site.Menus.main }}
           <div class="col1"><a href="{{ .URL | absLangURL | safeURL }}"  target="_blank"><span class="col1-title col2">{{ .Name }}</span></a><br>{{ .Page.Lastmod.Format "2006-01-02" }}</div>
       {{ end }}
