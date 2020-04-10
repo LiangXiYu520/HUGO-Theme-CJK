@@ -3,7 +3,7 @@
 {{ partial "heading.html" . }}
 {{ .Content }}
   {{- $length := len .Data.Pages }}
-<div class="count">
+<div class="des2">
 凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
 </div></div>
 {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}

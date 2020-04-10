@@ -2,6 +2,12 @@
   <article>
     <div class="heading-wrap">
     {{ partial "heading.html" . }}
+    <div class="des2">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">
+    {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} > {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+    </time>　
+<span>{{ .WordCount }} 字</span>
+    </div>
     {{- $author_id := .Params.author | default .Site.Author.name -}}
     {{- $author := (index ($.Site.Data.author | default dict) $author_id) -}}
     {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}

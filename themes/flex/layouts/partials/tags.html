@@ -1,13 +1,6 @@
     <div class="Tag"><div class="Tags">
-  <li class="Tags-item">
-      <li class="Tags-item">
-  <time datetime="{{ .Date.Format "2006-01-02" }}" style="font-family: Source Code Pro,Menlo, Inconsolata,Courier New,Anonymous Pro,monospace">
-  <strong>時閒</strong>　{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} > {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
-  </time>
-</li>
 <li class="Tags-item">
-    <strong>字數</strong>　<span style="font-family: Source Code Pro,Menlo, Inconsolata,Courier New,Anonymous Pro,monospace">{{ .WordCount }}</span>
-    　　<strong>源碼</strong>　<a class="link-to-markdown" href="{{ .Params.markdown | safeHTML }}" rel="noopener" target="_blank">點此査看</a>
+  <strong>源碼</strong>　<a class="link-to-markdown" href="{{ .Params.markdown | safeHTML }}" rel="noopener" target="_blank">點此査看</a>
   </li>
   <li class="Tags-item">
   {{- if .Params.contentCopyright -}}
