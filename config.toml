@@ -36,7 +36,6 @@ series = "series"
      name = "維基"
       weight = 7
     url = "https://kqh.wiki/"
-
 [params]
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
   linkToMarkDown = true
@@ -47,3 +46,6 @@ series = "series"
   schema= false         # Set to true to add Schema.org metadata
   opengraph= false      # Set to true to add Open Graph metadata
   twittercards= false   # Set to true to add Twitter Cards metadata
+  [[params.taxo]]
+  name='史'
+   des =  '都'

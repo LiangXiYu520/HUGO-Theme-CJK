@@ -1,6 +1,20 @@
 {{ partialCached "banner.html" . }}
 <header class="Heading">
-  <h1 class="Heading-title" style="font-size: 2.7em;letter-spacing:.2em">{{ .Title }}</h1>
+  {{ $termName := .Data.Singular }}
+  {{  if and $.Site.Taxonomies.categories (eq $termName "category") }}
+  <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8">赫赫文王>博客>分類</span>[{{- .Title -}}]</h1>
+{{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}
+    {{ else if and $.Site.Taxonomies.series (eq $termName "series") }}
+  <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8">赫赫文王>博客>系列 </span>#{{- .Title -}}</h1>
+{{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}
+      {{ else if and $.Site.Taxonomies.author (eq $termName "author") }}
+<h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8">赫赫文王>博客>作者</span>{{- .Title -}}/</h1>
+{{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}
+    {{ else  }}
+    <h1 class="Heading-title taxo" style="font-size:3em">{{ .Title }}</h1>
+
+  {{ end }}
+
 </header>
 {{ if .Description }}
 <div class="des">{{ .Params.Description | safeHTML }}</div>

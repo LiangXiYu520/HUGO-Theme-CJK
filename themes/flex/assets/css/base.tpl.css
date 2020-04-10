@@ -341,7 +341,6 @@ code {
 .Heading {
   text-align:center;
   align-items: baseline;
-  text-shadow: .1em .1em 0 #fe7fb8;
 }
 .Heading a{
   text-decoration: none;
@@ -349,6 +348,11 @@ code {
 }
 .Heading-title {
   margin: 1.5rem 0.5rem 0 0;
+}
+.Heading-title.taxo{
+  font-size: 5em;
+  letter-spacing:.15em;
+    text-shadow: 2px 2px 0 #fe7fb8;
 }
 .Heading-link {
   color: inherit;
@@ -1035,6 +1039,12 @@ pre{-webkit-box-shadow:none ;
   }
   .heading-wrap.home h1{
     font-size: 4em;
+    letter-spacing:.05em;
+      text-shadow: 1px 1px 0 #fe7fb8;
+  }
+  .Heading-title.taxo{
+    font-size: 4em;
+    letter-spacing:.05em;
       text-shadow: 1px 1px 0 #fe7fb8;
   }
 .archive-wrapper,  .discover-wrap{
