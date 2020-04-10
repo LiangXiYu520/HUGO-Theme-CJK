@@ -793,8 +793,7 @@ animation-direction:alternate;
 }
 .discover-wrap{
   padding: .5em 2em 1.5em;
-margin:5em auto;
-  max-height:35em;
+margin:1em auto 5em;
   overflow:scroll;
   background: #fffae8;
   border: .5em solid #2b2b2b;
@@ -1022,6 +1021,7 @@ pre{-webkit-box-shadow:none ;
   }
   .heading-wrap.home h1{
     font-size: 4em;
+      text-shadow: 1px 1px 0 #fe7fb8;
   }
 .archive-wrapper,  .discover-wrap{
       border: .2em solid #2b2b2b;
@@ -1032,9 +1032,6 @@ pre{-webkit-box-shadow:none ;
       -webkit-box-shadow:none ;
         box-shadow:none
 }
-  .discover-wrap{
-    max-height:none;
-    }
 .discover ol{
       max-width:20em;
     }
