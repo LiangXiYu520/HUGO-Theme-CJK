@@ -46,16 +46,38 @@
     </div>
     <div class="u-wrapper">
       <div class="u-padding">
-    {{ partial "tags.html" . }}
+    <!--{{ partial "tags.html" . }}-->
     </div></div>
     {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
 <div class="vertical-wrap">
     <div class="vertical">
+      {{ if .TableOfContents }}
+        <li class="toc-item">{{ .TableOfContents }}</li>
+      {{ end }}
     {{ .Content }}
+    <div class="Tags-item-vertical">
+    {{- if .Params.contentCopyright -}}
+    <strong>版權</strong>　{{ .Params.contentCopyright | safeHTML }}
+    {{- else -}}
+      <strong>版權</strong>　{{ .Site.Params.contentCopyright | safeHTML }}
+    {{- end -}}
+    </div>
     </div></div>
+
       {{ else }}
+
           <div class="vertical-false">
+            {{ if .TableOfContents }}
+              <li class="toc-item">{{ .TableOfContents }}</li>
+            {{ end }}
           {{ .Content }}
+          <div class="Tags-item">
+          {{- if .Params.contentCopyright -}}
+          <strong>版權</strong>　{{ .Params.contentCopyright | safeHTML }}
+          {{- else -}}
+            <strong>版權</strong>　{{ .Site.Params.contentCopyright | safeHTML }}
+          {{- end -}}
+          </div>
           </div>
     {{ end }}
     <div class="u-wrapper">

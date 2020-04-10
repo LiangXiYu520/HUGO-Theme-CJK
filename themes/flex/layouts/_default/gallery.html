@@ -14,7 +14,12 @@
   <main>
     <article>
       <div class="heading-wrap">
-      {{ partial "heading.html" . }}
+        <header class="Heading">
+        <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>>作品 </span>{{ .Title }}</h1>
+        </header>
+        {{ if .Description }}
+        <div class="des">{{ .Params.Description | safeHTML }}</div>
+        {{ end }}
       </div>
       {{ .Content }}
       <div class="u-wrapper">

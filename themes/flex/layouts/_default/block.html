@@ -20,6 +20,9 @@
       <div class="u-wrapper">
         <div class="u-padding">
           <div class="vertical-false">
+            {{ if .TableOfContents }}
+              <li class="toc-item">{{ .TableOfContents }}</li>
+            {{ end }}
       {{ .Content }}
          </div>
   {{ partial "comments.html" . }}

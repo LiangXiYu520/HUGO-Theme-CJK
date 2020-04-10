@@ -1,0 +1,65 @@
+{{ define "main" }}
+<div class="heading-wrap">
+  {{ partialCached "banner.html" . }}
+  <header class="Heading">
+      <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>></span>博客</h1>
+  </header>
+  {{- $length := len .Data.Pages }}
+<div class="des2">
+凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
+</div></div>
+{{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
+  {{ $count1 := add $length 1 }}
+  {{ $count0 := $paginator.PageNumber }}
+{{ $count2 := sub $count0 1 }}
+{{ $count3 := mul 50 $count2}}
+{{ $count4 := sub $count1 $count3 }}
+      <div class="pagination-wrap"><nav class="pagination">
+        <div>
+          {{ range $paginator.Pagers }}
+          <span {{ if eq . $paginator }} class="active" {{end}}>
+            <a href="{{ .URL }}">{{ .PageNumber }}</a>
+          </span>{{ end }}
+        </div>
+        </nav></div>
+                {{ range $paginator.Pages.GroupByPublishDate "2006" }}
+                  <div class="year"><h2>{{ .Key }}</h2></div>
+        <div class="archive-wrapper">
+        {{- range .Pages -}}
+              <div class="archive-wrap">
+        <span class="archive-left">
+        {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
+                <span class="archive-right">
+                  <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">{{- .Params.author -}}/</a></span>
+                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
+                </div>
+                <div class="archive-info">{{ .PublishDate.Format "06-01-02" }} > {{ .Lastmod.Format "06-01-02" }}&nbsp
+            {{ with .Params.categories -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+                  <span class="archive-info"> <a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a></span>
+                {{ end -}}
+                {{ end }}
+            {{- end }}
+            {{ with .Params.series -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+                <span class="archive-info"><a href="/series/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
+                {{ end -}}
+                {{ end }}
+            {{- end }}</div>
+          </span>
+    </div>
+    {{ end }}</div>    {{ end }}
+    <div class="pagination-wrap"><nav class="pagination">
+      <div>
+        {{ range $paginator.Pagers }}
+        <span {{ if eq . $paginator }} class="active" {{end}}>
+          <a href="{{ .URL }}">{{ .PageNumber }}</a>
+        </span>{{ end }}
+      </div>
+      </nav></div>
+      {{ partialCached "footer.html" . }}
+{{ end }}

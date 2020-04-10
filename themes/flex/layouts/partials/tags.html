@@ -1,20 +1,3 @@
-    <div class="Tag"><div class="Tags">
-<li class="Tags-item">
-  <strong>源碼</strong>　<a class="link-to-markdown" href="{{ .Params.markdown | safeHTML }}" rel="noopener" target="_blank">點此査看</a>
-  </li>
-  <li class="Tags-item">
-  {{- if .Params.contentCopyright -}}
-  <strong>版權</strong>　{{ .Params.contentCopyright | safeHTML }}
-  {{- else -}}
-    <strong>版權</strong>　{{ .Site.Params.contentCopyright | safeHTML }}
-  {{- end -}}
-  </li>
-<li class="Tags-item"><strong>目錄</strong></li>
-
-{{ if $.Site.Params.linkToMarkDown -}}
-
-  {{- end }}
-  {{ if .TableOfContents }}
-    <li class="toc-item">{{ .TableOfContents }}</li>
-  {{ end }}
-      </div></div>
+<!--    <div class="Tag"><div class="Tags">
+<li class="Tags-item"><strong>目錄</strong></li></div></div>
+-->

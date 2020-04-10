@@ -132,7 +132,7 @@ date{
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     line-height: 1.8em;
-      margin: 6em auto;
+      margin: 10em auto 6em;
       padding: 1em 0;
       width: 92%;
     height:38em;
@@ -142,7 +142,7 @@ date{
         box-shadow:  0 2px 30px 2px  #2b2b2b ;
 }
 .vertical-false{
-  margin:7em auto;
+  margin:10em auto 7em;
   max-width: 42em;
         padding: 1em 2em;
         background: #fffae8;
@@ -349,10 +349,6 @@ code {
   text-align:center;
   align-items: baseline;
 }
-.Heading a{
-  text-decoration: none;
-  border: none;
-}
 .Heading-title {
   margin: 1.5rem 0.5rem 0 0;
 }
@@ -393,10 +389,20 @@ box-shadow:  0 2px 30px 2px  #2b2b2b ;
  color:#b89001;
 }
 .Tags-item {
-  text-align: justify;
-  text-justify: inter-ideograph;
-  margin: 0.2rem;
-  padding: 0 0.3rem;
+  margin: 2em 0 ;
+  padding: .2em;
+text-align: right;
+font-size:.9em;
+border-top:1px solid #2b2b2b
+}
+.Tags-item-vertical{
+  margin:0 2em ;
+  padding: .2em;
+  font-size:.9em;
+  border-right:1px solid #2b2b2b
+}
+.Tags-item-vertical strong{
+  color:#8c8c8c;
 }
 .Tags-item strong{
   color:#8c8c8c;
@@ -1010,8 +1016,22 @@ border-bottom: .15em solid #f1bc00;
 .paper-card a{
   border:none;
 }
+.toc-item li {
+  font-size: .9em;
+  line-height: 1.5;
+}
 .toc-item li a{
   border: none;
+}
+.svg a{
+  border:none;
+}
+.svg a svg{  width:.4em;
+}
+.svg a svg:hover{
+  transition: .3s;
+  width:.5em;
+  margin-right:-.1em;
 }
 @media screen and (max-width:900px){
   listen{-webkit-box-shadow:none ;
