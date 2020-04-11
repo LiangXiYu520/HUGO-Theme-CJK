@@ -39,8 +39,7 @@
 
   <h1 style="margin:0 auto">作品</h1>
   <div class="bigcard" style="width:70%">
-  {{- $gallery := .Paginate (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
-{{ range $gallery.Pages }}
+{{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
   <div class="card-container"style="max-width: 16em">
 <div class="card">
 <h2><a href="{{ .Permalink | safeURL }}"  target="_blank">{{ .Title }}</a></h2>
