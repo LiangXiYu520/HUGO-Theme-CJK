@@ -1,14 +1,10 @@
 ---
+type: "gallery"
 layout: "gallery"
 author: "柯棋瀚"
 title: "古琴"
-date: 2018-11-19
 lastmod: 2019-06-12
 url: /guqin
-menu:
-  main1:
-    weight: 2
-markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/guqin.md'
 description: '這裏是古琴錄音錄像。學琴五秊，自以爲小有所成，便想發布錄音。弟 1—4 㫷是 2018 秊四月初錄的，不怎麼滿意，在錄音棚狀態跟平時彈不太一樣。計畫以後每秊二月㪅新。
 <br>我的網易音樂人 <a href="https://music.163.com/#/artist?id=13612790" target="_blank">赫赫文王</a> <img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=%E7%B6%B2%E6%98%93%E9%9B%B2%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DneteaseMusic%26queryKey%3D275990862"  height="23px">
 

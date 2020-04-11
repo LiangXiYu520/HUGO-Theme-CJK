@@ -1,14 +1,10 @@
 ---
+type: "gallery"
 layout: "gallery"
 author: "柯棋瀚"
 title: "平面"
-date: 2019-07-23
 lastmod: 2019-07-23
 url: /design
-menu:
-  main1:
-    weight: 6
-markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/design.md'
 description: '平時給社團做的一些海報封面之類的，沒有任何水平。'
 des: '平時給社團做的一些海報封面之類的，沒有任何水平。'
 ---

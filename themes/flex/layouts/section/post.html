@@ -1,11 +1,14 @@
 {{ define "main" }}
 <div class="heading-wrap">
-{{ partial "heading.html" . }}
-{{ .Content }}
+  {{ partialCached "banner.html" . }}
+  <header class="Heading">
+      <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>></span>博客</h1>
+  </header>
   {{- $length := len .Data.Pages }}
 <div class="des2">
 凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
-</div></div>
+</div>
+</div>
 {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
   {{ $count1 := add $length 1 }}
   {{ $count0 := $paginator.PageNumber }}
@@ -29,7 +32,7 @@
         {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
                 <span class="archive-right">
                   <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">{{- .Params.author -}}/</a></span>
-                  <span class="archive-title"><a href="{{ .URL }}" target="_blank">{{- .Title -}}</a></span>
+                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
                 </div>
                 <div class="archive-info">{{ .PublishDate.Format "06-01-02" }} > {{ .Lastmod.Format "06-01-02" }}&nbsp
             {{ with .Params.categories -}}
@@ -55,7 +58,7 @@
       <div>
         {{ range $paginator.Pagers }}
         <span {{ if eq . $paginator }} class="active" {{end}}>
-          <a href="{{ .URL  }}">{{ .PageNumber }}</a>
+          <a href="{{ .URL }}">{{ .PageNumber }}</a>
         </span>{{ end }}
       </div>
       </nav></div>

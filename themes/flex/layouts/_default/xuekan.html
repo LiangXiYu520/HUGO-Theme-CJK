@@ -14,15 +14,14 @@
   <main>
     <article>
       <div class="heading-wrap">
-      {{ partial "heading.html" . }}
-      <div class="archive-info" style="font-size:1em;text-align:center">修改 {{ .Lastmod.Format "2006-01-02" }}</div>
+        {{ partialCached "banner.html" . }}
+        <header class="Heading">
+             <h1 class="Heading-title taxo" style="font-size:3em"><span style="font-size:.4em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>><a href="/xuekan">春秋學刊</a>></span>{{- .Title -}}</h1>
+        </header>
       </div>
       <div class="u-wrapper">
         <div class="u-padding">
           <div class="vertical-false">
-            {{ if .TableOfContents }}
-              <li class="toc-item">{{ .TableOfContents }}</li>
-            {{ end }}
       {{ .Content }}
          </div>
   {{ partial "comments.html" . }}

@@ -21,30 +21,57 @@
   <div class="img"><img src="/logo.webp" width="90px" height="195px"></div>
   <div class="label">永嘉田家後/　生於九五後/<br>長于錦官城/　讀的厤史系/</div>
   <div class="mail">
-              <table cellpadding=0px style="margin:auto">
+              <table cellpadding=0px style="margin:auto;border:none">
               <tr>
-              <td style="text-align:right;">PGP//</td>
-              <td style="text-align:left;"><a href="/kujihhoe (E2269D07) public.asc" target="_blank">E2269D07</a></td>
+              <td style="text-align:right;border:none">PGP//</td>
+              <td style="text-align:left;border:none"><a href="/kujihhoe (E2269D07) public.asc" target="_blank">E2269D07</a></td>
               </tr>
               <tr>
-              <td style="text-align:right">email&iMessage//</td>
-              <td style="text-align:left;"><span>me#kqh.me</span></td>
+              <td style="text-align:right;border:none">email&iMessage//</td>
+              <td style="text-align:left;border:none"><span>me#kqh.me</span></td>
               </tr>
               </table>
     </div>
          <div class="in2"> </div>
   </div>
-  <div class="bigcard" style="width:68%">
-    {{ range .Site.Menus.main1  }}
+  <h1 style="margin:0 auto">作品</h1>
+  <div class="bigcard" style="width:70%">
+  {{- $gallery := .Paginate (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
+{{ range $gallery.Pages }}
   <div class="card-container"style="max-width: 16em">
 <div class="card">
-<h2><a href="{{ .URL | absLangURL | safeURL }}"  target="_blank">{{ .Name }}</a></h2>
+<h2><a href="{{ .Permalink | safeURL }}"  target="_blank">{{ .Title }}</a></h2>
 <div class="archive-info">{{ .Page.Lastmod.Format "2006-01-02" }}</div>
 <p> {{ .Page.Params.des }}</p>
   </div>
   </div>
     {{ end }}
   </div>
+
+  <div class="gallery" style="margin:4em auto 0">
+  <div class="paper-wrap">
+  <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
+<h2><a href="/zanfu" target="_blank">赫赫讚府</a></h2>
+  <div class="discover-des" style="margin: -1.5em  auto 1em">最近修改</div>
+{{ range first 5   (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
+          <div >
+            <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}">{{ .Title }}</a>
+          </div>
+{{ end }}
+</div></div></div>
+<div class="paper-wrap">
+<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
+  <h2><a href="/xuekan" target="_blank">春秋學刊</a></h2>
+    <div class="discover-des" style="margin: -1.5em  auto 1em">最近發布</div>
+            {{ range first 5   (where .Site.RegularPages.ByDate.Reverse "Type" "xuekan") }}
+                      <div >
+                        <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}">{{ .Title }}</a>
+                      </div>
+            {{ end }}
+</div></div></div>
+</div>
+
+
   <div class="heading-wrap home" style="margin-top:5em">
     <h1>
       <span style="font-size:.3em;letter-spacing:.25em">赫赫文王><a href="/post" target="\_blank">博客</a>></span>發現
@@ -56,7 +83,7 @@
 <h2>最近發布</h2>
 {{ range first 15   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
           <div >
-            <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}">{{ .Title }}</a>
           </div>
 {{ end }}
 </div></div></div>
@@ -65,7 +92,7 @@
   <h2>最近修改</h2>
             {{ range first 15   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
                       <div >
-                        <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}">{{ .Title }}</a>
                       </div>
             {{ end }}
 </div></div></div>
@@ -79,7 +106,7 @@
 <h2><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></h2>
 {{ $pages := .Pages | shuffle  }}
     {{ range first 5 $pages }}
-<div class="item"><a href="{{ .RelPermalink }}" class="archive-post-link">{{ .Title }}</a></div>
+<div class="item"><a href="{{ .Permalink }}" class="archive-post-link">{{ .Title }}</a></div>
 {{ end }}
 </div>
 </div>
@@ -92,13 +119,13 @@
 <ol>
   <h2>2017-2018</h2>
   {{ range .Site.Menus.top2018  }}
-      <li><a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a></li>
+      <li><a href="{{  .URL | absLangURL | safeURL }}">{{ .Name }}</a></li>
   {{ end }}
 </ol>
 <ol>
   <h2>2018-2019</h2>
   {{ range .Site.Menus.top2019  }}
-      <li><a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a></li>
+      <li><a href="{{  .URL | absLangURL | safeURL }}">{{ .Name }}</a></li>
   {{ end }}
 </ol>
 </div>
@@ -109,17 +136,28 @@
     <span style="font-size:.3em;letter-spacing:.25em">赫赫文王></span><a href="https://kqh.wiki" target="\_blank">維基</a>
   </h1>
 </div>
-<div class="discover-wrap" style="max-width: 40em;margin-top:8em;padding-bottom:1em">
-  <ul>
-<li>【傳世琴譜數字文本化工程】是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</li>
-<li>【讀書】目前有《尙書》筆記</li>
-<li>【上課】上課筆記</li>
-<li>【資料數字化】很少</li>
-<li>【草稿】</li>
-<li>【赫赫複印資料】旨在保存當下厤史</li>
-</ul>
-</div>
+<div class="gallery" style="margin:7em auto -4em">
+<div class="paper-wrap">
+<div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
+<h2>傳世琴譜數字文本化工程</h2>
+是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
+這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態
+</div></div></div>
+<div class="paper-wrap">
+<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
+<h2>赫赫複印資料</h2>
+保存的是網上比較有價值的文章、報導，作爲一箇未來的史料索引。
+</div></div></div>
+<div class="paper-wrap">
+<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
+<h2>赫赫維基</h2>
+<div>【讀書】目前有《尙書》筆記</div>
+<div>【上課】上課筆記</div>
+<div>【資料數字化】很少</div>
+<div>【草稿】</div>
 
+</div></div></div>
+</div>
 </body>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451819-1"></script>
 <script>

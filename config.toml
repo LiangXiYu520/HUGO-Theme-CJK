@@ -30,11 +30,22 @@ series = "series"
   [[menu.nav]]
      name = "博客"
      weight = 1
-     identifier = "archives"
      url = "/post"
+     [[menu.nav]]
+        name = "赫赫讚府"
+        weight = 2
+        url = "/zanfu"
+    [[menu.nav]]
+           name = "春秋學刊"
+           weight = 3
+           url = "/xuekan"
+      [[menu.nav]]
+          name = "作品"
+          weight =  4
+          url = "/gallery"
    [[menu.nav]]
      name = "維基"
-      weight = 7
+      weight = 6
     url = "https://kqh.wiki/"
 [params]
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'

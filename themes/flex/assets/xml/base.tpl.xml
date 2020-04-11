@@ -19,7 +19,7 @@
               </li>
               {{ range site.Menus.nav }}
                 <li class="Banner-item">
-                  <a class="Banner-link u-clickable" href="{{ absURL .URL }}">{{ .Name }}</a>
+                  <a class="Banner-link u-clickable" href="{{ .RelPermalink }}">{{ .Name }}</a>
                 </li>
               {{ end }}
             </ul>

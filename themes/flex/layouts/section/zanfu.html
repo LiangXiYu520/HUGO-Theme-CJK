@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="heading-wrap">
+  {{ partialCached "banner.html" . }}
+  <header class="Heading">
+      <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>
+        ></span>赫赫讚府</h1>
+  </header>
+  {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "zanfu") (index 100) }}
+  {{- $length := len .Data.Pages }}
+  {{ $leng := add $length 1 }}
+  {{ range  first 1 $paginator.Pages }}{{- with $des := index (.Site.Data.taxo ) "赫赫讚府" -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}{{ end }}
+<div class="des2">
+凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
+</div>
+</div>
+        <div class="archive-wrapper" style="margin:10em auto 8em">
+    {{ range $paginator.Pages }}
+              <div class="archive-wrap">
+                <div class="archive-left" stlye="font-size:1.2em">
+                {{ $leng = sub $leng 1  }}{{ $leng }}</div>
+                <div class="archive-right">
+          <span class="archive-title" style="margin-left:0">
+            <a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a>
+            <div class="archive-info">{{ .Date.Format "2006-01-02" }} > {{ .Lastmod.Format "2006-01-02" }}</div>
+          </span>
+          </div>
+    </div>{{ end }}
+   </div>
+     {{ partialCached "footer.html" . }}
+{{ end }}

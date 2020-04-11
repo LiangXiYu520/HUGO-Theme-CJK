@@ -1,15 +1,10 @@
 ---
+type: "gallery"
 layout: "gallery"
 author: "柯棋瀚"
 title: "讀切韻"
-date: 2018-11-19
 lastmod: 2019-03-20
 url: /reading
-markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/reading.md'
-vertical: false
-menu:
-  main1:
-    weight: 7
 description: '我又自詡對語言的敏感度比常人畧高一些。暑假突肰對古音感興趣，上古音難度太大，那就中古音吧，便用了半箇月來突擊，知道了一箇大槩。用古音讀書豈不是很美妙的事情？<br>
 我的 B 站頻道：<a href="https://space.bilibili.com/176570453/channel/detail?cid=70633" target="\_blank">讀切韻擬音</a>'
 des: '讀《切韻》擬音。純娛樂向，沒有學術價值。'

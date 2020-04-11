@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="heading-wrap">
+{{ partialCached "banner.html" . }}
+  <header class="Heading">
+      <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>
+        ></span>春秋學刊</h1>
+  </header>
+  {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "xuekan") }}
+  {{- $length := len .Data.Pages }}
+  {{ $leng := sub $length 1 }}
+  {{ range  first 1 $paginator.Pages }}{{- with $des := index (.Site.Data.taxo ) "春秋學刊" -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}{{ end }}
+</div>
+        <div class="archive-wrapper" style="margin:10em auto 8em">
+    {{ range $paginator.Pages }}
+              <div class="archive-wrap">
+                <span class="archive-left" style="font-size:1em;color:#8c8c8c">
+                {{ $length = sub $length 1  }}{{ $length }}　</span>
+                <div class="archive-right">
+          <span class="archive-title" style="margin-left:0">
+            <span class="archive-info">{{ .Date.Format "2006-01-02" }}　</span>
+            <a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
+          </div>
+    </div>{{ end }}
+   </div>
+     {{ partialCached "footer.html" . }}
+{{ end }}

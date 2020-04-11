@@ -14,12 +14,13 @@
   <main>
     <article>
       <div class="heading-wrap">
-        <header class="Heading">
-        <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>>作品 </span>{{ .Title }}</h1>
-        </header>
-        {{ if .Description }}
-        <div class="des">{{ .Params.Description | safeHTML }}</div>
-        {{ end }}
+        {{ partialCached "banner.html" . }}
+<header class="Heading">
+  <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>><a href="/gallery">作品</a>></span>{{- .Title -}}</h1>
+  </header>
+  {{ if .Description }}
+  <div class="des">{{ .Params.Description | safeHTML }}</div>
+  {{ end }}
       </div>
       {{ .Content }}
       <div class="u-wrapper">
@@ -27,13 +28,7 @@
   {{ partial "comments.html" . }}
   </div></div>
     </article>
+      {{ partialCached "footer.html" . }}
   </main>
 </body>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451819-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-108451819-1');
-</script>
 </html>
