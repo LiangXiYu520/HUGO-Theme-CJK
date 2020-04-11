@@ -9,7 +9,6 @@
       {{ $js_list := $.Scratch.Get "js" }}
       {{ . | merge $js_list | $.Scratch.Set "js" }}
     {{ end }}
-
     <div class="heading-wrap home">
       <h1>
         <span style="font-size:.3em;letter-spacing:.25em">赫赫文王></span>主葉
@@ -59,7 +58,7 @@
   <div class="discover-des" style="margin: -1.5em  auto 1em">最近修改</div>
 {{ range first 5   (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
           <div >
-            <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}">{{ .Title }}</a>
+            <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
           </div>
 {{ end }}
 </div></div></div>
@@ -69,16 +68,15 @@
     <div class="discover-des" style="margin: -1.5em  auto 1em">最近發布</div>
             {{ range first 5   (where .Site.RegularPages.ByDate.Reverse "Type" "xuekan") }}
                       <div >
-                        <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}">{{ .Title }}</a>
+                        <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
                       </div>
             {{ end }}
 </div></div></div>
 </div>
 
-
   <div class="heading-wrap home" style="margin-top:5em">
     <h1>
-      <span style="font-size:.3em;letter-spacing:.25em">赫赫文王><a href="/post" target="\_blank">博客</a>></span>發現
+      <span style="font-size:.3em;letter-spacing:.25em">赫赫文王><a href="/post" target="_blank">博客</a>></span>發現
     </h1>
   </div>
   <div class="gallery" style="margin-top:7em">
@@ -87,7 +85,7 @@
 <h2>最近發布</h2>
 {{ range first 15   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
           <div >
-            <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}">{{ .Title }}</a>
+            <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
           </div>
 {{ end }}
 </div></div></div>
@@ -96,7 +94,7 @@
   <h2>最近修改</h2>
             {{ range first 15   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
                       <div >
-                        <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}">{{ .Title }}</a>
+                        <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
                       </div>
             {{ end }}
 </div></div></div>
@@ -110,7 +108,7 @@
 <h2><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></h2>
 {{ $pages := .Pages | shuffle  }}
     {{ range first 5 $pages }}
-<div class="item"><a href="{{ .Permalink }}" class="archive-post-link">{{ .Title }}</a></div>
+<div class="item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></div>
 {{ end }}
 </div>
 </div>
@@ -123,13 +121,13 @@
 <ol>
   <h2>2017-2018</h2>
   {{ range .Site.Menus.top2018  }}
-      <li><a href="{{  .URL | absLangURL | safeURL }}">{{ .Name }}</a></li>
+      <li><a href="{{  .URL | absLangURL | safeURL }}"  target="_blank">{{ .Name }}</a></li>
   {{ end }}
 </ol>
 <ol>
   <h2>2018-2019</h2>
   {{ range .Site.Menus.top2019  }}
-      <li><a href="{{  .URL | absLangURL | safeURL }}">{{ .Name }}</a></li>
+      <li><a href="{{  .URL | absLangURL | safeURL }}"  target="_blank">{{ .Name }}</a></li>
   {{ end }}
 </ol>
 </div>
