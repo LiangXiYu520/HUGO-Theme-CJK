@@ -50,7 +50,7 @@ series = "series"
    [[menu.nav]]
      name = "維基"
       weight = 6
-    url = "https://kqh.wiki/"
+    url = "https://wiki.kqh.me/"
 [params]
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
   linkToMarkDown = true
