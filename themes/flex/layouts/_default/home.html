@@ -33,10 +33,7 @@
     </div>
          <div class="in2"> </div>
   </div>
-
 <img src="https://pic.imgdb.cn/item/5e9193f4504f4bcb04a9154c.png" style="box-shadow:none;border:none;margin-bottom:8em;width:600">
-
-
   <h1 style="margin:0 auto">作品</h1>
   <div class="bigcard" style="width:70%">
 {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
@@ -98,8 +95,8 @@
             {{ end }}
 </div></div></div>
 </div>
-<h1 style="margin:0 auto">分類</h1>
-  <div class="discover-des" style="margin: 0 auto">隨機生成五項</div>
+<h1 style="margin:0 auto .5em">分類</h1>
+  <div class="discover-des">隨機生成五項</div>
 <div class="bigcard">
 {{ range .Site.Taxonomies.categories.ByCount  | shuffle }}
 <div class="card-container">
@@ -114,6 +111,43 @@
 {{ end }}
 </div>
 <div class="discover-wrap">
+  <h1>沒有喜歡的？看看這裏呢</h1>
+  <div class="discover-des">各索引隨機生成一項</div>
+<div class="discover">
+  {{ $recommend := slice }}
+          {{ range .Site.Taxonomies.author.ByCount  }}
+              {{ range first 1 .Pages | shuffle }}
+                 {{ $recommend = $recommend | append . }}
+             {{ end }}
+          {{ end }}
+          {{ range .Site.Taxonomies.categories.ByCount  }}
+              {{ range first 1 .Pages | shuffle }}
+                 {{ $recommend = $recommend | append . }}
+             {{ end }}
+          {{ end }}
+    {{ range .Site.Taxonomies.series.ByCount   }}
+          {{ range first 1 .Pages | shuffle }}
+          {{ $recommend = $recommend | append . }}
+         {{ end }}
+     {{ end }}
+     {{ range first 1 (shuffle (where .Site.RegularPages.ByLastmod "Type" "zanfu" )) }}
+        {{ $recommend = $recommend | append . }}
+     {{ end }}
+     {{ range first 1 (shuffle (where .Site.RegularPages.ByLastmod "Type" "xuekan" )) }}
+        {{ $recommend = $recommend | append . }}
+     {{ end }}
+     {{ range first 1 (shuffle (where .Site.RegularPages.ByLastmod "Type" "gallery" )) }}
+        {{ $recommend = $recommend | append . }}
+     {{ end }}
+  <ul>
+{{- range $recommend | shuffle -}}
+<li class="item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></li>
+{{ end }}
+</ul>
+</div>
+</div>
+
+<div class="discover-wrap" style="margin:5em auto">
   <h1>年度🔝</h1>
   <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
 <div class="discover" >

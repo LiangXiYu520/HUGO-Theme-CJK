@@ -847,7 +847,7 @@ animation-direction:alternate;
 }
 .discover-wrap{
   padding: .5em 2em 1.5em;
-margin:5em auto 5em;
+margin:5em 2em;
   overflow:scroll;
   background: #fffae8;
   border: .5em solid #2b2b2b;
@@ -868,13 +868,18 @@ padding:0 .5em;
   flex-flow: row wrap;
   margin: 0 auto;
 }
+.discover ul{
+  -moz-column-count:3;
+  -webkit-column-count:3;
+  column-count:3;
+}
 .discover ol{
   width:20em;
   margin:0 auto;
 }
 .discover-des{
   text-align: center;
-margin: 0 auto;
+margin: -1.5em auto 0;
 color:#8c8c8c;
 font-size: .85em;
   font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
@@ -1108,6 +1113,9 @@ pre{-webkit-box-shadow:none ;
       -webkit-box-shadow:none ;
         box-shadow:none
 }
+.discover-wrap{
+margin:5em auto 5em
+}
 .discover ol{
       max-width:20em;
     }
@@ -1214,6 +1222,19 @@ width: 18em;
 }
 .paper-card.recording{
   max-height: none;
+}
+.discover ul{
+  -moz-column-count:2;
+  -webkit-column-count:2;
+  column-count:2;
+}
+}
+@media screen and (max-width:600px){
+.discover ul{
+  -moz-column-count:1;
+  -webkit-column-count:1;
+  column-count:1;
+  max-height:30em;
 }
 }
 .text-popup {
