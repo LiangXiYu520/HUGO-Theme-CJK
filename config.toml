@@ -28,20 +28,24 @@ series = "series"
   priority = 0.5
   filename = "sitemap.xml"
   [[menu.nav]]
-     name = "博客"
+     name = "主葉"
      weight = 1
+     url = "/"
+  [[menu.nav]]
+     name = "博客"
+     weight = 2
      url = "/post"
      [[menu.nav]]
         name = "赫赫讚府"
-        weight = 2
+        weight = 3
         url = "/zanfu"
     [[menu.nav]]
            name = "春秋學刊"
-           weight = 3
+           weight = 4
            url = "/xuekan"
       [[menu.nav]]
           name = "作品"
-          weight =  4
+          weight =  5
           url = "/gallery"
    [[menu.nav]]
      name = "維基"
