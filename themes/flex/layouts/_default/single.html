@@ -4,9 +4,8 @@
     {{ partial "heading.html" . }}
     <div class="des2">
     <time datetime="{{ .Date.Format "2006-01-02" }}">
-    {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} > {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
-    </time>　
-<span>{{ .WordCount }} 字</span>
+  {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} > {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") -}}</time>　
+  <span>{{- .WordCount }} 字</span>
     </div>
     {{- $author_id := .Params.author | default .Site.Author.name -}}
     {{- $author := (index ($.Site.Data.author | default dict) $author_id) -}}
@@ -132,7 +131,7 @@
 </ul>
 </div>
 <div class="recommend1">
-  <h2>沒有喜歡的？看看這裏呢 <span style="font-size:.6em;font-weight:400">其他索引</span></h2>
+  <h2>沒有喜歡的？這裏呢 <span style="font-size:.6em;font-weight:400">其他索引</span></h2>
 {{ $other := $.Site.RegularPages |  complement  $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
 <ul>
 {{  range first 10  $other | shuffle   }}
