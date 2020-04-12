@@ -80,8 +80,7 @@
           </div>
           </div>
     {{ end }}
-    <div class="u-wrapper">
-      <div class="u-padding">
+
 <div class="Tags  recommend" >
 {{ $currentArticle := . }}
 {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $currentArticle.Title }}
@@ -127,7 +126,7 @@
 {{- end }}
 </div>
 <div class="recommend1">
-<h2>發現 <span style="font-size:.6em;font-weight:400">據分類系列重合度</span></h2>
+<h2>推薦 <span style="font-size:.6em;font-weight:400">據分類系列重合度</span></h2>
 <ul>
 {{- range (shuffle (first 10 $recommendedArticles )) -}}
 <li>
@@ -137,12 +136,23 @@
 </li>
 {{ end }}
 </ul>
-
-
-
-
+</div>
+<div class="recommend1">
+  <h2>沒有喜歡的？看看這裏呢 <span style="font-size:.6em;font-weight:400">其他索引</span></h2>
+{{ $other := $.Site.RegularPages |  complement  $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
+<ul>
+{{  range first 10  $other | shuffle   }}
+<li>
+  <a href="{{ .Permalink }}">{{ .Title }}
+  </a>
+</li>
+  {{ end }}
+</ul>
 </div>
 </div>
+
+<div class="u-wrapper">
+  <div class="u-padding">
 {{ partial "comments.html" . }}
 </div></div>
   </article>
