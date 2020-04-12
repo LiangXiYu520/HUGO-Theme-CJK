@@ -12,7 +12,7 @@
 凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
 </div>
 </div>
-        <div class="archive-wrapper" style="margin:10em auto 8em">
+        <div class="archive-wrapper" style="margin:2em auto 8em">
     {{ range $paginator.Pages }}
               <div class="archive-wrap">
                 <div class="archive-left" stlye="font-size:1.2em">

@@ -10,11 +10,9 @@
       {{ . | merge $js_list | $.Scratch.Set "js" }}
     {{ end }}
     <div class="heading-wrap home">
-      <h1>
-        <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span>主葉
-      </h1>
+      <h1>赫赫文王</h1>
     </div>
-<body style="padding-bottom:5em">
+    <body style="padding-bottom:6em">
   <div class="cover">
   <div class="in"> </div>
   <div class="img"><img src="/logo.webp" width="90px" height="195px"></div>
@@ -34,7 +32,7 @@
          <div class="in2"> </div>
   </div>
 <img src="https://pic.imgdb.cn/item/5e9193f4504f4bcb04a9154c.png" style="box-shadow:none;border:none;margin-bottom:8em;width:600">
-  <h1 style="margin:0 auto">作品</h1>
+  <h2 style="margin:0 auto"><a href="/gallery" target="_blank" style="border:none">作品</a></h2>
   <div class="bigcard" style="width:70%">
 {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
   <div class="card-container"style="max-width: 16em">
@@ -178,7 +176,6 @@
 <div>【上課】上課筆記</div>
 <div>【資料數字化】很少</div>
 <div>【草稿】</div>
-
 </div></div></div>
 </div>
 </body>

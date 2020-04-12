@@ -131,7 +131,7 @@
 </ul>
 </div>
 <div class="recommend1">
-  <h2>沒有喜歡的？這裏呢 <span style="font-size:.6em;font-weight:400">其他索引</span></h2>
+  <h2>沒有喜歡的？這裏呢 <span style="font-size:.6em;font-weight:400">其他索引隨機生成</span></h2>
 {{ $other := $.Site.RegularPages |  complement  $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
 <ul>
 {{  range first 10  $other | shuffle   }}
