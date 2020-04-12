@@ -11,7 +11,6 @@ des: '讀《切韻》擬音。純娛樂向，沒有學術價值。'
 ---
 
 <div class="gallery">
-
 <div class="paper-wrap">
 <div class="paper-card recording"><div class="paper-card-in">
 

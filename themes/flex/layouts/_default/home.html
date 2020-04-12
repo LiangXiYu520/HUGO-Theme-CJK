@@ -11,7 +11,7 @@
     {{ end }}
     <div class="heading-wrap home">
       <h1>赫赫文<span style="letter-spacing:0">王</span></h1>
-      <div class="subscribe-wrap"><a href="/index.xml" target="_blank" class="subscribe">RSS 訂閱</a>
+      <div class="subscribe-wrap"><a href="/index.xml" target="_blank" class="subscribe">RSS訂閱</a>
 <a href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank" class="subscribe">郵件提醒</a></div>
     </div>
     <body style="padding-bottom:6em">
@@ -103,7 +103,7 @@
 {{ range .Site.Taxonomies.categories.ByCount  | shuffle }}
 <div class="card-container">
 <div class="card">
-<h2><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></h2>
+<h2><a href="{{ .Page.Permalink }}" target="_blank">[{{ .Page.Title }}]</a></h2>
 {{ $pages := .Pages   }}
     {{ range first 5 $pages }}
 <div class="item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></div>
@@ -113,27 +113,15 @@
 {{ end }}
 </div>
 <div class="discover-wrap">
-  <h1>沒有喜歡的？這裏呢</h1>
-  <div class="discover-des">各系列、作者隨機生成一項</div>
-<div class="discover">
-  {{ $recommend := slice }}
-          {{ range .Site.Taxonomies.author.ByCount  }}
-              {{ range first 1 .Pages | shuffle }}
-                 {{ $recommend = $recommend | append . }}
-             {{ end }}
-          {{ end }}
-    {{ range .Site.Taxonomies.series.ByCount   }}
-          {{ range first 1 .Pages | shuffle }}
-          {{ $recommend = $recommend | append . }}
-         {{ end }}
-     {{ end }}
+  <h2>#赫赫指北</h2>
+<div class="discover"style="margin-top:-1.5em">
   <ul>
-{{- range $recommend | shuffle -}}
-<li class="item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></li>
-{{ end }}
-</ul>
-</div>
-</div>
+{{ range .Site.Taxonomies.series.赫赫指北 }}
+        <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}</a></li>
+    {{ end }}
+    </ul>
+  </div></div>
+
 
 <div class="discover-wrap" style="margin:5em auto">
   <h1>年度🔝</h1>

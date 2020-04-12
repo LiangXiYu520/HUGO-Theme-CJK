@@ -16,7 +16,7 @@
 {{ if .Description }}
 <div class="des">{{ .Params.Description | safeHTML }}</div>
 {{ end }}
-    <div class="des2">
+    <div class="des1">
     <time datetime="{{ .Date.Format "2006-01-02" }}">
     　柯棋瀚整理　{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} >
     {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") -}}</time>　<span>{{- .WordCount -}} 字</span>

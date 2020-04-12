@@ -5,7 +5,7 @@
       <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>»</span>博客</h1>
   </header>
   {{- $length := len .Data.Pages }}
-<div class="des2">
+<div class="des1">
 凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
 </div>
 </div>
@@ -54,7 +54,7 @@
           </span>
     </div>
     {{ end }}</div>    {{ end }}
-    <div class="pagination-wrap"><nav class="pagination">
+    <div class="pagination-wrap"><nav class="pagination" style="margin-top:4em">
       <div>
         {{ range $paginator.Pagers }}
         <span {{ if eq . $paginator }} class="active" {{end}}>

@@ -9,9 +9,7 @@ description: '在日常生活中，耳朵聽到的聲音往往被我们忽畧。
 des: '在日常生活中，耳朵聽到的聲音往往被我们忽畧。而現在，我将帶大家重新理解聆聽，感受聲音的彊大表現力。'
 ---
 
-
-
-<div class="vertical-false"  style="margin-top:10em">
+<div class="vertical-false">
 
 以下三箇平臺同步發布，內容完全一致：
 
@@ -24,7 +22,6 @@ des: '在日常生活中，耳朵聽到的聲音往往被我们忽畧。而現�
 </div>
 
 <div class="gallery">
-
 <div class="paper-wrap">
 <div class="paper-card recording"><div class="paper-card-in">
 

@@ -9,7 +9,7 @@ des: '捂臉🤦‍逃走。不用看，純粹自己留箇紀念。'
 description: '見笑。播音是初二變聲的時候誕生的一箇想法。那時模仿夏青，聽他的錄音，拏著稿子練。又想自己買一箇小功率無線電發射器，做一箇小型電臺，不過只停留在想法階段。我嗓子不行，唱歌音域太小，只能來讀讀東西。大四下期加了學校廣播臺，沒幾箇人聽，就當自娛自樂了。兩周一次，一共就去了三次，後來感覺太浪費時間，就沒去了。'
 ---
 
-<h1 style="margin:3em auto -4em auto">旁白</h1>
+<h1>旁白</h1>
 
 <div class="gallery">
 
@@ -36,7 +36,7 @@ description: '見笑。播音是初二變聲的時候誕生的一箇想法。那
 </div></div>
 </div>
 
-<h1 style="margin:0 auto -4em auto">播音</h1>
+<h1>播音</h1>
 
 <div class="gallery">
 <div class="paper-wrap">

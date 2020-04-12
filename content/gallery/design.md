@@ -10,7 +10,6 @@ des: '平時給社團做的一些海報封面之類的，沒有任何水平。'
 ---
 
 <div class="gallery">
-
 <div class="gallery-card">
 <p>2016 秊秋季卷的封面</p>
 <img src="https://pic3.superbed.cn/item/5d365def451253d17898f197.jpg" width="600">

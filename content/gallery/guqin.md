@@ -13,7 +13,7 @@ des: '古琴錄音錄像'
 vertical: false
 ---
 
-<div class="vertical-false" style="margin-top:8em">
+<div class="vertical-false">
 
 # 琴自述
 

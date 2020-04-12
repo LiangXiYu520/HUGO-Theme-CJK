@@ -8,7 +8,7 @@
   {{- $length := len .Data.Pages }}
   {{ $leng := add $length 1 }}
   {{ range  first 1 $paginator.Pages }}{{- with $des := index (.Site.Data.taxo ) "赫赫讚府" -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}{{ end }}
-<div class="des2">
+<div class="des1">
 凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
 </div>
 </div>

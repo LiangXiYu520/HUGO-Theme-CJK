@@ -9,10 +9,9 @@ description: "這裏是古琴表演、講座記錄。天殺的微信，信息檢
 des: '古琴表演、講座記錄。不用看，純粹自己留箇紀念。'
 ---
 
-<h1 style="margin:3em auto -4em auto">表演記錄</h1>
+<h1>表演記錄</h1>
 
 <div class="gallery">
-
 <div class="paper-wrap">
 <div class="paper-card"><div class="paper-card-in">
 <h2>1、在江南大酒店喫酒，佩蘭</h2>
@@ -465,7 +464,7 @@ des: '古琴表演、講座記錄。不用看，純粹自己留箇紀念。'
 </div></div>
 </div>
 
-<h1 style="margin:0 auto -4em auto">講座紀錄</h1>
+<h1>講座紀錄</h1>
 
 <div class="gallery">
 <div class="paper-wrap">
@@ -480,7 +479,7 @@ des: '古琴表演、講座記錄。不用看，純粹自己留箇紀念。'
 </div></div>
 </div>
 
-<h1 style="margin:0 auto -4em auto">其他</h1>
+<h1>其他</h1>
 
 <div class="gallery">
 <div class="paper-wrap">
