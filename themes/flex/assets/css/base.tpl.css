@@ -271,7 +271,7 @@ h6{
   border: none;
 }
 .des1{
-  margin-top: 2em;
+  margin: 2em auto -.8em;
   font-size: .7em;
   color:#8c8c8c;
   text-align:center;
@@ -657,7 +657,7 @@ border-radius: 2.5rem;
   padding-bottom: 1.5em;
   font-size: 1em;
   margin: 9em auto 4em;
-  max-width:70%;
+  max-width:60%;
   font-family: "Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
 }
 .recommend h2{
@@ -1138,7 +1138,7 @@ margin:5em auto 5em
         box-shadow:none
 }
 .recommend{
-  width:88%
+  max-width:88%
 }
 .vertical{
         border: .2em solid #2b2b2b;

@@ -34,6 +34,15 @@
         {{ end -}}
         {{ end }}
     {{- end }}</div>
+
+<div class="des2">
+    {{- if .Params.contentCopyright -}}
+    <span class="des1">版權</span>　{{ .Params.contentCopyright | safeHTML }}
+    {{- else -}}
+    <span class="des1">版權</span>　{{ .Site.Params.contentCopyright | safeHTML }}
+    {{- end -}}
+</div>
+
     <div class="pagi-wrap">
     <div class="pagi">
       {{ with .PrevInSection }}
@@ -55,13 +64,6 @@
         <li class="toc-item">{{ .TableOfContents }}</li>
       {{ end }}
     {{ .Content }}
-    <div class="Tags-item-vertical">
-    {{- if .Params.contentCopyright -}}
-    <strong>版權</strong>　{{ .Params.contentCopyright | safeHTML }}
-    {{- else -}}
-      <strong>版權</strong>　{{ .Site.Params.contentCopyright | safeHTML }}
-    {{- end -}}
-    </div>
     </div></div>
 
       {{ else }}
@@ -71,16 +73,8 @@
               <li class="toc-item">{{ .TableOfContents }}</li>
             {{ end }}
           {{ .Content }}
-          <div class="Tags-item">
-          {{- if .Params.contentCopyright -}}
-          <strong>版權</strong>　{{ .Params.contentCopyright | safeHTML }}
-          {{- else -}}
-            <strong>版權</strong>　{{ .Site.Params.contentCopyright | safeHTML }}
-          {{- end -}}
-          </div>
           </div>
     {{ end }}
-
 <div class="Tags  recommend" >
 {{ $currentArticle := . }}
 {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $currentArticle.Title }}
