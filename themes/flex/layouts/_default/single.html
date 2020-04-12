@@ -2,7 +2,8 @@
   <article>
     <div class="heading-wrap">
     {{ partial "heading.html" . }}
-    <div class="des2">
+    <div class="tag">
+    <div class="des1">
     <time datetime="{{ .Date.Format "2006-01-02" }}">
   {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} > {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") -}}</time>　
   <span>{{- .WordCount }} 字</span>
@@ -11,37 +12,35 @@
     {{- $author := (index ($.Site.Data.author | default dict) $author_id) -}}
     {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
     {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
-    {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
-    <div class="des1">作者<a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}/</a>
+    <div class="des1">{{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
+    <span class="des2">作者</span><a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}/</a>
     {{- else -}}
-    <div class="des1">作者<a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}/</a>
+    <span class="des2">作者</span><a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}/</a>
     {{- end -}}
-
     {{ with .Params.categories -}}
-        　分類{{ range . }}
+        　<span class="des2">分類</span>{{ range . }}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
       <span class="des1-cate"><a href="/categories/{{ $name }}">[{{- $name -}}]</a></span>
         {{ end -}}
         {{ end }}
     {{- end }}
-
     {{ with .Params.series -}}
-        　系列{{ range . }}{{- $name := . -}}
+        　<span class="des2">系列</span>{{ range . }}{{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
-        <span class="des1-tag"><a href="/series/{{ $name }}">#{{- $name -}}</a></span>
+        <span class="des1-cate"><a href="/series/{{ $name }}">#{{- $name -}}</a></span>
         {{ end -}}
         {{ end }}
-    {{- end }}</div>
-
-<div class="des2">
+    {{- end }}
+  </div>
+<div class="des1">
     {{- if .Params.contentCopyright -}}
-    <span class="des1">版權</span>　{{ .Params.contentCopyright | safeHTML }}
+    <span class="des2">版權</span>　{{ .Params.contentCopyright | safeHTML }}
     {{- else -}}
-    <span class="des1">版權</span>　{{ .Site.Params.contentCopyright | safeHTML }}
+    <span class="des2">版權</span>　{{ .Site.Params.contentCopyright | safeHTML }}
     {{- end -}}
 </div>
-
+</div>
     <div class="pagi-wrap">
     <div class="pagi">
       {{ with .PrevInSection }}
@@ -109,16 +108,6 @@
      {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
 <div class="recommend1">
-<h2>上篇</h2>
-{{ with .PrevInSection }}
-  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  {{- end }}
-  <h2>下篇</h2>
-{{ with .NextInSection }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-{{- end }}
-</div>
-<div class="recommend1">
 <h2>推薦 <span style="font-size:.6em;font-weight:400">據分類系列重合度</span></h2>
 <ul>
 {{- range (shuffle (first 10 $recommendedArticles )) -}}
@@ -132,15 +121,24 @@
 </div>
 <div class="recommend1">
   <h2>沒有喜歡的？這裏呢 <span style="font-size:.6em;font-weight:400">其他索引隨機生成</span></h2>
-{{ $other := $.Site.RegularPages |  complement  $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
+{{ $other := $.Site.RegularPages |  complement $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
 <ul>
-{{  range first 10  $other | shuffle   }}
+{{  range first 5  $other | shuffle   }}
 <li>
   <a href="{{ .Permalink }}">{{ .Title }}
   </a>
 </li>
   {{ end }}
 </ul>
+
+<h2>上篇</h2>
+{{ with .PrevInSection }}
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{- end }}
+  <h2>下篇</h2>
+{{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+{{- end }}
 </div>
 </div>
 

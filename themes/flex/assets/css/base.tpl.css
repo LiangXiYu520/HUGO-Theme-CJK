@@ -154,7 +154,7 @@ date{
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     line-height: 1.8em;
-      margin: 10em auto 6em;
+      margin: 0 auto;
       padding: 1em 0;
       width: 92%;
     height:38em;
@@ -259,52 +259,25 @@ h6{
   border: none;
 }
 .des1{
-  margin: 2em auto -.8em;
-  font-size: .7em;
-  color:#8c8c8c;
+  margin: 0em auto;
+  font-size: .9em;
   text-align:center;
   font-family: 'Source Code Pro',Menlo, Inconsolata,'Courier New','Anonymous Pro',monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 }
 .des2{
-  color:#2b2b2b;
-  font-size:1em;
-  margin:1em auto -1em;
-    text-align:center;
-  font-family: 'Source Code Pro',Menlo, Inconsolata,'Courier New','Anonymous Pro',monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+  color:#8c8c8c;
+  font-size:.9em;
 }
 .des1 a{
      font-weight: bold;
-     font-size: 1.4em;
      margin-left:.4em;
      letter-spacing: .1em;
 }
 .des1-cate a{
-  color:#9c0001;
-  font-size: 1.4em;
-   border: none;
-   background: #ffb3b3;
-   padding: .2em .5em .3em;
-margin-left:.4em;
+  margin-left:.4em;
    font-weight: bold;
    letter-spacing: .1em;
  }
-.des1-cate a:hover{
-  background: #fffae8;
-}
-.des1-tag a{
-  color:#00508e;
-  letter-spacing: .1em;
-  font-size: 1.4em;
-   border: none;
-   border-radius: 1em;
-     background: #b3e3ff;
-     padding: .2em .6em .3em;
-     margin-left:.4em;
-     font-weight: bold;
- }
-.des1-tag a:hover{
-  background: #fffae8;
-}
 blockquote {
 margin:  0 0 0 2em;
 position: relative;
@@ -409,8 +382,12 @@ animation: shake1 .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
 .Heading-link {
   color: inherit;
 }
-.Tag{
+.tag{
   text-align: center;
+  background:#f1f1f1;
+  padding:.8em .5em 1em;
+  margin: 2em auto 0;
+  max-width:24em
 }
 .Tags {
   max-width: 32em;
@@ -487,10 +464,10 @@ margin: 10em auto 1.5em;
   -webkit-box-orient: horizontal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  background-image: url('/seal.png'),-webkit-linear-gradient(left, #c41011 , #4300db);
-     background-image:url('/seal.png'),-o-linear-gradient(right,#c41011, #4300db);
-     background-image:url('/seal.png'),-moz-linear-gradient(right,#c41011, #4300db);
-     background-image: url('/seal.png'),linear-gradient(to right, #c41011,  #4300db);
+  background-image: url('/seal.png'),-webkit-linear-gradient(left, #b10001 , #4300db);
+     background-image:url('/seal.png'),-o-linear-gradient(right,#b10001, #4300db);
+     background-image:url('/seal.png'),-moz-linear-gradient(right,#b10001, #4300db);
+     background-image: url('/seal.png'),linear-gradient(to right, #b10001,  #4300db);
             background-size:10em,contain;
            background-repeat: no-repeat;
        background-position: center;
@@ -651,7 +628,7 @@ margin: 0;
   background:#fffae8;
   padding: .7em 1.7em 0em;
   font-size: .95em;
-  margin: 8em auto;
+  margin: 4em auto;
   font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 }
 .comment p{
@@ -666,9 +643,9 @@ margin: 0;
   line-height: 1.4;
   display: flex;
   padding-bottom: 1.5em;
-  font-size: 1em;
+  font-size: .95em;
   margin: 9em auto 4em;
-  max-width:72%;
+  max-width:40em;
   font-family: "Noto Serif CJK KR",NotoSerifCJKKR,"Source Han Serif K",SourceHanSerifK,"Noto Serif CJK SC","Hiragino Mincho ProN",HiraginoMinchoProN,"Hiragino Mincho",HiraginoMincho,"Yu Mincho",YuMincho,"Hana Mincho",HanaMincho,HanaMin,"Ms Mincho",MsMincho,serif;
 }
 .recommend h2{
