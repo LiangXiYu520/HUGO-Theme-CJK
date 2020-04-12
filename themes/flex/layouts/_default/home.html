@@ -51,7 +51,8 @@
   <div class="paper-wrap">
   <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
 <h2><a href="/zanfu" target="_blank">赫赫讚府</a></h2>
-  <div class="discover-des" style="margin: -1.5em  auto 1em">最近修改</div>
+<div  class="des" style="margin-top:-1em;font-size:1.1em">收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引</div>
+  <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
 {{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
           <div >
             <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
@@ -61,7 +62,8 @@
 <div class="paper-wrap">
 <div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
   <h2><a href="/xuekan" target="_blank">春秋學刊</a></h2>
-    <div class="discover-des" style="margin: -1.5em  auto 1em">最近發布</div>
+  <div  class="des" style="margin-top:-1em;font-size:1.1em">北師大歷史學院本科生學術刊物</div>
+    <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
             {{ range first 10   (where .Site.RegularPages.ByDate.Reverse "Type" "xuekan") }}
                       <div >
                         <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
