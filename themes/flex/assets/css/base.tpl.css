@@ -854,7 +854,7 @@ animation-direction:alternate;
 }
 .discover-wrap{
   padding: .5em 2em 1.5em;
-margin:5em 2em;
+margin:5em auto;
   overflow:scroll;
   background: #fffae8;
   border: .5em solid #2b2b2b;
@@ -876,9 +876,9 @@ padding:0 .5em;
   margin: 0 auto;
 }
 .discover ul{
-  -moz-column-count:3;
-  -webkit-column-count:3;
-  column-count:3;
+  -moz-column-count:2;
+  -webkit-column-count:2;
+  column-count:2;
 }
 .discover ol{
   width:20em;
@@ -1233,18 +1233,14 @@ width: 18em;
 .paper-card.recording{
   max-height: none;
 }
-.discover ul{
-  -moz-column-count:2;
-  -webkit-column-count:2;
-  column-count:2;
-}
 }
 @media screen and (max-width:600px){
 .discover ul{
   -moz-column-count:1;
   -webkit-column-count:1;
   column-count:1;
-  max-height:30em;
+  max-height:32em;
+  max-width: 17em;
 }
 }
 .text-popup {

@@ -52,7 +52,7 @@
   <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
 <h2><a href="/zanfu" target="_blank">赫赫讚府</a></h2>
   <div class="discover-des" style="margin: -1.5em  auto 1em">最近修改</div>
-{{ range first 5   (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
+{{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
           <div >
             <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
           </div>
@@ -62,7 +62,7 @@
 <div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
   <h2><a href="/xuekan" target="_blank">春秋學刊</a></h2>
     <div class="discover-des" style="margin: -1.5em  auto 1em">最近發布</div>
-            {{ range first 5   (where .Site.RegularPages.ByDate.Reverse "Type" "xuekan") }}
+            {{ range first 10   (where .Site.RegularPages.ByDate.Reverse "Type" "xuekan") }}
                       <div >
                         <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
                       </div>
@@ -79,7 +79,7 @@
   <div class="paper-wrap">
   <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
 <h2>最近發布</h2>
-{{ range first 15   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+{{ range first 10   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
           <div >
             <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
           </div>
@@ -88,7 +88,7 @@
 <div class="paper-wrap">
 <div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
   <h2>最近修改</h2>
-            {{ range first 15   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
+            {{ range first 10   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
                       <div >
                         <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
                       </div>
@@ -96,7 +96,7 @@
 </div></div></div>
 </div>
 <h1 style="margin:0 auto .5em">分類</h1>
-  <div class="discover-des">隨機生成五項</div>
+  <div class="discover-des">各分類隨機生成五項</div>
 <div class="bigcard">
 {{ range .Site.Taxonomies.categories.ByCount  | shuffle }}
 <div class="card-container">
@@ -112,15 +112,10 @@
 </div>
 <div class="discover-wrap">
   <h1>沒有喜歡的？看看這裏呢</h1>
-  <div class="discover-des">各索引隨機生成一項</div>
+  <div class="discover-des">各系列、作者隨機生成一項</div>
 <div class="discover">
   {{ $recommend := slice }}
           {{ range .Site.Taxonomies.author.ByCount  }}
-              {{ range first 1 .Pages | shuffle }}
-                 {{ $recommend = $recommend | append . }}
-             {{ end }}
-          {{ end }}
-          {{ range .Site.Taxonomies.categories.ByCount  }}
               {{ range first 1 .Pages | shuffle }}
                  {{ $recommend = $recommend | append . }}
              {{ end }}
@@ -129,15 +124,6 @@
           {{ range first 1 .Pages | shuffle }}
           {{ $recommend = $recommend | append . }}
          {{ end }}
-     {{ end }}
-     {{ range first 1 (shuffle (where .Site.RegularPages.ByLastmod "Type" "zanfu" )) }}
-        {{ $recommend = $recommend | append . }}
-     {{ end }}
-     {{ range first 1 (shuffle (where .Site.RegularPages.ByLastmod "Type" "xuekan" )) }}
-        {{ $recommend = $recommend | append . }}
-     {{ end }}
-     {{ range first 1 (shuffle (where .Site.RegularPages.ByLastmod "Type" "gallery" )) }}
-        {{ $recommend = $recommend | append . }}
      {{ end }}
   <ul>
 {{- range $recommend | shuffle -}}
