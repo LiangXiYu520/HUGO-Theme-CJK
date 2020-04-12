@@ -10,7 +10,9 @@
       {{ . | merge $js_list | $.Scratch.Set "js" }}
     {{ end }}
     <div class="heading-wrap home">
-      <h1>赫赫文王</h1>
+      <h1>赫赫文<span style="letter-spacing:0">王</span></h1>
+      <div class="subscribe-wrap"><a href="/index.xml" target="_blank" class="subscribe">RSS 訂閱</a>
+<a href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank" class="subscribe">郵件提醒</a></div>
     </div>
     <body style="padding-bottom:6em">
   <div class="cover">
@@ -72,12 +74,12 @@
 
   <div class="heading-wrap home" style="margin-top:5em">
     <h1>
-      <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">博客</a>»</span>發現
+      <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">博客</a>»</span>發<span style="letter-spacing:0">現</span>
     </h1>
   </div>
   <div class="gallery" style="margin-top:7em">
   <div class="paper-wrap">
-  <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
+  <div class="paper-card home"><div class="paper-card-in">
 <h2>最近發布</h2>
 {{ range first 10   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
           <div >
@@ -86,7 +88,7 @@
 {{ end }}
 </div></div></div>
 <div class="paper-wrap">
-<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
+<div class="paper-card home"><div class="paper-card-in">
   <h2>最近修改</h2>
             {{ range first 10   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
                       <div >
@@ -96,13 +98,13 @@
 </div></div></div>
 </div>
 <h1 style="margin:0 auto .5em">分類</h1>
-  <div class="discover-des">各分類隨機生成五項</div>
+  <div class="discover-des">各分類最近發布</div>
 <div class="bigcard">
 {{ range .Site.Taxonomies.categories.ByCount  | shuffle }}
 <div class="card-container">
 <div class="card">
 <h2><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></h2>
-{{ $pages := .Pages | shuffle  }}
+{{ $pages := .Pages   }}
     {{ range first 5 $pages }}
 <div class="item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></div>
 {{ end }}
@@ -154,7 +156,7 @@
 
 <div class="heading-wrap home" style="margin:6em 0 3em">
   <h1>
-    <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><a href="https://wiki.kqh.me" target="\_blank">維基</a>
+    <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><a href="https://wiki.kqh.me" target="\_blank">維<span style="letter-spacing:0">基</span></a>
   </h1>
 </div>
 <div class="gallery" style="margin:7em auto -4em">
