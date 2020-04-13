@@ -660,13 +660,12 @@ margin:2em 1em 0 1em}
 
 
 .tree-wrap{
-  font-family: "Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+  font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   display: flex;
 }
 .tree{
-  font-size: .9em;
   margin: 0 auto 6em;
-  line-height: 1.4
+  line-height: 1.6
 }
 	.cover{
 		background: #fffae8;
