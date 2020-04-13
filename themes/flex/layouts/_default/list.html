@@ -12,14 +12,7 @@
 {{ $count2 := sub $count0 1 }}
 {{ $count3 := mul 50 $count2}}
 {{ $count4 := sub $count1 $count3 }}
-      <div class="pagination-wrap"><nav class="pagination">
-        <div>
-          {{ range $paginator.Pagers }}
-          <span {{ if eq . $paginator }} class="active" {{end}}>
-            <a href="{{ .URL }}">{{ .PageNumber }}</a>
-          </span>{{ end }}
-        </div>
-        </nav></div>
+{{ partial "pagination.html" . }}
                 {{ range $paginator.Pages.GroupByPublishDate "2006" }}
                   <div class="year"><h2>{{ .Key }}</h2></div>
         <div class="archive-wrapper">
@@ -29,7 +22,7 @@
         {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
                 <span class="archive-right">
                   <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">{{- .Params.author -}}/</a></span>
-                  <span class="archive-title"><a href="{{ .URL }}" target="_blank">{{- .Title -}}</a></span>
+                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
                 </div>
                 <div class="archive-info">{{ .PublishDate.Format "06-01-02" }} > {{ .Lastmod.Format "06-01-02" }}&nbsp
             {{ with .Params.categories -}}
@@ -51,12 +44,5 @@
           </span>
     </div>
     {{ end }}</div>    {{ end }}
-    <div class="pagination-wrap"><nav class="pagination" style="margin-top:4em">
-      <div>
-        {{ range $paginator.Pagers }}
-        <span {{ if eq . $paginator }} class="active" {{end}}>
-          <a href="{{ .URL  }}">{{ .PageNumber }}</a>
-        </span>{{ end }}
-      </div>
-      </nav></div>
+{{ partial "pagination.html" . }}
 {{ end }}

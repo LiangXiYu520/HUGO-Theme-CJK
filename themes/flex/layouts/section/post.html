@@ -15,14 +15,7 @@
 {{ $count2 := sub $count0 1 }}
 {{ $count3 := mul 50 $count2}}
 {{ $count4 := sub $count1 $count3 }}
-      <div class="pagination-wrap"><nav class="pagination">
-        <div>
-          {{ range $paginator.Pagers }}
-          <span {{ if eq . $paginator }} class="active" {{end}}>
-            <a href="{{ .URL }}">{{ .PageNumber }}</a>
-          </span>{{ end }}
-        </div>
-        </nav></div>
+{{ partial "pagination.html" . }}
                 {{ range $paginator.Pages.GroupByPublishDate "2006" }}
                   <div class="year"><h2>{{ .Key }}</h2></div>
         <div class="archive-wrapper">
@@ -54,12 +47,5 @@
           </span>
     </div>
     {{ end }}</div>    {{ end }}
-    <div class="pagination-wrap"><nav class="pagination" style="margin-top:4em">
-      <div>
-        {{ range $paginator.Pagers }}
-        <span {{ if eq . $paginator }} class="active" {{end}}>
-          <a href="{{ .URL }}">{{ .PageNumber }}</a>
-        </span>{{ end }}
-      </div>
-      </nav></div>
+{{ partial "pagination.html" . }}
 {{ end }}
