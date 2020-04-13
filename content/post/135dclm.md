@@ -1,8 +1,7 @@
 ---
 author: "柯棋瀚"
 title: "《搗練圖》的題跋"
-date: 2018-11-27
-lastmod: 2018-11-27
+date: 2017-06-23
 categories: ["人文"]
 series: ["課業"]
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/135dclm.md'

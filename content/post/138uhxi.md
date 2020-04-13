@@ -1,8 +1,7 @@
 ---
 author: "柯棋瀚"
 title: "《水龍吟·次韻章質夫楊花詞》賞析"
-date: 2018-12-01
-lastmod: 2018-12-01
+date: 2015-12-22
 categories: ["人文"]
 series: ["課業"]
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/138uhxi.md'
@@ -110,7 +109,7 @@ description: '大一上期文院的經典硏讀<v>宋詞選讀</v>期中作業�
 
 人們沈浸在江南，淡忘了自己眞正的故鄉。江南使流放成爲流連，逃亡成爲徜徉。
 
-以平凡庸常的現實體驗，來否定或是動蕩奔波或是寂寥虛無的士人生活。 
+以平凡庸常的現實體驗，來否定或是動蕩奔波或是寂寥虛無的士人生活。
 
 ## 孤獨、憂傷與生命
 

@@ -1,9 +1,24 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode }}">
+<head>
+  {{ partial "meta.html" . }}
+  {{ partial "title.html" . }}
+  {{ partial "link.html" . }}
+  {{ partial "load_site_assets.html" . }}
+  {{ block "load_page_assets" . }}
+    {{ with .Content }}{{ end }}
+  {{ end }}
+  {{ partial "assets.html" . }}
+</head>
+<body>
+  <main>
     <div class="heading-wrap home">
       <h1>赫赫文<span style="letter-spacing:0">王</span></h1>
-      <div class="subscribe-wrap"><a href="/index.xml" target="_blank" class="subscribe">RSS訂閱</a>
-<a href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank" class="subscribe">郵件提醒</a></div>
-    </div>
+      <div class="subscribe-wrap des1">
+        <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
+　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
+      </div>
+      </div>
   <div class="cover">
   <div class="in"> </div>
   <div class="img"><img src="/logo.webp" width="90px" height="195px"></div>
@@ -38,10 +53,10 @@
 
   <div class="gallery" style="margin:8em auto 0">
   <div class="paper-wrap">
+    <h1 style="margin-top:0"><a href="/zanfu" target="_blank">赫赫讚府</a></h1>
+    <div  class="des" style="margin-top:-1em;font-size:1.1em">收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引</div>
+      <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
   <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
-<h2><a href="/zanfu" target="_blank">赫赫讚府</a></h2>
-<div  class="des" style="margin-top:-1em;font-size:1.1em">收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引</div>
-  <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
 {{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
           <div >
             <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
@@ -49,10 +64,10 @@
 {{ end }}
 </div></div></div>
 <div class="paper-wrap">
-<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
-  <h2><a href="/xuekan" target="_blank">春秋學刊</a></h2>
+  <h1 style="margin-top:0"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
   <div  class="des" style="margin-top:-1em;font-size:1.1em">北師大歷史學院本科生學術刊物</div>
     <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
+<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
             {{ range first 10   (where .Site.RegularPages.ByDate.Reverse "Type" "xuekan") }}
                       <div >
                         <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
@@ -68,22 +83,28 @@
   </div>
   <div class="gallery" style="margin-top:7em">
   <div class="paper-wrap">
+    <h1>最近發布</h1>
   <div class="paper-card home"><div class="paper-card-in">
-<h2>最近發布</h2>
-{{ range first 10   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+{{ range first 15   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
           <div >
             <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
           </div>
 {{ end }}
 </div></div></div>
 <div class="paper-wrap">
+  <h1>最近修改</h1>
 <div class="paper-card home"><div class="paper-card-in">
-  <h2>最近修改</h2>
-            {{ range first 10   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
-                      <div >
-                        <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
-                      </div>
-            {{ end }}
+  {{ $lastmod := slice }}
+{{ range   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post")  }}
+{{ if ne .Lastmod .Date }}
+{{ $lastmod =$lastmod | append . }}
+{{ end }}
+{{ end }}
+{{ range first 15 $lastmod }}
+   <div >
+     <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
+   </div>
+{{ end }}
 </div></div></div>
 </div>
 <h1 style="margin:0 auto .5em">分類</h1>
@@ -93,28 +114,48 @@
 <div class="card-container">
 <div class="card">
 <h2><a href="{{ .Page.Permalink }}" target="_blank">[{{ .Page.Title }}]</a></h2>
-{{ $pages := .Pages   }}
-    {{ range first 5 $pages }}
+    {{ range first 5 .Pages }}
 <div class="item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></div>
 {{ end }}
 </div>
 </div>
 {{ end }}
 </div>
-<div class="discover-wrap">
-  <h2 style="text-align:center"><a href="/series/赫赫指北" target="_blank">#赫赫指北</a></h2>
-    <div  class="des" style="margin:-1em auto 1em;font-size:1.1em">以專題形式，用最少的字數搭建知識體系的框架</div>
-<div class="discover"style="margin-top:-1.5em">
+  <div class="gallery">
+<div class="paper-wrap">
+  <h1>系列</h1>
+<div class="paper-card  recording"><div class="paper-card-in">
+  <h2><a href="/series/赫赫指北" target="_blank">#赫赫指北</a></h2>
+    <div  class="des" style="margin:0em auto 1em;font-size:1.1em">用最少的字數搭建大槩的知識體系</div>
   <ul>
 {{ range .Site.Taxonomies.series.赫赫指北 }}
         <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}</a></li>
     {{ end }}
     </ul>
-  </div></div>
-
+</div></div></div>
+<div class="paper-wrap">
+  <h1>其他作者</h1>
+  <span  class="des move">！歡迎踴躍投稿！稿費沒有嘻嘻</span>
+<div class="paper-card recording"><div class="paper-card-in">
+  <div>
+{{ $author := slice }}
+{{ range .Site.Taxonomies.author.ByCount | shuffle }}
+{{ if ne .Page.Title  "柯棋瀚" "柯棋瀚整理" }}
+{{ $author =$author | append . }}
+{{ end }}
+{{ end }}
+{{ range $author }}
+        <h2><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}/</a></h2>
+        {{ range .Pages }}
+<li><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></li>
+{{ end }}
+{{ end }}
+</div>
+</div></div></div>
+</div>
+<h1>年度🔝</h1>
+<div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
 <div class="discover-wrap discover-wrap1">
-  <h1>年度🔝</h1>
-  <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
 <div class="discover" >
 <ol>
   <h2>2017-2018</h2>
@@ -157,4 +198,15 @@
 <div>【草稿】</div>
 </div></div></div>
 </div>
-{{ end }}
+  </main>
+</body>
+<footer>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451819-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-108451819-1');
+  </script>
+  </footer>
+</html>

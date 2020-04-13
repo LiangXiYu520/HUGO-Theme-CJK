@@ -1,33 +1,19 @@
-<!DOCTYPE html>
-<html lang="{{ site.LanguageCode }}">
-<head>
-  {{ partial "meta.html" . }}
-  {{ partial "title.html" . }}
-  {{ partial "link.html" . }}
-  {{ partial "load_site_assets.html" . }}
-  {{ block "load_page_assets" . }}
-    {{ with .Content }}{{ end }}
-  {{ end }}
-  {{ partial "assets.html" . }}
-</head>
-<body>
-  <main>
+{{ define "main" }}
     <article>
       <div class="heading-wrap">
       {{ partial "heading.html" . }}
       <div class="archive-info" style="font-size:1em;text-align:center">修改 {{ .Lastmod.Format "2006-01-02" }}</div>
       </div>
-      <div class="u-wrapper">
-        <div class="u-padding">
+
           <div class="vertical-false">
             {{ if .TableOfContents }}
               <li class="toc-item">{{ .TableOfContents }}</li>
             {{ end }}
       {{ .Content }}
          </div>
+         <div class="u-wrapper">
+           <div class="u-padding">
   {{ partial "comments.html" . }}
   </div></div>
     </article>
-  </main>
-</body>
-</html>
+    {{ end }}

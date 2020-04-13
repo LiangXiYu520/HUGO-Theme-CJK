@@ -1,8 +1,7 @@
 ---
 author: "柯棋瀚"
 title: "團員學習心得"
-date: 2018-11-29
-lastmod: 2018-11-29
+date: 2017-06-20
 categories: ["人文"]
 series: ["課業"]
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/137jlhx.md'

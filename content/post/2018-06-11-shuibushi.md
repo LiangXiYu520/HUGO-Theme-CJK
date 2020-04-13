@@ -1,8 +1,8 @@
 ---
 author: "柯棋瀚"
 title: "敦煌文書 P.2507《水部式》校釋"
-date: 2018-06-11
-lastmod: 2018-06-11
+date: 2017-06-21
+lastmod: 2017-06-21
 categories: ["史"]
 series: ["課業"]
 url: /blog/2018/06/11/shuibushi.html

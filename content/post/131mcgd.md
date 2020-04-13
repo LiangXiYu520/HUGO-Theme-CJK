@@ -1,8 +1,7 @@
 ---
 author: "柯棋瀚"
 title: "如何打好扶貧攻堅戰 等"
-date: 2018-11-23
-lastmod: 2018-11-23
+date: 2018-06-20
 categories: ["人文"]
 series: ["課業"]
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/131mcgd.md'

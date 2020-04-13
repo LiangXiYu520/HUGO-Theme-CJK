@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ site.LanguageCode }}">
-<head>
-  {{ partial "meta.html" . }}
-  {{ partial "title.html" . }}
-  {{ partial "link.html" . }}
-  {{ partial "load_site_assets.html" . }}
-  {{ block "load_page_assets" . }}
-    {{ with .Content }}{{ end }}
-  {{ end }}
-  {{ partial "assets.html" . }}
-</head>
-<body>
-  <main>
+{{ define "main" }}
     <article>
       <div class="heading-wrap">
         {{ partialCached "banner.html" . }}
@@ -28,6 +15,4 @@
   {{ partial "comments.html" . }}
   </div></div>
     </article>
-  </main>
-</body>
-</html>
+{{ end }}

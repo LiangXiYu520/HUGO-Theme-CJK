@@ -1,8 +1,7 @@
 ---
 author: "柯棋瀚"
 title: "傳符過所繻棨致籍檢辨析"
-date: 2018-11-24
-lastmod: 2018-11-24
+date: 2018-06-24
 categories: ["史"]
 series: ["課業"]
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/132jmbo.md'

@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ site.LanguageCode }}">
-<head>
-  {{ partial "meta.html" . }}
-  {{ partial "title.html" . }}
-  {{ partial "link.html" . }}
-  {{ partial "load_site_assets.html" . }}
-  {{ block "load_page_assets" . }}
-    {{ with .Content }}{{ end }}
-  {{ end }}
-  {{ partial "assets.html" . }}
-</head>
-<body>
-  <main>
+{{ define "main" }}
     <article>
       <div class="heading-wrap">
         {{ partialCached "banner.html" . }}
@@ -19,14 +6,12 @@
              <h1 class="Heading-title taxo" style="font-size:3em"><span style="font-size:.4em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>»<a href="/xuekan">春秋學刊</a>»</span>{{- .Title -}}</h1>
         </header>
       </div>
-      <div class="u-wrapper">
-        <div class="u-padding">
           <div class="vertical-false">
       {{ .Content }}
          </div>
+         <div class="u-wrapper">
+           <div class="u-padding">
   {{ partial "comments.html" . }}
   </div></div>
     </article>
-  </main>
-</body>
-</html>
+  {{ end }}
