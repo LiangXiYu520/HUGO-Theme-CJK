@@ -141,7 +141,7 @@
 {{ $author := slice }}
 {{ range .Site.Taxonomies.author.ByCount | shuffle }}
 {{ if ne .Page.Title  "柯棋瀚" "柯棋瀚整理" }}
-{{ $author =$author | append . }}
+{{ $author = $author | append . }}
 {{ end }}
 {{ end }}
 {{ range $author }}

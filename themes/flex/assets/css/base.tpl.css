@@ -659,7 +659,15 @@ margin:2em 1em 0 1em}
     font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace}
 
 
-
+.tree-wrap{
+  font-family: "Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+  display: flex;
+}
+.tree{
+  font-size: .9em;
+  margin: 0 auto 6em;
+  line-height: 1.4
+}
 	.cover{
 		background: #fffae8;
 		word-wrap:break-word;

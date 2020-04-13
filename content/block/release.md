@@ -3,7 +3,7 @@ layout: 'block'
 author: "柯棋瀚"
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-11
+lastmod: 2020-04-13
 url: /release
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
 menu:
@@ -1464,3 +1464,11 @@ tags 全部換成 series
 增加「其他作者」板塊。
 
 主葉統一標題層級、各框粗細。
+
+#### 4.5.86
+
+葉腳站內鏈接取消 `target="_blank"`
+
+上下篇調整邏輯。
+
+增加目錄樹。[Box-drawing character](https://en.wikipedia.org/wiki/Box-drawing_character)

@@ -18,7 +18,8 @@
     <span class="des2">作者</span><a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}/</a>
     {{- end -}}
     {{ with .Params.categories -}}
-        　<span class="des2">分類</span>{{ range . }}
+        　<span class="des2">分類</span>
+        {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
       <span class="des1-cate"><a href="/categories/{{ $name }}">[{{- $name -}}]</a></span>
@@ -51,10 +52,6 @@
     {{- end }}
     </div></div>
     </div>
-    <div class="u-wrapper">
-      <div class="u-padding">
-    <!--{{ partial "tags.html" . }}-->
-    </div></div>
     {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
 <div class="vertical-wrap">
     <div class="vertical">
@@ -124,19 +121,15 @@
 {{ $other := $.Site.RegularPages |  complement $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
 <ul>
 {{  range first 5  $other | shuffle   }}
-<li>
-  <a href="{{ .Permalink }}">{{ .Title }}
-  </a>
-</li>
+<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
   {{ end }}
 </ul>
-
-<h2>上篇</h2>
 {{ with .PrevInSection }}
+<h2>上篇</h2>
   <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   {{- end }}
+  {{ with .NextInSection }}
   <h2>下篇</h2>
-{{ with .NextInSection }}
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 {{- end }}
 </div>
