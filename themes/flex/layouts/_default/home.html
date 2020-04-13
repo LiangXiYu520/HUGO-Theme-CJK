@@ -12,6 +12,7 @@
 </head>
 <body>
   <main>
+    <div class="home">
     <div class="heading-wrap home">
       <h1>赫赫文<span style="letter-spacing:0">王</span></h1>
       <div class="subscribe-wrap des1">
@@ -64,10 +65,7 @@
 </div>
 </div>
 
-
-
-
-  <h1 style="margin:0 auto"><a href="/gallery" target="_blank" style="border:none">作品</a></h1>
+  <h1 style="margin:0 auto"><a href="/gallery" target="_blank" style="border:none">作品 Works</a></h1>
   <div class="bigcard" style="width:70%">
 {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
   <div class="card-container"style="max-width: 16em">
@@ -82,7 +80,7 @@
 
   <div class="gallery" style="margin:8em auto 0">
   <div class="paper-wrap">
-    <h1 style="margin-top:0"><a href="/zanfu" target="_blank">赫赫讚府</a></h1>
+    <h1 style="margin-top:0"><a href="/zanfu" target="_blank">赫赫讚府 Reorganized Commentaries</a></h1>
     <div  class="des" style="margin-top:-1em;font-size:1.1em">收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引</div>
       <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
   <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
@@ -112,7 +110,7 @@
   </div>
   <div class="gallery" style="margin-top:7em">
   <div class="paper-wrap">
-    <h1>最近發布</h1>
+    <h1>最近發布 Latest</h1>
   <div class="paper-card home"><div class="paper-card-in">
 {{ range first 15   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
           <div >
@@ -121,7 +119,7 @@
 {{ end }}
 </div></div></div>
 <div class="paper-wrap">
-  <h1>最近修改</h1>
+  <h1>最近修改 Recently Modified</h1>
 <div class="paper-card home"><div class="paper-card-in">
   {{ $lastmod := slice }}
 {{ range   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post")  }}
@@ -136,7 +134,7 @@
 {{ end }}
 </div></div></div>
 </div>
-<h1 style="margin:0 auto .5em">分類</h1>
+<h1 style="margin:0 auto .5em">分類 Categories</h1>
   <div class="discover-des">各分類最近發布</div>
 <div class="bigcard">
 {{ range .Site.Taxonomies.categories.ByCount  | shuffle }}
@@ -152,7 +150,7 @@
 </div>
   <div class="gallery">
 <div class="paper-wrap">
-  <h1>系列</h1>
+  <h1>系列 Series</h1>
 <div class="paper-card  recording"><div class="paper-card-in">
   <h2><a href="/series/赫赫指北" target="_blank">#赫赫指北</a></h2>
     <div  class="des" style="margin:0em auto 1em;font-size:1.1em">用最少的字數搭建大槩的知識體系</div>
@@ -163,7 +161,7 @@
     </ul>
 </div></div></div>
 <div class="paper-wrap">
-  <h1>其他作者</h1>
+  <h1>其他作者 More Authors</h1>
   <span  class="des move">！歡迎踴躍投稿！稿費沒有嘻嘻</span>
 <div class="paper-card recording"><div class="paper-card-in">
   <div>
@@ -182,7 +180,7 @@
 </div>
 </div></div></div>
 </div>
-<h1>年度🔝</h1>
+<h1>年度 🔝 of the Year</h1>
 <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
 <div class="discover-wrap discover-wrap1">
 <div class="discover" >
@@ -226,6 +224,7 @@
 <div>【資料數字化】很少</div>
 <div>【草稿】</div>
 </div></div></div>
+</div>
 </div>
   </main>
 </body>

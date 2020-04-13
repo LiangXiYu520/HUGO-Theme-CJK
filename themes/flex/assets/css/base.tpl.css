@@ -17,6 +17,9 @@ font-size: 1.15em;
     text-align: justify;
     text-justify: inter-ideograph;
       background: #fffae8}
+      .home h1{
+        letter-spacing: 0
+      }
 table{
   margin: 2.2em auto;
   z-index: 2;
