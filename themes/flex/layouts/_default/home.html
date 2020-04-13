@@ -1,20 +1,9 @@
-{{ define "load_page_assets" }}
-    {{ $page_css := .Scratch.Get "css" }}
-    {{ with $page_css }}
-      {{ $css_list := $.Scratch.Get "css" }}
-      {{ . | merge $css_list | $.Scratch.Set "css" }}
-    {{ end }}
-    {{ $page_js := .Scratch.Get "js" }}
-    {{ with $page_js }}
-      {{ $js_list := $.Scratch.Get "js" }}
-      {{ . | merge $js_list | $.Scratch.Set "js" }}
-    {{ end }}
+{{ define "main" }}
     <div class="heading-wrap home">
       <h1>赫赫文<span style="letter-spacing:0">王</span></h1>
       <div class="subscribe-wrap"><a href="/index.xml" target="_blank" class="subscribe">RSS訂閱</a>
 <a href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank" class="subscribe">郵件提醒</a></div>
     </div>
-    <body style="padding-bottom:6em">
   <div class="cover">
   <div class="in"> </div>
   <div class="img"><img src="/logo.webp" width="90px" height="195px"></div>
@@ -33,8 +22,8 @@
     </div>
          <div class="in2"> </div>
   </div>
-<img src="https://pic.imgdb.cn/item/5e9193f4504f4bcb04a9154c.png" style="box-shadow:none;border:none;margin-bottom:8em;width:600">
-  <h2 style="margin:0 auto"><a href="/gallery" target="_blank" style="border:none">作品</a></h2>
+
+  <h1 style="margin:0 auto"><a href="/gallery" target="_blank" style="border:none">作品</a></h1>
   <div class="bigcard" style="width:70%">
 {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
   <div class="card-container"style="max-width: 16em">
@@ -47,7 +36,7 @@
     {{ end }}
   </div>
 
-  <div class="gallery" style="margin:4em auto 0">
+  <div class="gallery" style="margin:8em auto 0">
   <div class="paper-wrap">
   <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
 <h2><a href="/zanfu" target="_blank">赫赫讚府</a></h2>
@@ -113,7 +102,8 @@
 {{ end }}
 </div>
 <div class="discover-wrap">
-  <h2>#赫赫指北</h2>
+  <h2 style="text-align:center"><a href="/series/赫赫指北" target="_blank">#赫赫指北</a></h2>
+    <div  class="des" style="margin:-1em auto 1em;font-size:1.1em">以專題形式，用最少的字數搭建知識體系的框架</div>
 <div class="discover"style="margin-top:-1.5em">
   <ul>
 {{ range .Site.Taxonomies.series.赫赫指北 }}
@@ -122,8 +112,7 @@
     </ul>
   </div></div>
 
-
-<div class="discover-wrap" style="margin:5em auto">
+<div class="discover-wrap discover-wrap1">
   <h1>年度🔝</h1>
   <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
 <div class="discover" >
@@ -147,7 +136,7 @@
     <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><a href="https://wiki.kqh.me" target="\_blank">維<span style="letter-spacing:0">基</span></a>
   </h1>
 </div>
-<div class="gallery" style="margin:7em auto -4em">
+<div class="gallery" style="margin:7em auto 5em">
 <div class="paper-wrap">
 <div class="paper-card recording"style="border: .3em solid #2b2b2b;width:15em"><div class="paper-card-in">
 <h2>傳世琴譜數字文本化工程</h2>
@@ -168,12 +157,4 @@
 <div>【草稿】</div>
 </div></div></div>
 </div>
-</body>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451819-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-108451819-1');
-</script>
 {{ end }}
