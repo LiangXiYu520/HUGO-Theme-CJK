@@ -35,6 +35,7 @@
 <div style="margin:1em auto">——— <a href="/about" >關 於</a> ———</div>
 <li>【隱私】您可能會暴露的信息：诏预Isso評論服务；聚合圖牀（上爲國內網站）；Google Analytics流量分析；托管於Netlify</li>
 <li>【全部博文 IPFS hash】QmQoKUvYaQXXpbdWwhNxd4ckZfbesySUAbufkCr9f7QZEX</li>
+<li>【<a href="/223" target="_blank">文章推薦算法</a>】</li>
 </div>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451819-1"></script>
 <script>
@@ -43,35 +44,4 @@
   gtag('js', new Date());
   gtag('config', 'UA-108451819-1');
 </script>
-
-<script>
-  // https://www.zhangxinxu.com/wordpress/2018/05/click-page-popup-text-tips/
-var fnTextPopup = function (arr, options) {
-    if (!arr || !arr.length) {
-        return;
-    }
-    var index = 0;
-    document.documentElement.addEventListener('click', function (event) {
-        var x = event.pageX, y = event.pageY;
-        var eleText = document.createElement('span');
-        eleText.className = 'text-popup';
-        this.appendChild(eleText);
-        if (arr[index]) {
-            eleText.innerHTML = arr[index];
-        } else {
-            index = 0;
-            eleText.innerHTML = arr[0];
-        }
-        eleText.addEventListener('animationend', function () {
-            eleText.parentNode.removeChild(eleText);
-        });
-        eleText.style.left = (x - eleText.clientWidth / 2) + 'px';
-        eleText.style.top = (y - eleText.clientHeight) + 'px';
-        index++;
-    });
-};
-fnTextPopup(['富强', '民主', '文明', '和谐', '自由', '平等', '公正', '法治', '爱国', '敬业', '诚信', '友善']);
-</script>
-
-
   </footer>

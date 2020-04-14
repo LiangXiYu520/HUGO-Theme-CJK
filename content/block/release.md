@@ -3,7 +3,7 @@ layout: 'block'
 author: "柯棋瀚"
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-13
+lastmod: 2020-04-14
 url: /release
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
 menu:
@@ -498,7 +498,7 @@ Google AdSense 審核通過。開通了鏡象公眾號
 ​          <div class="m-toc js-toc"></div>
 ​      </aside>
   </div>
-  ```
+```
 
 筭了一下現在的原刱字數：873376*0.968-48181=797247 字，差不多可以慶祝一下突破 80 萬了。不知朙秊兩周秊的旹候能否突破百萬。
 
