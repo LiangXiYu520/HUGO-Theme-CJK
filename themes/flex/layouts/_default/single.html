@@ -76,25 +76,19 @@
 {{ $1RelevantArticles := slice }}
 {{ $2RelevantArticles := slice }}
 {{ $3RelevantArticles := slice }}
-{{ $4RelevantArticles := slice }}
 {{ range $idx, $article := $articles }}
 {{ $1numberOfIntersection := len (intersect $article.Params.series $currentArticle.Params.series) }}
 {{ $2numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.categories) }}
 {{ $5numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
-{{ if (ge $5numberOfIntersection 4) }}
-{{ $4RelevantArticles = $4RelevantArticles | append $article }}
-{{ else if (eq $5numberOfIntersection 3) }}
-  {{ $3RelevantArticles = $3RelevantArticles | append $article }}
-  {{ else if (eq $5numberOfIntersection 2) }}
-    {{ $2RelevantArticles = $2RelevantArticles | append $article }}
- {{ else if (eq $5numberOfIntersection 1) }}
-      {{ $1RelevantArticles = $1RelevantArticles | append $article }}
+{{ if (ge $5numberOfIntersection 3) }}
+{{ $3RelevantArticles = $3RelevantArticles | append $article }}
+{{ else if (eq $5numberOfIntersection 2) }}
+  {{ $3RelevantArticles = $2RelevantArticles | append $article }}
+  {{ else if (eq $5numberOfIntersection 1) }}
+    {{ $1RelevantArticles = $1RelevantArticles | append $article }}
 {{ end }}
 {{ end }}
 {{ $recommendedArticles := slice }}
-{{ range $4RelevantArticles }}
-     {{ $recommendedArticles = $recommendedArticles | append . }}
-{{ end }}
 {{ range $3RelevantArticles }}
     {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
@@ -105,32 +99,42 @@
      {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
 <div class="recommend1">
-<h2>推薦 <span style="font-size:.6em;font-weight:400">據分類系列重合度</span></h2>
+<h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據分類系列重合度</span></h2>
 <ul>
 {{- range (shuffle (first 10 $recommendedArticles )) -}}
 <li>
-  <a href="{{ .Permalink }}">
-    {{ .Title }}
-  </a>
+  <a href="{{ .Permalink }}">{{- .Title -}}</a>
 </li>
 {{ end }}
 </ul>
 </div>
 <div class="recommend1">
+  {{ $current := slice }}
+  {{ $current = $current | append . }}
   <h2>沒有喜歡的？這裏呢 <span style="font-size:.6em;font-weight:400">其他索引隨機生成</span></h2>
-{{ $other := $.Site.RegularPages |  complement $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
+{{ $other := $.Site.RegularPages |  complement $current $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
+{{ $categories := slice }}
+{{ range .Site.Taxonomies.categories.ByCount }}
+{{ with .Pages | shuffle }}
+{{ $cate := . }}
+{{ range first 1 $cate }}
+{{ $categories =  $categories | append  . }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ $others := intersect  $categories  $other }}
 <ul>
-{{  range first 5  $other | shuffle   }}
-<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{  range first 5 $others | shuffle }}
+<li><a href="{{ .Permalink }}">{{- .Title -}}</a></li>
   {{ end }}
 </ul>
 {{ with .PrevInSection }}
 <h2>上篇</h2>
-  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
   {{- end }}
   {{ with .NextInSection }}
   <h2>下篇</h2>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
 {{- end }}
 </div>
 </div>

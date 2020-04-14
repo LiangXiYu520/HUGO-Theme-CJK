@@ -120,7 +120,7 @@ toc_levels:    1..3
 ```
 但沒用，後來找了一下，
 
-```
+```toml
 kramdown:
   input: GFM
    auto_id_prefix: id-
@@ -166,19 +166,22 @@ kramdown:
 向 360、搜狗、Bing 提交了收錄申請和站點地圖。
 
 左下方的鏈接太長，會橫向溢出，加了箇這箇：
-```
+
+```css
 text-align: justify;
 text-justify:inter-word;
 overflow: auto;
 word-break: break-all;
 word-wrap: break-word;
 ```
+
 成功解決，只用豎向拉動就可以了。
 
 把 jQuery 升級到了 3.2.1。清理了一些沒用的代碼和腳本。
 
 把 `config` 裏面 `paginate` 配置改成了：
-```
+
+```toml
 gems: [jekyll-paginate]
 paginate: 20  
 paginate_path: "page:num"
@@ -263,7 +266,7 @@ Gitbook 的私人倉庫要給錢，我申請到了 GitHub 的學生免費私人�
 開熏，把標點換成方正新書宋啦！現在比 word 排版還方便了，之前用 word 還要把標點替換成新書宋。  
 用 `Fontmin` 這箇 APP，提取需要的文字字體，簡直神器啊！傻瓜式操作！還給你自動生成 `@font-face`，然後添加到 css 裏面就好啦：
 
-```
+```css
 @font-face {
     font-family: "方正新书宋GBK正版";
     src: url("方正新书宋GBK正版.eot"); /* IE9 */
@@ -288,6 +291,7 @@ body {
     padding-top: 20px
 }
 ```
+
 簡直天地良心。之所以不想用思源宋體的標點，因爲是貼著左邊框的，這樣跟前面的字幾乎是貼在一起。
 
 後來，safari 標點避頭尾竟然莫名其妙失效，又重裝一遍。惹不起惹不起不折騰了。
@@ -488,126 +492,13 @@ Google AdSense 審核通過。開通了鏡象公眾號
 
 去掉了引用的虛線，靠兩箇字的左縮進來區分，加大引文與正文的間距，改了一級標題分割線。頓時覺得清爽許多。
 
-`  <div class="col-2">
+```html
+  <div class="col-2">
 ​      <aside class="js-article-aside">
 ​          <div class="m-toc js-toc"></div>
 ​      </aside>
-  </div>`
-
-`<script src="/js/toc.min.js"></script>
-<script type="text/javascript">
-    window.throttle = function(func, wait) {
-        var args,
-            result,
-            thisArg,
-            timeoutId,
-            lastCalled = 0;
-
-        function trailingCall() {
-            lastCalled = new Date;
-            timeoutId = null;
-            result = func.apply(thisArg, args);
-        }
-        return function() {
-            var now = new Date,
-                remaining = wait - (now - lastCalled);
-    
-            args = arguments;
-            thisArg = this;
-    
-            if (remaining <= 0) {
-                clearTimeout(timeoutId);
-                timeoutId = null;
-                lastCalled = now;
-                result = func.apply(thisArg, args);
-            }
-            else if (!timeoutId) {
-                timeoutId = setTimeout(trailingCall, remaining);
-            }
-            return result;
-        };
-    }
-    $(function() {
-        var $window = $(window);
-        var $pageStage = $('.js-page-stage');
-        var $pageMain = $('.js-main');
-        var $pageFooter = $('.js-page-footer');
-        var $articleContent = $('.js-article-content');
-        var $articleAside = $('.js-article-aside');
-        var $toc = $('.js-toc');
-        var hasTitle = $articleContent.find('h1, h2, h3').length > 0;
-    
-        function asideSticky() {
-            return $window.outerWidth() > 1150 && $pageStage.hasClass('has-toc');
-        }
-        function setTocClass() {
-            if (hasTitle) {
-                !$pageStage.hasClass('has-toc') && $pageStage.addClass('has-toc');
-            }
-        }
-    
-        setTocClass();
-    
-        function setAsideTOC() {
-            var asideTop,
-                asideLeft,
-                scrollBottom,
-                asideBottomTop,
-                lastScrollTop;
-    
-            function init() {
-                var asideOffset = $articleAside.offset();
-                var footerOffset = $pageFooter.offset();
-                var mainOffset = $pageMain.offset();
-                asideTop = mainOffset.top;
-                asideHeight = $toc.outerHeight() + parseInt($articleAside.css('padding-top'), 10) + parseInt($articleAside.css('padding-bottom'), 10);
-                asideLeft = mainOffset.left + $pageMain.outerWidth() - $articleAside.outerWidth() - parseInt($pageMain.css('padding-right'), 10);
-                scrollBottom = footerOffset.top - asideHeight;
-                asideBottomTop = scrollBottom - mainOffset.top;
-            }
-            function setAside(force) {
-                force !== true && (force = false);
-                var scrollTop = $window.scrollTop();
-                if (scrollTop >= asideTop && scrollTop <= scrollBottom) {
-                    (!force && lastScrollTop >= asideTop && lastScrollTop <= scrollBottom) ||
-                        $articleAside.addClass('fixed').css({
-                            left: asideLeft + 'px',
-                            top: 0
-                        });
-                } else if (scrollTop < asideTop) {
-                    (!force && lastScrollTop < asideTop) ||
-                        $articleAside.removeClass('fixed').css({
-                            left: 0,
-                            top: 0
-                        });
-                } else {
-                    (!force && lastScrollTop > scrollBottom) ||
-                        $articleAside.removeClass('fixed').css({
-                            left: 0,
-                            top: asideBottomTop + 'px'
-                        });
-                }
-                lastScrollTop = scrollTop;
-            }
-            asideSticky() && (init(), setAside());
-            $window.on('scroll', function() {
-                asideSticky() && setAside();
-            });
-            $window.on('resize', throttle(function() {
-                setTocClass();
-                asideSticky() && (init(), setAside(true));
-            }, 100));
-            setTimeout(init, 4000);
-        }
-        setTimeout(setAsideTOC, 1000);
-    
-        $toc.toc({
-            'selectors': 'h1,h2,h3',
-            'container': '.js-article-content',
-        });
-    });
-</script>
-`
+  </div>
+  ```
 
 筭了一下現在的原刱字數：873376*0.968-48181=797247 字，差不多可以慶祝一下突破 80 萬了。不知朙秊兩周秊的旹候能否突破百萬。
 
@@ -617,12 +508,14 @@ Google AdSense 審核通過。開通了鏡象公眾號
 
 改小目錄枼字號行距，月日只畱數字，刪去葉腳緫序。全站 UV 迻到緫序
 
-`          {% if page.previous %}
+```html
+          {% if page.previous %}
 ​        <li>  <a class="navbar-brand" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">上篇</a>
 ​        </li>  {% endif %}
 ​        {% if page.next %}
 ​        <li><a class="navbar-brand" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">下篇</a>
 ​        </li>{% endif %}`
+```
 
 把上下篇刪了。
 
@@ -682,7 +575,7 @@ netlify 有「pretty urls」功能，打開後就沒有後綴 .html，肰而這�
 
 把文章頭信息改成這樣：
 
-```
+```toml
 ---
 author: "柯棋瀚"
 title: "Hello world!<n>20181115</n>"
@@ -705,7 +598,7 @@ netlify 也是有 hugo 引擎的，非常方便，伱都不用選擇。
 
 一箇神坑：分類標籤等頁面打開是空白。
 
-```
+```toml
 [[menu.main]]
   name = "Categories"
   weight = 40
@@ -1472,3 +1365,13 @@ tags 全部換成 series
 上下篇調整邏輯。
 
 增加目錄樹。[Box-drawing character](https://en.wikipedia.org/wiki/Box-drawing_character)
+
+### 4 月 14 日
+
+#### 4.5.88
+
+優化單篇 其他索引邏輯：排除自己。
+
+在與本文章的分類系列不重合的文章之中，隨機生成五箇分類，每個分類隨機產生一項。
+
+橫排取消框，字體換為無襯線。
