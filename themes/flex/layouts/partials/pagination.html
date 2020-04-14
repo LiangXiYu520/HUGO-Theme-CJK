@@ -1,5 +1,5 @@
 <div class="pagination-wrap">
-  <nav class="pagination" style="margin-top:4em">
+  <nav class="pagination">
   <div>
     {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
     {{ range $paginator.Pagers }}

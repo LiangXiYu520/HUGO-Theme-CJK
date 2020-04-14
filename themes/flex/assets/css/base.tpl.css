@@ -501,7 +501,7 @@ max-width: 27em}
 .archive-wrapper{
   padding: .5em 2em;
   margin:0 auto;
-  max-width: 39em;
+  max-width: 42em;
 background: #fffae8;
 border: .5em solid #2b2b2b;
 border-radius: 3.5rem}
@@ -656,16 +656,23 @@ margin:2em 1em 0 1em}
       .pagination   .active a:hover{
   border:2px solid  #eec73c;
   background: #fffae8}
+  .year-wrap{
+      max-width: 42em;
+      margin: 1em auto 0
+  }
 .year h2{
-  text-align: center;
-  margin:1.8em auto;
+  text-align: left;
+  margin:0 0 .7em 1.4em;
   font-size: 1.8em;
-    font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace}
-
-
+    font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif}
+.des3{
+    font-size: .5em;
+    font-weight: normal;
+    color:#8c8c8c;
+}
 .tree-wrap{
   font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
-  display: flex;
+  display: flex
 }
 .tree{
   margin: 0 auto 6em;
@@ -958,19 +965,21 @@ border-bottom: .15em solid #f1bc00}
     margin: 0em auto}
   .heading-wrap{
     padding: .1em  .5em 1em;
-    margin: 0em 0 3em;
-    border-bottom:  .2em solid #2b2b2b}
+    margin: 0 0 3em}
   .heading-wrap.home h1{
     font-size: 4em;
     letter-spacing:.05em}
   .Heading-title.taxo{
     font-size: 4em;
     letter-spacing:.05em}
+    .des{
+      font-size: 1.3em;
+      margin: .5em  0 auto}
 .archive-wrapper,  .discover-wrap{
       border: .2em solid #2b2b2b;
       border-radius: 1.7rem;
       padding: .5em;
-      margin: 4em auto;
+      margin: 0 auto;
       width: 90%}
 .discover-wrap{
 margin:5em auto 5em;
@@ -999,10 +1008,8 @@ margin:5em auto 5em;
       padding: .5em;
       margin: 4em auto}
   .comment{
-    border: .2em solid #2b2b2b;
-  border-radius: 1.7rem;
   padding: .5em;
-  margin: 5em auto}
+  margin: 5em auto 0}
 .pagination {
   margin: 0em auto}
 .recommend{
@@ -1011,9 +1018,10 @@ margin:5em auto 5em;
   margin: auto 0}
   .footer-wrapper{
   margin: 7em auto .5em;
-  padding: 0 .5em;
+  padding: 0 .1em;
   border:.2em solid #2b2b2b;
   border-radius: 2em;
+    width: 90%;
   background-image: url('/seal.png'),-webkit-linear-gradient(left, #c41011 , #6f00a8);
      background-image:url('/seal.png'),-moz-linear-gradient(right,#c41011, #6f00a8);
      background-image: url('/seal.png'),linear-gradient(to right, #c41011,  #6f00a8);

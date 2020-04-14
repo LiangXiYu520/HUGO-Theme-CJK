@@ -83,7 +83,7 @@
 {{ if (ge $5numberOfIntersection 3) }}
 {{ $3RelevantArticles = $3RelevantArticles | append $article }}
 {{ else if (eq $5numberOfIntersection 2) }}
-  {{ $3RelevantArticles = $2RelevantArticles | append $article }}
+  {{ $2RelevantArticles = $2RelevantArticles | append $article }}
   {{ else if (eq $5numberOfIntersection 1) }}
     {{ $1RelevantArticles = $1RelevantArticles | append $article }}
 {{ end }}
@@ -111,7 +111,7 @@
 <div class="recommend1">
   {{ $current := slice }}
   {{ $current = $current | append . }}
-  <h2>沒有喜歡的？這裏呢 <span style="font-size:.6em;font-weight:400">其他索引隨機生成</span></h2>
+  <h2>沒有喜歡的？ <span style="font-size:.6em;font-weight:400">其他分類各生成一項</span></h2>
 {{ $other := $.Site.RegularPages |  complement $current $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
 {{ $categories := slice }}
 {{ range .Site.Taxonomies.categories.ByCount }}

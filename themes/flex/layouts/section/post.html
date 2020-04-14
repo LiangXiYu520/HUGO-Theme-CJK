@@ -5,8 +5,9 @@
       <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>»</span>博客</h1>
   </header>
   {{- $length := len .Data.Pages }}
+  {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
 <div class="des1">
-凡 {{ $length }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
+凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">博客</span><span class="rss2">RSS</span></a></div>
 </div>
 </div>
@@ -17,8 +18,11 @@
 {{ $count3 := mul 50 $count2}}
 {{ $count4 := sub $count1 $count3 }}
 {{ partial "pagination.html" . }}
-                {{ range $paginator.Pages.GroupByPublishDate "2006" }}
-                  <div class="year"><h2>{{ .Key }}</h2></div>
+{{ range $paginator.Pages.GroupByPublishDate "2006" }}
+                {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
+                 {{ $leng := len .Pages }}
+<div class="year-wrap">
+                  <div class="year"><h2>{{ .Key }}<span class="des3">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2></div>
         <div class="archive-wrapper">
         {{- range .Pages -}}
               <div class="archive-wrap">
@@ -47,6 +51,7 @@
             {{- end }}</div>
           </span>
     </div>
-    {{ end }}</div>    {{ end }}
+    {{ end }}</div></div>    {{ end }}
+    <br><br>
 {{ partial "pagination.html" . }}
 {{ end }}
