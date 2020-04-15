@@ -15,6 +15,7 @@
                 {{ range .Site.Taxonomies.series.ByCount  }}
                 <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
                 {{ end }}
+            <h2><a href="/tags">標籤</a><span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.tags }}</span></h2>
             </ul>
     <ul>
       <h2>分類<span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.categories }}</span></h2>

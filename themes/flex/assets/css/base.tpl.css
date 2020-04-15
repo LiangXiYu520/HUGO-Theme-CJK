@@ -317,7 +317,6 @@ code {
   border-bottom:.2em solid #2b2b2b;
   border-top:.2em solid #2b2b2b;
   padding:0;
-  margin: 0;
   background-image: linear-gradient(#ddb8b8 8px, transparent 10px),
   linear-gradient(#b7cce3 8px, transparent 10px),
     linear-gradient(90deg, #b7cce3 8px, transparent 10px),
@@ -332,6 +331,36 @@ linear-gradient(90deg, #ddb8b8 8px, transparent 10px);
    animation: shake .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
 .heading-wrap.home h1 a{
    animation: shake .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
+.home-cover{
+  display: inline-flex;
+  border-bottom:.5em solid #2b2b2b;
+   min-height:99vh;
+     box-shadow:  0px 0px 70px 5px  #2b2b2b;
+}
+.heading-wrap.home.home1{
+  text-align: center;
+box-shadow:none;
+border:none
+}
+.tree{
+  width: 15em;
+  margin:0;
+  float:right;
+  display: table;
+  text-align: center;
+  margin:0 auto
+}
+.tree pre{
+  text-align: left;
+  line-height:1.8;
+  margin:0;
+  border-radius: 0;
+  background:#fffae8;
+}
+.tree code{
+  background:#fffae8;
+  color:#2b2b2b
+}
 .Heading {
   text-align:center;
   align-items: baseline}
@@ -350,7 +379,7 @@ animation: shake1 .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
   background:#f1f1f1;
   padding:.8em .5em 1em;
   margin: 2em auto 0;
-  max-width:24em;
+  max-width:28em;
   border-radius: 1em;
 }
 .Tags {
@@ -397,17 +426,22 @@ border-top:1px solid #2b2b2b
 .Tags-item strong{
   color:#8c8c8c}
 .cate{
+font-family:  "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   margin-top: 2em;
-font-size: 1em;
-text-align:center}
+font-size: 1.1em;
+text-align:left;
+-moz-column-count:4;
+-webkit-column-count:4;
+column-count:4
+}
 .cate a{
   border:none;
   font-weight: normal}
 .cate-wrap{
-  margin: -.3em auto;
+  margin: 0 1em;
   font-size: 1em}
 .footer-wrapper{
-        font-family:  "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+  font-family:  "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 border: .6em solid #2b2b2b;
   border-radius: 80px;
 margin: 6em auto 1.5em;
@@ -670,14 +704,6 @@ margin:2em 1em 0 1em}
     font-weight: normal;
     color:#8c8c8c;
 }
-.tree-wrap{
-  font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
-  display: flex
-}
-.tree{
-  margin: 0 auto 6em;
-  line-height: 1.6
-}
 	.cover{
 		background: #fffae8;
 		word-wrap:break-word;
@@ -789,7 +815,7 @@ max-width: 28em}
   border:none}
 .bigcard{
 	text-align: center;
-	margin: 2em auto 5em;
+	margin: 1em auto 5em;
   	width: 83%;
     height:17em;
     writing-mode: vertical-lr;
@@ -959,6 +985,28 @@ border-bottom: .15em solid #f1bc00}
   width:.5em;
   margin-right:-.1em}
 @media screen and (max-width:900px){
+  .home-cover{
+    display:table;
+    border-bottom:none;
+    box-shadow: none
+  }
+  .heading-wrap.home.home1{
+    min-height:60vh;
+    text-align: center;
+  box-shadow:none
+  }
+  .tree{
+  text-align: center;
+  margin:8em auto -3em;
+  float:none;
+  }
+  .tree pre{
+    min-height:50vh;
+    text-align: left;
+    line-height:1.5;
+    margin:0 auto;
+    border-radius: 1.5em
+  }
   .cover{
     transform: none}
   .count{
@@ -976,7 +1024,7 @@ border-bottom: .15em solid #f1bc00}
       font-size: 1.3em;
       margin: .5em  0 auto}
 .archive-wrapper,  .discover-wrap{
-      border: .2em solid #2b2b2b;
+      border: .3em solid #2b2b2b;
       border-radius: 1.7rem;
       padding: .5em;
       margin: 0 auto;
@@ -1035,11 +1083,11 @@ margin:5em auto 5em;
   background: white;
     writing-mode:horizontal-tb;
         padding: .5em;
-    margin: 4em auto;
+    margin: 1em auto 4em;
    height:35em;
     overflow:scroll;
     background: #fffae8;
-    border: .2em solid #2b2b2b;
+    border: .3em solid #2b2b2b;
     border-radius: 1.7rem}
 .card{
 padding: .8em .3em .1em .5em;
@@ -1055,7 +1103,8 @@ width: 18em}
     max-height: none;
      border-radius: 1.2em}
 .paper-card.recording{
-  max-height: none}
+  max-height: none;
+max-width: 82%}
 .paper-card.home{
   max-width:90%}
   .paper-card.home a{

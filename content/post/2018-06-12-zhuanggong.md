@@ -2,8 +2,8 @@
 author: "柯棋瀚"
 title: "左傳中的鄭莊公"
 date: 2016-01-03
-categories: ["史"]
-series: ["課業"]
+categories: ["經"]
+tags: ["課業"]
 url: /blog/2018/06/12/zhuanggong.html
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/2018-06-12-zhuanggong.md'
 description: '大一上期<v>中國古代經典歷史文獻選讀上</v>作業。這是我大學第一篇「論文」，那時上大學還不到三箇月，現在看來也太傻了吧。當時坐在教室裏，暗搓搓地寫這篇，心中完全是懵的，不知該怎麼寫。'

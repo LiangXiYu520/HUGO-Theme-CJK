@@ -4,6 +4,7 @@ title: "Hello world!"
 date: 2017-10-04
 lastmod: 2017-10-05
 categories: ["站務"]
+tags: ["公吿"]
 url: /blog/2017/10/04/shuoming.html
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/2017-10-04-hello world.md'
 description: "！！建站啦！！"

@@ -4,7 +4,7 @@ title: "敦煌文書 P.2507《水部式》校釋"
 date: 2017-06-21
 lastmod: 2017-06-21
 categories: ["史"]
-series: ["課業"]
+tags: ["課業","中古史"]
 url: /blog/2018/06/11/shuibushi.html
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/2018-06-11-shuibushi.md'
 description: '大二下期<v>中國古代史下</v>作業。由於排版原因，這裏只放第四部分。'

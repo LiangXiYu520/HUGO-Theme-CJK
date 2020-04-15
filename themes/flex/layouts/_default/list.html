@@ -2,8 +2,8 @@
 <div class="heading-wrap">
 {{ partial "heading.html" . }}
 {{ .Content }}
-  {{- $length := len .Data.Pages }}
-  {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
+  {{- $length := len  (where .Pages.ByDate.Reverse "Type" "post") }}
+  {{ $count := 0 }}{{ range   (where .Pages.ByDate.Reverse "Type" "post") }}{{ $count = add $count .WordCount  }}{{ end }}
 <div class="des1">
 凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">{{- .Title -}}</span><span class="rss2">RSS</span></a>
@@ -26,7 +26,7 @@
         <span class="archive-left">
         {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
                 <span class="archive-right">
-                  <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">{{- .Params.author -}}/</a></span>
+                  <div><span class="archive-info archive-info-author">@<a href="/author/{{ .Params.author }}" target="_blank">{{- .Params.author -}}</a></span>
                   <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
                 </div>
                 <div class="archive-info">{{ .PublishDate.Format "06-01-02" }} > {{ .Lastmod.Format "06-01-02" }}&nbsp
@@ -34,7 +34,7 @@
                 {{ range . }}
                 {{- $name := . -}}
                 {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-                  <span class="archive-info"> <a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a></span>
+                  <span class="archive-info">[<a href="/categories/{{ $name }}"  target="_blank">{{- $name -}}</a>]</span>
                 {{ end -}}
                 {{ end }}
             {{- end }}
@@ -42,10 +42,19 @@
                 {{ range . }}
                 {{- $name := . -}}
                 {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/series/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
+                <span class="archive-info"><a href="/series/{{ $name }}"  target="_blank">{{- $name -}}</a>｜</span>
                 {{ end -}}
                 {{ end }}
-            {{- end }}</div>
+            {{- end }}
+            {{ with .Params.tags -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+                <span class="archive-info">#<a href="/tags/{{ $name }}"  target="_blank">{{- $name -}}</a></span>
+                {{ end -}}
+                {{ end }}
+            {{- end }}
+          </div>
           </span>
     </div>
     {{ end }}

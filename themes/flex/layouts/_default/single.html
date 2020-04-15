@@ -13,23 +13,25 @@
     {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
     {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
     <div class="des1">{{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
-    <span class="des2">作者</span><a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}/</a>
+    <span class="des2">作者</span> @<a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}</a>
     {{- else -}}
-    <span class="des2">作者</span><a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}/</a>
-    {{- end -}}
-    {{ with .Params.categories -}}
-        　<span class="des2">分類</span>
-        {{- range . -}}
+    <span class="des2">作者</span> @<a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}</a>
+    {{ end }}
+    {{- with .Params.series -}}
+        　<span class="des2">系列</span>
+        {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-      <span class="des1-cate"><a href="/categories/{{ $name }}">[{{- $name -}}]</a></span>
-        {{ end -}}
-        {{ end }}
-    {{- end }}
-    {{ with .Params.series -}}
-        　<span class="des2">系列</span>{{ range . }}{{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
-        <span class="des1-cate"><a href="/series/{{ $name }}">#{{- $name -}}</a></span>
+        <span class="des1-cate"> <a href="/series/{{ $name }}">{{- $name -}}</a>｜</span>
+        {{- end -}}
+        {{- end -}}
+    {{- end -}}
+    {{- with .Params.tags -}}
+        　<span class="des2">標籤</span>
+        {{ range . }}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+        <span class="des1-cate">#<a href="/tags/{{ $name }}">{{- $name -}}</a></span>
         {{ end -}}
         {{ end }}
     {{- end }}
@@ -48,7 +50,7 @@
         <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
         {{- end }}
     {{ with .NextInSection }}
-          　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
+          <span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
     {{- end }}
     </div></div>
     </div>
@@ -76,11 +78,17 @@
 {{ $1RelevantArticles := slice }}
 {{ $2RelevantArticles := slice }}
 {{ $3RelevantArticles := slice }}
+{{ $4RelevantArticles := slice }}
+{{ $recommendedArticles := slice }}
 {{ range $idx, $article := $articles }}
 {{ $1numberOfIntersection := len (intersect $article.Params.series $currentArticle.Params.series) }}
 {{ $2numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.categories) }}
-{{ $5numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
-{{ if (ge $5numberOfIntersection 3) }}
+{{ $3numberOfIntersection := len (intersect $article.Params.tags $currentArticle.Params.tags) }}
+{{ $4numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
+{{ $5numberOfIntersection := add $3numberOfIntersection $4numberOfIntersection }}
+{{ if (ge $5numberOfIntersection 4) }}
+{{ $4RelevantArticles = $4RelevantArticles | append $article }}
+{{ else if (eq $5numberOfIntersection 3) }}
 {{ $3RelevantArticles = $3RelevantArticles | append $article }}
 {{ else if (eq $5numberOfIntersection 2) }}
   {{ $2RelevantArticles = $2RelevantArticles | append $article }}
@@ -88,7 +96,9 @@
     {{ $1RelevantArticles = $1RelevantArticles | append $article }}
 {{ end }}
 {{ end }}
-{{ $recommendedArticles := slice }}
+{{ range $4RelevantArticles }}
+    {{ $recommendedArticles = $recommendedArticles | append . }}
+{{ end }}
 {{ range $3RelevantArticles }}
     {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
@@ -99,9 +109,9 @@
      {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
 <div class="recommend1">
-<h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據分類系列重合度</span></h2>
+<h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據分類系列重合度排序</span></h2>
 <ul>
-{{- range (shuffle (first 10 $recommendedArticles )) -}}
+{{- range (first 10 $recommendedArticles ) -}}
 <li>
   <a href="{{ .Permalink }}">{{- .Title -}}</a>
 </li>

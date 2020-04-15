@@ -13,19 +13,30 @@
 <body>
   <main>
     <div class="home">
-    <div class="heading-wrap home">
+      <div class="home-cover">
+    <div class="heading-wrap home home1">
       <h1><span style="letter-spacing:.2em">赫赫文</span>王</h1>
       <br>
-      <div class="des" style="margin-top:-3em;color:#2b2b2b">歡迎來到本站。您看到的每箇細節都經過了苛刻的精心打磨，從 <a href="/149" target="_blank">版面樣式</a> 到打開速度，再到統計、導航與
+      <div class="des" style="margin-top:-3em;color:#2b2b2b">歡迎來到本站。您看到的每箇細節都經過了苛刻的精心打磨，從
+        <a href="/149" target="_blank">版面樣式</a> 到 <a href="/224" target="_blank">統計</a>，再到導航與
         <a href="/223" target="_blank">文章推薦</a>，我們希望把用戶體驗做到極致</div>
       <div class="subscribe-wrap des1">
         <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
 　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
       </div>
+
+      {{- $length := len .Site.RegularPages }}
+      {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}
+    <div class="des1" style="margin:-2em auto 2em">
+    凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Site.RegularPages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
+  </div>
+
       </div>
+      {{ partial "tree.html" . | markdownify }}
+    </div>
   <div class="cover">
   <div class="in"> </div>
-  <div class="img"><img src="/logo.webp" width="90px" height="195px"></div>
+  <div class="img"><img src="/logo.webp" width="100px" height="217px"></div>
   <div class="label">永嘉田家後/　生於九五後/<br>長于錦官城/　讀的厤史系/</div>
   <div class="mail">
               <table cellpadding=0px style="margin:auto;border:none">
@@ -41,33 +52,6 @@
     </div>
          <div class="in2"> </div>
   </div>
-
-<div class="tree-wrap">
-  <div class="tree">
-<strong>赫赫文王</strong><br>
-　  ├─────────────────── <strong>主葉</strong><br>
-　  ├─ <strong>博客</strong> ────── 文章<br>
-　   │　├─ 發現 ───────┤<br>
-　   │　│　├─ 最近發布 ─┤<br>
-　   │　│　├─ 最近修改 ─┤<br>
-　   │　│　├─ 分　　類 ─┤<br>
-　   │　│　├─ 赫赫指北 ─┤<br>
-　   │　│　├─ 其他作者 ─┤<br>
-　   │　│　╰─ 年　　度 ─┤<br>
-　   │　╰─ 索引 ───────┤<br>
-　   │　　 ├─ 分　　類 ─┤<br>
-　   │　　 ├─ 系　　列 ─┤<br>
-　   │　　 ╰─ 作　　者 ─╯<br>
-　  ├────── <strong>作品</strong><br>
-　  ├────── <strong>赫赫讚府</strong><br>
-　  ├────── <strong>春秋學刊</strong><br>
-　  ╰─ <strong>維基</strong><br>
-  　　　 ├─ 傳世琴譜數字文本化工程<br>
-    　　　 ├─ 赫赫複印資料<br>
-  　　　 ╰─ 赫赫維基<br>
-</div>
-</div>
-
   <h1 style="margin:0 auto .5em"><a href="/gallery" target="_blank" style="border:none">作品 Works</a></h1>
     <div class="discover-des">按最近修改排序</div>
   <div class="bigcard">
@@ -98,7 +82,7 @@
   <div  class="des" style="margin-top:-1em;font-size:1.1em">北師大歷史學院本科生學術刊物</div>
     <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
 <div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
-            {{ range first 10   (where .Site.RegularPages.ByDate.Reverse "Type" "xuekan") }}
+            {{ range first 5 (where .Site.RegularPages.ByDate.Reverse "Type" "xuekan") }}
                       <div >
                         <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
                       </div>
@@ -155,13 +139,19 @@
 <div class="paper-wrap">
   <h1>系列 Series</h1>
 <div class="paper-card  recording"><div class="paper-card-in">
-  <h2><a href="/series/赫赫指北" target="_blank">#赫赫指北</a></h2>
+  <h2><a href="/series/赫赫指北" target="_blank">赫赫指北｜</a></h2>
     <div  class="des" style="margin:0em auto 1em;font-size:1.1em">用最少的字數搭建大槩的知識體系</div>
   <ul>
 {{ range .Site.Taxonomies.series.赫赫指北 }}
         <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}</a></li>
     {{ end }}
     </ul>
+    <h2><a href="/series/推介" target="_blank">推介｜</a></h2>
+    <ul>
+  {{ range .Site.Taxonomies.series.推介 }}
+          <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}</a></li>
+      {{ end }}
+      </ul>
 </div></div></div>
 <div class="paper-wrap">
   <h1>其他作者 More Authors</h1>
@@ -175,7 +165,7 @@
 {{ end }}
 {{ end }}
 {{ range $author  | shuffle  }}
-        <h2><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}/</a></h2>
+        <h2>@<a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}</a></h2>
         {{ range .Pages  | shuffle }}
 <li><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></li>
 {{ end }}
