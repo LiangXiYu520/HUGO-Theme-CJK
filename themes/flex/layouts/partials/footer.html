@@ -18,6 +18,7 @@
                 {{ end }}
             </ul>
     <ul>
+          <h2><a href="/notes">備註<span style="font-size:.7em"> {{ len .Site.Taxonomies.notes }}</span></a></h2>
       <h2>分類<span style="color:#d2c600;font-size:.7em"> {{ len .Site.Taxonomies.categories }}</span></h2>
         {{ range .Site.Taxonomies.categories.ByCount }}
         <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>

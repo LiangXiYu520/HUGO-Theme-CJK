@@ -57,6 +57,14 @@
                 {{ end -}}
                 {{ end }}
             {{- end }}
+            {{ with .Params.notes -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "taxonomy" (printf "notes/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "notes/%s" ($name | urlize))) -}}
+                <span class="archive-info"><a href="/notes/{{ $name }}"  target="_blank">({{- $name -}})</a></span>
+                {{ end -}}
+                {{ end }}
+            {{- end }}
           </div>
           </span>
     </div>

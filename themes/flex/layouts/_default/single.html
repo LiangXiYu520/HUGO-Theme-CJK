@@ -35,6 +35,15 @@
         {{ end -}}
         {{ end }}
     {{- end }}
+    {{- with .Params.notes -}}
+        　<span class="des2">備註</span>
+        {{ range . }}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "notes/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "notes/%s" ($name | urlize))) -}}
+        <span class="des1-cate"><a href="/notes/{{ $name }}">({{- $name -}})</a></span>
+        {{ end -}}
+        {{ end }}
+    {{- end }}
   </div>
 <div class="des1">
     {{- if .Params.contentCopyright -}}
@@ -79,57 +88,77 @@
       </div>
     {{ end }}
 <div class="Tags  recommend" >
-{{ $currentArticle := . }}
-{{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $currentArticle.Title }}
-{{ $2RelevantArticles := slice }}
-{{ $3RelevantArticles := slice }}
-{{ $4RelevantArticles := slice }}
-{{ $5RelevantArticles := slice }}
-{{ $recommendedArticles := slice }}
-{{ range $idx, $article := $articles }}
-{{ $1numberOfIntersection := len (intersect $article.Params.series $currentArticle.Params.series) }}
-{{ $6numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.categories) }}
-{{ $2numberOfIntersection := add $6numberOfIntersection 1 }}
-{{ $3numberOfIntersection := len (intersect $article.Params.tags $currentArticle.Params.tags) }}
-{{ $4numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
-{{ $5numberOfIntersection := add $3numberOfIntersection $4numberOfIntersection }}
-{{ if (ge $5numberOfIntersection 5) }}
-{{ $5RelevantArticles = $5RelevantArticles | append $article }}
-{{ else if (eq $5numberOfIntersection 4) }}
-{{ $4RelevantArticles = $4RelevantArticles | append $article }}
-{{ else if (eq $5numberOfIntersection 3) }}
-{{ $3RelevantArticles = $3RelevantArticles | append $article }}
-{{ else if (eq $5numberOfIntersection 2) }}
-  {{ $2RelevantArticles = $2RelevantArticles | append $article }}
-{{ end }}
-{{ end }}
-{{ range $5RelevantArticles }}
-    {{ $recommendedArticles = $recommendedArticles | append . }}
-{{ end }}
-{{ range $4RelevantArticles }}
-    {{ $recommendedArticles = $recommendedArticles | append . }}
-{{ end }}
-{{ range $3RelevantArticles }}
-    {{ $recommendedArticles = $recommendedArticles | append . }}
-{{ end }}
-{{ range $2RelevantArticles }}
-     {{ $recommendedArticles = $recommendedArticles | append . }}
-{{ end }}
-<div class="recommend1">
-<h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據分類系列重合度排序</span></h2>
-<ul>
-{{- range (first 10 $recommendedArticles ) -}}
-<li>
-  <a href="{{ .Permalink }}">{{- .Title -}}</a>
-</li>
-{{ end }}
-</ul>
+  {{ $current := . }}
+  {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $current.Title }}
+  {{ $3relevant := slice }}
+  {{ $4relevant := slice }}
+  {{ $6relevant := slice }}
+  {{ $7relevant := slice }}
+  {{ $9relevant := slice }}
+  {{ $10relevant := slice }}
+  {{ $13relevant := slice }}
+  {{ $recommend := slice }}
+  {{ range $idx, $article := $articles }}
+  {{ $1intersection := len (intersect $article.Params.series $current.Params.series) }}
+  {{ $1weighted := mul 4 $1intersection }}
+  {{ $2intersection := len (intersect $article.Params.categories $current.Params.categories) }}
+  {{ $2weighted := mul 3 $2intersection }}
+  {{ $3intersection := len (intersect $article.Params.tags $current.Params.tags) }}
+  {{ $3weighted := mul 3 $3intersection }}
+  {{ $4weighted  := add $1weighted $2weighted }}
+  {{ $5weighted  := add $3weighted $4weighted }}
+  {{ if (ge $5weighted 13) }}
+  {{ $13relevant = $13relevant | append $article }}
+  {{ else if (ge $5weighted 10) }}
+  {{ $10relevant = $10relevant | append $article }}
+  {{ else if (eq $5weighted 9) }}
+  {{ $9relevant = $9relevant | append $article }}
+  {{ else if (eq $5weighted 7) }}
+  {{ $7relevant = $7relevant | append $article }}
+  {{ else if (eq $5weighted 6) }}
+  {{ $6relevant = $6relevant | append $article }}
+  {{ else if (eq $5weighted 4) }}
+  {{ $4relevant = $4relevant | append $article }}
+  {{ else if (eq $5weighted 3) }}
+    {{ $3relevant = $3relevant | append $article }}
+  {{ end }}
+  {{ end }}
+  {{ range $13relevant }}
+      {{ $recommend = $recommend | append . }}
+  {{ end }}
+  {{ range $10relevant }}
+      {{ $recommend = $recommend | append . }}
+  {{ end }}
+  {{ range $9relevant }}
+      {{ $recommend = $recommend | append . }}
+  {{ end }}
+  {{ range $7relevant }}
+      {{ $recommend = $recommend | append . }}
+  {{ end }}
+  {{ range $6relevant }}
+      {{ $recommend = $recommend | append . }}
+  {{ end }}
+  {{ range $4relevant }}
+      {{ $recommend = $recommend | append . }}
+  {{ end }}
+  {{ range $3relevant }}
+       {{ $recommend = $recommend | append . }}
+  {{ end }}
+  <div class="recommend1">
+  <h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據分類系列重合度排序</span></h2>
+  <ul>
+  {{- range (first 10 $recommend ) -}}
+  <li>
+    <a href="{{ .Permalink }}">{{- .Title -}}</a>
+  </li>
+  {{ end }}
+  </ul>
 </div>
 <div class="recommend1">
   {{ $current := slice }}
   {{ $current = $current | append . }}
   <h2>沒有喜歡的？ <span style="font-size:.6em;font-weight:400">其他分類各生成一項</span></h2>
-{{ $other := $.Site.RegularPages |  complement $current $recommendedArticles (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
+{{ $other := $.Site.RegularPages |  complement $current $recommend (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
 {{ $categories := slice }}
 {{ range .Site.Taxonomies.categories.ByCount }}
 {{ with .Pages | shuffle }}
