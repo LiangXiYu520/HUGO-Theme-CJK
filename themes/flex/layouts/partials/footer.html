@@ -11,20 +11,20 @@
       {{ end }}
   </div>
             <ul>
-              <h2>系列<span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.series }}</span></h2>
+              <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len .Site.Taxonomies.tags }}</span></a></h2>
+              <h2>系列<span style="color:#d2c600;font-size:.7em"> {{ len .Site.Taxonomies.series }}</span></h2>
                 {{ range .Site.Taxonomies.series.ByCount  }}
-                <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
+                <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
                 {{ end }}
-            <h2><a href="/tags">標籤</a><span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.tags }}</span></h2>
             </ul>
     <ul>
-      <h2>分類<span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.categories }}</span></h2>
+      <h2>分類<span style="color:#d2c600;font-size:.7em"> {{ len .Site.Taxonomies.categories }}</span></h2>
         {{ range .Site.Taxonomies.categories.ByCount }}
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
+        <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
         {{ end }}
-        <h2>作者<span style="color:#f88788;font-size:.7em"> {{ len .Site.Taxonomies.author }}</span></h2>
+        <h2>作者<span style="color:#d2c600;font-size:.7em"> {{ len .Site.Taxonomies.author }}</span></h2>
           {{ range .Site.Taxonomies.author.ByCount }}
-          <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
+          <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
           {{ end }}
     </ul>
   </div>

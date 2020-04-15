@@ -3,7 +3,7 @@ layout: 'block'
 author: "柯棋瀚"
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-14
+lastmod: 2020-04-15
 url: /release
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
 menu:
@@ -1396,3 +1396,7 @@ tags 全部換成 series
 文章目錄移到了旁邊，並最大化利用空間。 `vertical` 的高度改為 vh，這樣就能自適應了。
 
 取消手機端文章推薦的滾動。
+
+#### 4.5.93
+
+葉腳樣式調整。

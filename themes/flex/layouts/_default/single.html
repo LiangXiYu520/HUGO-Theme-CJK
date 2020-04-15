@@ -13,16 +13,16 @@
     {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
     {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
     <div class="des1">{{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
-    <span class="des2">作者</span> @<a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}</a>
+    <span class="des2">作者</span> <a href="/author/{{ $author_name }}">@{{- $author_name | safeHTML -}}</a>
     {{- else -}}
-    <span class="des2">作者</span> @<a href="/author/{{ $author_name }}">{{- $author_name | safeHTML -}}</a>
+    <span class="des2">作者</span> <a href="/author/{{ $author_name }}">@{{- $author_name | safeHTML -}}</a>
     {{ end }}
     {{- with .Params.series -}}
         　<span class="des2">系列</span>
         {{ range . }}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
-        <span class="des1-cate"> <a href="/series/{{ $name }}">{{- $name -}}</a>｜</span>
+        <span class="des1-cate"> <a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
         {{- end -}}
         {{- end -}}
     {{- end -}}
@@ -31,7 +31,7 @@
         {{ range . }}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-        <span class="des1-cate">#<a href="/tags/{{ $name }}">{{- $name -}}</a></span>
+        <span class="des1-cate"><a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
         {{ end -}}
         {{ end }}
     {{- end }}

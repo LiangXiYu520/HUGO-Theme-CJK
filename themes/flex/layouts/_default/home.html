@@ -165,7 +165,7 @@
 {{ end }}
 {{ end }}
 {{ range $author  | shuffle  }}
-        <h2>@<a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}</a></h2>
+        <h2><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title }}</a></h2>
         {{ range .Pages  | shuffle }}
 <li><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></li>
 {{ end }}
