@@ -36,12 +36,16 @@
     {{- end }}
     </div></div>
     </div>
-          <div class="vertical-false">
-            {{ if .TableOfContents }}
-              <li class="toc-item">{{ .TableOfContents }}</li>
-            {{ end }}
-          {{ .Content }}
-          </div>
+    <div class="content">
+        {{ if .TableOfContents }}
+          <div class="toc">
+          <li class="toc-item">{{ .TableOfContents }}</li>
+        {{ end }}
+        </div >
+           <div class="vertical-false">
+              {{ .Content }}
+            </div>
+        </div>
     <div class="u-wrapper">
       <div class="u-padding">
 {{ partial "comments.html" . }}

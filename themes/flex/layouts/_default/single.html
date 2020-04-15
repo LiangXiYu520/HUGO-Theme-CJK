@@ -52,49 +52,59 @@
     {{ with .NextInSection }}
           <span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
     {{- end }}
-    </div></div>
     </div>
-    {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
+  </div>
+    </div>
+{{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
 <div class="vertical-wrap">
+  <div class="toc">
+{{ if .TableOfContents }}
+<li class="toc-item">{{ .TableOfContents }}</li>
+{{ end }}
+</div>
     <div class="vertical">
+    {{ .Content }}
+    </div>
+  </div>
+      {{ else }}
+  <div class="content">
       {{ if .TableOfContents }}
+        <div class="toc">
         <li class="toc-item">{{ .TableOfContents }}</li>
       {{ end }}
-    {{ .Content }}
-    </div></div>
-
-      {{ else }}
-
-          <div class="vertical-false">
-            {{ if .TableOfContents }}
-              <li class="toc-item">{{ .TableOfContents }}</li>
-            {{ end }}
-          {{ .Content }}
+      </div >
+         <div class="vertical-false">
+            {{ .Content }}
           </div>
+      </div>
     {{ end }}
 <div class="Tags  recommend" >
 {{ $currentArticle := . }}
 {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $currentArticle.Title }}
-{{ $1RelevantArticles := slice }}
 {{ $2RelevantArticles := slice }}
 {{ $3RelevantArticles := slice }}
 {{ $4RelevantArticles := slice }}
+{{ $5RelevantArticles := slice }}
 {{ $recommendedArticles := slice }}
 {{ range $idx, $article := $articles }}
 {{ $1numberOfIntersection := len (intersect $article.Params.series $currentArticle.Params.series) }}
-{{ $2numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.categories) }}
+{{ $6numberOfIntersection := len (intersect $article.Params.categories $currentArticle.Params.categories) }}
+{{ $2numberOfIntersection := add $6numberOfIntersection 1 }}
 {{ $3numberOfIntersection := len (intersect $article.Params.tags $currentArticle.Params.tags) }}
 {{ $4numberOfIntersection := add $1numberOfIntersection $2numberOfIntersection }}
 {{ $5numberOfIntersection := add $3numberOfIntersection $4numberOfIntersection }}
-{{ if (ge $5numberOfIntersection 4) }}
+{{ if (ge $5numberOfIntersection 5) }}
+{{ $5RelevantArticles = $5RelevantArticles | append $article }}
+{{ else if (eq $5numberOfIntersection 4) }}
 {{ $4RelevantArticles = $4RelevantArticles | append $article }}
 {{ else if (eq $5numberOfIntersection 3) }}
 {{ $3RelevantArticles = $3RelevantArticles | append $article }}
 {{ else if (eq $5numberOfIntersection 2) }}
   {{ $2RelevantArticles = $2RelevantArticles | append $article }}
-  {{ else if (eq $5numberOfIntersection 1) }}
-    {{ $1RelevantArticles = $1RelevantArticles | append $article }}
 {{ end }}
+{{ end }}
+{{ range $5RelevantArticles }}
+    {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
 {{ range $4RelevantArticles }}
     {{ $recommendedArticles = $recommendedArticles | append . }}
@@ -103,9 +113,6 @@
     {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
 {{ range $2RelevantArticles }}
-    {{ $recommendedArticles = $recommendedArticles | append . }}
-{{ end }}
-{{ range $1RelevantArticles }}
      {{ $recommendedArticles = $recommendedArticles | append . }}
 {{ end }}
 <div class="recommend1">

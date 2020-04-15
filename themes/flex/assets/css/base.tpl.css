@@ -128,7 +128,10 @@ date{
   margin: .5em 0;
   padding: .7em .3em}
 .vertical-wrap{
-  text-align: center}
+display: inline-flex;
+width:100%;
+margin-left:-2em;
+  }
 .vertical{
   word-wrap: break-word;
   text-align: justify;
@@ -138,20 +141,13 @@ date{
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     line-height: 1.8em;
-      margin: 0 auto;
+      margin-right:-1.5em;
       padding: 1em 0;
-      width: 92%;
-    height:38em;
+    height:92vh;
+    max-height: 39em;
           background: #fffae8;
           border: .5em solid #2b2b2b;
         border-radius: 2.5rem}
-.vertical-false{
-  margin:0 auto 4em;
-  max-width: 42em;
-        padding: 1em 2em;
-        background: #fffae8;
-    font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
-    }
 .vertical blockquote{
   line-height: 1.8em}
 .vertical a{
@@ -193,6 +189,27 @@ border-bottom: none}
   font-family: "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
 margin:3.5em auto -3em auto;
 line-height: 1.6}
+.vertical-false{
+     margin:0 auto 4em;
+     max-width: 40em;
+           padding: 1em 2em;
+           background: #fffae8;
+       font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+       }
+.toc{
+     min-width: 15em;
+     z-index: 2;
+     float:right;
+     margin:0 auto;
+     padding-right:.5em;
+     font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+   }
+.toc-item li {
+     line-height: 1.5;
+     font-size: .95em
+   }
+.toc-item li a{
+     border: none}
   sup{
     vertical-align:baseline;
     font-size: normal}
@@ -971,12 +988,6 @@ border-bottom: .15em solid #f1bc00}
 .paper-card h2{text-align: center}
 .paper-card a{
   border:none}
-.toc-item li {
-  line-height: 1.5;
-  font-size: .95em
-}
-.toc-item li a{
-  border: none}
 .svg a{
   border:none}
 .svg a svg{  width:.4em}
@@ -1038,20 +1049,31 @@ margin:5em auto 5em;
       max-width:20em}
   .discover-wwraper{
     max-width:20em}
+    .vertical-wrap{
+      display: block;
+      margin-left: 0
+    }
+    .toc{
+      float: none;
+      margin:auto;
+      max-height:25em;
+      overflow:scroll;
+    }
 .Tags {
       border: .2em solid #2b2b2b;
       border-radius: 1.7rem;
       padding: .5em;
       margin: 3em auto 1em}
 .recommend{
-  max-width:88%
+  max-width:88%;
+  max-height: none;
 }
 .vertical{
         border: .2em solid #2b2b2b;
         border-radius: 1.7rem;
         padding: .5em;
         margin: 4em auto;
-        width:88%}
+        max-width:88%}
 .vertical-false{
       padding: .5em;
       margin: 4em auto}

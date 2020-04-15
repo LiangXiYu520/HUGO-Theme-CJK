@@ -4,13 +4,16 @@
       {{ partial "heading.html" . }}
       <div class="archive-info" style="font-size:1em;text-align:center">修改 {{ .Lastmod.Format "2006-01-02" }}</div>
       </div>
-
-          <div class="vertical-false">
-            {{ if .TableOfContents }}
-              <li class="toc-item">{{ .TableOfContents }}</li>
-            {{ end }}
-      {{ .Content }}
-         </div>
+      <div class="content">
+          {{ if .TableOfContents }}
+            <div class="toc">
+            <li class="toc-item">{{ .TableOfContents }}</li>
+          {{ end }}
+          </div >
+             <div class="vertical-false">
+                {{ .Content }}
+              </div>
+          </div>
          <div class="u-wrapper">
            <div class="u-padding">
   {{ partial "comments.html" . }}
