@@ -194,22 +194,35 @@ line-height: 1.6}
      max-width: 40em;
            padding: 1em 2em;
            background: #fffae8;
-       font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+       font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif
        }
 .toc{
-     min-width: 15em;
+      float: right;
+     min-width: 10em;
+     max-height:96vh;
+     overflow: scroll;
      z-index: 2;
-     float:right;
-     margin:0 auto;
-     padding-right:.5em;
+     margin-right:.5em;
      font-family: Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
    }
-.toc-item li {
-     line-height: 1.5;
-     font-size: .95em
-   }
-.toc-item li a{
-     border: none}
+  .toc.sticky {
+    position: -webkit-sticky;
+  position: sticky;
+  top: .3em;
+  border:1px solid #8c8c8c;
+  border-radius: 1.5em
+}
+  .toc ul{
+  font-size: .9em;
+       line-height: 1.5
+  }
+  .toc-item ul a{
+       border: none
+     }
+  .toc-item ul li ul {
+    font-size: 1em;
+    margin-left:-1.5em;
+  }
   sup{
     vertical-align:baseline;
     font-size: normal}
@@ -345,9 +358,9 @@ linear-gradient(90deg, #ddb8b8 8px, transparent 10px);
   padding:.8em 0 .6em;
   font-size: 8em;
   font-weight: bold;
-   animation: shake .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
+   animation: shake .7s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
 .heading-wrap.home h1 a{
-   animation: shake .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
+   animation: shake .7s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
 .home-cover{
   display: inline-flex;
   border-bottom:.5em solid #2b2b2b;
@@ -386,9 +399,9 @@ border:none
 .Heading-title.taxo{
   font-size: 5em;
   letter-spacing:.15em;
-animation: shake1 .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
+animation: shake .7s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
 .Heading-title.taxo a{
-  animation: shake1 .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
+  animation: shake .7s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
 .Heading-link {
   color: inherit}
 .tag{
@@ -475,7 +488,18 @@ margin: 6em auto 1.5em;
      background-image: -o-linear-gradient(right,#978e00, #6a6400);
      background-image: -moz-linear-gradient(right,#978e00, #6a6400);
      background-image: linear-gradient(to right, #978e00, #6a6400);
+     animation-name: footer;
+     animation-duration:1.5s;
+     animation-iteration-count:infinite;
+     animation-timing-function: ease-in;
+     animation-direction:alternate
 }
+@keyframes footer{
+from {  box-shadow:  0 0 10px 0  #2b2b2b;}
+to{  box-shadow:  0 0 70px 5px  #2b2b2b;}
+}
+
+
 .col1{
   font-size:.9em;
   color:#d5d5d5;
@@ -1047,6 +1071,7 @@ margin:5em auto 5em;
       max-width:20em}
   .discover-wwraper{
     max-width:20em}
+
     .vertical-wrap{
       display: block;
       margin-left: 0
@@ -1054,9 +1079,9 @@ margin:5em auto 5em;
     .toc{
       float: none;
       margin:auto;
-      max-height:25em;
-      overflow:scroll;
     }
+    .toc.sticky {position:relative;
+    top: none;}
 .Tags {
       border: .2em solid #2b2b2b;
       border-radius: 1.7rem;
@@ -1141,14 +1166,4 @@ max-width: 82%}
         text-shadow: -4px -2px  2px rgba(0, 240, 240, .5), 3px 2px  2px rgba(240, 0, 0, .5)}
     100%{
         text-shadow: 3px -1px  2px rgba(0, 240, 240, .5), 4px 1px  2px rgba(240, 0, 0, .5)}
-}
-@keyframes shake1{
-    0%{
-        text-shadow: 0 0 1.5px rgba(0, 240, 240, .5), 0 0  1.5px rgba(240, 0, 0, .5)}
-    25%{
-        text-shadow: -1.5px -.5px 1.5px  rgba(0, 240, 240, .5), 1.5px .5px  1.5px rgba(240, 0, 0, .5)}
-    50%{
-        text-shadow: -2.5px -1.5px 1.5px  rgba(0, 240, 240, .5), 1.5px 1.5px  1.5px rgba(240, 0, 0, .5)}
-    100%{
-        text-shadow: 1.5px -.5px 1.5px  rgba(0, 240, 240, .5), 2.5px .5px  1.5px rgba(240, 0, 0, .5)}
 }

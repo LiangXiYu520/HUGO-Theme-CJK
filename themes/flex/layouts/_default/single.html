@@ -68,14 +68,14 @@
   </div>
       {{ else }}
   <div class="content">
-      {{ if .TableOfContents }}
-        <div class="toc">
-        <li class="toc-item">{{ .TableOfContents }}</li>
-      {{ end }}
-      </div >
          <div class="vertical-false">
             {{ .Content }}
           </div>
+          {{ if .TableOfContents }}
+            <div class="toc sticky">
+            <li class="toc-item">{{ .TableOfContents }}</li>
+          </div >
+          {{ end }}
       </div>
     {{ end }}
 <div class="Tags  recommend" >
