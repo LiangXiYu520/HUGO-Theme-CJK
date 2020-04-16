@@ -1,4 +1,6 @@
 {{ define "main" }}
+<body>
+  <main>
   <article>
     <div class="heading-wrap">
       {{ partialCached "banner.html" . }}
@@ -51,4 +53,7 @@
 {{ partial "comments.html" . }}
 </div></div>
   </article>
+</main>
+</body>
+{{ partial "footer-xuekan.html" . }}
 {{ end }}

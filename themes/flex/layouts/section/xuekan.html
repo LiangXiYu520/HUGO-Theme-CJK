@@ -1,28 +1,69 @@
 {{ define "main" }}
+<body>
+  <main>
 <div class="heading-wrap">
-{{ partialCached "banner.html" . }}
   <header class="Heading">
       <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>»</span>春秋學刊</h1>
   </header>
-  {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "xuekan") }}
-  {{- $length := len .Data.Pages }}
-  {{ $leng := sub $length 1 }}
-  {{ range  first 1 $paginator.Pages }}{{- with $des := index (.Site.Data.taxo ) "春秋學刊" -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}{{ end }}
-<div class="des1"><a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">春秋學刊</span><span class="rss2">RSS</span></a></div>
+  {{- $leng1 := len .Data.Pages }}
+  {{- $xuekan := where .Site.Taxonomies.categories.目錄 "Type" "xuekan" }}
+  {{- $length := len $xuekan  }}
+  {{ $leng2 := sub $leng1 $length }}
+<div class="des1">
+凡 {{ $length }} 期　{{ $leng2 }} 篇　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}　
+<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">春秋學刊</span><span class="rss2">RSS</span></a>
+　</div>
 </div>
-        <div class="archive-wrapper" style="margin:2em auto 8em">
-    {{ range $paginator.Pages }}
+<div class="archive-wrapper" style="margin:2em auto 8em">
+{{ $leng := add $length 1 }}
+    {{ range $xuekan  }}
               <div class="archive-wrap">
                 <span class="archive-left" style="font-size:1em;color:#8c8c8c">
-                {{ $length = sub $length 1  }}{{ $length }}　</span>
+                {{ $leng = sub $leng 1  }}{{ $leng }}　</span>
                 <div class="archive-right">
           <span class="archive-title" style="margin-left:0">
-            <span class="archive-info">{{ .Date.Format "2006-01-02" }}　</span>
-            <a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
+            <span class="archive-info">{{ .Page.Date.Format "2006-01-02" }}　</span>
+            <a href="{{ .Page.RelPermalink }}" target="_blank">{{- .Page.Title -}}</a></span>
           </div>
     </div>{{ end }}
    </div>
        <div class="archive-wrapper" style="margin:-5em auto 0;border:none">
          {{ partial "invitation.html" .  | markdownify }}
          </div>
+
+       <div class="archive-wrapper" style="font-size:.9em;margin:4em auto;padding-bottom:2em">
+<h1>分類<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.subject "Type" "xuekan") }}</span></h1>
+         <div class="cate">
+           {{ range (where .Site.Taxonomies.subject "Type" "xuekan") }}
+                 <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
+           {{ end }}
+           </div>
+           </div>
+                 <div class="archive-wrapper" style="font-size:.9em;margin:8em auto 4em;padding-bottom:2em">
+              <h1>作者<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.auth "Type" "xuekan") }}</span></h1>
+           <div class="cate">
+           {{ range (where .Site.Taxonomies.auth "Type" "xuekan") }}
+                   <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
+             {{ end }}
+             </div>
+         </div>
+ <div class="archive-wrapper" style="font-size:.9em;margin:8em auto 4em">
+     <h2>編務</h2>
+   {{ range (where .Site.Taxonomies.categories.編務 "Type" "xuekan") }}
+               <div class="archive-wrap">
+
+                 <div class="archive-right">
+           <span class="archive-title" style="margin-left:0">
+             <span class="archive-info">{{ .Page.Date.Format "2006-01-02" }}　</span>
+             <a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></span>
+           </div>
+     </div>{{ end }}
+    </div>
+
+
+
+
+       </main>
+       </body>
+       {{ partial "footer-xuekan.html" . }}
 {{ end }}

@@ -22,6 +22,9 @@ tag = "tags"
 category = "categories"
 series = "series"
 note = "notes"
+subject = "subject"
+auth = "auth"
+from = "from"
 [author]                  # essential
   name = "柯棋瀚"
 [sitemap]                 # essential

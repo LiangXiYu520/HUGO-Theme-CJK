@@ -358,9 +358,9 @@ linear-gradient(90deg, #ddb8b8 8px, transparent 10px);
   padding:.8em 0 .6em;
   font-size: 8em;
   font-weight: bold;
-   animation: shake .7s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
+   animation: shake .55s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
 .heading-wrap.home h1 a{
-   animation: shake .7s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
+   animation: shake .55s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
 .home-cover{
   display: inline-flex;
   border-bottom:.5em solid #2b2b2b;
@@ -399,9 +399,9 @@ border:none
 .Heading-title.taxo{
   font-size: 5em;
   letter-spacing:.15em;
-animation: shake .7s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
+animation: shake .55s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
 .Heading-title.taxo a{
-  animation: shake .7s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
+  animation: shake .55s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55)}
 .Heading-link {
   color: inherit}
 .tag{
@@ -468,8 +468,8 @@ column-count:4
   border:none;
   font-weight: normal}
 .cate-wrap{
-  margin: 0 1em;
-  font-size: 1em}
+  font-size: 1em;
+list-style:none}
 .footer-wrapper{
   font-family:  "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
 border:#ffda56 .5em solid;
@@ -574,7 +574,7 @@ max-width: 27em}
 .archive-wrapper{
   padding: .5em 2em;
   margin:0 auto;
-  max-width: 42em;
+  max-width: 45em;
 background: #fffae8;
 border: .5em solid #2b2b2b;
 border-radius: 3.5rem}
@@ -730,12 +730,12 @@ margin:2em 1em 0 1em}
   border:2px solid  #eec73c;
   background: #fffae8}
   .year-wrap{
-      max-width: 42em;
+      max-width: 50em;
       margin: 1em auto 0
   }
 .year h2{
   text-align: left;
-  margin:0 0 .7em 1.4em;
+  margin:0 0 .7em 1.45em;
   font-size: 1.8em;
     font-family: "Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif}
 .des3{
@@ -1071,7 +1071,6 @@ margin:5em auto 5em;
       max-width:20em}
   .discover-wwraper{
     max-width:20em}
-
     .vertical-wrap{
       display: block;
       margin-left: 0
@@ -1148,6 +1147,11 @@ max-width: 82%}
   max-width:90%}
   .paper-card.home a{
     font-size:1em}
+    .cate{
+    -moz-column-count:3;
+    -webkit-column-count:3;
+    column-count:3
+    }
 }
 @media screen and (max-width:600px){
 .discover ul{
@@ -1156,6 +1160,11 @@ max-width: 82%}
   column-count:1;
   max-height:32em;
   max-width: 17em}
+  .cate{
+  -moz-column-count:2;
+  -webkit-column-count:2;
+  column-count:2
+  }
 }
 @keyframes shake{
     0%{

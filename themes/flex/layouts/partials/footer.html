@@ -11,20 +11,20 @@
       {{ end }}
   </div>
             <ul>
-              <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len .Site.Taxonomies.tags }}</span></a></h2>
-              <h2>系列<span style="color:#d2c600;font-size:.7em"> {{ len .Site.Taxonomies.series }}</span></h2>
-                {{ range .Site.Taxonomies.series.ByCount  }}
-                <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
-                {{ end }}
+              <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len  (where .Site.Taxonomies.tags "Type" "post") }}</span></a></h2>
+              <h2>系列<span style="color:#d2c600;font-size:.7em"> {{ len (where .Site.Taxonomies.series "Type" "post") }}</span></h2>
+              {{ range (where .Site.Taxonomies.series "Type" "post") }}
+              <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+      {{ end }}
             </ul>
     <ul>
-          <h2><a href="/notes">備註<span style="font-size:.7em"> {{ len .Site.Taxonomies.notes }}</span></a></h2>
-      <h2>分類<span style="color:#d2c600;font-size:.7em"> {{ len .Site.Taxonomies.categories }}</span></h2>
-        {{ range .Site.Taxonomies.categories.ByCount }}
+          <h2><a href="/notes">備註<span style="font-size:.7em"> {{ len (where .Site.Taxonomies.notes "Type" "post") }}</span></a></h2>
+      <h2>分類<span style="color:#d2c600;font-size:.7em"> {{ len  (where .Site.Taxonomies.categories "Type" "post") }}</span></h2>
+        {{ range  (where .Site.Taxonomies.categories "Type" "post") }}
         <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
         {{ end }}
-        <h2>作者<span style="color:#d2c600;font-size:.7em"> {{ len .Site.Taxonomies.author }}</span></h2>
-          {{ range .Site.Taxonomies.author.ByCount }}
+        <h2>作者<span style="color:#d2c600;font-size:.7em"> {{ len (where .Site.Taxonomies.author "Type" "post") }}</span></h2>
+          {{ range  (where .Site.Taxonomies.author "Type" "post") }}
           <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
           {{ end }}
     </ul>

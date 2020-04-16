@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ site.LanguageCode }}">
-<head>
-  {{ partial "meta.html" . }}
-  {{ partial "title.html" . }}
-  {{ partial "link.html" . }}
-  {{ partial "load_site_assets.html" . }}
-  {{ block "load_page_assets" . }}
-    {{ with .Content }}{{ end }}
-  {{ end }}
-  {{ partial "assets.html" . }}
-</head>
+{{ define "main" }}
 <body>
   <main>
     <div class="home">
@@ -30,7 +19,6 @@
     <div class="des1" style="margin:-2em auto 2em">
     凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Site.RegularPages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
   </div>
-
       </div>
       {{ partial "tree.html" . | markdownify }}
     </div>
@@ -230,4 +218,4 @@
     gtag('config', 'UA-108451819-1');
   </script>
   </footer>
-</html>
+{{ end }}

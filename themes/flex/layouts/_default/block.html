@@ -1,4 +1,6 @@
 {{ define "main" }}
+<body>
+  <main>
     <article>
       <div class="heading-wrap">
       {{ partial "heading.html" . }}
@@ -20,4 +22,7 @@
   {{ partial "comments.html" . }}
   </div></div>
     </article>
+      </main>
+      </body>
+          {{ partial "footer.html" . }}
     {{ end }}

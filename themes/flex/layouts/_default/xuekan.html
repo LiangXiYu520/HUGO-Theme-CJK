@@ -1,9 +1,51 @@
 {{ define "main" }}
+<body>
+  <main>
     <article>
       <div class="heading-wrap">
         {{ partialCached "banner.html" . }}
         <header class="Heading">
-             <h1 class="Heading-title taxo" style="font-size:3em"><span style="font-size:.4em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>»<a href="/xuekan">春秋學刊</a>»</span>{{- .Title -}}</h1>
+             <h1 class="Heading-title taxo" style="font-size:3em"><span style="font-size:.4em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>»<a href="/xuekan">春秋學刊</a>»
+               {{- with .Params.subject -}}
+                   {{- range . -}}
+                   {{- $name := . -}}
+                   {{- with $.Site.GetPage "taxonomy" (printf "subject/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "subject/%s" ($name | urlize))) -}}
+                 <a href="/subject/{{ $name }}">{{- $name -}}</a>»
+                   {{- end -}}
+                   {{- end -}}
+               {{- end -}}
+               </span>{{- .Title -}}</h1>
+             <div class="tag" style="max-width:20em">
+             <div class="des1">
+             <time datetime="{{ .Date.Format "2006-01-02" }}">
+           {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</time>　
+           <span>{{- .WordCount }} 字</span>
+             </div>
+             {{- with .Params.auth -}}
+                      <div class="des1">
+                 　<span class="des2">作者</span>
+                 {{ range . }}
+                 {{- $name := . -}}
+                 {{- with $.Site.GetPage "taxonomy" (printf "auth/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "auth/%s" ($name | urlize))) -}}
+                 <span class="des1-cate"><a href="/auth/{{ $name }}">@{{- $name -}}</a></span>
+                 {{ end -}}
+                 {{ end }}
+             {{- end }}
+             {{- with .Params.from -}}
+                 　<span class="des2">來源</span>
+                 {{ range . }}
+                 {{- $name := . -}}
+                 {{- with $.Site.GetPage "taxonomy" (printf "from/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "from/%s" ($name | urlize))) -}}
+                 <span class="des1-cate"><a href="/from/{{ $name }}">«{{- $name -}}</a></span>
+                 {{ end -}}
+                 {{ end }}
+             {{- end }}
+           </div>
+         </div>
+
+
+
+
         </header>
       </div>
           <div class="vertical-false">
@@ -14,4 +56,7 @@
   {{ partial "comments.html" . }}
   </div></div>
     </article>
+    </main>
+    </body>
+    {{ partial "footer-xuekan.html" . }}
   {{ end }}

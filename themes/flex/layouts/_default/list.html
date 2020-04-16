@@ -1,14 +1,16 @@
 {{ define "main" }}
+<body>
+  <main>
 <div class="heading-wrap">
 {{ partial "heading.html" . }}
 {{ .Content }}
-  {{- $length := len  (where .Pages.ByDate.Reverse "Type" "post") }}
-  {{ $count := 0 }}{{ range   (where .Pages.ByDate.Reverse "Type" "post") }}{{ $count = add $count .WordCount  }}{{ end }}
+  {{- $length := len .Data.Pages }}
+  {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
 <div class="des1">
 凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">{{- .Title -}}</span><span class="rss2">RSS</span></a>
 </div></div>
-{{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
+{{- $paginator := .Paginate ( .Pages) (index 50) }}
 {{ $count0 := $paginator.PageNumber }}
   {{ $count1 := add $length 1 }}
 {{ $count2 := sub $count0 1 }}
@@ -71,4 +73,7 @@
     {{ end }}
     <br><br>
 {{ partial "pagination.html" . }}
+</main>
+</body>
+    {{ partial "footer.html" . }}
 {{ end }}
