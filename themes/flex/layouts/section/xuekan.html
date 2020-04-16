@@ -32,15 +32,16 @@
          </div>
 
        <div class="archive-wrapper" style="font-size:.9em;margin:4em auto;padding-bottom:2em">
-<h1>分類<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.subject "Type" "xuekan") }}</span></h1>
+<h1 style="margin-bottom:-.7em">分類<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.subject "Type" "xuekan") }}</span></h1>
          <div class="cate">
-           {{ range (where .Site.Taxonomies.subject "Type" "xuekan") }}
+           {{ $subject := where .Site.Taxonomies.subject "Type" "xuekan" }}
+           {{ range $subject.ByCount }}
                  <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
            {{ end }}
            </div>
            </div>
                  <div class="archive-wrapper" style="font-size:.9em;margin:8em auto 4em;padding-bottom:2em">
-              <h1>作者<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.auth "Type" "xuekan") }}</span></h1>
+              <h1 style="margin-bottom:-.7em">作者<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.auth "Type" "xuekan") }}</span></h1>
            <div class="cate">
            {{ range (where .Site.Taxonomies.auth "Type" "xuekan") }}
                    <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>

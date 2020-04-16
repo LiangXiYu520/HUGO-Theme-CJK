@@ -10,21 +10,23 @@
           <div>{{ .Page.Lastmod.Format "2006-01-02" }}</div></div>
       {{ end }}
   </div>
-            <ul>
+            <ul>{{ $series := where .Site.Taxonomies.series "Type" "post" }}
+                     {{ $categories := where .Site.Taxonomies.categories "Type" "post" }}
+                     {{ $author := where .Site.Taxonomies.author "Type" "post" }}
               <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len  (where .Site.Taxonomies.tags "Type" "post") }}</span></a></h2>
-              <h2>系列<span style="color:#d2c600;font-size:.7em"> {{ len (where .Site.Taxonomies.series "Type" "post") }}</span></h2>
-              {{ range (where .Site.Taxonomies.series "Type" "post") }}
+              <h2>系列<span style="color:#d2c600;font-size:.7em"> {{ len $series }}</span></h2>
+              {{ range $series.ByCount }}
               <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
       {{ end }}
             </ul>
     <ul>
           <h2><a href="/notes">備註<span style="font-size:.7em"> {{ len (where .Site.Taxonomies.notes "Type" "post") }}</span></a></h2>
-      <h2>分類<span style="color:#d2c600;font-size:.7em"> {{ len  (where .Site.Taxonomies.categories "Type" "post") }}</span></h2>
-        {{ range  (where .Site.Taxonomies.categories "Type" "post") }}
+      <h2>分類<span style="color:#d2c600;font-size:.7em"> {{ len $categories }}</span></h2>
+        {{ range $categories.ByCount }}
         <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
         {{ end }}
-        <h2>作者<span style="color:#d2c600;font-size:.7em"> {{ len (where .Site.Taxonomies.author "Type" "post") }}</span></h2>
-          {{ range  (where .Site.Taxonomies.author "Type" "post") }}
+        <h2>作者<span style="color:#d2c600;font-size:.7em"> {{ len $author  }}</span></h2>
+          {{ range $author.ByCount  }}
           <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
           {{ end }}
     </ul>

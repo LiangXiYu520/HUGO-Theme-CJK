@@ -40,44 +40,19 @@
     </div>
          <div class="in2"> </div>
   </div>
-  <h1 style="margin:0 auto .5em"><a href="/gallery" target="_blank" style="border:none">作品 Works</a></h1>
-    <div class="discover-des">按最近修改排序</div>
-  <div class="bigcard">
-{{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
-  <div class="card-container">
-<div class="card">
-<h2><a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a></h2>
-<div class="archive-info">{{ .Page.Lastmod.Format "2006-01-02" }}</div>
-<p> {{ .Page.Params.des }}</p>
+  <h1>作品 Works</h1>
+  <div class="discover-des">按最近修改排序</div>
+  <div class="discover-wrap" style="padding:0;margin-bottom:0">
+  <div class="discover gallery">
+    {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
+    <ol>
+  <h2 style="margin:0"><a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a></h2>
+  <div class="archive-info">{{- .Page.Lastmod.Format "2006-01-02" }}</div>
+  {{- .Page.Params.des -}}
+  </ol>{{ end }}
+    </div>
   </div>
-  </div>
-    {{ end }}
-  </div>
-  <div class="gallery" style="margin:8em auto 0">
-  <div class="paper-wrap">
-    <h1 style="margin-top:0"><a href="/zanfu" target="_blank">赫赫讚府 Reorganized Commentaries</a></h1>
-    <div  class="des" style="margin-top:-1em;font-size:1.1em">收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引</div>
-      <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
-  <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
-{{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
-          <div >
-            <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
-          </div>
-{{ end }}
-</div></div></div>
-<div class="paper-wrap">
-  <h1 style="margin-top:0"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
-  <div  class="des" style="margin-top:-1em;font-size:1.1em">北師大歷史學院本科生學術刊物</div>
-    <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
-<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
-            {{ range first 5 (where .Site.RegularPages.ByDate.Reverse "Type" "xuekan") }}
-                      <div >
-                        <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
-                      </div>
-            {{ end }}
-</div></div></div>
-</div>
-
+  <div class="des" style="margin-bottom:7em">以及，這箇網站。</div>
   <div class="heading-wrap home" style="margin-top:5em">
     <h1>
       <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">博客</a>»</span><span style="letter-spacing:.2em">發</span>現
@@ -111,17 +86,17 @@
 </div>
 <h1 style="margin:0 auto .5em">分類 Categories</h1>
   <div class="discover-des">各分類最近發布</div>
-<div class="bigcard">
-{{ range .Site.Taxonomies.categories.ByCount  | shuffle }}
-<div class="card-container">
-<div class="card">
-<h2><a href="{{ .Page.Permalink }}" target="_blank">[{{ .Page.Title }}]</a></h2>
-    {{ range first 5 .Pages }}
-<div class="item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></div>
+<div class="discover-wrap" style="padding:0 0 1.6em 0;margin-bottom:6em;max-width:69em">
+<div class="discover categories">
+  {{ $categories := where .Site.Taxonomies.categories "Type" "post" }}
+  {{ range $categories.ByCount  | shuffle }}
+  <ol>
+<h2 style="margin:0"><a href="{{ .Page.Permalink }}" target="_blank">[{{ .Page.Title }}]</a></h2>
+{{ range first 5 .Pages }}
+<div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></div>
 {{ end }}
-</div>
-</div>
-{{ end }}
+</ol>{{ end }}
+  </div>
 </div>
   <div class="gallery">
 <div class="paper-wrap">
@@ -163,7 +138,7 @@
 </div>
 <h1>年度 🔝 of the Year</h1>
 <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
-<div class="discover-wrap discover-wrap1">
+<div class="discover-wrap" style="width:42em">
 <div class="discover" >
 <ol>
   <h2>2017-2018</h2>
@@ -179,6 +154,36 @@
 </ol>
 </div>
 </div>
+<div class="heading-wrap home" style="margin:10em 0 3em">
+  <h1>
+    <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
+  </h1>
+</div>
+<div class="gallery" style="margin-top:8em">
+<div class="paper-wrap">
+  <h1 style="margin-top:0"><a href="/zanfu" target="_blank">赫赫讚府 Reorganized Commentaries</a></h1>
+  <div  class="des" style="margin-top:-1em;font-size:1.1em">收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引</div>
+    <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
+<div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
+{{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
+        <div >
+          <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
+        </div>
+{{ end }}
+</div></div></div>
+<div class="paper-wrap">
+<h1 style="margin-top:0"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
+<div  class="des" style="margin-top:-1em;font-size:1.1em">北師大歷史學院本科生學術刊物</div>
+  <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
+<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
+          {{ range first 5 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
+                    <div >
+                      <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
+                    </div>
+          {{ end }}
+</div></div></div>
+</div>
+
 
 <div class="heading-wrap home" style="margin:6em 0 3em">
   <h1>
