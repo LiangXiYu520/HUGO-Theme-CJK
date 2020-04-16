@@ -31,7 +31,7 @@
                   <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">@{{- .Params.author -}}</a></span>
                   <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
                 </div>
-                <div class="archive-info">{{ .PublishDate.Format "06-01-02" }} > {{ .Lastmod.Format "06-01-02" }}&nbsp
+                <div class="archive-info">{{ .PublishDate.Format "06-01-02" }}{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}&nbsp
             {{ with .Params.categories -}}
                 {{ range . }}
                 {{- $name := . -}}
