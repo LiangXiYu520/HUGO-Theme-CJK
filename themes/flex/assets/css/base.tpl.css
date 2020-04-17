@@ -976,11 +976,11 @@ border-bottom: .15em solid #f1bc00}
   border:none}
 .svg a{
   border:none}
-.svg a svg{  width:.4em}
+.svg a svg{  width:1.1em}
 .svg a svg:hover{
   transition: .3s;
-  width:.5em;
-  margin-right:-.1em}
+  width:1.3em;
+  margin-right:-.2em}
 @media screen and (max-width:900px){
   .home-cover{
     display:table;

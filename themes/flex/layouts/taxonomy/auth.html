@@ -5,7 +5,7 @@
   <header class="Heading">
     {{ $termName := .Data.Singular }}
     {{ $type := .Type }}
-        <h1 class="Heading-title taxo" style="font-size:3em"><span style="font-size:.4em;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/xuekan">春秋學刊</a>»作者»
+        <span class="Heading-title taxo" style="font-size:1em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/xuekan">春秋學刊</a>»作者»
           {{- with .Params.auth -}}
                       {{- range . -}}
                       {{- $name := . -}}
@@ -14,8 +14,8 @@
                       {{- end -}}
                       {{- end -}}
                   {{- end -}}
-        </span>{{- .Title -}}
-  </h1>
+        </span>
+        <h1 class="Heading-title taxo" style="font-size:3em">{{- .Title -}}</h1>
   </header>
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
