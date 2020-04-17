@@ -1,5 +1,5 @@
 ---
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "讀<v>新民主主義論</v>"
 date: 2018-11-22
 lastmod: 2018-11-22

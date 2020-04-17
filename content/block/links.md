@@ -1,6 +1,6 @@
 ---
 layout: 'block'
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "友鏈"
 date: 2018-10-27
 lastmod: 2019-10-06

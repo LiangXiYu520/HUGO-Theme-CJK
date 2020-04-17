@@ -1,7 +1,7 @@
 ---
 type: "gallery"
 layout: "gallery"
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "旁白 播音"
 lastmod: 2019-04-29
 url: dubbing

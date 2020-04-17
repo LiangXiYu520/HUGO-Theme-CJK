@@ -18,15 +18,17 @@
     {{ end }}
     {{ end }}
     </div>
-    {{- $author_id := .Params.author | default .Site.Author.name -}}
-    {{- $author := (index ($.Site.Data.author | default dict) $author_id) -}}
-    {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
-    {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
-    <div class="des1">{{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
-    <span class="des2">作者</span> <a href="/author/{{ $author_name }}">@{{- $author_name | safeHTML -}}</a>
-    {{- else -}}
-    <span class="des2">作者</span> <a href="/author/{{ $author_name }}">@{{- $author_name | safeHTML -}}</a>
-    {{ end }}
+
+    <div class="des1">
+    {{- with .Params.author -}}
+        　<span class="des2">作者</span>
+        {{ range . }}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        <span class="des1-cate"> <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
+        {{- end -}}
+        {{- end -}}
+    {{- end -}}
     {{- with .Params.series -}}
         　<span class="des2">系列</span>
         {{ range . }}

@@ -1,7 +1,7 @@
 ---
 type: "gallery"
 layout: "gallery"
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "讀切韻"
 lastmod: 2019-03-20
 url: /reading

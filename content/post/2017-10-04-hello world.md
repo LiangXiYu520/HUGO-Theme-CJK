@@ -1,5 +1,5 @@
 ---
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "Hello world!"
 date: 2017-10-04
 lastmod: 2017-10-05

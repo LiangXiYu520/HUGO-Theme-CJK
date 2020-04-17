@@ -1,5 +1,5 @@
 ---
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "<v>水龍吟·次韻章質夫楊花詞</v>賞析"
 date: 2015-12-22
 categories: ["人文"]

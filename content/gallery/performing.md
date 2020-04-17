@@ -1,7 +1,7 @@
 ---
 type: "gallery"
 layout: "gallery"
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "古琴演出"
 lastmod: 2019-11-15
 url: /performing

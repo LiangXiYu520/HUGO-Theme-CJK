@@ -1,5 +1,5 @@
 ---
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "傳符過所繻棨致籍檢辨析"
 date: 2018-06-24
 categories: ["史"]

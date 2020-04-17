@@ -1,5 +1,5 @@
 ---
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "左傳中的鄭莊公"
 date: 2016-01-03
 categories: ["經"]

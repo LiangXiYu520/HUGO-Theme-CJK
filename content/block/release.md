@@ -1,6 +1,6 @@
 ---
 layout: 'block'
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "更新"
 date: 2017-10-05
 lastmod: 2020-04-15
@@ -576,7 +576,7 @@ netlify 有「pretty urls」功能，打開後就沒有後綴 .html，肰而這�
 
 ```toml
 ---
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "Hello world!<n>20181115</n>"
 date: 2017-10-04
 lastmod: 2018-11-21
@@ -1440,3 +1440,7 @@ tags 全部換成 series
 優化：主葉樣式。索引。單篇文章推薦算法。
 
 修復：橫排目錄的位置。
+
+#### 4.6.06
+
+作者的格式改成和其他索引一樣的 `[" "]`。這樣就支持多個作者。

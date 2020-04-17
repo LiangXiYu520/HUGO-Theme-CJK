@@ -1,5 +1,5 @@
 ---
-author: "柯棋瀚"
+author: ["柯棋瀚"]
 title: "團員學習心得"
 date: 2017-06-20
 categories: ["人文"]
