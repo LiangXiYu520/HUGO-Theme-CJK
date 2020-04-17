@@ -29,7 +29,7 @@
         {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
                 <span class="archive-right">
                   <div><span class="archive-info archive-info-author"><a href="/author/{{ .Params.author }}" target="_blank">@{{- .Params.author -}}</a></span>
-                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
+                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title | safeHTML  -}}</a></span>
                 </div>
                 <div class="archive-info">{{ .PublishDate.Format "06-01-02" }}{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}&nbsp
             {{ with .Params.categories -}}

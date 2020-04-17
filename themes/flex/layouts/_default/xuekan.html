@@ -14,7 +14,7 @@
                    {{- end -}}
                    {{- end -}}
                {{- end -}}
-               </span>{{- .Title -}}</h1>
+               </span>{{- .Title  | safeHTML -}}</h1>
              <div class="tag" style="max-width:20em">
              <div class="des1">
              <time datetime="{{ .Date.Format "2006-01-02" }}">

@@ -1,6 +1,6 @@
 ---
 author: "柯棋瀚"
-title: "《搗練圖》的題跋"
+title: "<v>搗練圖</v>的題跋"
 date: 2017-06-23
 categories: ["人文"]
 series: ["墨池記"]

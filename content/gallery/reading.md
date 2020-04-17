@@ -7,7 +7,7 @@ lastmod: 2019-03-20
 url: /reading
 description: '我又自詡對語言的敏感度比常人畧高一些。暑假突肰對古音感興趣，上古音難度太大，那就中古音吧，便用了半箇月來突擊，知道了一箇大槩。用古音讀書豈不是很美妙的事情？<br>
 我的 B 站頻道：<a href="https://space.bilibili.com/176570453/channel/detail?cid=70633" target="\_blank">讀切韻擬音</a>'
-des: '讀《切韻》擬音。純娛樂向，沒有學術價值。'
+des: '讀<v>切韻</v>擬音。純娛樂向，沒有學術價值。'
 ---
 
 <div class="gallery">
@@ -73,7 +73,7 @@ kung srii ngioo zjenh qan ciook yuun，thad zqaong sam khiang njex gha nqjn。
 #### 1
 
 chqyjn chiuu keng yaot：    
-《春秋》經曰：
+<v>春秋</v>經曰：
 
 <n>qaui kung</n>zqjp iuux sjh nen，chqyjn，se squuh ghuraek ljn。  
 <n>哀公</n>十有四年，春，西狩獲麟。
@@ -81,7 +81,7 @@ chqyjn chiuu keng yaot：
 #### 2
 
 kung jaong dryenh yaot：    
-《公羊傳》曰：
+<v>公羊傳</v>曰：
 
 gha jx sqoe？kih jh jax。  
 何以書？記異也。
@@ -128,8 +128,8 @@ se squuh ghuraek ljn，khungx cix yaot：「ngoo daux giung ix！」
 
 #### 5
 
-《chqyjn chiuu》gha jx sqx ghoo qioenx？  
-《春秋》何以始乎隱？
+<v>chqyjn chiuu</v>gha jx sqx ghoo qioenx？  
+<v>春秋</v>何以始乎隱？
 
 coox cq srioex dauih myun jax。     
 祖之所逮聞也。
@@ -140,13 +140,13 @@ srioex kenh jh zsi，srioex myun jh zsi，srioex dryen myun jh zsi。
 gha jx cqung ghoo qaui zqjp sjh nen？yaot：biih ix。   
 何以終乎哀十四年？曰：備矣。
 
-kyun cix ghat yeh ye《chqyjn chiuu》？   
-君子曷爲爲《春秋》？
+kyun cix ghat yeh ye<v>chqyjn chiuu</v>？   
+君子曷爲爲<v>春秋</v>？
 
 #### 6
 
-puat luanh sqjed，pyaonx cqoe cqengh，mak gioenh cqoe《chqyjn chiuu》。     
-撥亂世，反諸正，莫近諸《春秋》。
+puat luanh sqjed，pyaonx cqoe cqengh，mak gioenh cqoe<v>chqyjn chiuu</v>。     
+撥亂世，反諸正，莫近諸<v>春秋</v>。
 
 cauk myoeih trie gi yeh zqjex joe？   
 則未知其爲是與？
@@ -157,8 +157,8 @@ gi cqoe kyun cix ngrauh daux ngeu、sqyjnh cq daux joe？
 muat piuu jek ngrauh ghoo ngeu、sqyjnh cq trie kyun cix jax？   
 末不亦樂乎堯、舜之知君子也？
 
-cqjed《chqyjn chiuu》cq ngieh，jx zsrix ghoux sqengh，   
-制《春秋》之義，以俟後聖，
+cqjed<v>chqyjn chiuu</v>cq ngieh，jx zsrix ghoux sqengh，   
+制<v>春秋</v>之義，以俟後聖，
 
 jx kyun cix cq ye jek iuux ngrauh ghoo chjex jax。   
 以君子之爲亦有樂乎此也。
@@ -166,7 +166,7 @@ jx kyun cix cq ye jek iuux ngrauh ghoo chjex jax。
 #### 7
 
 kuk liaong dryenh yaot：   
-《穀梁傳》曰：
+<v>穀梁傳</v>曰：
 
 jjnx chioox cq jax。squuh djh piuu djh，piuu squuh jax。  
 引取之也。狩地不地，不狩也。
@@ -195,7 +195,7 @@ sjek zoix teh ngeu，chung mrjang myn si，kwang drak then ghrax。
 昔在帝堯，聰明文思，光宅天下。
 
 ciang soonh ioo rwjh，nqaongh ioo ngioo sqwjnh，cooh ngeu tenx。   
-將遜于位，讓于虞舜，作《堯典》。
+將遜于位，讓于虞舜，作<v>堯典</v>。
 
 #### 2
 
@@ -380,9 +380,9 @@ teh yoot：「khrjm coi
 
 
 
-[^1]: 《經典釋文》本條：「被，皮寄反。徐扶義反。」
-[^2]: 《經典釋文》本條：「孳，音字。」
-[^3]: 《經典釋文》本條：「毨，先典反（senx）。」《康熙字典》：「《唐韻》《集韻》《韻會》《正韻》蘇典切（senx），音詵（srein）。」
+[^1]: <v>經典釋文</v>本條：「被，皮寄反。徐扶義反。」
+[^2]: <v>經典釋文</v>本條：「孳，音字。」
+[^3]: <v>經典釋文</v>本條：「毨，先典反（senx）。」<v>康熙字典</v>：「<v>唐韻</v><v>集韻</v><v>韻會</v><v>正韻</v>蘇典切（senx），音詵（srein）。」
 
 
 </div></div></div></div>

@@ -3,16 +3,16 @@
   {{ $termName := .Data.Singular }}
   {{ $type := .Type }}
   {{  if and $.Site.Taxonomies.categories (eq $termName "category") }}
-  <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/post">博客</a>»分類»</span>[{{- .Title -}}]</h1>
+  <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/post">博客</a>»分類»</span>[{{- .Title | safeHTML -}}]</h1>
 {{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}
     {{ else if and $.Site.Taxonomies.series (eq $termName "series") }}
-  <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/post">博客</a>»系列»</span>{{- .Title -}}｜</h1>
+  <h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/post">博客</a>»系列»</span>{{- .Title  | safeHTML -}}｜</h1>
 {{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}
       {{ else if and $.Site.Taxonomies.author (eq $termName "author") }}
-<h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em"><a href="/">赫赫文王</a>><a href="/post">博客</a>»作者»</span>@{{- .Title -}}</h1>
+<h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em"><a href="/">赫赫文王</a>><a href="/post">博客</a>»作者»</span>@{{- .Title  | safeHTML -}}</h1>
 {{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}
 {{ else if and $.Site.Taxonomies.tags (eq $termName "tag") }}
-<h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em"><a href="/">赫赫文王</a>><a href="/post">博客</a>»<a href="/tags">標籤</a>»</span>#{{- .Title -}}</h1>
+<h1 class="Heading-title taxo"><span style="font-size:.3em;letter-spacing:.15em"><a href="/">赫赫文王</a>><a href="/post">博客</a>»<a href="/tags">標籤</a>»</span>#{{- .Title  | safeHTML -}}</h1>
 {{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}
       {{ else }}
       <h1 class="Heading-title taxo" style="font-size:3em"><span style="font-size:.4em;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/post">博客</a>»
@@ -24,7 +24,7 @@
             {{- end -}}
             {{- end -}}
         {{- end -}}
-      </span>{{- .Title -}}
+      </span>{{- .Title  | safeHTML -}}
 {{ end }}
     {{ if $.Site.Params.linkToMarkDown -}}
     {{ if .Params.markdown }}

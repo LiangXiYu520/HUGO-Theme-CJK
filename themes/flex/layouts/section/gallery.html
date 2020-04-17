@@ -15,7 +15,7 @@
                 <div class="archive-right">
           <span class="archive-title" style="margin-left:0">
             <span class="archive-info">{{ .Date.Format "2006-01-02" }}　</span>
-            <a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
+            <a href="{{ .RelPermalink }}" target="_blank">{{- .Title  | safeHTML -}}</a></span>
           </div>
     </div>{{ end }}
    </div>

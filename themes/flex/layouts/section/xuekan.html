@@ -23,7 +23,7 @@
                 <div class="archive-right">
           <span class="archive-title" style="margin-left:0">
             <span class="archive-info">{{ .Page.Date.Format "2006-01-02" }}　</span>
-            <a href="{{ .Page.RelPermalink }}" target="_blank">{{- .Page.Title -}}</a></span>
+            <a href="{{ .Page.RelPermalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></span>
           </div>
     </div>{{ end }}
    </div>
@@ -36,7 +36,7 @@
          <div class="cate">
            {{ $subject := where .Site.Taxonomies.subject "Type" "xuekan" }}
            {{ range $subject.ByCount }}
-                 <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
+                 <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title | safeHTML }} {{ .Count }}</a></li>
            {{ end }}
            </div>
            </div>
@@ -44,7 +44,7 @@
               <h1 style="margin-bottom:-.7em">作者<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.auth "Type" "xuekan") }}</span></h1>
            <div class="cate">
            {{ range (where .Site.Taxonomies.auth "Type" "xuekan") }}
-                   <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
+                   <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title | safeHTML }} {{ .Count }}</a></li>
              {{ end }}
              </div>
          </div>
@@ -56,7 +56,7 @@
                  <div class="archive-right">
            <span class="archive-title" style="margin-left:0">
              <span class="archive-info">{{ .Page.Date.Format "2006-01-02" }}　</span>
-             <a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title }}</a></span>
+             <a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML }}</a></span>
            </div>
      </div>{{ end }}
     </div>

@@ -1,6 +1,6 @@
 ---
 author: "柯棋瀚"
-title: "敦煌文書 P.2507《水部式》校釋"
+title: "敦煌文書 P.2507<v>水部式</v>校釋"
 date: 2017-06-21
 lastmod: 2017-06-21
 categories: ["史"]

@@ -9,7 +9,7 @@
     <div class="u-padding">
   <div class="cate">
     {{ range .Data.Terms.Alphabetical }}
-      <li class="cate-wrap"><a class="Tags-link u-clickable" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} {{ .Count }}</a></li>
+      <li class="cate-wrap"><a class="Tags-link u-clickable" href="{{ .Page.RelPermalink }}">{{ .Page.Title | safeHTML  }} {{ .Count }}</a></li>
     {{ end }}
   </div>
   </div>

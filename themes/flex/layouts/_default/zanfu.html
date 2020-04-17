@@ -5,7 +5,7 @@
     <div class="heading-wrap">
       {{ partialCached "banner.html" . }}
 <header class="Heading">
-<h1 class="Heading-title taxo" style="font-size:3em"><span style="font-size:.4em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>»<a href="/zanfu">赫赫讚府</a>»</span>{{- .Title -}}
+<h1 class="Heading-title taxo" style="font-size:3em"><span style="font-size:.4em;letter-spacing:.15em;text-shadow:1px 1px 0 #fe7fb8"><a href="/">赫赫文王</a>»<a href="/zanfu">赫赫讚府</a>»</span>{{- .Title  | safeHTML -}}
   {{ if $.Site.Params.linkToMarkDown -}}
   {{ if .Params.markdown }}
   <span class="svg"><a  href="{{ .Params.markdown | safeHTML }}"  target="_blank"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
@@ -31,10 +31,10 @@
     <div class="pagi-wrap">
     <div class="pagi">
       {{ with .PrevInSection }}
-        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title | safeHTML  }}</a></span>
         {{- end }}
     {{ with .NextInSection }}
-          　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
+          　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title | safeHTML  }}</a> →</span>
     {{- end }}
     </div></div>
     </div>

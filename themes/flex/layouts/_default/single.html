@@ -59,10 +59,10 @@
     <div class="pagi-wrap">
     <div class="pagi">
       {{ with .PrevInSection }}
-        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title | safeHTML  }}</a></span>
         {{- end }}
     {{ with .NextInSection }}
-          <span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> →</span>
+          <span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title  | safeHTML }}</a> →</span>
     {{- end }}
     </div>
   </div>
@@ -152,7 +152,7 @@
   <ul>
   {{- range (first 10 $recommend ) -}}
   <li>
-    <a href="{{ .Permalink }}">{{- .Title -}}</a>
+    <a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
   </li>
   {{ end }}
   </ul>
@@ -174,16 +174,16 @@
 {{ $others := intersect  $categories  $other }}
 <ul>
 {{  range first 5 $others | shuffle }}
-<li><a href="{{ .Permalink }}">{{- .Title -}}</a></li>
+<li><a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a></li>
   {{ end }}
 </ul>
 {{ with .PrevInSection }}
 <h2>上篇</h2>
-  <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
+  <a href="{{ .RelPermalink }}">{{- .Title  | safeHTML -}}</a>
   {{- end }}
   {{ with .NextInSection }}
   <h2>下篇</h2>
-    <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
+    <a href="{{ .RelPermalink }}">{{- .Title  | safeHTML -}}</a>
 {{- end }}
 </div>
 </div>

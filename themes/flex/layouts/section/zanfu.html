@@ -22,7 +22,7 @@
                 {{ $leng = add $leng 1  }}{{ $leng }}</div>
                 <div class="archive-right">
           <span class="archive-title" style="margin-left:0">
-            <a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a>
+            <a href="{{ .RelPermalink }}" target="_blank">{{- .Title  | safeHTML -}}</a>
             <div class="archive-info">{{ .Date.Format "2006-01-02" }} > {{ .Lastmod.Format "2006-01-02" }}</div>
           </span>
           </div>

@@ -458,7 +458,7 @@ des: '古琴表演、講座記錄。不用看，純粹自己留箇紀念。'
 
 [天津文學藝術網](http://www.tjculture.com/news_6161.html?from=groupmessage&isappinstalled=0#10006-weixin-1-52626-6b3bffd01fdde4900130bc5a2751b6d1)，[2019第三届天津高校古琴文化艺术节成功举行](https://mp.weixin.qq.com/s/pU9_m4yoSL118rVrslWEew)
 
-> 北京师范大学松风琴社柯棋瀚演奏的《泛沧浪》，展现了“志在驾舟于五湖”的意境。
+> 北京师范大学松风琴社柯棋瀚演奏的<v>泛沧浪</v>，展现了“志在驾舟于五湖”的意境。
 
 </div>
 </div></div>
@@ -485,7 +485,7 @@ des: '古琴表演、講座記錄。不用看，純粹自己留箇紀念。'
 <div class="paper-wrap">
 <div class="paper-card"><div class="paper-card-in">
 
-提到我的：《[清音幽韻｜十年風月舊相知，共憶松風當年事](https://mp.weixin.qq.com/s/yALYZdrvRZCqfQu7Okpz3g)》，松風琴社公眾號，2018-05-22
+提到我的：<v>[清音幽韻｜十年風月舊相知，共憶松風當年事](https://mp.weixin.qq.com/s/yALYZdrvRZCqfQu7Okpz3g)</v>，松風琴社公眾號，2018-05-22
 
 </div>
 </div></div>

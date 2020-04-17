@@ -46,7 +46,7 @@
   <div class="discover gallery">
     {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
     <ol>
-  <h2 style="margin:0"><a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a></h2>
+  <h2 style="margin:0"><a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML }}</a></h2>
   <div class="archive-info">{{- .Page.Lastmod.Format "2006-01-02" }}</div>
   {{- .Page.Params.des -}}
   </ol>{{ end }}
@@ -64,7 +64,7 @@
   <div class="paper-card home"><div class="paper-card-in">
 {{ range first 15   (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
           <div >
-            <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
+            <span class="archive-info" style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
           </div>
 {{ end }}
 </div></div></div>
@@ -79,21 +79,38 @@
 {{ end }}
 {{ range first 15 $lastmod }}
    <div >
-     <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
+     <span class="archive-info"style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
    </div>
 {{ end }}
 </div></div></div>
 </div>
-<h1 style="margin:0 auto .5em">分類 Categories</h1>
-  <div class="discover-des">各分類最近發布</div>
+<h1>分類 Categories</h1>
 <div class="discover-wrap" style="padding:0 0 1.6em 0;margin-bottom:6em;max-width:69em">
 <div class="discover categories">
   {{ $categories := where .Site.Taxonomies.categories "Type" "post" }}
   {{ range $categories.ByCount  | shuffle }}
   <ol>
-<h2 style="margin:0"><a href="{{ .Page.Permalink }}" target="_blank">[{{ .Page.Title }}]</a></h2>
-{{ range first 5 .Pages }}
-<div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></div>
+<h2 style="margin:0"><a href="{{ .Page.Permalink }}" target="_blank">[{{ .Page.Title | safeHTML  }}]</a></h2>
+<div class="discover-des" style="margin-top:.5em;text-align:left">最近發布</div>
+{{ $1end :=slice }}
+{{ range first 2 .Pages }}
+{{ $1end = $1end | append . }}
+<div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+{{ end }}
+{{ $2end := slice }}
+    {{ with .Pages | shuffle }}
+        {{ $2categories := . }}
+        {{ range  $2categories }}
+            {{ $2end =  $2end | append  . }}
+        {{ end }}
+    {{ end }}
+    {{ $3end := slice }}
+    {{ range $2end }}
+{{ $3end = $2end | complement $1end  }}
+    {{  end }}
+    <div class="discover-des"style="margin:0;text-align:left">隨機推薦</div>
+{{ range first 2 $3end  }}
+<div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
 {{ end }}
 </ol>{{ end }}
   </div>
@@ -106,13 +123,13 @@
     <div  class="des" style="margin:0em auto 1em;font-size:1.1em">用最少的字數搭建大槩的知識體系</div>
   <ul>
 {{ range .Site.Taxonomies.series.赫赫指北 }}
-        <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}</a></li>
+        <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></li>
     {{ end }}
     </ul>
     <h2><a href="/series/推介" target="_blank">推介｜</a></h2>
     <ul>
   {{ range .Site.Taxonomies.series.推介 }}
-          <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title }}</a></li>
+          <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></li>
       {{ end }}
       </ul>
 </div></div></div>
@@ -128,9 +145,9 @@
 {{ end }}
 {{ end }}
 {{ range $author  | shuffle  }}
-        <h2><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title }}</a></h2>
+        <h2><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title | safeHTML }}</a></h2>
         {{ range .Pages  | shuffle }}
-<li><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title }}</a></li>
+<li><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></li>
 {{ end }}
 {{ end }}
 </div>
@@ -143,13 +160,13 @@
 <ol>
   <h2>2017-2018</h2>
   {{ range .Site.Menus.top2018  }}
-      <li><a href="{{ .Page.Permalink }}"  target="_blank">{{ .Name }}</a></li>
+      <li><a href="{{ .Page.Permalink }}"  target="_blank">{{ .Name | safeHTML }}</a></li>
   {{ end }}
 </ol>
 <ol>
   <h2>2018-2019</h2>
   {{ range .Site.Menus.top2019  }}
-      <li><a href="{{  .Page.Permalink  }}"  target="_blank">{{ .Name }}</a></li>
+      <li><a href="{{  .Page.Permalink  }}"  target="_blank">{{ .Name | safeHTML }}</a></li>
   {{ end }}
 </ol>
 </div>
@@ -167,7 +184,7 @@
 <div class="paper-card recording"style="border: .3em solid #2b2b2b;"><div class="paper-card-in">
 {{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
         <div >
-          <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
+          <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
         </div>
 {{ end }}
 </div></div></div>
@@ -178,7 +195,7 @@
 <div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
           {{ range first 5 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
                     <div >
-                      <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title }}</a>
+                      <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
                     </div>
           {{ end }}
 </div></div></div>
