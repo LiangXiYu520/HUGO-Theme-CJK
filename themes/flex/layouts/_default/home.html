@@ -48,7 +48,7 @@
     <ol>
   <h2 style="margin:0"><a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML }}</a></h2>
   <div class="archive-info">{{- .Page.Lastmod.Format "2006-01-02" }}</div>
-  {{- .Page.Params.des -}}
+  {{- .Page.Params.des | safeHTML -}}
   </ol>{{ end }}
     </div>
   </div>
@@ -105,11 +105,11 @@
         {{ end }}
     {{ end }}
     {{ $3end := slice }}
-    {{ range $2end }}
+    {{ range $2end  | shuffle }}
 {{ $3end = $2end | complement $1end  }}
     {{  end }}
     <div class="discover-des"style="margin:0;text-align:left">隨機推薦</div>
-{{ range first 2 $3end  }}
+{{ range first 2 $3end | shuffle }}
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
 {{ end }}
 </ol>{{ end }}
@@ -189,6 +189,20 @@
 {{ end }}
 </div></div></div>
 <div class="paper-wrap">
+<h1 style="margin-top:0"><a href="https://wiki.kqh.me" target="_blank">赫赫複印資料</a></h1>
+<div  class="des" style="margin-top:-1em;font-size:1.1em">見維基</div>
+<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
+保存的是網上比較有價值的文章、報導。赫赫讚府的姊妹篇
+</div></div></div>
+
+<div class="paper-wrap">
+<h1 style="margin-top:0"><a href="https://wiki.kqh.me" target="_blank">傳世琴譜數字文本化工程</a></h1>
+<div  class="des" style="margin-top:-1em;font-size:1.1em">見維基</div>
+<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;"><div class="paper-card-in">
+是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
+這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態
+</div></div></div>
+<div class="paper-wrap">
 <h1 style="margin-top:0"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
 <div  class="des" style="margin-top:-1em;font-size:1.1em">北師大歷史學院本科生學術刊物</div>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
@@ -209,19 +223,7 @@
 </div>
 <div class="gallery" style="margin:7em auto 5em">
 <div class="paper-wrap">
-<div class="paper-card recording"style="border: .3em solid #2b2b2b;width:15em"><div class="paper-card-in">
-<h2>傳世琴譜數字文本化工程</h2>
-是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
-這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態
-</div></div></div>
-<div class="paper-wrap">
 <div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;width:15em"><div class="paper-card-in">
-<h2>赫赫複印資料</h2>
-保存的是網上比較有價值的文章、報導，作爲一箇未來的史料索引。
-</div></div></div>
-<div class="paper-wrap">
-<div class="paper-card recording" style="max-height:none;border: .3em solid #2b2b2b;width:15em"><div class="paper-card-in">
-<h2>赫赫維基</h2>
 <div>【讀書】目前有《尙書》筆記</div>
 <div>【上課】上課筆記</div>
 <div>【資料數字化】很少</div>
