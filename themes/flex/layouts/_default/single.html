@@ -174,11 +174,13 @@
   <div class="recommend1">
   <h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據索引重合度加權排序</span></h2>
   <ul>
+    <div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">強相關</div>
     {{- range $1recommend -}}
     <li>
       <a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
     </li>
     {{ end }}
+    <div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">隨機弱相關</div>
   {{- range $4recommend -}}
   <li>
     <a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
