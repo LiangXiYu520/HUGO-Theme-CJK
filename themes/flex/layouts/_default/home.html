@@ -85,7 +85,7 @@
 </div></div></div>
 </div>
 <h1>分類 Categories</h1>
-<div class="discover-wrap" style="padding:0 0 1.6em 0;margin-bottom:6em;max-width:69em">
+<div class="discover-wrap" style="padding:0 0 1.6em 0;margin-bottom:6em;max-width:66em">
 <div class="discover categories">
   {{ $categories := where .Site.Taxonomies.categories "Type" "post" }}
   {{ range $categories.ByCount  | shuffle }}

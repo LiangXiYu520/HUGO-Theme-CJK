@@ -155,7 +155,7 @@
        {{ $recommend = $recommend | append . }}
   {{ end }}
   <div class="recommend1">
-  <h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據分類系列重合度排序</span></h2>
+  <h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據索引重合度加權排序</span></h2>
   <ul>
   {{- range (first 10 $recommend ) -}}
   <li>
@@ -167,7 +167,7 @@
 <div class="recommend1">
   {{ $current := slice }}
   {{ $current = $current | append . }}
-  <h2>沒有喜歡的？ <span style="font-size:.6em;font-weight:400">其他分類各生成一項</span></h2>
+  <h2>沒有喜歡的？ <span style="font-size:.6em;font-weight:400">其他分類各隨機生成一項</span></h2>
 {{ $other := $.Site.RegularPages |  complement $current $recommend (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
 {{ $categories := slice }}
 {{ range .Site.Taxonomies.categories.ByCount }}
