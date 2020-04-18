@@ -16,7 +16,7 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 
 見 [我的主葉](/)。投稿、交換友鏈及其他任何問題都可以發郵件或在文末評論。
 
-這是我的小天地，爲所欲爲的自留地，自己想怎麼排版就怎麼排，想改就改想刪就刪。這博客太无聊了，而且都是沒什麼價値的口水話，相信絕大多數讀者點進來就會馬上點右上角的叉。
+這是我的小天地，爲所欲爲的自留地，自己想怎麼排版就怎麼排，想改就改想刪就刪。這网誌太无聊了，而且都是沒什麼價値的口水話，相信絕大多數讀者點進來就會馬上點右上角的叉。
 
 # 示
 
@@ -32,14 +32,14 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 
 1. 原來積了些東西不知往哪裏放，又不想讓它們冷落在硬盤裏。而且存網上不容易散佚。
 2. 想㝡大程度實現知戠、信息共亯。雖說當今是信息爆炸的時代，但也會存在很多信息盲區，特別是學術信息。
-3. 我崇尙自由開放的互聯网精神。微信公眾號太垃圾，㝡主要的是**太封閉**，只能在手機上用，只好建了博客。而且一次只能加載十條消息，想看一百條㠯歬的消息必須刷新十次，這是多麼難受的事情。而且，微信那麼爛的輭件爲何還能大行其衟？這種逆時代而行的東西，只能期待有一天衰落了，不開放的互聯網產品只能是死路一條。這篇文章說了爲何微信那麼糟糕：<v>[割韭菜、收智商税盛行，是微信良心上的一道伤疤](https://mp.weixin.qq.com/s/7VsRXCY2tXRN8FLzQbPbRw)</v><n>明叔杂谈小号，2020-03-09</n>一個看法：<v>[我们需要微信吗](https://www.hxueh.net/27/)</v>貼一張圖：
+3. 我崇尙自由開放的互聯网精神。微信公眾號太垃圾，㝡主要的是**太封閉**，只能在手機上用，只好建了网誌。而且一次只能加載十條消息，想看一百條㠯歬的消息必須刷新十次，這是多麼難受的事情。而且，微信那麼爛的輭件爲何還能大行其衟？這種逆時代而行的東西，只能期待有一天衰落了，不開放的互聯網產品只能是死路一條。這篇文章說了爲何微信那麼糟糕：<v>[割韭菜、收智商税盛行，是微信良心上的一道伤疤](https://mp.weixin.qq.com/s/7VsRXCY2tXRN8FLzQbPbRw)</v><n>明叔杂谈小号，2020-03-09</n>一個看法：<v>[我们需要微信吗](https://www.hxueh.net/27/)</v>貼一張圖：
 
 <img src="https://www.superbed.cn/pic/5becb5a19dc6d61ad66ee225" width=500>
 
-4. 不想用社交平臺，想找箇東西替代。可以看看 <u>博客志</u> 的 [爲何要寫博客](http://www.jetli.com.cn/about.html)。
+4. 不想用社交平臺，想找箇東西替代。可以看看 <u>网誌志</u> 的 [爲何要寫网誌](http://www.jetli.com.cn/about.html)。
 5. 很多長篇大論的東西，實在想不出其他平臺可以發布，似乎只有知乎專欄吧？
 6. 爲了滿足我對排版的強迫症。新浪博客太醜太醜，簡書還不錯。我對於字體與排版有執念，如果不和我心意，那我是无論如何也不會有寫作的衝動的。
-7. 自己獨立的域名好高大上！一箇學「傳統文化」的文科生自己搭了箇好看的獨立博客，是不是很 geek。
+7. 自己獨立的域名好高大上！一箇學「傳統文化」的文科生自己搭了箇好看的獨立网誌，是不是很 geek。
 
 # 肰則曷所記也？
 
@@ -47,7 +47,7 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 
 本站有兩箇獨立的非原創板塊：
 
-【赫赫讚府】收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引。對應的，[維基](https://wiki.kqh.me) 有「赫赫複印資料」系列，主要是全文保存。「赫赫指北」「赫赫讚府」「赫赫複印資料」是三箇相對特別的品牌，比本博客其他內容受眾面要廣
+【赫赫讚府】收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引。對應的，[維基](https://wiki.kqh.me) 有「赫赫複印資料」系列，主要是全文保存。「赫赫指北」「赫赫讚府」「赫赫複印資料」是三箇相對特別的品牌，比本网誌其他內容受眾面要廣
 
 【春秋學刊】北師大歷史學院本科生學術刊物<v>春秋學刊</v>的目次<n>半秊刊，至少未來幾年我還在師大就會繼續㪅</n>
 
@@ -76,7 +76,7 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 - 雩若記：有關<v>尙書</v>的，因爲開頭那幾篇都是「曰若稽古某某」，而「曰」一作「粵」，「粵」古又作「雩」
 - 元麟記：有關<v>春秌</v>的，始元終麟嘛
 - 无衺記：有關<v>詩經</v>的
-- 課業：上課的作業。這一部分完全可以不用看，沒什麼價値，完全用來湊字數。放在這裏不過是爲了方便有需要的同學可以拿來用，以減少一些寫課程論文的不必要的時閒浪費，也算是對大學浪費的時閒一箇小小的交代。想想我爲了交作業，寫了多少垃圾，浪費了多少寶貴旹閒啊。至於版權的問題，如果用來當作業素材的話，隨便複製粘貼就是。至於在網上傳播用，則遵循本博客一貫的 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
+- 課業：上課的作業。這一部分完全可以不用看，沒什麼價値，完全用來湊字數。放在這裏不過是爲了方便有需要的同學可以拿來用，以減少一些寫課程論文的不必要的時閒浪費，也算是對大學浪費的時閒一箇小小的交代。想想我爲了交作業，寫了多少垃圾，浪費了多少寶貴旹閒啊。至於版權的問題，如果用來當作業素材的話，隨便複製粘貼就是。至於在網上傳播用，則遵循本网誌一貫的 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 - 讀書：一些稍微成文的讀書筆記；不成文的和讀原典的筆記放在 [維基](https://wiki.kqh.me)。這些標題原創性依次增加：摘錄——述要——指要——某讀後。「讀後」可以當成半篇論文了，作爲副標題出現
 - 學務：上學期間雜七雜八的東西
 - 觀後：博物館展覽；電影；音樂
@@ -89,8 +89,8 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 
 # 曷所建之？
 
-1. 【支持】託管於 ~~<a href="https://pages.github.com" target="\_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="\_blank">kitian616</a> 提供博客主題模板 Text~~ 主题  [jane](https://github.com/xianmin/hugo-theme-jane)，~~<a href="https://tw.godaddy.com/" target="\_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="\_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。古琴關注數統計用的 [Substats](https://sspai.com/post/59593) api。
-2. 【檢索】對靜態博客添加搜索功能无能爲力，試了好幾種，无奈技術有限。如想搜索直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a><n>Google 收錄得又全又快</n>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。
+1. 【支持】託管於 ~~<a href="https://pages.github.com" target="\_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="\_blank">kitian616</a> 提供网誌主題模板 Text~~ 主题  [jane](https://github.com/xianmin/hugo-theme-jane)，~~<a href="https://tw.godaddy.com/" target="\_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="\_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。古琴關注數統計用的 [Substats](https://sspai.com/post/59593) api。
+2. 【檢索】對靜態网誌添加搜索功能无能爲力，試了好幾種，无奈技術有限。如想搜索直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a><n>Google 收錄得又全又快</n>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。
 3. 【大事記】見 [更新](/release)
 4. 【板式】見 [示例葉面](/149)
 5. 【文章推薦算法】見 [Hugo文章推薦算法舉例](/223)

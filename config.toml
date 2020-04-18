@@ -36,7 +36,7 @@ from = "from"
      weight = 1
      url = "/"
   [[menu.nav]]
-     name = "博客"
+     name = "网誌"
      weight = 2
      url = "/post"
      [[menu.nav]]
