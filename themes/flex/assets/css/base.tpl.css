@@ -850,9 +850,12 @@ margin:auto}
   text-align:justify;
 margin:1.4em auto 0
 }
+.discover.gallery h2{
+font-size: 1.2em;
+  font-family: "Noto Serif CJK KR","Source Han Serif K","Noto Serif CJK SC","Hiragino Mincho ProN","Hiragino Mincho","Yu Mincho","Hana Mincho","Ms Mincho"
+}
 .discover-item{
   margin:.6em auto ;
-
 }
 .discover-item.latest
 {
@@ -922,7 +925,7 @@ margin: 0 2em 2em;
   margin:0 auto 1em;
   padding: .4em .4em .2em;
   color:#fffae8;
-  background:#ddb8b8;
+  background:#e37979;
   border-radius:.5em;
   	position:relative;
   animation-name: move;

@@ -61,7 +61,7 @@
   <h1>最近發布 Latest</h1>
 <div class="discover-wrap latest">
 <div class="discover categories">
-  {{ range first 12 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+  {{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
   <ol style="margin:1em auto">
   <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
@@ -86,12 +86,26 @@
 {{ end }}</ul>
 </div>
 </div>
-<h1>分類 Categories</h1>
+<h1>[分類] Categories<br>系列｜Series</h1>
+<div class="discover-des">更多系列見網誌葉腳</div>
 <div class="discover-wrap latest">
 <div class="discover categories">
+  {{ $auth := slice }}
+  {{ $1auth := slice }}
+  {{ range .Site.Taxonomies.author.ByCount }}
+  {{ if eq .Page.Title  "柯棋瀚" }}
+  {{ $1auth = $1auth | append . }}
+  {{ end }}
+  {{ end }}
+  {{ range $1auth  | shuffle  }}
+          {{ range .Pages  | shuffle }}
+  {{ $auth = $auth | append . }}
+  {{ end }}
+  {{ end }}
   {{ $series := slice }}
     {{ $1series := slice }}
     {{ $2series := slice }}
+    {{ $3series := slice }}
     {{ range .Site.Taxonomies.series.赫赫指北 }}
         {{ $1series = $1series | append .Page }}
     {{ end }}
@@ -99,8 +113,9 @@
         {{ $2series = $2series | append .Page }}
     {{ end }}
     {{ with (where .Site.RegularPages "Type" "post") }}
-    {{ $series = . | complement $1series $2series }}
+    {{ $3series = . | complement $1series $2series }}
 {{ end }}
+{{ $series = intersect  $3series $auth  }}
   {{ $allCate := where .Site.Taxonomies.categories "Type" "post" }}
   {{ range $allCate.ByCount  | shuffle }}
 {{ $first2 := slice }}
@@ -122,37 +137,31 @@
 {{ range $first2 }}
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
 {{ end }}
-    <div class="discover-des"style="margin:0;text-align:left">隨機推薦</div>
+    <div class="discover-des"style="margin:0;text-align:left">隨機生成</div>
 {{ range first 2 $end | shuffle }}
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
 {{ end }}
-</ol>{{ end }}
+</ol>
+{{ end }}
+<ol>
+<h2 style="margin:0"><a href="/series/赫赫指北" target="_blank">赫赫指北｜</a></h2>
+  <div class="discover-des" style="margin-top:.5em;text-align:left">用最少的字數搭建大槩的知識體系</div>
+{{ range .Site.Taxonomies.series.赫赫指北 }}
+      <li class="discover-item"><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></li>
+  {{ end }}
+  </ol>
+  <ol>
+  <h2 style="margin:0"><a href="/series/推介" target="_blank">推介｜</a></h2>
+{{ range .Site.Taxonomies.series.推介 }}
+        <li class="discover-item"><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></li>
+    {{ end }}
+    </ol>
   </div>
 </div>
-  <div class="gallery">
-<div class="paper-wrap">
-  <h1>系列 Series</h1>
-  <div class="discover-des">更多系列見網誌葉腳</div>
-<div class="paper-card  recording" style="border:none"><div class="paper-card-in">
-  <h2><a href="/series/赫赫指北" target="_blank">赫赫指北｜</a></h2>
-    <div  class="des" style="margin:0em auto 1em;font-size:1.1em">用最少的字數搭建大槩的知識體系</div>
-  <ul>
-{{ range .Site.Taxonomies.series.赫赫指北 }}
-        <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></li>
-    {{ end }}
-    </ul>
-    <h2><a href="/series/推介" target="_blank">推介｜</a></h2>
-    <ul>
-  {{ range .Site.Taxonomies.series.推介 }}
-          <li><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></li>
-      {{ end }}
-      </ul>
-</div></div></div>
-<div class="paper-wrap">
-  <h1>其他作者 More Authors</h1>
-  <span  class="des move">！歡迎踴躍投稿！稿費沒有嘻嘻</span>
-<div class="paper-card recording" style="border:none"><div class="paper-card-in">
-  <div>
+  <div class="discover-wrap latest" style="max-width:50em;border:.5em solid #2b2b2b;border-radius:3em">
+    <h1>其他作者 More Authors</h1>
+    <center><span class="des move">！歡迎踴躍投稿！稿費沒有嘻嘻</span></center>
+  <div class="discover categories">
 {{ $author := slice }}
 {{ range .Site.Taxonomies.author.ByCount }}
 {{ if ne .Page.Title  "柯棋瀚" "柯棋瀚整理" }}
@@ -160,14 +169,15 @@
 {{ end }}
 {{ end }}
 {{ range $author  | shuffle  }}
-        <h2><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title | safeHTML }}</a></h2>
+<ol style="list-style:none">
+        <h2 style="font-size:1.2em"><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title | safeHTML }}</a></h2>
         {{ range .Pages  | shuffle }}
-<li><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></li>
+<li style="margin-top:1em"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></li>
 {{ end }}
+</ol>
 {{ end }}
-</div>
-</div></div></div>
-</div>
+
+</div></div>
 <h1>年度 🔝 of the Year</h1>
 <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
 <div class="discover-wrap" style="max-width:40em">
