@@ -46,7 +46,7 @@
                                 {{- end -}}
                             {{- end -}}
                   </span>
-                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title -}}</a></span>
+                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title | safeHTML -}}</a></span>
                 </div>
                 <div class="archive-info">{{ .Date.Format "2006-01-02" }}　
                   {{- with .Params.subject -}}
