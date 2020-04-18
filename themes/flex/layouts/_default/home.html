@@ -158,7 +158,7 @@
     </ol>
   </div>
 </div>
-  <div class="discover-wrap latest" style="max-width:50em;border:.5em solid #2b2b2b;border-radius:3em">
+  <div class="discover-wrap latest" style="max-width:50em;border:.5em solid #2b2b2b;border-radius:2.5em">
     <h1>其他作者 More Authors</h1>
     <center><span class="des move">！歡迎踴躍投稿！稿費沒有嘻嘻</span></center>
   <div class="discover categories">
@@ -172,7 +172,7 @@
 <ol style="list-style:none">
         <h2 style="font-size:1.2em"><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title | safeHTML }}</a></h2>
         {{ range .Pages  | shuffle }}
-<li style="margin-top:1em"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></li>
+<li style="margin-top:.8em"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></li>
 {{ end }}
 </ol>
 {{ end }}
