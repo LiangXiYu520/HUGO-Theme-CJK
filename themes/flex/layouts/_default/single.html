@@ -101,6 +101,8 @@
       </div>
     {{ end }}
 <div class="Tags  recommend" >
+  <div class="recommend1">
+  <h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據索引重合度加權排序</span></h2>
   {{ $current := . }}
   {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $current.Title }}
   {{ $3relevant := slice }}
@@ -111,10 +113,14 @@
   {{ $10relevant := slice }}
   {{ $13relevant := slice }}
   {{ $recommend := slice }}
-  {{ $1recommend := slice }}
-  {{ $2recommend := slice }}
-  {{ $3recommend := slice }}
-  {{ $4recommend := slice }}
+  {{ $5recommend := slice }}
+  {{ $10recommend := slice }}
+  {{ $20recommend := slice }}
+  {{ $30recommend := slice }}
+  {{ $6to10recommend := slice }}
+  {{ $6to20recommend := slice }}
+  {{ $11to20recommend := slice }}
+  {{ $21to30recommend := slice }}
   {{ range $idx, $article := $articles }}
   {{ $1intersection := len (intersect $article.Params.series $current.Params.series) }}
   {{ $1weighted := mul 4 $1intersection }}
@@ -161,32 +167,75 @@
   {{ range $3relevant }}
        {{ $recommend = $recommend | append . }}
   {{ end }}
-    {{- range first 5 $recommend -}}
-      {{ $1recommend = $1recommend | append . }}
-    {{ end }}
-  {{ range first 20 $recommend | shuffle }}
-  {{ $2recommend = $2recommend | append . }}
-  {{ end }}
-  {{ $3recommend = $2recommend | complement  $1recommend }}
-{{ range first 5 $3recommend }}
-{{ $4recommend = $4recommend | append . }}
-  {{ end }}
-  <div class="recommend1">
-  <h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據索引重合度加權排序</span></h2>
+
+      {{- range shuffle (first 5 $recommend) -}}
+          {{ $5recommend = $5recommend | append . }}
+       {{ end }}
+       {{- range shuffle (first 10 $recommend) -}}
+           {{ $10recommend = $10recommend | append . }}
+        {{ end }}
+      {{ range shuffle (first 20 $recommend)  }}
+         {{ $20recommend = $20recommend | append . }}
+      {{ end }}
+      {{ range shuffle (first 30 $recommend) }}
+         {{ $30recommend = $30recommend | append . }}
+      {{ end }}
+    {{ $6to10recommend = $10recommend | complement  $5recommend | shuffle }}
+    {{ $6to20recommend = $20recommend | complement  $5recommend | shuffle }}
+    {{ $11to20recommend = $20recommend | complement  $10recommend | shuffle }}
+    {{ $21to30recommend = $30recommend | complement  $20recommend | shuffle }}
+  {{ if ge (len $recommend) 21 }}
   <ul>
     <div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">強相關</div>
-    {{- range $1recommend -}}
+    {{- range first 5 $recommend -}}
     <li>
       <a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
     </li>
     {{ end }}
-    <div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">隨機弱相關</div>
-  {{- range $4recommend -}}
+    <div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">隨機次強相關</div>
+    {{- range first 3 $6to20recommend -}}
   <li>
     <a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
   </li>
   {{ end }}
+  <div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">隨機弱相關</div>
+  {{- range first 2  $21to30recommend  -}}
+<li>
+  <a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
+</li>
+{{ end }}
   </ul>
+{{ else if ge (len $recommend) 11 }}
+<ul>
+<div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">強相關</div>
+{{- range first 5 $recommend -}}
+<li>
+  <a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
+</li>
+{{ end }}
+<div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">隨機次強相關</div>
+{{- range first 2 $6to10recommend -}}
+<li>
+<a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
+</li>
+{{ end }}
+<div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">隨機弱相關</div>
+{{- range first 3 $11to20recommend -}}
+<li>
+<a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
+</li>
+{{ end }}
+</ul>
+{{ else if le (len $recommend) 10 }}
+<ul>
+<div class="discover-des" style="margin:0 0 0 -2.5em;text-align:left">強相關</div>
+{{- range first 10 $recommend -}}
+<li>
+  <a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a>
+</li>
+{{ end }}
+</ul>
+  {{ end }}
 </div>
 <div class="recommend1">
   {{ $current := slice }}

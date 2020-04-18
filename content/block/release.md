@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-15
+lastmod: 2020-04-18
 url: /release
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
 menu:
@@ -1445,4 +1445,10 @@ tags 全部換成 series
 
 作者的格式改成和其他索引一樣的 `[" "]`。這樣就支持多個作者。
 
-優化單篇文章推薦樣式。
+優化：單篇文章推薦樣式。
+
+### 4 月 18 日
+
+#### 4.6.07
+
+優化：單篇文章推薦算法。主頁分類推薦算法。現在算是徹底定型了。
