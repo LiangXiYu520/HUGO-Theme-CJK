@@ -19,7 +19,7 @@
                      {{ $author := where .Site.Taxonomies.author "Type" "post" }}
               <h2>系列<span style="color:#d2c600;font-size:.7em"> {{ len $series }}</span></h2>
               {{ range $series.ByCount }}
-              <li><a href="{{ .Page.Permalink }}">{{ .Page.Title | safeHTML  }}</a> {{ .Count }}</li>
+              <li><a href="{{ .Page.Permalink }}">{{ .Page.Title | safeHTML  }} {{ .Count }}</a></li>
       {{ end }}
             </ul>
     <ul>

@@ -4,14 +4,12 @@
     <div class="heading-wrap home home1">
       <h1><span style="letter-spacing:.2em">赫赫文</span>王</h1>
       <br>
-      <div class="des des-home">歡迎來到本站。您看到的每箇細節都經過了苛刻的精心打磨，從
-        <a href="/149" target="_blank">版面樣式</a> 到 <a href="/224" target="_blank">統計</a>，再到導航與
-        <a href="/223" target="_blank">文章推薦</a>，我們希望把用戶體驗做到極致（手機端除外）</div>
+      <div class="des des-home">歡迎來到本站。您看到的每箇細節都經過了苛刻的精心打磨：
+        <a href="/149" target="_blank">版面樣式</a>；<a href="/224" target="_blank">統計</a>；索引導航；<a href="/223" target="_blank">文章推薦</a>；定時生成實現半動態化</div>
       <div class="subscribe-wrap des1">
         <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
 　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
       </div>
-
       {{- $length := len .Site.RegularPages }}
       {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}
     <div class="des1" style="margin:-2em auto 2em">

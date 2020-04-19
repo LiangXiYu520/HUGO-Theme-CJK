@@ -4,6 +4,7 @@
   --shallowwhite: #ebebeb;
   --white: #d5d5d5;
   --shallowgray: #b6b5b5;
+  --verticala: #d5d5d5;
   --gray: #8c8c8c;
   --darkgray: #616161;
   --yellow: #ffda56;
@@ -25,6 +26,7 @@
     --black: #d5d5d5;
     --shallowwhite: #373737;
     --white: #2a2a2a;
+    --verticala:#8c8c8c;
     --shallowgray: #4e4d4d;
     --gray: #8c8c8c;
     --darkgray: #a09f9f;
@@ -105,12 +107,11 @@ hr{
 a{
   color:var(--black);
   text-decoration:none;
-border-bottom: .15em solid var(--shallowbrown);
--webkit-transition: .4s;
-transition: .4s}
+box-shadow: inset 0 -0.3em var(--shallowgray);
+-webkit-transition: .2s;
+transition: .2s}
 a:hover{
-  border:none ;
-  color:var(--brown)}
+  box-shadow: none}
 strong{
   font-family: var(--sans)}
 em{
@@ -143,7 +144,7 @@ listen{
   font-size: 1em;
     margin:  0 7px}
 listen a{
-  border: none}
+  box-shadow: none}
 listen:hover{
   border: 1px var(--brown) solid;
   color: var(--brown)}
@@ -151,7 +152,7 @@ listen:hover{
     padding: .5em .2em .3em;
         margin: .5em 0 }
 .vertical  listen a{
-  border: none}
+  box-shadow: none}
 date{
   margin: 0  .5em ;
   padding: .3em .7em .2em;
@@ -192,11 +193,11 @@ margin-left:-2em;
 .vertical a{
   color:var(--black);
   text-decoration:none;
-border-left: .15em solid var(--shallowbrown) ;
-border-bottom: none}
+box-shadow: inset  -0.6em  0 var(--verticala);
+}
 .vertical a:hover{
-  border:none ;
-  color:var(--brown)}
+box-shadow:none
+  }
 .vertical v{
   background-image: url(/v.png);
   background-repeat: repeat-y;
@@ -257,7 +258,10 @@ line-height: 1.6}
        line-height: 1.5
   }
   .toc-item ul a{
-       border: none
+       box-shadow:  none
+     }
+     .toc-item ul a:hover{
+    color:var(--brown)
      }
   .toc-item ul li ul {
     font-size: 1em;
@@ -296,7 +300,10 @@ h6{
   color:var(--gray);
   margin: .5em  1em auto 1em}
 .des a{
-  border: none}
+  box-shadow:  none}
+  .des a:hover{
+      color:var(--brown);
+  }
   .des-home{
     margin-top:-3em;
     color:var(--black)
@@ -317,8 +324,12 @@ line-height: 1.6
     }
 .des1 a{
      font-weight: bold;
+     box-shadow: none;
      margin-left:.4em;
      letter-spacing: .1em}
+.des1 a:hover{
+  color:var(--brown)
+}
 .des1-cate a{
   margin-left:.4em;
    font-weight: bold;
@@ -478,10 +489,10 @@ background-color: var(--bg);
 border-radius: 2.5rem}
 .Tags a{
   text-decoration: none;
-  border: none;
+  box-shadow:none;
   color:black}
 .Tags a:hover{
- color:var(--brown)}
+ color:black}
 .Tags-item {
   margin: 2em 0 ;
   padding: .2em;
@@ -509,8 +520,11 @@ text-align:left;
 column-count:4
 }
 .cate a{
-  border:none;
+  box-shadow: none;
   font-weight: normal}
+  .cate a:hover{
+  color:var(--brown)
+  }
 .cate-wrap{
   font-size: 1em;
 list-style:none}
@@ -574,7 +588,7 @@ margin-bottom: .1em}
       line-height: 1.6}
 .col a{
   font-size: .9em;
-  border: none;
+box-shadow:none;
     color: var(--bg)}
 .col a:hover{
   color:var(--darkyellow)
@@ -588,7 +602,7 @@ margin-bottom: .1em}
   line-height: 1.6;
 max-width: 27em}
 .Footer a{
-  border: none;
+box-shadow:none;
   color: var(--bg)}
 .Footer li{
   text-align: left;
@@ -627,7 +641,7 @@ background-color: var(--bg);
     margin: 1.5em auto;
 line-height: 1.4;
 color:var(--darkgray)}
-.archive-wrap a{ border:none;
+.archive-wrap a{ box-shadow:none;
 color:var(--darkgray)}
 .archive-wrap  a:hover{
 color:var(--brown)}
@@ -652,9 +666,10 @@ text-align:left}
   color:var(--darkgray);
   font-family: var(--codesans)}
 .archive-info a{
+  box-shadow:none;
     color:var(--darkgray)}
 .archive-info a:hover{
-  border:none;
+  box-shadow:none;
   color:var(--brown)}
 .archive-info-author{
 margin: auto}
@@ -673,7 +688,7 @@ margin: auto}
   font-size: .9em;
   line-height: 1.6}
 .comment p a{
-  border:none
+color:var(--gray);
 }
 .recommend{
   line-height: 1.4;
@@ -686,8 +701,11 @@ margin: auto}
   font-size: 1.25em;
   margin: .5em auto}
 .recommend  a{
-border:none;
+box-shadow: none;
 color:var(--black)}
+.recommend  a:hover{
+  color:var(--brown)
+}
 .recommend1{
   margin: 0 auto;
   max-width:19em}
@@ -740,10 +758,12 @@ justify-content: space-between;
 flex-flow: row wrap;
 margin:2em 1em 0 1em}
 .pagi a{
-  border: none;
+  box-shadow: none;
   font-weight: bold}
+.pagi a:hover  {color: var(--brown)}
 .pagi:hover{
-      padding: 0px 8px}
+      padding: 0px 8px;
+    }
 .pagination-wrap{
     text-align: center}
 .pagination {
@@ -759,10 +779,11 @@ margin:2em 1em 0 1em}
       padding: .5em .7em .4em;
       position: relative;
       border-radius: .7em;
+      box-shadow: none;
       border: 2px solid var(--black);
       text-decoration: none}
   .pagination a:hover{
-    border: 2px solid white}
+    border: 2px solid var(--bg)}
   .pagination   .active a{
       color: var(--shallowbrown);
       cursor: default;
@@ -926,7 +947,10 @@ max-width: 28em}
   font-family: var(--codeserif);
   margin-top:.5em}
 .discover a{
-  border:none}
+  border:none;
+box-shadow:none;}
+.discover a:hover{
+    color:var(--brown)}
 .gallery{
 margin: 0 2em 2em;
   display: -webkit-box;
@@ -954,11 +978,14 @@ margin: 0 2em 2em;
 .paper-wrap {
   margin: 0 auto
 }
+.paper-wrap a{
+  box-shadow: none;
+}
 .paper-wrap a:hover{
  color:var(--black)
 }
 .paper-wrap h1 a{
-  border:none
+box-shadow:none;
 }
 .paper-wrap h1 a:hover{
   color:var(--brown)
@@ -1030,17 +1057,18 @@ margin:0 .5em 5em}
   width:16em;
   height:25em}
 .paper-card p listen a{
- border:none}
+ box-shadow:none}
 .paper-card p a{
-border-bottom: .15em solid var(--shallowbrown)}
+  box-shadow: inset 0 -0.3em var(--shallowgray);
+      }
 .paper-card a:hover{
-  border:none ;
+box-shadow:none;
   color:var(--brown)}
 .paper-card h2{text-align: center}
 .paper-card a{
   border:none}
 .svg a{
-  border:none}
+  box-shadow:none}
 .svg a svg{  width:1.1em}
 .svg a svg:hover{
   transition: .3s;

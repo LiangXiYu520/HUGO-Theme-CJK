@@ -15,7 +15,6 @@
     {{ end }}
     {{ end }}
     </div>
-
     <div class="des1">
     {{- with .Params.author -}}
         　<span class="des2">作者</span>
@@ -76,19 +75,16 @@
     <main>
 {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
 <div class="vertical-wrap">
-
 {{ if .TableOfContents }}
 <aside class="toc">
 <li class="toc-item">{{ .TableOfContents }}</li>
 </aside>
 {{ end }}
-
     <article class="vertical">
     {{ .Content }}
     </article>
   </div>
       {{ else }}
-
     {{ if .TableOfContents }}
       <aside class="toc sticky">
       <li class="toc-item">{{ .TableOfContents }}</li>

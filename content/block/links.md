@@ -356,3 +356,7 @@ https://sscaffold-css.com/
 https://www.zhangxinxu.com/wordpress/2018/01/html5-details-summary-no-js-ux/ 无js實現下拉菜單
 
 https://github.com/robsheldon/sscaffold-css 標準化css
+
+https://www.expatistan.com/cost-of-living/country/ranking 全球城市生活费
+
+https://dfile.app/ 基於 IPFS 的文件分享工具

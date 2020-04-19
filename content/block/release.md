@@ -1482,3 +1482,18 @@ html5 語意標籤改造。
 
 根據這個，直接用 netlify 的定時生成。
 https://www.voorhoede.nl/en/blog/scheduling-netlify-deploys-with-github-actions/#top
+
+#### 4.6.12
+
+換超連結樣式。
+
+修復上一版 bug：
+
+```
+schedule:
+ - cron: '* */4 * * *'
+```
+
+本來想的 4 小時一次，結果變成了8分鐘一次。幸好發現得早。可以用這個網址 https://crontab.guru/ 來測試。
+
+Netlify 每月 300 分鐘，大槩可以 生成 250 次，去除自己的 40 次，每天 7 次，平均每 3.5 小時一次。
