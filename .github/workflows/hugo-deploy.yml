@@ -1,4 +1,4 @@
-name: Deploy Hugo Site to Github Pages on Master Branch
+name: github pages
 
 on:
   push:
@@ -6,12 +6,13 @@ on:
       - master
 
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1  # v2 does not have submodules option now
-       # with:
-       #   submodules: true
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -25,9 +26,5 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
-          external_repository: kujihhoe/blogpublic.github.io # Pages 远程仓库 
-          publish_dir: ""
-          keep_files: false # remove existing files
-          publish_branch: master  # deploying branch
-          commit_message: ${{ github.event.head_commit.message }}
+          github_token: ${{ secrets.PICKMAN_GITHUB_TOKEN }}
+          publish_dir: ./public
