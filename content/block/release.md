@@ -1480,4 +1480,6 @@ html5 語意標籤改造。
 
 #### 4.6.11
 
-test1
+根據這個，直接用 netlify 的定時生成。
+
+https://www.voorhoede.nl/en/blog/scheduling-netlify-deploys-with-github-actions/#top
