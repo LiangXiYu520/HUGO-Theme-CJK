@@ -335,3 +335,22 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 [徐天樂箇人博客](https://blog.xtlsoft.top)　就讀于南通市通州區實驗中學，創客工作室主幹成員〔2017 秊的介紹〕
 
 [I BCL.](https://ibcl.us)　〔〇〇後無線電愛好者，十分淸奇〕
+
+# 工具
+
+draw.io 繪製思維導圖
+
+https://markmap.js.org/repl/ markdown 思維導圖
+
+flickr.com/photos/biodivlibrary/with/49787612338/ 動植物插圖
+
+https://jeffhuang.com/designed_to_last/ 製作永恆的網頁
+
+https://usememo.com/ 筆記軟件
+
+
+https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/
+
+https://sscaffold-css.com/
+
+https://www.zhangxinxu.com/wordpress/2018/01/html5-details-summary-no-js-ux/ 无js實現下拉菜單

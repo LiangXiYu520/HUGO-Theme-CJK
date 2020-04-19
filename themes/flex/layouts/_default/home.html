@@ -1,8 +1,7 @@
 {{ define "main" }}
 <body>
-  <main>
-    <div class="home">
-      <div class="home-cover">
+    <main class="home">
+      <section class="home-cover">
     <div class="heading-wrap home home1">
       <h1><span style="letter-spacing:.2em">赫赫文</span>王</h1>
       <br>
@@ -21,7 +20,8 @@
   </div>
       </div>
       {{ partial "tree.html" . | markdownify }}
-    </div>
+    </section>
+    <section>
   <div class="cover">
   <div class="in"> </div>
   <div class="img"><img src="/logo.webp" width="100px" height="217px"></div>
@@ -53,6 +53,8 @@
     </div>
   </div>
   <div class="des" style="margin-bottom:7em">以及，這箇網站。</div>
+</section>
+<section>
   <div class="heading-wrap home" style="margin:0 auto 8em">
     <h1>
       <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank"><ruby><rb>网誌</rb><rt style="letter-spacing:0">blog</rt></ruby></a>»</span><span style="letter-spacing:.2em">發</span>現
@@ -196,6 +198,12 @@
 </ol>
 </div>
 </div>
+</section>
+
+
+
+
+<section>
 <div class="heading-wrap home" style="margin:10em 0 3em">
   <h1>
     <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
@@ -239,8 +247,8 @@
           {{ end }}
 </div></div></div>
 </div>
-
-
+</section>
+<section>
 <div class="heading-wrap home" style="margin:6em 0 3em">
   <h1>
     <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><a href="https://wiki.kqh.me" target="\_blank"><span style="letter-spacing:.2em">維</span>基</a>
@@ -255,7 +263,7 @@
 <div>【草稿】</div>
 </div></div></div>
 </div>
-</div>
+</section>
   </main>
 </body>
 <footer>

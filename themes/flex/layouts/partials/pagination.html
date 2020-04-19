@@ -1,11 +1,9 @@
 <div class="pagination-wrap">
-  <nav class="pagination">
-  <div>
+<nav class="pagination">
     {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index 50) }}
     {{ range $paginator.Pagers }}
     <span {{ if eq . $paginator }} class="active" {{end}}>
       <a href="{{ .URL }}">{{ .PageNumber }}</a>
     </span>{{ end }}
-  </div>
   </nav>
 </div>

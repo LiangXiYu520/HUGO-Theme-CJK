@@ -1,10 +1,9 @@
 {{ define "main" }}
 <body>
   <main>
-  <article>
     <div class="heading-wrap">
     {{ partial "heading.html" . }}
-    <div class="tag">
+    <section class="tag">
     <div class="des1">
     <time datetime="{{ .Date.Format "2006-01-02" }}">
   {{ .Date.Format "2006-01-02" }}
@@ -64,8 +63,8 @@
     <span class="des2">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
     {{- end -}}
 </div>
-</div>
-    <div class="pagi-wrap">
+</section>
+    <nav class="pagi-wrap">
     <div class="pagi">
       {{ with .PrevInSection }}
         <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title | safeHTML  }}</a></span>
@@ -74,33 +73,33 @@
           <span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title  | safeHTML }}</a> →</span>
     {{- end }}
     </div>
-  </div>
+  </nav>
     </div>
 {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
 <div class="vertical-wrap">
-  <div class="toc">
+
 {{ if .TableOfContents }}
+<aside class="toc">
 <li class="toc-item">{{ .TableOfContents }}</li>
+</aside>
 {{ end }}
-</div>
-    <div class="vertical">
+
+    <article class="vertical">
     {{ .Content }}
-    </div>
+    </article>
   </div>
       {{ else }}
-  <div class="content">
-    {{ if .TableOfContents }}
-      <div class="toc sticky">
-      <li class="toc-item">{{ .TableOfContents }}</li>
-    </div >
-    {{ end }}
-         <div class="vertical-false">
-            {{ .Content }}
-          </div>
 
-      </div>
+    {{ if .TableOfContents }}
+      <aside class="toc sticky">
+      <li class="toc-item">{{ .TableOfContents }}</li>
+    </aside>
     {{ end }}
-<div class="Tags  recommend" >
+         <article class="vertical-false">
+            {{ .Content }}
+          </article>
+    {{ end }}
+<section class="Tags  recommend" >
   <div class="recommend1">
   <h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據索引重合度加權排序</span></h2>
   {{ $current := . }}
@@ -266,13 +265,12 @@
     <a href="{{ .RelPermalink }}">{{- .Title  | safeHTML -}}</a>
 {{- end }}
 </div>
-</div>
+</section>
 
 <div class="u-wrapper">
   <div class="u-padding">
 {{ partial "comments.html" . }}
 </div></div>
-  </article>
 </main>
 </body>
     {{ partial "footer.html" . }}

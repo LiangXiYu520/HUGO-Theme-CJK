@@ -1,16 +1,16 @@
 {{ define "main" }}
 <body>
   <main>
-  <article>
     <div class="heading-wrap">
       {{ partialCached "banner.html" . }}
 <header class="Heading">
 <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/zanfu">赫赫讚府</a>»</span><h1 class="Heading-title taxo" style="font-size:4em">{{- .Title  | safeHTML -}}</h1>
-</header>
+
 {{ if .Description }}
 <div class="des">{{ .Params.Description | safeHTML }}</div>
 {{ end }}
-    <div class="des1">
+</header>
+    <section class="des1">
     <time datetime="{{ .Date.Format "2006-01-02" }}">
     　柯棋瀚整理　{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} >
     {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") -}}</time>　<span>{{- .WordCount -}} 字</span>
@@ -26,8 +26,8 @@
   </svg></a></span>
   {{ end }}
   {{ end }}
-    </div>
-    <div class="pagi-wrap">
+    </section>
+    <nav class="pagi-wrap">
     <div class="pagi">
       {{ with .PrevInSection }}
         <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title | safeHTML  }}</a></span>
@@ -35,23 +35,21 @@
     {{ with .NextInSection }}
           　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title | safeHTML  }}</a> →</span>
     {{- end }}
-    </div></div>
+    </div></nav>
     </div>
-    <div class="content">
         {{ if .TableOfContents }}
-          <div class="toc sticky">
+          <aside class="toc sticky">
           <li class="toc-item">{{ .TableOfContents }}</li>
+</aside>
         {{ end }}
-        </div >
-           <div class="vertical-false">
+
+           <article class="vertical-false">
               {{ .Content }}
-            </div>
-        </div>
+            </article>
     <div class="u-wrapper">
       <div class="u-padding">
 {{ partial "comments.html" . }}
 </div></div>
-  </article>
 </main>
 </body>
 {{ partial "footer-xuekan.html" . }}

@@ -3,15 +3,14 @@
   <main>
   <div class="heading-wrap">
   {{ partial "heading.html" . }}
-  {{ .Content }}
   </div>
   <div class="u-wrapper">
     <div class="u-padding">
-  <div class="cate">
+  <section class="cate">
     {{ range .Data.Terms.Alphabetical }}
       <li class="cate-wrap"><a class="Tags-link u-clickable" href="{{ .Page.RelPermalink }}">{{ .Page.Title | safeHTML  }} {{ .Count }}</a></li>
     {{ end }}
-  </div>
+  </section>
   </div>
   </div>
 </main>

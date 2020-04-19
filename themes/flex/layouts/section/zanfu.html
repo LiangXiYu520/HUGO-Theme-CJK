@@ -5,17 +5,19 @@
   {{ partialCached "banner.html" . }}
   <header class="Heading">
       <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»</span><h1 class="Heading-title taxo" style="font-size:4em">赫赫讚府</h1>
-  </header>
+
   {{- $paginator := .Paginate (where .Pages.ByWeight "Type" "zanfu") (index 50) }}
   {{- $length := sub (len .Data.Pages) 1 }}
   {{ $leng := -1 }}
   {{ range  first 1 $paginator.Pages }}{{- with $des := index (.Site.Data.taxo ) "赫赫讚府" -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}{{ end }}
-<div class="des1">
+  </header>
+<section class="des1">
 凡 {{ $length  }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
-　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">赫赫讚府</span><span class="rss2">RSS</span></a></div>
+　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">赫赫讚府</span><span class="rss2">RSS</span></a>
+</section>
 
 </div>
-        <div class="archive-wrapper" style="margin:2em auto 8em">
+        <section class="archive-wrapper" style="margin:2em auto 8em">
     {{ range $paginator.Pages }}
               <div class="archive-wrap">
                 <div class="archive-left" stlye="font-size:1.2em">
@@ -27,7 +29,7 @@
           </span>
           </div>
     </div>{{ end }}
-   </div>
+   </section>
  </main>
  </body>
  {{ partial "footer-xuekan.html" . }}

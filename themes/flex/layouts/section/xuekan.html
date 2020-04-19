@@ -9,12 +9,12 @@
   {{- $xuekan := where .Site.Taxonomies.categories.目錄 "Type" "xuekan" }}
   {{- $length := len $xuekan  }}
   {{ $leng2 := sub $leng1 $length }}
-<div class="des1">
+<section class="des1">
 凡 {{ $length }} 期　{{ $leng2 }} 篇　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}　
 <a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">春秋學刊</span><span class="rss2">RSS</span></a>
-　</div>
+　</section>
 </div>
-<div class="archive-wrapper" style="margin:2em auto 8em">
+<section class="archive-wrapper" style="margin:2em auto 8em">
 {{ $leng := add $length 1 }}
     {{ range $xuekan  }}
               <div class="archive-wrap">
@@ -26,12 +26,11 @@
             <a href="{{ .Page.RelPermalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></span>
           </div>
     </div>{{ end }}
-   </div>
-       <div class="archive-wrapper" style="margin:-5em auto 0;border:none">
+   </section>
+       <section class="archive-wrapper" style="margin:-5em auto 0;border:none">
          {{ partial "invitation.html" .  | markdownify }}
-         </div>
-
-       <div class="archive-wrapper" style="font-size:.9em;margin:4em auto;padding-bottom:2em">
+         </section>
+       <section class="archive-wrapper" style="font-size:.9em;margin:4em auto;padding-bottom:2em">
 <h1 style="margin-bottom:-.7em">分類<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.subject "Type" "xuekan") }}</span></h1>
          <div class="cate">
            {{ $subject := where .Site.Taxonomies.subject "Type" "xuekan" }}
@@ -39,16 +38,16 @@
                  <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title | safeHTML }} {{ .Count }}</a></li>
            {{ end }}
            </div>
-           </div>
-                 <div class="archive-wrapper" style="font-size:.9em;margin:8em auto 4em;padding-bottom:2em">
+           </section>
+                 <section class="archive-wrapper" style="font-size:.9em;margin:8em auto 4em;padding-bottom:2em">
               <h1 style="margin-bottom:-.7em">作者<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.auth "Type" "xuekan") }}</span></h1>
            <div class="cate">
            {{ range (where .Site.Taxonomies.auth "Type" "xuekan") }}
                    <li class="cate-wrap"><a href="{{ .Page.Permalink }}">{{ .Page.Title | safeHTML }} {{ .Count }}</a></li>
              {{ end }}
              </div>
-         </div>
- <div class="archive-wrapper" style="font-size:.9em;margin:8em auto 4em">
+         </section>
+ <section class="archive-wrapper" style="font-size:.9em;margin:8em auto 4em">
      <h2>編務</h2>
    {{ range (where .Site.Taxonomies.categories.編務 "Type" "xuekan") }}
                <div class="archive-wrap">
@@ -59,11 +58,7 @@
              <a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML }}</a></span>
            </div>
      </div>{{ end }}
-    </div>
-
-
-
-
+    </section>
        </main>
        </body>
        {{ partial "footer-xuekan.html" . }}

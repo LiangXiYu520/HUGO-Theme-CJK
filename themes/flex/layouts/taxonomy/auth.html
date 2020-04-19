@@ -19,16 +19,17 @@
   </header>
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
-<div class="des1">
+<section class="des1">
 凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">{{- .Title -}}</span><span class="rss2">RSS</span></a>
-</div></div>
+</section>
+</div>
 {{ $count0 := len .Pages }}
 {{ $count4 := add $count0 1 }}
 {{ range .Pages.GroupByDate "2006" }}
   {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
    {{ $leng := len .Pages }}
-<div class="year-wrap">
+<section class="year-wrap">
        <div class="year"><h2>{{ .Key }}<span class="des3">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2></div>
         <div class="archive-wrapper">
         {{- range .Pages -}}
@@ -70,7 +71,7 @@
     </div>
     {{ end }}
   </div>
-    </div>
+    </section>
     {{ end }}
 </main>
 </body>

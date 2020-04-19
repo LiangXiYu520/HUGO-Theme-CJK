@@ -1,22 +1,22 @@
 {{ define "main" }}
 <body>
   <main>
-    <article>
       <div class="heading-wrap">
         {{ partialCached "banner.html" . }}
 <header class="Heading">
   <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/gallery">作品</a>»</span><h1 class="Heading-title taxo" style="font-size:4em">{{- .Title | safeHTML  -}}</h1>
-  </header>
   {{ if .Description }}
   <div class="des">{{ .Params.Description | safeHTML }}</div>
   {{ end }}
+  </header>
       </div>
+      <article>
       {{ .Content }}
+      </article>
       <div class="u-wrapper">
         <div class="u-padding">
   {{ partial "comments.html" . }}
   </div></div>
-    </article>
   </main>
   </body>
   {{ partial "footer-xuekan.html" . }}

@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-18
+lastmod: 2020-04-19
 url: /release
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
 menu:
@@ -1463,3 +1463,17 @@ tags 全部換成 series
 增加自動暗黑模式。
 
 樣式表統一顏色、字體。
+
+啟用暗黑模式的兩種方法：
+
+https://github.com/ColinEspinas/darken
+
+https://kevq.uk/how-to-add-css-dark-mode-to-a-website/
+
+Firefox 需要在 `about:config` 中啟用 `ui.systemUsesDarkTheme`
+
+### 4 月 19 日
+
+#### 4.6.10
+
+html5 語意標籤改造。
