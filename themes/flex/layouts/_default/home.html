@@ -1,5 +1,4 @@
 {{ define "main" }}
-<body>
     <main class="home">
       <section class="home-cover">
     <div class="heading-wrap home home1">
@@ -265,14 +264,5 @@
 </div>
 </section>
   </main>
-</body>
-<footer>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451819-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-108451819-1');
-  </script>
-  </footer>
+{{ partial "footer-xuekan.html" . }}
 {{ end }}

@@ -1,10 +1,10 @@
 {{ define "main" }}
-<body>
-  <main>
-      <div class="heading-wrap">
+
+
+      <header class="heading-wrap">
         {{ partialCached "banner.html" . }}
         <div class="Heading">
-          <header>
+
              <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/xuekan">春秋學刊</a>»
                {{- with .Params.subject -}}
                    {{- range . -}}
@@ -15,7 +15,7 @@
                    {{- end -}}
                {{- end -}}
                </span><h1 class="Heading-title taxo" style="font-size:4em">{{- .Title  | safeHTML -}}</h1>
-               </header>
+               
              <section class="tag" style="max-width:20em">
              <div class="des1">
              <time datetime="{{ .Date.Format "2006-01-02" }}">
@@ -44,7 +44,8 @@
            </div>
          </section>
         </div>
-      </div>
+      </header>
+      <main>
           <article class="vertical-false">
       {{ .Content }}
          </article>
@@ -52,8 +53,6 @@
            <div class="u-padding">
   {{ partial "comments.html" . }}
   </div></div>
-
     </main>
-    </body>
     {{ partial "footer-xuekan.html" . }}
   {{ end }}

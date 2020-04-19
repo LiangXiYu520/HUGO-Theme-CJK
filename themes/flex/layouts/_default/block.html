@@ -1,10 +1,9 @@
 {{ define "main" }}
-<body>
-  <main>
       <div class="heading-wrap">
       {{ partial "heading.html" . }}
       <div class="archive-info" style="font-size:1em;text-align:center">修改 <time>{{ .Lastmod.Format "2006-01-02" }}</time></div>
       </div>
+      <main>
           {{ if .TableOfContents }}
             <aside class="toc sticky">
             <li class="toc-item">{{ .TableOfContents }}</li>
@@ -17,8 +16,6 @@
            <div class="u-padding">
   {{ partial "comments.html" . }}
   </div></div>
-
       </main>
-      </body>
           {{ partial "footer.html" . }}
     {{ end }}

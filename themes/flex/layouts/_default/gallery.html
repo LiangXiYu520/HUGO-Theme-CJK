@@ -1,15 +1,13 @@
 {{ define "main" }}
-<body>
-  <main>
-      <div class="heading-wrap">
+
+      <header class="heading-wrap Heading">
         {{ partialCached "banner.html" . }}
-<header class="Heading">
   <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/gallery">作品</a>»</span><h1 class="Heading-title taxo" style="font-size:4em">{{- .Title | safeHTML  -}}</h1>
   {{ if .Description }}
-  <div class="des">{{ .Params.Description | safeHTML }}</div>
+  <section class="des">{{ .Params.Description | safeHTML }}</section>
   {{ end }}
   </header>
-      </div>
+      <main>
       <article>
       {{ .Content }}
       </article>
@@ -18,6 +16,5 @@
   {{ partial "comments.html" . }}
   </div></div>
   </main>
-  </body>
   {{ partial "footer-xuekan.html" . }}
 {{ end }}

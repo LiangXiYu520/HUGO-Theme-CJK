@@ -1,6 +1,4 @@
 {{ define "main" }}
-<body>
-  <main>
     <div class="heading-wrap">
     {{ partial "heading.html" . }}
     <section class="tag">
@@ -75,6 +73,7 @@
     </div>
   </nav>
     </div>
+    <main>
 {{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
 <div class="vertical-wrap">
 
@@ -272,6 +271,5 @@
 {{ partial "comments.html" . }}
 </div></div>
 </main>
-</body>
     {{ partial "footer.html" . }}
 {{ end }}

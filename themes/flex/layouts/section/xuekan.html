@@ -1,6 +1,4 @@
 {{ define "main" }}
-<body>
-  <main>
 <div class="heading-wrap">
   <header class="Heading">
       <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»</span><h1 class="Heading-title taxo" style="font-size:4em">春秋學刊</h1>
@@ -14,6 +12,7 @@
 <a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">春秋學刊</span><span class="rss2">RSS</span></a>
 　</section>
 </div>
+<main>
 <section class="archive-wrapper" style="margin:2em auto 8em">
 {{ $leng := add $length 1 }}
     {{ range $xuekan  }}
@@ -60,6 +59,5 @@
      </div>{{ end }}
     </section>
        </main>
-       </body>
        {{ partial "footer-xuekan.html" . }}
 {{ end }}

@@ -1,6 +1,7 @@
 :root{
   --bg: #fffae8;
   --black: #2b2b2b;
+  --shallowwhite: #ebebeb;
   --white: #d5d5d5;
   --shallowgray: #b6b5b5;
   --gray: #8c8c8c;
@@ -22,6 +23,7 @@
   :root{
     --bg: black;
     --black: #d5d5d5;
+    --shallowwhite: #373737;
     --white: #2a2a2a;
     --shallowgray: #4e4d4d;
     --gray: #8c8c8c;
@@ -448,7 +450,7 @@ border:none
   color: inherit}
 .tag{
   text-align: center;
-  background:var(--white);
+  background:var(--shallowwhite);
   padding:.8em .5em 1em;
   margin: 2em auto 0;
   max-width:28em;

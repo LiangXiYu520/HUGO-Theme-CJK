@@ -1,6 +1,4 @@
 {{ define "main" }}
-<body>
-  <main>
 <div class="heading-wrap">
   <header class="Heading">
     {{ $termName := .Data.Singular }}
@@ -23,6 +21,7 @@
 凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">{{- .Title -}}</span><span class="rss2">RSS</span></a>
 </section></div>
+  <main>
 {{ $count0 := len .Pages }}
 {{ $count4 := add $count0 1 }}
 {{ range .Pages.GroupByDate "2006" }}
@@ -65,6 +64,5 @@
     </section>
     {{ end }}
 </main>
-</body>
     {{ partial "footer-xuekan.html" . }}
 {{ end }}

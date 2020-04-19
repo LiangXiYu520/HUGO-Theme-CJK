@@ -1,6 +1,4 @@
 {{ define "main" }}
-<body>
-  <main>
 <div class="heading-wrap">
   {{ partialCached "banner.html" . }}
   <header class="Heading">
@@ -13,6 +11,7 @@
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">网誌</span><span class="rss2">RSS</span></a>
 </section>
 </div>
+  <main>
 {{- $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Type" "post") (index 50) }}
   {{ $count1 := add $length 1 }}
   {{ $count0 := $paginator.PageNumber }}
@@ -84,6 +83,5 @@
     <br>
 {{ partial "pagination.html" . }}
 </main>
-</body>
     {{ partial "footer.html" . }}
 {{ end }}
