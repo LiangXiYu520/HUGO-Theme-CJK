@@ -11,9 +11,9 @@
 {{ end }}
 </header>
     <section class="des1">
-    <time datetime="{{ .Date.Format "2006-01-02" }}">
-    　柯棋瀚整理　{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} >
-    {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") -}}</time>　<span>{{- .WordCount -}} 字</span>
+    <span datetime="{{ .Date.Format "2006-01-02" }}">
+    　柯棋瀚整理　<time>{{ .Date.Format "2006-01-02" }}</time> >
+    {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") -}}</span>　<span>{{- .WordCount -}} 字</span>
 {{- if .Params.contentCopyright -}}
 　{{ .Params.contentCopyright | safeHTML }}
 {{- else -}}

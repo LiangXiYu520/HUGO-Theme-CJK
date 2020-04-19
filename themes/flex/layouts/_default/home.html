@@ -65,7 +65,7 @@
 <div class="discover categories">
   {{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
   <ol style="margin:1em auto">
-  <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>　
+  <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
   <span class="des2 home">{{ .Params.description | safeHTML }}</span>
 </ol>
@@ -242,7 +242,7 @@
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
           {{ range first 5 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
                     <div >
-                      <span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
+                      <time class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</time>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
                     </div>
           {{ end }}
 </div></div></div>

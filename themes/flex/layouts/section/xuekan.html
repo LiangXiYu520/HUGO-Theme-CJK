@@ -22,7 +22,7 @@
                 {{ $leng = sub $leng 1  }}{{ $leng }}　</span>
                 <div class="archive-right">
           <span class="archive-title" style="margin-left:0">
-            <span class="archive-info">{{ .Page.Date.Format "2006-01-02" }}　</span>
+            <time class="archive-info">{{ .Page.Date.Format "2006-01-02" }}</time>　
             <a href="{{ .Page.RelPermalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></span>
           </div>
     </div>{{ end }}
@@ -54,7 +54,7 @@
 
                  <div class="archive-right">
            <span class="archive-title" style="margin-left:0">
-             <span class="archive-info">{{ .Page.Date.Format "2006-01-02" }}　</span>
+             <time class="archive-info">{{ .Page.Date.Format "2006-01-02" }}</time>　
              <a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML }}</a></span>
            </div>
      </div>{{ end }}
