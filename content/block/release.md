@@ -1477,3 +1477,5 @@ Firefox 需要在 `about:config` 中啟用 `ui.systemUsesDarkTheme`
 #### 4.6.10
 
 html5 語意標籤改造。
+
+#### 4.6.11
