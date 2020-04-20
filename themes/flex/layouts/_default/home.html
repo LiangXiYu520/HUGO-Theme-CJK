@@ -14,6 +14,7 @@
       {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}
     <div class="des1" style="margin:-2em auto 2em">
     凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Site.RegularPages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
+<br>本站已運行 {{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }} 日
   </div>
       </div>
       {{ partial "tree.html" . | markdownify }}
@@ -28,7 +29,7 @@
 {{ with $all | shuffle }}
 {{ range first 1 . }}
 {{ $1all := split . "——" }}
-<div class="des" style="margin-bottom:1em;color:var(--shallowgray)">—— 整 點 更 新 ——</div>
+<div class="des1" style="margin-bottom:2em;color:var(--darkyellow)">——— Timestamp {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC ———</div>
 <div class="quote">『</div><div class="sentence1">{{- index $1all 0 -}}</div>
 <div class="sentence2">——{{- index $1all 1 | safeHTML -}}</div>
 {{ end }}
