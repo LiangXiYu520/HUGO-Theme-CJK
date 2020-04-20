@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-19
+lastmod: 2020-04-20
 url: /release
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
 menu:
@@ -1493,3 +1493,7 @@ html5 語意標籤改造。
 #### 4.6.13
 
 換成了用 actions 來生成。經過觀察，現在完全成功了，每小時生成一次。
+
+#### 4.6.14
+
+加入名言整點更新。包括了尙書、逸周書、墨子、論語、孟子、繁露有關民的。

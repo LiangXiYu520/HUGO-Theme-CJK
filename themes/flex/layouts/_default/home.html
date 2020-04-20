@@ -5,7 +5,7 @@
       <h1><span style="letter-spacing:.2em">赫赫文</span>王</h1>
       <br>
       <div class="des des-home">歡迎來到本站。您看到的每箇細節都經過了苛刻的精心打磨：
-        <a href="/149" target="_blank">版面樣式</a>；<a href="/224" target="_blank">統計</a>；索引導航；<a href="/223" target="_blank">文章推薦</a>；每小時生成一次，實現半動態化</div>
+        <a href="/149" target="_blank">版面樣式</a>；<a href="/224" target="_blank">統計</a>；索引導航；<a href="/223" target="_blank">文章推薦</a>；<a href="226" target="_blank">每小時生成一次，實現半動態化</a></div>
       <div class="subscribe-wrap des1">
         <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
 　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
@@ -18,6 +18,22 @@
       </div>
       {{ partial "tree.html" . | markdownify }}
     </section>
+<section class="sentence">
+{{ $all := slice }}
+    {{ range .Site.Data.sentence  }}
+    {{ range  .sentence }}
+    {{ $all = $all | append . }}
+    {{ end }}
+    {{ end }}
+{{ with $all | shuffle }}
+{{ range first 1 . }}
+{{ $1all := split . "——" }}
+<div class="des" style="margin-bottom:1em;color:var(--shallowgray)">—— 整 點 更 新 ——</div>
+<div class="quote">『</div><div class="sentence1">{{- index $1all 0 -}}</div>
+<div class="sentence2">——{{- index $1all 1 | safeHTML -}}</div>
+{{ end }}
+{{ end }}
+</section>
     <section>
   <div class="cover">
   <div class="in"> </div>
@@ -65,6 +81,24 @@
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
   <span class="des2 home">{{ .Params.description | safeHTML }}</span>
+  <div class="des2 home">
+    {{- with .Params.author -}}
+        {{ range . }}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        <a href="/author/{{ $name }}">@{{- $name -}}</a>
+        {{- end -}}
+        {{- end -}}
+    {{- end -}}
+    {{ with .Params.categories -}}
+        {{ range . }}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+          　<a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a>
+        {{ end -}}
+        {{ end }}
+    {{- end }}
+  </div>
 </ol>
   {{ end }}
   </div>

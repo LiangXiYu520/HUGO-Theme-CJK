@@ -96,7 +96,7 @@
     {{ end }}
 <section class="Tags  recommend" >
   <div class="recommend1">
-  <h2>您可能喜歡 <span style="font-size:.6em;font-weight:400">據索引重合度加權排序</span></h2>
+  <h2>您可能喜歡 <a href="/223" target="_blank" style="font-size:.6em;font-weight:400">據索引重合度加權排序</a></h2>
   {{ $current := . }}
   {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $current.Title }}
   {{ $3relevant := slice }}
@@ -247,7 +247,7 @@
 {{ end }}
 {{ $others := intersect  $categories  $other }}
 <ul>
-{{  range first 5 $others | shuffle }}
+{{  range first 6 $others | shuffle }}
 <li><a href="{{ .Permalink }}">{{- .Title  | safeHTML -}}</a></li>
   {{ end }}
 </ul>

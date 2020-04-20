@@ -130,9 +130,11 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 ### 其他推薦
 
-[中文独立博客列表](https://github.com/timqian/chinese-independent-blogs)
+[中文独立播客](https://typlog.com/podlist/)
 
-[博文历史列表](https://liebiao.qian.lu/)　〔也是格子老師運營的，最大的亮點是 RSS 聚合！！〕
+[中文独立博客列表](https://github.com/timqian/chinese-independent-blogs)　〔技術類〕
+
+[博文历史列表](https://liebiao.qian.lu/)　〔也是格子老師運營的，最大的亮點是 RSS 聚合〕
 
 [寻我](https://seekbetter.me/?sort=recommend&mode=blog&page=1)　优秀个人独立博客
 
@@ -340,6 +342,8 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 draw.io 繪製思維導圖
 
+[Zen Flowchart](https://www.zenflowchart.com/) 流程圖
+
 https://markmap.js.org/repl/ markdown 思維導圖
 
 flickr.com/photos/biodivlibrary/with/49787612338/ 動植物插圖
@@ -360,3 +364,9 @@ https://github.com/robsheldon/sscaffold-css 標準化css
 https://www.expatistan.com/cost-of-living/country/ranking 全球城市生活费
 
 https://dfile.app/ 基於 IPFS 的文件分享工具
+
+https://www.plainlanguage.gov/guidelines/words/use-simple-words-phrases/ 簡單英語指南
+
+https://github.com/knadh/listmonk 郵件發送服務
+
+https://github.com/ksky521/nodeppt  markdown 轉換為網頁 ppt

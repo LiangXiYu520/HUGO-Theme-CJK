@@ -806,6 +806,29 @@ margin:2em 1em 0 1em}
     font-weight: normal;
     color:var(--gray);
 }
+.sentence{
+  margin:10em  auto 0;
+  max-width: 53em;
+  text-align: center;
+  line-height: 1.6
+}
+.sentence1{
+  font-size:3em;
+  font-weight: bold;
+  text-align: left;
+}
+.quote{
+  margin:-.1em .1em 6em 0;
+  font-size: 4.5em;
+  color:var(--gray);
+  float:left;
+}
+.sentence2{
+  text-align: right;
+  margin-top: 3em;
+  font-size:1.5em;
+font-family: var(--kai)
+}
 	.cover{
 		background-color: var(--bg);
 		word-wrap:break-word;
@@ -1075,6 +1098,18 @@ box-shadow:none;
   width:1.2em;
   margin-right:-.1em}
 @media screen and (max-width:900px){
+  .sentence1{
+    font-size: 2em;
+  }
+  .sentence2{
+    font-size: 1.2em
+  }
+  .quote{
+    float: none;
+    font-size: 1em;
+    margin:0;
+    display: none
+  }
   .home-cover{
     display:table;
     border-bottom:none;

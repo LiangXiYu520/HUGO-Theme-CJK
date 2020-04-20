@@ -2,7 +2,7 @@
 
       <header class="heading-wrap Heading">
         {{ partialCached "banner.html" . }}
-  <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/gallery">作品</a>»</span><h1 class="Heading-title taxo" style="font-size:4em">{{- .Title | safeHTML  -}}</h1>
+  <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/gallery">作品</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML  -}}</h1>
   {{ if .Description }}
   <section class="des">{{ .Params.Description | safeHTML }}</section>
   {{ end }}
