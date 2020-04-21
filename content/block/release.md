@@ -1509,3 +1509,7 @@ html5 語意標籤改造。
 把主葉的手機取消了，加到開頭。
 
 整點更新從 48 句增加到 100 句。
+
+#### 4.6.17
+
+按照這個 https://blog-en.tilda.cc/articles-website-design-mistakes ，把主頁改了一下。

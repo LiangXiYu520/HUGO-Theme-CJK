@@ -60,12 +60,9 @@
   </div>
   <div class="des" style="margin-bottom:7em">以及，這箇網站。</div>
 </section>
-<section>
-  <div class="heading-wrap home" style="margin:0 auto 8em">
-    <h1>
-      <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank"><ruby><rb>网誌</rb><rt style="letter-spacing:0">blog</rt></ruby></a>»</span><span style="letter-spacing:.2em">發</span>現
+<section class="section2">
+    <h1 class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank"><ruby><rb>网誌</rb><rt style="letter-spacing:0">blog</rt></ruby></a>»</span><span style="letter-spacing:.2em">發</span>現
     </h1>
-  </div>
   <h1>最近發布 Latest</h1>
 <div class="discover-wrap latest">
 <div class="discover categories">
@@ -223,18 +220,15 @@
 </div>
 </div>
 </section>
-<section>
-<div class="heading-wrap home" style="margin:10em 0 3em">
-  <h1>
-    <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
+<section class="section3">
+  <h1 class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
-</div>
-<div class="gallery" style="margin-top:8em">
+<div class="gallery" style="margin:0">
 <div class="paper-wrap">
   <h1 style="margin-top:0"><a href="/zanfu" target="_blank">赫赫讚府 Reorganized Commentaries</a></h1>
   <div  class="des" style="margin-top:-1em;font-size:1.1em">收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引</div>
     <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
-<div class="paper-card recording"style="border:none"><div class="paper-card-in">
+<div class="paper-card recording"style="border:none;background:none"><div class="paper-card-in">
 {{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
         <div >
           <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
@@ -244,14 +238,14 @@
 <div class="paper-wrap">
 <h1 style="margin-top:0"><a href="https://wiki.kqh.me" target="_blank">赫赫複印資料</a></h1>
 <div  class="des" style="margin-top:-1em;font-size:1.1em">見維基</div>
-<div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
+<div class="paper-card recording" style="max-height:none;border:none;background:none"><div class="paper-card-in">
 保存的是網上比較有價值的文章、報導。赫赫讚府的姊妹篇
 </div></div></div>
 
 <div class="paper-wrap">
 <h1 style="margin-top:0"><a href="https://wiki.kqh.me" target="_blank">傳世琴譜數字文本化工程</a></h1>
 <div  class="des" style="margin-top:-1em;font-size:1.1em">見維基</div>
-<div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
+<div class="paper-card recording" style="max-height:none;border:none;background:none"><div class="paper-card-in">
 是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
 這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態
 </div></div></div>
@@ -259,7 +253,7 @@
 <h1 style="margin-top:0"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
 <div  class="des" style="margin-top:-1em;font-size:1.1em">北師大歷史學院本科生學術刊物</div>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
-<div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
+<div class="paper-card recording" style="max-height:none;border:none;background:none"><div class="paper-card-in">
           {{ range first 5 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
                     <div >
                       <time class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</time>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
@@ -268,13 +262,10 @@
 </div></div></div>
 </div>
 </section>
-<section>
-<div class="heading-wrap home" style="margin:6em 0 3em">
-  <h1>
-    <span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><a href="https://wiki.kqh.me" target="\_blank"><span style="letter-spacing:.2em">維</span>基</a>
+<section class="section4">
+  <h1 class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><a href="https://wiki.kqh.me" target="\_blank"><span style="letter-spacing:.2em">維</span>基</a>
   </h1>
-</div>
-<div class="gallery" style="margin:7em auto 5em">
+<div class="gallery" style="margin:0">
 <div class="paper-wrap">
 <div class="paper-card recording" style="max-height:none;border:none;width:15em"><div class="paper-card-in">
 <div>【讀書】目前有《尙書》筆記</div>
