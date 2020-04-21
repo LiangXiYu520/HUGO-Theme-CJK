@@ -94,7 +94,7 @@
             {{ .Content }}
           </article>
     {{ end }}
-<section class="Tags  recommend" >
+<nav class="Tags  recommend" >
   <div class="recommend1">
   <h2>您可能喜歡 <a href="/223" target="_blank" style="font-size:.6em;font-weight:400">據索引重合度加權排序</a></h2>
   {{ $current := . }}
@@ -259,13 +259,52 @@
   <h2>下篇</h2>
     <a href="{{ .RelPermalink }}">{{- .Title  | safeHTML -}}</a>
 {{- end }}
+<h2>過去的本周</h2>
+{{ $1date := sub .Date.Unix 31276800  }}
+{{ $2date := sub .Date.Unix 31881600 }}
+{{ $3date := sub .Date.Unix 62812800 }}
+{{ $4date := sub .Date.Unix  63417600 }}
+{{ $5date := sub .Date.Unix 94348800 }}
+{{ $6date := sub .Date.Unix  94953600 }}
+{{ $7date := sub .Date.Unix 125971200 }}
+{{ $8date := sub .Date.Unix 126576000 }}
+{{ $9date := sub .Date.Unix 157507200 }}
+{{ $10date := sub .Date.Unix 158112000 }}
+{{ $11date := sub .Date.Unix 189043200 }}
+{{ $12date := sub .Date.Unix 189648000 }}
+{{ $13date := sub .Date.Unix 220579200 }}
+{{ $14date := sub .Date.Unix  221184000 }}
+{{ $15date := sub .Date.Unix 252201600 }}
+{{ $16date := sub .Date.Unix  252806400 }}
+<ul>
+{{ range  (where .Site.RegularPages.ByDate "Type" "post") }}
+{{ $currentdate := .Date.Unix }}
+{{ if and (ge $currentdate $2date) (le $currentdate $1date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $4date) (le $currentdate $3date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $6date) (le $currentdate $5date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $8date) (le $currentdate $7date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $10date) (le $currentdate $9date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $12date) (le $currentdate $11date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $14date) (le $currentdate $13date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $16date) (le $currentdate $15date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ end }}
+{{ end }}
+</ul>
 </div>
-</section>
+</nav>
 
-<div class="u-wrapper">
+<section class="u-wrapper">
   <div class="u-padding">
 {{ partial "comments.html" . }}
-</div></div>
+</div></section>
 </main>
     {{ partial "footer.html" . }}
 {{ end }}

@@ -1513,3 +1513,7 @@ html5 語意標籤改造。
 #### 4.6.17
 
 按照這個 https://blog-en.tilda.cc/articles-website-design-mistakes ，把主頁改了一下。
+
+#### 4.6.18
+
+加入過去的本周。

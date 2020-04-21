@@ -688,6 +688,7 @@ color:var(--gray);
   font-size: .95em;
   margin: 9em auto 4em;
   max-width:40em;
+  max-height:32em;
   font-family: var(--serif)}
 .recommend h2{
   font-size: 1.25em;
