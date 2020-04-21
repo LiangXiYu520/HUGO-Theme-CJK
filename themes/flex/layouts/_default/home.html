@@ -2,22 +2,31 @@
     <main class="home">
       <section class="home-cover">
     <div class="heading-wrap home home1">
-      <h1><span style="letter-spacing:.2em">赫赫文</span>王</h1>
-      <br>
-      <div class="des des-home">歡迎來到本站。您看到的每箇細節都經過了苛刻的精心打磨：
+      <h1 style="color:#2b2b2b"><span style="letter-spacing:.2em">赫赫文</span>王</h1>
+      <div class="label">永嘉田家後/　生於九五後/<br>長于錦官城/　讀的厤史系/</div>
+      <table class="mail" cellpadding=0px style="margin:auto;border:none">
+      <tr>
+      <td style="text-align:right;border:none">PGP//</td>
+      <td style="text-align:left;border:none"><a href="/kujihhoe (E2269D07) public.asc" target="_blank">E2269D07</a></td>
+      </tr>
+      <tr>
+      <td style="text-align:right;border:none">email&iMessage//</td>
+      <td style="text-align:left;border:none"><span>me#kqh.me</span></td>
+      </tr>
+      </table>
+      <div class="des des-home">歡迎來到我的主頁。您看到的每箇細節都經過了苛刻的精心打磨：
         <a href="/149" target="_blank">版面樣式</a>；<a href="/224" target="_blank">統計</a>；索引導航；<a href="/223" target="_blank">文章推薦</a>；<a href="226" target="_blank">每小時生成一次，實現半動態化</a></div>
-      <div class="subscribe-wrap des1">
-        <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
-　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
-      </div>
       {{- $length := len .Site.RegularPages }}
       {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}
-    <div class="des1" style="margin:-2em auto 2em">
+    <div class="des1" style="margin:2em auto;color:#2b2b2b">
     凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Site.RegularPages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
-<br>本站已運行 {{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }} 日
+<br>本站已運行 {{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }} 日　
+<span class="subscribe-wrap des1">
+  <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
+　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
+</span>
   </div>
       </div>
-      {{ partial "tree.html" . | markdownify }}
     </section>
 <section class="sentence">
 {{ $all := slice }}
@@ -29,31 +38,14 @@
 {{ with $all | shuffle }}
 {{ range first 1 . }}
 {{ $1all := split . "——" }}
-<div class="des1" style="margin-bottom:2em;color:var(--darkyellow)">——— Timestamp {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC ———</div>
+<div class="des1" style="margin-bottom:2em;color:var(--darkyellow)">———  {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC ———</div>
 <div class="quote">『</div><div class="sentence1">{{- index $1all 0 -}}</div>
 <div class="sentence2">——{{- index $1all 1 | safeHTML -}}</div>
 {{ end }}
 {{ end }}
 </section>
-    <section>
-  <div class="cover">
-  <div class="in"> </div>
-  <div class="img"><img src="/logo.webp" width="100px" height="217px"></div>
-  <div class="label">永嘉田家後/　生於九五後/<br>長于錦官城/　讀的厤史系/</div>
-  <div class="mail">
-              <table cellpadding=0px style="margin:auto;border:none">
-              <tr>
-              <td style="text-align:right;border:none">PGP//</td>
-              <td style="text-align:left;border:none"><a href="/kujihhoe (E2269D07) public.asc" target="_blank">E2269D07</a></td>
-              </tr>
-              <tr>
-              <td style="text-align:right;border:none">email&iMessage//</td>
-              <td style="text-align:left;border:none"><span>me#kqh.me</span></td>
-              </tr>
-              </table>
-    </div>
-         <div class="in2"> </div>
-  </div>
+<br><br><br><br><br><br><br><br><br>
+<section>
   <h1>作品 Works</h1>
   <div class="discover-des">按最近修改排序</div>
   <div class="discover-wrap works">
@@ -167,11 +159,11 @@
 {{ $end := $thisCateinSeries | complement $First2inSeries  }}
 <ol>
 <h2 style="margin:0"><a href="{{ .Page.Permalink }}" target="_blank">[{{ .Page.Title | safeHTML  }}]</a></h2>
-<div class="discover-des" style="margin-top:.5em;text-align:left">最近發布</div>
+<div class="discover-des" style="margin-top:.5em;text-align:left">最近 Latest</div>
 {{ range $first2 }}
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
 {{ end }}
-    <div class="discover-des"style="margin:0;text-align:left">隨機生成</div>
+    <div class="discover-des"style="margin:0;text-align:left">隨機 Random</div>
 {{ range first 2 $end | shuffle }}
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
 {{ end }}
@@ -231,10 +223,6 @@
 </div>
 </div>
 </section>
-
-
-
-
 <section>
 <div class="heading-wrap home" style="margin:10em 0 3em">
   <h1>

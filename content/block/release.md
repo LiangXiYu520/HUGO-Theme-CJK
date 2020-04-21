@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-20
+lastmod: 2020-04-21
 url: /release
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
 menu:
@@ -1501,3 +1501,11 @@ html5 語意標籤改造。
 #### 4.6.15
 
 加入時間戳、運行時長
+
+### 4 月 21 日
+
+#### 4.6.16
+
+把主葉的手機取消了，加到開頭。
+
+整點更新從 48 句增加到 100 句。
