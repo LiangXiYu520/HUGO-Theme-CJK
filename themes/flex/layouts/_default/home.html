@@ -14,7 +14,7 @@
       <td style="text-align:left;border:none"><span>me#kqh.me</span></td>
       </tr>
       </table>
-      <div class="des des-home">歡迎來到我的主頁。您看到的每箇細節都經過了苛刻的精心打磨：
+      <div class="des des-home">歡迎來到我的主頁。您看到的每箇細節都經過了精心打磨：
         <a href="/149" target="_blank">版面樣式</a>；<a href="/224" target="_blank">統計</a>；索引導航；<a href="/223" target="_blank">文章推薦</a>；<a href="226" target="_blank">每二小時生成一次，實現半動態化</a></div>
       {{- $length := len .Site.RegularPages }}
       {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}
@@ -48,7 +48,7 @@
 <section>
   <h1>作品 Works</h1>
   <div class="discover-des">按最近修改排序</div>
-  <div class="discover-wrap works">
+  <div class="discover-wrap works" style="max-width:63em">
   <div class="discover gallery">
     {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
     <ol>
