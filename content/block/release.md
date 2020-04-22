@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-21
+lastmod: 2020-04-22
 url: /release
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
 menu:
@@ -1518,6 +1518,8 @@ html5 語意標籤改造。
 
 加入過去的本周。
 
+#### 4 月 22 日
+
 ##### 4.6.19
 
 把正文的標題層級降一級。步驟：
@@ -1531,3 +1533,9 @@ html5 語意標籤改造。
 7. ###### ——#####
 
 並相應調整 css。
+
+再看了看 PageSpeed Insights，全站各頁面平均 99。非常好。
+
+<img src="https://pic.imgdb.cn/item/5ea00617c2a9a83be5709ceb.jpg" width="500">
+
+<img src="https://pic.imgdb.cn/item/5ea00617c2a9a83be5709ced.jpg" width="500">
