@@ -11,7 +11,7 @@ description: '用 GitHub Actions 執行定時任務，生成 Hugo 網頁，發�
 vertical: false
 ---
 
-# 一、
+## 一、
 
 此前我網站的運行流程是：
 
@@ -34,7 +34,7 @@ vertical: false
 3. Netlify 獲取更新
 4. Netlify 發布
 
-# 二、
+## 二、
 
 首先看第一種方法。我用的這箇：[GitHub Actions for Hugo](https://github.com/peaceiris/actions-hugo)。在你的倉庫中，新建一個文件夾、文件 `.github/workflows/anyname.yml`，內容如下：
 
@@ -54,8 +54,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  # Fetch Hugo themes
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true  ## Fetch Hugo themes
+          fetch-depth: 0    ## Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -91,7 +91,7 @@ Produnction branch 就是從倉庫的哪個分支獲取源碼，此處是 `gh-pa
 
 大功告成！
 
-# 三、
+## 三、
 
 第二種方法，依然讓 Netlify 來運行 Hugo。我用的這箇 https://www.voorhoede.nl/en/blog/scheduling-netlify-deploys-with-github-actions/
 
@@ -120,7 +120,7 @@ jobs:
 
 大功告成！
 
-# 四、
+## 四、
 
 Netlify 有 300 分鐘每月的運行時長，這箇時間是怎麼定義的呢？
 

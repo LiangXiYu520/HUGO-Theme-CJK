@@ -20,7 +20,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 - **描述**　不务正业的历史系学生一个    
 - **Logo**　https://pic.superbed.cn/item/5d974e50451253d178cf241e.png
 
-## 一、有鄰
+### 一、有鄰
 
 已下爲互換了友鏈的小伙伴<n>按添加時閒排序</n>：
 
@@ -60,11 +60,11 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 <img src="https://fengz.me/Avatar.jpg" width="60">　[風過不留痕](https://fengz.me)　望尽天涯路<n>20191006</n>
 
-## 二、推薦
+### 二、推薦
 
 已下爲我找到的文史類博客。如有小伙伴知衟其佗的，歡迎告知。
 
-### 獨立博客
+#### 獨立博客
 
 [半省堂](http://www.maguang.net)　〔山東大學歷史文化學院馬光老師〕<n>友鏈於 20181028</n>
 
@@ -76,7 +76,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 <img src="https://pic.superbed.cn/item/5cdb84d728b3233db9716684.jpg" width="60" alt="Alt Text" />　[KHANGEY BLOG](http://www.khangey.com/cn)　西藏人、中國科普出版社藏文處高級編輯、羊兄樂園編輯、藏文維基百科管理員、藏文程序員。〔非常有格調！！彊烈推薦！還有一箇 [藏文博客](http://khangey.com/bo/) 〕<n>友鏈於 20190518</n>
 
-### 非獨立博客
+#### 非獨立博客
 
 [君子之學 惟求其是](https://zuluchang.wordpress.com)　Zulu est là〔旣西哲又中哲又古琴又調學，必須推薦。只是 2012 秊之後沒㪅新了，感覺象是大學敎授？〕
 
@@ -88,11 +88,11 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [詹衛東箇人主葉](http://ccl.pku.edu.cn/doubtfire/)　〔北大一位語言學敎授〕
 
-## 三、導航推廣
+### 三、導航推廣
 
 本站收錄於已下博客衟杭：
 
-### 一類
+#### 一類
 
 [十秊之約](https://www.foreverblog.cn)　<n>20181114　這天數了一下，成員二百一十多箇。如果願意的話，我們可以把數字擴大兩倍，中國目前活躍的各類箇人獨立博客可能有六百箇</n>
 
@@ -108,7 +108,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [大头针网址](https://dtz9.org/#cat-8)　<n>時間未知</n>
 
-### 二類
+#### 二類
 
 <a href="https://zgboke.org" title="收录国内优秀独立博客！" target="\_blank">中国博客联盟</a><n>20181027　<a href="https://zgboke.org/site/kujihhoe.com/blog.html" target="\_blank">收錄葉</a></n>
 
@@ -128,7 +128,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 ~~[博客大全](http://daohang.zbzmtbk.com)<n>20181108　<a href="http://daohang.zbzmtbk.com/siteinfo/261.html" target="\_blank">收錄葉</a>　201909 再看，網站掛了</n>~~
 
-### 其他推薦
+#### 其他推薦
 
 [中文独立播客](https://typlog.com/podlist/)
 
@@ -144,7 +144,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [spotify的播客收藏](https://www.douban.com/note/752408893/)
 
-## 四、師友們
+### 四、師友們
 
 已下爲我的老師、朋友們的平臺<n>獨立博客優先</n>：
 
@@ -176,11 +176,11 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 <center><img src="https://www.superbed.cn/pic/5beed9a79dc6d61ad66ee7de"  width="86"/></center>
 
-## 五、收藏夾
+### 五、收藏夾
 
 以下爲一些比較有意思的博客：
 
-### 文蓺類
+#### 文蓺類
 
 [游子微博](https://www.lindongfang.top/)　目前有五百余篇，古有先秦诗三百，今现微博文五百，纵观游子微博，记录了从2009年到如今的生活，内容涉及生老病死、情感、旅行、工作、新闻事件等等，过往十年辑录，有开心、忧伤、快乐、痛苦，人生况味，尽在其中。这，或许就是文字的意义和魅力。
 
@@ -210,7 +210,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [夏泉的后院](https://www.hxueh.net/)　在深圳长大，于深圳大学毕业，目前在深圳生活。
 
-### 高材生
+#### 高材生
 
 [BYvoid](https://www.byvoid.com)　〔韻典網那清華大神〕
 
@@ -238,7 +238,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [于淼](https://yufree.cn/cn/)　〔在美國的博後。非常有意思〕
 
-### 技術類
+#### 技術類
 
 [哲科文 Jerkwin](http://jerkwin.github.io/tags/)　〔雖然界面很古董，但內容，也太高產了吧〕
 
@@ -274,7 +274,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [笛声](https://hqidi.com/)
 
-### 旅行類
+#### 旅行類
 
 [賢民的比特記憶](https://www.xianmin.org)　〔麗江一民宿老闆，發起「捍衛開放的互聯網」〕
 
@@ -284,7 +284,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [HONGFEI](https://xiaohongfei.com/)　〔有國外旅行攻略〕
 
-### 設計類
+#### 設計類
 
 [Kevin](https://www.kevinpowell.co/)　〔小清新界面〕
 
@@ -306,7 +306,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [一稿計劃](https://lastone.art)　〔[字体基础知识库，全面了解 Font Design](https://lastone.art/font-design/) 強烈推薦！！〕
 
-### 老字號
+#### 老字號
 
 [土木罈子](https://tumutanzi.com)　迺一關於科硏學習、社會人文、信息技術和國外見聞等內容之箇人网站。〔大槩玩博客的人沒有不知道罈子的吧〕
 
@@ -326,7 +326,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [水八口記](https://blog.shuiba.co/)　I love [photography/photography](https://shuiba.co/photography), [web designdemo site](https://demo.shuiba.co/) and painting; [travellingGoogle Maps](https://goo.gl/iqntp4), [bloggingin Chinese](https://blog.shuiba.co/) and singing are also where my passion lies.
 
-### 小鮮肉
+#### 小鮮肉
 
 以下列幾箇中學生的博客，大多是代碼動漫宅，有很多江蘇的，發達地區就是不一樣。很佩服佗們中學便能建博客、硏究代碼。他們自己大槩有一箇博客圈子，全都是中學生。
 
@@ -338,7 +338,7 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.m
 
 [I BCL.](https://ibcl.us)　〔〇〇後無線電愛好者，十分淸奇〕
 
-# 工具
+## 工具
 
 draw.io 繪製思維導圖
 

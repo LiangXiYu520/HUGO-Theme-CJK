@@ -15,7 +15,7 @@ vertical: false
 
 <div class="vertical-false">
 
-# 琴自述
+## 琴自述
 
 髙一的時候，我不知從哪裏知衟了古琴，一箇周日，突肰給爸說想學古琴，便去了川音㫄一家古琴店聽了一下，便知道那就是我眞正想要的東西。正好小學好朋友媽在川音工作，就託她去打聽有沒有推薦的古琴老師，剛開始十二次課就跟著董老師學了。不過我依然覺得那不是我想要的東西，就問我書法老師有沒有推薦的老師，便認識了何老師。這次，我終於覺得那就是我想要的東西。書法老師曾說學生要有選擇老師的能力，我想我是有的。
 
@@ -23,13 +23,13 @@ vertical: false
 
 </div>
 
-# 錄音
+## 錄音
 
 <div class="gallery" style="margin-top:1em">
 <div class="paper-wrap">
 <div class="paper-card"><div class="paper-card-in">
 
-## No.1　臞仙曰
+### No.1　臞仙曰
 
 <listen>[査看詳情](https://music.163.com/#/album?id=38083470)</listen><date>2018-04-01</date>
 
@@ -49,7 +49,7 @@ vertical: false
 <div class="paper-wrap">
 <div class="paper-card"><div class="paper-card-in">
 
-## No.2　芝仙曰
+### No.2　芝仙曰
 
 <listen>[査看詳情](https://music.163.com/#/album?id=38104505)</listen><date>2018-04-01</date>
 
@@ -62,7 +62,7 @@ vertical: false
 <div class="paper-wrap">
 <div class="paper-card"><div class="paper-card-in">
 
-## No.3　古風
+### No.3　古風
 
 <listen>[査看詳情](https://music.163.com/#/album?id=38082731)</listen><date>2018-04-01</date>
 
@@ -75,7 +75,7 @@ vertical: false
 <div class="paper-wrap">
 <div class="paper-card"><div class="paper-card-in">
 
-## No.4　王門紹灮
+### No.4　王門紹灮
 
 <listen>[査看詳情](https://music.163.com/#/album?id=38109336)</listen><date>2018-04-01</date>
 
@@ -89,13 +89,13 @@ vertical: false
 
 </div></div></div></div>
 
-# 視頻
+## 視頻
 
 <div class="gallery" style="margin-top:1em">
 <div class="paper-wrap">
 <div class="paper-card"><div class="paper-card-in">
 
-## No.1　二〇一九
+### No.1　二〇一九
 
 <listen>[査看詳情](https://space.bilibili.com/176570453/channel/detail?cid=70632)</listen><date>2019-04-10</date>
 
@@ -109,7 +109,7 @@ vertical: false
 <div class="paper-wrap">
 <div class="paper-card"><div class="paper-card-in">
 
-## No.2　第十一屆全國大學生古琴音樂會
+### No.2　第十一屆全國大學生古琴音樂會
 
 <listen>[玄默（神奇祕譜）](https://www.bilibili.com/video/av55325078)</listen>
 

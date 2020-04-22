@@ -12,13 +12,13 @@ markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/about.m
 description: '此文爲本站緫序，包含介紹、說明書與聲明。除了這箇緫序，「古琴」「實地錄音」「書法」「讀切韻音」「旁白配音」均有各自的小序，介紹我爲什麼做這些事情。'
 ---
 
-# 我<ruby><rb>疇</rb><rt>chóu</rt></ruby>？
+## 我<ruby><rb>疇</rb><rt>chóu</rt></ruby>？
 
 見 [我的主葉](/)。投稿、交換友鏈及其他任何問題都可以發郵件或在文末評論。
 
 這是我的小天地，爲所欲爲的自留地，自己想怎麼排版就怎麼排，想改就改想刪就刪。這网誌太无聊了，而且都是沒什麼價値的口水話，相信絕大多數讀者點進來就會馬上點右上角的叉。
 
-# 示
+## 示
 
 - 本站所有文章授權方式采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="\_blank">CC BY-NC-SA 4.0</a> <n>署名-非商業性使用-相同方式共享</n>國際條款，若需使用，請務必閱讀竝遵循條款內容。說簡單點，非商業性使用無須告知作者，只要標明作者、出處就好<n>當然，沒人會轉載我的文章的，想多了</n>。爲便於排版，直接取用 md 源文件卽可。如果發現有錯別字，也可以在 Git 上幫我改正。
 - 若發現文章中有不適冝的內容<n>如侵犯箇人隱私，牽涉箇人利益，損害箇人聲譽等</n>，請儘速郵件或評論告知我。
@@ -28,7 +28,7 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 
 <img src="https://api.superbed.cn/pic/5bf82416c4ff9e058246008d" width="150" >
 
-# 曷以建茲？
+## 曷以建茲？
 
 1. 原來積了些東西不知往哪裏放，又不想讓它們冷落在硬盤裏。而且存網上不容易散佚。
 2. 想㝡大程度實現知戠、信息共亯。雖說當今是信息爆炸的時代，但也會存在很多信息盲區，特別是學術信息。
@@ -41,7 +41,7 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 6. 爲了滿足我對排版的強迫症。新浪博客太醜太醜，簡書還不錯。我對於字體與排版有執念，如果不和我心意，那我是无論如何也不會有寫作的衝動的。
 7. 自己獨立的域名好高大上！一箇學「傳統文化」的文科生自己搭了箇好看的獨立网誌，是不是很 geek。
 
-# 肰則曷所記也？
+## 肰則曷所記也？
 
 本站文章按「分類」「系列」「作者」進行索引。分類近似於學科門類，系列近似於小類、主題、性質。每篇文章只有一箇分類，而有一至三箇系列。分類與系列不重名。
 
@@ -51,7 +51,7 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 
 【春秋學刊】北師大歷史學院本科生學術刊物<v>春秋學刊</v>的目次<n>半秊刊，至少未來幾年我還在師大就會繼續㪅</n>
 
-## 分類
+### 分類
 
 - 經：關於經學史的內容，我的主業
 - 琴：關於古琴的隨想、考査、日記等
@@ -64,7 +64,7 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 - 生活：日常瑣事
 - 站務：網站本身的運營紀錄
 
-## 系列
+### 系列
 
 - 㢧耕記：有關古琴的一些心得、論文。弦的甲骨文是指事字，弓上加一符號。「㢧」本來是「卷」的異體字，我用來當「弦」
 - 㢧耕知聞：非自己原刱的，如筆記、見聞、交遊等
@@ -87,7 +87,7 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 - 中學：關於中學時代的記憶
 - 統計：統計性質的；轉載性質的
 
-# 曷所建之？
+## 曷所建之？
 
 1. 【支持】託管於 ~~<a href="https://pages.github.com" target="\_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="\_blank">kitian616</a> 提供网誌主題模板 Text~~ 主题  [jane](https://github.com/xianmin/hugo-theme-jane)，~~<a href="https://tw.godaddy.com/" target="\_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="\_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。古琴關注數統計用的 [Substats](https://sspai.com/post/59593) api。
 2. 【檢索】對靜態网誌添加搜索功能无能爲力，試了好幾種，无奈技術有限。如想搜索直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a><n>Google 收錄得又全又快</n>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。

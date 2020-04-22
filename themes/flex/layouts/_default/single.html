@@ -96,7 +96,7 @@
     {{ end }}
 <nav class="Tags  recommend" >
   <div class="recommend1">
-  <h2>您可能喜歡 <a href="/223" target="_blank" style="font-size:.6em;font-weight:400">據索引重合度加權排序</a></h2>
+  <h3>您可能喜歡 <a href="/223" target="_blank" style="font-size:.6em;font-weight:400">據索引重合度加權排序</a></h3>
   {{ $current := . }}
   {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $current.Title }}
   {{ $3relevant := slice }}
@@ -234,7 +234,7 @@
 <div class="recommend1">
   {{ $current := slice }}
   {{ $current = $current | append . }}
-  <h2>沒有喜歡的？ <span style="font-size:.6em;font-weight:400">其他分類各隨機生成一項</span></h2>
+  <h3>沒有喜歡的？ <span style="font-size:.6em;font-weight:400">其他分類各隨機生成一項</span></h3>
 {{ $other := $.Site.RegularPages |  complement $current $recommend (where .Site.RegularPages "Type" "gallery") (where .Site.RegularPages "Type" "block")  (where .Site.RegularPages "Type" "zanfu") (where .Site.RegularPages "Type" "xuekan") | shuffle }}
 {{ $categories := slice }}
 {{ range .Site.Taxonomies.categories.ByCount }}
@@ -252,14 +252,14 @@
   {{ end }}
 </ul>
 {{ with .PrevInSection }}
-<h2>上篇</h2>
+<h3>上篇</h3>
   <a href="{{ .RelPermalink }}">{{- .Title  | safeHTML -}}</a>
   {{- end }}
   {{ with .NextInSection }}
-  <h2>下篇</h2>
+  <h3>下篇</h3>
     <a href="{{ .RelPermalink }}">{{- .Title  | safeHTML -}}</a>
 {{- end }}
-<h2>過去與未來的本周</h2>
+<h3>過去與未來的本周</h3>
 {{ $1date := sub .Date.Unix 31276800  }}
 {{ $2date := sub .Date.Unix 31795200 }}
 {{ $3date := sub .Date.Unix 62812800 }}

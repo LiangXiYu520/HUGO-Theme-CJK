@@ -12,8 +12,8 @@ rssLimit = 30
     [markup.goldmark.renderer]
       unsafe = true
 [markup.tableOfContents]
-        startLevel = 1
-        endLevel = 3
+        startLevel = 2
+        endLevel = 4
 
 # Enable author pages
 [taxonomies]

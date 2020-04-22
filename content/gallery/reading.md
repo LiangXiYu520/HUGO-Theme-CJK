@@ -14,7 +14,7 @@ des: '讀<v>切韻</v>擬音。純娛樂向，沒有學術價值。'
 <div class="paper-wrap">
 <div class="paper-card recording"><div class="paper-card-in">
 
-## No.1　立部伎
+### No.1　立部伎
 
 <listen>[立卽觀看](https://www.bilibili.com/video/av27778077)</listen>
 <date>2018-07-26</date>
@@ -65,12 +65,12 @@ kung srii ngioo zjenh qan ciook yuun，thad zqaong sam khiang njex gha nqjn。
 <div class="paper-wrap">
 <div class="paper-card recording"><div class="paper-card-in">
 
-## No.2　春秋獲麟
+### No.2　春秋獲麟
 
 <listen>[立卽觀看](https://www.bilibili.com/video/av29500316)</listen>
 <date>2018-08-16</date>
 
-#### 1
+##### 1
 
 chqyjn chiuu keng yaot：    
 <v>春秋</v>經曰：
@@ -78,7 +78,7 @@ chqyjn chiuu keng yaot：
 <n>qaui kung</n>zqjp iuux sjh nen，chqyjn，se squuh ghuraek ljn。  
 <n>哀公</n>十有四年，春，西狩獲麟。
 
-#### 2
+##### 2
 
 kung jaong dryenh yaot：    
 <v>公羊傳</v>曰：
@@ -92,7 +92,7 @@ gha jh nqjex？pyoei triung kuauk cq squuh jax。
 nqjen cauk zquk squuh cq？sjn chauix cqax jax。  
 然則孰狩之？薪采者也。
 
-#### 3
+##### 3
 
 sjn chauix cqax，cauk myoei cqax jax。ghat ye jx squuh ngiaon cq？dad cq jax。    
 薪采者，則微者也。曷爲以狩言之？大之也。
@@ -109,7 +109,7 @@ iuux yaong cqax cauk cqjh，mioo yaong cqax cauk piuu cqjh。
 iuux jx kauh cqax yaot：「iuux kyn nq krauk cqax。」   
 有以告者曰：「有麕而角者。」
 
-#### 4
+##### 4
 
 khungx cix yaot：「zquk yeh laui caui？zquk yeh laui caui？」   
 孔子曰：「孰爲來哉？孰爲來哉？」
@@ -126,7 +126,7 @@ cix looh siix，cix yaot：「qraeih！then cquuh joex！」
 se squuh ghuraek ljn，khungx cix yaot：「ngoo daux giung ix！」   
 西狩獲麟，孔子曰：「吾道窮矣！」
 
-#### 5
+##### 5
 
 <v>chqyjn chiuu</v>gha jx sqx ghoo qioenx？  
 <v>春秋</v>何以始乎隱？
@@ -143,7 +143,7 @@ gha jx cqung ghoo qaui zqjp sjh nen？yaot：biih ix。
 kyun cix ghat yeh ye<v>chqyjn chiuu</v>？   
 君子曷爲爲<v>春秋</v>？
 
-#### 6
+##### 6
 
 puat luanh sqjed，pyaonx cqoe cqengh，mak gioenh cqoe<v>chqyjn chiuu</v>。     
 撥亂世，反諸正，莫近諸<v>春秋</v>。
@@ -163,7 +163,7 @@ cqjed<v>chqyjn chiuu</v>cq ngieh，jx zsrix ghoux sqengh，
 jx kyun cix cq ye jek iuux ngrauh ghoo chjex jax。   
 以君子之爲亦有樂乎此也。
 
-#### 7
+##### 7
 
 kuk liaong dryenh yaot：   
 <v>穀梁傳</v>曰：
@@ -184,9 +184,9 @@ gi piuu ngiaon iuux，piuu srix ljn piuu ghaung qioe triung kuauk jax。
 <div class="paper-wrap">
 <div class="paper-card recording"><div class="paper-card-in">
 
-## No.3　尙書‧堯典
+### No.3　尙書‧堯典
 
-#### 1
+##### 1
 
 ngeu tenx    
 堯典
@@ -197,7 +197,7 @@ sjek zoix teh ngeu，chung mrjang myn si，kwang drak then ghrax。
 ciang soonh ioo rwjh，nqaongh ioo ngioo sqwjnh，cooh ngeu tenx。   
 將遜于位，讓于虞舜，作<v>堯典</v>。
 
-#### 2
+##### 2
 
 yoot nqaok ke koox teh ngeu，yoot pyaongh hyn khrjm mrjang myn si qan qan，   
 曰若稽古帝堯，曰放勳欽明文思安安，
@@ -214,7 +214,7 @@ kiux zuk kiih miuk，brjang cqaong prak sjengh。
 prak sjengh cqjeu mrjang，ghep ghwa myoonh prong，    
 百姓昭明，協和萬邦，
 
-#### 3
+##### 3
 
 le mjn qioe prjenh zq qioong。   
 黎民於變時雍。
@@ -231,7 +231,7 @@ pyn mrjangh hrje driungh drak jj yoot jaong kuk，
 jjn pjn chqwjt nqjt，brjang drjt tung cooh。
 寅賓出日，平秩東作。
 
-#### 4
+##### 4
 
 nqjt triung seng teux，jx qin driungh chqwjn。     
 日中星鳥，以殷仲春。
@@ -248,7 +248,7 @@ brjang drjt nom ngwa，krjangh trjh。
 nqjt rwjangx seng hwax，jx cqjengh driungh ghrax。   
 日永星火，以正仲夏。
 
-#### 5
+##### 5
 
 kyt mjn qjn，teux squh hii kraek。   
 厥民因，鳥獸希革。
@@ -265,7 +265,7 @@ sjeu triung seng hioe，jx qin driungh chiu。
 kyt mjn jj，teux squh mau srein[^3]。
 厥民夷，鳥獸毛毨。
 
-#### 6
+##### 6
 
 sqjn mrjangh ghwa squk drak srok pyaong yoot qju too，   
 申命和叔宅朔方曰幽都，
@@ -282,7 +282,7 @@ kyt mjn qauh，teux squh nqoongx mau。
 teh yoot：「cj，nqoex hrje grjh ghwa！」  
 帝曰：「咨，汝羲暨和！
 
-#### 7
+##### 7
 
 gi sam prak iux liuk zswjn iux liuk nqjt，   
 期三百有六旬有六日，
@@ -299,7 +299,7 @@ teh yoot：「zqu cj nqaok zq？tong joong。」
 pyaongh ze yoot：「jjnh cix cqoo khex mrjang。」   
 放齊曰：「胤子 朱啓明。」
 
-#### 8
+##### 8
 
 teh yoot：「hioo！ngrjn zsioong，khax ghoo？」   
 帝曰：「吁！嚚訟，可乎？」
@@ -316,7 +316,7 @@ teh yoot：「hioo！zjengx ngiaon joong ui，zsiaongx kioong thau then。」
 teh yoot：「cj，sjh ngrok！sqaong sqaong ghung sqwjx pyaong kat，」  
 帝曰：「咨，四岳！湯湯洪水方割，
 
-#### 9
+##### 9
 
 dangx dangx ghrwaei sraen siaong ling，ghaux ghaux thau then。   
 蕩蕩懷山襄陵，浩浩滔天。
@@ -333,7 +333,7 @@ teh yoot：「hioo！byt coi，pyaong mrjangh brjx zuk。」
 ngrok yoot：「jh coi！sqh khax，noix jx。」   
 岳曰：「异哉！試可，乃已。」
 
-#### 10
+##### 10
 
 teh yoot：「yaongx，khrjm coi！kiux coix，cek joongh pyt zqjeng。」   
 帝曰：「往，欽哉！」九載，績用弗成。
@@ -350,7 +350,7 @@ ngrok yoot：「brjx tok themx teh rwjh。」
 yoot：「mrjang mrjang jaong crik luh。」  
 曰：「明明揚側陋。」
 
-#### 11
+##### 11
 
 srj sjeh teh yoot：「iux krwaen zoix ghrax，yoot ngioo sqwjnh。」   
 師錫帝曰：「有鰥在下，曰虞舜。」
@@ -364,7 +364,7 @@ ngrok yoot：「koox cix。bioox ngrwan，mux ngrjn，zsiaongx ngauh。」
 khok ghraei jx hrauh，cqng cqng ngiaod，piu krak kran。」  
 克諧以孝，烝烝乂，不格姦。」
 
-#### 12
+##### 12
 
 teh yoot：「ngax gi sqh coi！nqoex ioo zq    
 帝曰：「我其試哉！女于時，
