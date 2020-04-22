@@ -259,23 +259,39 @@
   <h2>下篇</h2>
     <a href="{{ .RelPermalink }}">{{- .Title  | safeHTML -}}</a>
 {{- end }}
-<h2>過去的本周</h2>
+<h2>過去與未來的本周</h2>
 {{ $1date := sub .Date.Unix 31276800  }}
-{{ $2date := sub .Date.Unix 31881600 }}
+{{ $2date := sub .Date.Unix 31795200 }}
 {{ $3date := sub .Date.Unix 62812800 }}
-{{ $4date := sub .Date.Unix  63417600 }}
+{{ $4date := sub .Date.Unix  63331200 }}
 {{ $5date := sub .Date.Unix 94348800 }}
-{{ $6date := sub .Date.Unix  94953600 }}
+{{ $6date := sub .Date.Unix  94867200 }}
 {{ $7date := sub .Date.Unix 125971200 }}
-{{ $8date := sub .Date.Unix 126576000 }}
+{{ $8date := sub .Date.Unix 126489600 }}
 {{ $9date := sub .Date.Unix 157507200 }}
-{{ $10date := sub .Date.Unix 158112000 }}
+{{ $10date := sub .Date.Unix 158025600 }}
 {{ $11date := sub .Date.Unix 189043200 }}
-{{ $12date := sub .Date.Unix 189648000 }}
+{{ $12date := sub .Date.Unix 189561600 }}
 {{ $13date := sub .Date.Unix 220579200 }}
-{{ $14date := sub .Date.Unix  221184000 }}
+{{ $14date := sub .Date.Unix  221097600 }}
 {{ $15date := sub .Date.Unix 252201600 }}
-{{ $16date := sub .Date.Unix  252806400 }}
+{{ $16date := sub .Date.Unix  252720000 }}
+{{ $21date := add .Date.Unix 31276800  }}
+{{ $22date := add .Date.Unix 31795200 }}
+{{ $23date := add .Date.Unix 62812800 }}
+{{ $24date := add .Date.Unix  63331200 }}
+{{ $25date := add .Date.Unix 94348800 }}
+{{ $26date := add .Date.Unix  94867200 }}
+{{ $27date := add .Date.Unix 125971200 }}
+{{ $28date := add .Date.Unix 126489600 }}
+{{ $29date := add .Date.Unix 157507200 }}
+{{ $30date := add .Date.Unix 158025600 }}
+{{ $31date := add .Date.Unix 189043200 }}
+{{ $32date := add .Date.Unix 189561600 }}
+{{ $33date := add .Date.Unix 220579200 }}
+{{ $34date := add .Date.Unix  221097600 }}
+{{ $35date := add .Date.Unix 252201600 }}
+{{ $36date := add .Date.Unix  252720000 }}
 <ul>
 {{ range  (where .Site.RegularPages.ByDate "Type" "post") }}
 {{ $currentdate := .Date.Unix }}
@@ -294,6 +310,22 @@
 {{ else if and (ge $currentdate $14date) (le $currentdate $13date) }}
 <li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
 {{ else if and (ge $currentdate $16date) (le $currentdate $15date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $21date) (le $currentdate $22date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $23date) (le $currentdate $24date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $25date) (le $currentdate $26date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $27date) (le $currentdate $28date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $29date) (le $currentdate $30date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $31date) (le $currentdate $32date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $33date) (le $currentdate $34date) }}
+<li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
+{{ else if and (ge $currentdate $35date) (le $currentdate $36date) }}
 <li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="des1">{{  .Date.Format "2006-01-02" }}</time></li>
 {{ end }}
 {{ end }}
