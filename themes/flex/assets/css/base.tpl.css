@@ -17,7 +17,7 @@
   --shallowred:#ffe5e5;
   --serif:"Adobe Garamond Pro",Garamond,"Adobe Caslon Pro",Caslon,"Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Adobe Garamond Pro",Garamond,"Adobe Caslon Pro",Caslon,"Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Noto Serif CJK KR","Source Han Serif K","Noto Serif CJK SC","Hiragino Mincho ProN","Hiragino Mincho","Yu Mincho","Hana Mincho","Ms Mincho";
   --codeserif:"Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Serif CJK KR","Source Han Serif K","Noto Serif CJK SC","Hiragino Mincho ProN","Hiragino Mincho","Yu Mincho","Hana Mincho","Ms Mincho";
-  --sans:Verdana,Trebuchet,helvetica,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
+  --sans:Verdana,Trebuchet, muli, avenir, "helvetica neue", helvetica, ubuntu, roboto, noto,arial,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
   --codesans:"Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace, "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,PingFangSC,Sans-serif;
   --kai:"Adobe Garamond Pro",Garamond,"Adobe Caslon Pro",Caslon,"Minion Pro",Minion,"Adobe Gurmukhi","Times New Roman","方正新楷体_GB18030",FZNewKai_GB18030-Z03,STKaiti,Kai,"楷体",Kaiti,"Kaiti TC";
   --fang: helvetica,"方正仿宋","方正仿宋-Z02",FZFangSong-Z02,STFangsong,"仿宋",FangSong;
@@ -417,6 +417,46 @@ code {
   color: var(--bg);
       background:var(--black);
         border-radius: .2rem}
+        .Banner {
+          list-style: none;
+          display: flex;
+          flex-flow: row-reverse wrap-reverse;
+          justify-content: space-between;
+          margin: 0;
+          padding: 0 1em;
+          box-shadow:  0 2px 30px -5px  #2b2b2b ;
+          border-bottom: 3px solid #2b2b2b;
+          background: -webkit-linear-gradient(left, #c41011 , #4300db);
+                   background: -o-linear-gradient(right, #c41011, #4300db);
+                   background: -moz-linear-gradient(right, #c41011, #4300db);
+                   background: linear-gradient(to right, #c41011 , #4300db);
+        }
+        {{ $len := len site.Menus.nav }}
+        {{ range seq $len }}
+          .Banner-item:nth-child({{ . }}) {
+            order: {{ sub $len . | add 1 }};
+          }
+        {{ end }}
+        .Banner-item--title {
+          flex-grow: 1;
+        }
+        .Banner-link {
+          font-size: .9rem;
+          font-family: "Noto Sans CJK Kr",NotoSansCJKKr,"Noto Sans CJK SC",NotoSansCJKSC, PingFang,"PingFang SC",PingFangSC,Microsoft YaHei,Sans-serif;
+          color: #fffae8;
+          padding: 0.5rem .6rem;
+          border: none;
+        }
+        .Banner-link a:hover{
+          border: none;
+        }
+
+.search{
+  height:2.5em;width:25em;
+  border-radius:1em;
+  border:.2em solid var(--black);
+}
+
 .heading-wrap{
   background-color: var(--bg);
   padding: 2em  1em 3em;
@@ -631,7 +671,9 @@ box-shadow:none;
 .banner.banner1{
   float: right}
 .banner a{
-  border:none}
+  box-shadow:none}
+  .banner a:hover{
+    color:var(--brown)}
 .banner2{
   margin-left:1.2em}
 .archive-wrapper{

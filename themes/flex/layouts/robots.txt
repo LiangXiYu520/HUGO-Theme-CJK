@@ -6,7 +6,12 @@ Disallow: /series/*
 Disallow: /tags/*
 Disallow: /author/*
 Disallow: /auth/*
+Disallow: /toc/*
+Disallow: /authho/*
 Disallow: /subject/*
 Disallow: /page/*
 Disallow: /post/page/*
 Disallow: /en/*
+Disallow: /qinpu/
+Disallow: /gallery/
+Disallow: /zanfu/

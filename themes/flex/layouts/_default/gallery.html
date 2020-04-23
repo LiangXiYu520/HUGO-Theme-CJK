@@ -1,8 +1,9 @@
 {{ define "main" }}
 
-      <header class="heading-wrap Heading">
+      <header class="heading-wrap">
         {{ partialCached "banner.html" . }}
-  <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/gallery">作品</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML  -}}</h1>
+  <div class="Heading"><span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/gallery">作品</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML  -}}</h1>
+</div>
   {{ if .Description }}
   <section class="des">{{ .Params.Description | safeHTML }}</section>
   {{ end }}

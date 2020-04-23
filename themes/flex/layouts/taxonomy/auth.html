@@ -1,5 +1,6 @@
 {{ define "main" }}
 <div class="heading-wrap">
+  {{ partialCached "banner.html" . }}
   <header class="Heading">
     {{ $termName := .Data.Singular }}
     {{ $type := .Type }}

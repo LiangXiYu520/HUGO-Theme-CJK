@@ -246,12 +246,16 @@
 保存的是網上比較有價值的文章、報導。赫赫讚府的姊妹篇
 </div></div></div>
 
-<div class="paper-wrap">
-<h1 style="margin-top:0"><a href="https://wiki.kqh.me" target="_blank">傳世琴譜數字文本化工程</a></h1>
-<div  class="des" style="margin-top:-1em;font-size:1.1em">見維基</div>
+<div class="paper-wrap" style="max-width:32em">
+<h1 style="margin-top:0"><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h1>
+<div  class="des" style="margin-top:-1em;font-size:1.1em">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
+這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
 <div class="paper-card recording" style="max-height:none;border:none;background:none"><div class="paper-card-in">
-是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
-這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態
+{{ range .Site.Taxonomies.toc }}
+  <li><a href="{{ .Page.Permalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></li>
+    {{ end }}
+
+
 </div></div></div>
 <div class="paper-wrap">
 <h1 style="margin-top:0"><a href="/xuekan" target="_blank">春秋學刊</a></h1>

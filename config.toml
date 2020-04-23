@@ -25,6 +25,8 @@ note = "notes"
 subject = "subject"
 auth = "auth"
 from = "from"
+toc = "toc"
+authho = "authho"
 [author]                  # essential
   name = "柯棋瀚"
 [sitemap]                 # essential
@@ -36,24 +38,28 @@ from = "from"
      weight = 1
      url = "/"
   [[menu.nav]]
+         name = "作品"
+         weight =  2
+         url = "/gallery"
+  [[menu.nav]]
      name = "网誌"
-     weight = 2
+     weight = 3
      url = "/post"
      [[menu.nav]]
         name = "赫赫讚府"
-        weight = 3
+        weight = 5
         url = "/zanfu"
     [[menu.nav]]
+         name = "琴譜"
+         weight = 6
+         url = "/qinpu"
+    [[menu.nav]]
            name = "春秋學刊"
-           weight = 4
+           weight = 7
            url = "/xuekan"
-      [[menu.nav]]
-          name = "作品"
-          weight =  5
-          url = "/gallery"
    [[menu.nav]]
      name = "維基"
-      weight = 6
+      weight = 10
     url = "https://wiki.kqh.me/"
 [params]
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
