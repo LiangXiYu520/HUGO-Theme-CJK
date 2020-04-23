@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="heading-wrap">
+  {{ partialCached "banner.html" . }}
+  <header class="Heading">
+    {{ $termName := .Data.Singular }}
+    {{ $type := .Type }}
+        <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»<a href="/doc">文庫</a>»錄入者»
+          {{- with .Params.auuth -}}
+                      {{- range . -}}
+                      {{- $name := . -}}
+                      {{- with $.Site.GetPage "taxonomy" (printf "auuth/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "auuth/%s" ($name | urlize))) -}}
+                    <a href="/auuth/{{ $name }}">@{{- $name -}}</a>
+                      {{- end -}}
+                      {{- end -}}
+                  {{- end -}}
+        </span>
+        <h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title -}}</h1>
+  </header>
+  {{- $length := len .Data.Pages }}
+  {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
+<section class="des1">
+凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字
+　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">{{- .Title -}}</span><span class="rss2">RSS</span></a>
+</section></div>
+  <main>
+{{ $count := 0 }}
+<section class="year-wrap">
+        <div class="archive-wrapper">
+        {{ range sort .Pages "File.Path" }}
+    <div class="archive-wrap" style="margin:.7em 0">
+      <span class="archive-left" style="font-size:1em;color:#8c8c8c">
+      {{ $count = add $count 1  }}{{- $count -}}　</span>
+      <div class="archive-right">
+        <span class="archive-info archive-info-author">
+          {{- with .Params.auuth -}}
+                      {{- range . -}}
+                      {{- $name := . -}}
+                      {{- with $.Site.GetPage "taxonomy" (printf "auuth/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "auuth/%s" ($name | urlize))) -}}
+                    <a href="/auuth/{{ $name }}">@{{- $name -}}</a>　
+                      {{- end -}}
+                      {{- end -}}
+                  {{- end -}}
+        </span>
+<span class="archive-title" style="margin-left:0">
+  <time class="archive-info">{{- .Page.Date.Format "2006-01-02" -}}</time>　
+  <a href="{{ .Page.RelPermalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></span>
+</div>
+</div>
+    {{ end }}
+  </div>
+    </section>
+</main>
+    {{ partial "footer-xuekan.html" . }}
+{{ end }}

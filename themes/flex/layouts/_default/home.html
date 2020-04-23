@@ -42,7 +42,7 @@
 {{ with $all | shuffle }}
 {{ range first 1 . }}
 {{ $1all := split . "——" }}
-<div class="des1" style="margin-bottom:2em;color:var(--darkyellow)">———  {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC ———</div>
+<div class="des1" style="margin-bottom:2em;color:var(--gray)">Timestamp  {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</div>
 <div class="quote">『</div><div class="sentence1">{{- index $1all 0 -}}</div>
 <div class="sentence2">——{{- index $1all 1 | safeHTML -}}</div>
 {{ end }}
@@ -65,7 +65,7 @@
   <div class="des" style="margin-bottom:7em">以及，這箇網站。</div>
 </section>
 <section class="section2">
-    <h1 class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank"><ruby><rb>网誌</rb><rt style="letter-spacing:0">doc</rt></ruby></a>»</span><span style="letter-spacing:.2em">發</span>現
+    <h1 id="discover" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
     </h1>
   <h1>最近發布 Latest</h1>
 <div class="discover-wrap latest">
@@ -225,14 +225,41 @@
 </div>
 </section>
 <section class="section3">
-  <h1 class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
+  <h1 id="wiki" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">筆</span>記
+  </h1>
+<div class="gallery" style="margin:0">
+<div class="paper-wrap">
+  <h1 style="margin-top:0"><a href="/read" target="_blank">讀書</a></h1>
+  <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
+<div class="paper-card recording" style="max-height:none;border:none;max-width:30em"><div class="paper-card-in">
+  <ul>
+    {{ range first 5  (where .Site.RegularPages.ByDate.Reverse "Type" "read") }}
+    <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "2006-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML }}</a></li>
+    {{ end }}
+    </ul>
+</div></div></div>
+<div class="paper-wrap">
+  <h1 style="margin-top:0"><a href="/exam" target="_blank">考試</a></h1>
+  <div  class="des" style="margin-top:-1em;font-size:1.1em">整理的考試複習資料。世界上最沒用的東西</div>
+  <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
+<div class="paper-card recording" style="max-height:none;border:none;max-width:22em"><div class="paper-card-in">
+<ul>
+  {{ range first 5 (shuffle (where .Site.RegularPages.ByDate "Type" "exam")) }}
+  <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "2006-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title }}</a></li>
+  {{ end }}
+  </ul>
+</div></div></div>
+</div>
+</section>
+<section class="section4">
+  <h1 id="data" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
 <div class="gallery" style="margin:0">
 <div class="paper-wrap">
   <h1 style="margin-top:0"><a href="/zanfu" target="_blank">赫赫讚府 Reorganized Commentaries</a></h1>
   <div  class="des" style="margin-top:-1em;font-size:1.1em">收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引</div>
     <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
-<div class="paper-card recording"style="border:none;background:none"><div class="paper-card-in">
+<div class="paper-card recording"style="border:none"><div class="paper-card-in">
 {{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
         <div >
           <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
@@ -240,46 +267,32 @@
 {{ end }}
 </div></div></div>
 <div class="paper-wrap">
-<h1 style="margin-top:0"><a href="https://wiki.kqh.me" target="_blank">赫赫複印資料</a></h1>
-<div  class="des" style="margin-top:-1em;font-size:1.1em">見維基</div>
-<div class="paper-card recording" style="max-height:none;border:none;background:none"><div class="paper-card-in">
-保存的是網上比較有價值的文章、報導。赫赫讚府的姊妹篇
-</div></div></div>
-
-<div class="paper-wrap" style="max-width:32em">
-<h1 style="margin-top:0"><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h1>
-<div  class="des" style="margin-top:-1em;font-size:1.1em">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
-這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
-<div class="paper-card recording" style="max-height:none;border:none;background:none"><div class="paper-card-in">
-{{ range .Site.Taxonomies.toc }}
-  <li><a href="{{ .Page.Permalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></li>
-    {{ end }}
-
-
-</div></div></div>
-<div class="paper-wrap">
 <h1 style="margin-top:0"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
 <div  class="des" style="margin-top:-1em;font-size:1.1em">北師大歷史學院本科生學術刊物</div>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
-<div class="paper-card recording" style="max-height:none;border:none;background:none"><div class="paper-card-in">
+<div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
           {{ range first 5 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
                     <div >
                       <time class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</time>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
                     </div>
           {{ end }}
 </div></div></div>
-</div>
-</section>
-<section class="section4">
-  <h1 class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><a href="https://wiki.kqh.me" target="\_blank"><span style="letter-spacing:.2em">維</span>基</a>
-  </h1>
-<div class="gallery" style="margin:0">
+<div class="paper-wrap" style="max-width:32em">
+<h1 style="margin-top:0"><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h1>
+<div  class="des" style="margin-top:-1em;font-size:1.1em">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
+這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
+<div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
+{{ range .Site.Taxonomies.toc }}
+  <li><a href="{{ .Page.Permalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></li>
+    {{ end }}
+</div></div></div>
 <div class="paper-wrap">
-<div class="paper-card recording" style="max-height:none;border:none;width:15em"><div class="paper-card-in">
-<div>【讀書】目前有《尙書》筆記</div>
-<div>【上課】上課筆記</div>
-<div>【資料數字化】很少</div>
-<div>【草稿】</div>
+<h1 style="margin-top:0"><a href="/doc" target="_blank">文庫</a></h1>
+<div  class="des" style="margin-top:-1em;font-size:1.1em">平時上課的錄文。量很少</div>
+<div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
+{{ range first 10 (where .Site.RegularPages.ByDate "Type" "doc") }}
+    <li><a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a></li>
+{{ end }}
 </div></div></div>
 </div>
 </section>

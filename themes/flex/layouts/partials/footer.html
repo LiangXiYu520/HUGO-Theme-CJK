@@ -9,11 +9,10 @@
         <div class="col1"><a href="{{ .URL  }}"><span class="col1-title col2">{{ .Name | safeHTML  }}</span></a>
           <div>{{ .Page.Lastmod.Format "2006-01-02" }}</div></div>
       {{ end }}
-    <div class="col1">　</div>
-    <div class="col1"><a href="/tags"><span class="col1-title">標籤<span style="font-size:.7em"> {{ len  (where .Site.Taxonomies.tags "Type" "post") }}</span></span></a></div>
-  <div class="col1"><a href="/notes"><span class="col1-title">備註<span style="font-size:.7em"> {{ len (where .Site.Taxonomies.notes "Type" "post") }}</span></span></a></div>
   </div>
             <ul>
+              <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len  (where .Site.Taxonomies.tags "Type" "post") }}</span></a></h2>
+            <h2><a href="/notes">備註<span style="font-size:.7em"> {{ len (where .Site.Taxonomies.notes "Type" "post") }}</span></a></h2>
               {{ $series := where .Site.Taxonomies.series "Type" "post" }}
                      {{ $categories := where .Site.Taxonomies.categories "Type" "post" }}
                      {{ $author := where .Site.Taxonomies.author "Type" "post" }}

@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-22
+lastmod: 2020-04-23
 url: /release
 markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
 menu:
@@ -1547,3 +1547,7 @@ html5 語意標籤改造。
 加入 algolia！！歡呼！！
 
 把琴譜移到本站。
+
+#### 4.6.21
+
+乾坤大挪移。維基中有用的都搬了過來，建立新的 section。把維基刪除了。

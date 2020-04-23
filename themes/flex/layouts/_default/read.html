@@ -2,20 +2,10 @@
     <div class="heading-wrap">
       {{ partialCached "banner.html" . }}
       <header class="Heading">
-        {{ $termName := .Data.Singular }}
-        {{ $type := .Type }}
-            <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»<a href="/qinpu">琴譜數字文本化</a>»
-              {{- with .Params.toc -}}
-                  {{- range . -}}
-                  {{- $name := . -}}
-                  {{- with $.Site.GetPage "taxonomy" (printf "toc/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "toc/%s" ($name | urlize))) -}}
-                <a class="DocSearch-lvl0" href="/toc/{{ $name }}">{{- $name -}}</a>»
-                  {{- end -}}
-                  {{- end -}}
-              {{- end -}}
+            <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/#wiki">筆記</a>»<a class="DocSearch-lvl0" href="/read">讀書</a>»
             </span><h1 class="DocSearch-lvl1 Heading-title taxo" style="font-size:3.2em">{{- .Title  | safeHTML -}}</h1>
       {{ if .Description }}
-      <div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
+      <div class="des">{{ .Params.Description | safeHTML }}</div>
       {{ end }}
       </header>
     <section class="tag">
@@ -33,26 +23,54 @@
     {{ end }}
     </div>
     <div class="des1">
-    {{- with .Params.authho -}}
-        　<span class="des2">錄入</span>
+        　<span class="des2">作者 </span>
+        <span class="des1-cate">@柯棋瀚</span>
+    {{- with .Params.tags -}}
+        　<span class="des2">標籤</span>
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "authho/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "authho/%s" ($name | urlize))) -}}
-        <span class="des1-cate"> <a href="/authho/{{ $name }}">@{{- $name -}}</a></span>
-        {{- end -}}
-        {{- end -}}
-    {{- end -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+        <span class="des1-cate"><a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
+        {{ end -}}
+        {{ end }}
+    {{- end }}
+    {{- with .Params.notes -}}
+        　<span class="des2">備註</span>
+        {{ range . }}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "notes/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "notes/%s" ($name | urlize))) -}}
+        <span class="des1-cate"><a href="/notes/{{ $name }}">({{- $name -}})</a></span>
+        {{ end -}}
+        {{ end }}
+    {{- end }}
   </div>
-<div class="des1">
-    {{- if .Params.contentCopyright -}}
-    <span class="des2">版權 </span>{{ .Params.contentCopyright | safeHTML }}
-    {{- else -}}
-    <span class="des2">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
-    {{- end -}}
+<div class="des1"><span class="des2">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
 </div>
 </section>
+    <nav class="pagi-wrap">
+    <div class="pagi">
+      {{ with .PrevInSection }}
+        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title | safeHTML  }}</a></span>
+        {{- end }}
+    {{ with .NextInSection }}
+          <span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title  | safeHTML }}</a> →</span>
+    {{- end }}
+    </div>
+  </nav>
     </div>
     <main>
+{{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
+<div class="vertical-wrap">
+{{ if .TableOfContents }}
+<aside class="toc">
+<li class="toc-item">{{ .TableOfContents }}</li>
+</aside>
+{{ end }}
+    <article class="DocSearch-content vertical">
+    {{ .Content }}
+    </article>
+  </div>
+      {{ else }}
     {{ if .TableOfContents }}
       <aside class="toc sticky">
       <li class="toc-item">{{ .TableOfContents }}</li>
@@ -61,6 +79,7 @@
          <article class="DocSearch-content vertical-false">
             {{ .Content }}
           </article>
+    {{ end }}
 <section class="u-wrapper">
   <div class="u-padding">
 {{ partial "comments.html" . }}
