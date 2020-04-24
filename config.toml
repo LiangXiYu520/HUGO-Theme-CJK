@@ -51,25 +51,29 @@ book = "book"
            name = "讀書"
            weight = 4
            url = "/read"
+           [[menu.nav]]
+                 name = "推介"
+                 weight = 5
+                 url = "/recommend"
        [[menu.nav]]
            name = "考試"
-           weight = 5
+           weight = 6
            url = "/exam"
      [[menu.nav]]
         name = "赫赫讚府"
-        weight = 6
+        weight = 7
         url = "/zanfu"
         [[menu.nav]]
                name = "春秋學刊"
-               weight = 7
+               weight = 8
                url = "/xuekan"
     [[menu.nav]]
          name = "琴譜"
-         weight = 8
+         weight = 9
          url = "/qinpu"
          [[menu.nav]]
             name = "文庫"
-            weight = 9
+            weight = 10
             url = "/doc"
 [params]
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'

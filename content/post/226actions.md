@@ -1,6 +1,6 @@
 ---
 author: ["柯棋瀚"]
-title: "Deploy Hugo Site Periodically to Netlify by GitHub Actions"
+title: "Deploying Hugo Site Periodically to Netlify by GitHub Actions"
 date: 2020-04-20
 lastmod: 2020-04-20
 categories: ["站務"]

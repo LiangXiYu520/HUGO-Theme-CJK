@@ -374,3 +374,11 @@ https://github.com/ksky521/nodeppt  markdown 轉換為網頁 ppt
 https://colorize.cc/ 黑白照片上色
 
 webmention.io 網頁提醒
+
+https://bansal.io/pattern-css css背景
+
+https://www.invisionapp.com/inside-design/typography-tips/ 簡單的排版指南 英文
+
+https://www.artic.edu/collection?is_public_domain=1 芝加哥艺术学院的网站提供5万多张艺术品图片，全部都是高分辨率，而且可以免费使用
+
+https://writefreely.org/ 輕量網站生成工具，可以組建社區。
