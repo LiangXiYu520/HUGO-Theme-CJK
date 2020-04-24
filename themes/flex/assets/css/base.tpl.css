@@ -284,6 +284,7 @@ font-size: 1.8em;
 line-height: 1.5}
 h2{
   text-align: center;
+  margin-top:3em;
 letter-spacing: .25em;
 font-size: 1.8em;
 line-height: 1.5}
@@ -583,7 +584,7 @@ to{  box-shadow:  0 0 70px 5px  var(--black);}
   margin-top:0em}
 .col h2{
 color:#b6b5b5;
-margin-bottom: .1em;
+margin: .8em 0 .1em;
 font-size: 1.25em;
 letter-spacing: 0;
 text-align: left}

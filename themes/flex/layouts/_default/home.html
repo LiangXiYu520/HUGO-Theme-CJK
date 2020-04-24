@@ -74,7 +74,7 @@
   <ol style="margin:1em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
-  <span class="des2 home">{{ .Params.description | safeHTML }}</span>
+  <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}

@@ -3,6 +3,7 @@
   {{ partialCached "banner.html" . }}
   <header class="Heading">
       <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/#wiki">筆記</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">讀書</h1>
+{{- with $des := index (.Site.Data.taxo ) "讀書" -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}
   </header>
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
@@ -12,53 +13,25 @@
 </section>
 </div>
   <main>
-{{- $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Type" "read") (index 50) }}
-  {{ $count1 := add $length 1 }}
-  {{ $count0 := $paginator.PageNumber }}
-{{ $count2 := sub $count0 1 }}
-{{ $count3 := mul 50 $count2}}
-{{ $count4 := sub $count1 $count3 }}
-{{ partial "pagination.html" . }}
-{{ range $paginator.Pages.GroupByPublishDate "2006" }}
-                {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
-                 {{ $leng := len .Pages }}
-<section class="year-wrap">
-                  <div class="year"><h2>{{ .Key }}<span class="des3">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2></div>
-        <div class="archive-wrapper">
-        {{- range .Pages -}}
-              <div class="archive-wrap">
-        <span class="archive-left">
-        {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
-                <span class="archive-right">
-              <div>
-                    <span class="archive-info archive-info-author">@柯棋瀚</span>
-                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title  | safeHTML -}}</a></span>
-                </div>
-                <div class="archive-info"><time>{{ .Date.Format "06-01-02" }}</time>
-                  {{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "06-01-02" }}{{ end }}&nbsp
-            {{ with .Params.tags -}}
-                {{ range . }}
-                {{- $name := . -}}
-                {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/tags/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
-            {{ with .Params.notes -}}
-                {{ range . }}
-                {{- $name := . -}}
-                {{- with $.Site.GetPage "taxonomy" (printf "notes/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "notes/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/notes/{{ $name }}"  target="_blank">({{- $name -}})</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
-          </div>
-          </span>
-    </div>
-    {{ end }}</div>
-  </section>    {{ end }}
-    <br>
-{{ partial "pagination.html" . }}
+    <div class="archive-wrapper"style="border:.3em solid var(--black);border-radius:2.5em">
+      <h2 style="margin-top:.5em">最近發布</h2>
+{{ range first 10 .Pages }}
+  <div class="archive-wrap"style="margin:.7em 0;text-align:left">
+    <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>
+    <span class="archive-title"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML }}</a></span></div>
+{{ end }}
+</div>
+    <div class="archive-wrapper">
+{{ range .Site.Taxonomies.book.Alphabetical  }}
+<h2 id="{{- .Page.Title | safeHTML -}}"style="text-align:left">{{ .Page.Title | safeHTML }}</h2>
+  {{ range sort .Pages "File.Path" }}
+<div class="archive-wrap"style="margin:.7em 0;text-align:left">
+  <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>
+  <span class="archive-title"><a href="{{ .Permalink }}"   target="_blank">{{ .Title | safeHTML  }}</a></span>
+</div>
+{{ end }}
+{{ end }}
+</div>
 </main>
     {{ partial "footer-xuekan.html" . }}
 {{ end }}
