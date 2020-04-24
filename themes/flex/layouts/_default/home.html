@@ -114,7 +114,7 @@
 </div>
 </div>
 <h1>[分類] Categories<br>系列｜Series</h1>
-<div class="discover-des">更多系列見網誌葉腳</div>
+<div class="discover-des">所有分類，隨機一箇系列。更多系列見網誌葉腳</div>
 <div class="discover-wrap latest">
 <div class="discover categories">
   {{ $auth := slice }}
@@ -219,7 +219,7 @@
 </div>
 </section>
 <section class="section3">
-  <h1 id="wiki" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">筆</span>記
+  <h1 id="wiki" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
 <div class="gallery" style="margin:0">
 <div class="paper-wrap">
@@ -231,7 +231,7 @@
     {{ end }}
 </div></div></div>
 <div class="paper-wrap">
-  <h1 style="margin-top:0"><a href="/read" target="_blank">推介</a></h1>
+  <h1 style="margin-top:0"><a href="/recommend" target="_blank">推介</a></h1>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
     {{- range first 5  (where .Site.RegularPages.ByDate.Reverse "Type" "recommend") -}}

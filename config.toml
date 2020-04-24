@@ -43,37 +43,41 @@ book = "book"
          name = "作品"
          weight =  2
          url = "/gallery"
-  [[menu.nav]]
-     name = "網誌發現"
+  [[menu.nav1]]
+     name = "發現"
      weight = 3
      url = "/#discover"
-     [[menu.nav]]
+     [[menu.nav1]]
+        name = "歸檔"
+        weight = 4
+        url = "/post"
+     [[menu.nav2]]
            name = "讀書"
-           weight = 4
+           weight = 5
            url = "/read"
-           [[menu.nav]]
+           [[menu.nav2]]
                  name = "推介"
-                 weight = 5
+                 weight = 6
                  url = "/recommend"
-       [[menu.nav]]
+       [[menu.nav2]]
            name = "考試"
-           weight = 6
+           weight = 7
            url = "/exam"
-     [[menu.nav]]
+     [[menu.nav3]]
         name = "赫赫讚府"
-        weight = 7
+        weight = 8
         url = "/zanfu"
-        [[menu.nav]]
+        [[menu.nav3]]
                name = "春秋學刊"
-               weight = 8
+               weight = 9
                url = "/xuekan"
-    [[menu.nav]]
+    [[menu.nav3]]
          name = "琴譜"
-         weight = 9
+         weight = 10
          url = "/qinpu"
-         [[menu.nav]]
+         [[menu.nav3]]
             name = "文庫"
-            weight = 10
+            weight = 11
             url = "/doc"
 [params]
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'

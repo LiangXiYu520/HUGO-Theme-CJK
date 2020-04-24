@@ -1,15 +1,34 @@
 <footer class="footer-wrapper">
-  <div class="col">
-        <div class="col1" style="margin-top:.5em">
-      {{ range .Site.Menus.nav }}
-          <div class="col1"><a href="{{  .URL  }}"><span class="col1-title">{{ .Name | safeHTML  }}</span></a></div>
-      {{ end }}
-        <div class="col1">　</div>
-      {{ range .Site.Menus.main }}
-        <div class="col1"><a href="{{ .URL  }}"><span class="col1-title col2">{{ .Name | safeHTML  }}</span></a>
-          <div>{{ .Page.Lastmod.Format "2006-01-02" }}</div></div>
-      {{ end }}
-  </div>
+  <nav class="col">
+          <div class="col1">
+        {{ range .Site.Menus.nav }}
+            <div class="col1"><a href="{{  .URL  }}"><span class="col1-title">{{- .Name | safeHTML -}}</span></a></div>
+        {{ end }}
+        {{ range .Site.Menus.main }}
+        <div class="col1"><a href="{{ .URL  }}"><span class="col1-title col2">{{- .Name | safeHTML -}}</span></a>
+          <div>{{ .Page.Lastmod.Format "06-01-02" }}</div></div>
+        {{ end }}
+    </div>
+    <div class="col1">
+      <div class="col1">网誌</div>
+    {{ range .Site.Menus.nav1 }}
+      <div class="col1"><a href="{{  .URL  }}"><span class="col1-title">{{- .Name | safeHTML -}}</span></a></div>
+    {{ end }}
+    </div>
+    <div class="col1">
+    <div class="col1">知識</div>
+    {{ range .Site.Menus.nav2 }}
+    <div class="col1"><a href="{{  .URL  }}"><span class="col1-title">{{ .Name | safeHTML }}</span></a></div>
+    {{ end }}
+    </div>
+    <div class="col1" style="margin-top:1em">
+    <div class="col1">數據庫</div>
+    {{ range .Site.Menus.nav3 }}
+    <div class="col1"><a href="{{  .URL  }}"><span class="col1-title">{{ .Name | safeHTML }}</span></a></div>
+    {{ end }}
+    </div>
+    </nav>
+    <nav class="col">
             <ul>
               <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len  (where .Site.Taxonomies.tags "Type" "post") }}</span></a></h2>
             <h2><a href="/notes">備註<span style="font-size:.7em"> {{ len (where .Site.Taxonomies.notes "Type" "post") }}</span></a></h2>
@@ -31,7 +50,7 @@
           <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
           {{ end }}
     </ul>
-  </div>
+  </nav>
 
   <div class="Footer">
         訂閱｜<strong><a href="/index.xml" target="_blank">RSS</a></strong>　<strong><a href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d"  class="theme-link" target="_blank">SUBSCRIBE</a></strong>　<a href="/sitemap.xml" target="_blank">sitemap</a><br>

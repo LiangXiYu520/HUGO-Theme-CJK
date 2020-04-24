@@ -1,8 +1,26 @@
 <nav>
     <div class="banner">
       {{ range .Site.Menus.nav }}
-          <a href="{{  .URL  }}" style="margin-right:1em">{{ .Name | safeHTML  }}</a>
-      {{ end }}
+          <a href="{{  .URL  }}">{{- .Name | safeHTML  -}}</a>
+      {{- end -}}
+      <details>
+      <summary>網誌</summary>
+      {{ range .Site.Menus.nav1 }}
+          <div style="margin: auto -.5em auto 1em"><a href="{{  .URL  }}">{{- .Name | safeHTML  -}}</a></div>
+      {{- end -}}
+  </details>
+  <details>
+  <summary>知識</summary>
+  {{ range .Site.Menus.nav2 }}
+      <div style="margin: auto -.5em auto 1em"><a href="{{  .URL  }}">{{- .Name | safeHTML  -}}</a></div>
+  {{- end -}}
+</details>
+<details>
+<summary>數據庫</summary>
+{{ range .Site.Menus.nav3 }}
+    <div style="margin: auto -.5em auto 1em"><a href="{{  .URL  }}">{{- .Name | safeHTML  -}}</a></div>
+{{- end -}}
+</details>
     </div>
     <div class="banner banner1">
 <input id="algolia-autocomplete" placeholder="【搜索】輸入後無需回車。不能識別繁簡" class="search">
