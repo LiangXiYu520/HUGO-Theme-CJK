@@ -15,12 +15,17 @@
   <main>
     <div class="archive-wrapper"style="border:.3em solid var(--black);border-radius:2.5em">
       <h2 style="margin-top:.5em">最近發布</h2>
-{{ range first 10 .Pages }}
+{{ range first 8 .Pages }}
   <div class="archive-wrap"style="margin:.7em 0;text-align:left">
     <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>
     <span class="archive-title"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML }}</a></span></div>
 {{ end }}
 </div>
+<div class="archive-wrapper" style="margin-top:2em">
+  {{ range .Site.Taxonomies.book.Alphabetical  }}
+  <a href="#{{- .Page.Title -}}" style="box-shadow:none;margin-right:1em;word-break:keep-all;font-family:var(--sans)">{{ .Page.Title | safeHTML }}</a>
+  {{ end }}
+  </div>
     <div class="archive-wrapper">
 {{ range .Site.Taxonomies.book.Alphabetical  }}
 <h2 id="{{- .Page.Title | safeHTML -}}"style="text-align:left">{{ .Page.Title | safeHTML }}</h2>

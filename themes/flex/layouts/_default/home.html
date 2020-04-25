@@ -4,27 +4,13 @@
     <div class="heading-wrap home home1">
       <h1 style="color:#2b2b2b"><span style="letter-spacing:.2em">赫赫文</span>王</h1>
       <div class="label">永嘉田家後/　生於九五後/<br>長于錦官城/　讀的厤史系/</div>
-      <table class="mail" cellpadding=0px style="margin:auto;border:none">
-      <tr>
-      <td style="text-align:right;border:none">PGP//</td>
-      <td style="text-align:left;border:none"><a href="/kujihhoe (E2269D07) public.asc" target="_blank">E2269D07</a></td>
-      </tr>
-      <tr>
-      <td style="text-align:right;border:none">email&iMessage//</td>
-      <td style="text-align:left;border:none"><span>me#kqh.me</span></td>
-      </tr>
-      <tr>
-      <td style="text-align:right;border:none">repository//</td>
-      <td style="text-align:left;border:none"><a href="https://github.com/kujihhoe/blogflex" target="_blank">CJK</a></td>
-      </tr>
-      </table>
       <div class="des des-home">歡迎來到我的主頁。您看到的每箇細節都經過了精心打磨：
         <a href="/149" target="_blank">版面樣式</a>；<a href="/224" target="_blank">統計</a>；<a href="/223" target="_blank">文章推薦</a>；<a href="226" target="_blank">每二小時定時生成</a>；索引導航；打開速度</div>
       {{- $length := len .Site.RegularPages }}
       {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}
-    <div class="des1" style="margin:2em auto;color:#2b2b2b">
+    <div class="des1" style="margin:7em auto 0;color:#2b2b2b">
     凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Site.RegularPages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
-<br>本站已運行 {{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }} 日　
+<br>已運行 {{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }} 日　
 <span class="subscribe-wrap des1">
   <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
 　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
@@ -114,7 +100,7 @@
 </div>
 </div>
 <h1>[分類] Categories<br>系列｜Series</h1>
-<div class="discover-des">所有分類，隨機一箇系列。更多系列見網誌葉腳</div>
+<div class="discover-des">更多系列見網誌葉腳</div>
 <div class="discover-wrap latest">
 <div class="discover categories">
   {{ $auth := slice }}
@@ -173,8 +159,9 @@
 <ol>
 <h2 style="margin:0"><a href="/series/赫赫指北" target="_blank">赫赫指北｜</a></h2>
   <div class="discover-des" style="margin-top:.5em;text-align:left">用最少的字數搭建大槩的知識體系</div>
+  {{ $bei := slice }}
 {{ range .Site.Taxonomies.series.赫赫指北 }}
-      <li class="discover-item"><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></li>
+      <div class="discover-item"><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></div>
   {{ end }}
   </ol>
   </div>

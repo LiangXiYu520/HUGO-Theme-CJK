@@ -9,12 +9,10 @@
 {{ end }}
     <section class="des1">
     <span datetime="{{ .Date.Format "2006-01-02" }}">
-    　柯棋瀚整理　<time>{{ .Date.Format "2006-01-02" }}</time>
-    {{ if ne .Lastmod .Date }}>
+    　柯棋瀚整理　<time>{{- .Date.Format "2006-01-02" -}}</time>
+    {{- if ne .Lastmod .Date -}}>
     {{- .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") -}}
-{{- end -}}　
-  </span>
-    <span>{{- .WordCount -}} 字</span>　請勿轉載，自己參考一下卽可
+{{- end -}}　</span><span>{{- .WordCount -}} 字</span>　請勿轉載，自己參考一下卽可
 {{ if $.Site.Params.linkToMarkDown -}}
 {{ if .Params.markdown }}
 <span class="svg"><a  href="{{ .Params.markdown | safeHTML }}"  target="_blank"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
