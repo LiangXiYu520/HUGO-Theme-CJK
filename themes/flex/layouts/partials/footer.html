@@ -28,8 +28,8 @@
     {{ end }}
     </div>
     </nav>
-    <nav class="col">
-            <ul>
+      <nav class="col">
+            <ul style="margin-top:.4em">
               <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len  (where .Site.Taxonomies.tags "Type" "post") }}</span></a></h2>
             <h2><a href="/notes">備註<span style="font-size:.7em"> {{ len (where .Site.Taxonomies.notes "Type" "post") }}</span></a></h2>
               {{ $series := where .Site.Taxonomies.series "Type" "post" }}
@@ -40,7 +40,7 @@
               <li><a href="{{ .Page.Permalink }}">{{ .Page.Title | safeHTML  }} {{ .Count }}</a></li>
       {{ end }}
             </ul>
-    <ul>
+    <ul style="margin-top:.4em">
       <h2>分類<span style="color:#d2c600;font-size:.7em"> {{ len $categories }}</span></h2>
         {{ range $categories.ByCount }}
         <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>

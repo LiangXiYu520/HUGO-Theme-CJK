@@ -93,7 +93,7 @@
 {{ end }}
 {{ end }}
 <ul>
-{{ range first 10 $lastmod }}
+{{ range first 8 $lastmod }}
 <li><span class="archive-info"style="margin:auto">{{ .Lastmod.Format "2006-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
 </li>
 {{ end }}</ul>
