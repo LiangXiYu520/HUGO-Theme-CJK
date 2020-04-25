@@ -42,7 +42,7 @@ book = "book"
   [[menu.nav]]
          name = "作品"
          weight =  2
-         url = "/gallery"
+         url = "/#gallery"
   [[menu.nav1]]
      name = "發現"
      weight = 3

@@ -10,12 +10,8 @@
     <section class="des1">
     <span datetime="{{ .Date.Format "2006-01-02" }}">
     　柯棋瀚整理　<time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} >
-    {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") -}}{{ end }}</span>　<span>{{- .WordCount -}} 字</span>
-{{- if .Params.contentCopyright -}}
-　{{ .Params.contentCopyright | safeHTML }}
-{{- else -}}
-  　{{ .Site.Params.contentCopyright | safeHTML }}
-{{- end -}}
+    {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "06-01-02") -}}{{ end }}</span>　<span>{{- .WordCount -}} 字</span>
+來源于網絡，版權歸原作者所有
 {{ if $.Site.Params.linkToMarkDown -}}
 {{ if .Params.markdown }}
 <span class="svg"><a  href="{{ .Params.markdown | safeHTML }}"  target="_blank"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">

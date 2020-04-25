@@ -20,7 +20,7 @@
     <div class="des1">
     <time datetime="{{ .Date.Format "2006-01-02" }}">
   {{ .Date.Format "2006-01-02" }}
-{{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "2006-01-02" }}{{ end }}</time>　
+{{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "06-01-02" }}{{ end }}</time>　
   <span>{{- .WordCount }} 字</span>
   {{ if $.Site.Params.linkToMarkDown -}}
   {{ if .Params.markdown }}
