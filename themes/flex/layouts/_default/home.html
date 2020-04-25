@@ -99,8 +99,8 @@
 {{ end }}</ul>
 </div>
 </div>
-<h1>[分類] Categories<br>系列｜Series</h1>
-<div class="discover-des">更多系列見網誌葉腳</div>
+<h1>分類 Categories</h1>
+<div class="discover-des">隨機 8 箇分類</div>
 <div class="discover-wrap latest">
 <div class="discover categories">
   {{ $auth := slice }}
@@ -130,7 +130,8 @@
 {{ end }}
 {{ $series = intersect  $3series $auth  }}
   {{ $allCate := where .Site.Taxonomies.categories "Type" "post" }}
-  {{ range $allCate.ByCount  | shuffle }}
+  {{ with $allCate.ByCount | shuffle }}
+  {{ range first 8 . }}
 {{ $first2 := slice }}
 {{ range first 2 .Pages }}
 {{ $first2 = $first2 | append . }}
@@ -145,7 +146,7 @@
 {{ $thisCateinSeries := intersect $thisCate $series }}
 {{ $end := $thisCateinSeries | complement $First2inSeries  }}
 <ol>
-<h2 style="margin:0"><a href="{{ .Page.Permalink }}" target="_blank">[{{ .Page.Title | safeHTML  }}]</a></h2>
+<h2 style="margin:0"><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></h2>
 <div class="discover-des" style="margin-top:.5em;text-align:left">最近 Latest</div>
 {{ range $first2 }}
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
@@ -155,7 +156,7 @@
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
 {{ end }}
 </ol>
-{{ end }}
+{{ end }}{{ end }}
 </div>
 </div>
   <div class="discover-wrap latest" style="max-width:50em;background:var(--bg);border-radius:2.5em">

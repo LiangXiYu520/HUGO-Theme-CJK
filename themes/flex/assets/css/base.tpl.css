@@ -874,11 +874,11 @@ font-family: var(--kai)
   }
   .section2{
     background: var(--shallowblue);
-    padding:4em 0
+    padding:4em 0 3em
   }
   .section3{
     background: var(--shallowred);
-    padding:4em 0
+    padding:4em 0 5em
   }
   .section4{
     padding:4em 0 0
