@@ -156,15 +156,7 @@
 {{ end }}
 </ol>
 {{ end }}
-<ol>
-<h2 style="margin:0"><a href="/series/赫赫指北" target="_blank">赫赫指北｜</a></h2>
-  <div class="discover-des" style="margin-top:.5em;text-align:left">用最少的字數搭建大槩的知識體系</div>
-  {{ $bei := slice }}
-{{ range .Site.Taxonomies.series.赫赫指北 }}
-      <div class="discover-item"><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></div>
-  {{ end }}
-  </ol>
-  </div>
+</div>
 </div>
   <div class="discover-wrap latest" style="max-width:50em;background:var(--bg);border-radius:2.5em">
     <h1>其他作者 More Authors</h1>
@@ -209,6 +201,14 @@
   <h1 id="wiki" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
 <div class="gallery" style="margin:0">
+  <div class="paper-wrap">
+    <h1 style="margin-top:0"><a href="/tutorial" target="_blank">赫赫指北</a></h1>
+    <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
+  <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
+      {{- range first 5  (shuffle (where .Site.RegularPages.ByDate.Reverse "Type" "tutorial")) -}}
+      <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML }}</a></li>
+      {{ end }}
+  </div></div></div>
 <div class="paper-wrap">
   <h1 style="margin-top:0"><a href="/read" target="_blank">讀書</a></h1>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
@@ -267,7 +267,7 @@
 <div  class="des" style="margin-top:-1em;font-size:1.1em">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
 這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
-{{ range .Site.Taxonomies.toc }}
+{{ range .Site.Taxonomies.toc.Alphabetical }}
   <li><a href="{{ .Page.Permalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></li>
     {{ end }}
 </div></div></div>

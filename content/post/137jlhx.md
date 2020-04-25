@@ -5,7 +5,7 @@ date: 2017-06-20
 categories: ["人文"]
 tags: ["主旋律"]
 notes: ["課業"]
-markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/137jlhx.md'
+markdown: 'https://github.com/kujihhoe/blogflex/HUGO-Theme-CJK/master/content/post/137jlhx.md'
 description: '此三篇思想報告爲大二下寫的，我是堅決跟黨走的好公民。弟一篇爲公共必修課<v>形勢與政策</v>作業。弟二、三篇爲團日活動報告。繁簡自動轉換，可能有錯字。'
 ---
 

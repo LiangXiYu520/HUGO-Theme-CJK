@@ -8,7 +8,7 @@ menu:
   main:
     weight: 3
 url: /links
-markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/links.md'
+markdown: 'https://github.com/kujihhoe/blogflex/HUGO-Theme-CJK/master/content/post/links.md'
 ---
 
 想自薦、交換友鏈的小伙伴可以在此葉面下留言，或者發郵件給我，我將在一至三日內囘復。想展示自己網站的朋友也可以留言。

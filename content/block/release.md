@@ -5,7 +5,7 @@ title: "更新"
 date: 2017-10-05
 lastmod: 2020-04-24
 url: /release
-markdown: 'https://github.com/kujihhoe/blogflex/blob/master/content/post/release.md'
+markdown: 'https://github.com/kujihhoe/blogflex/HUGO-Theme-CJK/master/content/post/release.md'
 menu:
   main:
     weight: 2
@@ -1557,3 +1557,9 @@ html5 語意標籤改造。
 ##### 4.6.22
 
 把推介遷到筆記。
+
+#### 4 月 25 日
+
+##### 4.6.23
+
+把赫赫指北遷到知識。
