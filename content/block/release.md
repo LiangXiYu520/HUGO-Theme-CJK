@@ -5,7 +5,7 @@ title: "更新"
 date: 2017-10-05
 lastmod: 2020-04-24
 url: /release
-markdown: 'https://github.com/kujihhoe/blogflex/HUGO-Theme-CJK/master/content/post/release.md'
+markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/master/content/post/release.md'
 menu:
   main:
     weight: 2

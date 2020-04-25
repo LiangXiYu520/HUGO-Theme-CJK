@@ -6,7 +6,7 @@ lastmod: 2018-11-26
 categories: ["生活"]
 series: ["斿記"]
 tags: ["西南"]
-markdown: 'https://github.com/kujihhoe/blogflex/HUGO-Theme-CJK/master/content/post/134husa.md'
+markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/master/content/post/134husa.md'
 description: '大一暑假，跟著子凡姐姐組的隊去了德宏州芒市的龍川縣戶撒鄕，調査戶撒刀的鍛造工藝。我是去划水的，但玩㝵很開心啊，至今懷念那地方。那旹未寫日記，現在只能馮耤一點殘存的記憶了。大槩网誌有一箇用處是督促伱記錄、整理一些東西，讓你成爲生活的有心人。已經過去了兩秊半，很多細節記不清了，只能讓照片來講故事。'
 ---
 

@@ -5,7 +5,7 @@ date: 2018-06-20
 categories: ["人文"]
 tags: ["主旋律"]
 notes: ["課業"]
-markdown: 'https://github.com/kujihhoe/blogflex/HUGO-Theme-CJK/master/content/post/131mcgd.md'
+markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/master/content/post/131mcgd.md'
 description: '大三下公共必修課<v>毛中特下</v>的作業。繁簡自動轉換，可能有錯。沒有任何水平，全是抄的教材。第三篇是小組展示，我負責第三部分，費了點匘子把材料組合在一起<n>好歹也是一天旹閒呢</n>。期末我也沒背，感謝老師不挂之恩。'
 ---
 
