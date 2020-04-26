@@ -19,16 +19,6 @@
           <div class="archive-right">
     <span class="archive-title" style="margin-left:0">
       <time class="archive-info">{{- .Date.Format "2006-01-02" -}}</time>　
-      <span class="archive-info archive-info-author">
-      {{- with .Params.auuth -}}
-                  {{- range . -}}
-                  {{- $name := . -}}
-                  {{- with $.Site.GetPage "taxonomy" (printf "auuth/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "auuth/%s" ($name | urlize))) -}}
-                <a href="/auuth/{{ $name }}">@{{- $name -}}</a>　
-                  {{- end -}}
-                  {{- end -}}
-              {{- end -}}
-              </span>
       <a href="{{ .RelPermalink }}" target="_blank">{{- .Title  | safeHTML -}}</a></span>
     </div>
 </div>{{ end }}
