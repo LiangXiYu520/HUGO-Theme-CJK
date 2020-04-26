@@ -26,9 +26,13 @@ Disallow: /book/*
 Disallow: /page/*
 Disallow: /post/page/*
 Disallow: /en/*
+Disallow: /post/
 Disallow: /qinpu/
 Disallow: /gallery/
 Disallow: /zanfu/
 Disallow: /doc/
 Disallow: /read/
 Disallow: /exam/
+Disallow: /block/
+Disallow: /recommend/
+Disallow: /tutorial/

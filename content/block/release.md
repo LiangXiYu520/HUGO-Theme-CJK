@@ -5,7 +5,7 @@ title: "更新"
 date: 2017-10-05
 lastmod: 2020-04-24
 url: /release
-markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/master/content/post/release.md'
+markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/block/release.md'
 menu:
   main:
     weight: 2
@@ -1567,3 +1567,7 @@ html5 語意標籤改造。
 ##### 4.6.24
 
 調整文章推薦樣式，和主頁統一
+
+##### 4.6.25
+
+修復源碼鏈接。robots
