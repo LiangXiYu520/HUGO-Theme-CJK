@@ -201,23 +201,44 @@
 <section class="section3">
   <h1 id="wiki" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
-<div class="gallery" style="margin:0">
-  <div class="paper-wrap">
-    <h1 style="margin-top:0"><a href="/tutorial" target="_blank">赫赫指北</a></h1>
-    <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
-  <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
-      {{- range first 5  (shuffle (where .Site.RegularPages.ByDate.Reverse "Type" "tutorial")) -}}
-      <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML }}</a></li>
-      {{ end }}
-  </div></div></div>
-<div class="paper-wrap">
   <h1 style="margin-top:0"><a href="/read" target="_blank">讀書</a></h1>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
-<div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
-    {{- range first 5  (where .Site.RegularPages.ByDate.Reverse "Type" "read") -}}
-    <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML }}</a></li>
-    {{ end }}
-</div></div></div>
+  <div class="discover-wrap latest">
+  <div class="discover read">
+    {{- range first 6  (where .Site.RegularPages.ByDate.Reverse "Type" "read") -}}
+    <ol>
+      <div class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</div>
+        <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML }}</a></div>
+        <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+        <div class="des2 home">
+          {{- with .Params.book -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "taxonomy" (printf "book/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "book/%s" ($name | urlize))) -}}
+              <a href="/book/{{ $name }}">#{{- $name -}}</a>
+              {{- end -}}
+              {{- end -}}
+          {{- end -}}
+          </div>
+                  </ol>
+  {{ end }}
+        </div>
+        </div>
+
+
+
+
+        <div class="gallery" style="margin:0">
+          <div class="paper-wrap">
+            <h1 style="margin-top:0"><a href="/tutorial" target="_blank">赫赫指北</a></h1>
+            <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
+          <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
+              {{- range first 5  (shuffle (where .Site.RegularPages.ByDate.Reverse "Type" "tutorial")) -}}
+              <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML }}</a></li>
+              {{ end }}
+          </div></div></div>
+
+
 <div class="paper-wrap">
   <h1 style="margin-top:0"><a href="/recommend" target="_blank">推介</a></h1>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
