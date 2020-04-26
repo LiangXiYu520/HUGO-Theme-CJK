@@ -76,7 +76,7 @@ book = "book"
                weight = 10
                url = "/xuekan"
     [[menu.nav3]]
-         name = "琴譜"
+         name = "琴譜文本"
          weight = 11
          url = "/qinpu"
          [[menu.nav3]]
