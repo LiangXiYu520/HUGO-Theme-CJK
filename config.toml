@@ -52,13 +52,13 @@ book = "book"
         weight = 4
         url = "/post"
         [[menu.nav2]]
-              name = "指北"
+              name = "讀書"
               weight = 5
+              url = "/read"    
+        [[menu.nav2]]
+              name = "指北"
+              weight = 6
               url = "/tutorial"
-     [[menu.nav2]]
-           name = "讀書"
-           weight = 6
-           url = "/read"
            [[menu.nav2]]
                  name = "推介"
                  weight = 7

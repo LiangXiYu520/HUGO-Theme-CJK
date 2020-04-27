@@ -60,14 +60,19 @@ font-size: 1.15em;
     text-justify: inter-ideograph;
       background-color: var(--bg)}
       .home h1{
-        letter-spacing: 0l
-
+        letter-spacing: 0
       }
       .home h2{
         letter-spacing: 0;
         text-align: left;
         font-size: 1.3em
       }
+    p {
+      margin:1.2em auto
+    }
+  .vertical p{
+    margin:auto 1.2em
+  }
 table{
   margin: 2.2em auto;
   z-index: 2;

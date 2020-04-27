@@ -96,7 +96,7 @@
           </article>
       </div>
     {{ end }}
-<nav style="max-width:90%;margin:0 auto;background:var(--shallowblue);padding:2.5em 0 1px;border-radius:3em">
+<nav style="max-width:59em;margin:0 auto;background:var(--shallowblue);padding:1px 0 0;border-radius:3em">
   {{ $current := . }}
   {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $current.Title }}
   {{ $3relevant := slice }}
@@ -181,7 +181,7 @@
     <div class="discover-wrap latest">
     <div class="discover categories">
   {{ if ge (len $recommend) 21 }}
-    {{- range first 4 $recommend -}}
+    {{- range first 3 $recommend -}}
     <ol style="margin:1.5em auto">
     <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
     <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
@@ -278,15 +278,11 @@
   </div>
 </ol>
   {{ end }}
-
-
   {{ else if ge (len $recommend) 11 }}
-
-  {{- range first 4 $recommend -}}
+  {{- range first 3 $recommend -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
-
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}
@@ -319,7 +315,6 @@
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
-
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}
@@ -352,7 +347,6 @@
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
-
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}
@@ -382,11 +376,10 @@
 </ol>
   {{ end }}
   {{ else if le (len $recommend) 10 }}
-  {{- range first 8 $recommend -}}
+  {{- range first 7 $recommend -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
-
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}
@@ -429,7 +422,7 @@
 {{ end }}
 {{ end }}
 {{ $others := intersect  $categories  $other }}
-{{  range first 4 $others | shuffle }}
+{{  range first 2 $others | shuffle }}
 <ol style="margin:1.5em auto">
 <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
 <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>

@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "更新"
 date: 2017-10-05
-lastmod: 2020-04-24
+lastmod: 2020-04-26
 url: /release
 markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/block/release.md'
 menu:
@@ -1581,3 +1581,15 @@ html5 語意標籤改造。
 主頁讀書樣式改成分欄。
 
 各文檔歸檔葉刪除作者。讀書各分類加上統計。
+
+#### 4 月 27 日
+
+##### 4.6.27
+
+文章推薦減少為 9 項。
+
+增加段落間距。
+
+> 对于非关键的js文件，想要实现异步加载很简单：
+> <script async src="siteScript.js"></script>
+> async或defer关键字都可以实现js脚本的异步加载，更多内容参考:javascript - load scripts asynchronously - Stack Overflow

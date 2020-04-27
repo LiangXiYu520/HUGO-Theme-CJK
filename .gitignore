@@ -1,0 +1,6 @@
+/node_modules/
+/public/
+*/.configs/*
+*/.markdown/*
+*/.Archive/*
+env
