@@ -26,8 +26,6 @@ subject = "subject"
 auth = "auth"
 from = "from"
 toc = "toc"
-authho = "authho"
-auuth = "auuth"
 book = "book"
 [author]                  # essential
   name = "柯棋瀚"
@@ -54,7 +52,7 @@ book = "book"
         [[menu.nav2]]
               name = "讀書"
               weight = 5
-              url = "/read"    
+              url = "/read"
         [[menu.nav2]]
               name = "指北"
               weight = 6

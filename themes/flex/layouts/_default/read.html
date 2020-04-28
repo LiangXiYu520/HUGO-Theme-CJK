@@ -37,8 +37,8 @@
         　<span class="des2">學科</span>
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-        <span class="des1-cate"><a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
+        {{- with $.Site.GetPage "taxonomy" (printf "book/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "book/%s" ($name | urlize))) -}}
+        <span class="des1-cate"><a href="/read#{{ $name }}">#{{- $name -}}</a></span>
         {{ end -}}
         {{ end }}
     {{- end }}

@@ -128,7 +128,7 @@ a:hover{
 strong{
   font-family: var(--sans)}
 em{
-  font-family:var(--kai);
+  font-family:var(--fang);
   font-style: normal}
 v{
 background-image: url(/v1.png);
@@ -200,8 +200,8 @@ margin-bottom:7em
     min-width:86%;
     max-height: 39em;
           background-color: var(--bg);
-          border: .5em solid var(--black);
-        border-radius: 2.5rem}
+          border: .15em solid var(--yellow);
+        border-radius: 3em}
 .vertical blockquote{
   line-height: 1.8em}
 .vertical a{
@@ -292,7 +292,7 @@ line-height: 1.5}
 h2{
   text-align: center;
   margin-top:3em;
-letter-spacing: .25em;
+letter-spacing: .333em;
 font-size: 1.8em;
 line-height: 1.5}
 h3{

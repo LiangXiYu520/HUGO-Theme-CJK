@@ -33,12 +33,11 @@
     {{ end }}
     </div>
     <div class="des1">
-    {{- with .Params.authho -}}
-        　<span class="des2">錄入</span>
+    {{- with .Params.author -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "authho/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "authho/%s" ($name | urlize))) -}}
-        <span class="des1-cate"> <a href="/authho/{{ $name }}">@{{- $name -}}</a></span>
+        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        <span class="des1-cate"> <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
         {{- end -}}
         {{- end -}}
     {{- end -}}

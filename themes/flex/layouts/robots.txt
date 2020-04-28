@@ -15,10 +15,10 @@ Disallow: /from
 Disallow: /from/
 Disallow: /toc
 Disallow: /toc/
-Disallow: /authho
-Disallow: /authho/
-Disallow: /auuth
-Disallow: /auuth/
+Disallow: /author
+Disallow: /author/
+Disallow: /author
+Disallow: /author/
 Disallow: /subject
 Disallow: /subject/
 Disallow: /book

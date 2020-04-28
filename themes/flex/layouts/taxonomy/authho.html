@@ -5,11 +5,11 @@
     {{ $termName := .Data.Singular }}
     {{ $type := .Type }}
         <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»<a href="/qinpu">琴譜數字文本化</a>»錄入者»
-          {{- with .Params.authho -}}
+          {{- with .Params.author -}}
                       {{- range . -}}
                       {{- $name := . -}}
-                      {{- with $.Site.GetPage "taxonomy" (printf "authho/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "authho/%s" ($name | urlize))) -}}
-                    <a href="/authho/{{ $name }}">@{{- $name -}}</a>
+                      {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+                    <a href="/author/{{ $name }}">@{{- $name -}}</a>
                       {{- end -}}
                       {{- end -}}
                   {{- end -}}
@@ -32,11 +32,11 @@
       {{ $count = add $count 1  }}{{- $count -}}　</span>
       <div class="archive-right">
         <span class="archive-info archive-info-author">
-          {{- with .Params.authho -}}
+          {{- with .Params.author -}}
                       {{- range . -}}
                       {{- $name := . -}}
-                      {{- with $.Site.GetPage "taxonomy" (printf "authho/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "authho/%s" ($name | urlize))) -}}
-                    <a href="/authho/{{ $name }}">@{{- $name -}}</a>　
+                      {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+                    <a href="/author/{{ $name }}">@{{- $name -}}</a>　
                       {{- end -}}
                       {{- end -}}
                   {{- end -}}

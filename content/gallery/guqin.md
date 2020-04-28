@@ -106,6 +106,7 @@ vertical: false
 5. 髙山
 
 </div></div></div>
+
 <div class="paper-wrap">
 <div class="paper-card"><div class="paper-card-in">
 
