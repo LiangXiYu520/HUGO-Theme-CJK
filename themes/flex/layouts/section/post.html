@@ -2,7 +2,7 @@
 <div class="heading-wrap">
   {{ partialCached "banner.html" . }}
   <header class="Heading">
-      <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">网誌</h1>
+      <span class="Heading-title finder"><a href="/">赫赫文王</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">网誌</h1>
   </header>
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}

@@ -2,7 +2,7 @@
     <div class="heading-wrap">
       {{ partialCached "banner.html" . }}
       <header class="Heading">
-            <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»<a class="DocSearch-lvl0" href="/recommend">推介</a>»</span><h1 class="DocSearch-lvl1 Heading-title taxo" style="font-size:3.2em">{{- .Title  | safeHTML -}}</h1>
+            <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»<a class="DocSearch-lvl0" href="/recommend">推介</a>»</span><h1 class="DocSearch-lvl1 Heading-title article">{{- .Title  | safeHTML -}}</h1>
       {{ if .Description }}
       <div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
       {{ end }}

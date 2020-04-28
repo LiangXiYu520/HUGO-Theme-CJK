@@ -1593,3 +1593,9 @@ html5 語意標籤改造。
 > 对于非关键的js文件，想要实现异步加载很简单：
 > <script async src="siteScript.js"></script>
 > async或defer关键字都可以实现js脚本的异步加载，更多内容参考:javascript - load scripts asynchronously - Stack Overflow
+
+#### 4 月 28 日
+
+##### 4.6.28
+
+調整細節。把其他部分的作者統一成 author。

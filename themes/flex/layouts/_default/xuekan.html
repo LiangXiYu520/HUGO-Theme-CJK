@@ -2,7 +2,7 @@
       <header class="heading-wrap">
         {{ partialCached "banner.html" . }}
         <div class="Heading">
-             <span class="Heading-title taxo" style="font-size:1.2em;font-weight:bold;letter-spacing:.15em"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»<a  class="DocSearch-lvl0"  href="/xuekan">春秋學刊</a>»
+             <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»<a  class="DocSearch-lvl0"  href="/xuekan">春秋學刊</a>»
                {{- with .Params.subject -}}
                    {{- range . -}}
                    {{- $name := . -}}
@@ -12,7 +12,7 @@
                    {{- end -}}
                {{- end -}}
                </span>
-               <h1 class="DocSearch-lvl1 Heading-title taxo" style="font-size:3.2em">{{- .Title  | safeHTML -}}</h1>
+               <h1 class="DocSearch-lvl1 Heading-title article">{{- .Title  | safeHTML -}}</h1>
              <section class="tag" style="max-width:20em">
              <div class="des1">
              <time datetime="{{ .Date.Format "2006-01-02" }}">

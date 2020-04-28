@@ -473,6 +473,12 @@ background: none;
 .Heading-title.taxo{
   font-size: 6em;
   letter-spacing:.15em}
+.Heading-title.finder{
+  font-size:1.2em;font-weight:bold;letter-spacing:.15em
+}
+  .Heading-title.article{
+    font-size: 3.2em;
+    letter-spacing:.15em}
 .Heading-link {
   color: inherit}
 .tag{
@@ -1112,6 +1118,9 @@ box-shadow:none;
   width:1.2em;
   margin-right:-.1em}
 @media screen and (max-width:900px){
+  .banner{
+    font-size: .9em
+  }
   .sentence1{
     font-size: 2em;
   }
@@ -1149,6 +1158,12 @@ box-shadow:none;
   .Heading-title.taxo{
     font-size: 4em;
     letter-spacing:.05em}
+    .Heading-title.finder{
+      font-size:1em;letter-spacing:0
+    }
+    .Heading-title.article{
+      font-size: 2em;
+      letter-spacing:.05em}
     .des{
       font-size: 1.3em;
       margin: .5em  0 auto}
@@ -1168,6 +1183,14 @@ margin:0 auto 5em}
       display: block;
       margin-left: 0
     }
+    .vertical{
+            border-radius: 2em;
+            padding: .5em;
+            margin: 4em auto;
+            max-width:88%}
+    .vertical-false{
+          padding: .5em;
+          margin: 4em auto}
     .toc{
       float: none;
       margin:auto;
@@ -1183,15 +1206,6 @@ margin:0 auto 5em}
   max-width:88%;
   max-height: none;
 }
-.vertical{
-        border: .2em solid var(--black);
-        border-radius: 1.7rem;
-        padding: .5em;
-        margin: 4em auto;
-        max-width:88%}
-.vertical-false{
-      padding: .5em;
-      margin: 4em auto}
   .comment{
   padding: .5em;
   margin: 5em auto 0}
