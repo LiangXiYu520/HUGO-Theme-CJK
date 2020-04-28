@@ -9,7 +9,7 @@
   --darkgray: #616161;
   --yellow: #ffda56;
   --shallowbrown: #f1bc00;
-  --brown: #b89001;
+  --brown: #c49d10;
   --stripered: #ddb8b8;
   --stripeblue: #b7cce3;
   --shallowblue:#e0f6ff;
@@ -114,9 +114,9 @@ hr{
 .vertical hr{
   margin:auto 4em;
   height:100%;
-  width: .35em;
-    background: var(--black);
-  border-radius: 0}
+  width: .15em;
+    background: var(--yellow);
+  border-radius: 1em}
 a{
   color:var(--black);
   text-decoration:none;
@@ -131,19 +131,16 @@ em{
   font-family:var(--fang);
   font-style: normal}
 v{
-background-image: url(/v1.png);
-background-repeat: repeat-x;
-background-size: 10px;
-background-position: left bottom;
-padding-bottom: 3px;
-margin: 0 1.5px }
+  border-bottom: 2px dashed var(--brown);
+  margin: 0 .1em;
+}
 n{
   font-family:var(--kai) ;
   font-size: 16px;
   padding:  0 5px;
   letter-spacing: 0}
 u{
-border-bottom: 1px solid var(--black);
+border-bottom: 2px solid var(--shallowgray);
 padding-bottom: 1px;
 text-decoration: none;
 margin: 0 1.5px}
@@ -213,12 +210,10 @@ box-shadow: inset  -0.6em  0 var(--verticala);
 box-shadow:none
   }
 .vertical v{
-  background-image: url(/v.png);
-  background-repeat: repeat-y;
-  background-size: 2.6px;
-  background-position: left bottom;
-  padding-left: 2.5px;
-  margin: 1.5px 0 }
+  border-left: 2px dashed var(--brown);
+border-bottom: none;
+  margin:.1em 0
+}
 .vertical n{
     font-family:var(--kai);
     font-size: 16px;
@@ -226,7 +221,7 @@ box-shadow:none
     letter-spacing: 0
   }
 .vertical u{
-  border-left: 1px solid var(--black);
+  border-left: 2px solid var(--shallowgray);
   border-bottom: none;
   padding-left: 0px;
   text-decoration: none;
