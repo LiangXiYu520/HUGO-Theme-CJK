@@ -91,6 +91,4 @@ book = "book"
   schema= false         # Set to true to add Schema.org metadata
   opengraph= false      # Set to true to add Open Graph metadata
   twittercards= false   # Set to true to add Twitter Cards metadata
-  [[params.taxo]]
-  name='史'
-   des =  '都'
+repository = "https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/"

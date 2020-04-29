@@ -132,7 +132,7 @@ em{
   font-style: normal}
 v{
   border-bottom: 2px dashed var(--brown);
-  margin: 0 .1em;
+  margin: 0 .25em;
 }
 n{
   font-family:var(--kai) ;
@@ -212,7 +212,7 @@ box-shadow:none
 .vertical v{
   border-left: 2px dashed var(--brown);
 border-bottom: none;
-  margin:.1em 0
+  margin:.25em 0
 }
 .vertical n{
     font-family:var(--kai);
