@@ -27,15 +27,28 @@
   {{ end }}
   </div>
     <div class="archive-wrapper">
+      <h2 id="00做社會主義接班人"style="text-align:left">做社會主義接班人<span class="des3" style="font-family:var(--codesans);letter-spacing:0"></span></h2>
+      <div class="des1" style="text-align:left">社會主義核心價値觀：富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
+{{ range .Site.Taxonomies.step.Alphabetical  }}
+  <h4 id="{{- .Page.Title | safeHTML -}}"style="text-align:left">{{- .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0"></span></h4>
+  {{ range sort .Pages "File.Path" }}
+<div class="archive-wrap"style="margin:.7em 0;text-align:left">
+  <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>
+  <span class="archive-title"><a href="{{ .Permalink }}"   target="_blank">{{ .Title | safeHTML  }}</a></span>
+</div>
+{{ end }}
+{{ end }}
 {{ range .Site.Taxonomies.book.Alphabetical  }}
 {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
  {{ $leng := len .Pages }}
+{{ if ne .Page.Title  "00做社會主義接班人" }}
 <h2 id="{{- .Page.Title | safeHTML -}}"style="text-align:left">{{ .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2>
   {{ range sort .Pages "File.Path" }}
 <div class="archive-wrap"style="margin:.7em 0;text-align:left">
   <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>
   <span class="archive-title"><a href="{{ .Permalink }}"   target="_blank">{{ .Title | safeHTML  }}</a></span>
 </div>
+{{ end }}
 {{ end }}
 {{ end }}
 </div>
