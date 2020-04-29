@@ -18,7 +18,16 @@
 {{ range first 10 .Pages }}
   <div class="archive-wrap"style="margin:.7em 0;text-align:left">
     <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>
-    <span class="archive-title"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML }}</a></span></div>
+    <span class="archive-title"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML }}</a></span>
+    {{- with .Params.book -}}
+        {{- range . -}}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "book/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "book/%s" ($name | urlize))) -}}
+      　<a class="archive-info archive-info-author" href="/read#{{ $name }}" target="_blank">#{{- $name -}}</a>
+        {{- end -}}
+        {{- end -}}
+    {{- end -}}
+    </div>
 {{ end }}
 </div>
 <div class="archive-wrapper" style="margin-top:2em">
@@ -28,9 +37,10 @@
   </div>
     <div class="archive-wrapper">
       <h2 id="00做社會主義接班人"style="text-align:left">做社會主義接班人<span class="des3" style="font-family:var(--codesans);letter-spacing:0"></span></h2>
-      <div class="des1" style="text-align:left">社會主義核心價値觀：富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
+      <div class="des2" style="margin:-2em 0 1em">社會主義核心價値觀：富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
+<div style="margin-left:2em">
 {{ range .Site.Taxonomies.step.Alphabetical  }}
-  <h4 id="{{- .Page.Title | safeHTML -}}"style="text-align:left">{{- .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0"></span></h4>
+  <h4 id="{{- .Page.Title | safeHTML -}}"style="text-align:left;margin:0">{{- .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0"></span></h4>
   {{ range sort .Pages "File.Path" }}
 <div class="archive-wrap"style="margin:.7em 0;text-align:left">
   <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>
@@ -38,6 +48,7 @@
 </div>
 {{ end }}
 {{ end }}
+</div>
 {{ range .Site.Taxonomies.book.Alphabetical  }}
 {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
  {{ $leng := len .Pages }}
