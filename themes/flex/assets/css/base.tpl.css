@@ -10,10 +10,8 @@
   --yellow: #ffda56;
   --shallowbrown: #f1bc00;
   --brown: #c49d10;
-  --stripered: #ddb8b8;
-  --stripeblue: #b7cce3;
-  --shallowblue:#e0f6ff;
-  --shallowred:#ffe5e5;
+  --shallowblue:#d6f3ff;
+  --shallowred:#ffdada;
   --serif:"Adobe Garamond Pro",Garamond,"Adobe Caslon Pro",Caslon,"Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Adobe Garamond Pro",Garamond,"Adobe Caslon Pro",Caslon,"Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Noto Serif CJK KR","Source Han Serif K","Noto Serif CJK SC","Hiragino Mincho ProN","Hiragino Mincho","Yu Mincho","Hana Mincho","Ms Mincho";
   --codeserif:"Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Serif CJK KR","Source Han Serif K","Noto Serif CJK SC","Hiragino Mincho ProN","Hiragino Mincho","Yu Mincho","Hana Mincho","Ms Mincho";
   --sans:Verdana,Trebuchet, muli, avenir, "helvetica neue", helvetica, ubuntu, roboto, noto,arial,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
@@ -34,8 +32,6 @@
     --yellow: #ffda56;
     --shallowbrown: #f1bc00;
     --brown: #b89001;
-    --stripered: #2b2b2b;
-    --stripeblue:#2b2b2b;
     --shallowblue:#002d3f;
     --shallowred:#450000;
   }
@@ -128,7 +124,8 @@ a:hover{
 strong{
   font-family: var(--sans)}
 em{
-  font-family:var(--fang);
+background: var(--shallowred);
+padding: 0;
   font-style: normal}
 v{
   border-bottom: 2px dashed var(--brown);
@@ -199,8 +196,6 @@ margin-bottom:7em
           background-color: var(--bg);
           border: .15em solid var(--yellow);
         border-radius: 3em}
-.vertical blockquote{
-  line-height: 1.8em}
 .vertical a{
   color:var(--black);
   text-decoration:none;
@@ -388,24 +383,23 @@ line-height: 1.6
          border-bottom-right-radius: .5em;
    }
 blockquote {
-margin:  0 0 0 2em;
-position: relative;
-  line-height: 1.9em;
-font-weight: 200;
-font-family:  var(--fang);
-letter-spacing: 0}
+background: var(--shallowred);
+margin: 0;
+padding:1px 1em ;
+border-radius: 1.5em}
 .vertical blockquote {
-margin: 2em 0 0 0 }
+  padding:1em 1px;
+  border-radius:0
+}
 main {
   flex-grow: 1}
-
 img {
   max-width: 100%;
   max-height: 100%;
-  border-radius: 0.8rem;
+  border-radius: 0.5em;
   border: 1px var(--black) solid;
   margin: 2em auto;
-  display: block}
+  display: inline-block}
 .vertical img{
     margin: 0 2em auto}
 pre {
@@ -419,13 +413,11 @@ code {
   color: var(--bg);
       background:var(--black);
         border-radius: .2rem}
-
 .search{
   height:2.5em;width:25em;
   border-radius:1em;
   border:.2em solid var(--black);
 }
-
 .heading-wrap{
   background-color: var(--bg);
   padding: 2em  1em 3em;
