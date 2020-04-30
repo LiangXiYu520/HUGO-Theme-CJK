@@ -73,6 +73,7 @@ font-size: 1.15em;
   }
 table{
   margin: 2.2em auto;
+  max-width:140%;
   z-index: 2;
     border-bottom: 3px solid var(--gray);
     border-top: 3px solid var(--gray);
