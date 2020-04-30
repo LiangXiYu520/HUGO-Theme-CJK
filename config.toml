@@ -13,7 +13,7 @@ rssLimit = 30
       unsafe = true
 [markup.tableOfContents]
         startLevel = 2
-        endLevel = 4
+        endLevel = 3
 
 # Enable author pages
 [taxonomies]
@@ -84,7 +84,6 @@ step = "step"
             url = "/doc"
 [params]
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
-  linkToMarkDown = true
   vertical = true
   width ="45rem"          # Any length in CSS syntax
   summaries= false      # Set to true to show summaries of posts on homepage
