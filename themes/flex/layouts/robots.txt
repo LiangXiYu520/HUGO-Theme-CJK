@@ -1,29 +1,2 @@
 User-agent: *
 Sitemap: {{ "sitemap.xml" | absURL }}
-
-Disallow: /categories
-Disallow: /categories/
-Disallow: /series
-Disallow: /series/
-Disallow: /tags
-Disallow: /tags/
-Disallow: /author
-Disallow: /author/
-Disallow: /auth
-Disallow: /auth/
-Disallow: /from
-Disallow: /from/
-Disallow: /toc
-Disallow: /toc/
-Disallow: /author
-Disallow: /author/
-Disallow: /author
-Disallow: /author/
-Disallow: /subject
-Disallow: /subject/
-Disallow: /book
-Disallow: /book/
-Disallow: /page
-Disallow: /page/
-Disallow: /post/page
-Disallow: /post/page/
