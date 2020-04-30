@@ -50,11 +50,13 @@ font-size: 1.15em;
   overflow: scroll;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-    word-wrap: break-word;
+    overflow-wrap: break-word;
+   word-wrap: break-word;
+   hyphens: auto;
     text-align: justify;
     text-justify: inter-ideograph;
       background-color: var(--bg);
-          hanging-punctuation:first last}
+          hanging-punctuation:first | last}
       .home h1{
         letter-spacing: 0
       }
@@ -354,16 +356,17 @@ line-height: 1.6
    text-align: center;
    margin:2em auto 5em;
  }
+  .subscribe-wrap a:hover{
+   color: #fffae8;
+ }
  .rss3{
    border-bottom:none;
    color: #fffae8;
    font-size: .9em;
    word-break: keep-all;
  }
- .rss3:hover{
-   color: #fffae8;
- }
  .rss1{
+   font-weight: normal;
    letter-spacing: 0;
    background: #3b3b3b;
    padding:.1em .2em;
@@ -832,29 +835,33 @@ margin:2em 1em 0 1em}
     color:var(--gray);
 }
 .sentence{
-  margin:10em  auto 0;
-  max-width: 53em;
+  color: var(--gray);
+  margin:2em 2em 2em 0;
+  height:90vh;
   text-align: center;
-  line-height: 1.6
+  line-height: 1.6;
+  position: -webkit-sticky;
+position: sticky;
+writing-mode: vertical-rl;
 }
 .sentence1{
-  font-size:3em;
-  font-weight: bold;
+  font-size:2em;
   text-align: left;
   text-align: justify;
   text-justify: inter-ideograph;
 }
-.quote{
-  margin:-.1em .1em 5em 0;
-  font-size: 4.5em;
-  color:var(--gray);
-  float:left;
-}
 .sentence2{
   text-align: right;
-  margin-top: 3em;
-  font-size:1.5em;
-font-family: var(--kai)
+  font-size:.6em;
+font-family: var(--kai);
+  margin:2em 0 0 0;
+  padding: 0;
+height:none;
+min-width:none;
+max-height: none;
+      background:none;
+      border: none;
+      border-radius:0;
 }
 	.label{
 		font-size: 1.3em;
@@ -1112,11 +1119,11 @@ box-shadow:none;
   .banner{
     font-size: .9em
   }
+  .sentence{
+    margin:.5em
+  }
   .sentence1{
     font-size: 2em;
-  }
-  .sentence2{
-    font-size: 1.2em
   }
   .quote{
     float: none;
@@ -1231,6 +1238,8 @@ margin:0 auto 5em}
     }
 }
 @media screen and (max-width:600px){
+  .sentence{display: none
+}
   .des-home{
     margin:2em auto 1em;}
 .discover ul{
