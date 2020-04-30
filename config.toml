@@ -35,11 +35,11 @@ step = "step"
   priority = 0.5
   filename = "sitemap.xml"
   [[menu.nav]]
-     name = "主葉"
+     name = "HOME"
      weight = 1
      url = "/"
   [[menu.nav]]
-         name = "作品"
+         name = "works"
          weight =  2
          url = "/#gallery"
   [[menu.nav1]]
@@ -59,7 +59,7 @@ step = "step"
               weight = 6
               url = "/tutorial"
            [[menu.nav2]]
-                 name = "推介"
+                 name = "資源"
                  weight = 7
                  url = "/recommend"
        [[menu.nav2]]

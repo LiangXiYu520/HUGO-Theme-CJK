@@ -1,14 +1,13 @@
 ---
 layout: 'block'
 author: ["柯棋瀚"]
-title: "友鏈"
+title: "friends"
 date: 2018-10-27
 lastmod: 2020-04-26
 menu:
   main:
     weight: 3
 url: /links
-markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/block/links.md'
 ---
 
 想自薦、交換友鏈的小伙伴可以在此葉面下留言，或者發郵件給我，我將在一至三日內囘復。想展示自己網站的朋友也可以留言。

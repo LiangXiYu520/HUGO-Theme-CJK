@@ -120,7 +120,7 @@
     {{ range .Site.Taxonomies.series.赫赫指北 }}
         {{ $1series = $1series | append .Page }}
     {{ end }}
-    {{ range .Site.Taxonomies.series.推介 }}
+    {{ range .Site.Taxonomies.series.資源 }}
         {{ $2series = $2series | append .Page }}
     {{ end }}
     {{ with (where .Site.RegularPages "Type" "post") }}
@@ -232,7 +232,7 @@
               {{ end }}
           </div></div></div>
 <div class="paper-wrap">
-  <h1 style="margin-top:0"><a href="/recommend" target="_blank">推介</a></h1>
+  <h1 style="margin-top:0"><a href="/recommend" target="_blank">資源</a></h1>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
     {{- range first 5  (where .Site.RegularPages.ByDate.Reverse "Type" "recommend") -}}

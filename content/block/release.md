@@ -1,7 +1,7 @@
 ---
 layout: 'block'
 author: ["柯棋瀚"]
-title: "更新"
+title: "release"
 date: 2017-10-05
 lastmod: 2020-04-26
 url: /release
@@ -1556,7 +1556,7 @@ html5 語意標籤改造。
 
 ##### 4.6.22
 
-把推介遷到筆記。
+把資源遷到筆記。
 
 #### 4 月 25 日
 

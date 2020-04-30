@@ -400,20 +400,20 @@ border-radius: 1.5em}
 main {
   flex-grow: 1}
 img {
-  max-width: 100%;
+  max-width: 125%;
   max-height: 100%;
   border-radius: 0.5em;
   border: 1px var(--black) solid;
-  margin: 2em auto;
   display: inline-block}
 .vertical img{
-    margin: 0 2em auto}
-pre {
+  max-width: 100%;
+  }
+pre{
   overflow: scroll;
   padding: 1rem;
   border-radius: 1rem;
   background:#2b2b2b}
-code {
+code{
   font-family:var(--codesans);
   font-size: .8em;
   color: var(--bg);
@@ -432,13 +432,7 @@ code {
   box-shadow:  0px 0px 70px 5px  var(--black);
   border-bottom:.2em solid var(--black);
   border-top:.2em solid var(--black);
-  padding:0;
-  background-image: linear-gradient(var(--stripered) 8px, transparent 10px),
-  linear-gradient(var(--stripeblue) 8px, transparent 10px),
-    linear-gradient(90deg, var(--stripeblue) 8px, transparent 10px),
-linear-gradient(90deg, var(--stripered) 8px, transparent 10px);
-  background-size: 240px 240px, 240px 240px, 240px 240px, 240px 240px;
-  background-position:50px 50px, 170px 170px,170px 170px,50px 50px }
+  padding:0}
 .heading-wrap.home h1{
   margin:0;
   padding:.8em 0 .6em;

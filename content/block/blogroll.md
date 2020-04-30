@@ -1,67 +1,33 @@
 ---
-layout: "recommend"
-type: "recommend"
-title: "有意思的收藏夹"
-date: 2020-04-24
-markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/recommend/60-計算機.md'
-description: '整理一下收藏夹'
+layout: 'block'
+author: ["柯棋瀚"]
+title: "blogroll"
+date: 2020-04-30
+description: '我收集的一些比較有意思的博客'
 vertical: false
-draft: true
+url: /blogroll
+menu:
+  main:
+    weight: 4
 ---
 
-## 工具
+## 人文類
 
-draw.io 繪製思維導圖
+[逗號的文字電臺](https://chenfm.com)
 
-https://www.remove.bg/ AI摳圖
+[臆站](http://lethetsou.com)　〔中文系學生，自號臆客〕
 
-[Zen Flowchart](https://www.zenflowchart.com/) 流程圖
+[君子之學 惟求其是](https://zuluchang.wordpress.com)　Zulu est là〔旣西哲又中哲又古琴又調學，必須推薦。只是 2012 秊之後沒㪅新了，感覺象是大學敎授？〕
 
-https://markmap.js.org/repl/ markdown 思維導圖
+[天祿閣曲談](https://linoluu.wordpress.com)　這是一箇研究中國的文學、音樂、戲曲的園地〔稍有點民科〕
 
-flickr.com/photos/biodivlibrary/with/49787612338/ 動植物插圖
+[黃安年](http://blog.sciencenet.cn/home.php?mod=space&uid=415)　〔我院退休的黃老師〕
 
-https://jeffhuang.com/designed_to_last/ 製作永恆的網頁
+[書-會-兒的博客](http://blog.sina.com.cn/pengyong)　〔中央民族大學歷史文化學院院長彭勇敎授〕
 
-https://usememo.com/ 筆記軟件
+[詹衛東箇人主葉](http://ccl.pku.edu.cn/doubtfire/)　〔北大一位語言學敎授〕
 
-
-https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/
-
-https://sscaffold-css.com/
-
-https://www.zhangxinxu.com/wordpress/2018/01/html5-details-summary-no-js-ux/ 无js實現下拉菜單
-
-https://github.com/robsheldon/sscaffold-css 標準化css
-
-https://www.expatistan.com/cost-of-living/country/ranking 全球城市生活费
-
-https://dfile.app/ 基於 IPFS 的文件分享工具
-
-https://www.plainlanguage.gov/guidelines/words/use-simple-words-phrases/ 簡單英語指南
-
-https://github.com/knadh/listmonk 郵件發送服務
-
-https://github.com/ksky521/nodeppt  markdown 轉換為網頁 ppt
-
-https://colorize.cc/ 黑白照片上色
-
-webmention.io 網頁提醒
-
-https://bansal.io/pattern-css css背景
-
-https://www.invisionapp.com/inside-design/typography-tips/ 簡單的排版指南 英文
-
-https://www.artic.edu/collection?is_public_domain=1 芝加哥艺术学院的网站提供5万多张艺术品图片，全部都是高分辨率，而且可以免费使用
-
-https://writefreely.org/ 輕量網站生成工具，可以組建社區。
-
-
-## 五、收藏夾
-
-以下爲一些比較有意思的博客：
-
-### 文蓺類
+## 文蓺類
 
 [游子微博](https://www.lindongfang.top/)　目前有五百余篇，古有先秦诗三百，今现微博文五百，纵观游子微博，记录了从2009年到如今的生活，内容涉及生老病死、情感、旅行、工作、新闻事件等等，过往十年辑录，有开心、忧伤、快乐、痛苦，人生况味，尽在其中。这，或许就是文字的意义和魅力。
 
@@ -91,7 +57,7 @@ https://writefreely.org/ 輕量網站生成工具，可以組建社區。
 
 [夏泉的后院](https://www.hxueh.net/)　在深圳长大，于深圳大学毕业，目前在深圳生活。
 
-### 高材生
+## 高材生
 
 [BYvoid](https://www.byvoid.com)　〔韻典網那清華大神〕
 
@@ -119,7 +85,7 @@ https://writefreely.org/ 輕量網站生成工具，可以組建社區。
 
 [于淼](https://yufree.cn/cn/)　〔在美國的博後。非常有意思〕
 
-### 技術類
+## 技術類
 
 [哲科文 Jerkwin](http://jerkwin.github.io/tags/)　〔雖然界面很古董，但內容，也太高產了吧〕
 
@@ -155,7 +121,7 @@ https://writefreely.org/ 輕量網站生成工具，可以組建社區。
 
 [笛声](https://hqidi.com/)
 
-### 旅行類
+## 旅行類
 
 [賢民的比特記憶](https://www.xianmin.org)　〔麗江一民宿老闆，發起「捍衛開放的互聯網」〕
 
@@ -165,7 +131,7 @@ https://writefreely.org/ 輕量網站生成工具，可以組建社區。
 
 [HONGFEI](https://xiaohongfei.com/)　〔有國外旅行攻略〕
 
-### 設計類
+## 設計類
 
 [Kevin](https://www.kevinpowell.co/)　〔小清新界面〕
 
@@ -187,7 +153,7 @@ https://writefreely.org/ 輕量網站生成工具，可以組建社區。
 
 [一稿計劃](https://lastone.art)　〔[字体基础知识库，全面了解 Font Design](https://lastone.art/font-design/) 強烈推薦！！〕
 
-### 老字號
+## 老字號
 
 [土木罈子](https://tumutanzi.com)　迺一關於科硏學習、社會人文、信息技術和國外見聞等內容之箇人网站。〔大槩玩博客的人沒有不知道罈子的吧〕
 
@@ -207,7 +173,7 @@ https://writefreely.org/ 輕量網站生成工具，可以組建社區。
 
 [水八口記](https://blog.shuiba.co/)　I love [photography/photography](https://shuiba.co/photography), [web designdemo site](https://demo.shuiba.co/) and painting; [travellingGoogle Maps](https://goo.gl/iqntp4), [bloggingin Chinese](https://blog.shuiba.co/) and singing are also where my passion lies.
 
-### 小鮮肉
+## 小鮮肉
 
 
 以下列幾箇中學生的博客，大多是代碼動漫宅，有很多江蘇的，發達地區就是不一樣。很佩服佗們中學便能建博客、硏究代碼。他們自己大槩有一箇博客圈子，全都是中學生。
@@ -220,7 +186,7 @@ https://writefreely.org/ 輕量網站生成工具，可以組建社區。
 
 [I BCL.](https://ibcl.us)　〔〇〇後無線電愛好者，十分淸奇〕
 
-### 其他推薦
+## 其他推薦
 
 [中文独立播客](https://typlog.com/podlist/)
 
@@ -235,19 +201,3 @@ https://writefreely.org/ 輕量網站生成工具，可以組建社區。
 [时间物质](https://matterofti.me/)　<n>20200309正式上線。一个弱社交型博客網站，利用 writefreely 搭建</n>
 
 [spotify的播客收藏](https://www.douban.com/note/752408893/)
-
-### 人文
-
-[逗號的文字電臺](https://chenfm.com)
-
-[臆站](http://lethetsou.com)　〔中文系學生，自號臆客〕
-
-[君子之學 惟求其是](https://zuluchang.wordpress.com)　Zulu est là〔旣西哲又中哲又古琴又調學，必須推薦。只是 2012 秊之後沒㪅新了，感覺象是大學敎授？〕
-
-[天祿閣曲談](https://linoluu.wordpress.com)　這是一箇研究中國的文學、音樂、戲曲的園地〔稍有點民科〕
-
-[黃安年](http://blog.sciencenet.cn/home.php?mod=space&uid=415)　〔我院退休的黃老師〕
-
-[書-會-兒的博客](http://blog.sina.com.cn/pengyong)　〔中央民族大學歷史文化學院院長彭勇敎授〕
-
-[詹衛東箇人主葉](http://ccl.pku.edu.cn/doubtfire/)　〔北大一位語言學敎授〕
