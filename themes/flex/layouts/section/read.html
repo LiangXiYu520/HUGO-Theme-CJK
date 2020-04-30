@@ -23,7 +23,7 @@
         {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "book/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "book/%s" ($name | urlize))) -}}
-      　<a class="archive-info archive-info-author" href="/read#{{ $name }}" target="_blank">#{{- $name -}}</a>
+      　<a class="archive-info archive-info-author" href="#{{ $name }}">#{{- $name -}}</a>
         {{- end -}}
         {{- end -}}
     {{- end -}}

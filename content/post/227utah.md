@@ -10,9 +10,9 @@ vertical: false
 draft: true
 ---
 
-Utah is in the western United States. Of the fifty U.S. states, Utah is the 13th-largest by area, and with a population over three million, the 30th-most-populous and 11th-least-densely populated. Urban development is mostly concentrated in two areas: the Wasatch Front in the north-central part of the state, which is home to roughly two-thirds of the population, and Washington County in the south, with more than 170,000 residents.[8]
+Utah is in the western United States. Of the fifty U.S. states, Utah is the 13th-largest by area, and with a population over three million. Urban development is mostly concentrated in two areas: the Wasatch Front in the north-central part of the state, which is home to roughly two-thirds of the population, and Washington County in the south, with more than 170,000 residents.
 
-The territory of modern Utah was inhabited by various indigenous groups for thousands of years, including the ancient Puebloans, the Navajo, and the Ute. The Spanish were the first to arrive in the mid-16th century, though the region's difficult geography and climate made it a peripheral part of New Spain and later Mexico. Even while it was part of Mexico, many of Utah's earliest settlers were American, particularly Mormons fleeing marginalization and persecution from the United States. Following the Mexican-American War, it became part of the Utah Territory, which included what are now Colorado and Nevada. Disputes between the dominant Mormon community and the federal government delayed Utah's admission as a state; only after the outlawing of polygamy was it admitted as the 45th, in 1896.
+
 
 A little more than half of all Utahns are "Mormons", identifying as members of the Church of Jesus Christ of Latter-day Saints (LDS Church), which has its world headquarters in Salt Lake City;[9][10] Utah is the only state where most of the population belongs to a single church.[11] This greatly influences Utahn culture, politics, and daily life,[12] though since the 1990s the state has become more religiously diverse as well as secular.
 
