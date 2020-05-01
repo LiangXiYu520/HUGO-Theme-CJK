@@ -219,7 +219,7 @@ border-bottom: none;
       margin: 1em 2.5em 0 0
   }
   .vertical h3{
-    margin:3em 2em 0 0
+    margin:3.5em 2em 0 0
   }
   .vertical-info{
     text-align: center;
@@ -279,20 +279,19 @@ letter-spacing: .333em;
 font-size: 1.8em;
 line-height: 1.5}
 h3{
-  font-size: 1.45em;
+  font-size: 1.35em;
   line-height: 1.6;
 letter-spacing: .1em}
 h4{
-  font-size: 1.2em;
+  font-size: 1.25em;
   line-height: 1.6;
+  letter-spacing: .1em
   }
 h5{
   font-size: 1em}
 h6{
   font-size: 1em;
-  font-weight: normal;
-  color: var(--gray);
-  font-family: var(--sans)
+  color: var(--shallowgray)
 }
 .des{
   font-size: 1.5em;
