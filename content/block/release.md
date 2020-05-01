@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-04-26
+lastmod: 2020-05-01
 url: /release
 markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/block/release.md'
 menu:
@@ -1629,3 +1629,13 @@ html5 語意標籤改造。
 標題去掉 赫赫讚府｜赫赫指北｜
 
 調整 sitemap、robots
+
+#### 5 月 1 日
+
+##### 4.6.34
+
+主頁背景色互換一下
+
+精簡顏色
+
+基本字號增大爲 1.2em，這樣大槩相當於 19px。

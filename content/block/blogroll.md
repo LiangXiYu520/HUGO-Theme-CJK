@@ -201,3 +201,5 @@ menu:
 [时间物质](https://matterofti.me/)　<n>20200309正式上線。一个弱社交型博客網站，利用 writefreely 搭建</n>
 
 [spotify的播客收藏](https://www.douban.com/note/752408893/)
+
+[Sites_using_MediaWiki](https://www.mediawiki.org/wiki/Sites_using_MediaWiki/zh)

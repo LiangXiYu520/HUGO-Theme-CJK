@@ -32,8 +32,8 @@
       {{ end }}
       </div>
     </section>
-<section class="section4">
-  <h1 id="gallery" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品
+<section class="section2">
+  <h1 id="gallery" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品
   </h1>
   <div class="discover-des">按最近修改排序</div>
   <div class="discover-wrap works" style="max-width:63em">
@@ -46,10 +46,10 @@
   </ol>{{ end }}
     </div>
   </div>
-  <div class="des" style="margin-bottom:7em">以及，這箇網站。</div>
+  <div class="des" style="margin-bottom:5em">以及，這箇網站。</div>
 </section>
-<section class="section2">
-    <h1 id="discover" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
+<section class="section4">
+    <h1 id="discover" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
     </h1>
   <h1>最近發布 Latest</h1>
 <div class="discover-wrap latest">
@@ -157,7 +157,7 @@
 {{ end }}{{ end }}
 </div>
 </div>
-  <div class="discover-wrap latest" style="max-width:50em;background:var(--bg);border-radius:2.5em">
+  <div class="discover-wrap latest" style="max-width:50em;background:var(--shallowblue);border-radius:2.5em">
     <h1>其他作者 More Authors</h1>
     <center><span class="des move">！歡迎踴躍投稿！稿費沒有嘻嘻</span></center>
   <div class="discover categories">
@@ -197,7 +197,7 @@
 </div>
 </section>
 <section class="section3">
-  <h1 id="wiki" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
+  <h1 id="wiki" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
   <h1 style="margin-top:0"><a href="/read" target="_blank">讀書</a></h1>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
@@ -227,15 +227,15 @@
             <h1 style="margin-top:0"><a href="/tutorial" target="_blank">赫赫指北</a></h1>
             <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
           <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
-              {{- range first 5  (shuffle (where .Site.RegularPages.ByDate.Reverse "Type" "tutorial")) -}}
+              {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "tutorial")) -}}
               <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML }}</a></li>
               {{ end }}
           </div></div></div>
 <div class="paper-wrap">
   <h1 style="margin-top:0"><a href="/recommend" target="_blank">資源</a></h1>
-  <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
+  <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
-    {{- range first 5  (where .Site.RegularPages.ByDate.Reverse "Type" "recommend") -}}
+    {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "recommend")) -}}
     <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML }}</a></li>
     {{ end }}
 </div></div></div>
@@ -244,14 +244,14 @@
   <div  class="des" style="margin-top:-1em;font-size:1.1em">整理的考試複習資料。世界上最沒用的東西</div>
   <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
-  {{- range first 5 (shuffle (where .Site.RegularPages.ByDate "Type" "exam")) -}}
+  {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "exam")) -}}
   <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title }}</a></li>
   {{- end -}}
 </div></div></div>
 </div>
 </section>
 <section class="section4">
-  <h1 id="data" class="sectionh1"><span style="font-size:.3em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
+  <h1 id="data" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
 <div class="gallery" style="margin:0">
 <div class="paper-wrap">

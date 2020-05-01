@@ -1,14 +1,9 @@
 :root{
   --bg: #fffae8;
   --black: #2b2b2b;
-  --shallowwhite: #ebebeb;
-  --white: #d5d5d5;
   --shallowgray: #b6b5b5;
-  --verticala: #d5d5d5;
-  --gray: #8c8c8c;
-  --darkgray: #616161;
+  --gray: #787878;
   --yellow: #ffda56;
-  --shallowbrown: #f1bc00;
   --brown: #c49d10;
   --shallowblue:#e1f3ff;
   --shallowred:#fedfdf;
@@ -22,14 +17,9 @@
   :root{
     --bg: black;
     --black: #d5d5d5;
-    --shallowwhite: #373737;
-    --white: #2a2a2a;
-    --verticala:#8c8c8c;
     --shallowgray: #7e7e7e;
     --gray: #969696;
-    --darkgray: #a09f9f;
     --yellow: #ffda56;
-    --shallowbrown: #f1bc00;
     --brown: #b89001;
     --shallowblue:#003d55;
     --shallowred:#450000;
@@ -38,7 +28,7 @@
 body {
   font-family: var(--serif);
 color:var(--black);
-font-size: 1.15em;
+font-size: 1.2em;
   line-height: 1.9em;
   padding: 0;
   margin:0;
@@ -55,7 +45,7 @@ font-size: 1.15em;
    hyphens: auto;
     text-align: justify;
     text-justify: inter-ideograph;
-      background-color: var(--bg);
+      background: var(--bg);
           hanging-punctuation:first | last}
       .home h1{
         letter-spacing: 0
@@ -119,7 +109,7 @@ hr{
 a{
   color:var(--black);
   text-decoration:none;
-box-shadow: inset 0 -0.7em var(--white);
+box-shadow: inset 0 -0.7em var(--yellow);
 -webkit-transition: .2s;
 transition: .2s}
 a:hover{
@@ -203,7 +193,7 @@ margin-bottom:7em
 .vertical a{
   color:var(--black);
   text-decoration:none;
-box-shadow: inset  -0.6em  0 var(--verticala);
+box-shadow: inset  -0.5em  0 var(--yellow);
 }
 .vertical a:hover{
 box-shadow:none
@@ -241,8 +231,6 @@ line-height: 1.6}
 .vertical-false{
      margin:0 auto 4em;
      max-width: 40em;
-           padding: 1em 2em;
-           background-color: var(--bg);
        font-family: var(--sans)
        }
 .toc{
@@ -436,7 +424,7 @@ code{
 .heading-wrap.home h1{
   margin:0;
   padding:.8em 0 .6em;
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bold}
 .home-cover{
   display: inline-flex;
@@ -479,7 +467,7 @@ background: none;
 .Tags {
   max-width: 32em;
   max-height:35em;
-  color:var(--darkgray);
+  color:var(--gray);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,9 +647,9 @@ background-color: var(--bg);
     text-align: center;
     margin: 1.5em auto;
 line-height: 1.4;
-color:var(--darkgray)}
+color:var(--gray)}
 .archive-wrap a{ box-shadow:none;
-color:var(--darkgray)}
+color:var(--gray)}
 .archive-wrap  a:hover{
 color:var(--brown)}
 .archive-left{
@@ -682,11 +670,11 @@ text-align:left}
   text-align: left;
   font-size: .9em;
   margin: auto .3em auto 0em;
-  color:var(--darkgray);
+  color:var(--gray);
   font-family: var(--codesans)}
 .archive-info a{
   box-shadow:none;
-    color:var(--darkgray)}
+    color:var(--gray)}
 .archive-info a:hover{
   box-shadow:none;
   color:var(--brown)}
@@ -807,12 +795,12 @@ margin:2em 1em 0 1em}
   .pagination a:hover{
     border: 2px solid var(--bg)}
   .pagination   .active a{
-      color: var(--shallowbrown);
+      color: var(--yellow);
       cursor: default;
       font-weight: 800;
-      border:2px solid  var(--shallowbrown)}
+      border:2px solid  var(--yellow)}
       .pagination   .active a:hover{
-  border:2px solid  var(--shallowbrown);
+  border:2px solid  var(--yellow);
   background-color: var(--bg)}
   .year-wrap{
       max-width: 50em;
@@ -896,7 +884,7 @@ max-height: none;
     padding:4em 0 0
   }
   .sectionh1{
-    font-size:6em;margin:1em 0
+    font-size:5em;margin:1em 0
   }
 .discover-wrap{
   padding: .5em 0 1.5em;
@@ -1095,7 +1083,7 @@ margin:0 .5em 5em}
 .paper-card p listen a{
  box-shadow:none}
 .paper-card p a{
-  box-shadow: inset 0 -0.3em var(--shallowgray);
+  box-shadow: inset 0 -0.3em var(--yellow);
       }
 .paper-card a:hover{
 box-shadow:none;
