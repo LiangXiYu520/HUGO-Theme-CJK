@@ -15,7 +15,7 @@
         <section class="archive-wrapper" style="margin:2em auto 8em">
     {{ range sort .Pages "File.Path" }}
               <div class="archive-wrap" style="margin:.7em 0;text-align:left">
-          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{- end -}}</span>　<span class="archive-title" style="margin-left:0"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title  | safeHTML -}}</a></span>
+          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{- end -}}</span>　<span class="archive-title" style="margin-left:0"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
     </div>{{ end }}
    </section>
  </main>

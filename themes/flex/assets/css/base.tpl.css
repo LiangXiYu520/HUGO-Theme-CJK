@@ -119,9 +119,14 @@ strong{
   padding: .1em;
   color:var(--bg);
 font-weight:normal;}
-em{
-background: var(--shallowblue);
-  font-style: normal}
+q{
+background: var(--shallowblue)}
+.vertical q:before {
+  content:none
+}
+.vertical q:after {
+  content:none
+}
 v{
   border-bottom: .1em dashed var(--brown);
   margin: 0 .2em
@@ -344,9 +349,6 @@ line-height: 1.6
    text-align: center;
    margin:2em auto 5em;
  }
-  .subscribe-wrap a:hover{
-   color: #fffae8;
- }
  .rss3{
    border-bottom:none;
    color: #fffae8;
@@ -446,13 +448,13 @@ background: none;
   margin: 1.5rem 0.5rem 0 0}
 .Heading-title.taxo{
   font-size: 6em;
-  letter-spacing:.15em}
+  letter-spacing:.0}
 .Heading-title.finder{
   font-size:1.2em;font-weight:bold;letter-spacing:.15em
 }
   .Heading-title.article{
     font-size: 3.2em;
-    letter-spacing:.15em}
+    letter-spacing:.0}
 .Heading-link {
   color: inherit}
 .tag{
@@ -661,8 +663,7 @@ color: var(--yellow)}
 .archive-right{
 text-align:left}
 .archive-title {
-  margin-left: .5em;
-  font-size: 1.05em}
+  margin-left: .5em}
 .archive-title a{
   color: var(--black)}
 .archive-info {
@@ -817,7 +818,7 @@ margin:2em 1em 0 1em}
     color:var(--gray);
 }
 .sentence{
-  color: var(--gray);
+  color: var(--shallowgray);
   margin:2em 2em 2em 0;
   height:90vh;
   text-align: center;
@@ -827,12 +828,14 @@ position: sticky;
 writing-mode: vertical-rl;
 }
 .sentence1{
+  font-weight: bold;
   font-size:2em;
   text-align: left;
   text-align: justify;
   text-justify: inter-ideograph;
 }
 .sentence2{
+  font-weight: normal;
   text-align: right;
   font-size:.6em;
 font-family: var(--kai);
@@ -1136,14 +1139,12 @@ box-shadow:none;
     font-size: 4em;
     letter-spacing:.05em}
   .Heading-title.taxo{
-    font-size: 4em;
-    letter-spacing:.05em}
+    font-size: 4em}
     .Heading-title.finder{
       font-size:1em;letter-spacing:0
     }
     .Heading-title.article{
-      font-size: 2em;
-      letter-spacing:.05em}
+      font-size: 2em}
     .des{
       font-size: 1.3em;
       margin: .5em  0 auto}

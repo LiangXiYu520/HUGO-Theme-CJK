@@ -19,7 +19,7 @@
           <div class="archive-right">
     <span class="archive-title" style="margin-left:0">
       <time class="archive-info">{{- .Date.Format "2006-01-02" -}}</time>　
-      <a href="{{ .RelPermalink }}" target="_blank">{{- .Title  | safeHTML -}}</a></span>
+      <a href="{{ .RelPermalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
     </div>
 </div>{{ end }}
 </section> </main>

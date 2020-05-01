@@ -6,7 +6,7 @@ theme = "flex"
 disablePathToLower = true
 hasCJKLanguage = true
 uglyURLs = false
-rssLimit = 30
+rssLimit = 20
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

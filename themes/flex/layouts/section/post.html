@@ -39,7 +39,7 @@
                       {{- end -}}
                       {{- end -}}
                   {{- end -}}
-                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title  | safeHTML -}}</a></span>
+                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
                 </div>
                 <div class="archive-info"><time>{{ .Date.Format "06-01-02" }}</time>
                   {{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "06-01-02" }}{{ end }}&nbsp

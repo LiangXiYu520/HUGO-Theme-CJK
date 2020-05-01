@@ -12,7 +12,7 @@
                    {{- end -}}
                {{- end -}}
                </span>
-               <h1 class="DocSearch-lvl1 Heading-title article">{{- .Title  | safeHTML -}}</h1>
+               <h1 class="DocSearch-lvl1 Heading-title article">{{- .Title | safeHTML | markdownify -}}</h1>
              <section class="tag" style="max-width:20em">
              <div class="des1">
              <time datetime="{{ .Date.Format "2006-01-02" }}">

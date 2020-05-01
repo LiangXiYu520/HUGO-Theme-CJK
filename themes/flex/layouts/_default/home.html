@@ -40,7 +40,7 @@
   <div class="discover gallery">
     {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
     <ol>
-  <h2 style="margin:0"><a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML }}</a></h2>
+  <h2 style="margin:0"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></h2>
   <div class="archive-info">{{- .Page.Lastmod.Format "2006-01-02" }}</div>
   {{- .Page.Params.des | safeHTML -}}
   </ol>{{ end }}
@@ -57,7 +57,7 @@
   {{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
   <ol style="margin:1em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
   <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
   <div class="des2 home">
     {{- with .Params.author -}}
@@ -92,7 +92,7 @@
 {{ end }}
 <ul>
 {{ range first 8 $lastmod }}
-<li><span class="archive-info"style="margin:auto">{{ .Lastmod.Format "2006-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
+<li><span class="archive-info"style="margin:auto">{{ .Lastmod.Format "2006-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a>
 </li>
 {{ end }}</ul>
 </div>
@@ -147,11 +147,11 @@
 <h2 style="margin:0"><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></h2>
 <div class="discover-des" style="margin-top:.5em;text-align:left">最近 Latest</div>
 {{ range $first2 }}
-<div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+<div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
 {{ end }}
     <div class="discover-des"style="margin:0;text-align:left">隨機 Random</div>
 {{ range first 2 $end | shuffle }}
-<div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+<div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
 {{ end }}
 </ol>
 {{ end }}{{ end }}
@@ -171,7 +171,7 @@
 <ol style="list-style:none">
         <h2 style="font-size:1.2em"><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title | safeHTML }}</a></h2>
         {{ range .Pages  | shuffle }}
-<li style="margin-top:.8em"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></li>
+<li style="margin-top:.8em"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
 {{ end }}
 </ol>
 {{ end }}
@@ -206,7 +206,7 @@
     {{- range first 6  (where .Site.RegularPages.ByDate.Reverse "Type" "read") -}}
     <ol>
       <div class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</div>
-        <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML }}</a></div>
+        <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
         <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
         <div class="des2 home">
           {{- with .Params.book -}}
@@ -228,7 +228,7 @@
             <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
           <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
               {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "tutorial")) -}}
-              <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML }}</a></li>
+              <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
               {{ end }}
           </div></div></div>
 <div class="paper-wrap">
@@ -236,7 +236,7 @@
   <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
     {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "recommend")) -}}
-    <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML }}</a></li>
+    <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
     {{ end }}
 </div></div></div>
 <div class="paper-wrap">
@@ -261,7 +261,7 @@
 <div class="paper-card recording"style="border:none"><div class="paper-card-in">
 {{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
         <div >
-          <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
+          <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a>
         </div>
 {{ end }}
 </div></div></div>
@@ -272,7 +272,7 @@
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
           {{ range first 5 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
                     <div >
-                      <time class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</time>　<a href="{{ .Permalink }}"  target="_blank">{{ .Title | safeHTML  }}</a>
+                      <time class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</time>　<a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a>
                     </div>
           {{ end }}
 </div></div></div>
@@ -290,7 +290,7 @@
 <div  class="des" style="margin-top:-1em;font-size:1.1em">平時上課的錄文。量很少</div>
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
 {{ range first 10 (where .Site.RegularPages.ByDate "Type" "doc") }}
-    <li><a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a></li>
+    <li><a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
 {{ end }}
 </div></div></div>
 </div>

@@ -58,10 +58,10 @@
     <nav class="pagi-wrap">
     <div class="pagi">
       {{ with .PrevInSection }}
-        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{ .Title | safeHTML  }}</a></span>
+        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a></span>
         {{- end }}
     {{ with .NextInSection }}
-          <span class=".pagi-next"><a href="{{ .RelPermalink }}">{{ .Title  | safeHTML }}</a> →</span>
+          <span class=".pagi-next"><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> →</span>
     {{- end }}
     </div>
   </nav>
@@ -178,7 +178,7 @@
     {{- range first 3 $recommend -}}
     <ol style="margin:1.5em auto">
     <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-    <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+    <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
     <div class="des2 home">
       {{- with .Params.author -}}
           {{ range . }}
@@ -210,7 +210,7 @@
     {{- range first 2 $6to20recommend -}}
     <ol style="margin:1.5em auto">
     <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-    <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+    <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
     <div class="des2 home">
       {{- with .Params.author -}}
           {{ range . }}
@@ -242,7 +242,7 @@
   {{- range first 2  $21to30recommend  -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
 
   <div class="des2 home">
     {{- with .Params.author -}}
@@ -276,7 +276,7 @@
   {{- range first 3 $recommend -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}
@@ -308,7 +308,7 @@
   {{- range first 2 $6to10recommend -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}
@@ -340,7 +340,7 @@
   {{- range first 2 $11to20recommend -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}
@@ -373,7 +373,7 @@
   {{- range first 7 $recommend -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+  <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}
@@ -419,7 +419,7 @@
 {{  range first 2 $others | shuffle }}
 <ol style="margin:1.5em auto">
 <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-<div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{ .Title | safeHTML  }}</a></div>
+<div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
 
 <div class="des2 home">
   {{- with .Params.author -}}
@@ -487,37 +487,37 @@
 {{ range  (where .Site.RegularPages.ByDate "Type" "post") }}
 {{ $currentdate := .Date.Unix }}
 {{ if and (ge $currentdate $2date) (le $currentdate $1date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $4date) (le $currentdate $3date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $6date) (le $currentdate $5date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $8date) (le $currentdate $7date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $10date) (le $currentdate $9date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $12date) (le $currentdate $11date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $14date) (le $currentdate $13date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $16date) (le $currentdate $15date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $21date) (le $currentdate $22date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $23date) (le $currentdate $24date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $25date) (le $currentdate $26date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $27date) (le $currentdate $28date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $29date) (le $currentdate $30date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $31date) (le $currentdate $32date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $33date) (le $currentdate $34date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ else if and (ge $currentdate $35date) (le $currentdate $36date) }}
-<div><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
+<div><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> <time class="archive-info">{{  .Date.Format "2006-01-02" }}</time></div>
 {{ end }}
 {{ end }}
 </div>
