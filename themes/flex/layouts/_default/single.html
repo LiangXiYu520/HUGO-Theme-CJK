@@ -12,31 +12,31 @@
     <div class="des1">
     {{- with .Params.author -}}
         　<span class="des2">作者</span>
-        {{ range . }}
+        {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
-        <span class="des1-cate"> <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
+        <span class="des1-cate"><a href="/author/{{ $name }}">@{{- $name -}}</a></span>
         {{- end -}}
         {{- end -}}
     {{- end -}}
     {{- with .Params.series -}}
         　<span class="des2">系列</span>
-        {{ range . }}
+        {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
-        <span class="des1-cate"> <a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
+        <span class="des1-cate"><a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
         {{- end -}}
         {{- end -}}
     {{- end -}}
     {{- with .Params.tags -}}
         　<span class="des2">標籤</span>
-        {{ range . }}
+        {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
-        {{ end -}}
-        {{ end }}
-    {{- end }}
+        {{- end -}}
+        {{- end -}}
+    {{- end -}}
     {{- with .Params.notes -}}
         　<span class="des2">備註</span>
         {{ range . }}
@@ -90,7 +90,8 @@
           </article>
       </div>
     {{ end }}
-<nav style="max-width:59em;margin:0 auto;background:var(--shallowblue);padding:1px 0 0;border-radius:3em">
+<nav style="max-width:47em;margin:0 auto;background:var(--shallowblue);padding:1px 1em 0;border-radius:3em">
+  <h3 style="color:var(--gray);text-align:center;margin-bottom:-1em">爲您推薦</h3>
   {{ $current := . }}
   {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $current.Title }}
   {{ $3relevant := slice }}
@@ -482,7 +483,7 @@
 {{ $34date := add .Date.Unix  221097600 }}
 {{ $35date := add .Date.Unix 252201600 }}
 {{ $36date := add .Date.Unix  252720000 }}
-<div class="recommend" style="text-align:center;margin-top:-3em;line-height:1.9">
+<div class="recommend" style="text-align:center;margin-top:-6em;line-height:1.9">
 <h3 style="color:var(--gray)">過去與未來的本周</h3>
 {{ range  (where .Site.RegularPages.ByDate "Type" "post") }}
 {{ $currentdate := .Date.Unix }}
