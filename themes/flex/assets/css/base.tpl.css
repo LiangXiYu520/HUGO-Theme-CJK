@@ -109,7 +109,7 @@ hr{
 a{
   color:var(--black);
   text-decoration:none;
-box-shadow: inset 0 -0.7em var(--yellow);
+box-shadow: inset 0 -0.5em var(--yellow);
 -webkit-transition: .2s;
 transition: .2s}
 a:hover{
@@ -685,24 +685,20 @@ margin: auto}
   font-family: var(--codesans);
   font-size: .8em}
 .comment{
+  color:var(--black);
   background-color: var(--bg);
   padding: .7em 1.7em 0em;
-  font-size: .95em;
+  font-size: .9em;
   margin: 4em auto;
+  line-height: 1.6;
   font-family: var(--sans)}
   .comment a{
-    box-shadow: none
+    box-shadow: none;
+    color:var(--black)
   }
-.comment p{
-  color:var(--black);
-  font-size: .9em;
-  line-height: 1.6}
-.comment p a{
-color:var(--black)
-}
-.comment p a:hover{
-color:var(--brown)
-}
+  .comment a:hover{
+  color:var(--brown)
+  }
 .recommend{
   line-height: 1.4;
   padding-bottom: 1.5em;
@@ -1091,11 +1087,10 @@ margin:0 .5em 5em}
 .paper-card p listen a{
  box-shadow:none}
 .paper-card p a{
-  box-shadow: inset 0 -0.3em var(--yellow);
+  box-shadow: inset 0 -0.5em var(--yellow);
       }
 .paper-card a:hover{
-box-shadow:none;
-  color:var(--brown)}
+box-shadow:none}
 .paper-card h2{text-align: center}
 .paper-card a{
   border:none}
