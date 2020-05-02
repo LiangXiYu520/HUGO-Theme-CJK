@@ -19,7 +19,7 @@
     --black: #d5d5d5;
     --shallowgray: #7e7e7e;
     --gray: #969696;
-    --yellow: #7e6200;
+    --yellow: #6f5600;
     --brown: #907000;
     --shallowblue:#003d55;
     --shallowred:#450000;
@@ -690,12 +690,18 @@ margin: auto}
   font-size: .95em;
   margin: 4em auto;
   font-family: var(--sans)}
+  .comment a{
+    box-shadow: none
+  }
 .comment p{
-  color:var(--gray);
+  color:var(--black);
   font-size: .9em;
   line-height: 1.6}
 .comment p a{
-color:var(--gray);
+color:var(--black)
+}
+.comment p a:hover{
+color:var(--brown)
 }
 .recommend{
   line-height: 1.4;
