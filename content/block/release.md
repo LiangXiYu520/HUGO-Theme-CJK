@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-05-01
+lastmod: 2020-05-03
 url: /release
 markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/block/release.md'
 menu:
