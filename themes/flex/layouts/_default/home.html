@@ -4,8 +4,24 @@
         <div class="des1 timestamp">
           {{- $length := len .Site.RegularPages }}
           {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}
-        Timestamp  {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　已運行 {{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }} 日
-        <br>凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Site.RegularPages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
+        Timestamp  {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC
+        <table>
+        <tr>
+          <td>已運行 /日</td><td><span class="big">{{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }}</span></td>
+</tr>
+<tr>
+        <td>凡 /篇</td><td><span class="big big1" style="color:#ff8585">{{ $length }}</span></td>
+      </tr>
+      <tr>
+    <td>凡 /字</td><td><span class="big" style="color:#e0be00">{{- $count }}</span></td>
+  </tr>
+  <tr>
+        <td>篇均 /字</td><td><span class="big" style="color:#5adacc">{{ div $count $length }}</span></td>
+      </tr>
+      <tr>
+      <td>橫跨 /秊</td><td><span class="big" style="color:#85c4ff">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{ len . }}{{- end -}}</span></td>
+</tr>
+        </table>
     <div class="subscribe-wrap des1">
       <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
     　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
@@ -18,6 +34,7 @@
         </div>-->
     <div class="heading-wrap home home1">
       <h1>赫赫文王</h1>
+      <div class="label">永嘉田家後🌝　生於九七秊🌖<br>長于錦官城🌗　讀的歷史系🌚</div>
       <div class="sentence">
       {{ $all := slice }}
           {{ range .Site.Data.sentence  }}
@@ -33,7 +50,6 @@
       {{ end }}
       </div>
       </div>
-
     </section>
 <section class="section2">
   <h1 id="gallery" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品

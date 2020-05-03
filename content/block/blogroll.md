@@ -3,6 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "blogroll"
 date: 2020-04-30
+lastmod: 2020-05-03
 description: '我收集的一些比較有意思的博客'
 vertical: false
 url: /blogroll
@@ -13,9 +14,9 @@ menu:
 
 ## 人文類
 
-[逗號的文字電臺](https://chenfm.com)
+[海德沙龙](https://headsalon.org/)　〔非常不錯〕
 
-[臆站](http://lethetsou.com)　〔中文系學生，自號臆客〕
+[完美的胖达](https://wmdpd.com/link/)　〔不明覺厲。有關肺炎的文章可以看看〕
 
 [君子之學 惟求其是](https://zuluchang.wordpress.com)　Zulu est là〔旣西哲又中哲又古琴又調學，必須推薦。只是 2012 秊之後沒㪅新了，感覺象是大學敎授？〕
 
@@ -29,19 +30,23 @@ menu:
 
 ## 文蓺類
 
-[游子微博](https://www.lindongfang.top/)　目前有五百余篇，古有先秦诗三百，今现微博文五百，纵观游子微博，记录了从2009年到如今的生活，内容涉及生老病死、情感、旅行、工作、新闻事件等等，过往十年辑录，有开心、忧伤、快乐、痛苦，人生况味，尽在其中。这，或许就是文字的意义和魅力。
+[逗號的文字電臺](https://chenfm.com)
 
-[戰國冊](https://zerg.cc/about.html)　⋯⋯然事工科者，避劳苦，恶钻研，半途而废。今飘零半生，辗转半国，一无所成，乃辞朋友之约，抗父母之命，抵媒妁之言，离群索居，行尸走肉，所好者，惟一日两餐，所望者，惟孤独终老。⋯⋯
+[臆站](http://lethetsou.com)　〔中文系學生，自號臆客〕
 
 [Notes of Wayfarers](https://notesofwayfarers.wordpress.com)　或稱「旅人音樂誌」，是散居在世界各地的華人音樂人共同經營的網誌，每週由不同城市的站主發文，記載當地音樂風景。〔很有格調〕
 
 [尺宅即江湖](http://www.qtwm.com)　尺宅足自庇，寸田有餘畦。
 
-[禾城](https://mytrix.in)　〔我天，好有才〕
+[禾城](https://mytrix.in)　〔2020 似乎打不開了〕
 
 [圈圈閒言](https://www.ylooper.com)　迢迢新秋夕，亭亭月將圓。〔有氣質的書評影評〕
 
 [故居一曲](https://www.oh-af.cn/category/bk/s-y)　〔會彈古琴？〕
+
+[游子微博](https://www.lindongfang.top/)　目前有五百余篇，古有先秦诗三百，今现微博文五百，纵观游子微博，记录了从2009年到如今的生活，内容涉及生老病死、情感、旅行、工作、新闻事件等等，过往十年辑录，有开心、忧伤、快乐、痛苦，人生况味，尽在其中。这，或许就是文字的意义和魅力。
+
+[戰國冊](https://zerg.cc/about.html)　⋯⋯然事工科者，避劳苦，恶钻研，半途而废。今飘零半生，辗转半国，一无所成，乃辞朋友之约，抗父母之命，抵媒妁之言，离群索居，行尸走肉，所好者，惟一日两餐，所望者，惟孤独终老。⋯⋯
 
 [for-given](https://mrx.moe) 　同人写手、业余翻译兼古典三无主义腐女「古川政良ふるかわまさよし」
 
@@ -49,9 +54,7 @@ menu:
 
 [烩饼](https://zhb.xyz/)　〔一些讀書筆記〕
 
-[完美的胖达](https://wmdpd.com/link/)　〔不明覺厲。有關肺炎的文章可以看看〕
-
-[寒塘渡月](http://sometime.me)　與伱分享我的旅行、攝影與文字〔十分淸流〕
+[寒塘渡月](http://sometime.me)　與你分享我的旅行、攝影與文字〔十分淸流〕
 
 [Tonis Foto Haus](http://www.tonichan.xyz)　Amateur Photographer. Novice Data Scientist.Zhejiang University, Chu Ko Chen Honors College.
 
@@ -59,21 +62,21 @@ menu:
 
 ## 高材生
 
-[BYvoid](https://www.byvoid.com)　〔韻典網那清華大神〕
+[BYvoid](https://www.byvoid.com)　〔韻典網那大神〕
 
-[宇宙的心弦](https://www.physixfan.com)　〔北大物理……瑟瑟發抖〕
+[宇宙的心弦](https://www.physixfan.com)　〔北大物理……〕
 
 [Matrix67: The Aha Moments](http://www.matrix67.com/blog/)　〔「如果他肯把博客的內容同步地發發知乎發發微信公眾號的話，中國喜歡數學的孩子們應該會比現在多很多吧」〕
 
-[謝益輝的箇人主葉](https://yihui.name/cn/about/)　〔人大統計學院畢業〕
+[謝益輝的箇人主葉](https://yihui.name/cn/about/)　〔人大統計〕
 
-[李艦](http://jianl.org/)　〔人大統計的那幾位，都好厲害啊〕
+[李艦](http://jianl.org/)　〔人大統計〕
 
 [謝益輝的箇人主葉](https://yihui.name)　箇人興趣：直觀的、負責的和用腦子的統計學；老少咸宜的笑話；聰明的、有趣的計算機程序。
 
-[張列弛](https://www.liechi.org/)　〔現就讀於日本基礎生物研究所〕
+[張列弛](https://www.liechi.org/)　〔就讀於日本基礎生物研究所〕
 
-[Quanyin 說](https://www.quanyin.xyz/cross.html)　〔復旦物理硏究生〕
+[Quanyin 說](https://www.quanyin.xyz/cross.html)　〔復旦物理〕
 
 [印 | 纪](http://leiminnet.cn)　〔在蘇黎世高工讀書〕
 
@@ -93,13 +96,13 @@ menu:
 
 [Wincer's blog](https://blog.itswincer.com)　〔985 程序員〕
 
-[代碼家](https://daimajia.com)　〔我們信科的師兄〕
+[代碼家](https://daimajia.com)　〔我們信科的學長〕
 
 [冬菇醬](http://donggu.me)
 
 [始終](https://liam.page/about/)　〔對 latex 和字體很在行〕
 
-[陳的網誌](https://yo1995.coding.me)　〔隔壁的本科，比我大兩秊。文風頗奇特〕
+[陳的網誌](https://yo1995.coding.me)　〔隔壁的本科。文風頗奇特〕
 
 [僞科學](http://shenzhan.me)　〔初中科學老師，各種小題目〕
 
@@ -123,7 +126,7 @@ menu:
 
 ## 旅行類
 
-[賢民的比特記憶](https://www.xianmin.org)　〔麗江一民宿老闆，發起「捍衛開放的互聯網」〕
+[賢民的比特記憶](https://www.xianmin.org)　〔麗江民宿老闆，發起「捍衛開放的互聯網」〕
 
 [旅行漫記](https://travel.synyan.net/54391)　〔老虎哥〕
 
@@ -147,9 +150,9 @@ menu:
 
 [reuixiy](https://reuixiy.github.io/)　〔喜歡排版〕
 
-[羡辙杂俎](http://zhangwenli.com/blog/)　〔這界面，太厲害啦！！！！〕
+[羡辙杂俎](http://zhangwenli.com/blog/)　〔好看〕
 
-[九十九封信](https://blog.99xin.me/)　〔顏値高〕
+[九十九封信](https://blog.99xin.me/)　〔好看〕
 
 [一稿計劃](https://lastone.art)　〔[字体基础知识库，全面了解 Font Design](https://lastone.art/font-design/) 強烈推薦！！〕
 
@@ -173,32 +176,23 @@ menu:
 
 [水八口記](https://blog.shuiba.co/)　I love [photography/photography](https://shuiba.co/photography), [web designdemo site](https://demo.shuiba.co/) and painting; [travellingGoogle Maps](https://goo.gl/iqntp4), [bloggingin Chinese](https://blog.shuiba.co/) and singing are also where my passion lies.
 
-## 小鮮肉
+## 導航
 
-
-以下列幾箇中學生的博客，大多是代碼動漫宅，有很多江蘇的，發達地區就是不一樣。很佩服佗們中學便能建博客、硏究代碼。他們自己大槩有一箇博客圈子，全都是中學生。
-
-[小霖的夢花園](https://xiaolin.in)　〔2018 秊介紹寫的準高一〕
-
-[黎明餘光](https://blog.lim-light.com)　〔2018 秊應該高二了吧〕
-
-[徐天樂箇人博客](https://blog.xtlsoft.top)　就讀于南通市通州區實驗中學，創客工作室主幹成員〔2017 秊的介紹〕
-
-[I BCL.](https://ibcl.us)　〔〇〇後無線電愛好者，十分淸奇〕
-
-## 其他推薦
-
-[中文独立播客](https://typlog.com/podlist/)
+### 博客
 
 [中文独立博客列表](https://github.com/timqian/chinese-independent-blogs)　〔技術類〕
 
-[博文历史列表](https://liebiao.qian.lu/)　〔也是格子老師運營的，最大的亮點是 RSS 聚合〕
+[博文历史列表](https://liebiao.qian.lu/)　〔格子老師運營的，有 RSS 聚合〕
 
 [寻我](https://seekbetter.me/?sort=recommend&mode=blog&page=1)　优秀个人独立博客
 
 [优秀博客集锦](https://woodwhales.cn/2018/12/22/002/)
 
-[时间物质](https://matterofti.me/)　<n>20200309正式上線。一个弱社交型博客網站，利用 writefreely 搭建</n>
+### 其他
+
+[时间物质](https://matterofti.me/)　20200309正式上線。一个弱社交型博客網站，利用 writefreely 搭建
+
+[中文独立播客](https://typlog.com/podlist/)
 
 [spotify的播客收藏](https://www.douban.com/note/752408893/)
 

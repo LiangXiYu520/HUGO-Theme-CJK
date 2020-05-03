@@ -25,7 +25,7 @@ url: /links
 
 [半省堂](http://www.maguang.net)　〔山東大學歷史文化學院馬光老師〕<n>友鏈於 20181028</n>
 
-<img src="https://pic.superbed.cn/item/5cdb84d728b3233db9716684.jpg" width="60" alt="Alt Text" />　[KHANGEY BLOG](http://www.khangey.com/cn)　西藏人、中國科普出版社藏文處高級編輯、羊兄樂園編輯、藏文維基百科管理員、藏文程序員。〔非常有格調！！彊烈推薦！還有一箇 [藏文博客](http://khangey.com/bo/) 〕<n>友鏈於 20190518</n>
+<img src="https://pic.superbed.cn/item/5cdb84d728b3233db9716684.jpg" width="60" alt="Alt Text" />　[KHANGEY BLOG](https://www.khangey.com/cn)　西藏人、中國科普出版社藏文處高級編輯、羊兄樂園編輯、藏文維基百科管理員、藏文程序員。〔非常有格調！！彊烈推薦！還有一箇 [藏文博客](http://khangey.com/bo/) 〕<n>友鏈於 20190518</n>
 
 <img src="https://yilanju.com/wp-content/uploads/2019/03/logo.png" width="120"/>　[弈蘭居](https://yilanju.com)　〔文科生一位，似乎秊齡與我相放，難得的有眞文字的博客。佗說細細品一箇人的文字可以感受到佗的每一方面，誠哉〕<n>友鏈於 20181028</n>
 
