@@ -949,7 +949,7 @@ Hugo 0.57.1
 
 #### 2020 年 3 月 17 日
 
-評論系統使用 [詔預Isso開放服務](https://open.saintic.com/openservice/isso)。這是國內網站，請在意的讀者注意匿名性。
+評論系統使用 [詔預Isso開放服務](https://open.saintic.com/openservice/isso)。這是國內網站。
 
 > 诏预开放平台  
 > 您好！  
