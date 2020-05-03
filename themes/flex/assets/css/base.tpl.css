@@ -811,7 +811,7 @@ writing-mode: vertical-rl;
   margin:0;
   padding:0;
   text-shadow: -3px -4px 0 #2b2b2b;
-  color:#ffda56;
+  color:#f0d46e;
 font-style:italic;
 text-align: left;
 letter-spacing: .25em;
@@ -1230,11 +1230,6 @@ margin:0 auto 5em}
     }
 }
 @media screen and (max-width:600px){
-  .sentence{
-    font-size:.6em;
-    height:34em;
-    margin-bottom: 2em
-  }
   .home-cover{
     display: block;
     min-height:110vh

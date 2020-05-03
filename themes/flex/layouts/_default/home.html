@@ -6,21 +6,22 @@
           {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count1 := div $count 1000 }}
         <table>
 <tr>
-        <td>凡 /篇</td><td><span class="big big1" style="color:#ff8585">{{ $length }}</span></td>
+        <td style="text-align:right">凡 /篇</td><td><span class="big big1" style="color:#de9696">{{ $length }}</span></td>
       </tr>
       <tr>
-    <td> /千字</td><td><span class="big" style="color:#e0be00">{{- $count1 }}</span></td>
+    <td style="text-align:right"> /千字</td><td><span class="big" style="color:#7a8baa">{{- $count1 }}</span></td>
   </tr>
   <tr>
-        <td>篇均 /字</td><td><span class="big big2" style="color:#5adacc">{{ div $count $length }}</span></td>
+        <td style="text-align:right">篇均 /字</td><td><span class="big big2" style="color:#ebd27c">{{ div $count $length }}</span></td>
       </tr>
       <tr>
-        <td>已運行 /日</td><td><span class="big big2" style="color:#85c4ff">{{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }}</span></td>
+        <td style="text-align:right">已運行 /日</td><td><span class="big big2" style="color:#d6a0dc">{{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }}</span></td>
 </tr>
       <tr>
-      <td>橫跨 /秊</td><td><span class="big big2">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{ len . }}{{- end -}}</span></td>
+      <td style="text-align:right">橫跨 /秊</td><td><span class="big big2"style="color:#7cadbf">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{ len . }}{{- end -}}</span></td>
 </tr>
         </table>
+        <br>
       {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC
     <div class="subscribe-wrap des1">
       <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
