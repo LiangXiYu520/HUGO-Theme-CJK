@@ -25,26 +25,25 @@
  {{ partial "sourcecode.html" . }}
     </div>
     <div class="des1">
-        　<span class="des2">作者 </span>
-        <span class="des1-cate">@柯棋瀚</span>
+        　<span class="des2">作者 </span><span class="des1-cate">@柯棋瀚</span>
     {{- with .Params.book -}}
         　<span class="des2">學科</span>
-        {{ range . }}
+        {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "book/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "book/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/read#{{ $name }}">#{{- $name -}}</a></span>
-        {{ end -}}
-        {{ end }}
+        {{- end -}}
+        {{- end -}}
     {{- end }}
     {{- with .Params.notes -}}
         　<span class="des2">備註</span>
-        {{ range . }}
+        {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "notes/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "notes/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/notes/{{ $name }}">({{- $name -}})</a></span>
-        {{ end -}}
-        {{ end }}
-    {{- end }}
+        {{- end -}}
+        {{- end -}}
+    {{- end -}}
   </div>
 <div class="des1"><span class="des2">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
 </div>

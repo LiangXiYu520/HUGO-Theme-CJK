@@ -5,7 +5,7 @@
       <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">琴譜數字文本化</h1>
   {{- $length := sub (len .Data.Pages) 1 }}
   {{ $leng := 0 }}
-{{- with $des := index (.Site.Data.taxo ) "琴譜數字文本化" -}}<div class="des">{{ $des.des | safeHTML }}</div>{{ end }}
+{{- with $des := index (.Site.Data.taxo ) "琴譜數字文本化" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
 <section class="des1">
 凡 {{ $length  }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字

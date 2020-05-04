@@ -825,11 +825,11 @@ font-size: 5em
 font-size: 1.2em;
 letter-spacing: .3em;
 text-align: left;
-margin-left:.5em
+margin-left:8px
 }
 .sentence{
   color: var(--gray);
-  padding-right:1em;
+  padding-right:16px;
   text-align: center;
   line-height: 1.6;
   border-right: 1px solid #787878
@@ -843,7 +843,7 @@ margin-left:.5em
 }
 .sentence2{
   font-weight: normal;
-  font-size:.6em;
+  font-size:.8em;
 font-family: var(--serif);
   padding: 0;
 height:none;
@@ -1131,7 +1131,7 @@ box-shadow:none}
     margin: 0 auto auto .5em
   }
   .sentence{
-    height:20.5em;
+    height:20.5em
   }
   .heading-wrap.home1{
     margin-top:1em
@@ -1230,6 +1230,10 @@ margin:0 auto 5em}
     }
 }
 @media screen and (max-width:600px){
+  .sentence{
+    font-size:.85em;
+    height:23.5em
+  }
   .home-cover{
     display: block;
     min-height:110vh
