@@ -1548,6 +1548,44 @@ html5 語意標籤改造。
 
 把琴譜移到本站。
 
+> I've successfully configured the underlying crawler and it will now run every 24h.
+>
+> You're now a few steps away from having it working on your website:
+>
+> - Copy the following CSS/JS snippets and add them to your page
+>
+> ```html
+> <!-- at the end of the HEAD -->
+> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"/>
+>
+> <!-- at the end of the BODY -->
+> <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+> <script type="text/javascript"> docsearch({
+> apiKey: '9b538ac6c3dacb030efa8d971bf15d1f',
+> indexName: 'kqh',
+> inputSelector: '### REPLACE ME ####',
+> debug: false // Set debug to true if you want to inspect the dropdown
+> });
+> </script>
+> ```
+>
+>
+> - Add a search input in your page if you don't have any yet. Then update the inputSelector value in JS snippet
+> to a CSS selector that targets your search input field.
+> - Optionally customize the look and feel by following the DocSearch documentation
+> (See https://community.algolia.com/docsearch/styling.html)
+> - You can also check your configuration in our GitHub repository
+> (See https://github.com/algolia/docsearch-configs/blob/master/configs/kqh.json).
+> - me@kqh.me can get access to the full Algolia analytics for your DocSearch index by creating an account, following this link: https://www.algolia.com/users/invitation/accept?invitation_token=sR2hdfo2tpmCop8f7DEC
+>
+> Please open a pull request if want to leverage your configuration!
+>
+> Feel free to get back to us if you have any issues or questions regarding the integration.
+>
+> We'd also be happy to get your feedback and thoughts about DocSearch - so we can continue to improve it.
+>
+
+
 #### 4 月 24 日
 
 ##### 4.6.21
@@ -1657,3 +1695,5 @@ html5 語意標籤改造。
 ##### 4.6.36
 
 主頁調整
+
+顏色隨機生成

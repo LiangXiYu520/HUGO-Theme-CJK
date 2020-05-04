@@ -807,16 +807,26 @@ background: none;
 height: 28em;
 writing-mode: vertical-rl;
 }
+{{ $all := slice }}
+    {{ range .Site.Data.color }}
+    {{ range .color }}
+    {{ $all = $all | append . }}
+    {{ end }}
+    {{ end }}
+{{ with $all | shuffle }}
+{{ range first 1 . }}
 .heading-wrap.home1 h1{
   margin:0;
   padding:0;
-  text-shadow: -3px -4px 0 #2b2b2b;
-  color:#f0d46e;
+  text-shadow: -2px -3px 0 #2b2b2b;
 font-style:italic;
 text-align: left;
 letter-spacing: .25em;
-font-size: 5em
+font-size: 5em;
+color: {{ . }};
 }
+{{ end }}
+{{ end }}
 .cover-article{
   writing-mode:horizontal-tb
 }
@@ -859,7 +869,7 @@ max-height: none;
   text-align: left;
   font-size: .9em;
   line-height: 1;
-  margin:-2.4em auto auto .5em;
+  margin:-4em auto auto .5em;
   writing-mode:horizontal-tb;
 }
 .timestamp table{
@@ -871,15 +881,40 @@ max-height: none;
     padding: .2em 1em 0 0}
 .big{
   text-shadow: 3px 3px 0 #787878;
-  font-size: 7em;
   font-weight: bold;
   font-style: italic;
 }
+{{ $all1 := slice }}
+    {{ range .Site.Data.color }}
+    {{ range .color }}
+    {{ $all1 = $all1 | append . }}
+    {{ end }}
+    {{ end }}
+    {{ $slice := slice  }}
+{{ with $all1 | shuffle }}
+{{ range first 5 . | shuffle }}
+{{ $slice = $slice | append . }}
+{{ end }}
+{{ end }}
 .big1{
-  font-size: 12em;
+  font-size: 13em;
+  color:{{ index $slice 0 }}
 }
 .big2{
-  font-size: 5em;
+    font-size: 8em;
+    color:{{  index $slice 1 }}
+}
+.big3{
+  font-size: 6em;
+  color:{{  index $slice 2 }}
+}
+.big4{
+  font-size: 4em;
+  color:{{  index $slice 3 }}
+}
+.big5{
+  font-size: 4em;
+  color:{{  index $slice 4 }}
 }
   .section2{
     background: var(--shallowblue);
@@ -1115,12 +1150,20 @@ box-shadow:none}
 @media screen and (max-width:900px){
   .big{
     text-shadow: none;
-    font-size: 1.2em
   }
   .big1{
-    font-size: 1.2em
+    font-size: 2em
   }
   .big2{
+    font-size: 1.6em
+  }
+  .big3{
+    font-size: 1.4em;
+  }
+  .big4{
+    font-size: 1.2em;
+  }
+  .big5{
     font-size: 1.2em;
   }
   .banner{
