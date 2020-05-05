@@ -49,20 +49,19 @@
           </div>
     </section>
 <section class="section2">
-  <h1 id="gallery" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品
-  </h1>
-  <div class="discover-des">按最近修改排序</div>
-  <div class="discover-wrap works" style="max-width:63em">
-  <div class="discover gallery">
+  <h1 id="gallery" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品</h1>
+  <div class="discover-des" style="margin-top:-7em">按最近修改排序</div>
+  <div class="discover-wrap latest">
+  <div class="discover categories">
     {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
     <ol>
-  <h2 style="margin:0"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></h2>
-  <div class="archive-info">{{- .Page.Lastmod.Format "2006-01-02" }}</div>
-  {{- .Page.Params.des | safeHTML -}}
+      <div class="archive-info">{{- .Page.Lastmod.Format "2006-01-02" }}</div>
+  <h3 style="margin:0;font-size:1.2em"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></h3>
+  <span class="des2 home">{{- .Page.Params.des | safeHTML | markdownify -}}</span>
   </ol>{{ end }}
     </div>
   </div>
-  <div class="des" style="margin-bottom:5em">以及，這箇網站。</div>
+  <div class="des" style="margin-bottom:5em;margin-top:-3em">以及，這箇網站。</div>
 </section>
 <section class="section4">
     <h1 id="discover" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
@@ -131,16 +130,12 @@
   {{ end }}
   {{ $series := slice }}
     {{ $1series := slice }}
-    {{ $2series := slice }}
     {{ $3series := slice }}
-    {{ range .Site.Taxonomies.series.赫赫指北 }}
+    {{ range .Site.Taxonomies.tags.主旋律 }}
         {{ $1series = $1series | append .Page }}
     {{ end }}
-    {{ range .Site.Taxonomies.series.資源 }}
-        {{ $2series = $2series | append .Page }}
-    {{ end }}
     {{ with (where .Site.RegularPages "Type" "post") }}
-    {{ $3series = . | complement $1series $2series }}
+    {{ $3series = . | complement $1series }}
 {{ end }}
 {{ $series = intersect  $3series $auth  }}
   {{ $allCate := where .Site.Taxonomies.categories "Type" "post" }}
@@ -229,7 +224,7 @@
               {{ range . }}
               {{- $name := . -}}
               {{- with $.Site.GetPage "taxonomy" (printf "book/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "book/%s" ($name | urlize))) -}}
-              <a href="/book/{{ $name }}">#{{- $name -}}</a>
+              <a href="/read#{{ $name }}">#{{- $name -}}</a>
               {{- end -}}
               {{- end -}}
           {{- end -}}

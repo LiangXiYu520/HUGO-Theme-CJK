@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-05-03
+lastmod: 2020-05-05
 url: /release
 markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/block/release.md'
 menu:
@@ -1690,10 +1690,16 @@ html5 語意標籤改造。
 
 主頁封面調整。
 
-#### 5 月 3 日
+#### 5 月 3、4 日
 
 ##### 4.6.36
 
 主頁調整
 
 顏色隨機生成
+
+#### 5 月 5 日
+
+##### 4.6.37
+
+細節調整

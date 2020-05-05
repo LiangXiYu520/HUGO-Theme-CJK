@@ -120,10 +120,10 @@ strong{
 font-weight:normal;}
 q{
 background: var(--shallowblue)}
-.vertical q:before {
+q:before {
   content:none
 }
-.vertical q:after {
+q:after {
   content:none
 }
 v{

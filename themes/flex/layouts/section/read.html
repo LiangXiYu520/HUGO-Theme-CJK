@@ -36,7 +36,11 @@
   {{ end }}
   </div>
     <div class="archive-wrapper">
-      <h2 id="踐行社會主義核心價値觀"style="text-align:left">踐行社會主義核心價値觀<span class="des3" style="font-family:var(--codesans);letter-spacing:0"></span></h2>
+      {{ with .Site.Taxonomies.book.踐行社會主義核心價値觀 }}
+      {{ $count7 := 0 }}{{ range .Pages }}{{ $count7 = add $count7 .WordCount  }}{{ end }}
+       {{ $leng1 := len .Pages }}
+      <h2 id="踐行社會主義核心價値觀"style="text-align:left">踐行社會主義核心價値觀<span class="des3" style="font-family:var(--codesans);letter-spacing:0">　凡 {{ $leng1 }} 篇　{{- $count7 }} 字　篇均 {{ div $count7 $leng1 }} 字</span></h2>
+{{ end }}
       <div class="des2" style="margin:-2em 0 1em">富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
 <div style="margin-left:2em">
 {{ range .Site.Taxonomies.step.Alphabetical  }}

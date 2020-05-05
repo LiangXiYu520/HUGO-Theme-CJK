@@ -13,11 +13,7 @@
 </div>
   <main>
 {{- $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Type" "post") (index 50) }}
-  {{ $count1 := add $length 1 }}
-  {{ $count0 := $paginator.PageNumber }}
-{{ $count2 := sub $count0 1 }}
-{{ $count3 := mul 50 $count2}}
-{{ $count4 := sub $count1 $count3 }}
+{{ $count4 := sub (add $length 1 ) (mul 50 (sub $paginator.PageNumber 1)) }}
 {{ partial "pagination.html" . }}
 {{ range $paginator.Pages.GroupByPublishDate "2006" }}
                 {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
