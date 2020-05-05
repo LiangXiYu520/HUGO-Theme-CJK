@@ -7,6 +7,7 @@
   --brown: #c49d10;
   --shallowblue:#e1f3ff;
   --shallowred:#fedfdf;
+  --red: #f27144;
   --serif:"Adobe Garamond Pro",Garamond,"Adobe Caslon Pro",Caslon,"Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Adobe Garamond Pro",Garamond,"Adobe Caslon Pro",Caslon,"Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Noto Serif CJK KR","Source Han Serif K","Noto Serif CJK SC","Hiragino Mincho ProN","Hiragino Mincho","Yu Mincho","Hana Mincho","Ms Mincho";
   --codeserif:"Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Serif CJK KR","Source Han Serif K","Noto Serif CJK SC","Hiragino Mincho ProN","Hiragino Mincho","Yu Mincho","Hana Mincho","Ms Mincho";
   --sans:Verdana,Trebuchet, muli, avenir, "helvetica neue", helvetica, ubuntu, roboto, noto,arial,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
@@ -114,7 +115,7 @@ transition: .2s}
 a:hover{
   box-shadow: none}
 strong{
-  background: var(--gray);
+  background: var(--red);
   padding: .1em;
   color:var(--bg);
 font-weight:normal;}
@@ -1063,24 +1064,6 @@ box-shadow:none;
 .paper-wrap h1 a:hover{
   color:var(--brown)
 }
-.move{
-  margin:0 auto 1em;
-  padding: .4em .4em .2em;
-  color: var(--bg);
-  background:#e37979;
-  border-radius:.5em;
-  	position:relative;
-  animation-name: move;
-  animation-duration:1s;
-  animation-iteration-count:infinite;
-  animation-timing-function:linear;
-  animation-direction:alternate
-}
-@keyframes move{
-from {left: .7em}
-to{ right: .7em}
-}
-
 .paper-card{
   padding: 1em;
   margin:1em 2em 4em 2em;
