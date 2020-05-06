@@ -176,7 +176,7 @@
     <div class="discover-wrap latest">
     <div class="discover categories">
   {{ if ge (len $recommend) 21 }}
-    {{- range first 3 $recommend -}}
+    {{- range first 3 $recommend | shuffle -}}
     <ol style="margin:1.5em auto">
     <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
     <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
@@ -208,7 +208,7 @@
     </div>
 </ol>
     {{ end }}
-    {{- range first 2 $6to20recommend -}}
+    {{- range first 2 $6to20recommend | shuffle -}}
     <ol style="margin:1.5em auto">
     <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
     <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
@@ -240,11 +240,10 @@
     </div>
 </ol>
   {{ end }}
-  {{- range first 2  $21to30recommend  -}}
+  {{- range first 2  $21to30recommend | shuffle -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-
   <div class="des2 home">
     {{- with .Params.author -}}
         {{ range . }}
@@ -274,7 +273,7 @@
 </ol>
   {{ end }}
   {{ else if ge (len $recommend) 11 }}
-  {{- range first 3 $recommend -}}
+  {{- range first 3 $recommend | shuffle -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
@@ -306,7 +305,7 @@
   </div>
 </ol>
   {{ end }}
-  {{- range first 2 $6to10recommend -}}
+  {{- range first 2 $6to10recommend | shuffle -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
@@ -338,7 +337,7 @@
   </div>
 </ol>
   {{ end }}
-  {{- range first 2 $11to20recommend -}}
+  {{- range first 2 $11to20recommend | shuffle -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
@@ -371,7 +370,7 @@
 </ol>
   {{ end }}
   {{ else if le (len $recommend) 10 }}
-  {{- range first 7 $recommend -}}
+  {{- range first 7 $recommend | shuffle -}}
   <ol style="margin:1.5em auto">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
