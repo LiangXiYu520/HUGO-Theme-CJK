@@ -174,7 +174,7 @@
   <div class="discover categories">
 {{ $author := slice }}
 {{ range .Site.Taxonomies.author.ByCount }}
-{{ if ne .Page.Title  "柯棋瀚" "柯棋瀚整理"  "柯棋瀚錄入" }}
+{{ if ne .Page.Title  "柯棋瀚" "柯棋瀚整理"  "柯棋瀚錄入" "柯棋瀚出品" "柯棋瀚學" }}
 {{ $author = $author | append . }}
 {{ end }}
 {{ end }}
