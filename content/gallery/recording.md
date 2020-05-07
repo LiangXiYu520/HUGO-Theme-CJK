@@ -19,6 +19,8 @@ des: '在日常生活中，耳朵聽到的聲音往往被我们忽畧。而現�
 - 喜馬拉雅　<a href="https://www.ximalaya.com/renwen/30113938/" target="\_blank">情形于声</a>
 - 網易雲音樂電臺　<a href="http://music.163.com/#/radio/527105637?userid=275990862" target="\_blank">情形于声</a>
 
+本播客還收錄於 [podtail](https://podtail.com/podcast/--endless-sound/)
+
 </div>
 
 <div class="gallery">
