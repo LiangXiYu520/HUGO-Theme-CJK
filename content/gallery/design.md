@@ -1,7 +1,7 @@
 ---
 type: "gallery"
 layout: "gallery"
-author: ["柯棋瀚"]
+author: ["柯棋瀚出品"]
 title: "平面"
 lastmod: 2019-07-23
 url: /design

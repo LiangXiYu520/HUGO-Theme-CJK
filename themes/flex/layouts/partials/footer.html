@@ -30,7 +30,7 @@
     </nav>
       <nav class="col">
             <ul style="margin-top:.4em">
-              <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len  (where .Site.Taxonomies.tags "Type" "post") }}</span></a></h2>
+              <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len .Site.Taxonomies.tags }}</span></a></h2>
             <h2><a href="/notes">備註<span style="font-size:.7em"> {{ len (where .Site.Taxonomies.notes "Type" "post") }}</span></a></h2>
               {{ $series := where .Site.Taxonomies.series "Type" "post" }}
                      {{ $categories := where .Site.Taxonomies.categories "Type" "post" }}

@@ -1,6 +1,10 @@
 {{ define "main" }}
 <div class="heading-wrap">
-{{ partial "heading.html" . }}
+  {{ partialCached "banner.html" . }}
+  <header class="Heading">
+  <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/tags">標籤</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
+  {{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+  </header>
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
 <section class="des1">
@@ -80,6 +84,5 @@
     <br><br>
 {{ partial "pagination.html" . }}
 </main>
-
     {{ partial "footer.html" . }}
 {{ end }}

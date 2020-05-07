@@ -1,7 +1,7 @@
 ---
 type: "gallery"
 layout: "gallery"
-author: ["柯棋瀚"]
+author: ["柯棋瀚出品"]
 title: "實地錄音"
 lastmod: 2019-11-09
 url: /recording

@@ -1,7 +1,7 @@
 ---
 type: "gallery"
 layout: "gallery"
-author: ["柯棋瀚"]
+author: ["柯棋瀚出品"]
 title: "文章發表"
 lastmod: 2019-09-30
 url: /paper

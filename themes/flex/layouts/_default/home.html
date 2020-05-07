@@ -214,7 +214,7 @@
   <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
   <div class="discover-wrap latest">
   <div class="discover read">
-    {{- range first 6  (where .Site.RegularPages.ByDate.Reverse "Type" "read") -}}
+    {{- range first 8  (where .Site.RegularPages.ByDate.Reverse "Type" "read") -}}
     <ol>
       <div class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</div>
         <div class="discover-item latest"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>

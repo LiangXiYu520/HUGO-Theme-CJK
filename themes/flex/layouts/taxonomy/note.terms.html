@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="heading-wrap">
+  {{ partialCached "banner.html" . }}
+<header class="Heading">
+      <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/xuekan">网誌</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">備註</h1>
+</header>
+</div>
+  <main>
+  <div class="u-wrapper">
+    <div class="u-padding">
+  <section class="cate">
+    {{ range .Data.Terms.Alphabetical }}
+      <li class="cate-wrap"><a class="Tags-link u-clickable" href="{{ .Page.RelPermalink }}">{{ .Page.Title | safeHTML  }} {{ .Count }}</a></li>
+    {{ end }}
+  </section>
+  </div>
+  </div>
+</main>
+    {{ partial "footer.html" . }}
+{{ end }}

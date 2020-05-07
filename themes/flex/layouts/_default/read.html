@@ -25,7 +25,15 @@
  {{ partial "sourcecode.html" . }}
     </div>
     <div class="des1">
-        　<span class="des2">作者 </span><span class="des1-cate">@柯棋瀚</span>
+      {{- with .Params.author -}}
+          　<span class="des2">作者</span>
+          {{- range . -}}
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+          <span class="des1-cate"><a href="/author/{{ $name }}">@{{- $name -}}</a></span>
+          {{- end -}}
+          {{- end -}}
+      {{- end }}
     {{- with .Params.book -}}
         　<span class="des2">學科</span>
         {{- range . -}}
@@ -35,6 +43,14 @@
         {{- end -}}
         {{- end -}}
     {{- end }}
+    {{- with .Params.step -}}
+        {{- range . -}}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "taxonomy" (printf "step/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "step/%s" ($name | urlize))) -}}
+        <span class="des1-cate"><a href="/read#{{ $name }}">{{- $name -}}</a></span>
+        {{- end -}}
+        {{- end -}}
+    {{- end -}}
     {{- with .Params.notes -}}
         　<span class="des2">備註</span>
         {{- range . -}}
