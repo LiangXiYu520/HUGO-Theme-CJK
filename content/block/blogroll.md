@@ -124,6 +124,8 @@ menu:
 
 [笛声](https://hqidi.com/)
 
+https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開！
+
 ## 旅行類
 
 [賢民的比特記憶](https://www.xianmin.org)　〔麗江民宿老闆，發起「捍衛開放的互聯網」〕
