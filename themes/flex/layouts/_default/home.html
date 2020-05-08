@@ -48,9 +48,10 @@
           </div>
           </div>
     </section>
+    
 <section class="section2">
   <h1 id="gallery" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品</h1>
-  <div class="discover-des" style="margin-top:-7em">按最近修改排序</div>
+  <div class="discover-des" style="margin-top:0em">按最近修改排序</div>
   <div class="discover-wrap latest">
   <div class="discover categories">
     {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
@@ -210,7 +211,8 @@
 <section class="section3">
   <h1 id="wiki" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
-  <h1 style="margin-top:0"><a href="/read" target="_blank">讀書</a></h1>
+  <h1 style="margin:0 auto"><a href="/read" target="_blank">讀書</a></h1>
+<div class="des">【述要】用十分之一的字數槩述原書內容【讀後】類似書評</div>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
   <div class="discover-wrap latest">
   <div class="discover read">
@@ -235,7 +237,8 @@
         </div>
         <div class="gallery" style="margin:0">
           <div class="paper-wrap">
-            <h1 style="margin-top:0"><a href="/tutorial" target="_blank">赫赫指北</a></h1>
+            <h1 style="margin:0 auto"><a href="/tutorial" target="_blank">赫赫指北</a></h1>
+          <div class="des">搭建基本的知識框架</div>
             <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
           <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
               {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "tutorial")) -}}
@@ -243,7 +246,8 @@
               {{ end }}
           </div></div></div>
 <div class="paper-wrap">
-  <h1 style="margin-top:0"><a href="/recommend" target="_blank">資源</a></h1>
+  <h1 style="margin:0 auto"><a href="/recommend" target="_blank">資源</a></h1>
+<div class="des">一些信息聚合</div>
   <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
     {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "recommend")) -}}
@@ -251,8 +255,8 @@
     {{ end }}
 </div></div></div>
 <div class="paper-wrap">
-  <h1 style="margin-top:0"><a href="/exam" target="_blank">考試</a></h1>
-  <div  class="des" style="margin-top:-1em;font-size:1.1em">整理的考試複習資料。世界上最沒用的東西</div>
+  <h1 style="margin:0 auto"><a href="/exam" target="_blank">考試</a></h1>
+  <div class="des">整理的考試複習資料。世界上最沒用的東西</div>
   <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
   {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "exam")) -}}
@@ -265,9 +269,9 @@
   <h1 id="data" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
 <div class="gallery" style="margin:0">
-<div class="paper-wrap">
-  <h1 style="margin-top:0"><a href="/zanfu" target="_blank">赫赫讚府 Reorganized Commentaries</a></h1>
-  <div  class="des" style="margin-top:-1em;font-size:1.1em">收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引</div>
+<div class="paper-wrap" style="max-width:30em">
+  <h1 style="margin:0 auto"><a href="/zanfu" target="_blank">赫赫讚府 Reorganized Commentaries</a></h1>
+  <div class="des">收集中國大陸互聯網的網路評論，按主題進行編排，爲當下的厤㕜提供一些索引。僅作學術硏究之用</div>
     <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
 <div class="paper-card recording"style="border:none"><div class="paper-card-in">
 {{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
@@ -277,8 +281,8 @@
 {{ end }}
 </div></div></div>
 <div class="paper-wrap">
-<h1 style="margin-top:0"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
-<div  class="des" style="margin-top:-1em;font-size:1.1em">北師大歷史學院本科生學術刊物</div>
+<h1 style="margin:0 auto"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
+<div class="des">北師大歷史學院本科生學術刊物</div>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
           {{ range first 5 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
@@ -288,8 +292,8 @@
           {{ end }}
 </div></div></div>
 <div class="paper-wrap" style="max-width:32em">
-<h1 style="margin-top:0"><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h1>
-<div  class="des" style="margin-top:-1em;font-size:1.1em">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
+<h1 style="margin:0 auto"><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h1>
+<div class="des">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
 這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
 {{ range .Site.Taxonomies.toc.Alphabetical }}
@@ -297,8 +301,8 @@
     {{ end }}
 </div></div></div>
 <div class="paper-wrap">
-<h1 style="margin-top:0"><a href="/doc" target="_blank">文庫</a></h1>
-<div  class="des" style="margin-top:-1em;font-size:1.1em">平時上課的錄文。量很少</div>
+<h1 style="margin:0 auto"><a href="/doc" target="_blank">文庫</a></h1>
+<div class="des">平時上課的錄文。量很少</div>
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
 {{ range first 10 (where .Site.RegularPages.ByDate "Type" "doc") }}
     <li><a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
