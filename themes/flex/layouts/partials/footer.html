@@ -28,27 +28,33 @@
     {{ end }}
     </div>
     </nav>
+    {{ $series := where .Site.Taxonomies.series "Type" "post" }}
+     {{ $categories := where .Site.Taxonomies.categories "Type" "post" }}
+     {{ $author := where .Site.Taxonomies.author "Type" "post" }}
+     {{ $notes := where .Site.Taxonomies.notes "Type" "post" }}
       <nav class="col">
-            <ul style="margin-top:.4em">
-              <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len .Site.Taxonomies.tags }}</span></a></h2>
-            <h2><a href="/notes">備註<span style="font-size:.7em"> {{ len (where .Site.Taxonomies.notes "Type" "post") }}</span></a></h2>
-              {{ $series := where .Site.Taxonomies.series "Type" "post" }}
-                     {{ $categories := where .Site.Taxonomies.categories "Type" "post" }}
-                     {{ $author := where .Site.Taxonomies.author "Type" "post" }}
-              <h2>系列<span style="color:#d2c600;font-size:.7em"> {{ len $series }}</span></h2>
-              {{ range $series.ByCount }}
-              <li><a href="{{ .Page.Permalink }}">{{ .Page.Title | safeHTML  }} {{ .Count }}</a></li>
-      {{ end }}
-            </ul>
     <ul style="margin-top:.4em">
       <h2>分類<span style="color:#d2c600;font-size:.7em"> {{ len $categories }}</span></h2>
         {{ range $categories.ByCount }}
         <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
         {{ end }}
+        </ul>
+        <ul style="margin-top:.4em">
+          <h2>系列<span style="color:#d2c600;font-size:.7em"> {{ len $series }}</span></h2>
+          {{ range $series.ByCount }}
+          <li><a href="{{ .Page.Permalink }}">{{ .Page.Title | safeHTML  }} {{ .Count }}</a></li>
+  {{ end }}
+        </ul>
+            <ul style="margin-top:.4em">
         <h2>作者<span style="color:#d2c600;font-size:.7em"> {{ len $author  }}</span></h2>
           {{ range $author.ByCount  }}
           <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
           {{ end }}
+    <h2>備註<span style="color:#d2c600;font-size:.7em"> {{ len $notes }}</span></h2>
+      {{ range $notes.ByCount  }}
+      <li><a href="{{ .Page.Permalink }}">{{- .Page.Title }} {{ .Count -}}</a></li>
+      {{ end }}
+      <h2><a href="/tags">標籤<span style="font-size:.7em"> {{ len .Site.Taxonomies.tags }}</span></a></h2>
     </ul>
   </nav>
 {{ partial "footer-sub.html" . }}
