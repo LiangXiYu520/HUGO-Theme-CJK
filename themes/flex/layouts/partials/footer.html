@@ -30,7 +30,7 @@
     </nav>
     {{ $series := where .Site.Taxonomies.series "Type" "post" }}
      {{ $categories := where .Site.Taxonomies.categories "Type" "post" }}
-     {{ $author := where .Site.Taxonomies.author "Type" "post" }}
+     {{ $author := .Site.Taxonomies.author }}
      {{ $notes := where .Site.Taxonomies.notes "Type" "post" }}
       <nav class="col">
     <ul style="margin-top:.4em">

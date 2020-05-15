@@ -7,13 +7,25 @@
 {{ if .Description }}
 <div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
 {{ end }}
-    <section class="des1">
-    <span datetime="{{ .Date.Format "2006-01-02" }}">
-    　柯棋瀚整理　<time>{{- .Date.Format "2006-01-02" -}}</time>
-    {{- if ne .Lastmod .Date -}}>
-    {{- .Lastmod.Format (.Site.Params.dateFormatToUse | default "06-01-02") -}}
-{{- end -}}　</span><span>{{- .WordCount -}} 字</span>　請勿轉載，自己參考一下卽可
+<section class="tag">
+  <div class="des1">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">
+{{ .Date.Format "2006-01-02" }}
+{{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "06-01-02" }}{{ end }}</time>　
+<span>{{- .WordCount }} 字</span>
 {{ partial "sourcecode.html" . }}
+  </div>
+      <div class="des1">
+      {{- with .Params.author -}}
+          {{ range . }}
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+          <span class="des1-cate"> <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
+          {{- end -}}
+          {{- end -}}
+      {{- end -}}
+      　請勿轉載，自己參考一下卽可
+      </div>
     </section>
 
     <nav class="pagi-wrap">

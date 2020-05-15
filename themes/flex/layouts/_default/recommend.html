@@ -16,8 +16,14 @@
 {{ partial "sourcecode.html" . }}
     </div>
     <div class="des1">
-        　<span class="des2">整理者 </span>
-        <span class="des1-cate">@柯棋瀚</span>
+      {{- with .Params.author -}}
+          {{- range . -}}
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+          <span class="des1-cate"><a href="/author/{{ $name }}">@{{- $name -}}</a></span>
+          {{- end -}}
+          {{- end -}}
+      {{- end }}
   <span class="des2">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
 </div>
 </section>
