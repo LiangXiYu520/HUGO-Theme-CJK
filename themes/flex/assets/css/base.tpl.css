@@ -881,7 +881,6 @@ max-height: none;
     border:none;
     padding: .2em 1em 0 0}
 .big{
-  text-shadow: 3px 3px 0 #787878;
   font-weight: bold;
   font-style: italic;
 }
@@ -899,23 +898,28 @@ max-height: none;
 {{ end }}
 .big1{
   font-size: 13em;
-  color:{{ index $slice 0 }}
+  color:rgba(0,0,0,0);
+  -webkit-text-stroke: 2.5px {{ index $slice 0 }};
 }
 .big2{
     font-size: 8em;
-    color:{{  index $slice 1 }}
+    color:rgba(0,0,0,0);
+    -webkit-text-stroke: 2.5px {{ index $slice 1 }};
 }
 .big3{
   font-size: 6em;
-  color:{{  index $slice 2 }}
+  color:rgba(0,0,0,0);
+  -webkit-text-stroke: 2.5px {{ index $slice 2 }};
 }
 .big4{
   font-size: 4em;
-  color:{{  index $slice 3 }}
+  color:rgba(0,0,0,0);
+  -webkit-text-stroke: 2px {{ index $slice 3 }};
 }
 .big5{
   font-size: 4em;
-  color:{{  index $slice 4 }}
+  color:rgba(0,0,0,0);
+  -webkit-text-stroke: 2px {{ index $slice 4 }};
 }
   .section2{
     background: var(--shallowblue);
@@ -1136,21 +1140,27 @@ box-shadow:none}
   }
   .big{
     text-shadow: none;
+    -webkit-text-stroke:0
   }
   .big1{
-    font-size: 2em
+    font-size: 2em;
+      color:{{ index $slice 0 }};
   }
   .big2{
-    font-size: 1.6em
+    font-size: 1.6em;
+    color:{{ index $slice 1 }};
   }
   .big3{
     font-size: 1.4em;
+    color:{{ index $slice 2 }};
   }
   .big4{
     font-size: 1.2em;
+    color:{{ index $slice 3 }};
   }
   .big5{
     font-size: 1.2em;
+    color:{{ index $slice 4 }};
   }
   .banner{
     font-size: .9em
