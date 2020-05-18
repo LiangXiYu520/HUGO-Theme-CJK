@@ -38,10 +38,6 @@ step = "step"
      name = "HOME"
      weight = 1
      url = "/"
-  [[menu.nav]]
-         name = "works"
-         weight =  2
-         url = "/#gallery"
   [[menu.nav1]]
      name = "發現"
      weight = 3

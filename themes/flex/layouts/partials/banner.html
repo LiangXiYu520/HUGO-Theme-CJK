@@ -1,8 +1,5 @@
 <nav>
     <div class="banner">
-      {{ range .Site.Menus.nav }}
-          <a href="{{  .URL  }}">{{- .Name | safeHTML  -}}</a>
-      {{- end -}}
       <details>
       <summary>網誌</summary>
       {{ range .Site.Menus.nav1 }}
