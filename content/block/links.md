@@ -65,6 +65,8 @@ url: /links
 
 <img src="https://fengz.me/Avatar.jpg" width="60">　[風過不留痕](https://fengz.me)　望尽天涯路<n>20191006</n>
 
+[艾爲開的博客](aiweikai.com)　〔一位美術生〕
+
 ## 導航推廣
 
 本站收錄於以下博客衟杭：
