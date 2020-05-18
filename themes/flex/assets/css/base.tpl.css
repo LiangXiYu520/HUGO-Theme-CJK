@@ -583,6 +583,10 @@ box-shadow:none;
   text-decoration: none;
   display: inline-block;
   font-size: .9em}
+  .banner-wrap{
+border-bottom: .1em solid var(--gray);
+padding-bottom: .7em
+  }
 .banner{
   display: inline-flex;
   height:1em;
