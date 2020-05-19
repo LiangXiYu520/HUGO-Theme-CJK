@@ -3,7 +3,7 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "friends"
 date: 2018-10-27
-lastmod: 2020-04-26
+lastmod: 2020-05-19
 menu:
   main:
     weight: 3
@@ -21,7 +21,7 @@ url: /links
 
 ## 有鄰
 
-已下爲互換了友鏈的小伙伴：
+已下爲互換了友鏈的小伙伴<n>大致按添加時間排列</n>：
 
 [半省堂](http://www.maguang.net)　〔山東大學歷史文化學院馬光老師〕<n>友鏈於 20181028</n>
 
@@ -30,6 +30,8 @@ url: /links
 <img src="https://yilanju.com/wp-content/uploads/2019/03/logo.png" width="120"/>　[弈蘭居](https://yilanju.com)　〔文科生一位，似乎秊齡與我相放，難得的有眞文字的博客。佗說細細品一箇人的文字可以感受到佗的每一方面，誠哉〕<n>友鏈於 20181028</n>
 
 [尙磊的博客](http://shanglei.net/about)　曾在在濟南從事出版編輯工作，現在在北京從事公職類培訓，關注出版、歷史、文化、博客、互聯網等領域。<n>20181028</n>
+
+[生有夏花](http://www.xiatian.name)　一箇心有旁騖的科技工作者。工學博士，專業方向是磨洋工。〔今天偶然一看，博主竟肰把我博客加到葉腳友鏈了，十分感謝！〕<n>20181122</n>
 
 ![](https://api.superbed.cn/pic/5c221117c4ff9e2b4e04591f)　[HELLOHOME!](https://hellohome.cn)，零碎生活二三事！<n>20181027</n>
 
@@ -53,8 +55,6 @@ url: /links
 
 <img src="https://www.gravatar.com/avatar/c7f7153efd11d2404bd7e6ea7e327e74?s=240&d=mp" width="60">　[他與她的夢](https://cncyu.cn/)　與其臨淵羨魚，不如退而結網<n>20181110</n>
 
-[生有夏花](http://www.xiatian.name)　一箇心有旁騖的科技工作者。工學博士，專業方向是磨洋工。〔今天偶然一看，博主竟肰把我博客加到葉腳友鏈了，十分感謝！〕<n>20181122</n>
-
 <img src="https://love109.cn/images/love109.jpg" width="60" alt="Alt Text" />　[LOVE109❤️纪实小屋](https://love109.cn/)　記錄愛情❤️記錄生活〔今天正好情人節，祝長久〕<n>20190214</n>
 
 <img src="https://pic.superbed.cn/item/5cd257c63a213b0417f916c0.gif" width="60" alt="Alt Text" />　[格子老師](https://manman.qian.lu/)　遇見每一箇孩子的成長〔感謝添加友鏈。一位小學老師，用博客布置作業，學到了，如果我以後當老師，也要這樣，堅決不用什麼微信群〕<n>20190508</n>
@@ -63,9 +63,11 @@ url: /links
 
 [瓠樽](http://blog.dylanwu.space/)　〔直排網葉的同道中人〕<n>20191007</n>
 
-<img src="https://fengz.me/Avatar.jpg" width="60">　[風過不留痕](https://fengz.me)　望尽天涯路<n>20191006</n>
+[艾爲開的博客](aiweikai.com)　〔一位美術生〕<n>20200517</n>
 
-[艾爲開的博客](aiweikai.com)　〔一位美術生〕
+[Null·一间生活](https://ncnccn.cn/)　生命本身没有意义，有意义的是活着的我们，我们的喜怒哀乐，我们对生活的感知才有意义<n>20200519</n>
+
+~~<img src="https://fengz.me/Avatar.jpg" width="60">　[風過不留痕](https://fengz.me)　望尽天涯路<n>20191006。網站似乎掛了</n>~~
 
 ## 導航推廣
 
