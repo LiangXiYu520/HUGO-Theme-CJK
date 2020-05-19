@@ -3,9 +3,8 @@ layout: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-05-08
+lastmod: 2020-05-19
 url: /release
-markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/block/release.md'
 menu:
   main:
     weight: 2
@@ -1721,3 +1720,8 @@ html5 語意標籤改造。
 調整封面數字，更加清爽
 
 主頁背景色隨即化
+
+現在算一下：
+
+- 主頁數字共有 29 種備選顏色，共 5 箇數字，可能性有 `29*28*27*26*25 = 14,250,600` 種，2 小時生成一次，可以 3253 秊不重樣。
+- 四個板塊，備選顏色共 9 種，可能性有 `9*8*7*6 = 3024` 種，可以 252 日不重樣
