@@ -6,8 +6,23 @@
   --yellow: #ffda56;
   --brown: #c49d10;
   --shallowblue:#e1f3ff;
-  --shallowred:#fedfdf;
   --red: #f27144;
+  {{ $all2 := slice }}
+      {{ range .Site.Data.color }}
+      {{ range .color1 }}
+      {{ $all2 = $all2 | append . }}
+      {{ end }}
+      {{ end }}
+      {{ $slice2 := slice  }}
+  {{ with $all2 | shuffle }}
+  {{ range first 4 . | shuffle }}
+  {{ $slice2 = $slice2 | append . }}
+  {{ end }}
+  {{ end }}
+  --section1: {{ index $slice2 0 }};
+  --section2:{{ index $slice2 1 }};
+  --section3:{{ index $slice2 2 }};
+  --section4:{{ index $slice2 3 }};
   --serif:"Adobe Garamond Pro",Garamond,"Adobe Caslon Pro",Caslon,"Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Adobe Garamond Pro",Garamond,"Adobe Caslon Pro",Caslon,"Minion Pro",Minion,"Adobe Gurmukhi","Palatino Linotype","Noto Serif CJK KR","Source Han Serif K","Noto Serif CJK SC","Hiragino Mincho ProN","Hiragino Mincho","Yu Mincho","Hana Mincho","Ms Mincho";
   --codeserif:"Source Code Pro",Menlo, Inconsolata,"Courier New","Anonymous Pro",monospace,"Noto Serif CJK KR","Source Han Serif K","Noto Serif CJK SC","Hiragino Mincho ProN","Hiragino Mincho","Yu Mincho","Hana Mincho","Ms Mincho";
   --sans:Verdana,Trebuchet, muli, avenir, "helvetica neue", helvetica, ubuntu, roboto, noto,arial,"Noto Sans CJK Kr","Noto Sans CJK SC", PingFang,"PingFang SC",Sans-serif;
@@ -22,7 +37,10 @@
     --yellow: #6f5600;
     --brown: #907000;
     --shallowblue:#003d55;
-    --shallowred:#450000;
+    --section1:#003d55;
+    --section2:black;
+    --section3:#450000;
+    --section4:black
   }
 }
 body {
@@ -927,12 +945,16 @@ max-height: none;
   color:rgba(0,0,0,0);
   -webkit-text-stroke: 2px {{ index $slice 4 }};
 }
-  .section2{
-    background: var(--shallowblue);
+  .section1{
+    background: var(--section1);
     padding:4em 0 3em
   }
+  .section2{
+    background: var(--section2);
+  padding:4em 0 2em
+  }
   .section3{
-    background: var(--shallowred);
+    background: var(--section3);
     padding:4em 0 5em
   }
 .section3   h1 a{
@@ -941,9 +963,10 @@ max-height: none;
 .section3   h1 a:hover{
   color:var(--brown)
 }
-    .section4{
-    padding:4em 0 0
-  }
+.section4{
+  background: var(--section4);
+padding:4em 0 0
+}
   .sectionh1{
     font-size:5em;margin:1em 0
   }
