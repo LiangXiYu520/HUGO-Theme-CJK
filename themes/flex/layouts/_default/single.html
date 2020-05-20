@@ -90,7 +90,7 @@
           </article>
       </div>
     {{ end }}
-<nav style="max-width:47em;margin:0 auto;background:var(--shallowblue);padding:1px 1em 0;border-radius:3em">
+<nav style="max-width:47em;margin:0 auto;background:var(--section1);padding:1px 1em 0;border-radius:3em">
   <h3 style="color:var(--gray);text-align:center;margin-bottom:-1em">爲您推薦</h3>
   {{ $current := . }}
   {{ $articles := where (where $.Site.Pages ".Kind" "eq" "page" ) ".Title" "!=" $current.Title }}
