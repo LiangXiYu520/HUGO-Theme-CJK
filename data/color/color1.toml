@@ -1,5 +1,4 @@
 color1 = [
-"#c2d1f4",
 "#e1f3ff",
 "#efcfcf",
 "#dde6c6",
@@ -7,5 +6,6 @@ color1 = [
 "#fffae8",
 "white",
 "#cbecee",
-"#dbd0ee"
+"#c2e2f4",
+"#fdd2ff"
 ]
