@@ -23,7 +23,7 @@
 </tr>
         </table>
         <br>
-      {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　顏色隨機生成
+      {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　顏色隨機生成，不必在意搭配
     <div class="subscribe-wrap des1">
       <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
     　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
@@ -240,7 +240,7 @@
           <div class="des">搭建基本的知識框架</div>
             <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
           <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
-              {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "tutorial")) -}}
+              {{- range first 5 (shuffle (where .Site.RegularPages.ByDate "Type" "tutorial")) -}}
               <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
               {{ end }}
           </div></div></div>
@@ -249,7 +249,7 @@
 <div class="des">一些信息聚合</div>
   <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
-    {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "recommend")) -}}
+    {{- range first 5 (shuffle (where .Site.RegularPages.ByDate "Type" "recommend")) -}}
     <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
     {{ end }}
 </div></div></div>
@@ -258,7 +258,7 @@
   <div class="des">整理的考試複習資料。世界上最沒用的東西</div>
   <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
-  {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "exam")) -}}
+  {{- range first 5 (shuffle (where .Site.RegularPages.ByDate "Type" "exam")) -}}
   <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title }}</a></li>
   {{- end -}}
 </div></div></div>
