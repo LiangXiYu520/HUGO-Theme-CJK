@@ -2,17 +2,17 @@
 <div class="heading-wrap">
   {{ partialCached "banner.html" . }}
   <header class="Heading">
-      <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">考試</h1>
+      <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">考試課堂筆記</h1>
 {{- with $des := index (.Site.Data.taxo ) "考試" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
 <section class="des1">
 凡 {{ len .Data.Pages }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count (len .Data.Pages) }} 字
-　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">考試</span><span class="rss2">RSS</span></a>
+　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">考試課堂筆記</span><span class="rss2">RSS</span></a>
 </section>
 </div>
 <main>
   <section class="archive-wrapper" style="margin:2em auto 8em">
-  {{- range .Pages.ByDate -}}
+  {{ range sort .Pages "File.Path" }}
         <div class="archive-wrap" style="margin:.7em 0">
           <div class="archive-right">
     <span class="archive-title" style="margin-left:0">

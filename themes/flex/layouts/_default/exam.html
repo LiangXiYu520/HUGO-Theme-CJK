@@ -2,7 +2,7 @@
 <header class="heading-wrap">
       {{ partialCached "banner.html" . }}
       <div class="Heading">
-<span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»<a class="DocSearch-lvl0" href="/exam">考試</a>»</span><h1 class="DocSearch-lvl1 Heading-title article">{{- .Title | safeHTML | markdownify -}}</h1>
+<span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»<a class="DocSearch-lvl0" href="/exam">考試課堂筆記</a>»</span><h1 class="DocSearch-lvl1 Heading-title article">{{- .Title | safeHTML | markdownify -}}</h1>
 </div>
 {{ if .Description }}
 <div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
