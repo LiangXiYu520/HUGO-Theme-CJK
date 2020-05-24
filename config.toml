@@ -73,7 +73,7 @@ step = "step"
          [[menu.nav3]]
             name = "文庫"
             weight = 12
-            url = "/doc"
+            url = "https://xtools.wmflabs.org/pages/zh.wikisource.org/Kujihhoe?uselang=zh#"
 [params]
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
   vertical = true
