@@ -51,13 +51,9 @@ step = "step"
               weight = 5
               url = "/read"
         [[menu.nav2]]
-              name = "指北"
+              name = "敎程"
               weight = 6
               url = "/tutorial"
-           [[menu.nav2]]
-                 name = "資源"
-                 weight = 7
-                 url = "/recommend"
        [[menu.nav2]]
            name = "考試"
            weight = 8

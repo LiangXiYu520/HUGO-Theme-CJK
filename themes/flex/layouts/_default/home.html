@@ -236,23 +236,14 @@
         </div>
         <div class="gallery" style="margin:0">
           <div class="paper-wrap">
-            <h1 style="margin:0 auto"><a href="/tutorial" target="_blank">赫赫指北</a></h1>
-          <div class="des">搭建基本的知識框架</div>
+            <h1 style="margin:0 auto"><a href="/tutorial" target="_blank">敎程</a></h1>
+          <div class="des">赫赫指北｜搭建基本的知識框架；資源｜一些信息聚合</div>
             <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
           <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
               {{- range first 5 (shuffle (where .Site.RegularPages.ByDate "Type" "tutorial")) -}}
               <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
               {{ end }}
           </div></div></div>
-<div class="paper-wrap">
-  <h1 style="margin:0 auto"><a href="/recommend" target="_blank">資源</a></h1>
-<div class="des">一些信息聚合</div>
-  <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
-<div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
-    {{- range first 5 (shuffle (where .Site.RegularPages.ByDate "Type" "recommend")) -}}
-    <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
-    {{ end }}
-</div></div></div>
 <div class="paper-wrap">
   <h1 style="margin:0 auto"><a href="/exam" target="_blank">考試課堂筆記</a></h1>
   <div class="des">整理的考試複習資料。世界上最沒用的東西</div>
