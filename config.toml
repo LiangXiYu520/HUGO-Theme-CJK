@@ -71,7 +71,7 @@ step = "step"
          weight = 11
          url = "/qinpu"
          [[menu.nav3]]
-            name = "文庫"
+            name = "維基文庫"
             weight = 12
             url = "https://xtools.wmflabs.org/pages/zh.wikisource.org/Kujihhoe?uselang=zh#"
 [params]
