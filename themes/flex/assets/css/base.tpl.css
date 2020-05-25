@@ -819,14 +819,24 @@ margin:2em 1em 0 1em}
     font-weight: normal;
     color:var(--gray);
 }
+{{ $img := slice }}
+    {{ range .Site.Data.image }}
+    {{ range .image }}
+    {{ $img = $img | append . }}
+    {{ end }}
+    {{ end }}
+{{ with $img | shuffle }}
+{{ range first 1 . }}
 .home-cover{
    min-height:100vh;
    min-width:100vw;
-     background-image: url("/background.jpg");
+     background-image: url("{{ . }}");
      	background-size:cover;
       display: inline-flex;
    justify-content:space-between;
 }
+{{ end }}
+{{ end }}
 .heading-wrap.home1{
 background: none;
 height: 28em;
