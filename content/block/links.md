@@ -73,13 +73,11 @@ url: /links
 
 本站收錄於以下博客衟杭：
 
-### 一類
-
 [十秊之約](https://www.foreverblog.cn)　<n>20181114　這天數了一下，成員二百一十多箇。如果願意的話，我們可以把數字擴大兩倍，中國目前活躍的各類箇人獨立博客可能有六百箇</n>
 
 [博客志 - 優秀箇人獨立博客導航](http://www.jetli.com.cn)　<n>20191117　耶✌️</n>
 
-[Blog We](https://blogwe.com/allblogs.html)<n>20190309—20190929　感謝收錄我，現爲友情特約博客　<a href="https://blogwe.com/kqh-me.html" target="\_blank">收錄葉</a></n>
+[Blog We](https://blogwe.com/allblogs.html)<n>20190309—20190929　<a href="https://blogwe.com/kqh-me.html" target="\_blank">收錄葉</a></n>
 
 [博客樹](https://manman.qian.lu/bokeshu)<n>20181111</n>
 
@@ -88,26 +86,6 @@ url: /links
 [奇草導航](https://www.qicao.cn/?keyword=%E8%B5%AB%E8%B5%AB%E6%96%87%E7%8E%8B)
 
 [大头针网址](https://dtz9.org/#cat-8)　<n>時間未知</n>
-
-### 二類
-
-<a href="https://zgboke.org" title="收录国内优秀独立博客！" target="\_blank">中国博客联盟</a><n>20181027　<a href="https://zgboke.org/site/kujihhoe.com/blog.html" target="\_blank">收錄葉</a></n>
-
-<a href="http://sl.laolibab.cn/" target="\_blank">老李收录网</a><n>20181029　<a href="http://sl.laolibab.cn/bk/246.html" target="\_blank">收錄葉</a></n>
-
-[網址大全](http://www.98du.net/bk/246.html)
-
-[博客之家](https://likinming.com)<n>20181027　<a href="https://likinming.com/post-3878.html" target="\_blank">收錄葉</a></n>
-
-[鹏仔网站导航](http://dh.iqzhan.cn)<n>20181031　<a href="http://dh.iqzhan.cn/?id=130" target="\_blank">收錄葉</a></n>
-
-[网址免费提交](http://submit-url-free.com)<n>20181027　<a href="http://submit-url-free.com/?mod=siteinfo&wid=5599" target="\_blank">收錄葉</a></n>
-
-[爲簡收錄](http://navi.cnfunny.cn/bk/246.html)
-
-~~[boke112导航](https://boke112.com)<n>20181028　<a href="https://boke112.com/bkml/5976.html" target="\_blank">收錄葉</a>　201909 再看，沒了</n>~~
-
-~~[博客大全](http://daohang.zbzmtbk.com)<n>20181108　<a href="http://daohang.zbzmtbk.com/siteinfo/261.html" target="\_blank">收錄葉</a>　201909 再看，網站掛了</n>~~
 
 ## 師友們
 
