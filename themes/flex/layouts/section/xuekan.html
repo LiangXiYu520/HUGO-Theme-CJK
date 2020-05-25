@@ -26,10 +26,10 @@
           </div>
     </div>{{ end }}
    </section>
-       <section class="archive-wrapper" style="margin:-5em auto 0;border:none">
+       <section class="archive-wrapper" style="margin:-5em auto 0">
          {{ partial "invitation.html" .  | markdownify }}
          </section>
-       <section class="archive-wrapper" style="font-size:.9em;margin:4em auto;padding-bottom:2em">
+       <section class="archive-wrapper" style="font-size:.9em;margin:4em auto">
 <h1 style="margin-bottom:-.7em">分類<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.subject "Type" "xuekan") }}</span></h1>
          <div class="cate">
            {{ $subject := where .Site.Taxonomies.subject "Type" "xuekan" }}
@@ -38,7 +38,7 @@
            {{ end }}
            </div>
            </section>
-                 <section class="archive-wrapper" style="font-size:.9em;margin:8em auto 4em;padding-bottom:2em">
+                 <section class="archive-wrapper" style="font-size:.9em;margin:4em auto 0">
               <h1 style="margin-bottom:-.7em">作者<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.auth "Type" "xuekan") }}</span></h1>
            <div class="cate">
            {{ range (where .Site.Taxonomies.auth "Type" "xuekan") }}
@@ -46,11 +46,10 @@
              {{ end }}
              </div>
          </section>
- <section class="archive-wrapper" style="font-size:.9em;margin:8em auto 4em">
+ <section class="archive-wrapper">
      <h2>編務</h2>
    {{ range (where .Site.Taxonomies.categories.編務 "Type" "xuekan") }}
                <div class="archive-wrap">
-
                  <div class="archive-right">
            <span class="archive-title" style="margin-left:0">
              <time class="archive-info">{{ .Page.Date.Format "2006-01-02" }}</time>　
