@@ -1,5 +1,6 @@
 ---
 layout: 'block'
+type: 'block'
 author: ["柯棋瀚"]
 title: "about"
 date: 2017-10-04

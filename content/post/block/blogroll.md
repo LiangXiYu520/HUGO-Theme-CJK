@@ -1,5 +1,6 @@
 ---
 layout: 'block'
+type: 'block'
 author: ["柯棋瀚"]
 title: "blogroll"
 date: 2020-04-30

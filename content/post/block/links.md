@@ -1,5 +1,6 @@
 ---
 layout: 'block'
+type: 'block'
 author: ["柯棋瀚"]
 title: "friends"
 date: 2018-10-27
