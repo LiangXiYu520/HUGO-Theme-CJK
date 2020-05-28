@@ -54,6 +54,108 @@ bosom
 
 Lincoln was, as his friend and admirer, David Davis, once said, ‘‘the most reticent—Secretive man I Ever Saw—or Expect to See.’’ His law partner of fourteen years, William Henry Herndon, agreed: ‘‘the man was hard, very difficult to understand, even by his bosom friends and his close and intimate neighbors among whom he associated.’’
 
+in a ditch 
+
+on the strength of 依靠
+
+elementary 初級的
+
+influential 有影響力的
+
+attorney 代理人，律師
+
+incisive
+
+evasion
+
+patronize
+
+perjured
+
+wrote Whitney, ‘‘If a witness told the truth without evasion Lincoln was respectful and patronizing to him, but he would score a perjured witness unmercifully. He took no notes, but remembered everything quite as well as those who did so.’’
+
+intellectual
+
+overspill
+
+Lincoln’s intellectual curiosity frequently overspilled even the professional requirements of lawyering. John Todd Stuart told a campaign biographer in 1860 that Lincoln had a ‘‘mind of a metaphysical and philosophical order—His knowledge of the languages is limited but in other respects I consider a man of very general and varied knowledge.’’
+
+launched off into some shrewd remarks 发表一些精明的话 landed tenures
+
+then rounded the conversation off with some commentary ‘‘upon English poetry
+
+indulged inclination
+
+reeled off a list of ⋯
+
+當林肯在讀密爾《論自由》的時候，大洋彼岸的中國，今文學家和漢學家還在爭吵《說文》到底是不是文字正宗。
+
+sentimentality, hedonism
+
+Conviction
+
+continental
+
+Enlightenment
+
+inalienable rights
+
+That passion for becoming increasingly took the political form of republics rather than monarchies, and middle-class capitalism rather than Tory landowning.
+
+landowning aristocracy,
+
+citadel
+
+commitment
+
+irrational
+
+institutions
+
+hidebound 
+
+pamphlet
+
+divine revelation
+
+hostility to aristocrats
+
+scanty
+
+remorse,
+
+submission
+
+manifestations
+
+baptism . epiphany
+
+ritual of worship
+
+dissident
+
+fondness
+
+quarrell over
+
+plain
+
+accomplishment
+
+irresistible
+
+overweening confidence
+
+triumph
+
+prophecy
+
+scion
+
+
+
+
+
 
 
 
