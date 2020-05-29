@@ -218,11 +218,9 @@ furnace
 
 descendant
 
+slake someone thirst,
 
-
-
-
-
+ stake out
 
 
 
