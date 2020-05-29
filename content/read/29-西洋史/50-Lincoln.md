@@ -218,9 +218,37 @@ furnace
 
 descendant
 
+ancestral
+
 slake someone thirst,
 
  stake out
+
+spectacular
+
+acquisitive
+
+ambushed
+
+marauding
+
+thereafter
+
+snatched up
+
+heroic
+
+
+
+it fostered a pathological hatred of Indians in Mordecai Lincoln,
+
+setback
+
+cabinet
+
+remain
+
+
 
 
 
