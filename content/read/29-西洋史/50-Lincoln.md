@@ -152,6 +152,78 @@ prophecy
 
 scion
 
+tyranny
+
+yielded to an imperial despotism
+
+splatter
+
+reputation
+
+contempt
+
+carved by
+
+snarl
+
+upsurge
+
+revolt
+
+arrogant
+
+Of all the hopeful liberal experiments, only one large-scale example survived, and that was the United States. And, by the 1850s, it was becoming increasingly plain that even the United States contained within itself the seeds of illiberal self-destruction in the form of an aggressive and arrogant ‘‘Slave Power,’’ which sought to fasten the legalization of human slavery to the rapid westward expansion of the American republic.
+
+stride
+
+despiser
+
+## 1、Equality
+
+forebears
+
+The Lincolns had been a family of middling gentry in Norfolk, a county whose flat fenlands were a hotbed of Puritan religious dissent from the Church of England.
+
+repression
+
+fenland
+
+hotbed
+
+dissent
+
+expedient
+
+desperate
+
+pittance
+
+weaver apprentice
+
+
+
+exodus
+
+inquisitorial
+
+unencumbered
+
+entail
+
+earthly and heavenly,
+
+prosperity
+
+furnace
+
+descendant
+
+
+
+
+
+
+
 
 
 
