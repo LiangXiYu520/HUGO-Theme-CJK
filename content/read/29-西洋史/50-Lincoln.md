@@ -256,9 +256,67 @@ Urinate
 
 proverbial
 
+immune
 
+greener
 
+pastures
 
+spectacularly
+
+speculation 
+
+outfit
+
+haphazard
+
+acreage
+
+hasty
+
+parcels
+
+geometry
+
+riddl
+
+defective
+
+stateful
+
+lien
+
+embroil
+
+gorge
+
+gambit
+
+title
+
+otherwise
+
+exalt
+
+denigration
+
+cracking a joke
+
+complacent
+
+preface to
+
+simultaneously
+
+totter
+
+reckon
+
+doom
+
+struck
+
+cultivator
 
 
 
