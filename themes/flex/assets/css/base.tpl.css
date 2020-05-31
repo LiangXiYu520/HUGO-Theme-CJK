@@ -854,7 +854,6 @@ writing-mode: vertical-rl;
   margin:0;
   padding:0;
   text-shadow: -2px -3px 0 #2b2b2b;
-font-style:italic;
 text-align: left;
 letter-spacing: .25em;
 font-size: 5em;
@@ -916,7 +915,6 @@ max-height: none;
     padding: .2em 1em 0 0}
 .big{
   font-weight: bold;
-  font-style: italic;
 }
 {{ $all1 := slice }}
     {{ range .Site.Data.color }}

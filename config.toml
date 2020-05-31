@@ -1,5 +1,5 @@
 baseURL = "https://kqh.me/"
-languageCode = "zh-TW"
+languageCode = "zh-HK"
 title = "赫赫文王"
 enableRobotsTXT = true
 theme = "flex"
