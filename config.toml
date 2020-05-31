@@ -1,5 +1,5 @@
 baseURL = "https://kqh.me/"
-languageCode = "zh-HK"
+languageCode = "zh-TW"
 title = "赫赫文王"
 enableRobotsTXT = true
 theme = "flex"
@@ -62,7 +62,7 @@ step = "step"
         name = "赫赫讚府"
         weight = 9
         url = "/zanfu"
-        [[menu.nav3]]
+     [[menu.nav3]]
                name = "春秋學刊"
                weight = 10
                url = "/xuekan"
@@ -70,7 +70,7 @@ step = "step"
          name = "琴譜文本"
          weight = 11
          url = "/qinpu"
-         [[menu.nav3]]
+    [[menu.nav3]]
             name = "維基文庫"
             weight = 12
             url = "https://xtools.wmflabs.org/pages/zh.wikisource.org/Kujihhoe?uselang=zh#"

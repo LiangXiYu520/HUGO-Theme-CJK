@@ -390,13 +390,227 @@ specter
 
 manufacturing sector 生產部門 
 
+nightshade
+
+glorify
+
+shack
+
+Hog
+
+sow
+
+Flax
+
+axe
+
+plow
+
+webster
+
+slash
+
+neglect
+
+snarl
+
+barter
+
+stepson
 
 
 
+sprawling, filthy marketplaces
+
+pirate
+
+prostitute
+
+wrought
+
+flee-fled
+
+But it was in New Orleans that Lincoln saw slavery in the mass—slavery that labored in the killing humidity and heat of the Louisiana cane fields, slavery that begat an exotic biracial class of mulattoes, slavery that turned every obsequious Sambo by day into a potential throat-slitter by night, slavery on the auction block, spread-legged and naked.
+
+loquacious
+
+surplus
+
+bid
+
+meteoric
+
+shrewd
 
 
 
+upstate
 
+board 搭饭
+
+wit
+
+deficient
+
+drafted as clerk of elections.
+
+assortment
+
+flocking
+
+roustabout
+
+boast
+
+outwrestle
+
+bait
+
+pitching quoits
+
+disgruntled
+
+unanimously
+
+militia
+
+captain
+
+wrestling
+
+legislature
+
+hustings
+
+induce
+
+Commence
+
+rudiment
+
+porches 
+
+wagon
+
+shrill monotone
+
+precinct
+
+## 2
+
+Advancement
+
+penetration
+
+recollection
+
+weary
+
+straggle
+
+farmstead
+
+anointed
+
+cheer on
+
+incite
+
+annex
+
+motley
+
+catastrophe
+
+grim
+
+retaliation
+
+proceed
+
+march
+
+mishap
+
+lapse
+
+
+
+charter
+
+sneer
+
+aghast
+
+bail
+
+perish
+
+destitute
+
+revival
+
+bonus
+
+tariff
+
+turnpike
+
+cherish
+
+agrarian
+
+spinning wool yarn
+
+tease
+
+broom
+
+merchant
+
+tempt
+
+commodity
+
+righteous
+
+splendid
+
+guise and cloak
+
+incorporations
+
+plunder
+
+yeomanry
+
+yeoman
+
+feudal
+
+canker
+
+archaic
+
+mill
+
+conglomerate
+
+voracious
+
+balloon
+
+colossal
+
+conviction
+
+subdue
+
+stagnation
+
+repression
+
+laud
 
 
 
