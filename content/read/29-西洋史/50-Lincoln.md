@@ -318,6 +318,90 @@ struck
 
 cultivator
 
+penniless
+
+lavishly
+
+dabble
+
+canny
+
+franchise
+
+noxious mold
+
+peddle
+
+illusory
+
+speculation
+
+bondage
+
+bond
+
+banknote
+
+
+
+mortgage
+
+chicanery
+
+rural
+
+exude
+
+kidnap
+
+hereditary
+
+creed
+
+fantasize
+
+massacre
+
+emancipate
+
+bribe
+
+
+
+Embody
+
+corrosively
+
+parlay
+
+crack
+
+
+
+overly mighty
+
+meant
+
+hedge
+
+tariffs
+
+specter
+
+manufacturing sector 生產部門 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
