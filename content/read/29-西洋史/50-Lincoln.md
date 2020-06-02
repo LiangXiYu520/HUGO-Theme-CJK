@@ -498,6 +498,8 @@ precinct
 
 ## 2
 
+Abraham Lincoln was only six years old when the War of 1812 ended.
+
 Advancement
 
 penetration
@@ -515,6 +517,8 @@ anointed
 cheer on
 
 incite
+
+settlement
 
 annex
 
@@ -534,7 +538,7 @@ mishap
 
 lapse
 
-
+overrun
 
 charter
 
@@ -648,13 +652,47 @@ premium
 
 expediency
 
+blasting
 
+limestone
 
+rejoice
 
+assertion
 
+contradiction
 
+spearhead
 
+relocate
 
+fertility
+
+territory 
+
+exert
+
+persuade
+
+conspicuous
+
+mania
+
+vindicate
+
+corkscrew
+
+foreclosures, bankruptcies,
+
+liquidation
+
+tumor
+
+extravagance
+
+sore
+
+wit
 
 
 

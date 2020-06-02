@@ -68,14 +68,22 @@
         {{- end -}}
         {{- end -}}
     {{- end -}}
-    {{ with .Params.categories -}}
-        {{ range . }}
+    {{- with .Params.categories -}}
+        {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
           　<a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a>
-        {{ end -}}
-        {{ end }}
-    {{- end }}
+        {{- end -}}
+        {{- end -}}
+    {{- end -}}
+    {{- with .Params.series -}}
+    {{- range . -}}
+    {{- $name := . -}}
+    {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+      　<a href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+    {{ end -}}
+    {{ end }}
+{{- end }}
   </div>
 </ol>
   {{ end }}
