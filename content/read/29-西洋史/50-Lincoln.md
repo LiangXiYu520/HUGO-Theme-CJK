@@ -694,7 +694,7 @@ sore
 
 wit
 
-
+Lincoln and the Whig ideology
 
 
 
