@@ -706,27 +706,8 @@ handicap
 
 tribune
 
-Jackson clearly saw himself as the tribune of the ‘‘the humble members of society’’—oppressed farmers, the unemployed artisans, and the old Jeffersonian enemies of expansive government. Jackson turned his presidency into a veto-machine of every bill that looked to provide federal support for manufacturing, internal improvements, roads and canals, the sale of public lands for financing internal improvements and banking. Henry Clay split from the old Jeffersonian coalition to form a new political party
+Jackson clearly saw himself as the tribune of the ‘‘the humble members of society’’—oppressed farmers, the unemployed artisans, and the old Jeffersonian enemies of expansive government. Jackson turned his presidency into a veto-machine of every bill that looked to provide federal support for manufacturing, internal improvements, roads and canals, the sale of public lands for financing internal improvements and banking. Henry Clay split from the old Jeffersonian coalition to form a new political party: Whig.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+https://millercenter.org/president/lincoln/life-in-brief
