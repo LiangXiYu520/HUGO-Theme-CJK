@@ -89,6 +89,8 @@ menu:
 
 [于淼](https://yufree.cn/cn/)　〔在美國的博後。非常有意思〕
 
+[jubeny](https://jubeny.com/)　〔南大學霸，13 級本科。〕
+
 ## 技術類
 
 [哲科文 Jerkwin](http://jerkwin.github.io/tags/)　〔雖然界面很古董，但內容，也太高產了吧〕
