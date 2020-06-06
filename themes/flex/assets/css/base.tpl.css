@@ -410,6 +410,13 @@ img {
 .vertical img{
   max-width: 100%;
   }
+figcaption{
+  text-align: center;
+  color: var(--gray);
+  font-family: var(--sans);
+  font-size: .9em;
+  margin: 1em;
+}
 pre{
   overflow: scroll;
   padding: 1rem;
