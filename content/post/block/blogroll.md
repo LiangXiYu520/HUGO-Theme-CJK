@@ -57,9 +57,11 @@ menu:
 
 [寒塘渡月](http://sometime.me)　與你分享我的旅行、攝影與文字〔十分淸流〕
 
+[夏泉的后院](https://www.hxueh.net/)　在深圳长大，于深圳大学毕业，目前在深圳生活。
+
 [Tonis Foto Haus](http://www.tonichan.xyz)　Amateur Photographer. Novice Data Scientist.Zhejiang University, Chu Ko Chen Honors College.
 
-[夏泉的后院](https://www.hxueh.net/)　在深圳长大，于深圳大学毕业，目前在深圳生活。
+[Parimal Satyal](https://neustadt.fr/)　a designer and occasional writer living in Paris. I’m also interested in aviation, cross-cultural exchange,  languages, science, computer history, the small/open web and the  European Union. 〔文章挺有意思〕
 
 ## 高材生
 
