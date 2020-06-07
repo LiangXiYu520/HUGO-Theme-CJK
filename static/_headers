@@ -1,5 +1,7 @@
 /*
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  X-Frame-Options: DENY
-  X-Content-Type-Options : nosniff
-  X-XSS-Protection: 1; mode=block
+Content-Security-Policy:base-uri 'none';object-src 'none';form-action 'none';img-src *;script-src 'unsafe-inline' cdn.jsdelivr.net googletagmanager.com google-analytics.com open.saintic.com/isso/f8fn21/js/embed.min.js
+Referrer-Policy:no-referrer
+Strict-Transport-Security:max-age=31536000;includeSubDomains;preload
+X-Frame-Options:DENY
+X-Content-Type-Options:nosniff
+X-XSS-Protection:1;mode=block
