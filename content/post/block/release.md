@@ -4,7 +4,7 @@ type: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-05-19
+lastmod: 2020-06-07
 url: /release
 menu:
   main:
@@ -1734,3 +1734,9 @@ html5 語意標籤改造。
 把赫赫指北和資源并到一個板塊。
 
 錄文搬遷到維基文庫
+
+#### 6 月 7 日
+
+##### 4.6.40
+
+加入 `_headers` ，安全加固
