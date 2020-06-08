@@ -32,6 +32,8 @@ vertical: false
 - [Qualys](https://www.ssllabs.com/ssltest/analyze.html?d=kqh.me&s=104.248.50.87)：A+
 - 國內的 [MySSL](https://myssl.com/kqh.me?status=q)：A+
 
+<img src="https://pic.imgdb.cn/item/5edd84dac2a9a83be5a65cd8.jpg" width="600">
+
 無意間發現 [webbkoll](https://webbkoll.dataskydd.net/en)，測試有很多問題，便按照指引補了一下安全漏洞。
 
 我託管於 Netlify，在根目錄下新建響應頭純文本文件，名爲 `_headers` ：
