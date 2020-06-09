@@ -258,6 +258,11 @@
   <h3 style="margin:0;font-size:1.2em"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></h3>
   <span class="des2 home">{{- .Page.Params.des | safeHTML | markdownify -}}</span>
   </ol>{{ end }}
+  <ol>
+    <div class="archive-info">2019-11-14</div>
+    <h3 style="margin:0;font-size:1.2em"><a href="https://xtools.wmflabs.org/pages/zh.wikisource.org/Kujihhoe?uselang=zh#"  target="_blank">維基文庫</a></h3>
+    <span class="des2 home">平時上課的錄文，有四篇，放在維基文庫</span>
+    </ol>
     </div>
   </div>
   <div class="des" style="margin-bottom:5em;margin-top:-3em">以及，這箇網站。</div>
@@ -266,17 +271,6 @@
   <h1 id="data" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
 <div class="gallery" style="margin:0">
-<div class="paper-wrap" style="max-width:30em">
-  <h1 style="margin:0 auto"><a href="/zanfu" target="_blank">赫赫讚府 Reorganized Commentaries</a></h1>
-  <div class="des">收集中國大陸互聯網的網路評論，按主題進行編排，爲當下的厤㕜提供一些索引。僅作學術硏究之用</div>
-    <div class="discover-des" style="margin: 0 auto 1em">最近修改</div>
-<div class="paper-card recording"style="border:none"><div class="paper-card-in">
-{{ range first 10 (where .Site.RegularPages.ByLastmod.Reverse "Type" "zanfu") }}
-        <div >
-          <span class="archive-info" style="margin:auto">{{ .Lastmod.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a>
-        </div>
-{{ end }}
-</div></div></div>
 <div class="paper-wrap">
 <h1 style="margin:0 auto"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
 <div class="des">北師大歷史學院本科生學術刊物</div>
@@ -297,10 +291,6 @@
   <li><a href="{{ .Page.Permalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></li>
     {{ end }}
 </div></div></div>
-<div class="paper-wrap">
-<h1 style="margin:0 auto"><a href="https://xtools.wmflabs.org/pages/zh.wikisource.org/Kujihhoe?uselang=zh#" target="_blank">維基文庫</a></h1>
-<div class="des">平時上課的錄文，有四篇，放在維基文庫</div>
-</div>
 </div>
 </section>
   </main>
