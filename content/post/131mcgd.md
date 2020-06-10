@@ -2,7 +2,7 @@
 author: ["柯棋瀚"]
 title: "如何打好扶貧攻堅戰 等"
 date: 2018-06-20
-categories: ["人文"]
+categories: ["雜"]
 tags: ["主旋律"]
 notes: ["課業"]
 markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/post/131mcgd.md'
