@@ -298,3 +298,7 @@ Sounddevices 對 [flyway](https://www.sounddevices.com/voices-of-a-flyway/) 的�
 [kinghand录音技术讲座](https://www.douban.com/group/topic/1603336/)，2007-05-13
 
 cubie《[改造指向型麥克風（二）：自製麥克風防風罩](https://swf.com.tw/?p=170)》2010-06-09 ● 自製毛衣。但現在用不著，直接淘寶。
+
+2020-06-28 朋友圈：
+
+> 如果当年邹思玮没把SE创办到国外，并且起个中国的名字（比如得胜，ISK），那么有可能他们会和爱克创一样惨！PS：国内厂商看中了国内音频市场“不懂装懂”的暴利市场----图为邹思玮和Neve老爷子

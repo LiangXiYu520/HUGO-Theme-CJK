@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 title: "网文過眼錄｜文史二：文史、漢語、哲社科、雜談"
-date: 2020-06-20
+date: 2020-06-21
 book: ["50网文"]
 author: ["柯棋瀚整理"]
 description: '內容：陳志遠老師、重新認識儒家、說文；認識施派；「輕學術」。'
