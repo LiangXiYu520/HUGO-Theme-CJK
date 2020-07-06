@@ -6,7 +6,7 @@
                {{- with .Params.subject -}}
                    {{- range . -}}
                    {{- $name := . -}}
-                   {{- with $.Site.GetPage "taxonomy" (printf "subject/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "subject/%s" ($name | urlize))) -}}
+                   {{- with $.Site.GetPage "term" (printf "subject/%s" $name) | default ($.Site.GetPage "term" (printf "subject/%s" ($name | urlize))) -}}
                  <a href="/subject/{{ $name }}">{{- $name -}}</a>»
                    {{- end -}}
                    {{- end -}}
@@ -24,7 +24,7 @@
                  　<span class="des2">作者</span>
                  {{ range . }}
                  {{- $name := . -}}
-                 {{- with $.Site.GetPage "taxonomy" (printf "auth/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "auth/%s" ($name | urlize))) -}}
+                 {{- with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) -}}
                  <span class="des1-cate"><a href="/auth/{{ $name }}">@{{- $name -}}</a></span>
                  {{ end -}}
                  {{ end }}
@@ -33,7 +33,7 @@
                  　<span class="des2">來源</span>
                  {{ range . }}
                  {{- $name := . -}}
-                 {{- with $.Site.GetPage "taxonomy" (printf "from/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "from/%s" ($name | urlize))) -}}
+                 {{- with $.Site.GetPage "term" (printf "from/%s" $name) | default ($.Site.GetPage "term" (printf "from/%s" ($name | urlize))) -}}
                  <span class="des1-cate"><a href="/from/{{ $name }}">«{{- $name -}}</a></span>
                  {{ end -}}
                  {{ end }}

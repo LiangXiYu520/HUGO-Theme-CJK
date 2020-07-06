@@ -6,7 +6,7 @@
               {{- with .Params.book -}}
                   {{- range . -}}
                   {{- $name := . -}}
-                  {{- with $.Site.GetPage "taxonomy" (printf "book/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "book/%s" ($name | urlize))) -}}
+                  {{- with $.Site.GetPage "term" (printf "book/%s" $name) | default ($.Site.GetPage "term" (printf "book/%s" ($name | urlize))) -}}
                 <a href="/read#{{ $name }}">{{- $name -}}</a>»
                   {{- end -}}
                   {{- end -}}
@@ -29,7 +29,7 @@
           　<span class="des2">作者</span>
           {{- range . -}}
           {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
           <span class="des1-cate"><a href="/author/{{ $name }}">@{{- $name -}}</a></span>
           {{- end -}}
           {{- end -}}
@@ -38,7 +38,7 @@
         　<span class="des2">學科</span>
         {{- range . -}}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "book/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "book/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "book/%s" $name) | default ($.Site.GetPage "term" (printf "book/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/read#{{ $name }}">#{{- $name -}}</a></span>
         {{- end -}}
         {{- end -}}
@@ -46,7 +46,7 @@
     {{- with .Params.step -}}
         {{- range . -}}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "step/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "step/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "step/%s" $name) | default ($.Site.GetPage "term" (printf "step/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/read#{{ $name }}">{{- $name -}}</a></span>
         {{- end -}}
         {{- end -}}
@@ -55,7 +55,7 @@
         　<span class="des2">備註</span>
         {{- range . -}}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "notes/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "notes/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/notes/{{ $name }}">({{- $name -}})</a></span>
         {{- end -}}
         {{- end -}}

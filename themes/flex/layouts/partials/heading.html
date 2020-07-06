@@ -16,7 +16,7 @@
         {{- with .Params.categories -}}
             {{- range . -}}
             {{- $name := . -}}
-            {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+            {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
           <a class="DocSearch-lvl0" href="/categories/{{ $name }}">{{- $name -}}</a>»
             {{- end -}}
             {{- end -}}

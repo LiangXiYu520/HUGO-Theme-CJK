@@ -14,7 +14,7 @@
         　<span class="des2">作者</span>
         {{- range . -}}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/author/{{ $name }}">@{{- $name -}}</a></span>
         {{- end -}}
         {{- end -}}
@@ -23,7 +23,7 @@
         　<span class="des2">系列</span>
         {{- range . -}}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
         {{- end -}}
         {{- end -}}
@@ -32,7 +32,7 @@
         　<span class="des2">標籤</span>
         {{- range . -}}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
         {{- end -}}
         {{- end -}}
@@ -41,7 +41,7 @@
         　<span class="des2">備註</span>
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "notes/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "notes/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
         <span class="des1-cate"><a href="/notes/{{ $name }}">({{- $name -}})</a></span>
         {{ end -}}
         {{ end }}
@@ -184,7 +184,7 @@
       {{- with .Params.author -}}
           {{ range . }}
           {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
           <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
           {{- end -}}
           {{- end -}}
@@ -192,7 +192,7 @@
       {{ with .Params.categories -}}
           {{ range . }}
           {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+          {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
             &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
           {{ end -}}
           {{ end }}
@@ -200,7 +200,7 @@
       {{ with .Params.series -}}
           {{ range . }}
           {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+          {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
             <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
           {{ end -}}
           {{ end }}
@@ -216,7 +216,7 @@
       {{- with .Params.author -}}
           {{ range . }}
           {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
           <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
           {{- end -}}
           {{- end -}}
@@ -224,7 +224,7 @@
       {{ with .Params.categories -}}
           {{ range . }}
           {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+          {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
             &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
           {{ end -}}
           {{ end }}
@@ -232,7 +232,7 @@
       {{ with .Params.series -}}
           {{ range . }}
           {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+          {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
             <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
           {{ end -}}
           {{ end }}
@@ -248,7 +248,7 @@
     {{- with .Params.author -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
         <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
         {{- end -}}
         {{- end -}}
@@ -256,7 +256,7 @@
     {{ with .Params.categories -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
           &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
         {{ end -}}
         {{ end }}
@@ -264,7 +264,7 @@
     {{ with .Params.series -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
           <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
         {{ end -}}
         {{ end }}
@@ -281,7 +281,7 @@
     {{- with .Params.author -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
         <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
         {{- end -}}
         {{- end -}}
@@ -289,7 +289,7 @@
     {{ with .Params.categories -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
           &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
         {{ end -}}
         {{ end }}
@@ -297,7 +297,7 @@
     {{ with .Params.series -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
           <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
         {{ end -}}
         {{ end }}
@@ -313,7 +313,7 @@
     {{- with .Params.author -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
         <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
         {{- end -}}
         {{- end -}}
@@ -321,7 +321,7 @@
     {{ with .Params.categories -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
           &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
         {{ end -}}
         {{ end }}
@@ -329,7 +329,7 @@
     {{ with .Params.series -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
           <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
         {{ end -}}
         {{ end }}
@@ -345,7 +345,7 @@
     {{- with .Params.author -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
         <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
         {{- end -}}
         {{- end -}}
@@ -353,7 +353,7 @@
     {{ with .Params.categories -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
           &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
         {{ end -}}
         {{ end }}
@@ -361,7 +361,7 @@
     {{ with .Params.series -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
           <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
         {{ end -}}
         {{ end }}
@@ -378,7 +378,7 @@
     {{- with .Params.author -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
         <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
         {{- end -}}
         {{- end -}}
@@ -386,7 +386,7 @@
     {{ with .Params.categories -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
           &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
         {{ end -}}
         {{ end }}
@@ -394,7 +394,7 @@
     {{ with .Params.series -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
           <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
         {{ end -}}
         {{ end }}
@@ -425,7 +425,7 @@
   {{- with .Params.author -}}
       {{ range . }}
       {{- $name := . -}}
-      {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+      {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
       <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
       {{- end -}}
       {{- end -}}
@@ -433,7 +433,7 @@
   {{ with .Params.categories -}}
       {{ range . }}
       {{- $name := . -}}
-      {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+      {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
         &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
       {{ end -}}
       {{ end }}
@@ -441,7 +441,7 @@
   {{ with .Params.series -}}
       {{ range . }}
       {{- $name := . -}}
-      {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+      {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
         <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
       {{ end -}}
       {{ end }}

@@ -8,7 +8,7 @@
           {{- with .Params.toc -}}
                       {{- range . -}}
                       {{- $name := . -}}
-                      {{- with $.Site.GetPage "taxonomy" (printf "toc/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "toc/%s" ($name | urlize))) -}}
+                      {{- with $.Site.GetPage "term" (printf "toc/%s" $name) | default ($.Site.GetPage "term" (printf "toc/%s" ($name | urlize))) -}}
                     <a href="/toc/{{ $name }}">@{{- $name -}}</a>
                       {{- end -}}
                       {{- end -}}

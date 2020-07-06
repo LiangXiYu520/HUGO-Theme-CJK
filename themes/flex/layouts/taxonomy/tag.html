@@ -34,7 +34,7 @@
                       {{- with .Params.author -}}
                           {{- range . -}}
                           {{- $name := . -}}
-                          {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+                          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
                         <a class="archive-info archive-info-author" href="/author/{{ $name }}" target="_blank">@{{- $name -}}</a>
                           {{- end -}}
                           {{- end -}}
@@ -45,7 +45,7 @@
             {{ with .Params.categories -}}
                 {{ range . }}
                 {{- $name := . -}}
-                {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+                {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
                   <span class="archive-info"><a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a></span>
                 {{ end -}}
                 {{ end }}
@@ -53,7 +53,7 @@
             {{ with .Params.series -}}
                 {{ range . }}
                 {{- $name := . -}}
-                {{- with $.Site.GetPage "taxonomy" (printf "series/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "series/%s" ($name | urlize))) -}}
+                {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
                 <span class="archive-info"><a href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a></span>
                 {{ end -}}
                 {{ end }}
@@ -61,7 +61,7 @@
             {{ with .Params.tags -}}
                 {{ range . }}
                 {{- $name := . -}}
-                {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+                {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
                 <span class="archive-info"><a href="/tags/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
                 {{ end -}}
                 {{ end }}
@@ -69,7 +69,7 @@
             {{ with .Params.notes -}}
                 {{ range . }}
                 {{- $name := . -}}
-                {{- with $.Site.GetPage "taxonomy" (printf "notes/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "notes/%s" ($name | urlize))) -}}
+                {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
                 <span class="archive-info"><a href="/notes/{{ $name }}"  target="_blank">({{- $name -}})</a></span>
                 {{ end -}}
                 {{ end }}

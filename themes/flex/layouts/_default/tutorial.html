@@ -20,7 +20,7 @@
         {{- with .Params.author -}}
             {{ range . }}
             {{- $name := . -}}
-            {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+            {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
             <span class="des1-cate"> <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
             {{- end -}}
             {{- end -}}

@@ -8,7 +8,7 @@
           {{- with .Params.auth -}}
                       {{- range . -}}
                       {{- $name := . -}}
-                      {{- with $.Site.GetPage "taxonomy" (printf "auth/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "auth/%s" ($name | urlize))) -}}
+                      {{- with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) -}}
                     <a href="/auth/{{ $name }}">@{{- $name -}}</a>
                       {{- end -}}
                       {{- end -}}
@@ -40,7 +40,7 @@
                     {{- with .Params.auth -}}
                                 {{- range . -}}
                                 {{- $name := . -}}
-                                {{- with $.Site.GetPage "taxonomy" (printf "auth/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "auth/%s" ($name | urlize))) -}}
+                                {{- with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) -}}
                               <a href="/auth/{{ $name }}">@{{- $name -}}</a>
                                 {{- end -}}
                                 {{- end -}}
@@ -52,7 +52,7 @@
                   {{- with .Params.subject -}}
                       {{- range . -}}
                       {{- $name := . -}}
-                      {{- with $.Site.GetPage "taxonomy" (printf "subject/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "subject/%s" ($name | urlize))) -}}
+                      {{- with $.Site.GetPage "term" (printf "subject/%s" $name) | default ($.Site.GetPage "term" (printf "subject/%s" ($name | urlize))) -}}
                       <span class="archive-info"><a href="/subject/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
                       {{ end -}}
                       {{ end }}
@@ -60,7 +60,7 @@
                   {{- with .Params.from -}}
                       {{- range . -}}
                       {{- $name := . -}}
-                      {{- with $.Site.GetPage "taxonomy" (printf "from/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "from/%s" ($name | urlize))) -}}
+                      {{- with $.Site.GetPage "term" (printf "from/%s" $name) | default ($.Site.GetPage "term" (printf "from/%s" ($name | urlize))) -}}
                       <span class="archive-info"><a href="/from/{{ $name }}"  target="_blank">«{{- $name -}}</a></span>
                       {{ end -}}
                       {{ end }}

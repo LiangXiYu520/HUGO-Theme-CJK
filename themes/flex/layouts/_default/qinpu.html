@@ -8,7 +8,7 @@
               {{- with .Params.toc -}}
                   {{- range . -}}
                   {{- $name := . -}}
-                  {{- with $.Site.GetPage "taxonomy" (printf "toc/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "toc/%s" ($name | urlize))) -}}
+                  {{- with $.Site.GetPage "term" (printf "toc/%s" $name) | default ($.Site.GetPage "term" (printf "toc/%s" ($name | urlize))) -}}
                 <a href="/toc/{{ $name }}">{{- $name -}}</a>»
                   {{- end -}}
                   {{- end -}}
@@ -30,7 +30,7 @@
     {{- with .Params.author -}}
         {{ range . }}
         {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "author/%s" ($name | urlize))) -}}
+        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
         <span class="des1-cate"> <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
         {{- end -}}
         {{- end -}}
