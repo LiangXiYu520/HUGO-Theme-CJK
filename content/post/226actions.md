@@ -46,7 +46,7 @@ on:
     branches:
       - master
   schedule:
-  - cron: '0 */1 * * *'
+  - cron: '0 */4 * * *'
 
 jobs:
   deploy:
@@ -99,7 +99,7 @@ Produnction branch 就是從倉庫的哪個分支獲取源碼，此處是 `gh-pa
 name: Scheduled build
 on:
   schedule:
-  - cron: '0 */2 * * *'
+  - cron: '0 */4 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -129,6 +129,7 @@ Netlify 有 300 分鐘每月的運行時長，這箇時間是怎麼定義的呢�
 
 <img src="https://pic.imgdb.cn/item/5e9d025fc2a9a83be50d18b3.jpg" width="500">
 
-也就是圖中前面的 `Build Time`。我看了一下，如果給 Netlify 自己生成，Build Time 在 29-35s 之間，也就是每月可以生成 514-620 次，每日 17-20 次。如果給 GitHub Actions 生成，在 16-21s 之間，每月可以生成 857-1125 次，每日 28-37 次。多出來的次數還是很可觀的，足夠讓我們每小時定時生成一次。
+也就是圖中前面的 `Build Time`。~~我看了一下，如果給 Netlify 自己生成，Build Time 在 29-35s 之間，也就是每月可以生成 514-620 次，每日 17-20 次。如果給 GitHub Actions 生成，在 16-21s 之間，每月可以生成 857-1125 次，每日 28-37 次。多出來的次數還是很可觀的，足夠讓我們每小時定時生成一次。~~ 經過實測，如果兩小時一次，半個月就快用完了，所以最多四小時一次。
 
 現在，本站已經實現了半動態化，每二小時重新生成一次隨機推薦。和動態網站相比還沒有的功能是：按閱讀量排序；排列最新評論。
+
