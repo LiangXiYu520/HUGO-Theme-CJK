@@ -165,6 +165,8 @@ https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開�
 
 [madewithover](https://www.madewithover.com/blog)　〔好看〕
 
+[tonsky](https://tonsky.me/)　I’m Nikita. Here I write about programming and UI design
+
 ## 老字號
 
 [土木罈子](https://tumutanzi.com)　迺一關於科硏學習、社會人文、信息技術和國外見聞等內容之箇人网站。〔大槩玩博客的人沒有不知道罈子的吧〕
