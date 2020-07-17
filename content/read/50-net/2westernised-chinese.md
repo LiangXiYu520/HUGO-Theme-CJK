@@ -16,7 +16,7 @@ vertical: false
 
 維基大典 [西式中文](https://zh-classical.wikipedia.org/wiki/西式中文)
 
-建議所有中國人都將此二文**熟讀三遍**。
+建議所有中國人都將此二文<b>熟讀三遍</b>。
 
 ## 二、補充
 

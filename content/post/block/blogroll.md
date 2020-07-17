@@ -208,3 +208,5 @@ https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開�
 [spotify的播客收藏](https://www.douban.com/note/752408893/)
 
 [Sites_using_MediaWiki](https://www.mediawiki.org/wiki/Sites_using_MediaWiki/zh)
+
+[小人物](https://anobody.im/)　海外求職播客。播主在荷蘭工作。

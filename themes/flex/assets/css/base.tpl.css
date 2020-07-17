@@ -137,6 +137,13 @@ strong{
   padding: .1em;
   color:var(--bg);
 font-weight:normal;}
+b{
+  font-weight: normal;
+  -webkit-text-emphasis: triangle;
+  text-emphasis: triangle;
+  -webkit-text-emphasis-position: over right;
+  text-emphasis-position: over right;
+}
 q{
 background: var(--shallowblue)}
 q:before {
