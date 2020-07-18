@@ -1,29 +1,12 @@
-name: github pages
-
+name: Scheduled build
 on:
   schedule:
-  - cron: '58 */6 * * *'
-
+  - cron: '58 */3 * * *'
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+    - name: Trigger our build webhook on Netlify
+      run: curl -s -X POST "https://api.netlify.com/build_hooks/f130f4815a867d0955a2dd5"
+      env:
+        TOKEN: ${{ secrets.NETLIFY_TOKEN }}
