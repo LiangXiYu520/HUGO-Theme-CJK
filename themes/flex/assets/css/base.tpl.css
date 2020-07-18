@@ -139,8 +139,8 @@ strong{
 font-weight:normal;}
 b{
   font-weight: normal;
-  -webkit-text-emphasis: triangle;
-  text-emphasis: triangle;
+  -webkit-text-emphasis: open double-circle;
+  text-emphasis: open double-circle;
   -webkit-text-emphasis-position: over right;
   text-emphasis-position: over right;
 }
