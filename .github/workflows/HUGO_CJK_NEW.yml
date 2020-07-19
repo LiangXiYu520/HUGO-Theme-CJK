@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Trigger our build webhook on Netlify
-      run: curl -s -X POST "https://api.netlify.com/build_hooks/f130f4815a867d0955a2dd5"
+      run: curl -s -X POST "https://api.netlify.com/build_hooks/5f130f4815a867d0955a2dd5"
       env:
         TOKEN: ${{ secrets.NETLIFY_TOKEN }}
