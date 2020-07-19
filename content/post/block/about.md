@@ -22,19 +22,6 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 
 <img src="https://api.superbed.cn/pic/5bf82416c4ff9e058246008d" width="150" >
 
-## 建站緣起
-
-1. 原來積了些東西不知往哪裏放，又不想讓它們冷落在硬盤裏。而且存網上不容易散佚。
-2. 想㝡大程度實現知戠、信息共亯。雖說當今是信息爆炸的時代，但也會存在很多信息盲區，特別是學術信息。
-3. 我崇尙自由開放的互聯网精神。微信公眾號太垃圾，㝡主要的是<b>太封閉</b>，只能在手機上用，只好建了网誌。而且一次只能加載十條消息，想看一百條㠯歬的消息必須刷新十次，這是多麼難受的事情。而且，微信那麼爛的輭件爲何還能大行其衟？這種逆時代而行的東西，只能期待有一天衰落了，不開放的互聯網產品只能是死路一條。這篇文章說了爲何微信那麼糟糕：<v>[割韭菜、收智商税盛行，是微信良心上的一道伤疤](https://mp.weixin.qq.com/s/7VsRXCY2tXRN8FLzQbPbRw)</v><n>明叔杂谈小号，2020-03-09</n>一個看法：<v>[我们需要微信吗](https://www.hxueh.net/27/)</v>貼一張圖：
-
-<img src="https://www.superbed.cn/pic/5becb5a19dc6d61ad66ee225" width=500>
-
-4. 不想用社交平臺，想找箇東西替代。可以看看 <u>博客志</u> 的 [爲何要寫网誌](http://www.jetli.com.cn/about.html)。
-5. 很多長篇大論的東西，實在想不出其他平臺可以發布，似乎只有知乎專欄吧？
-6. 爲了滿足我對排版的強迫症。新浪博客太醜太醜，簡書還不錯。我對於字體與排版有執念，如果不和我心意，那我是无論如何也不會有寫作的衝動的。
-7. 自己獨立的域名好高大上！一箇學「傳統文化」的文科生自己搭了箇好看的獨立网誌，是不是很 geek。
-
 ## 技術
 
 - 【支持】託管於 ~~<a href="https://pages.github.com" target="\_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="\_blank">kitian616</a> 提供网誌主題模板 Text[jane](https://github.com/xianmin/hugo-theme-jane)，~~，主題基於 Flex 修改。~~<a href="https://tw.godaddy.com/" target="\_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="\_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。古琴關注數統計用的 [Substats](https://sspai.com/post/59593) api。
@@ -124,7 +111,7 @@ description: '此文爲本站緫序，包含介紹、說明書與聲明。除了
 
 ### 數據庫
 
-- 赫赫讚府：收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引
+- ~~赫赫讚府：收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引~~
 - 春秋學刊：北師大歷史學院本科生學術刊物<v>春秋學刊</v>的目次<n>半秊刊，至少未來幾年我還在師大就會繼續㪅</n>
 - 傳世琴譜數字文本化工程：希望有生之年能夠繼續
 - 文庫：一些標點作業
