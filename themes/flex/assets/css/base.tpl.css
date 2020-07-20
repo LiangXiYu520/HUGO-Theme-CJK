@@ -45,26 +45,26 @@
 }
 body {
   font-family: var(--serif);
-color:var(--black);
-font-size: 1.2em;
+  color:var(--black);
+  font-size: 1.2em;
   line-height: 1.9em;
   padding: 0;
   margin:0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
--webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: scroll;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-    overflow-wrap: break-word;
-   word-wrap: break-word;
-   hyphens: auto;
-    text-align: justify;
-    text-justify: inter-ideograph;
-      background: var(--bg);
-          hanging-punctuation:first | last}
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  background: var(--bg);
+  }
       .home h1{
         letter-spacing: 0
       }
@@ -987,18 +987,16 @@ max-height: none;
   margin: 8em auto;
   width:95vw;
   max-width: 1800px;
+  padding:4em 0 1em;
 }
   .section1{
     background: var(--section1);
-    padding:4em 0 3em;
   }
   .section2{
     background: var(--section2);
-  padding:4em 0 2em;
   }
   .section3{
     background: var(--section3);
-    padding:4em 0 5em;
   }
 .section3   h1 a{
   box-shadow: none
@@ -1008,7 +1006,6 @@ max-height: none;
 }
 .section4{
   background: var(--section4);
-padding:4em 0;
 }
   .sectionh1{
     font-size:5em;margin:.3em 0 1em
@@ -1051,7 +1048,7 @@ text-align: left}
   column-count:2}
 .discover ol{
   max-width:18em;
-margin:auto}
+margin: auto}
   .discover.gallery ol{
     line-height: 1.7;
     width:12em;

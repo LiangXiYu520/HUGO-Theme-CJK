@@ -9,7 +9,6 @@ book: ["踐行社會主義核心價値觀"]
 tags: ["哲社科"]
 step: ["2民主"]
 url: /219
-markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/read/50-哲社科/380-論民主.md'
 description: '對理想與現實的民主分別進行討論，說了爲何要民主、平等，實現民主的有利不利條件。[豆瓣](https://book.douban.com/subject/10770260/) 上有討論'
 ---
 

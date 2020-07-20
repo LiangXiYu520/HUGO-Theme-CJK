@@ -7,6 +7,7 @@ date: 2020-05-25
 book: ["踐行社會主義核心價値觀"]
 tags: ["哲社科"]
 step: ["6平等"]
+url: /read/theory-of-justice
 description: '1971 年，500 千字。關鍵詞：公平正義原則[豆瓣](https://book.douban.com/subject/1028268/) 上有討論。本文以 [江緒林的摘要和索引](https://book.douban.com/review/5395685/) 爲底本，表示感謝！讀了半箇月，體系比較大，只讀一遍肯定不夠。讀前面的時候覺得跟康德好像，到後來看到<q>「康德式論述」</q>，纔會心一笑。'
 vertical: false
 ---

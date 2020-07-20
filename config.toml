@@ -42,27 +42,31 @@ step = "step"
      name = "發現"
      weight = 3
      url = "/#discover"
-     [[menu.nav1]]
+  [[menu.nav1]]
         name = "歸檔"
         weight = 4
         url = "/post"
-        [[menu.nav2]]
+  [[menu.nav2]]
               name = "讀書"
               weight = 5
               url = "/read"
-        [[menu.nav2]]
-              name = "敎程"
+  [[menu.nav2]]
+              name = "网文"
               weight = 6
+              url = "/net"            
+  [[menu.nav2]]
+              name = "敎程"
+              weight = 7
               url = "/tutorial"
-       [[menu.nav2]]
+  [[menu.nav2]]
            name = "考試"
            weight = 8
            url = "/exam"
-     [[menu.nav3]]
+  [[menu.nav3]]
                name = "春秋學刊"
                weight = 10
                url = "/xuekan"
-    [[menu.nav3]]
+  [[menu.nav3]]
          name = "琴譜文本"
          weight = 11
          url = "/qinpu"
