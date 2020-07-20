@@ -1,11 +1,11 @@
 ---
-layout: "read"
-type: "read"
-title: "网文過眼錄｜古琴二："
+layout: "net"
+type: "net"
+title: "网文過眼錄｜古琴｜二："
 date: 2020-07-22
 book: ["50网文"]
 author: ["柯棋瀚整理"]
-description: '平時看到的值得收藏的文章'
+description: '不定期發布'
 draft: true
 ---
 

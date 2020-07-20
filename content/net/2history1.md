@@ -1,11 +1,11 @@
 ---
-layout: "read"
-type: "read"
-title: "网文過眼錄｜文史一：古代史、甲骨文、經學、雜談"
+layout: "net"
+type: "net"
+title: "网文過眼錄｜文史｜一：古代史、甲骨文、經學、雜談"
 date: 2020-05-21
 book: ["50网文"]
 author: ["柯棋瀚整理"]
-description: '平時看到的值得收藏的文章'
+description: '每月 21 日更新。'
 ---
 
 ## 古代史

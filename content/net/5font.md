@@ -1,6 +1,6 @@
 ---
-layout: "read"
-type: "read"
+layout: "net"
+type: "net"
 title: "网文過眼錄｜字體排版"
 date: 2020-05-20
 lastmod: 2020-06-01

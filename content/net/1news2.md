@@ -1,11 +1,11 @@
 ---
-layout: "read"
-type: "read"
-title: "网文過眼錄｜新聞雜談二：你要接手韭菜樓盤嗎？"
+layout: "net"
+type: "net"
+title: "网文過眼錄｜新聞雜談｜二：要接手韭菜樓盤嗎？"
 date: 2020-06-20
 book: ["50网文"]
 author: ["柯棋瀚整理"]
-description: '平時看到的值得收藏的文章'
+description: '每月 20 日發布。引文有所刪節。'
 vertical: false
 ---
 

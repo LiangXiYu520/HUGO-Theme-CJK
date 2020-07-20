@@ -1,6 +1,6 @@
 ---
-layout: "read"
-type: "read"
+layout: "net"
+type: "net"
 title: "网文過眼錄｜文史｜黃奇逸"
 date: 2020-06-11
 book: ["50网文"]

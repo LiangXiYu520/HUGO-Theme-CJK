@@ -139,8 +139,8 @@ strong{
 font-weight:normal;}
 b{
   font-weight: normal;
-  -webkit-text-emphasis: open triangle;
-  text-emphasis: open triangle;
+  -webkit-text-emphasis-style:'◍';
+  text-emphasis-style:'◍';
   -webkit-text-emphasis-position: over right;
   text-emphasis-position: over right;
 }
@@ -842,15 +842,29 @@ margin:2em 1em 0 1em}
 {{ with $img | shuffle }}
 {{ range first 1 . }}
 .home-cover{
-   min-height:100vh;
-   min-width:100vw;
-     background-image: url("{{ . }}");
-     	background-size:cover;
-      display: inline-flex;
-   justify-content:space-between;
+  background-image: url("{{ . }}");
+  background-size:cover;
+  display: inline-flex;
+  justify-content:space-between;
+  min-height:85vh;
+  min-width:80vw;
+  border-radius: 2.5em;
+  animation-name: footer;
+  animation-duration:1.5s;
+  animation-iteration-count:infinite;
+  animation-timing-function: ease-in;
+  animation-direction:alternate
 }
+@keyframes footer{
+  from {  box-shadow:  0 0 10px 0  var(--black);}
+  to{  box-shadow:  0 0 70px 5px  var(--black);}
+  }
 {{ end }}
 {{ end }}
+.home-wrap{
+  text-align: center;
+  margin: 3em auto 8em;
+}
 .heading-wrap.home1{
 background: none;
 height: 28em;
@@ -917,7 +931,7 @@ max-height: none;
   text-align: left;
   font-size: .9em;
   line-height: 1;
-  margin:-4em auto auto .5em;
+  margin:0 auto auto .5em;
   writing-mode:horizontal-tb;
 }
 .timestamp table{
@@ -967,17 +981,24 @@ max-height: none;
   color:rgba(0,0,0,0);
   -webkit-text-stroke: 2px {{ index $slice 4 }};
 }
+.section{
+  border-radius: 2.5em;
+  border: 1px solid var(--black);
+  margin: 8em auto;
+  width:95vw;
+  max-width: 1800px;
+}
   .section1{
     background: var(--section1);
-    padding:4em 0 3em
+    padding:4em 0 3em;
   }
   .section2{
     background: var(--section2);
-  padding:4em 0 2em
+  padding:4em 0 2em;
   }
   .section3{
     background: var(--section3);
-    padding:4em 0 5em
+    padding:4em 0 5em;
   }
 .section3   h1 a{
   box-shadow: none
@@ -987,10 +1008,10 @@ max-height: none;
 }
 .section4{
   background: var(--section4);
-padding:4em 0
+padding:4em 0;
 }
   .sectionh1{
-    font-size:5em;margin:1em 0
+    font-size:5em;margin:.3em 0 1em
   }
 .discover-wrap{
   padding: .5em 0 1.5em;
@@ -1022,7 +1043,8 @@ padding:0 .5em}
   -webkit-box-orient: horizontal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-margin:auto}
+margin:auto;
+text-align: left}
 .discover ul{
   -moz-column-count:2;
   -webkit-column-count:2;

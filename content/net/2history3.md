@@ -1,11 +1,11 @@
 ---
-layout: "read"
-type: "read"
-title: "网文過眼錄｜文史三"
+layout: "net"
+type: "net"
+title: "网文過眼錄｜文史｜三"
 date: 2020-07-21
 book: ["50网文"]
 author: ["柯棋瀚整理"]
-description: '過端午節，就看看屈原的科普。內容：。'
+description: '過端午節，就看看屈原的科普。目錄：。'
 draft: true
 ---
 

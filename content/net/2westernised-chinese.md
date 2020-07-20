@@ -1,6 +1,6 @@
 ---
-layout: "read"
-type: "read"
+layout: "net"
+type: "net"
 title: "网文過眼錄｜文史｜西式中文"
 date: 2020-05-24
 lastmod: 2020-06-17
