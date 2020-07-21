@@ -12,14 +12,14 @@ des: '這些文章沒什麼水平，只是想鞭策自己努力。如果以後�
 <div class="gallery">
 <div class="paper-wrap">
 <a href="/blog/2018/02/09/houzuowu.html" target="\_blank"><div class="paper-cardd" style="background-image:url('https://pic.imgdb.cn/item/5e8db91f504f4bcb043ffbd0.jpg')">
-<h2>蜀中琴人侯作吾先生</h2>
+<h3>蜀中琴人侯作吾先生</h3>
 <p><v>錦江琴刊</v>第二期丁酉刊（川派古琴學會會刊，內部刊物）</p>
 </div></a>
 </div>
 
 <div class="paper-wrap">
 <a href="/blog/2017/10/28/fuchou.html" target="\_blank"><div class="paper-cardd" style="background-image:url('https://pic.imgdb.cn/item/5e8db91f504f4bcb043ffbcc.jpg')">
-<h2><v>公羊傳</v>齊襄復讎事詮釋史</h2>
+<h3><v>公羊傳</v>齊襄復讎事詮釋史</h3>
 <p><ul><li>2017 秊「白壽彝史學論著獎‧本科生獎」三等獎</li>
 <li><v>春秋學刊</v>2017 秊秌季卷（內部刊物）</li>
 <li><v>唐山師笵學院學報</v>2018 秊第 5 期　弟 46—53 葉</li></ul>
@@ -29,7 +29,7 @@ des: '這些文章沒什麼水平，只是想鞭策自己努力。如果以後�
 
 <div class="paper-wrap">
 <a href="/178" target="\_blank"><div class="paper-cardd" style="background-image:url('https://pic.imgdb.cn/item/5e8db91f504f4bcb043ffbc8.jpg')">
-<h2>雷次宗<v>略注喪服經傳</v>疏議</h2>
+<h3>雷次宗<v>略注喪服經傳</v>疏議</h3>
 <p><ul><li>2018 秊「 白壽彝史學論著獎‧本科生獎」三等獎</li>
 <li><v>新經學</v>第四輯，鄧秉元主編，上海人民出版社，2019 秊 9 月，弟 4—57 葉</li></ul></p>
 </div></a>
@@ -37,7 +37,7 @@ des: '這些文章沒什麼水平，只是想鞭策自己努力。如果以後�
 
 <div class="paper-wrap">
 <a href="" target="\_blank"><div class="paper-cardd">
-<h2>釋琴指法「卩」</h2>
+<h3>釋琴指法「卩」</h3>
 <p>卽將出版，敬請期待</p>
 </div></a></div>
 </div>

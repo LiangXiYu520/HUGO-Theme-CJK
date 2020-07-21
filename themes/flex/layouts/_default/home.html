@@ -12,7 +12,6 @@
       <tr>
     <td style="text-align:right"> /千字</td><td><span class="big big2">{{- $count1 }}</span></td>
   </tr>
-
   <tr>
         <td style="text-align:right">篇均 /字</td><td><span class="big big3">{{ div $count $length }}</span></td>
       </tr>
@@ -24,7 +23,7 @@
 </tr>
         </table>
         <br>
-      {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　顏色隨機生成，不必在意搭配
+      {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　顏色隨機組合，不必在意搭配
     <div class="subscribe-wrap des1">
       <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
     　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
@@ -51,10 +50,10 @@
     </section>
   </div>
   <div class="home-wrap">
-<section class="section section2">
-    <h1 id="discover" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
+<section class="section section1">
+    <h1 id="discover"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
     </h1>
-  <h1>最近發布 Latest</h1>
+  <h2>最近發布 Latest</h2>
 <div class="discover-wrap latest">
 <div class="discover categories">
   {{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
@@ -92,7 +91,7 @@
   {{ end }}
   </div>
 </div>
-  <h1>最近修改 Recently Modified</h1>
+  <h2>最近修改 Recently Modified</h2>
 <div class="discover-wrap works" style="margin-bottom:6em">
 <div class="discover" >
   {{ $lastmod := slice }}
@@ -108,7 +107,7 @@
 {{ end }}</ul>
 </div>
 </div>
-<h1>分類 Categories</h1>
+<h2>分類 Categories</h2>
 <div class="discover-des">隨機 8 箇分類</div>
 <div class="discover-wrap latest">
 <div class="discover categories">
@@ -151,12 +150,12 @@
 {{ $thisCateinSeries := intersect $thisCate $series }}
 {{ $end := $thisCateinSeries | complement $First2inSeries  }}
 <ol>
-<h2 style="margin:0"><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML  }}</a></h2>
-<div class="discover-des" style="margin-top:.5em;text-align:left">最近 Latest</div>
+<h3><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML }}</a></h3>
+<div class="discover-des" style="margin-top:.5em;text-align:left">最近 Latest /</div>
 {{ range $first2 }}
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
 {{ end }}
-    <div class="discover-des"style="margin:0;text-align:left">隨機 Random</div>
+    <div class="discover-des"style="margin:0;text-align:left">隨機 Random /</div>
 {{ range first 2 $end | shuffle }}
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
 {{ end }}
@@ -164,8 +163,8 @@
 {{ end }}{{ end }}
 </div>
 </div>
-  <div class="discover-wrap latest" style="max-width:50em;background:var(--section1);border-radius:2.5em">
-    <h1>其他作者 More Authors</h1>
+  <div class="discover-wrap latest" style="max-width:50em;background:var(--section4);border-radius:2.5em">
+    <h2 style="margin-top:1em">其他作者 More Authors</h2>
     <center><strong>！歡迎踴躍投稿！稿費沒有嘻嘻</strong></center>
   <div class="discover categories">
 {{ $author := slice }}
@@ -176,25 +175,25 @@
 {{ end }}
 {{ range $author  | shuffle  }}
 <ol style="list-style:none">
-        <h2 style="font-size:1.2em"><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title | safeHTML }}</a></h2>
+        <h3 style="font-size:1.2em"><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title | safeHTML }}</a></h3>
         {{ range .Pages  | shuffle }}
 <li style="margin-top:.8em"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
 {{ end }}
 </ol>
 {{ end }}
 </div></div>
-<h1>年度 🔝 of the Year</h1>
+<h2>年度 🔝 of the Year</h2>
 <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
-<div class="discover-wrap" style="max-width:40em">
-<div class="discover" >
+<div class="discover-wrap" style="max-width:40em;margin-bottom:4em">
+<div class="discover">
 <ol>
-  <h2>2017-2018</h2>
+  <h3>2017-2018</h3>
   {{ range .Site.Menus.top2018  }}
       <li><a href="{{ .Page.Permalink }}"  target="_blank">{{ .Name | safeHTML }}</a></li>
   {{ end }}
 </ol>
 <ol>
-  <h2>2018-2019</h2>
+  <h3>2018-2019</h3>
   {{ range .Site.Menus.top2019  }}
       <li><a href="{{  .Page.Permalink  }}"  target="_blank">{{ .Name | safeHTML }}</a></li>
   {{ end }}
@@ -204,10 +203,10 @@
 </section>
 </div>
 <div class="home-wrap">
-<section class="section section3">
-  <h1 id="wiki" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
+<section class="section section2">
+  <h1 id="wiki"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
-  <h1 style="margin:-1em auto 0"><a href="/read" target="_blank">讀書</a></h1>
+  <h2><a href="/read" target="_blank">讀書</a></h2>
 <div class="des">【述要】用十分之一的字數槩述原書內容【讀後】類似書評</div>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
   <div class="discover-wrap latest">
@@ -227,11 +226,11 @@
               {{- end -}}
           {{- end -}}
           </div>
-                  </ol>
+    </ol>
   {{ end }}
         </div>
         </div>
-        <h1 style="margin:-1em auto 0"><a href="/net" target="_blank">网文過眼錄</a></h1>
+  <h2><a href="/net" target="_blank">网文過眼錄</a></h2>
         <div class="des">收集、節錄、整理平時看到的値得收藏的文章報導。讓碎片閱讀稍微有點意義的嘗試</div>
           <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
           <div class="discover-wrap latest">
@@ -247,7 +246,7 @@
              </div>
         <div class="gallery" style="margin:0">
           <div class="paper-wrap">
-            <h1 style="margin:-1em auto 0"><a href="/tutorial" target="_blank">敎程</a></h1>
+   <h2><a href="/tutorial" target="_blank">敎程</a></h2>
           <div class="des">赫赫指北｜搭建基本的知識框架；資源｜一些信息聚合</div>
             <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
           <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
@@ -256,7 +255,7 @@
               {{ end }}
           </div></div></div>
 <div class="paper-wrap">
-  <h1 style="margin:-1em auto 0"><a href="/exam" target="_blank">考試課堂筆記</a></h1>
+  <h2><a href="/exam" target="_blank">考試課堂筆記</a></h2>
   <div class="des">整理的考試複習資料。世界上最沒用的東西</div>
   <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
 <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
@@ -268,9 +267,9 @@
 </section>
 </div>
 <div class="home-wrap">
-<section class="section section1">
-  <h1 id="gallery" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品</h1>
-  <div class="discover-des" style="margin-top:-5.5em">按最近修改排序</div>
+<section class="section section3">
+  <h1 id="gallery"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品</h1>
+  <div class="discover-des" style="margin-top:-5.5em">按修改時閒排序</div>
   <div class="discover-wrap latest">
   <div class="discover categories">
     {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
@@ -291,11 +290,11 @@
 </div>
 <div class="home-wrap">
 <section class="section section4">
-  <h1 id="data" class="sectionh1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
+  <h1 id="data"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
 <div class="gallery" style="margin:0">
 <div class="paper-wrap">
-<h1 style="margin:0 auto"><a href="/xuekan" target="_blank">春秋學刊</a></h1>
+<h2 style="margin:0 auto"><a href="/xuekan" target="_blank">春秋學刊</a></h2>
 <div class="des">北師大歷史學院本科生學術刊物</div>
   <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
@@ -306,7 +305,7 @@
           {{ end }}
 </div></div></div>
 <div class="paper-wrap" style="max-width:32em">
-<h1 style="margin:0 auto"><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h1>
+<h2 style="margin:0 auto"><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h2>
 <div class="des">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
 這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
