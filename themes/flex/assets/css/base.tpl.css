@@ -366,7 +366,7 @@ line-height: 1.6
  }
  .subscribe-wrap{
    text-align: left;
-   margin:1em 1em 0 0;
+   margin:1.5em 0 1.5em 1.5em;
    padding: 0
  }
  .rss3{
@@ -848,7 +848,7 @@ margin:2em 1em 0 1em}
   justify-content:space-between;
   min-height:85vh;
   min-width:80vw;
-  border-radius: 2.5em;
+  border-radius:2em;
   animation-name: footer;
   animation-duration:1.5s;
   animation-iteration-count:infinite;
@@ -867,7 +867,7 @@ margin:2em 1em 0 1em}
 }
 .heading-wrap.home1{
 background: none;
-height: 28em;
+height: 21em;
 writing-mode: vertical-rl;
 }
 {{ $all := slice }}
@@ -883,8 +883,8 @@ writing-mode: vertical-rl;
   padding:0;
   text-shadow: -2px -3px 0 #2b2b2b;
 text-align: left;
-letter-spacing: .25em;
-font-size: 5em;
+letter-spacing: .15em;
+font-size: 4.5em;
 color: {{ . }};
 }
 {{ end }}
@@ -895,6 +895,7 @@ color: {{ . }};
 .label{
   color:#2b2b2b;
 font-size: 1.2em;
+font-weight: bold;
 letter-spacing: .3em;
 text-align: left;
 margin-left:8px
@@ -902,31 +903,21 @@ margin-left:8px
 .sentence{
   color: var(--gray);
   padding-right:16px;
-  text-align: center;
+  text-align: left;
   line-height: 1.6;
   border-right: 1px solid #787878
 }
 .sentence1{
-  font-weight: bold;
-  font-size:1.5em;
+  font-size:1.2em;
   text-align: left;
   text-align: justify;
   text-justify: inter-ideograph;
 }
 .sentence2{
-  font-weight: normal;
   font-size:.8em;
-font-family: var(--serif);
-  padding: 0;
-height:none;
-min-width:none;
-max-height: none;
-      background:none;
-      border: none;
-      border-radius:0;
 }
 .timestamp{
-    font-family: var(--codesans);
+    font-family: var(--serif);
   color:#787878;
   text-align: left;
   font-size: .9em;
@@ -943,43 +934,23 @@ max-height: none;
     padding: .2em 1em 0 0}
 .big{
   font-weight: bold;
+  color:rgba(0,0,0,0);
+  -webkit-text-stroke: 1px var(--gray);
 }
-{{ $all1 := slice }}
-    {{ range .Site.Data.color }}
-    {{ range .color }}
-    {{ $all1 = $all1 | append . }}
-    {{ end }}
-    {{ end }}
-    {{ $slice := slice  }}
-{{ with $all1 | shuffle }}
-{{ range first 5 . | shuffle }}
-{{ $slice = $slice | append . }}
-{{ end }}
-{{ end }}
 .big1{
   font-size: 13em;
-  color:rgba(0,0,0,0);
-  -webkit-text-stroke: 2.5px {{ index $slice 0 }};
 }
 .big2{
     font-size: 8em;
-    color:rgba(0,0,0,0);
-    -webkit-text-stroke: 2.5px {{ index $slice 1 }};
 }
 .big3{
   font-size: 6em;
-  color:rgba(0,0,0,0);
-  -webkit-text-stroke: 2.5px {{ index $slice 2 }};
 }
 .big4{
   font-size: 4em;
-  color:rgba(0,0,0,0);
-  -webkit-text-stroke: 2px {{ index $slice 3 }};
 }
 .big5{
   font-size: 4em;
-  color:rgba(0,0,0,0);
-  -webkit-text-stroke: 2px {{ index $slice 4 }};
 }
 .section{
   border-radius: 2.5em;
@@ -1211,27 +1182,9 @@ color: var(--brown)}
   }
   .big{
     text-shadow: none;
-    -webkit-text-stroke:0
-  }
-  .big1{
-    font-size: 2em;
-      color:{{ index $slice 0 }};
-  }
-  .big2{
-    font-size: 1.6em;
-    color:{{ index $slice 1 }};
-  }
-  .big3{
+    -webkit-text-stroke:0;
+    color:var(--black);
     font-size: 1.4em;
-    color:{{ index $slice 2 }};
-  }
-  .big4{
-    font-size: 1.2em;
-    color:{{ index $slice 3 }};
-  }
-  .big5{
-    font-size: 1.2em;
-    color:{{ index $slice 4 }};
   }
   .banner{
     font-size: .9em

@@ -3,6 +3,11 @@
       <div class="home-wrap">
       <section class="home-cover">
         <div class="timestamp">
+          <div class="subscribe-wrap des1">
+            <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
+          　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
+          </div>
+          {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　顏色隨機組合，不必在意搭配
           {{- $length := len .Site.RegularPages }}
           {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count1 := div $count 1000 }}
         <table>
@@ -22,12 +27,6 @@
       <td style="text-align:right">橫跨 /秊</td><td><span class="big big5">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{ len . }}{{- end -}}</span></td>
 </tr>
         </table>
-        <br>
-      {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　顏色隨機組合，不必在意搭配
-    <div class="subscribe-wrap des1">
-      <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
-    　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
-    </div>
       </div>
         <div class="heading-wrap home1">
           <h1>赫赫文王</h1>
@@ -42,7 +41,7 @@
           {{ with $all | shuffle }}
           {{ range first 1 . }}
           {{ $1all := split . "——" }}
-          <div class="sentence1">{{- index $1all 0 -}}<span class="vertical sentence2">——{{- index $1all 1 | safeHTML -}}</span></div>
+          <div class="sentence1">{{- index $1all 0 -}}<span class="sentence2">（{{- index $1all 1 | safeHTML -}}）</span></div>
           {{ end }}
           {{ end }}
           </div>
