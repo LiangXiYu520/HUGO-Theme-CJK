@@ -10,27 +10,27 @@
           {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　顏色隨機組合，不必在意搭配
           {{- $length := len .Site.RegularPages }}
           {{ $count := 0 }}{{ range .Site.RegularPages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count1 := div $count 1000 }}
-        <table>
-<tr>
-        <td style="text-align:right">凡 /篇</td><td><span class="big big1">{{ $length }}</span></td>
+    <table>
+      <tr>
+        <td style="text-align:right">凡 /千字</td><td><span class="big big1">{{- $count1 }}</span></td>
+       </tr>
+       <tr>
+        <td style="text-align:right">/篇</td><td><span class="big big1">{{ $length }}</span></td>
+       </tr>
+      <tr>
+        <td style="text-align:right">篇均 /字</td><td><span class="big big2">{{ div $count $length }}</span></td>
       </tr>
       <tr>
-    <td style="text-align:right"> /千字</td><td><span class="big big2">{{- $count1 }}</span></td>
-  </tr>
-  <tr>
-        <td style="text-align:right">篇均 /字</td><td><span class="big big3">{{ div $count $length }}</span></td>
+        <td style="text-align:right">已運行 /日</td><td><span class="big big3">{{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }}</span></td>
       </tr>
-      <tr>
-        <td style="text-align:right">已運行 /日</td><td><span class="big big4">{{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }}</span></td>
-</tr>
-      <tr>
-      <td style="text-align:right">橫跨 /秊</td><td><span class="big big5">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{ len . }}{{- end -}}</span></td>
-</tr>
-        </table>
+     <tr>
+      <td style="text-align:right">橫跨 /秊</td><td><span class="big big3">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{ len . }}{{- end -}}</span></td>
+      </tr>
+    </table>
       </div>
-        <div class="heading-wrap home1">
+        <div class="home-heading">
           <h1>赫赫文王</h1>
-          <div class="label">永嘉田家後🌝　生於九七秊🌖<br>長于錦官城🌗　讀的歷史系🌚</div>
+          <div class="label">永嘉田家後🌝　生於九七秊🌖長于錦官城🌗　讀的歷史系🌚</div>
           <div class="sentence">
           {{ $all := slice }}
               {{ range .Site.Data.sentence  }}

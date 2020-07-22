@@ -4,7 +4,6 @@ type: "net"
 title: "网文過眼錄｜文史｜西式中文"
 date: 2020-05-24
 lastmod: 2020-06-17
-book: ["50网文"]
 author: ["柯棋瀚整理"]
 description: '什麼是西式中文<n>歐化中文</n>？如何避免？'
 vertical: false

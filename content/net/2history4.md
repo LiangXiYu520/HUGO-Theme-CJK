@@ -3,7 +3,6 @@ layout: "net"
 type: "net"
 title: "网文過眼錄｜文史｜三：屈原、"
 date: 2020-07-21
-book: ["50网文"]
 author: ["柯棋瀚整理"]
 description: '每月 21 日發布。引文有刪節。過端午節，就看看屈原的科普。'
 draft: true

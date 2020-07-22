@@ -4,7 +4,6 @@ type: "net"
 title: "网文過眼錄｜實地錄音"
 date: 2019-10-06
 lastmod: 2020-06-02
-book: ["50网文"]
 url: /182
 author: ["柯棋瀚整理"]
 description: '整理一下看到的一些自己感興趣的實地錄音 field recording 的相關信息。'

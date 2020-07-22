@@ -3,7 +3,6 @@ layout: "net"
 type: "net"
 title: "网文過眼錄｜古琴｜一：碎忆台湾、侯作吾先生軼事"
 date: 2020-05-22
-book: ["50网文"]
 author: ["柯棋瀚整理"]
 description: '不定期發布'
 ---

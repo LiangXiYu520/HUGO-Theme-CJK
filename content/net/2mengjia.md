@@ -3,7 +3,6 @@ layout: "net"
 type: "net"
 title: "网文過眼錄｜文史｜陳夢家"
 date: 2020-07-21
-book: ["50网文"]
 author: ["柯棋瀚整理"]
 description: ''
 draft: true

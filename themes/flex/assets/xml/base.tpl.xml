@@ -29,7 +29,7 @@
           <div class="u-wrapper">
             <div class="u-padding">
               <h2 class="Heading-title">
-                <a class="Heading-link u-clickable" href="{link}" rel="bookmark"><xsl:value-of select="title" /></a>
+                <a class="u-clickable" href="{link}" rel="bookmark"><xsl:value-of select="title" /></a>
               </h2>
               {{ with site.Params.rss }}
                 <p>

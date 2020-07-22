@@ -366,7 +366,7 @@ line-height: 1.6
  }
  .subscribe-wrap{
    text-align: left;
-   margin:1.5em 0 1.5em 1.5em;
+   margin:1.5em 0 1.5em 0;
    padding: 0
  }
  .rss3{
@@ -440,10 +440,35 @@ code{
   border-radius:1em;
   border:.2em solid var(--black);
 }
-.heading-wrap{
-  background-color: var(--bg);
+.home-heading{
   padding: 2em  1em 3em;
-  margin: -1em 0 0}
+  margin: -1em 0 0;
+  height: 21em;
+  writing-mode: vertical-rl;
+}
+{{ $all := slice }}
+    {{ range .Site.Data.color }}
+    {{ range .color }}
+    {{ $all = $all | append . }}
+    {{ end }}
+    {{ end }}
+{{ with $all | shuffle }}
+{{ range first 1 . }}
+.home-heading h1{
+  margin:0;
+  padding:0;
+  text-shadow: -2px -3px 0 #2b2b2b;
+text-align: left;
+letter-spacing: .15em;
+font-size: 4.5em;
+color: {{ . }};
+}
+{{ end }}
+{{ end }}
+.heading-wrap{
+  padding: 2em  1em 3em;
+  margin: -1em 0 0
+}
 .Heading {
   text-align:center;
   align-items: baseline}
@@ -458,8 +483,6 @@ code{
   .Heading-title.article{
     font-size: 3.2em;
     letter-spacing:.0}
-.Heading-link {
-  color: inherit}
 .tag{
   text-align: center;
   background:var(--section1);
@@ -849,6 +872,7 @@ margin:2em 1em 0 1em}
   min-height:85vh;
   min-width:80vw;
   border-radius:2em;
+  padding: .6em 1em;
   animation-name: footer;
   animation-duration:1.5s;
   animation-iteration-count:infinite;
@@ -864,33 +888,6 @@ margin:2em 1em 0 1em}
 .home-wrap{
   text-align: center;
   margin: 3em auto 8em;
-}
-.heading-wrap.home1{
-background: none;
-height: 21em;
-writing-mode: vertical-rl;
-}
-{{ $all := slice }}
-    {{ range .Site.Data.color }}
-    {{ range .color }}
-    {{ $all = $all | append . }}
-    {{ end }}
-    {{ end }}
-{{ with $all | shuffle }}
-{{ range first 1 . }}
-.heading-wrap.home1 h1{
-  margin:0;
-  padding:0;
-  text-shadow: -2px -3px 0 #2b2b2b;
-text-align: left;
-letter-spacing: .15em;
-font-size: 4.5em;
-color: {{ . }};
-}
-{{ end }}
-{{ end }}
-.cover-article{
-  writing-mode:horizontal-tb
 }
 .label{
   color:#2b2b2b;
@@ -922,12 +919,11 @@ margin-left:8px
   text-align: left;
   font-size: .9em;
   line-height: 1;
-  margin:0 auto auto .5em;
   writing-mode:horizontal-tb;
 }
 .timestamp table{
   border:none;
-  margin:.2em 0 .1em
+  margin:1em 0 0
   }
 .timestamp table  td {
     border:none;
@@ -938,18 +934,12 @@ margin-left:8px
   -webkit-text-stroke: 1px var(--gray);
 }
 .big1{
-  font-size: 13em;
+  font-size: 10em;
 }
 .big2{
-    font-size: 8em;
+    font-size: 6em;
 }
 .big3{
-  font-size: 6em;
-}
-.big4{
-  font-size: 4em;
-}
-.big5{
   font-size: 4em;
 }
 .section{
@@ -1193,22 +1183,16 @@ color: var(--brown)}
     line-height: 1.6;
     margin: 0 auto auto .5em
   }
-  .sentence{
-    height:20.5em
+  .home-heading{
+    padding: .1em  .5em 1em;
+    margin:1em 0 3em
   }
-  .heading-wrap.home1{
-    margin-top:1em
-  }
-  .heading-wrap.home1 h1{
+  .home-heading h1{
     text-shadow: -2px -3px 0 #2b2b2b;
     font-size: 4em;
   }
   .count{
     margin: 0em auto}
-  .heading-wrap{
-    padding: .1em  .5em 1em;
-    margin: 0 0 3em
-  }
   .Heading-title.taxo{
     font-size: 4em
   }
@@ -1295,14 +1279,12 @@ margin:0 auto 5em}
 @media screen and (max-width:600px){
   .sentence{
     font-size:.85em;
-    height:23.5em
   }
   .home-cover{
     display: block;
-    min-height:130vh
+    min-height:100vh
   }
-  .heading-wrap.home1{
-    margin-top:4em;
+  .home-heading{
     float: right
   }
 .discover ul{

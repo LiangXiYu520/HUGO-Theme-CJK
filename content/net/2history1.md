@@ -3,7 +3,6 @@ layout: "net"
 type: "net"
 title: "网文過眼錄｜文史｜一：古代史、甲骨文、經學、雜談"
 date: 2020-05-21
-book: ["50网文"]
 author: ["柯棋瀚整理"]
 description: '每月 21 日發布。引文有刪節。'
 ---

@@ -59,7 +59,7 @@ menu:
 
 [夏泉的后院](https://www.hxueh.net/)　在深圳长大，于深圳大学毕业，目前在深圳生活。
 
-[Tonis Foto Haus](http://www.tonichan.xyz)　Amateur Photographer. Novice Data Scientist.Zhejiang University, Chu Ko Chen Honors College.
+[Tonis Foto Haus](https://www.tonichan.xyz)　Amateur Photographer. Novice Data Scientist.Zhejiang University, Chu Ko Chen Honors College.
 
 [Parimal Satyal](https://neustadt.fr/)　a designer and occasional writer living in Paris. I’m also interested in aviation, cross-cultural exchange,  languages, science, computer history, the small/open web and the  European Union. 〔文章挺有意思〕
 
@@ -70,8 +70,6 @@ menu:
 [宇宙的心弦](https://www.physixfan.com)　〔北大物理……〕
 
 [Matrix67: The Aha Moments](http://www.matrix67.com/blog/)　〔「如果他肯把博客的內容同步地發發知乎發發微信公眾號的話，中國喜歡數學的孩子們應該會比現在多很多吧」〕
-
-[謝益輝的箇人主葉](https://yihui.name/cn/about/)　〔人大統計〕
 
 [李艦](http://jianl.org/)　〔人大統計〕
 
