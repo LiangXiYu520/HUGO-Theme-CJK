@@ -125,6 +125,8 @@ menu:
 
 [甜欣屋](https://tcxx.info/)　〔哥大畢業，谷歌工作的九五後〕
 
+[Randy's blog](https://lutaonan.com/_)　〔一個冷冷酷酷的男孩，挺有想法的〕
+
 https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開！
 
 [Ryan0up'S Blog](https://ryanc.cc)　一个完美主義者，名曰 RYAN0UP。<n>友鏈於 20181027，2019 年 6 月再看，沒有友鏈了</n>

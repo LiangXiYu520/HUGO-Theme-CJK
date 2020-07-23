@@ -251,18 +251,11 @@ border-bottom: none;
   .vertical h3{
     margin:3.5em 2em 0 0
   }
-  .vertical-info{
-    text-align: center;
-    font-size: .8em;
-    color:var(--gray);
-  font-family: var(--sans);
-margin:3.5em auto -3em auto;
-line-height: 1.6}
 .vertical-false{
      margin:0 auto 4em;
      max-width: 40em;
-       font-family: var(--sans)
-       }
+     font-family: var(--sans)
+  } 
 .toc{
       float: right;
      min-width: 10em;
@@ -436,9 +429,11 @@ code{
       background:var(--black);
         border-radius: .2rem}
 .search{
-  height:2.5em;width:25em;
+  height:2.5em;
+  width:25em;
   border-radius:1em;
-  border:.2em solid var(--black);
+  border:.15em solid var(--black);
+  background: var(--bg);
 }
 .home-heading{
   padding: 2em  1em 3em;

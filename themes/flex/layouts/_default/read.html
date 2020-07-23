@@ -7,7 +7,7 @@
                   {{- range . -}}
                   {{- $name := . -}}
                   {{- with $.Site.GetPage "term" (printf "book/%s" $name) | default ($.Site.GetPage "term" (printf "book/%s" ($name | urlize))) -}}
-                <a href="/read#{{ $name }}">{{- $name -}}</a>»
+                <a href="/read/#{{ $name }}">{{- $name -}}</a>»
                   {{- end -}}
                   {{- end -}}
               {{- end -}}

@@ -62,4 +62,5 @@ description: '從關於頁面中分離出來的。我爲什麼建博客？博客
 - 這篇文章說了爲何微信那麼糟糕：<v>[割韭菜、收智商税盛行，是微信良心上的一道伤疤](https://mp.weixin.qq.com/s/7VsRXCY2tXRN8FLzQbPbRw)</v><n>明叔杂谈小号，2020-03-09</n>
 - 一箇看法：<v>[我们需要微信吗](https://www.hxueh.net/27/)</v>
 - <u>博客志</u> 的 [爲何要寫网誌](http://www.jetli.com.cn/about.html)
+- [为什么无法坚持写博客](https://lutaonan.com/blog/reason-why-your-blog-is-not-alive/)
 

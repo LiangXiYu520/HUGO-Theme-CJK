@@ -107,7 +107,6 @@
 </div>
 </div>
 <h2>分類 Categories</h2>
-<div class="discover-des">隨機 8 箇分類</div>
 <div class="discover-wrap latest">
 <div class="discover categories">
   {{ $auth := slice }}
@@ -134,7 +133,7 @@
 {{ $series = intersect  $3series $auth  }}
   {{ $allCate := where .Site.Taxonomies.categories "Type" "post" }}
   {{ with $allCate.ByCount | shuffle }}
-  {{ range first 8 . }}
+  {{ range first 11 . }}
 {{ $first2 := slice }}
 {{ range first 2 .Pages }}
 {{ $first2 = $first2 | append . }}
