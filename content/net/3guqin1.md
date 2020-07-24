@@ -4,7 +4,8 @@ type: "net"
 title: "网文過眼錄｜古琴｜二："
 date: 2020-07-22
 author: ["柯棋瀚整理"]
-description: '不定期發布'
+netsort: ["古琴"]
+description: ''
 draft: true
 ---
 

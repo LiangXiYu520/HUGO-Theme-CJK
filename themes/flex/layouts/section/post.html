@@ -18,63 +18,66 @@
 {{ range $paginator.Pages.GroupByPublishDate "2006" }}
                 {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
                  {{ $leng := len .Pages }}
-<section class="year-wrap">
+<section>
                   <div class="year"><h2>{{ .Key }}<span class="des3">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2></div>
-        <div class="archive-wrapper">
+                  <div class="discover-wrap">
+                    <div class="discover">
         {{- range .Pages -}}
-              <div class="archive-wrap">
-        <span class="archive-left">
-        {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
-                <span class="archive-right">
               <div>
-                  {{- with .Params.author -}}
-                      {{- range . -}}
-                      {{- $name := . -}}
-                      {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-                    <a class="archive-info archive-info-author" href="/author/{{ $name }}" target="_blank">@{{- $name -}}</a>
-                      {{- end -}}
-                      {{- end -}}
-                  {{- end -}}
-                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
-                </div>
-                <div class="archive-info"><time>{{ .Date.Format "06-01-02" }}</time>
-                  {{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "06-01-02" }}{{ end }}&nbsp
-            {{ with .Params.categories -}}
+        <div class="archive-left">{{ $count4 = sub $count4 1  }}{{ $count4 }}</div>
+        <span>
+          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+          <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+          <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
+          <div class="des2 home">
+            {{- with .Params.author -}}
                 {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+                <a href="/author/{{ $name }}">@{{- $name -}}</a>
+                {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            {{- with .Params.categories -}}
+                {{- range . -}}
                 {{- $name := . -}}
                 {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-                  <span class="archive-info"> <a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
-            {{ with .Params.series -}}
-                {{ range . }}
-                {{- $name := . -}}
-                {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
-            {{ with .Params.tags -}}
-                {{ range . }}
-                {{- $name := . -}}
-                {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/tags/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
-            {{ with .Params.notes -}}
-                {{ range . }}
-                {{- $name := . -}}
-                {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/notes/{{ $name }}"  target="_blank">({{- $name -}})</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
+                  　<a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a>
+                {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            {{- with .Params.series -}}
+            {{- range . -}}
+            {{- $name := . -}}
+            {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+              　<a href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+            {{ end -}}
+            {{ end }}
+        {{- end }}
+        {{ with .Params.tags -}}
+        {{ range . }}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
+        <span class="archive-info"><a href="/tags/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
+        {{ end -}}
+        {{ end }}
+    {{- end }}
+        {{ with .Params.notes -}}
+        {{ range . }}
+        {{- $name := . -}}
+        {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
+        <span class="archive-info"><a href="/notes/{{ $name }}"  target="_blank">({{- $name -}})</a></span>
+        {{ end -}}
+        {{ end }}
+    {{- end }}
           </div>
-          </span>
+        </span>
+        
+
     </div>
-    {{ end }}</div>
+    {{ end }}
+       </div>
+      </div>
   </section>    {{ end }}
     <br>
 {{ partial "pagination.html" . }}

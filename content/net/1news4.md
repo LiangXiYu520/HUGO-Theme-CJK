@@ -1,10 +1,11 @@
 ---
 layout: "net"
 type: "net"
-title: "网文過眼錄｜新聞雜談｜四：吗？"
+title: "网文過眼錄｜人與社會｜四：吗？"
 date: 2020-08-20
 author: ["柯棋瀚整理"]
-description: '每月 20 日發布。引文有所刪節。目錄：。'
+netsort: ["人與社會"]
+description: '目錄：。'
 vertical: false
 draft: true
 ---

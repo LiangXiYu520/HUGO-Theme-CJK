@@ -12,12 +12,21 @@
 </section>
 </div>
 <main>
-        <section class="archive-wrapper" style="margin:2em auto 8em">
-    {{ range sort .Pages "File.Path" }}
-              <div class="archive-wrap" style="margin:.7em 0;text-align:left">
-          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{- end -}}</span>　<span class="archive-title" style="margin-left:0"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
-    </div>{{ end }}
-   </section>
+  {{ range .Site.Taxonomies.netsort.ByCount }}
+  <h2 id="{{- .Page.Title | safeHTML -}}">{{ .Page.Title | safeHTML }}</h2>
+  <div class="discover-wrap">
+    <div class="discover">
+      {{- range .Pages.ByDate.Reverse -}}
+  <span>
+    <div class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</div>
+      <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+      <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+      </span>
+      {{ end }}
+</div>
+</div> 
+
+{{ end }}
  </main>
  {{ partial "footer-xuekan.html" . }}
 {{ end }}

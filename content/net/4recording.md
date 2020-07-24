@@ -6,7 +6,8 @@ date: 2019-10-06
 lastmod: 2020-06-02
 url: /182
 author: ["柯棋瀚整理"]
-description: '整理一下看到的一些自己感興趣的實地錄音 field recording 的相關信息。'
+netsort: ["實地錄音"]
+description: '整理一下看到的一些自己感興趣的實地錄音 field recording 的相關信息。目錄：全指向，麥克風，制式，錄音機，經歷，其他。'
 vertical: false
 ---
 

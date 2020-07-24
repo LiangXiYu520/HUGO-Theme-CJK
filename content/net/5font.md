@@ -5,7 +5,8 @@ title: "网文過眼錄｜字體排版"
 date: 2020-05-20
 lastmod: 2020-06-01
 author: ["柯棋瀚整理"]
-description: '平時看到的值得收藏的文章'
+netsort: ["字體排版"]
+description: '目錄：字體，一本书的版式诞生记⋯⋯'
 vertical: false
 ---
 

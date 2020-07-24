@@ -4,7 +4,9 @@ type: "net"
 title: "网文過眼錄｜文史｜三：屈原、制度史、禮學、文化與學術史、雜談"
 date: 2020-07-21
 author: ["柯棋瀚整理"]
-description: '每月 21 日發布。引文有刪節。過端午節，就看看屈原的科普。'
+netsort: ["文史"]
+description: '過端午節，就看看屈原的科普。「美好的信念可以让人有主心骨，会变得坚强。」'
+img: 'https://pic.imgdb.cn/item/5f1ad85e14195aa5940d7f30.jpg'
 ---
 
 ## 封面：屈原
