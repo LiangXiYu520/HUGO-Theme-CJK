@@ -6,6 +6,7 @@ categories: ["彫梓"]
 tags: ["Word"]
 description: '突然想到的問題，此前一直困擾著我，所以只想用「」不用“”'
 vertical: false
+img: 'https://pic.imgdb.cn/item/5f1bd2b714195aa594759c93.jpg'
 ---
 
 ## 問題

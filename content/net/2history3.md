@@ -1,12 +1,12 @@
 ---
 layout: "net"
 type: "net"
-title: "网文過眼錄｜文史｜三：屈原、制度史、禮學、文化與學術史、雜談"
+title: "网文過眼錄｜文史｜三：屈原也不是那麼潔白無瑕"
 date: 2020-07-21
 author: ["柯棋瀚整理"]
 netsort: ["文史"]
-description: '過端午節，就看看屈原的科普。「美好的信念可以让人有主心骨，会变得坚强。」'
-img: 'https://pic.imgdb.cn/item/5f1ad85e14195aa5940d7f30.jpg'
+description: '過端午節，就看看屈原的科普。「美好的信念可以让人有主心骨，会变得坚强。」目錄：屈原，制度史，禮學，文化與學術史，雜談。'
+img: 'https://pic.imgdb.cn/item/5f1d5d2a14195aa594ab15a8.jpg'
 ---
 
 ## 封面：屈原

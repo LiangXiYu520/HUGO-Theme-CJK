@@ -852,7 +852,8 @@ margin: 4em auto 6em;
   display: inline-flex;
   justify-content:space-between;
   min-height:85vh;
-  min-width:80vw;
+  width:80vw;
+  max-width: 1040px;
   border-radius:2em;
   padding: .6em 1em;
   animation-name: footer;
@@ -986,7 +987,7 @@ margin:-1em auto 0
   .discover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr));
-    gap:2em 1.5em;
+    gap:3em 1.5em;
     justify-content:center;
     line-height: 1.3;
     text-align:justify;
@@ -1093,6 +1094,23 @@ box-shadow:none
 }
 .cover-card-img{
   background-size:cover;
+}
+.post-card{       
+  display: flex;
+  padding-bottom: 62.5%;
+  background-size:cover;
+  border: none;
+  border-radius:1em;
+  margin-bottom: .4em;
+  max-width: 21em;
+  max-height: 13.1em
+}
+.post-card-content{
+  padding-bottom:0;
+  width: 21em;
+  height: 13.1em;
+  margin: 1em auto;
+  box-shadow:  0 0 16px 0  var(--gray);
 }
 .cover-card-img:hover{
   transform:scale(1.06,1.06);

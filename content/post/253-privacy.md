@@ -6,6 +6,7 @@ categories: ["站務"]
 tags: ["coding"]
 description: '我有必要將本站所有涉及隱私的情況完全透明展示給您。'
 vertical: false
+img: 'https://pic.imgdb.cn/item/5f1d14fb14195aa5947f1922.jpg'
 ---
 
 ## 隱私

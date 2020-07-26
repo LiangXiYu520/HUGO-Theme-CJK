@@ -4,7 +4,7 @@ type: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-07-21
+lastmod: 2020-07-26
 url: /release
 menu:
   main:
@@ -1770,3 +1770,9 @@ html5 語意標籤改造。
 主頁重構，用 grid 替換 flex。網址、網文頁面從列表改成 grid。
 
 封面下面加上最近三篇文章的圖片。終於有那味了。
+
+#### 7 月 26 日
+
+把最近的文章都加上了圖片。文章正文標題上方加上圖片。有圖片的 section：post, read, net
+
+我應該去當設計師的。

@@ -11,7 +11,9 @@
                   {{- end -}}
                   {{- end -}}
               {{- end -}}
-            </span><h1 class="DocSearch-lvl1 Heading-title article">{{- .Title | safeHTML | markdownify -}}</h1>
+            </span>
+            <div class="post-card post-card-content" style="background-image: url({{ .Params.img }})"></div>
+            <h1 class="DocSearch-lvl1 Heading-title article">{{- .Title | safeHTML | markdownify -}}</h1>
       {{ if .Description }}
       <div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
       {{ end }}

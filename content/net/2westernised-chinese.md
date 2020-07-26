@@ -8,6 +8,7 @@ author: ["柯棋瀚整理"]
 netsort: ["文史"]
 description: '什麼是西式中文<n>歐化中文</n>？如何避免？'
 vertical: false
+img: 'https://pic.imgdb.cn/item/5f1d65d814195aa594b09797.jpg'
 ---
 
 ## 一、主要

@@ -73,6 +73,9 @@
 <div class="discover">
   {{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
   <span>
+{{ if .Params.img }}
+<span class="post-card" style="background-image: url({{ .Params.img }})"></span>
+{{ end }}
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
   <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
@@ -228,6 +231,9 @@
   <div class="discover">
     {{- range first 8 (where .Site.RegularPages.ByDate.Reverse "Type" "read") -}}
     <span>
+      {{ if .Params.img }}
+      <span class="post-card" style="background-image: url({{ .Params.img }})"></span>
+      {{ end }}
       <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
         <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
         <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
@@ -252,6 +258,9 @@
           <div class="discover">
             {{- range first 4 (where .Site.RegularPages.ByDate.Reverse "Type" "net") -}}
             <span>
+              {{ if .Params.img }}
+             <span class="post-card" style="background-image: url({{ .Params.img }})"></span>
+              {{ end }}
               <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
                 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
                 <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
