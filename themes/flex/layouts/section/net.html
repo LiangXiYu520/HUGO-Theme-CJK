@@ -17,14 +17,16 @@
   <div class="discover-wrap">
     <div class="discover">
       {{- range .Pages.ByDate.Reverse -}}
-  <span>
+  <div class="discover-grid">
     {{ if .Params.img }}
-<span class="post-card" style="background-image: url({{ .Params.img }})"></span>
+<div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
 {{ end }}
-    <div class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</div>
+<div class="discover-grid-sub">
+    <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
       <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-      <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
-  </span>
+      <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
+    </div>
+    </div>
       {{ end }}
 </div>
 </div> 

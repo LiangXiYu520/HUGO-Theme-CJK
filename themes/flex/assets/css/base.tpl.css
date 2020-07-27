@@ -1,5 +1,6 @@
 :root{
   --bg: #fffae8;
+  --bggray:#f2f2f2;
   --black: #2b2b2b;
   --shallowgray: #b6b5b5;
   --gray: #787878;
@@ -31,6 +32,7 @@
 @media (prefers-color-scheme: dark) {
   :root{
     --bg: black;
+    --bggray:#353535;
     --black: #d5d5d5;
     --shallowgray: #7e7e7e;
     --gray: #969696;
@@ -65,13 +67,18 @@ body {
   text-justify: inter-ideograph;
   background: var(--bg);
   }
+ .home{
+  max-width: 1800px
+ } 
       .home h1{
-        letter-spacing: 0
+        font-size:5em;
+        margin:1em 0 1em
       }
       .home h2{
         letter-spacing: 0;
-        text-align: left;
-        font-size: 1.3em
+        text-align: center;
+font-size: 1.7em;
+margin:-1em auto 0
       }
     p {
       margin:1.3em auto
@@ -130,8 +137,12 @@ a{
 box-shadow: inset 0 -0.5em var(--yellow);
 -webkit-transition: .2s;
 transition: .2s}
-a:hover{
-  box-shadow: none}
+a:hover{box-shadow: none
+}
+.a1{box-shadow:  none
+}
+.a1:hover{color:var(--brown);
+    } 
 strong{
   background: var(--red);
   padding: .1em;
@@ -922,41 +933,29 @@ margin-left:8px
   font-size: 4em;
 }
 .section{
-  border-radius: 2.5em;
-  border: 1px solid var(--black);
-  margin: 8em auto;
-  width:95vw;
-  max-width: 1800px;
-  padding:4em .5em 1em;
-}
-.section h1{
-  font-size:5em;
-  margin:.3em 0 1em
-}
-.section h2{
-text-align: center;
-font-size: 1.7em;
-margin:-1em auto 0
+  padding:3em 1em 1em;
 }
 .section h3{
   margin:0;
   font-size: 1.2em;
   }
   .section1{
-    background: var(--section1);
-    margin-top:0
+    background: var(--section1)
   }
   .section2{
     background: var(--section2);
   }
   .section3{
-    background: var(--section3);
+    background: var(--section3)
   }
 .section4{
-  background: var(--section4);
+  background: var(--section4)
+}
+.section5{
+  background: var(--bg)
 }
 .section6{
-  background: var(--section1);
+  background: var(--section4);
   max-width:62vw;
   margin:0 auto;
   border: none;
@@ -974,9 +973,9 @@ margin:-1em auto 0
   }
   .discover-wrap.more{
     max-width:50em;
-    background:var(--section4);
-    border-radius:1.5em;
+    border-radius:2em;
     padding: 3em 1em 2em;
+    box-shadow:  0 0 16px 0  var(--gray);
   }
   .discover-wrap.top{
   max-width:40em
@@ -989,11 +988,20 @@ margin:-1em auto 0
     grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr));
     gap:3em 1.5em;
     justify-content:center;
+    align-items:start;
     line-height: 1.3;
     text-align:justify;
     }
   .discover h2{
       font-family: var(--codeserif);
+  }
+  .discover-grid{
+    border-radius: 1.3em;
+    box-shadow:  0 0 10px 0  var(--gray);
+    background:var(--bggray);
+  }
+  .discover-grid-sub{
+    padding:0 .5em .8em
   }
 .discover-item{
   margin:0 auto;
@@ -1086,33 +1094,29 @@ box-shadow:none
   margin:1.5em .5em;
   height:10em;
   width: 16em;
-  border: none;
   border-radius:1em;
-  background: var(--section4);
+  background-size:cover;
   text-align:left;
   box-shadow:  0 0 16px 0  var(--black);
 }
-.cover-card-img{
-  background-size:cover;
-}
 .post-card{       
-  display: flex;
   padding-bottom: 62.5%;
   background-size:cover;
   border: none;
-  border-radius:1em;
+  border-top-left-radius:1.24em;
+  border-top-right-radius: 1.24em;
   margin-bottom: .4em;
-  max-width: 21em;
-  max-height: 13.1em
 }
 .post-card-content{
-  padding-bottom:0;
-  width: 21em;
-  height: 13.1em;
-  margin: 1em auto;
   box-shadow:  0 0 16px 0  var(--gray);
+  border-radius:1.3em;
 }
-.cover-card-img:hover{
+.post-card-container{
+  margin: auto;
+	flex:1;
+  max-width: 21em;
+}
+.cover-card:hover{
   transform:scale(1.06,1.06);
   transition: .3s
 }

@@ -52,7 +52,7 @@
   {{ range first 3 .Site.RegularPages.ByPublishDate.Reverse }}
   <div class="paper-wrap">  
   {{ if .Params.img }}
-  <a href="{{ .Permalink }}"target="_blank"><div class="paper-card cover-card cover-card-img" style="background-image: url({{ .Params.img }})">
+  <a href="{{ .Permalink }}"target="_blank"><div class="cover-card" style="background-image: url({{ .Params.img }})">
   </div>
 </a>
 {{ else }}  
@@ -72,10 +72,11 @@
 <div class="discover-wrap">
 <div class="discover">
   {{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
-  <span>
+  <div class="discover-grid">
 {{ if .Params.img }}
-<span class="post-card" style="background-image: url({{ .Params.img }})"></span>
+<div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
 {{ end }}
+<div class="discover-grid-sub">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
   <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
   <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
@@ -105,13 +106,13 @@
     {{ end }}
 {{- end }}
   </div>
-</span>
+</div>
+</div>
   {{ end }}
   </div>
 </div>
-  <h2>最近修改 Recently Modified</h2>
-<div class="discover-wrap">
-<div class="discover" >
+
+  <h2 style="margin-bottom: 1em;">最近修改 Recently Modified</h2>
   {{ $lastmod := slice }}
 {{ range   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post")  }}
 {{ if ne .Lastmod .Date }}
@@ -119,14 +120,13 @@
 {{ end }}
 {{ end }}
 {{ range first 8 $lastmod }}
-<div>
+<center><div>
   <span class="archive-info">{{ .Lastmod.Format "2006-01-02" }}</span>
-  <div><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-</div>
+  <span><a class="a1" href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
+</div></center>
 {{ end }}
-</div>
-</div>
-<h2>分類 Categories</h2>
+
+<h2 style="margin-top: 2em;">分類 Categories</h2>
 <div class="discover-wrap">
 <div class="discover">
   {{ $auth := slice }}
@@ -220,20 +220,20 @@
 </div>
 </div>
 </section>
-
 <section class="section section2">
   <h1 id="wiki"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
   <h2><a href="/read" target="_blank">讀書</a></h2>
 <div class="des">【述要】用十分之一的字數槩述原書內容【讀後】類似書評</div>
-  <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
+  <div class="discover-des">最近發布 Latest</div>
   <div class="discover-wrap">
   <div class="discover">
     {{- range first 8 (where .Site.RegularPages.ByDate.Reverse "Type" "read") -}}
-    <span>
+    <div class="discover-grid section2">
       {{ if .Params.img }}
-      <span class="post-card" style="background-image: url({{ .Params.img }})"></span>
+      <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
       {{ end }}
+      <div class="discover-grid-sub">
       <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
         <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
         <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
@@ -247,49 +247,53 @@
               {{- end -}}
           {{- end -}}
           </div>
-        </span>
+        </div>
+        </div>
   {{ end }}
         </div>
         </div>
   <h2><a href="/net" target="_blank">网文過眼錄</a></h2>  
  {{- with $des := index (.Site.Data.taxo ) "网文" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
-          <div class="discover-des" style="margin: 0 auto 1em">最近發布 Latest</div>
+          <div class="discover-des">最近發布 Latest</div>
           <div class="discover-wrap">
           <div class="discover">
             {{- range first 4 (where .Site.RegularPages.ByDate.Reverse "Type" "net") -}}
-            <span>
+            <div class="discover-grid section2">
               {{ if .Params.img }}
-             <span class="post-card" style="background-image: url({{ .Params.img }})"></span>
+              <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
               {{ end }}
+              <div class="discover-grid-sub">
               <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
                 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
                 <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
-            </span>
+              </div>
+              </div>
           {{ end }}
               </div>
              </div>
-        <div class="gallery" style="margin:0">
-          <div class="paper-wrap">
-   <h2><a href="/tutorial" target="_blank">敎程</a></h2>
+  
+
+        <div class="gallery">
+          <div class="paper-wrap section section2">
+          <h2 style="margin:0 auto"><a href="/tutorial" target="_blank">敎程</a></h2>
           <div class="des">赫赫指北｜搭建基本的知識框架；資源｜一些信息聚合</div>
-            <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
-          <div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
+          <div class="discover-des">隨機生成 Random</div>
+          <div class="paper-card recording" style="border: none"><div class="paper-card-in">
               {{- range first 5 (shuffle (where .Site.RegularPages.ByDate "Type" "tutorial")) -}}
               <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></li>
               {{ end }}
           </div></div></div>
-<div class="paper-wrap">
-  <h2><a href="/exam" target="_blank">考試課堂筆記</a></h2>
-  <div class="des">整理的考試複習資料。世界上最沒用的東西</div>
-  <div class="discover-des" style="margin: 0 auto 1em">隨機生成 Random</div>
-<div class="paper-card recording" style="max-height:none;border:none;max-width:18em"><div class="paper-card-in">
+          <div class="paper-wrap section section2">
+          <h2 style="margin:0 auto"><a href="/exam" target="_blank">考試課堂筆記</a></h2>
+          <div class="des">整理的考試複習資料。世界上最沒用的東西</div> 
+          <div class="discover-des">隨機生成 Random</div>
+<div class="paper-card recording" style="border: none"><div class="paper-card-in">
   {{- range first 5 (shuffle (where .Site.RegularPages.ByDate "Type" "exam")) -}}
   <li style="list-style:none"><span class="archive-info"style="margin:auto">{{ .Date.Format "06-01-02" }}</span>　<a href="{{ .Permalink }}" target="_blank">{{- .Title }}</a></li>
   {{- end -}}
 </div></div></div>
 </div>
 </section>
-
 <section class="section section3">
   <h1 id="gallery"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品</h1>
   <div class="discover-des" style="margin-top:-5.5em">按修改時閒排序</div>
@@ -308,17 +312,16 @@
   </span>
     </div>
   </div>
-  <div class="des" style="margin-bottom:5em;margin-top:-3em">以及，這箇網站。</div>
 </section>
-
 <section class="section section4">
   <h1 id="data"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
+ 
 <div class="gallery" style="margin:0">
-<div class="paper-wrap">
+<div class="paper-wrap section section4">
 <h2 style="margin:0 auto"><a href="/xuekan" target="_blank">春秋學刊</a></h2>
 <div class="des">北師大歷史學院本科生學術刊物</div>
-  <div class="discover-des" style="margin: 0 auto 1em">最近發布</div>
+  <div class="discover-des">最近發布</div>
 <div class="paper-card recording" style="max-height:none;border:none"><div class="paper-card-in">
           {{ range first 5 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
                     <div >
@@ -326,7 +329,7 @@
                     </div>
           {{ end }}
 </div></div></div>
-<div class="paper-wrap" style="max-width:32em">
+<div class="paper-wrap section section4" style="max-width:32em">
 <h2 style="margin:0 auto"><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h2>
 <div class="des">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
 這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
@@ -339,7 +342,6 @@
 </div>
 </div>
 </section>
-
   </main>
 {{ partial "footer-xuekan.html" . }}
 {{ end }}

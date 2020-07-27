@@ -6,9 +6,10 @@ date: 2019-10-06
 lastmod: 2020-06-02
 url: /182
 author: ["柯棋瀚整理"]
-netsort: ["實地錄音"]
+netsort: ["其他"]
 description: '整理一下看到的一些自己感興趣的實地錄音 field recording 的相關信息。目錄：全指向，麥克風，制式，錄音機，經歷，其他。'
 vertical: false
+img: 'https://pic.imgdb.cn/item/5f1e2e6a14195aa59470e974.jpg'
 ---
 
 ## 全指向
