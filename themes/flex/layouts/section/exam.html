@@ -11,14 +11,7 @@
 </section>
 </div>
 <main>
-  <section class="archive-wrapper" style="margin:2em auto 8em">
-  {{ range sort .Pages "File.Path" }}
-        <div class="archive-wrap" style="margin:.7em 0">
-          <div class="archive-right">
-    <span class="archive-title" style="margin-left:0">
-      <time class="archive-info">{{- .Date.Format "2006-01-02" -}}</time>　<a href="{{ .RelPermalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
-    </div>
-</div>{{ end }}
-</section> </main>
+  {{ partial "archive-list.html" . }}
+</main>
  {{ partial "footer-xuekan.html" . }}
 {{ end }}

@@ -6,9 +6,9 @@ lastmod: 2020-04-20
 categories: ["站務"]
 tags: ["coding"]
 url: /226
-markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/post/226actions.md'
 description: '用 GitHub Actions 執行定時任務，生成 Hugo 網頁，發布到 Netlify 託管。沒什麼創新的，只是給自己留箇備忘'
 vertical: false
+img: 'https://pic.imgdb.cn/item/5f1fbec214195aa59489e8c3.jpg'
 ---
 
 ## 一、

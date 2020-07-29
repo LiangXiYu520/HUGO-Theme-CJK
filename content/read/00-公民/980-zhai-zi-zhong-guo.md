@@ -10,8 +10,8 @@ step: ["9愛國"]
 tags: ["哲社科"]
 notes: ["課業"]
 url: /blog/2018/06/11/zhongguo.html
-markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/read/50-哲社科/100-宅茲中國.md'
 description: '大二上期公選課<v>人類學導論</v>作業。很水，肰而分數似乎還不錯。這裏略作修改，可當成一篇很爛的微信推送。'
+img: 'https://pic.imgdb.cn/item/5f20e23314195aa594f4a61d.jpg'
 ---
 
 中國自古就有悠久的國家認同觀念，對其進行歷時性的考察不失爲重要的一步。以下將以<v>誰來決定我們是誰</v><v>殊方未遠：古代中國的疆域、民族與認同</v>兩本書爲中心，對中國歷史上國家認同觀念的演變進行一些梳理。

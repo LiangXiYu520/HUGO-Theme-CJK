@@ -4,28 +4,29 @@
   <header class="Heading">
       <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">春秋學刊</h1>
   </header>
-  {{- $leng1 := len .Data.Pages }}
   {{- $xuekan := where .Site.Taxonomies.categories.目錄 "Type" "xuekan" }}
   {{- $length := len $xuekan  }}
-  {{ $leng2 := sub $leng1 $length }}
+  {{ $leng2 := sub (len .Data.Pages) (len $xuekan) }}
 <section class="des1">
 凡 {{ $length }} 期　{{ $leng2 }} 篇　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}　
 <a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">春秋學刊</span><span class="rss2">RSS</span></a>
 　</section>
 </div>
 <main>
-<section class="archive-wrapper" style="margin:2em auto 8em">
-{{ $leng := add $length 1 }}
-    {{ range $xuekan  }}
-              <div class="archive-wrap" style="margin:.7em 0">
-                <span class="archive-left" style="font-size:1em;color:#8c8c8c">
-                {{ $leng = sub $leng 1  }}{{ $leng }}　</span>
-                <div class="archive-right">
-          <span class="archive-title" style="margin-left:0">
-            <time class="archive-info">{{ .Page.Date.Format "2006-01-02" }}</time>　<a href="{{ .Page.RelPermalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a></span>
+   <div class="discover-wrap">
+     <div class="discover">
+      {{ $leng := add $length 1 }}
+       {{ range $xuekan  }}
+     <div>
+           <div class="archive-left">{{ $leng = sub $leng 1  }}{{ $leng }}</div>
+           <span>
+             <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+             <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+           </span>
+       </div>
+       {{ end }} 
           </div>
-    </div>{{ end }}
-   </section>
+    </div>
        <section class="archive-wrapper" style="margin:-5em auto 0">
          {{ partial "invitation.html" .  | markdownify }}
          </section>

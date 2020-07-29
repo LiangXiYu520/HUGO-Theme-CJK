@@ -13,29 +13,42 @@
 </section>
 </div>
   <main>
-<div class="archive-wrapper" style="margin-top:2em">
+<div class="archive-wrapper" style="margin:-1em auto -3em">
   {{ range .Site.Taxonomies.book.Alphabetical  }}
   <a href="#{{- .Page.Title -}}" style="box-shadow:none;margin-right:1em;word-break:keep-all;font-family:var(--sans)">{{ .Page.Title | safeHTML }}</a>
   {{ end }}
   </div>
-    <div class="archive-wrapper">
+  <div class="archive-wrapper" style="margin-bottom: -2.5em">
       {{ with .Site.Taxonomies.book.踐行社會主義核心價値觀 }}
       {{ $count7 := 0 }}{{ range .Pages }}{{ $count7 = add $count7 .WordCount  }}{{ end }}
        {{ $leng1 := len .Pages }}
       <h2 id="踐行社會主義核心價値觀"style="text-align:left"><span style="background:var(--red);color:var(--bg);padding:.3em 0 .1em">踐行社會主義核心價値觀</span><span class="des3" style="font-family:var(--codesans);letter-spacing:0">　凡 {{ $leng1 }} 篇　{{- $count7 }} 字　篇均 {{ div $count7 $leng1 }} 字</span></h2>
 {{ end }}
-      <div class="des2" style="margin:-2em 0 1em;color:var(--red);font-weight:bold">富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
-<div style="margin-left:2em">
-{{ range .Site.Taxonomies.step.Alphabetical  }}
-  <h4 id="{{- .Page.Title | safeHTML -}}"style="text-align:left;margin:0">{{- .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0"></span></h4>
-  {{ range sort .Pages "File.Path" }}
-<div class="archive-wrap"style="margin:.7em 0;text-align:left">
-  <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>
-  <span class="archive-title"><a href="{{ .Permalink }}"   target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
-</div>
-{{ end }}
-{{ end }}
-</div>
+      <div class="des2" style="margin-top:-2em;color:var(--red);font-weight:bold">富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
+  </div>
+  
+<div class="discover-wrap" style="margin:4em auto 0">
+  <div class="discover">
+    {{ range .Site.Taxonomies.step.Alphabetical  }}
+    {{ range sort .Pages "File.Path" }}
+    <div class="discover-grid">
+      {{ if .Params.img }}
+      <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+      {{ end }}
+      <div class="discover-grid-sub">
+      <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}
+        <span class="des2 step">{{ .Params.step }}</span>  
+      </span>
+        <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+        <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+      </div>
+      </div>
+  {{ end }}
+  {{ end }}
+      </div>
+     </div>
+
+<div class="archive-wrapper">
 {{ range .Site.Taxonomies.book.Alphabetical  }}
 {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
  {{ $leng := len .Pages }}

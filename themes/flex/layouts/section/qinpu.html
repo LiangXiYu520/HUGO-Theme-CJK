@@ -13,13 +13,15 @@
 </section>
 </div>
 <main>
-<section class="archive-wrapper" style="margin:2em auto 8em">
-{{ range .Site.Taxonomies.toc.Alphabetical }}
-    <div class="archive-wrap">
-            <a href="{{ .Page.Permalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a>
-    </div>
-    {{ end }}
-   </section>
+  <div class="discover-wrap">
+    <div class="discover">
+      {{ range .Site.Taxonomies.toc.Alphabetical }}
+    <div>
+      <a href="{{ .Page.Permalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a>
+      </div>
+      {{ end }} 
+         </div>
+   </div>
  </main>
  {{ partial "footer-xuekan.html" . }}
 {{ end }}

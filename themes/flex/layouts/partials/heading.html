@@ -11,7 +11,64 @@
       {{ else if and $.Site.Taxonomies.author (eq $termName "author") }}
 <span class="Heading-title finder"><a href="/">赫赫文王</a>»作者»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
 {{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
-      {{ else }}
+{{ else if and $.Site.Taxonomies.tags (eq $termName "tag") }}
+<span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/post">网誌</a>»<a href="/tags">標籤</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
+{{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+{{ else if and $.Site.Taxonomies.toc (eq $termName "toc") }}
+<span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»<a href="/qinpu">琴譜數字文本化</a>»
+  {{- with .Params.toc -}}
+              {{- range . -}}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "toc/%s" $name) | default ($.Site.GetPage "term" (printf "toc/%s" ($name | urlize))) -}}
+            <a href="/toc/{{ $name }}">{{- $name -}}</a>
+              {{- end -}}
+              {{- end -}}
+          {{- end -}}
+</span>
+<h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
+
+{{ else if and $.Site.Taxonomies.auth (eq $termName "auth") }}
+{{ $termName := .Data.Singular }}
+{{ $type := .Type }}
+    <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/xuekan">春秋學刊</a>»作者»
+      {{- with .Params.auth -}}
+                  {{- range . -}}
+                  {{- $name := . -}}
+                  {{- with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) -}}
+                <a href="/auth/{{ $name }}">@{{- $name -}}</a>
+                  {{- end -}}
+                  {{- end -}}
+              {{- end -}}
+    </span>
+    <h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
+
+    {{ else if and $.Site.Taxonomies.from (eq $termName "from") }}
+    <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/xuekan">春秋學刊</a>»來源»
+      {{- with .Params.from -}}
+                  {{- range . -}}
+                  {{- $name := . -}}
+                  {{- with $.Site.GetPage "term" (printf "from/%s" $name) | default ($.Site.GetPage "term" (printf "from/%s" ($name | urlize))) -}}
+                <a href="/from/{{ $name }}">{{- $name -}}</a>
+                  {{- end -}}
+                  {{- end -}}
+              {{- end -}}
+    </span>
+    <h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
+
+    {{ else if and $.Site.Taxonomies.subject (eq $termName "subject") }}
+    <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/xuekan">春秋學刊</a>»分類»
+      {{- with .Params.subject -}}
+          {{- range . -}}
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "term" (printf "subject/%s" $name) | default ($.Site.GetPage "term" (printf "subject/%s" ($name | urlize))) -}}
+        <a href="/subject/{{ $name }}">{{- $name -}}</a>»
+          {{- end -}}
+          {{- end -}}
+      {{- end -}}
+    </span>
+    <h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
+
+{{ else }}
       <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/post">网誌</a>»
         {{- with .Params.categories -}}
             {{- range . -}}

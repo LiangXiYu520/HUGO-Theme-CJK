@@ -1,0 +1,17 @@
+{{- $paginator := .Paginate .Pages (index 50) }}
+{{- $length := len .Data.Pages }}
+{{ $count4 := add 0 (mul 50 (sub $paginator.PageNumber 1)) }}
+<div class="discover-wrap">
+  <div class="discover">
+    {{ range sort $paginator.Pages "File.Path" }} 
+  <div>
+        <div class="archive-left">{{ $count4 = add $count4 1  }}{{ $count4 }}</div>
+        <span>
+          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+          <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+          {{if .Params.description }}<span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
+        </span>
+    </div>
+    {{ end }} 
+       </div>
+ </div>

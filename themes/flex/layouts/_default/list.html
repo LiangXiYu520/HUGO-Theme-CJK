@@ -1,83 +1,15 @@
 {{ define "main" }}
 <div class="heading-wrap">
 {{ partial "heading.html" . }}
+<section class="des1">
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
-<section class="des1">
 凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">{{- .Title | safeHTML | markdownify -}}</span><span class="rss2">RSS</span></a>
 </section></div>
-{{- $paginator := .Paginate ( .Pages) (index 50) }}
-{{ $count0 := $paginator.PageNumber }}
-  {{ $count1 := add $length 1 }}
-{{ $count2 := sub $count0 1 }}
-{{ $count3 := mul 50 $count2}}
-{{ $count4 := sub $count1 $count3 }}
 <main>
 {{ partial "pagination.html" . }}
-{{ range $paginator.Pages.GroupByDate "2006" }}
-  {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
-   {{ $leng := len .Pages }}
-<section class="year-wrap">
-       <div class="year"><h2>{{ .Key }}<span class="des3">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2></div>
-        <div class="archive-wrapper">
-        {{- range .Pages -}}
-              <div class="archive-wrap">
-        <span class="archive-left">
-        {{ $count4 = sub $count4 1  }}{{ $count4 }}    </span>
-                <span class="archive-right">
-                  <div>
-                      {{- with .Params.author -}}
-                          {{- range . -}}
-                          {{- $name := . -}}
-                          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-                        <a class="archive-info archive-info-author" href="/author/{{ $name }}" target="_blank">@{{- $name -}}</a>
-                          {{- end -}}
-                          {{- end -}}
-                      {{- end -}}
-                  <span class="archive-title"><a href="{{ .RelPermalink }}" target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
-                </div>
-                <div class="archive-info">{{ .PublishDate.Format "06-01-02" }}{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}&nbsp
-            {{ with .Params.categories -}}
-                {{ range . }}
-                {{- $name := . -}}
-                {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-                  <span class="archive-info"><a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
-            {{ with .Params.series -}}
-                {{ range . }}
-                {{- $name := . -}}
-                {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
-            {{ with .Params.tags -}}
-                {{ range . }}
-                {{- $name := . -}}
-                {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/tags/{{ $name }}"  target="_blank">#{{- $name -}}</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
-            {{ with .Params.notes -}}
-                {{ range . }}
-                {{- $name := . -}}
-                {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
-                <span class="archive-info"><a href="/notes/{{ $name }}"  target="_blank">({{- $name -}})</a></span>
-                {{ end -}}
-                {{ end }}
-            {{- end }}
-          </div>
-          </span>
-    </div>
-    {{ end }}
-  </div>
-    </section>
-    {{ end }}
-    <br><br>
+{{ partial "archive.html" . }}
 {{ partial "pagination.html" . }}
 </main>
 
