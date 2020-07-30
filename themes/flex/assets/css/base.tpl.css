@@ -702,6 +702,11 @@ font-size: 1.6em;
 font-weight: bold;
 color: var(--yellow)
 }
+.archive-left-card{
+  float:left;
+  margin: .2em 0 0 .3em;
+  -webkit-text-stroke: 1px #2b2b2b;
+}
 .archive-title {
   margin-left: .5em}
 .archive-title a{

@@ -1,4 +1,5 @@
-{{- $paginator := .Paginate .Pages (index 50) }}
+{{- $paginator := .Paginate (where .Pages "Type" "post") (index 50) }}
+
 {{- $length := len .Data.Pages }}
 {{ $count4 := sub (add $length 1 ) (mul 50 (sub $paginator.PageNumber 1)) }}
 {{ range $paginator.Pages.GroupByPublishDate "2006" }}
@@ -8,7 +9,7 @@
 <div class="year"><h2>{{ .Key }}<span class="des3">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2></div>
 <div class="discover-wrap">
   <div class="discover">
-  {{- range .Pages -}}
+  {{- range (where .Pages "Type" "post") -}}
   
   {{ if .Params.img }}
   <div class="discover-grid">

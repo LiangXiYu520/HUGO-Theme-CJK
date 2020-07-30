@@ -48,21 +48,43 @@
       </div>
      </div>
 
-<div class="archive-wrapper">
 {{ range .Site.Taxonomies.book.Alphabetical  }}
 {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
  {{ $leng := len .Pages }}
 {{ if ne .Page.Title  "踐行社會主義核心價値觀" }}
-<h2 id="{{- .Page.Title | safeHTML -}}"style="text-align:left">{{ .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2>
-  {{ range sort .Pages "File.Path" }}
-<div class="archive-wrap"style="margin:.7em 0;text-align:left">
-  <span class="archive-info">{{ .Date.Format "2006-01-02" }}</span>
-  <span class="archive-title"><a href="{{ .Permalink }}"   target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
+<h2 id="{{- .Page.Title | safeHTML -}}">{{ .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2>
+<div class="discover-wrap">
+  <div class="discover">  
+
+{{ range sort .Pages "File.Path" }}
+
+{{ if .Params.img }}
+<div class="discover-grid">
+  <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
+  </div></div>
+  <div class="discover-grid-sub">
+    <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+    <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+    <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
+  </div>
+  </div>
+{{ else }}
+
+  <div>
+    <span>
+      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+      <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+      {{if .Params.description }}<span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
+    </span>
 </div>
 {{ end }}
 {{ end }}
-{{ end }}
+
 </div>
+</div>
+{{ end }}
+{{ end }}
+
 </main>
     {{ partial "footer-xuekan.html" . }}
 {{ end }}

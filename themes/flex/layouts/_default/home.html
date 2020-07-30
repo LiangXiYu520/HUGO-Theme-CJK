@@ -71,7 +71,7 @@
   <h2>最近發布 Latest</h2>
 <div class="discover-wrap">
 <div class="discover">
-  {{ range first 12 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+  {{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
   <div class="discover-grid">
 {{ if .Params.img }}
 <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
