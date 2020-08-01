@@ -7,7 +7,7 @@ categories: ["站務"]
 tags: ["公吿"]
 url: blog/2017/10/04/shuoming.html
 description: "！！建站啦！！"
-img: 'https://pic.imgdb.cn/item/5f24de7814195aa594f033f1.jpg'
+img: 'https://pic.imgdb.cn/item/5f257a5214195aa5942f33ed.jpg'
 ---
 
 這兩天突發奇想，反正在臺灣度假閒得慌，不如建一箇箇人网誌，說做就做！跟著知乎上 <a href="https://www.zhihu.com/question/20463581" target="\_blank">CNFeat</a> 的答案，鼓搗了兩天，總算基本滿意了。從最開始一臉懵，到逐漸明白一點流程，還是有點小高興的，假裝自己是箇程序員。瞎調一些 css，然後在網頁上看效果，如此反復，調了點字號、行距，把導航欄的一些不用的刪掉，只保留一箇關於，把日期改成中文，底部導航也改成中文。限於電腦技術，網站還有諸多不完善的地方，比如檢索。

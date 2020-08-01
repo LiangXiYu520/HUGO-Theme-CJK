@@ -4,6 +4,7 @@ layout: "gallery"
 author: ["柯棋瀚出品"]
 categories: ["琴"]
 title: "作品｜古琴"
+date: 2018-04-23
 lastmod: 2019-06-12
 url: guqin
 description: '這裏是古琴錄音錄像。學琴五秊，自以爲小有所成，便想發布錄音。弟 1—4 㫷是 2018 秊四月初錄的，不怎麼滿意，在錄音棚狀態跟平時彈不太一樣。計畫以後每秊二月㪅新。

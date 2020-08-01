@@ -4,6 +4,7 @@ layout: "gallery"
 author: ["柯棋瀚出品"]
 categories: ["書"]
 title: "作品｜書法"
+date: 2018-07-22
 lastmod: 2019-07-22
 url: calligraphy
 description: '放一些平時寫的，一點沒有也不行。'

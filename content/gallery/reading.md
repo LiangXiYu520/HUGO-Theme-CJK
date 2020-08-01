@@ -4,6 +4,7 @@ layout: "gallery"
 author: ["柯棋瀚出品"]
 categories: ["漢語"]
 title: "作品｜讀切韻"
+date: 2018-07-01
 lastmod: 2019-03-20
 url: reading
 description: '我又自詡對語言的敏感度比常人畧高一些。暑假突肰對古音感興趣，上古音難度太大，那就中古音吧，便用了半箇月來突擊，知道了一箇大槩。用古音讀書豈不是很美妙的事情？<br>

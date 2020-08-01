@@ -4,6 +4,7 @@ layout: "gallery"
 author: ["柯棋瀚出品"]
 categories: ["襍"]
 title: "作品｜平面設計"
+date: 2017-07-23
 lastmod: 2019-07-23
 url: design
 description: '平時給社團做的一些海報封面之類的，沒有任何水平。'
