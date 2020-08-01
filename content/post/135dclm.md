@@ -5,8 +5,8 @@ date: 2017-06-23
 categories: ["書"]
 series: ["墨池記"]
 notes: ["課業"]
-markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/post/135dclm.md'
 description: '大二下專選<v>中國古代書畫</v>小組展示的講稿。我們組選了<v>搗練圖</v>，我負責其中的題跋。繁簡自動轉換，改了一些，可能還有錯。陳老師這課，簡直是我上過的㝡無聊的課之一，不過並不是說他其他不好，人還是蠻熱心腸的。'
+img: 'https://pic.imgdb.cn/item/5f24ecc314195aa594f53f28.jpg'
 ---
 
 ## 一、

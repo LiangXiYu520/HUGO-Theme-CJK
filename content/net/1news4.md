@@ -5,6 +5,9 @@ title: "网文過眼錄｜人與社會｜四：吗？"
 date: 2020-08-20
 author: ["柯棋瀚整理"]
 netsort: ["人與社會"]
+categories: ["襍"]
+tags: ["觀點"]
+url: net/news-4
 description: '目錄：。'
 vertical: false
 draft: true

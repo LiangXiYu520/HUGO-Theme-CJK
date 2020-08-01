@@ -4,7 +4,7 @@ title: "Brief introduction to Utah"
 date: 2020-04-29
 categories: ["生活"]
 notes: ["課業"]
-url: /227
+url: 227
 description: '硏一下公共選修課《美國歷史與文化》作業'
 vertical: false
 draft: true

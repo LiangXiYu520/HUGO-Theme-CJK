@@ -2,7 +2,12 @@
     <div class="heading-wrap">
       {{ partialCached "banner.html" . }}
       <header class="Heading">
+        {{ range .Site.Sections }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+
             <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»<a class="DocSearch-lvl0" href="/read">讀書</a>»
+        
               {{- with .Params.book -}}
                   {{- range . -}}
                   {{- $name := . -}}
@@ -99,10 +104,9 @@
             {{ .Content }}
           </article>
     {{ end }}
-<section class="u-wrapper">
-  <div class="u-padding">
+
 {{ partial "comments.html" . }}
-</div></section>
+
 </main>
-    {{ partial "footer-xuekan.html" . }}
+    
 {{ end }}

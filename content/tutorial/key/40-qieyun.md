@@ -4,11 +4,12 @@ type: 'tutorial'
 title: "赫赫指北｜切韻語音"
 date: 2018-08-15
 lastmod: 2018-08-23
-url: /blog/2018/08/15/qpyy.html
+url: blog/2018/08/15/qpyy.html
 menu:
   top2019:
     weight: 3
 author: ["柯棋瀚學"]
+categories: ["漢語"]
 tags: ["小學"]
 description: '如有不同，以 PDF 爲準。這是<v>切韻</v>系統的，以實用性的擬音爲重點，以方便記憶每箇字在<v>廣韻</v>的位置。網頁排版很糟糕，可以下載 <a href="https://github.com/kujihhoe/blog-files/raw/master/切韻語音入門.pdf" target="\_blank">PDF</a>。'
 vertical: false

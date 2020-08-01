@@ -4,8 +4,9 @@ type: 'tutorial'
 title: "赫赫指北｜碣石調幽蘭"
 date: 2018-02-27
 lastmod: 2019-01-13
-url: /blog/2018/02/27/youlan.html
+url: blog/2018/02/27/youlan.html
 author: ["柯棋瀚學"]
+categories: ["琴"]
 tags: ["琴譜"]
 description: '去年便想彈幽蘭，但總覺得彈別人的打譜有點不明不白，於心不安，便一直等到這次寒假，得空從頭整理一徧。下面提供一些資料，有了這些，自己按彈幽蘭應該不成問題。'
 ---

@@ -5,6 +5,8 @@ title: "网文過眼錄｜文史｜四："
 date: 2020-07-21
 author: ["柯棋瀚整理"]
 netsort: ["文史"]
+categories: ["史"]
+url: net/history-4
 description: ''
 draft: true
 ---

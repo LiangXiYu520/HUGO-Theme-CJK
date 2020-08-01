@@ -1,0 +1,191 @@
+---
+layout: 'tutorial'
+type: 'tutorial'
+title: "資源｜實地錄音"
+date: 2019-10-04
+lastmod: 2020-06-04
+url: 181
+author: ["柯棋瀚整理"]
+categories: ["錄音"]
+description: '分享這一年多收藏的有關實地錄音的網站。〔六角括號〕中的是我加的說明。要感嘆一下，外國的實地錄音行業眞是非常發達，而中國幾乎找不到職業的實地錄音師，就算有一些零星的箇人興趣作品，質量也不怎麼高。'
+vertical: false
+---
+
+## 論壇 BBS
+
+### 中文
+
+[豆瓣實地錄音小組](https://www.douban.com/group/fieldrec/)　〔可以找到一些喜歡實地錄音的朋友，但現在也沒什麼人人氣，發帖都沒人囘。〕
+
+[音頻應用（錄音混音版）](http://www.audiobar.cn/forum.php?mod=forumdisplay&fid=30)　〔國內的音頻論壇，當然了，不限於實地錄音。〕
+
+### 英文
+
+[Gearslutz](https://www.gearslutz.com/)　〔大型音頻論壇，內容非常豐富，想要什麼搜一下就可以。〕
+
+[Taperssection](http://taperssection.com/index.php?PHPSESSID=ae0244f9db2502392464585f1597fa8d&board=11.0)　〔這箇版，各種實地錄音的設備。〕
+
+## 箇人 Recordists
+
+### 主葉、网誌 Blogs
+
+#### 中文
+
+[尋音](http://fieldsoundscape.blogspot.com/)　〔网誌託管在 Blogspot ，需要翻牆。但實在設計得不好，旣沒有簡介，也沒有聯繫方式，而且還用的即將被淘汰的 flash⋯⋯內容很不錯，保存西南少數民族的傳統音樂。〕
+
+[聲谷](https://www.douban.com/people/snaili/)　〔活躍在喜馬拉雅，人氣很高。裏面有他的裝備介紹。〕
+
+[黑木的人头录音笔](https://music.163.com/radio/?id=1431002&userid=275990862)　DIY人头录音、环境录音。录音日记在公囗众囗号 guitarblack〔看了下他公眾號，看來是同好。不過裝備也確實有點簡陋。〕
+
+<img src="https://pic.superbed.cn/item/5d97064d451253d178a30684.jpg" width="100">　微信公眾號【線所】一箇實驗電臺〔有箇聲音檔案系列。〕
+
+##### 豆瓣
+
+從以下朋友中得出的道理是：不能把平臺放在豆瓣上⋯⋯
+
+[左旋](https://site.douban.com/allenx/)　主攻实地录音，兼带半拉子原创。〔自己錄著玩的，剪輯很少，主要是社會生活的〕
+
+[loops](https://site.douban.com/loops/)　声音是有生命的。记录好声音，营造好心境。〔雷雨風等自然聲音〕
+
+[suy](https://site.douban.com/xiaosuy/)　声音收集〔很多國外的風景〕
+
+[kaaaaaatn](https://site.douban.com/kaaaaaatn/)　〔也是自己錄著玩的，沒什麼剪輯〕
+
+#### 英文
+
+[MARK FERGUSON](http://www.markfergusonaudio.com/ )　〔一位英國野外錄音師，我最喜歡的，沒有之一。他的錄音很溫暖，聲場很寬廣，最重要的事能捕捉到非常細微的聲音。（而且聲音好好聽啊）去錄音可不能是直接往那一立就完事，他都是找了當地的保護機構來協助。〕
+
+[Mindful Audio](https://mindful-audio.com/)　〔極力推薦！〕
+
+[Magnús Bergsson](https://fieldrecording.net/)　〔很不錯的自然錄音〕
+
+[MELISSA PONS](https://thesounddesignprocess.com/)　Between infinite readings of inspiring literature and science, film watching and nature trekking, I keep conjuring many ideas and exploring different approaches to sound from a practical and cultural point of view.　〔有一篇 [如何組織實地錄音材料](https://thesounddesignprocess.com/2020/04/04/a-method-for-organizing-field-recordings-part-1/)〕
+
+[Gordon Hempton](https://www.soundtracker.com/)　〔有很多試聽片段，完整的需要購買。〕
+
+[John Hartog](https://oregonsoundscapes.com)
+
+[wildmountainechoes](https://www.wildmountainechoes.com/)　I'm an ecologist with an interest in sounds and animal communication. I record natural sounds in many areas of the western US, and describe my recording adventures, and the importance of sounds and quiet places on my blog.
+
+[Maryland Nature Recordists](http://www.dannymeltzer.com/mdnr.html)　〔2006 秊建的，時間線永遠停留在了 2009 秊⋯⋯顧名思義，馬里蘭州的自然錄音師組織，成員不多也不少。看到了熟悉的 mkh20〕
+
+[Gregweddig.net](http://gregweddig.net/)　a/v design, field & nature recording. 〔最新一期在 15 秊，不知道還活著沒。一箇美國人的項目？聲音還是很不錯的，就是網頁 css 得調一下，字的對比度太低了。〕
+
+[MANCHESTER SOUND MAN](https://www.petebaileysound.com/)　〔一箇外景錄音師，不是我關注的田野錄音。可以看下他的裝備〕
+
+[Patrick R. Schaefer](http://www.patrickschaefer.com/Sound_for_Picture/gear.html)　〔欣賞一下裝備〕
+
+[Thomas Gulyás](http://tgmediasound.dk/english/equipment.html)　〔欣賞一下裝備〕
+
+### Soundcloud
+
+[羅fei](https://soundcloud.com/luofeiart)　〔一位昆明的愛好者，只找到了他的 Soundcloud，需要翻牆。〕
+
+[Bivouac Recording](https://soundcloud.com/bivouacrecording)
+
+[Thijs GeritzPro Unlimited](https://soundcloud.com/thijs-geritz)
+
+[Earth Experience](https://soundcloud.com/earthexperience)
+
+[Field Recordings](https://soundcloud.com/ben-gale-location-recording)
+
+[Sounds of Zeeland](https://soundcloud.com/hetgeluidvanzeeland)
+
+[Ivo Vicic](https://soundcloud.com/ivo-vicic)
+
+[soundlandscapes](https://soundcloud.com/soundlandscapes)
+
+[Veljo Runnel](https://soundcloud.com/estlander)
+
+### Twitter
+
+以下是我關注的：
+
+#### 錄音師
+
+[George Vlad@theGeorgeVlad](https://twitter.com/theGeorgeVlad)
+
+[Michèle Peron@MichelePeron3](https://twitter.com/MichelePeron3)
+
+[felixblume@felixblume](https://twitter.com/felixblume)
+
+[Chris Watson@chrisrwatson](https://twitter.com/chrisrwatson)
+
+[Peter Caeldries@900hz](https://twitter.com/900hz)
+
+[Magnus Bergsson@Hljodmynd](https://twitter.com/Hljodmynd)
+
+[Robbie Elias@DvsSound](https://twitter.com/DvsSound)
+
+[The Recordist@the_recordist](https://twitter.com/the_recordist)
+
+[Curtis Judd@curtisjudd](https://twitter.com/curtisjudd)　〔YouTube 上長期占據首頁的測評達人 這是他的 [網站](https://www.learnlightandsound.com/)〕
+
+#### 廠家
+
+[SCHOEPSMikrofone@SCHOEPSmics](https://twitter.com/SCHOEPSmics)
+
+[DPA Microphones@DPAmicrophones](https://twitter.com/DPAmicrophones)
+
+[Rycote@RycoteUK](https://twitter.com/RycoteUK)
+
+[Sound Devices@sounddevices](https://twitter.com/sounddevices)
+
+## 項目 Projects
+
+### 中文
+
+[清水河 QingShuiHe Field Recording](https://aanda.bandcamp.com/album/qingshuihe-field-recording)　〔我買來聽了，說實話不敢恭維，沒怎麼剪輯，錄音過程中產生的噪音也不少〕
+
+[臺灣聲景協會](https://www.soundscape.org.tw/articles/)　〔專注於大自然的聲音風景，以保護生物多樣性爲宗旨。〕
+
+[Bivouac Recording](http://www.bivouacrecording.cn/)　一个实地录音品牌且提供录音服务的公司，致力于在中国推进独立现场录音项目。Terence是生活在上海的美国人、录音师和声音艺术家，经营着一个叫“Bivouac Recording”的实地录音厂牌。〔感覺找到了組織！B 站上有兩集他的 [vlog](https://www.bilibili.com/video/av38721879/?spm_id_from=333.788.videocard.0)〕
+
+ [<v>成都印象</v>](http://news.sina.com.cn/o/2017-12-03/doc-ifyphkhm0026206.shtml)、[<v>廈門──聲音印象</v>](http://mp.weixin.qq.com/s/qi2sSb04QpU7xpVrpiywqg)　〔中央人民廣播電臺中國之聲製作。緫感覺有濃濃的「新聞味」，我是不傾向於這樣的，有點太官方了。看到他們的裝備，錄音機是日系的錄音筆，好簡陋。話筒沒認出來。〕
+
+<img src="https://pic.superbed.cn/item/5da2bc6c9dc6d64c0b3efd9e.jpg" width="500"><img src="https://pic.superbed.cn/item/5da2bc699dc6d64c0a7200bf.jpg" width="500">
+
+### 英文
+
+[Quiet American](http://www.quietamerican.org/introduction.html)　The world makes its own music, but we rarely listen with naive ears. Quiet American is the manipulation of sounds I hear and record.
+
+[Listening Earth](https://www.listeningearth.com/LE/index.php)
+
+[Voices of a Flyway](https://voicesofaflyway.com/project-details/)
+
+## 其他 Other
+
+### 書
+
+#### 實地錄音
+
+- <v>一平方英寸的寂靜</v>
+- 范欽慧<v>大自然聲景</v>，上海交大出版社，2016 秊。本书叙述了26个探索声音历程的小故事。附有23则身临其境的声音注释以及12段珍贵的台湾当地原音声景。
+
+#### 其他
+
+- (美) 约翰·厄格尔著;罗德寿译<v>录音</v>1982，J933 2
+- 帕维拉著，黄布华,胡荣泉译《传声器的原理及使用技巧》，1984，TN641 3
+- 俞锫, 李俊梅编著<v>拾音技术 </v>2003
+- (加) Tim Crich著;刘心睿, 赵颖译 刘心睿 赵颖<v>录音师实战技巧 Recording tips for engineers</v>2011，TN912.12 bnu4-2
+- 彭妙颜, 周锡韬编著《现代传声器原理、拾音技术与系统集成》，2012，TN641 bnu1
+- 朱伟, 陈即第, 孙泓<v>录音技术</v>2017，TN912.12 bnu14
+- (美) 雷·A·雷伯恩著;Ray A. Rayburn 张一龙译《John Eargle的传声器设计与应用指南》*Eargle's microphone book: from mono to stereo to surround-a guide to microphone design and application*，2019，TN641 bnu6
+
+### 購物網站
+
+[Cold Gold](https://contactmicrophones.com/)　〔加拿大的，專賣接觸式麥克風。雖然是免費全球快遞，但切記要讓他發貴的有流程追蹤的快遞，要不然你肯定收不到。別問我怎麼知道的〕
+
+[Sweetwater](https://www.sweetwater.com/)
+
+[Thomann](https://www.thomann.de/intl/index.html)
+
+[wendysbroadcast](https://wendysbroadcast.co.uk/)
+
+購物網站還有很多很多。
+
+### 音頻平臺
+
+[Freesound](https://freesound.org/)
+
+https://pod.space/　〔播客儲存空間〕

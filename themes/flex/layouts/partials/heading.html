@@ -3,7 +3,7 @@
   {{ $termName := .Data.Singular }}
   {{ $type := .Type }}
   {{  if and $.Site.Taxonomies.categories (eq $termName "category") }}
-  <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/post">网誌</a>»分類»</span><h1 class="DocSearch-lvl0 Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
+  <span class="Heading-title finder"><a href="/">赫赫文王</a>»分類»</span><h1 class="DocSearch-lvl0 Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
 {{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
     {{ else if and $.Site.Taxonomies.series (eq $termName "series") }}
   <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/post">网誌</a>»系列»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
@@ -12,7 +12,7 @@
 <span class="Heading-title finder"><a href="/">赫赫文王</a>»作者»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
 {{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
 {{ else if and $.Site.Taxonomies.tags (eq $termName "tag") }}
-<span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/post">网誌</a>»<a href="/tags">標籤</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
+<span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/tags">標籤</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">{{- .Title | safeHTML | markdownify -}}</h1>
 {{- with $des := index (.Site.Data.taxo ) .Title -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
 {{ else if and $.Site.Taxonomies.toc (eq $termName "toc") }}
 <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»<a href="/qinpu">琴譜數字文本化</a>»

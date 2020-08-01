@@ -5,9 +5,9 @@ author: ["柯棋瀚學"]
 title: "康德<v>世界公民觀點之下的普遍歷史觀念</v>述要 Kant *Idee zu einer allgemeinen Geschichte in weltbürgerlicher Absicht*"
 date: 2018-06-16
 book: ["踐行社會主義核心價値觀"]
-tags: ["哲社科"]
+categories: ["哲社科"]
 step: ["3文明"]
-url: /read/einer-allgemeinen-geschichte-in-weltbürgerlicher-absicht
+url: read/einer-allgemeinen-geschichte-in-weltbürgerlicher-absicht
 description: '康德將他堅實的理性貫徹到歷史中，形成了理性的普遍歷史。歷史是大自然隱秘計畫的實現，自然構成歷史發展的動力。人類的自然稟賦就是將理性充分發揮出來，每一代都將自己發展後的理性傳給下一代。人類具有非社會的社會性，在互相爭鬥中向大自然的計畫發展。而理性的歷史發展到最高點，則是建立完美的公民憲法和國家間的對外關係'
 img: 'https://pic.imgdb.cn/item/5f20e23314195aa594f4a629.jpg'
 ---

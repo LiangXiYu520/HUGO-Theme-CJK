@@ -6,15 +6,15 @@
 </header>
 </div>
   <main>
-  <div class="u-wrapper">
-    <div class="u-padding">
-  <section class="cate">
+
+  <section class="u-wrap">
+	  <div class="cate">
     {{ range .Data.Terms.Alphabetical }}
       <li class="cate-wrap"><a class="Tags-link u-clickable" href="{{ .Page.RelPermalink }}">{{ .Page.Title | safeHTML  }} {{ .Count }}</a></li>
     {{ end }}
+	  </div>
   </section>
-  </div>
-  </div>
+
 </main>
-    {{ partial "footer.html" . }}
+    
 {{ end }}

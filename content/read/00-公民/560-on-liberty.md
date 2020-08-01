@@ -5,9 +5,9 @@ author: ["柯棋瀚學"]
 title: "約翰·密爾<v>論自由</v> 述要 John Stuart Mill *On Liberty*"
 date: 2020-04-28
 book: ["踐行社會主義核心價値觀"]
-tags: ["哲社科"]
+categories: ["哲社科"]
 step: ["5自由"]
-url: /read/on-liberty
+url: read/on-liberty
 description: '1859 年。思想擁有絕對自由；只要不對他人造成危害，就擁有行動自由。國家的根本價値在於發展箇體的價値。[豆瓣](https://book.douban.com/subject/6397522/) 上有討論'
 img: 'https://pic.imgdb.cn/item/5f1f692614195aa5944cd3fa.jpg'
 ---

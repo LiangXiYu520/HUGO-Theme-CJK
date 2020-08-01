@@ -6,9 +6,9 @@ title: "康德<v>回答這個問題：什麼是啓蒙</v>述要 Kant *Beantwortu
 date: 2020-05-01
 lastmod: 2020-05-01
 book: ["踐行社會主義核心價値觀"]
-tags: ["哲社科"]
+categories: ["哲社科"]
 step: ["5自由"]
-url: /read/was-ist-aufklärung
+url: read/was-ist-aufklärung
 description: '一篇小文章，發表于 1784年12月<v>柏林月刊</v> *Berlinische Monatsschrift*。高中時候讀過，現在翻出來再看一下。網上可參考 [這篇](https://www.kosmoschina.org/%E6%BE%84%E6%B8%85%E6%AD%A4%E9%97%AE%E9%A2%98%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AF%E5%90%AF%E8%92%99%EF%BC%9F%EF%BC%8F%E8%AE%B8%E5%AE%8F/)'
 img: 'https://pic.imgdb.cn/item/5f1f692614195aa5944cd3f1.jpg'
 ---

@@ -5,6 +5,8 @@ title: "网文過眼錄｜文史｜一：歷史研究要抓住眞正重要的問
 date: 2020-05-21
 author: ["柯棋瀚整理"]
 netsort: ["文史"]
+categories: ["史"]
+url: net/history-1
 description: '「思想史研究，一定要圍繞當時人們實際在討論的問題，而不是圍繞我們今天的問題來展開。有關命題和討論跟當時的統治過程是密切聯繫在一起的。」目錄：甲骨文，經學，雜談。'
 img: 'https://pic.imgdb.cn/item/5f1d5d2a14195aa594ab15a2.jpg'
 ---

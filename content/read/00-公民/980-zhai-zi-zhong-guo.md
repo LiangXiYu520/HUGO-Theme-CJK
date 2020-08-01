@@ -7,9 +7,9 @@ date: 2017-01-11
 lastmod: 2017-01-11
 book: ["踐行社會主義核心價値觀"]
 step: ["9愛國"]
-tags: ["哲社科"]
+categories: ["哲社科"]
 notes: ["課業"]
-url: /blog/2018/06/11/zhongguo.html
+url: blog/2018/06/11/zhongguo.html
 description: '大二上期公選課<v>人類學導論</v>作業。很水，肰而分數似乎還不錯。這裏略作修改，可當成一篇很爛的微信推送。'
 img: 'https://pic.imgdb.cn/item/5f20e23314195aa594f4a61d.jpg'
 ---

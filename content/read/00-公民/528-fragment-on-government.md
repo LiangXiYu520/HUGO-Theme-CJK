@@ -5,9 +5,9 @@ author: ["柯棋瀚學"]
 title: "邊沁<v>政府片論</v>述要<n>附導言</n> Jeremy Bentham *a fragment on government*"
 date: 2020-07-23
 book: ["踐行社會主義核心價値觀"]
-tags: ["哲社科"]
+categories: ["哲社科"]
 step: ["5自由"]
-url: /read/fragment-on-government
+url: read/fragment-on-government
 description: '1776 年匿名發表。該書的商榷對象是威廉·布萊克斯通<v>英國法律詮釋</v>。廢話眞是多啊，一半篇幅都在罵可憐的布萊克斯通。看了半天沒懂他想說什麼，還是看看編者導言吧，這篇導言很有賈値。'
 img: 'https://pic.imgdb.cn/item/5f1ad85e14195aa5940d7f32.jpg'
 ---

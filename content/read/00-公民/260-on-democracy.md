@@ -6,9 +6,9 @@ title: "羅伯特·達爾<v>論民主</v>述要 Robert A. Dahl *On Democracy*"
 date: 2020-03-22
 lastmod: 2020-03-22
 book: ["踐行社會主義核心價値觀"]
-tags: ["哲社科"]
+categories: ["哲社科"]
 step: ["2民主"]
-url: /219
+url: 219
 description: '對理想與現實的民主分別進行討論，說了爲何要民主、平等，實現民主的有利不利條件。[豆瓣](https://book.douban.com/subject/10770260/) 上有討論'
 img: 'https://pic.imgdb.cn/item/5f1f692614195aa5944cd3f8.jpg'
 ---

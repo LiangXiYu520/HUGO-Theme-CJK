@@ -30,31 +30,6 @@ HUGO_VERSION = "0.74.3"
 HUGO_ENABLEGITINFO = "true"
 
 [[redirects]]
-from = "https://kqh.life/*"
-to = "https://kqh.me/:splat"
-status = 301
-force = true
-[[redirects]]
-from = "https://kqh.ac/*"
-to = "https://kqh.me/:splat"
-status = 301
-force = true
-[[redirects]]
-from = "https://keke.life/*"
-to = "https://kqh.me/:splat"
-status = 301
-force = true
-[[redirects]]
-from = "https://kujihhoe.com/blog/"
-to = "https://kqh.me/post/"
-status = 301
-force = true
-[[redirects]]
-from = "https://kujihhoe.com/*"
-to = "https://kqh.me/:splat"
-status = 301
-force = true
-[[redirects]]
 from = "https://master--kqh.netlify.com/*"
 to = "https://kqh.me/:splat"
 status = 301
@@ -67,10 +42,5 @@ force = true
 [[redirects]]
 from = "https://kqh.netlify.com/*"
 to = "https://kqh.me/:splat"
-status = 301
-force = true
-[[redirects]]
-from = "https://kqh.ac/en/*"
-to = "https://kqh.me/"
 status = 301
 force = true

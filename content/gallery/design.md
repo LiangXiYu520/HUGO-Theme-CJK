@@ -2,9 +2,10 @@
 type: "gallery"
 layout: "gallery"
 author: ["柯棋瀚出品"]
-title: "平面"
+categories: ["襍"]
+title: "作品｜平面設計"
 lastmod: 2019-07-23
-url: /design
+url: design
 description: '平時給社團做的一些海報封面之類的，沒有任何水平。'
 des: '平時給社團做的一些海報封面之類的，沒有任何水平。'
 ---

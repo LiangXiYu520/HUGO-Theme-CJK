@@ -65,13 +65,13 @@
                 {{- end -}}
             {{- end -}}
             {{- with .Params.auth -}}
-                                {{- range . -}}
-                                {{- $name := . -}}
-                                {{- with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) -}}
-                              <a href="/auth/{{ $name }}">@{{- $name -}}</a>
-                                {{- end -}}
-                                {{- end -}}
-                            {{- end -}}
+                {{- range . -}}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) -}}
+                 <a href="/auth/{{ $name }}">@{{- $name -}}</a>
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
             {{- with .Params.categories -}}
                 {{- range . -}}
                 {{- $name := . -}}

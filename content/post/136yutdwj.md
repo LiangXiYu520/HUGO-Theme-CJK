@@ -6,8 +6,8 @@ lastmod: 2017-11-28
 categories: ["生活"]
 series: ["講閒譚"]
 tags: ["臺灣"]
-markdown: 'https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/post/136yutdwj.md'
 contentCopyright: "此篇爲站長約稿，轉載需經過原作者同意"
+img: 'https://pic.imgdb.cn/item/5f24de7814195aa594f033d9.jpg'
 ---
 
 ## 一、

@@ -5,9 +5,9 @@ author: ["柯棋瀚學"]
 title: "<v>聯邦黨人文集</v>述要 *The Federalist Papers*"
 date: 2020-03-18
 book: ["踐行社會主義核心價値觀"]
-tags: ["哲社科"]
+categories: ["哲社科"]
 step: ["2民主"]
-url: /216
+url: 216
 description: '本來以爲這書會探討高深的政治理論，看了纔發現完全是一些非常務實的討論，對種種質疑進行辯駁，對各種細節進行設想。[豆瓣](https://book.douban.com/subject/1048930/) 上有討論'
 img: 'https://pic.imgdb.cn/item/5f20e23314195aa594f4a62f.jpg'
 ---

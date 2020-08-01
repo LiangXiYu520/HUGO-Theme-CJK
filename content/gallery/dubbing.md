@@ -2,7 +2,8 @@
 type: "gallery"
 layout: "gallery"
 author: ["柯棋瀚出品"]
-title: "旁白 播音"
+categories: ["襍"]
+title: "作品｜旁白 播音"
 lastmod: 2019-04-29
 url: dubbing
 des: '捂臉🤦‍逃走。不用看，純粹自己留箇紀念。'

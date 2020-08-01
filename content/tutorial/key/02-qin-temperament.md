@@ -4,8 +4,9 @@ type: 'tutorial'
 title: "赫赫指北｜琴律學"
 date: 2018-03-07
 lastmod: 2019-11-10
-url: /blog/2018/03/07/qinlv.html
+url: blog/2018/03/07/qinlv.html
 author: ["柯棋瀚學"]
+categories: ["琴"]
 tags: ["琴理"]
 description: '整理自：陳應時<v>琴律學</v>，上海音樂學院出版社，2015 年。其實這本書不僅在說琴律學，更在說琴調學，琴律學是基於科學計算，无甚大的異議，但琴調學一直是箇問題，本文的琴調學觀點暫且完全遵照陳應時，其實這也是琴界通行的觀點。在看本篇之前請一定先看<v>西方律學入門</v>。'
 vertical: false
@@ -86,6 +87,7 @@ vertical: false
 正調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2b0129dc6d6b928f1a089" width="400" alt="text"></center>
+
 慢宮爲角：宮調→慢角調→慢宮調，緊角爲宮：宮調→蕤賓調→清商調
 
 #### 慢角調
@@ -95,6 +97,7 @@ vertical: false
 慢角調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e6329dc6d6b928f1a2a1" width="400" alt="text"></center>
+
 #### 慢宮調
 
 其餘放此，可作練習之用。慢角調→慢宮調：以六弦散音與四絃十一徽按音應，慢六弦。一絃比六弦低八度。再加五絃一箇普通音差 22 音分，五絃散音與二絃九徽按音應，緊五絃。
@@ -102,6 +105,7 @@ vertical: false
 慢宮調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e63a9dc6d6b928f1a2a2" width="400" alt="text"></center>
+
 #### 蕤賓調
 
 正調→蕤賓調：五絃十一徽按音與七弦應，緊五絃。減四絃一箇普通音差 22 音分，四絃散音與二絃十徽按音應，慢四絃。
@@ -109,6 +113,7 @@ vertical: false
 蕤賓調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e6429dc6d6b928f1a2a3" width="380" alt="text"></center>
+
 #### 清商調
 
 蕤賓調→清商調：二絃十一徽按音與四絃散音應，緊二絃。減六弦一箇普通音差，六弦散音與四絃十徽按音應，慢六弦。一絃比六弦低八度。
@@ -116,11 +121,13 @@ vertical: false
 清商調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e64e9dc6d6b928f1a2a4" width="400" alt="text"></center>
+
 #### 徽法律正弄調表
 
 （點擊看大圖）
 
 <center><a href="https://www.superbed.cn/pic/5be2e6569dc6d6b928f1a2a5" target="\_blank"><img src="https://www.superbed.cn/pic/5be2e6569dc6d6b928f1a2a5" width="100%" alt="text"></a></center>
+
 #### 側商調
 
 慢角調→側商調：二絃十一徽按音與四絃散音應，慢四絃。四絃十徽按音與六弦散音應，慢六弦。一絃爲宮：宮、商、角、變徵、羽、少宮、少商，二絃爲宮：清羽、宮、商、角、徵、羽、少宮。三絃散音與一絃十一徽應、四絃散音與二絃十一徽應，故一─三、二─四爲徽法律大三度；三、四、五十徽按音與五、六、七散音應，故三─五、四─六、五─七爲純四度。全合徽法律。
@@ -128,6 +135,7 @@ vertical: false
 側商調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e6689dc6d6b928f1a2a6" width="390" alt="text"></center>
+
 #### 淒涼調
 
 正調→淒涼調：二絃十一徽按音與四絃散音應，緊二絃。五絃十一徽按音與七弦散音應，緊七弦。
@@ -137,6 +145,7 @@ vertical: false
 淒涼調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e6719dc6d6b928f1a2a7" width="400" alt="text"></center>
+
 #### 无媒調
 
 「可演奏仲呂、黃鐘、林鐘三均同主音犯調的曲子。」奏慢角調黃鐘均旋律，二七散音低了一箇普通音差，奏慢宮調林鐘均，二五七低了一箇普通音差，要用其他絃較之高一箇普通音差的按音來替代。
@@ -146,6 +155,7 @@ vertical: false
 无媒調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e67a9dc6d6b928f1a2a8" width="350" alt="text"></center>
+
 #### 間弦調
 
 正調→間弦調：一絃十一徽按音與三絃散音應，慢三絃。五絃十一徽按音與七弦散音應，緊五絃。可演奏仲呂、黃鐘、无射三均相犯的犯調琴曲。演奏黃鐘均旋律，二七散音低了一箇普通音差，要用高一箇普通音差的他絃按音代替；演奏无射均旋律，四絃散音高了一箇普通音差。
@@ -153,6 +163,7 @@ vertical: false
 間弦調調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e6839dc6d6b928f1a2a9" width="400" alt="text"></center>
+
 #### 徽法律側弄調表
 
 （點擊看大圖）
@@ -170,6 +181,7 @@ vertical: false
 將上表取三─七弦中準的泛音，略去重複，可見正弄調泛音在一箇八度內用了十律：
 
 <center><img src="https://www.superbed.cn/pic/5be2e6b19dc6d6b928f1a2ac" width="600" alt="text"></center>
+
 #### 正弄調徽位按音
 
 （點擊看大圖）
@@ -178,6 +190,7 @@ vertical: false
 可見正調徽位音（包含散泛按音）用了十五律：
 
 <center><img src="https://www.superbed.cn/pic/5be2e6c59dc6d6b928f1a2af" width="570" alt="text"></center>
+
 如遇高或低了一箇普通音差，要用他絃按音替換。
 
 注釋：慢宮調變徵聲：徽法律音階中清角─變徵爲小半音 92，徵─變徵爲大半音 112。蕤賓調羽聲：徽法律音階商─羽爲窄五度 680。
@@ -189,14 +202,17 @@ vertical: false
 再結合正調泛音表就可以了。（點擊看大圖）
 
 <center><a href="https://www.superbed.cn/pic/5be2e6d09dc6d6b928f1a2b0" target="\_blank"><img src="https://www.superbed.cn/pic/5be2e6d09dc6d6b928f1a2b0" width="200" alt="text"></a></center>
+
 #### 側商調徽位按音
 
 （點擊看大圖）
 
 <center><a href="https://www.superbed.cn/pic/5be2e6dd9dc6d6b928f1a2b1" target="\_blank"><img src="https://www.superbed.cn/pic/5be2e6dd9dc6d6b928f1a2b1" width="200" alt="text"></a></center>
+
 側商調徽位音（包含散泛按）用了十七律：
 
 <center><img src="https://www.superbed.cn/pic/5be2e6ed9dc6d6b928f1a2b2" width="600" alt="text"></center>
+
 注釋：姑洗宮下變宮聲：徽法律音階中變宮─少宮爲大半音 112。
 
 林鐘宮少商：徽法律音階中：徵─羽爲小全音 182，宮─商爲大全音 204。
@@ -206,9 +222,11 @@ vertical: false
 （點擊看大圖）
 
 <center><a href="https://www.superbed.cn/pic/5be2e6f99dc6d6b928f1a2b3" target="\_blank"><img src="https://www.superbed.cn/pic/5be2e6f99dc6d6b928f1a2b3" width="200" alt="text"></a></center>
+
 淒涼調徽位音用了十七律
 
 <center><img src="https://www.superbed.cn/pic/5be2e7139dc6d6b928f1a2b4" width="600" alt="text"></center>
+
 注釋：太簇宮下變徵聲、林鐘宮變徵聲：徽法律音階少宮─變宮大半音 112，變徵─清角小半音 92。
 
 太簇宮商聲：商─角爲小全音 182，宮─商爲大全音 204。太簇宮變徵聲：角─變徵 204，變徵─徵 112。仲呂宮清角聲：角─清角 112，清角─徵 92。
@@ -218,6 +236,7 @@ vertical: false
 取古籍記載琴長五尺，弦長四尺五分，與<v>幽蘭</v>譜加以對照：
 
 <center><img src="https://www.superbed.cn/pic/5be2e71c9dc6d6b928f1a2b5" width="650" alt="text"></center>
+
 <v>幽蘭</v>第一句「耶臥中指十上半寸許」，準確是九徽八分八釐八毫。( 20/27 - 2/3 )/( 3/4 - 2/3 )= 8/9
 
 ## 三、準法律
@@ -282,6 +301,7 @@ vertical: false
 慢角調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e77f9dc6d6b928f1a2b7" width="400" alt="text"></center>
+
 #### 慢宮調
 
 慢角調→慢宮調：六弦散音與三絃九徽按音應，慢六弦。一絃比六弦低八度。
@@ -289,6 +309,7 @@ vertical: false
 慢宮調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e7899dc6d6b928f1a2b8" width="380" alt="text"></center>
+
 #### 蕤賓調
 
 正調→蕤賓調：五絃散音與三絃十徽按音應，緊五絃。
@@ -296,6 +317,7 @@ vertical: false
 蕤賓調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e7919dc6d6b928f1a2b9" width="400" alt="text"></center>
+
 #### 清商調
 
 蕤賓調→清商調：二絃七徽按音與五絃十徽應，緊二絃。七弦比二絃低八度。
@@ -303,6 +325,7 @@ vertical: false
 清商調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e79c9dc6d6b928f1a2ba" width="380" alt="text"></center>
+
 #### 黃鐘調
 
 黃鐘調也稱淒涼調、古无射、下間絃。正調→黃鐘調：三絃十徽按音與五絃散音應，緊五絃。一絃比五絃低八度。
@@ -310,6 +333,7 @@ vertical: false
 黃鐘調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e7a49dc6d6b928f1a2bb" width="400" alt="text"></center>
+
 #### 无媒調
 
 正調→无媒調：五弦九徽按音與三絃散音應，慢三絃。三絃九徽按音與六弦散音應，慢六弦。
@@ -317,6 +341,7 @@ vertical: false
 无媒調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e7ad9dc6d6b928f1a2bc" width="400" alt="text"></center>
+
 #### 間弦調
 
 正調→間弦調：三絃散音與五弦九徽按音應，慢三絃。一絃散音與三絃九徽按音應，慢一絃。
@@ -324,11 +349,13 @@ vertical: false
 間弦調泛音調弦法：
 
 <center><img src="https://www.superbed.cn/pic/5be2e7b69dc6d6b928f1a2bd" width="400" alt="text"></center>
+
 #### 準法律側弄調表
 
 （點擊看大圖）
 
 <center><a href="https://www.superbed.cn/pic/5be2e7bf9dc6d6b928f1a2be" target="\_blank"><img src="https://www.superbed.cn/pic/5be2e7bf9dc6d6b928f1a2be" width="100%" alt="text"></a></center>
+
 準法律正調徽位泛音與徽法律唯一的不同：徽法律全部用到，準法律第三、六、八、十一徽全不用。
 
 ### 徽位音
@@ -338,28 +365,35 @@ vertical: false
 （點擊看大圖）
 
 <center><a href="https://www.superbed.cn/pic/5be2e7d29dc6d6b928f1a2bf" target="\_blank"><img src="https://www.superbed.cn/pic/5be2e7d29dc6d6b928f1a2bf" width="200" alt="text"></a></center>
+
 準法律徽位泛音只有六律，只可奏慢角、慢宮二調的五聲（加變宮）音階。
 
 <center><img src="https://www.superbed.cn/pic/5be2e7df9dc6d6b928f1a2c0" width="700" alt="text"></center>
+
 #### 準法律正調徽位按音表
 
 （點擊看大圖）第三、六、八、十一、十二、十三徽按音不用。
 
 <center><a href="https://www.superbed.cn/pic/5be2e7ea9dc6d6b928f1a2c1" target="\_blank"><img src="https://www.superbed.cn/pic/5be2e7ea9dc6d6b928f1a2c1" width="200" alt="text"></a></center>
+
 可奏正調、慢角、慢宮的五聲加不同變聲的七聲音階。
 
 <center><img src="https://www.superbed.cn/pic/5be2e7f79dc6d6b928f1a2c2" width="700" alt="text"></center>
+
 #### 準法律外調四變聲徽位泛音表
 
 （點擊看大圖）
 
 <center><a href="https://www.superbed.cn/pic/5be2e8079dc6d6b928f1a2c3" target="\_blank"><img src="https://www.superbed.cn/pic/5be2e8079dc6d6b928f1a2c3" width="200" alt="text"></a></center>
+
 #### 準法律外調四變聲徽位按音表
 
 （點擊看大圖）
 
 <center><a href="https://www.superbed.cn/pic/5be2e8569dc6d6b928f1a2c4" target="\_blank"><img src="https://www.superbed.cn/pic/5be2e8569dc6d6b928f1a2c4" width="200" alt="text"></a></center>
+
 ### 徽間音
 
 <center><img src="https://www.superbed.cn/pic/5be2e86b9dc6d6b928f1a2c5" width="600" alt="text"></center>
+
 附錄：[琴律表](https://github.com/kujihhoe/blog-files/raw/master/%E7%90%B4%E5%BE%8B%E8%A1%A8.pdf)

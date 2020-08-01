@@ -2,9 +2,10 @@
 type: "gallery"
 layout: "gallery"
 author: ["柯棋瀚出品"]
-title: "書法"
+categories: ["書"]
+title: "作品｜書法"
 lastmod: 2019-07-22
-url: /calligraphy
+url: calligraphy
 description: '放一些平時寫的，一點沒有也不行。'
 des: '放一些平時寫的，一點沒有也不行。'
 ---

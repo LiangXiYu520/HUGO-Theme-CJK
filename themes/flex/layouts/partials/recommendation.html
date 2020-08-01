@@ -81,234 +81,283 @@
       {{ $6to20recommend = $20recommend | complement  $5recommend | shuffle }}
       {{ $11to20recommend = $20recommend | complement  $10recommend | shuffle }}
       {{ $21to30recommend = $30recommend | complement  $20recommend | shuffle }}
-      <div class="discover-wrap" style="margin:1em auto 3em">
+      <div class="discover-wrap" style="margin:2em auto 3em">
       <div class="discover">
     {{ if ge (len $recommend) 21 }}
       {{- range first 3 $recommend | shuffle -}}
-      <span>
-      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-      <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-      <div class="des2 home">
-        {{- with .Params.author -}}
-            {{ range . }}
-            {{- $name := . -}}
-            {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-            <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
+        {{ if .Params.img }}
+        <span>
+        <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})">
+        </div>
+        </a></span>
+        {{ else }}
+        <span>
+          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+          <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+          <div class="des2 home">
+            {{- with .Params.author -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+                <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
+                {{- end -}}
+                {{- end -}}
             {{- end -}}
-            {{- end -}}
-        {{- end -}}
-        {{ with .Params.categories -}}
-            {{ range . }}
-            {{- $name := . -}}
-            {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-              &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
-            {{ end -}}
-            {{ end }}
-        {{- end }}
-        {{ with .Params.series -}}
-            {{ range . }}
-            {{- $name := . -}}
-            {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-              <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
-            {{ end -}}
-            {{ end }}
-        {{- end }}
-      </div>
-    </span>
+            {{ with .Params.categories -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+                  &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
+                {{ end -}}
+                {{ end }}
+            {{- end }}
+            {{ with .Params.series -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+                  <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+                {{ end -}}
+                {{ end }}
+            {{- end }}
+          </div>
+          {{ end }}
+        </span>
       {{ end }}
       {{- range first 2 $6to20recommend | shuffle -}}
+      {{ if .Params.img }}
       <span>
-      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-      <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-      <div class="des2 home">
-        {{- with .Params.author -}}
-            {{ range . }}
-            {{- $name := . -}}
-            {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-            <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
-            {{- end -}}
-            {{- end -}}
-        {{- end -}}
-        {{ with .Params.categories -}}
-            {{ range . }}
-            {{- $name := . -}}
-            {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-              &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
-            {{ end -}}
-            {{ end }}
-        {{- end }}
-        {{ with .Params.series -}}
-            {{ range . }}
-            {{- $name := . -}}
-            {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-              <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
-            {{ end -}}
-            {{ end }}
-        {{- end }}
+      <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})">
       </div>
-    </span>
+      </a></span>
+      {{ else }}
+      <span>
+          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+          <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+          <div class="des2 home">
+            {{- with .Params.author -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+                <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
+                {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            {{ with .Params.categories -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+                  &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
+                {{ end -}}
+                {{ end }}
+            {{- end }}
+            {{ with .Params.series -}}
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+                  <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+                {{ end -}}
+                {{ end }}
+            {{- end }}
+          </div>
+          {{ end }}
+        </span>
     {{ end }}
     {{- range first 2  $21to30recommend | shuffle -}}
+    {{ if .Params.img }}
     <span>
-    <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-    <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    <div class="des2 home">
-      {{- with .Params.author -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-          <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
-          {{- end -}}
-          {{- end -}}
-      {{- end -}}
-      {{ with .Params.categories -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-            &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
-      {{ with .Params.series -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-            <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
+    <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})">
     </div>
-</span>
+    </a></span>
+    {{ else }}
+    <span>
+        <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+        <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+        <div class="des2 home">
+          {{- with .Params.author -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+              <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
+              {{- end -}}
+              {{- end -}}
+          {{- end -}}
+          {{ with .Params.categories -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+                &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+          {{ with .Params.series -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+                <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+        </div>
+        {{ end }}
+      </span>
     {{ end }}
     {{ else if ge (len $recommend) 11 }}
     {{- range first 3 $recommend | shuffle -}}
+    {{ if .Params.img }}
     <span>
-    <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-    <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    <div class="des2 home">
-      {{- with .Params.author -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-          <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
-          {{- end -}}
-          {{- end -}}
-      {{- end -}}
-      {{ with .Params.categories -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-            &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
-      {{ with .Params.series -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-            <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
+    <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})">
     </div>
-</span>
+    </a></span>
+    {{ else }}
+    <span>
+        <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+        <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+        <div class="des2 home">
+          {{- with .Params.author -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+              <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
+              {{- end -}}
+              {{- end -}}
+          {{- end -}}
+          {{ with .Params.categories -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+                &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+          {{ with .Params.series -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+                <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+        </div>
+        {{ end }}
+      </span>
     {{ end }}
     {{- range first 2 $6to10recommend | shuffle -}}
+    {{ if .Params.img }}
     <span>
-    <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-    <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    <div class="des2 home">
-      {{- with .Params.author -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-          <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
-          {{- end -}}
-          {{- end -}}
-      {{- end -}}
-      {{ with .Params.categories -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-            &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
-      {{ with .Params.series -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-            <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
+    <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})">
     </div>
-</span>
+    </a></span>
+    {{ else }}
+    <span>
+        <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+        <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+        <div class="des2 home">
+          {{- with .Params.author -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+              <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
+              {{- end -}}
+              {{- end -}}
+          {{- end -}}
+          {{ with .Params.categories -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+                &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+          {{ with .Params.series -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+                <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+        </div>
+        {{ end }}
+      </span>
     {{ end }}
     {{- range first 2 $11to20recommend | shuffle -}}
+    {{ if .Params.img }}
     <span>
-    <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-    <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    <div class="des2 home">
-      {{- with .Params.author -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-          <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
-          {{- end -}}
-          {{- end -}}
-      {{- end -}}
-      {{ with .Params.categories -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-            &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
-      {{ with .Params.series -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-            <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
+    <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})">
     </div>
-</span>
+    </a></span>
+    {{ else }}
+    <span>
+        <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+        <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+        <div class="des2 home">
+          {{- with .Params.author -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+              <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
+              {{- end -}}
+              {{- end -}}
+          {{- end -}}
+          {{ with .Params.categories -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+                &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+          {{ with .Params.series -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+                <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+        </div>
+        {{ end }}
+      </span>
     {{ end }}
     {{ else if le (len $recommend) 10 }}
     {{- range first 7 $recommend | shuffle -}}
+    {{ if .Params.img }}
     <span>
-    <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-    <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    <div class="des2 home">
-      {{- with .Params.author -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-          <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
-          {{- end -}}
-          {{- end -}}
-      {{- end -}}
-      {{ with .Params.categories -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-            &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
-      {{ with .Params.series -}}
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-            <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
-          {{ end -}}
-          {{ end }}
-      {{- end }}
+    <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})">
     </div>
-</span>
+    </a></span>
+    {{ else }}
+    <span>
+        <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+        <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+        <div class="des2 home">
+          {{- with .Params.author -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+              <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
+              {{- end -}}
+              {{- end -}}
+          {{- end -}}
+          {{ with .Params.categories -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+                &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+          {{ with .Params.series -}}
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+                <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+              {{ end -}}
+              {{ end }}
+          {{- end }}
+        </div>
+        {{ end }}
+      </span>
     {{ end }}
     {{ end }}
     {{ $current := slice }}
@@ -324,37 +373,44 @@
   {{ end }}
   {{ end }}
   {{ $others := intersect  $categories  $other }}
-  {{  range first 2 $others | shuffle }}
+  {{  range first 1 $others | shuffle }}
+  {{ if .Params.img }}
   <span>
-  <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-  <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-  <div class="des2 home">
-    {{- with .Params.author -}}
-        {{ range . }}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-        <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
-        {{- end -}}
-        {{- end -}}
-    {{- end -}}
-    {{ with .Params.categories -}}
-        {{ range . }}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-          &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
-        {{ end -}}
-        {{ end }}
-    {{- end }}
-    {{ with .Params.series -}}
-        {{ range . }}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-          <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
-        {{ end -}}
-        {{ end }}
-    {{- end }}
+  <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})">
   </div>
-  </span>
+  </a></span>
+  {{ else }}
+  <span>
+      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+      <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+      <div class="des2 home">
+        {{- with .Params.author -}}
+            {{ range . }}
+            {{- $name := . -}}
+            {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+            <a style="font-size:.9em" href="/author/{{ $name }}">@{{ $name }}</a>
+            {{- end -}}
+            {{- end -}}
+        {{- end -}}
+        {{ with .Params.categories -}}
+            {{ range . }}
+            {{- $name := . -}}
+            {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+              &nbsp<a style="font-size:.9em" href="/categories/{{ $name }}"  target="_blank">[{{ $name }}]</a>
+            {{ end -}}
+            {{ end }}
+        {{- end }}
+        {{ with .Params.series -}}
+            {{ range . }}
+            {{- $name := . -}}
+            {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+              <a style="font-size:.9em" href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+            {{ end -}}
+            {{ end }}
+        {{- end }}
+      </div>
+      {{ end }}
+    </span>
     {{ end }}
     </div>
   </div>

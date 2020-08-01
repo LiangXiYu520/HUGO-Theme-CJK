@@ -90,11 +90,8 @@
           </article>
       </div>
     {{ end }}
+{{ partial "comments.html" . }}   
 {{ partial "recommendation.html" . }}    
-<section class="u-wrapper">
-  <div class="u-padding">
-{{ partial "comments.html" . }}
-</div></section>
 </main>
-    {{ partial "footer.html" . }}
+    
 {{ end }}

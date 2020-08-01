@@ -5,9 +5,9 @@ author: ["柯棋瀚學"]
 title: "托馬斯·內格爾<v>人的問題</v>述要 Thomas Nagel *Mortal Questions*"
 date: 2020-05-07
 book: ["踐行社會主義核心價値觀"]
-tags: ["哲社科"]
+categories: ["哲社科"]
 step: ["6平等"]
-url: /read/mortal-questions
+url: read/mortal-questions
 description: '1979年，14篇小短文組成，150千字。各方面內容都有，不太好分類。總覺得說了半天好有道理，但最後又感覺什麼都沒說。據說是分析哲學的典範。商榷對象有康德、羅爾斯等。[豆瓣](https://book.douban.com/subject/1068227/) 有討論'
 img: 'https://pic.imgdb.cn/item/5f1d905b14195aa594d67758.jpg'
 ---

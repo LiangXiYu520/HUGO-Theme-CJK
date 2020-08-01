@@ -3,8 +3,9 @@ layout: 'tutorial'
 type: 'tutorial'
 title: "赫赫指北｜琴調學"
 date: 2018-03-10
-url: /blog/2018/03/10/qindiao.html
+url: blog/2018/03/10/qindiao.html
 author: ["柯棋瀚學"]
+categories: ["琴"]
 tags: ["琴理"]
 description: '未完工，先別看，不知什麼時候能寫好。看此篇前請先閱讀<v>傳統調學</v>。'
 vertical: false

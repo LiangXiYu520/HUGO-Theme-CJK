@@ -5,9 +5,9 @@ author: ["柯棋瀚學"]
 title: "康德<v>道德形而上學奠基</v>述要 Kant *Groundwork for the Metaphysics of Morals*"
 date: 2018-06-01
 book: ["踐行社會主義核心價値觀"]
-tags: ["哲社科"]
+categories: ["哲社科"]
 step: ["4和諧"]
-url: /blog/2018/06/01/dianji.html
+url: blog/2018/06/01/dianji.html
 description: '康德在這本小冊子中初步建立了他的道德形而上學，這本書的影響甚至超過了他晚年據此寫作的<v>道德形而上學</v>。他規畫了這樣的路徑：由下到上，再由上到下，從普通的知識過渡到其至上原則的規定，再對其加以檢驗，回歸到普通知識。'
 img: 'https://pic.imgdb.cn/item/5f20e23314195aa594f4a62c.jpg'
 ---

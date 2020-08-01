@@ -5,6 +5,9 @@ title: "网文過眼錄｜人與社會｜一：照亮他人還是吞噬自己？
 date: 2020-05-20
 author: ["柯棋瀚整理"]
 netsort: ["人與社會"]
+categories: ["襍"]
+tags: ["觀點"]
+url: net/news-1
 description: '「选择与弱势群众、与老百姓、与人民站在一起，在食腐动物面前，为弱者说不；在倾斜的天平上，为正义加码。要知道，为自由、平等、公正、法治而呐喊，正是你我存在的意义。」'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f1d5d2a14195aa594ab15ac.jpg'

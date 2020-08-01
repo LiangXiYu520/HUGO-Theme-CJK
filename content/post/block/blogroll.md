@@ -7,7 +7,7 @@ date: 2020-04-30
 lastmod: 2020-05-03
 description: '我收集的一些比較有意思的博客'
 vertical: false
-url: /blogroll
+url: blogroll
 menu:
   main:
     weight: 4

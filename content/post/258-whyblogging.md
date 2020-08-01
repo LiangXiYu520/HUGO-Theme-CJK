@@ -4,6 +4,7 @@ title: "博客帶給我什麼？why blogging?"
 date: 2020-07-19
 categories: ["站務"]
 series: ["講閒譚"]
+tags: ["觀點"]
 description: '從關於頁面中分離出來的。我爲什麼建博客？博客帶給我什麼？博客對我而言有什麼有趣的地方？'
 img: 'https://pic.imgdb.cn/item/5f1bd2b714195aa594759c9c.jpg'
 ---
