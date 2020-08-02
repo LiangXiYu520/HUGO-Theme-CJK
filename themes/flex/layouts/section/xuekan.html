@@ -17,13 +17,15 @@
      <div class="discover">
       {{ $leng := add $length 1 }}
        {{ range $xuekan  }}
-     <div>
-           <div class="archive-left">{{ $leng = sub $leng 1  }}{{ $leng }}</div>
-           <span>
-             <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-             <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-           </span>
-       </div>
+       <div class="discover-grid">
+        <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
+          <div class="archive-left archive-left-card">{{ $leng = sub $leng 1  }}{{ $leng }}</div>
+        </div></div>
+        <div class="discover-grid-sub">
+          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+          <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
+        </div>
+        </div>
        {{ end }} 
           </div>
     </div>

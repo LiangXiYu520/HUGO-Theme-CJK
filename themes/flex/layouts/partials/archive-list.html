@@ -4,6 +4,32 @@
 <div class="discover-wrap">
   <div class="discover">
     {{ range sort $paginator.Pages "File.Path" }} 
+
+    {{ if .Params.img }}
+  <div class="discover-grid">
+    <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
+      <div class="archive-left archive-left-card">{{ $count4 = add $count4 1  }}{{ $count4 }}</div>
+    </div></div>
+    <div class="discover-grid-sub">
+      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+      <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+      <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
+      <div class="des2 home">
+        {{- with .Params.author -}}
+            {{ range . }}
+            {{- $name := . -}}
+            {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+            <a href="/author/{{ $name }}">@{{- $name -}}</a>
+            {{- end -}}
+            {{- end -}}
+        {{- end -}}
+
+      </div>
+    </div>
+    </div>
+  {{ else }}
+
+
   <div>
         <div class="archive-left">{{ $count4 = add $count4 1  }}{{ $count4 }}</div>
         <span>
@@ -13,5 +39,7 @@
         </span>
     </div>
     {{ end }} 
+    {{ end }} 
        </div>
  </div>
+

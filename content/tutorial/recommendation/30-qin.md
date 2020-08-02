@@ -7,6 +7,7 @@ author: ["柯棋瀚整理"]
 categories: ["琴"]
 url: recommendation/qin
 description: '這些都是好幾年前收藏的，現在再打開，好多都掛了。網絡世界眞是轉瞬即逝。給自己看的，沒什麼價値'
+img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984813.jpg'
 ---
 
 ## 網站

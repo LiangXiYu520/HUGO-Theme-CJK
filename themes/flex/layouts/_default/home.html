@@ -156,14 +156,14 @@
   {{ with $allCate.ByCount | shuffle }}
   {{ range first 8 . }}
 {{ $first2 := slice }}
-{{ range first 2 .Pages }}
+{{ range first 2 ( where .Pages "Type" "post" ) }}
 {{ $first2 = $first2 | append . }}
 {{ end }}
 {{ $First2inSeries :=  intersect $series $first2  }}
 {{ $thisCateinSeries := slice }}
 {{ $end := slice }}
 {{ $thisCate := slice }}
-    {{ range .Pages | shuffle }}
+    {{ range (where .Pages "Type" "post" ) | shuffle }}
         {{ $thisCate = $thisCate | append . }}
     {{ end }}
 {{ $thisCateinSeries := intersect $thisCate $series }}
@@ -195,8 +195,11 @@
 {{ end }}
 {{ range $author  | shuffle  }}
 <span>
-  <h3><a href="{{ .Page.RelPermalink }}" target="_blank">@{{ .Page.Title | safeHTML }}</a></h3>
-   {{ range .Pages  | shuffle }}
+  <div class="icon-wrap">
+  {{- with $icon := index $.Site.Data.icon .Page.Title -}}<span class="icon" style="background-image: url({{- $icon.icon -}})"></span>{{- end -}}
+  <h3><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML }}</a></h3>
+  </div>
+  {{ range .Pages  | shuffle }}
 <div style="margin-top:.8em"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
 {{ end }}
 </span>

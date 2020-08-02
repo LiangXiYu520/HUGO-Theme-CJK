@@ -9,6 +9,7 @@ author: ["柯棋瀚整理"]
 categories: ["經"]
 url: blog/2018/11/13/ifhssf.html
 description: '這些都是老師整理給我的。臺灣陳鴻森先生的論文在知網不易找到，於是便放上來。大部分都是在數據庫上可以找到的，且都是學術論文。有需要的讀者可以郵箱聯繫我。'
+img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984819.jpg'
 ---
 
 ## 目錄

@@ -1126,6 +1126,17 @@ box-shadow:none
   flex:1;
   max-width: 21em
 }
+.icon-wrap{
+  margin-bottom: 2em;
+}
+.icon{
+  background-size:cover;
+  border-radius:.5em;
+  height:3em;
+  width:3em;
+  float: left;
+  margin-right: 1em;
+}
 .paper-card.recording{
   max-width: 26em;
     max-height:37em;
