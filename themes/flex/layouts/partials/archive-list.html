@@ -4,7 +4,6 @@
 <div class="discover-wrap">
   <div class="discover">
     {{ range sort $paginator.Pages "File.Path" }} 
-
     {{ if .Params.img }}
   <div class="discover-grid">
     <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">

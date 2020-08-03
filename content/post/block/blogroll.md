@@ -4,7 +4,7 @@ type: 'block'
 author: ["柯棋瀚"]
 title: "blogroll"
 date: 2020-04-30
-lastmod: 2020-05-03
+lastmod: 2020-08-03
 description: '我收集的一些比較有意思的博客'
 vertical: false
 url: blogroll
@@ -62,6 +62,10 @@ menu:
 [Tonis Foto Haus](https://www.tonichan.xyz)　Amateur Photographer. Novice Data Scientist.Zhejiang University, Chu Ko Chen Honors College.
 
 [Parimal Satyal](https://neustadt.fr/)　a designer and occasional writer living in Paris. I’m also interested in aviation, cross-cultural exchange,  languages, science, computer history, the small/open web and the  European Union. 〔文章挺有意思〕
+
+## 生活類
+
+[西樓](http://www.westtower.cn/)
 
 ## 高材生
 

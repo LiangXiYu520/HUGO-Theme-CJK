@@ -72,7 +72,7 @@ body {
  } 
       .home h1{
         font-size:5em;
-        margin:1em 0 1em
+        margin:1em 0
       }
       .home h2{
         letter-spacing: 0;
@@ -80,6 +80,12 @@ body {
 font-size: 1.7em;
 margin:-1em auto 0
       }
+      .home h2 a{
+        box-shadow: inset 0 -0.5em var(--yellow)
+        }
+      .home h2 a:hover{
+          box-shadow: none
+        }
     p {
       margin:1.3em auto
     }
@@ -409,7 +415,7 @@ blockquote {
 background: var(--shallowblue);
 margin: 0;
 padding:1px 1em ;
-border-radius: 1.5em}
+border-radius: 1em}
 .vertical blockquote {
   padding:.2em 0;
   margin-top:2em;
@@ -418,7 +424,7 @@ border-radius: 1.5em}
 main {
   flex-grow: 1}
 img {
-  max-width: 125%;
+  max-width: 100%;
   max-height: 100%;
   border-radius: 0.5em;
   border: 1px var(--black) solid;
@@ -855,7 +861,8 @@ margin:2em 1em 0 1em}
 {{ range first 1 . }}
 .home-wrap{
 text-align: center;
-margin: 4em auto 6em
+margin: 4em auto 6em;
+padding:auto .5em
 }
 .home-cover{
   background-image: url("{{ . }}");
@@ -866,6 +873,7 @@ margin: 4em auto 6em
   width:80vw;
   max-width: 1040px;
   border-radius:2em;
+  margin: auto;
   padding: .6em 1em;
   animation-name: footer;
   animation-duration:1.5s;
@@ -976,7 +984,7 @@ margin-left:8px
   max-width:40em
  } 
  .discover-wrap.top ol{
-  line-height: 1.9;
+  line-height: 1.9
  }
   .discover {
     display: grid;
@@ -987,13 +995,27 @@ margin-left:8px
     line-height: 1.3;
     text-align:justify;
     }
+   .column2 {
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    gap:1em 0
+   } 
+   .column2 ul{
+     margin-top: 1em;
+     list-style:none;
+     line-height: 1.9
+    }  
+    .column3 {
+      grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+     }  
   .discover h2{
-      font-family: var(--codeserif);
+      font-family: var(--codeserif)
   }
   .discover-grid{
     border-radius: 1.3em;
     box-shadow:  0 0 10px 0  var(--gray);
     background:var(--bggray);
+    max-height: 40em;
+    overflow: scroll;
   }
   .discover-grid-sub{
     padding:0 .5em .8em
@@ -1002,12 +1024,12 @@ margin-left:8px
   margin:.5em auto .5em;
   line-height:1.3;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.1em
 }
 .discover-item.categories{
   margin:.6em auto ; 
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1em
 }
 .discover-des{
   text-align: center;
@@ -1024,7 +1046,7 @@ box-shadow:none;}
 .discover a:hover{
     color:var(--brown)}
 .gallery{
-margin: 0 2em 2em;
+  margin: 0 2em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1032,7 +1054,8 @@ margin: 0 2em 2em;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   text-align: center;
-max-width: 1800px;}
+max-width: 1800px
+}
 .gallery-card{
   text-align: left;
   margin:2em auto}
@@ -1063,12 +1086,6 @@ box-shadow:none
 .paper-wrap h1 a:hover{
   color:var(--brown)
 }
-.paper-wrap h2 a{
-  box-shadow: inset 0 -0.5em var(--yellow)
-  }
-.paper-wrap h2 a:hover{
-    box-shadow: none
-  }
 .paper-card{
   padding: 1em;
   margin:1em 2em 4em 2em;
@@ -1085,20 +1102,7 @@ box-shadow:none
   -webkit-box-orient: horizontal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap}
-  .cover-card{
-    padding:.5em 1em;
-  margin:1.5em .5em;
-  height:10em;
-  width: 16em;
-  border-radius:1em;
-  background-size:cover;
-  text-align:left;
-  box-shadow:  0 0 16px 0  var(--black);
-}
-.cover-card:hover{
-  transform:scale(1.06,1.06);
-  transition: .3s
-}
+
 .recommendation-card{
   background-size:cover;
   border-radius:1em;
@@ -1149,15 +1153,6 @@ box-shadow:none
   margin: .5em auto ;
   letter-spacing: .2em;
   line-height: 1.4}
-.paper-card.home{
-  max-height:none;
-  border: .3em solid var(--black);
-  max-width:30em;
-margin:0 .5em 5em}
-.paper-card.home a{
-  font-size:1.1em;
-  line-height:2
-}
 .paper-card-in{
   display: block}
 .paper-cardd{
@@ -1226,14 +1221,13 @@ color: var(--brown)}
     .des{
       font-size: 1.3em;
       margin: .5em  0 auto}
-.archive-wrapper,  .discover-wrap{
+.archive-wrapper{
       padding: .5em;
       margin: 0 auto;
       width: 90%}
 .year h2{
         margin:0 }
-.discover-wrap{
-margin:0 auto 5em}
+
     .vertical-wrap{
       display: block;
       margin-left: 0
@@ -1275,15 +1269,8 @@ margin:0 auto 5em}
   width:90%;
     max-height: none;
      border-radius: 1.2em}
-  .cover-card{
-    width:16em
-  }   
 .paper-card.recording{
   max-height: none}
-.paper-card.home{
-  margin: 0;}
-  .paper-card.home a{
-    font-size:1em}
     .cate{
     -moz-column-count:3;
     -webkit-column-count:3;
@@ -1291,6 +1278,13 @@ margin:0 auto 5em}
     }
 }
 @media screen and (max-width:600px){
+  .home h1{
+    font-size:3.7em;
+    letter-spacing: 0;
+  }
+  .section{
+    padding:1.5em .25em .5em
+  }
   .sentence{
     font-size:.85em;
   }
@@ -1309,5 +1303,6 @@ margin:0 auto 5em}
   -webkit-column-count:2;
   column-count:2
   }
-
+  .gallery{
+    margin: 0}
 }

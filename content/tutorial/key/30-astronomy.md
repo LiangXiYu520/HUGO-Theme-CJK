@@ -5,9 +5,6 @@ title: "赫赫指北｜古代天文"
 date: 2019-04-11
 lastmod: 2019-05-04
 url: 159
-menu:
-  top2019:
-    weight: 9
 author: ["柯棋瀚學"]
 categories: ["史"]
 tags: ["厤筭"]
