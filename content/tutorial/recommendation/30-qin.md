@@ -3,6 +3,7 @@ layout: 'tutorial'
 type: 'tutorial'
 title: "資源｜古琴網站"
 date: 2020-05-01
+lastmod: 2020-08-04
 author: ["柯棋瀚整理"]
 categories: ["琴"]
 url: recommendation/qin
@@ -17,6 +18,8 @@ img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984813.jpg'
 [Qin Music](http://www.silkqin.com/)
 
 http://www.geocities.jp/qsshc/cmusic.html　掛了
+
+[愛搜簡字](https://www.isojz.com/) 手寫查詢簡字譜。
 
 ## 博客
 

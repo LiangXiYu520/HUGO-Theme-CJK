@@ -9,6 +9,7 @@ menu:
   main:
     weight: 3
 url: links
+img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96005.jpg'
 ---
 
 想自薦、交換友鏈的小伙伴可以在此葉面下留言，或者發郵件給我，我將在一至三日內囘復。想展示自己網站的朋友也可以留言。

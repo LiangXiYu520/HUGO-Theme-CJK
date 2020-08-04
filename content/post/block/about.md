@@ -10,6 +10,7 @@ menu:
     weight: 1
 url: about
 description: '此文爲本站緫序，包含介紹、說明書與聲明。除了這箇緫序，「古琴」「實地錄音」「書法」「讀切韻音」「旁白配音」均有各自的小序，介紹我爲什麼做這些事情。'
+img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f9600a.jpg'
 ---
 
 ## 吿示

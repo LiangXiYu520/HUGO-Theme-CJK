@@ -11,6 +11,7 @@ url: blogroll
 menu:
   main:
     weight: 4
+img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96003.jpg'    
 ---
 
 ## 人文類
@@ -170,6 +171,8 @@ https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開�
 [madewithover](https://www.madewithover.com/blog)　〔好看〕
 
 [tonsky](https://tonsky.me/)　I’m Nikita. Here I write about programming and UI design
+
+[voshart](https://voshart.com/)　一位VR設計師的博客，有羅馬帝國元首的相貌復原
 
 ## 老字號
 

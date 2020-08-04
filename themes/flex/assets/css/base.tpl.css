@@ -1014,8 +1014,6 @@ margin-left:8px
     border-radius: 1.3em;
     box-shadow:  0 0 10px 0  var(--gray);
     background:var(--bggray);
-    max-height: 40em;
-    overflow: scroll;
   }
   .discover-grid-sub{
     padding:0 .5em .8em

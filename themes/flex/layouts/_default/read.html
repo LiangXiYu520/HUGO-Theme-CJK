@@ -13,7 +13,7 @@
                   {{- end -}}
               {{- end -}}
             </span>
-            <div class="post-card-container"><div class="post-card post-card-content" style="background-image: url({{ .Params.img }})"></div></div>
+            {{ if .Params.img }}<div class="post-card-container"><div class="post-card post-card-content" style="background-image: url({{ .Params.img }})"></div></div>{{ end }}
             <h1 class="DocSearch-lvl1 Heading-title article">{{- .Title | safeHTML | markdownify -}}</h1>
       {{ if .Description }}
       <div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
