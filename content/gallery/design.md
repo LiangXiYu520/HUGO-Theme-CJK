@@ -13,6 +13,7 @@ img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f95ff6.jpg'
 ---
 
 <div class="gallery">
+<p>本站所有封面圖</p>
 <div class="gallery-card">
 <p>2016 秊秋季卷的封面</p>
 <img src="https://pic3.superbed.cn/item/5d365def451253d17898f197.jpg" width="600">

@@ -4,6 +4,7 @@ title: "溫州閒逛"
 date: 2020-07-11
 lastmod: 2020-07-20
 categories: ["生活"]
+series: ["斿記"]
 tags: ["江南"]
 description: '目錄：漁船標宋，華蓋山，大羅山'
 img: 'https://pic.imgdb.cn/item/5f1c56ad14195aa594df772c.jpg'

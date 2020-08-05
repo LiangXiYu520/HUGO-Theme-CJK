@@ -82,7 +82,9 @@
   <h2>最近發布 Latest</h2>
 <div class="discover-wrap">
 <div class="discover">
+  {{ $latest := slice }}
   {{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+  {{ $latest = $latest | append . }}
   <div class="discover-grid">
 {{ if .Params.img }}
 <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
@@ -124,18 +126,56 @@
 </div>
 
   <h2 style="margin-bottom: 1em">最近修改 Recently Modified</h2>
+  {{ $1lastmod := slice }}
   {{ $lastmod := slice }}
 {{ range   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post")  }}
 {{ if ne .Lastmod .Date }}
-{{ $lastmod =$lastmod | append . }}
+{{ $1lastmod = $1lastmod | append . }}
+{{ $lastmod = $1lastmod | complement $latest }}
 {{ end }}
 {{ end }}
-{{ range first 8 $lastmod }}
-<center><div>
-  <span class="archive-info">{{ .Lastmod.Format "2006-01-02" }}</span>
-  <span><a class="a1" href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></span>
-</div></center>
+<div class="discover-wrap">
+  <div class="discover">
+{{ range first 4 $lastmod }}
+<div class="discover-grid">
+  {{ if .Params.img }}
+  <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+  {{ end }}
+  <div class="discover-grid-sub">
+    <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+    <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+    <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
+    <div class="des2 home">
+      {{- with .Params.author -}}
+          {{ range . }}
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+          <a href="/author/{{ $name }}">@{{- $name -}}</a>
+          {{- end -}}
+          {{- end -}}
+      {{- end -}}
+      {{- with .Params.categories -}}
+          {{- range . -}}
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+            　<a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a>
+          {{- end -}}
+          {{- end -}}
+      {{- end -}}
+      {{- with .Params.series -}}
+      {{- range . -}}
+      {{- $name := . -}}
+      {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
+        　<a href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+      {{ end -}}
+      {{ end }}
+  {{- end }}
+    </div>
+  </div>
+  </div>
 {{ end }}
+</div>
+</div>
 <h2 style="margin-top: 2em;">分類 Categories</h2>
 <div class="discover-des">隨機 8 箇分類（凡 12 箇）</div>
 <div class="discover-wrap">
@@ -165,11 +205,11 @@
   {{ $allCate := where .Site.Taxonomies.categories "Type" "post" }}
   {{ with $allCate.ByCount | shuffle }}
   {{ range first 8 . }}
-{{ $first2 := slice }}
-{{ range first 2 ( where .Pages "Type" "post" ) }}
-{{ $first2 = $first2 | append . }}
+{{ $first1 := slice }}
+{{ range first 1 ( where .Pages "Type" "post" ) }}
+{{ $first1 = $first1 | append . }}
 {{ end }}
-{{ $First2inSeries :=  intersect $series $first2  }}
+{{ $first1inSeries :=  intersect $series $first1  }}
 {{ $thisCateinSeries := slice }}
 {{ $end := slice }}
 {{ $thisCate := slice }}
@@ -177,11 +217,11 @@
         {{ $thisCate = $thisCate | append . }}
     {{ end }}
 {{ $thisCateinSeries := intersect $thisCate $series }}
-{{ $end := $thisCateinSeries | complement $First2inSeries  }}
+{{ $end := $thisCateinSeries | complement $first1inSeries  }}
 <span>
 <h3><a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML }}</a></h3>
 <div class="discover-des" style="margin-top:.5em;text-align:left">最近 Latest /</div>
-{{ range $first2 }}
+{{ range $first1 }}
 <div class="discover-item categories"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
 {{ end }}
     <div class="discover-des"style="margin:0;text-align:left">隨機 Random /</div>
