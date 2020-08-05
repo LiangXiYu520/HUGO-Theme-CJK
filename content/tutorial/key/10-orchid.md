@@ -8,6 +8,7 @@ url: blog/2018/02/27/youlan.html
 author: ["柯棋瀚學"]
 categories: ["琴"]
 tags: ["琴譜"]
+tutorial: ["赫赫指北"]
 description: '去年便想彈幽蘭，但總覺得彈別人的打譜有點不明不白，於心不安，便一直等到這次寒假，得空從頭整理一徧。下面提供一些資料，有了這些，自己按彈幽蘭應該不成問題。'
 img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984825.jpg'
 ---

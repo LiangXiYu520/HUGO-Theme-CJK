@@ -8,6 +8,7 @@ url: 163
 author: ["柯棋瀚學"]
 categories: ["史"]
 tags: ["厤筭"]
+tutorial: ["赫赫指北"]
 description: '<p>介佋幾部蚤㫷厤灋，主要是<v>殷曆</v>和<v>三統曆</v>。我也是門外漢，敬請方家指正。</p>'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f26c13414195aa59498481f.jpg'

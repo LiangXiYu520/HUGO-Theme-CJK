@@ -9,7 +9,7 @@ lastmod: 2020-08-05
 url: recording
 description: '日常生活中，耳朵聽到的聲音往往被我们忽畧。現在，我将在這裏發布我的實地錄音，帶領你重新理解聆聽，感受聲音的強大表現力。請在安静的地方戴著耳機聽。<br>In daily life, the sound heard by the ear is often overlooked by us. Now, I will post my field recording here, trying to lead everyone re-understand listening, and feel the expressive power of the sound. Please wear headphones in a quiet place when listening.'
 des: '在日常生活中，耳朵聽到的聲音往往被我们忽畧。而現在，我将帶大家重新理解聆聽，感受聲音的彊大表現力。'
-img: 'https://pic.imgdb.cn/item/5f2a1e3c14195aa594b678b8.jpg'
+img: 'https://pic.imgdb.cn/item/5f2a4dd514195aa594ce64fd.jpg'
 ---
 
 <div class="vertical-false">
@@ -26,8 +26,8 @@ img: 'https://pic.imgdb.cn/item/5f2a1e3c14195aa594b678b8.jpg'
 
 2020 年 8 月 5 日啓用全新 logo：
 
-<img src="https://pic.imgdb.cn/item/5f2a1e3c14195aa594b678bb.jpg" width="240">
-　　<img src="https://pic.imgdb.cn/item/5f2a104914195aa594b0f971.jpg" width="240">
+<img src="https://pic.imgdb.cn/item/5f2a7c7514195aa594e5cbb9.jpg" width="240">
+　　<img src="https://pic.imgdb.cn/item/5f2a7c7514195aa594e5cbbc.jpg" width="240">
 
 原來的話筒可以退役了。
 

@@ -4,7 +4,7 @@ type: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-08-04
+lastmod: 2020-08-05
 url: release
 menu:
   main:
@@ -1850,3 +1850,7 @@ html5 語意標籤改造。
 【算法調整】
 
 主頁最近修改，排除了最近發布的八篇。從列表改成 grid。8 篇減為 4 篇。
+
+把教程、考試分區。
+
+評論加上背景

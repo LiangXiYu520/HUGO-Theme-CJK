@@ -27,6 +27,8 @@ toc = "toc"
 book = "book"
 step = "step"
 netsort = "netsort"
+tutorial = "tutorial"
+exam = "exam"
 [author]                  # essential
   name = "柯棋瀚"
 [sitemap]                 # essential

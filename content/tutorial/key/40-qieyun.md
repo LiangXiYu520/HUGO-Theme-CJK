@@ -11,6 +11,7 @@ menu:
 author: ["柯棋瀚學"]
 categories: ["漢語"]
 tags: ["小學"]
+tutorial: ["赫赫指北"]
 description: '如有不同，以 PDF 爲準。這是<v>切韻</v>系統的，以實用性的擬音爲重點，以方便記憶每箇字在<v>廣韻</v>的位置。網頁排版很糟糕，可以下載 <a href="https://github.com/kujihhoe/blog-files/raw/master/切韻語音入門.pdf" target="\_blank">PDF</a>。'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984823.jpg'

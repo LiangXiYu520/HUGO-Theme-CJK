@@ -217,7 +217,7 @@ date{
 display: inline-flex;
 width:100%;
 margin-left:-2em;
-margin-bottom:7em
+margin-bottom:2em
   }
 .vertical{
   font-family: var(--serif);
@@ -723,13 +723,17 @@ margin: auto}
   color:var(--gray);
   font-family: var(--codesans);
   font-size: .8em}
-.comment{
+  .comment-wrap{
+    background-color: var(--section2);
+    margin: 0 auto 0;  
+  }
+  .comment{
+    padding-top: 4em ;
+    padding-bottom: 4em;
+    margin: 4em auto 0;
   max-width:{{ with site.Params.width }} {{ . }}{{ end }};
   color:var(--black);
-  background-color: var(--bg);
-  padding: .7em 1.7em 0em;
   font-size: .9em;
-  margin: 4em auto 6em;
   line-height: 1.6;
   font-family: var(--sans)
 }
