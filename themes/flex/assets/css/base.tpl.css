@@ -725,7 +725,8 @@ margin: auto}
   font-size: .8em}
   .comment-wrap{
     background-color: var(--section2);
-    margin: 0 auto 0;  
+    margin: 0 auto 0;
+    width: 100vw;  
   }
   .comment{
     padding-top: 4em ;
