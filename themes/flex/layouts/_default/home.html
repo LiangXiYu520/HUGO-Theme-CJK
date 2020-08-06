@@ -7,7 +7,7 @@
             <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
           　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
           </div>
-          {{ $page := where site.RegularPages "Type" "in" site.Params.mainSections  }}
+          {{ $page := where site.RegularPages "Type" "in" site.Params.mainSections }}
           {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　顏色隨機組合，不必在意搭配
           {{- $length := len $page }}
           {{ $count := 0 }}{{ range $page }}{{ $count = add $count .WordCount }}{{ end }}{{ $count1 := div $count 1000 }}
@@ -52,24 +52,23 @@
 
   <div class="discover-wrap">
     <div class="discover">
-      {{- range first 2 .Site.RegularPages.ByDate.Reverse -}}
+      {{- range first 1 (where .Site.RegularPages.ByDate.Reverse "Type" "in" site.Params.otherSections) -}}
       <div>
         <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})"></div></a>
           </div>
       {{ end }}
-      {{ range first 1 (where .Site.RegularPages.ByLastmod.Reverse "Params.Date" "!=" "Params.Lastmod" ) }}
+      {{ $sitelastmod := slice }}
+    {{ range (where .Site.RegularPages.ByLastmod.Reverse "Type" "in" site.Params.otherSections) }}
+    {{ if ne .Lastmod .Date }}
+    {{ $sitelastmod = $sitelastmod | append . }}
+    {{ end }}
+    {{ end }}
+      {{ range first 2 $sitelastmod }}
       <div>
         <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})"></div></a>
           </div>
       {{ end }}
-      {{ $top := slice }}
-      {{ range .Site.Menus.top2018  }}
-      {{ $top = $top | append . | shuffle }}
-      {{ end }}
-      {{ range .Site.Menus.top2019  }}
-      {{ $top = $top | append . | shuffle }}
-      {{ end }}
-      {{ range first 1 $top }}
+      {{ range first 1 (shuffle ( .Site.Menus.top)) }}
       <div><a href="{{ .Page.Permalink }}"  target="_blank"><div class="recommendation-card" style="background-image: url({{ .Page.Params.img }})"></div>
       </a></div>
       {{ end }}

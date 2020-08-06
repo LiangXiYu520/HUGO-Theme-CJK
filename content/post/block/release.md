@@ -4,7 +4,7 @@ type: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-08-05
+lastmod: 2020-08-06
 url: release
 menu:
   main:
@@ -1855,3 +1855,8 @@ html5 語意標籤改造。
 
 【主葉全面 grid】
 
+#### 8 月 6 日
+
+4.7.10
+
+【算法調整】封面的四篇，改成除了網址以外的。詳見 [推薦算法](223)。

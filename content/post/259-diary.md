@@ -3,8 +3,8 @@ author: ["柯棋瀚"]
 title: "閒凥記趣<n>二〇二〇上</n>"
 date: 2020-08-04
 categories: ["生活"]
-series: ["講閒譚"]
-tags: ["故事"]
+series: ["紀日"]
+tags: ["閒凥記趣"]
 description: '從日記中輯出來的。一些有意思的小片段。'
 url: post/diary20a
 img: 'https://pic.imgdb.cn/item/5f28fe4a14195aa5944ded1e.jpg'
