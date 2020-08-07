@@ -1,60 +1,7 @@
 {{ define "main" }}
     <div class="heading-wrap">
     {{ partial "heading.html" . }}
-    <section class="tag">
-    <div class="des1">
-    <time datetime="{{ .Date.Format "2006-01-02" }}">
-  {{ .Date.Format "2006-01-02" }}
-{{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "06-01-02" }}{{ end }}</time>　
-  <span>{{- .WordCount }} 字</span>
-  {{ partial "sourcecode.html" . }}
-    </div>
-    <div class="des1">
-    {{- with .Params.author -}}
-        　<span class="des2">作者</span>
-        {{- range . -}}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-        <span class="des1-cate"><a href="/author/{{ $name }}">@{{- $name -}}</a></span>
-        {{- end -}}
-        {{- end -}}
-    {{- end -}}
-    {{- with .Params.series -}}
-        　<span class="des2">系列</span>
-        {{- range . -}}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-        <span class="des1-cate"><a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
-        {{- end -}}
-        {{- end -}}
-    {{- end -}}
-    {{- with .Params.tags -}}
-        　<span class="des2">標籤</span>
-        {{- range . -}}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
-        <span class="des1-cate"><a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
-        {{- end -}}
-        {{- end -}}
-    {{- end -}}
-    {{- with .Params.notes -}}
-        　<span class="des2">備註</span>
-        {{ range . }}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
-        <span class="des1-cate"><a href="/notes/{{ $name }}">({{- $name -}})</a></span>
-        {{ end -}}
-        {{ end }}
-    {{- end }}
-  </div>
-<div class="des1">
-    {{- if .Params.contentCopyright -}}
-    <span class="des2">版權 </span>{{ .Params.contentCopyright | safeHTML }}
-    {{- else -}}
-    <span class="des2">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
-    {{- end -}}
-</div>
-</section>
+    {{ partial "article-front.html" . }}
     <nav class="pagi-wrap">
     <div class="pagi">
       {{ with .PrevInSection }}

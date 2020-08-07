@@ -87,7 +87,7 @@
   {{ $latest = $latest | append . }}
   <div class="discover-grid">
 {{ if .Params.img }}
-<div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+<div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
 {{ end }}
 <div class="discover-grid-sub">
   <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
@@ -139,7 +139,7 @@
 {{ range first 4 $lastmod }}
 <div class="discover-grid">
   {{ if .Params.img }}
-  <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+  <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
   {{ end }}
   <div class="discover-grid-sub">
     <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
@@ -285,7 +285,7 @@
     {{- range first 12 (where .Site.RegularPages.ByDate.Reverse "Type" "read") -}}
     <div class="discover-grid">
       {{ if .Params.img }}
-      <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+      <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
       {{ end }}
       <div class="discover-grid-sub">
       <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
@@ -314,7 +314,7 @@
             {{- range first 4 (where .Site.RegularPages.ByDate.Reverse "Type" "net") -}}
             <div class="discover-grid">
               {{ if .Params.img }}
-              <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+              <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
               {{ end }}
               <div class="discover-grid-sub">
               <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
@@ -334,7 +334,7 @@
             <div class="discover">
               {{- range first 2 (shuffle (where .Site.Taxonomies.tutorial.赫赫指北 "Type" "tutorial")) -}}
               <div class="discover-grid">
-                <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+                <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
                 <div class="discover-grid-sub">
                 <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
                   <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
@@ -344,7 +344,7 @@
             {{ end }}
             {{- range first 2 (shuffle (where .Site.Taxonomies.tutorial.資源 "Type" "tutorial")) -}}
             <div class="discover-grid">
-              <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+              <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
               <div class="discover-grid-sub">
               <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
                 <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
@@ -380,7 +380,7 @@
   <div class="discover">
     {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
     <div class="discover-grid">
-      <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+      <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
       <div class="discover-grid-sub">
       <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
         <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
@@ -407,7 +407,7 @@
         <div class="discover">
       {{ range first 4 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
       <div class="discover-grid">
-        <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+        <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
         <div class="discover-grid-sub">
           <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
           <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    

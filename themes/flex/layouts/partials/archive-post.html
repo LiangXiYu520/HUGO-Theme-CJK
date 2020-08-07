@@ -2,7 +2,7 @@
 
 {{- $length := len .Data.Pages }}
 {{ $count4 := sub (add $length 1 ) (mul 50 (sub $paginator.PageNumber 1)) }}
-{{ range $paginator.Pages.GroupByPublishDate "2006" }}
+{{ range $paginator.Pages.GroupByDate "2006" }}
 {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
 {{ $leng := len .Pages }}
 <section>
@@ -13,7 +13,7 @@
   
   {{ if .Params.img }}
   <div class="discover-grid">
-    <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
+    <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
       <div class="archive-left archive-left-card">{{ $count4 = sub $count4 1  }}{{ $count4 }}</div>
     </div></div>
     <div class="discover-grid-sub">

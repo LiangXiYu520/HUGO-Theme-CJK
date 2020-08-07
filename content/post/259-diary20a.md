@@ -1,7 +1,8 @@
 ---
 author: ["柯棋瀚"]
-title: "閒凥記趣<n>二〇二〇上</n>"
+title: "閒凥記趣｜二〇二〇上"
 date: 2020-08-04
+publishdate: 2020-08-04
 categories: ["生活"]
 series: ["紀日"]
 tags: ["閒凥記趣"]

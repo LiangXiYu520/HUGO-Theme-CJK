@@ -6,7 +6,7 @@
     {{ range sort $paginator.Pages "File.Path" }} 
     {{ if .Params.img }}
   <div class="discover-grid">
-    <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
+    <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
       <div class="archive-left archive-left-card">{{ $count4 = add $count4 1  }}{{ $count4 }}</div>
     </div></div>
     <div class="discover-grid-sub">

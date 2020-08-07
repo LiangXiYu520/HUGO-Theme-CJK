@@ -1,6 +1,6 @@
 {{ range $.Site.Data.gallery.performing }}
 <div class="discover-grid">
-  <div class="post-card-container"><div class="post-card" style="background-image: url({{ .img }})"></div></div>
+  <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .img }})"></div></div>
   <div class="discover-grid-sub">
   <time class="archive-info">{{ .date }}</time>
     <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .title | safeHTML | markdownify -}}</a></div>

@@ -20,7 +20,7 @@
     <div class="discover">  
   {{ range sort .Pages "File.Path" }}
   <div class="discover-grid">
-    <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
+    <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
     </div></div>
     <div class="discover-grid-sub">
       <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　

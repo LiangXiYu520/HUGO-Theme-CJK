@@ -33,7 +33,7 @@
     {{ range sort .Pages "File.Path" }}
     <div class="discover-grid">
       {{ if .Params.img }}
-      <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+      <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
       {{ end }}
       <div class="discover-grid-sub">
       <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}
@@ -60,7 +60,7 @@
 
 {{ if .Params.img }}
 <div class="discover-grid">
-  <div class="post-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
+  <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
   </div></div>
   <div class="discover-grid-sub">
     <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　

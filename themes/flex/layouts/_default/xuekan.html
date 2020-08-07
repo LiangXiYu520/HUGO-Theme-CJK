@@ -12,37 +12,8 @@
                    {{- end -}}
                {{- end -}}
                </span>
-               {{ if .Params.img }}
-               <div class="post-card-container"><div class="post-card post-card-content" style="background-image: url({{ .Params.img }})"></div></div>
-         {{ end }}
                <h1 class="DocSearch-lvl1 Heading-title article">{{- .Title | safeHTML | markdownify -}}</h1>
-             <section class="tag" style="max-width:20em">
-             <div class="des1">
-             <time datetime="{{ .Date.Format "2006-01-02" }}">
-           {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</time>　
-           <span>{{- .WordCount }} 字</span>
-             </div>
-             {{- with .Params.auth -}}
-                      <div class="des1">
-                 　<span class="des2">作者</span>
-                 {{ range . }}
-                 {{- $name := . -}}
-                 {{- with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) -}}
-                 <span class="des1-cate"><a href="/auth/{{ $name }}">@{{- $name -}}</a></span>
-                 {{ end -}}
-                 {{ end }}
-             {{- end }}
-             {{- with .Params.from -}}
-                 　<span class="des2">來源</span>
-                 {{ range . }}
-                 {{- $name := . -}}
-                 {{- with $.Site.GetPage "term" (printf "from/%s" $name) | default ($.Site.GetPage "term" (printf "from/%s" ($name | urlize))) -}}
-                 <span class="des1-cate"><a href="/from/{{ $name }}">«{{- $name -}}</a></span>
-                 {{ end -}}
-                 {{ end }}
-             {{- end }}
-           </div>
-         </section>
+               {{ partial "article-front.html" . }}
         </div>
       </header>
       <main>

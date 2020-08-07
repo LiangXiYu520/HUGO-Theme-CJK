@@ -7,28 +7,7 @@
       <div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
       {{ end }}
       </header>
-    <section class="tag">
-    <div class="des1">
-    <time datetime="{{ .Date.Format "2006-01-02" }}">
-  {{ .Date.Format "2006-01-02" }}
-{{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "06-01-02" }}{{ end }}</time>　
-  <span>{{- .WordCount }} 字</span>
-{{ partial "sourcecode.html" . }}
-    </div>
-    <div class="des1">
-        　<span class="des2">作者 </span>
-        {{- with .Params.author -}}
-            {{ range . }}
-            {{- $name := . -}}
-            {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-            <span class="des1-cate"> <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
-            {{- end -}}
-            {{- end -}}
-        {{- end -}}
-  </div>
-<div class="des1"><span class="des2">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
-</div>
-</section>
+      {{ partial "article-front.html" . }}
     <nav class="pagi-wrap">
     <div class="pagi">
       {{ with .PrevInSection }}
