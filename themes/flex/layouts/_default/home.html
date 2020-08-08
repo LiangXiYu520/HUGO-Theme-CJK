@@ -50,7 +50,7 @@
     </section>
   </div>
 
-  <div class="discover-wrap">
+  <div class="discover-wrap" style="margin-top: -9em;">
     <div class="discover">
       {{- range first 1 (where .Site.RegularPages.ByDate.Reverse "Type" "in" site.Params.otherSections) -}}
       <div>
@@ -73,7 +73,7 @@
       </a></div>
       {{ end }}
           </div>
-          </div> 
+    </div> 
 
 
 <section class="section section1">
@@ -377,7 +377,7 @@
   <h1 id="gallery"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品</h1>
   <div class="discover-des" style="margin-top:-5.5em">按修改時閒排序</div>
   <div class="discover-wrap">
-  <div class="discover">
+  <div class="discover column3">
     {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
     <div class="discover-grid">
       <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>

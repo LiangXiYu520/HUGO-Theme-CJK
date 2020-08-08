@@ -606,7 +606,7 @@ border-top:1px solid var(--black)
   }
 .cate{
 font-family:  var(--codesans);
-  margin-top: 2em;
+  margin: 2em auto 5em;
 font-size: 1.1em;
 text-align:left;
 -moz-column-count:4;
@@ -995,7 +995,7 @@ margin-left:8px
   font-size: 4em
 }
 .section{
-  padding:3em 1em 1em
+  padding:3em 1em 2em
 }
 .section h3{
   margin:0;
@@ -1172,6 +1172,9 @@ box-shadow:none
   border-top-left-radius:1.24em;
   border-top-right-radius: 1.24em;
   margin-bottom: .4em
+}
+.paper{
+  padding-bottom:160%
 }
 .icon-wrap{
   margin-bottom: 2em;
