@@ -65,4 +65,5 @@ img: 'https://pic.imgdb.cn/item/5f1bd2b714195aa594759c9c.jpg'
 - 一箇看法：<v>[我们需要微信吗](https://www.hxueh.net/27/)</v>
 - <u>博客志</u> 的 [爲何要寫网誌](http://www.jetli.com.cn/about.html)
 - [为什么无法坚持写博客](https://lutaonan.com/blog/reason-why-your-blog-is-not-alive/)
+- [个人博客存在的意义    ](https://sspai.com/post/30457)
 

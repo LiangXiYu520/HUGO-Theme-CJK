@@ -216,6 +216,8 @@ https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開�
 
 [小人物](https://anobody.im/)　海外求職播客。播主在荷蘭工作。
 
+[不在场](buzaichang.xyz)　音乐类
+
 ### 其他
 
 [时间物质](https://matterofti.me/)　20200309正式上線。一个弱社交型博客網站，利用 writefreely 搭建

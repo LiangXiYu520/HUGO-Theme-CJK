@@ -9,7 +9,7 @@
 </div>
 <div class="discover-grid-sub">
 <time class="archive-info">{{ .date }}</time>
-<div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .title | safeHTML | markdownify -}}</a></div>
+<div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
 <div class="des2 home">{{ .description | safeHTML  | markdownify }}</div>
 {{ if .quote }}<div class="des2 home"><blockquote>{{ .quote | safeHTML  | markdownify }}</blockquote></div>{{ end }}
 </div>

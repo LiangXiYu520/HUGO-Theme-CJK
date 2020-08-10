@@ -4,7 +4,7 @@ type: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-08-08
+lastmod: 2020-08-10
 url: release
 menu:
   main:
@@ -1872,3 +1872,9 @@ html5 語意標籤改造。
 4.7.11
 
 【文章發表】也自動化。調整細節。
+
+#### 8 月 10 日
+
+4.7.12
+
+友鏈 grid 化、自動化。

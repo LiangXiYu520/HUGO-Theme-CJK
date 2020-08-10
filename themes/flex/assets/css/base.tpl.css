@@ -1058,8 +1058,11 @@ margin-left:8px
      list-style:none;
      line-height: 1.9
     }  
-    .column3 {
+.column3 {
       grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+     }  
+  .column6 {
+      grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
      }  
   .discover h2{
       font-family: var(--codeserif)
@@ -1168,11 +1171,13 @@ box-shadow:none
 .post-card{       
   padding-bottom: 62.5%;
   background-size:cover;
+  background-repeat: no-repeat;
   border: none;
   border-top-left-radius:1.24em;
   border-top-right-radius: 1.24em;
-  margin-bottom: .4em
-}
+  margin-bottom: .4em;
+  background-position: center;
+}s
 .paper{
   padding-bottom:160%
 }
@@ -1180,12 +1185,16 @@ box-shadow:none
   margin-bottom: 2em;
 }
 .icon{
-  background-size:cover;
+  background-size:contain;
   border-radius:.5em;
   height:3em;
   width:3em;
   float: left;
   margin-right: 1em;
+}
+.links-icon{
+  background-size:contain;
+  padding-bottom:100%
 }
 .paper-card.recording{
   max-width: 26em;

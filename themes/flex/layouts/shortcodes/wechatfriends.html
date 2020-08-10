@@ -1,0 +1,16 @@
+<div class="discover-wrap"><div class="discover column6">
+  {{ range $.Site.Data.links.wechatfriends }}
+{{ if .href }}<a href="{{ .href }}" target="_blank">{{ end }}<div class="discover-grid">
+<div class="archive-card-container">
+  <div class="post-card links-icon" style="background-image: url({{ .img }})">  
+</div>
+</div>
+<div class="discover-grid-sub">
+<div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
+<div class="des2 home">{{ .description | safeHTML  | markdownify }}</div>
+</div>
+</div>
+{{ if .href }}</a>{{ end }}
+{{ end }}
+  </div>
+</div>

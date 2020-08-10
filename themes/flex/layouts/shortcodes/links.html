@@ -1,0 +1,20 @@
+{{ $count := 0 }}
+<div class="discover-wrap"><div class="discover column6">
+  {{ range $.Site.Data.links.blogfriends }}
+<a href="{{ .href }}" target="_blank"><div class="discover-grid">
+<div class="archive-card-container">
+  <div class="post-card links-icon" style="background-image: url({{ .img }})">
+  <div class="archive-left archive-left-card">{{ $count = add $count 1  }}{{ $count }}</div>
+</div>
+</div>
+<div class="discover-grid-sub">
+<time class="archive-info">{{ .date }}</time>
+<div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
+{{ if .description }}<div class="des2 home">{{ .description | safeHTML  | markdownify }}</div>{{ end }}
+{{ if .mydescription }}<div class="des2 home"style="font-family:var(--serif);margin-top:1em">{{ .mydescription | safeHTML  | markdownify }}</div>{{ end }}
+</div>
+</div>
+</a>
+{{ end }}
+  </div>
+</div>
