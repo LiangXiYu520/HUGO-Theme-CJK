@@ -72,7 +72,7 @@ exam = "exam"
          weight = 11
          url = "/qinpu"
 [params]
-  mainSections = ["post","exam","gallery","net","read","tutorial"]  
+  mainSections = ["post","block","exam","gallery","net","read","tutorial"]  
   otherSections = ["exam","gallery","net","read","tutorial","xuekan","qinpu"]  
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
   vertical = true

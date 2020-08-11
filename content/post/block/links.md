@@ -52,6 +52,8 @@ img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96005.jpg'
 
 ~~<img src="https://fengz.me/Avatar.jpg" width="60">　[風過不留痕](https://fengz.me)　望尽天涯路<n>20191006。網站似乎掛了</n>~~
 
-~~[一去二三遥](https://www.moonster.life/) 2018-10-31 一箇想當攝影師却被迫寫代碼的廚子。功法：主修 C++，輔修 Java。友鏈被刪~~
+~~[一去二三遥](https://www.moonster.life/) 2018-10-31 一箇想當攝影師却被迫寫代碼的廚子。功法：主修 C++，輔修 Java。202008友鏈被刪~~
+
+[他與她的夢](https://cncyu.cn/) 2018-11-10 與其臨淵羨魚，不如退而結網 202008網站似乎掛了
 
 </div>
