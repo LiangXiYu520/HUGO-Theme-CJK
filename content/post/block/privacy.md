@@ -1,11 +1,17 @@
 ---
+layout: 'block'
+type: 'block'
 author: ["柯棋瀚"]
-title: "本站的隱私、安全、速度 privacy policy"
+title: "privacy"
 date: 2020-06-07
 categories: ["站務"]
 tags: ["coding"]
+menu:
+  main:
+    weight: 2
 description: '我有必要將本站所有涉及隱私的情況完全透明展示給您。'
 vertical: false
+url: privacy
 img: 'https://pic.imgdb.cn/item/5f1d14fb14195aa5947f1922.jpg'
 ---
 

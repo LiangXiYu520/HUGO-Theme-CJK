@@ -2,6 +2,7 @@
 layout: 'block'
 type: 'block'
 author: ["柯棋瀚"]
+categories: ["站務"]
 title: "donate"
 date: 2017-10-04
 lastmod: 2020-08-12

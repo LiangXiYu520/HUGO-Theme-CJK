@@ -1,16 +1,14 @@
 ---
-layout: 'block'
-type: 'block'
-author: ["柯棋瀚"]
-title: "blogroll"
+layout: 'tutorial'
+type: 'tutorial'
+title: "資源｜blogroll"
+author: ["柯棋瀚整理"]
+categories: ["站務"]
+tutorial: ["資源"]
 date: 2020-04-30
 lastmod: 2020-08-03
 description: '我收集的一些比較有意思的博客'
-vertical: false
-url: blogroll
-menu:
-  main:
-    weight: 4
+url: recommendation/blogroll
 img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96003.jpg' 
 vertical: false
 ---

@@ -2,13 +2,14 @@
 layout: 'block'
 type: 'block'
 author: ["柯棋瀚"]
+categories: ["站務"]
 title: "release"
 date: 2017-10-05
 lastmod: 2020-08-12
 url: release
 menu:
   main:
-    weight: 2
+    weight: 4
 description: "本站更新日誌"
 img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96008.jpg'
 vertical: false

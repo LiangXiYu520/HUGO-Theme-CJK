@@ -2,6 +2,7 @@
 layout: 'block'
 type: 'block'
 author: ["柯棋瀚"]
+categories: ["站務"]
 title: "about"
 date: 2017-10-04
 lastmod: 2020-04-25
@@ -23,7 +24,7 @@ vertical: false
 ## 技術
 
 - 【支持】託管於 ~~<a href="https://pages.github.com" target="\_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="\_blank">kitian616</a> 提供网誌主題模板 Text[jane](https://github.com/xianmin/hugo-theme-jane)，~~，主題基於 Flex 修改。~~<a href="https://tw.godaddy.com/" target="\_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="\_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。古琴關注數統計用的 [Substats](https://sspai.com/post/59593) api。
-- 【隱私】見 [本站的隱私、安全、速度 privacy policy]({{< ref "253-privacy" >}})
+- 【隱私】見 [本站的隱私、安全、速度 privacy policy](/privacy)
 - 【檢索】1、本站已支持 Algolia，歡迎使用！2、直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a><n>Google 收錄得又全又快</n>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。
 - 【大事記】見 [更新](/release)
 - 【板式】見 [示例葉面](/149)
