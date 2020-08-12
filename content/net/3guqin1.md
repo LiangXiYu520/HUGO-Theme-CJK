@@ -8,6 +8,7 @@ netsort: ["其他"]
 categories: ["琴"]
 url: net/qin-2
 description: ''
+vertical: false
 draft: true
 ---
 

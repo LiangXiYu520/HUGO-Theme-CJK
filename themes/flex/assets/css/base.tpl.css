@@ -214,10 +214,9 @@ date{
   margin: .5em 0;
   padding: .7em .3em}
 .vertical-wrap{
-display: inline-flex;
-width:100%;
-margin-left:-2em;
-margin-bottom:2em
+  display: grid;
+  grid-template-columns: minmax(0,10em) 1fr;
+margin:0 1em 5.5em -1em
   }
 .vertical{
   font-family: var(--serif);
@@ -229,14 +228,12 @@ margin-bottom:2em
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     line-height: 1.9em;
-      margin-right:-1.5em;
       padding: .2em 0;
-    height:92vh;
-    min-width:86%;
-    max-height: 39em;
-          background-color: var(--bg);
-          border: .15em solid var(--yellow);
-        border-radius: 3em}
+    height:96vh;
+     max-height: 39em;
+    background-color: var(--bg);
+   border: .15em solid var(--yellow);
+   border-radius: 2em}
 .vertical a{
   color:var(--black);
   text-decoration:none;
@@ -274,16 +271,15 @@ border-bottom: none;
      font-family: var(--sans)
   } 
 .toc{
-      float: right;
-     min-width: 10em;
-     max-width: 15em;
      max-height:96vh;
      overflow: scroll;
      z-index: 2;
+     margin-top: -2.5em;
      margin-right:.5em;
      font-family: var(--sans);
    }
   .toc.sticky {
+    float: right; 
     position: -webkit-sticky;
   position: sticky;
   top: .3em;

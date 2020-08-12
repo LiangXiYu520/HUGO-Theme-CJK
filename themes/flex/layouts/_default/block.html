@@ -4,17 +4,7 @@
       {{ partial "article-front.html" . }}
       </div>
       <main>
-          {{ if .TableOfContents }}
-            <aside class="toc sticky">
-            <li class="toc-item">{{ .TableOfContents }}</li>
-</aside>
-          {{ end }}
-             <article class="DocSearch-content vertical-false">
-                {{ .Content }}
-  </article>
- 
+  {{ partial "content.html" . }}   
   {{ partial "comments.html" . }}
- 
       </main>
-          
     {{ end }}

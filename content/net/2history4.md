@@ -8,6 +8,7 @@ netsort: ["文史"]
 categories: ["史"]
 url: net/history-4
 description: ''
+vertical: false
 draft: true
 ---
 

@@ -4,13 +4,14 @@ type: 'block'
 author: ["柯棋瀚"]
 title: "release"
 date: 2017-10-05
-lastmod: 2020-08-10
+lastmod: 2020-08-12
 url: release
 menu:
   main:
     weight: 2
 description: "本站更新日誌"
 img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96008.jpg'
+vertical: false
 ---
 
 ## 大事記
@@ -1878,3 +1879,11 @@ html5 語意標籤改造。
 4.7.12
 
 友鏈 grid 化、自動化。
+
+#### 8 月 12 日
+
+4.7.13
+
+看到阮一峰的 [教程](https://www.ruanyifeng.com/blog/2020/08/five-css-layouts-in-one-line.html)，便用 grid 重構內容佈局。
+
+加入 [donate](/donate) 頁面。

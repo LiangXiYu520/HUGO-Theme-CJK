@@ -21,28 +21,7 @@
   </nav>
     </div>
     <main>
-{{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
-<div class="vertical-wrap">
-{{ if .TableOfContents }}
-<aside class="toc">
-<li class="toc-item">{{ .TableOfContents }}</li>
-</aside>
-{{ end }}
-    <article class="DocSearch-content vertical">
-    {{ .Content }}
-    </article>
-  </div>
-      {{ else }}
-    {{ if .TableOfContents }}
-      <aside class="toc sticky">
-      <li class="toc-item">{{ .TableOfContents }}</li>
-    </aside>
-    {{ end }}
-         <article class="DocSearch-content vertical-false">
-            {{ .Content }}
-          </article>
-    {{ end }}
-
+{{ partial "content.html" . }}   
 {{ partial "comments.html" . }}
 
 </main>

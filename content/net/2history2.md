@@ -8,6 +8,7 @@ netsort: ["文史"]
 categories: ["史"]
 url: net/history-2
 description: '「當兩個文明相遇時，如何將彼此的歷史記憶安排在同一張通代年表裏，這是相互理解的需要。」目錄：陳志遠老師、重新認識儒家、說文；認識施派；「輕學術」。'
+vertical: false
 img: 'https://pic.imgdb.cn/item/5f1d5d2a14195aa594ab15a5.jpg'
 ---
 

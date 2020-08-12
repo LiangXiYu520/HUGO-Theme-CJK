@@ -11,7 +11,8 @@ url: blogroll
 menu:
   main:
     weight: 4
-img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96003.jpg'    
+img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96003.jpg' 
+vertical: false
 ---
 
 ## 人文類

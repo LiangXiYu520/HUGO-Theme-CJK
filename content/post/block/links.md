@@ -11,6 +11,7 @@ menu:
 url: links
 description: "想自薦、交換友鏈的小伙伴可以在此葉面下留言，或者發郵件給我，我將在一至三日內囘復。想展示自己網站的朋友也可以留言。【要求】<b>非</b>技術類優先。近半年內有更新。本站信息如下，並可按此格式回復： **名称** 赫赫文王 **地址** https://kqh.me **描述** 不务正业的历史系学生一个 **Logo** https://pic.superbed.cn/item/5d974e50451253d178cf241e.png"
 img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96005.jpg'
+vertical: false
 ---
 
 ## 有鄰

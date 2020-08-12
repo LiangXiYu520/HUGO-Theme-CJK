@@ -3,7 +3,6 @@
       {{ partialCached "banner.html" . }}
       <header class="Heading">
             <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»<a class="DocSearch-lvl0" href="/read">讀書</a>»
-        
               {{- with .Params.book -}}
                   {{- range . -}}
                   {{- $name := . -}}
@@ -31,30 +30,7 @@
   </nav>
     </div>
     <main>
-{{ if or .Params.vertical (and .Site.Params.vertical (ne .Params.vertical false)) }}
-<div class="vertical-wrap">
-{{ if .TableOfContents }}
-<aside class="toc">
-<li class="toc-item">{{ .TableOfContents }}</li>
-</aside>
-{{ end }}
-    <article class="DocSearch-content vertical">
-    {{ .Content }}
-    </article>
-  </div>
-      {{ else }}
-    {{ if .TableOfContents }}
-      <aside class="toc sticky">
-      <li class="toc-item">{{ .TableOfContents }}</li>
-    </aside>
-    {{ end }}
-         <article class="DocSearch-content vertical-false">
-            {{ .Content }}
-          </article>
-    {{ end }}
-
+{{ partial "content.html" . }}   
 {{ partial "comments.html" . }}
-
 </main>
-    
 {{ end }}

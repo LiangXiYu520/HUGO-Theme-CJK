@@ -11,23 +11,20 @@ menu:
 url: about
 description: '此文爲本站緫序，包含介紹、說明書與聲明。除了這箇緫序，「古琴」「實地錄音」「書法」「讀切韻音」「旁白配音」均有各自的小序，介紹我爲什麼做這些事情。'
 img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f9600a.jpg'
+vertical: false
 ---
 
 ## 吿示
 
-- 本站所有文章授權方式采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="\_blank">CC BY-NC-SA 4.0</a> <n>署名-非商業性使用-相同方式共享</n>國際條款，若需使用，請務必閱讀竝遵循條款內容。說簡單點，非商業性使用無須告知作者，只要標明作者、出處就好<n>當然，沒人會轉載我的文章的，想多了</n>。爲便於排版，直接取用 md 源文件卽可。如果發現有錯別字，也可以在 Git 上幫我改正。
+- 本站所有文章授權方式采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="\_blank">CC BY-NC-SA 4.0</a> <n>署名-非商業性使用-相同方式共享</n>國際條款，若需使用，請務必閱讀竝遵循條款內容。說簡單點，非商業性使用無須告知作者，只要標明作者、出處就好<n>當然，沒人會轉載我的文章的，想多了</n>。爲便於排版，直接取用 md 源文件卽可。如果發現有錯別字，也可以在 Github 上幫我改正。
 - 若發現文章中有不適冝的內容<n>如侵犯箇人隱私，牽涉箇人利益，損害箇人聲譽等</n>，請儘速郵件或評論告知我。
 - 我用繁體字，還有一些奇怪的寫法，一來爲了滿足自己的一些癖好；二來爲了過濾一些不想看的來訪者；三來照顧牆外能用 Google 的華人們；還有一箇原因是系統自帶的簡體宋體无一能看。
-- 如果看官歡喜，歡迎打賞救濟 \_(:з」∠)_ 收益將用於网站運營及公益，㪅多見 [公益、贊賞、收支](/blog/2018/11/06/zjuh.html)。可通過支付寶、[paypal](https://paypal.me/kujihhoe) 或 bitcoin `1GWQhWVpFGxKqwp7R6C7ayb2jyPrdPgCYr` 向我捐助。
-- 通過這箇 [邀請鏈接](https://www.superbed.cn/signup?from_id=5be2af239dc6d6b928f1a085) 註冊聚合圖床，我將會得到 30% 反現，您也可以通過這種方式支持我。聚合圖床非常好用，速度快不怕丟失。
-
-<img src="https://api.superbed.cn/pic/5bf82416c4ff9e058246008d" width="150" >
 
 ## 技術
 
 - 【支持】託管於 ~~<a href="https://pages.github.com" target="\_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="\_blank">kitian616</a> 提供网誌主題模板 Text[jane](https://github.com/xianmin/hugo-theme-jane)，~~，主題基於 Flex 修改。~~<a href="https://tw.godaddy.com/" target="\_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="\_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。古琴關注數統計用的 [Substats](https://sspai.com/post/59593) api。
 - 【隱私】見 [本站的隱私、安全、速度 privacy policy]({{< ref "253-privacy" >}})
-- 【檢索】1、本站已支持 Algolia！歡迎使用！2、直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a><n>Google 收錄得又全又快</n>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。
+- 【檢索】1、本站已支持 Algolia，歡迎使用！2、直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a><n>Google 收錄得又全又快</n>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。
 - 【大事記】見 [更新](/release)
 - 【板式】見 [示例葉面](/149)
 - 【文章推薦算法】見 [Hugo文章推薦算法舉例](/223)

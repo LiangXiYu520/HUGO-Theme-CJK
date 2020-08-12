@@ -10,9 +10,9 @@
   {{ partial "article-front.html" . }}
 </header>
       <main>
-      <article>
-      {{ .Content | safeHTML }}
-      </article>
+        <article>
+          {{ .Content | safeHTML }}
+          </article> 
   {{ partial "comments.html" . }}
   </main>
 {{ end }}
