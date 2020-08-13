@@ -5,7 +5,7 @@ author: ["柯棋瀚"]
 categories: ["站務"]
 title: "friends"
 date: 2018-10-27
-lastmod: 2020-08-10
+lastmod: 2020-08-13
 menu:
   main:
     weight: 3
@@ -56,6 +56,8 @@ vertical: false
 
 ~~[一去二三遥](https://www.moonster.life/) 2018-10-31 一箇想當攝影師却被迫寫代碼的廚子。功法：主修 C++，輔修 Java。202008友鏈被刪~~
 
-[他與她的夢](https://cncyu.cn/) 2018-11-10 與其臨淵羨魚，不如退而結網 202008網站似乎掛了
+~~[他與她的夢](https://cncyu.cn/) 2018-11-10 與其臨淵羨魚，不如退而結網 202008網站似乎掛了~~
+
+~~[那束陽光](https://eveaz.com) 2018-10-30 寫寫自己的故事，想想自己的未來！ 202008友鏈被刪~~
 
 </div>
