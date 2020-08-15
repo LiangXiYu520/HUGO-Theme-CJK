@@ -280,7 +280,7 @@ border-bottom: none;
      font-family: var(--sans);
    }
   .toc.sticky {
-   max-width: 16em; 
+   max-width: 14.5em; 
     float: right; 
     position: -webkit-sticky;
   position: sticky;
@@ -290,8 +290,8 @@ border-bottom: none;
 }
   .toc ul{
   font-size: .9em;
-       line-height: 1.5;
-       font-weight: bold
+  line-height: 1.5;
+  font-weight: bold
   }
   .toc-item ul a{
        box-shadow:  none
