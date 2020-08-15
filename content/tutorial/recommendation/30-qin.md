@@ -3,7 +3,7 @@ layout: 'tutorial'
 type: 'tutorial'
 title: "資源｜古琴網站"
 date: 2020-05-01
-lastmod: 2020-08-04
+lastmod: 2020-08-14
 author: ["柯棋瀚整理"]
 categories: ["琴"]
 tutorial: ["資源"]
@@ -20,7 +20,9 @@ img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984813.jpg'
 
 http://www.geocities.jp/qsshc/cmusic.html　掛了
 
-[愛搜簡字](https://www.isojz.com/) 手寫查詢簡字譜。
+ 手寫查詢簡字譜。
+
+https://organic.cpu.edu.cn/chimusic/琴/ 一个神奇的網站，這是古琴錄音，很豐富。
 
 ## 博客
 

@@ -15,6 +15,8 @@ vertical: false
 
 ## 人文類
 
+[读书小站](https://ibooks.org.cn/)
+
 [海德沙龙](https://headsalon.org/)　〔非常不錯〕
 
 [完美的胖达](https://wmdpd.com/link/)　〔不明覺厲。有關肺炎的文章可以看看〕
@@ -95,7 +97,11 @@ vertical: false
 
 [jubeny](https://jubeny.com/)　〔南大學霸，13 級本科。〕
 
+[狡猫三窝](https://slykiten.com/)　女，93年生，本科毕业后旅居日本读博，方向PGM/C for PEMFC catalysts
+
 ## 技術類
+
+https://armstrong.viyf.org/about
 
 [哲科文 Jerkwin](http://jerkwin.github.io/tags/)　〔雖然界面很古董，但內容，也太高產了吧〕
 
@@ -146,6 +152,8 @@ https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開�
 [HONGFEI](https://xiaohongfei.com/)　〔有國外旅行攻略〕
 
 ## 設計類
+
+https://www.re-design.cn/
 
 [Kevin](https://www.kevinpowell.co/)　〔小清新界面〕
 
