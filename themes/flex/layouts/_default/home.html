@@ -277,7 +277,7 @@
 <section class="section section2">
   <h1 id="wiki"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
-  <h2><a href="/read" target="_blank">讀書</a></h2>
+  <h2><a href="/read" target="_blank">赫赫蠹書</a></h2>
 <div class="des">【述要】用十分之一的字數槩述原書內容【讀後】類似書評</div>
   <div class="discover-des">最近發布 Latest</div>
   <div class="discover-wrap">
@@ -306,7 +306,7 @@
   {{ end }}
         </div>
         </div>
-  <h2><a href="/net" target="_blank">网文過眼錄</a></h2>  
+  <h2><a href="/net" target="_blank">赫赫网摘</a></h2>  
  {{- with $des := index (.Site.Data.taxo ) "网文" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
           <div class="discover-des">最近發布 Latest</div>
           <div class="discover-wrap">
@@ -396,10 +396,12 @@
     </div>
   </div>
 </section>
+
 <section class="section section4">
   <h1 id="data"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
-
+  <h2 id="zanfu">赫赫讚府</h2>
+  <div class="discover-des" style="margin-bottom:8em">可以郵箱聯繫我</div>
       <h2><a href="/xuekan" target="_blank">春秋學刊</a></h2>
       <div class="des">北師大歷史學院本科生學術刊物</div>
       <div class="discover-des">最近發布</div>
@@ -427,6 +429,24 @@
       <a href="{{ .Page.Permalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a>
     </div>
       {{ end }}
+    </div>
+  </div>
+
+  <h2 id="database">其他</h2>
+  <div class="discover-wrap">
+    <div class="discover">
+  {{ range first 8 (where .Site.RegularPages "Type" "database") }}
+  <div class="discover-grid">
+    <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+    <div class="discover-grid-sub">
+      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+      <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
+      <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+    </div>
+    </div>
+  {{ end }}
+  </div>
+  </div>
 </section>
   </main>
   {{ partial "comments.html" . }}

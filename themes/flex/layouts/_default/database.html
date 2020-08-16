@@ -1,0 +1,20 @@
+{{ define "main" }}
+      <header class="heading-wrap">
+        {{ partialCached "banner.html" . }}
+        <div class="Heading">
+             <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a class="DocSearch-lvl0" href="/#data">數據庫</a>»
+               </span>
+               <h1 class="DocSearch-lvl1 Heading-title article">{{- .Title | safeHTML | markdownify -}}</h1>
+               {{ if .Description }}
+               <div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
+               {{ end }}
+               {{ partial "article-front.html" . }}
+      </div>
+      </header>
+      <main>
+          <article class="DocSearch-content vertical-false">
+      {{ .Content }}
+         </article>
+  {{ partial "comments.html" . }}
+    </main>
+  {{ end }}

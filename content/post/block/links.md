@@ -3,7 +3,7 @@ layout: 'gallery'
 type: 'block'
 author: ["柯棋瀚"]
 categories: ["站務"]
-title: "friends"
+title: "友鏈"
 date: 2018-10-27
 lastmod: 2020-08-13
 menu:

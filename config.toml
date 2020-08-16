@@ -36,7 +36,7 @@ exam = "exam"
   priority = 0.5
   filename = "sitemap.xml"
   [[menu.nav]]
-     name = "HOME"
+     name = "主頁"
      weight = 1
      url = "/"
   [[menu.nav1]]
@@ -48,32 +48,41 @@ exam = "exam"
         weight = 4
         url = "/post"
   [[menu.nav2]]
-              name = "讀書"
+              name = "赫赫蠹書"
               weight = 5
               url = "/read"
   [[menu.nav2]]
-              name = "网文"
+              name = "赫赫网摘"
               weight = 6
               url = "/net"            
   [[menu.nav2]]
-              name = "敎程"
+              name = "赫赫指北"
               weight = 7
               url = "/tutorial"
   [[menu.nav2]]
            name = "考試"
            weight = 8
            url = "/exam"
-  [[menu.nav3]]
+  
+ [[menu.nav3]]
+      name = "赫赫讚府"
+      weight = 10
+      url = "/#zanfu"
+   [[menu.nav3]]
                name = "春秋學刊"
-               weight = 10
+               weight = 11
                url = "/xuekan"
   [[menu.nav3]]
          name = "琴譜文本"
-         weight = 11
+         weight = 12
          url = "/qinpu"
+   [[menu.nav3]]
+         name = "其他"
+         weight = 13
+         url = "/#database"       
 [params]
-  mainSections = ["post","block","exam","gallery","net","read","tutorial"]  
-  otherSections = ["exam","gallery","net","read","tutorial","xuekan","qinpu"]  
+  mainSections = ["post","block","exam","gallery","net","read","tutorial","database"]  
+  otherSections = ["exam","gallery","net","read","tutorial","xuekan","qinpu","database"]  
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
   vertical = true
   width ="45rem"          # Any length in CSS syntax

@@ -1,6 +1,6 @@
 ---
-type: "gallery"
-layout: "gallery"
+type: "database"
+layout: "database"
 author: ["柯棋瀚整理"]
 categories: ["琴"]
 title: "川派琴家王華德先生全集"
@@ -8,7 +8,7 @@ date: 2020-08-15
 lastmod: 2020-08-15
 url: wanghuade
 description: '川派琴家王華德先生全集，目錄：書；網文補遺；錄音，琴譜稿；視頻；照片'
-des: '川派琴家王華德先生全集，目錄：書；網文補遺；錄音，琴譜稿；視頻；照片'
+vertical: false
 img: 'https://pic.imgdb.cn/item/5f37983914195aa594f712c1.jpg'
 ---
 

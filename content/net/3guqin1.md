@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "网文過眼錄｜古琴｜二："
+title: "赫赫网摘｜古琴｜二："
 date: 2020-07-22
 author: ["柯棋瀚整理"]
 netsort: ["其他"]

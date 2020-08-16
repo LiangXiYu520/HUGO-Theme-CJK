@@ -2,7 +2,7 @@
 layout: 'block'
 type: 'block'
 author: ["柯棋瀚"]
-title: "privacy"
+title: "隱私安全"
 date: 2020-06-07
 categories: ["站務"]
 tags: ["coding"]

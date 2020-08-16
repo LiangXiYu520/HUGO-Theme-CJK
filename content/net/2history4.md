@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "网文過眼錄｜文史｜四："
+title: "赫赫网摘｜文史｜四："
 date: 2020-08-21
 author: ["柯棋瀚整理"]
 netsort: ["文史"]

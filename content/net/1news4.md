@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "网文過眼錄｜人與社會｜四：吗？"
+title: "赫赫网摘｜人與社會｜四：吗？"
 date: 2020-08-20
 author: ["柯棋瀚整理"]
 netsort: ["人與社會"]

@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "网文過眼錄｜古琴｜王華德"
+title: "赫赫网摘｜古琴｜王華德"
 date: 2020-08-15
 author: ["柯棋瀚整理"]
 categories: ["琴"]
