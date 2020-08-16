@@ -67,7 +67,17 @@ img: 'https://pic.imgdb.cn/item/5f37983914195aa594f712c1.jpg'
 
 ## 五、照片
 
-以下圖片大部分經過神經網絡放大，再加上我的處理，第 1、3 張經過神經網路上色；大致按時間排列。
+以下圖片大部分經過神經網絡放大，再加上我的處理，第 1、2、4 張經過神經網路上色；大致按時間排列。
+
+<figure>
+<img src="https://pic.imgdb.cn/item/5f38af0914195aa594390e4a.jpg" width="700">  
+  <figcaption>1954 秋與龍琴舫、喻紹澤、卓希鍾老師合影</figcaption>
+</figure>
+
+<figure>
+<img src="https://pic.imgdb.cn/item/5f38af0914195aa594390e65.jpg" width="700">  
+  <figcaption>1979 春，蜀新琴社在杜甫草堂雅集。後排左起：何朝現、王華德、喻紹澤、何寧、韓光明，右一：黃光緒，前排左二起：俞秦琴、曾成偉，右一：俞伯蓀</figcaption>
+</figure>
 
 <p><img src="https://pic.imgdb.cn/item/5f3749f114195aa594e1f3c7.jpg" width="400"></p>
 
