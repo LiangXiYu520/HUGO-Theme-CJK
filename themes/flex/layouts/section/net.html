@@ -4,11 +4,11 @@
   <header class="Heading">
       <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">赫赫网摘</h1>
   {{- $length := len .Data.Pages }}
-  {{- with $des := index (.Site.Data.taxo ) "网文" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+  {{- with $des := index (.Site.Data.taxo ) "赫赫网摘" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
 <section class="des1">
 凡 {{ $length  }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
-　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">网文過眼錄</span><span class="rss2">RSS</span></a>
+　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">赫赫网摘</span><span class="rss2">RSS</span></a>
 </section>
 </div>
 <main>

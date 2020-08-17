@@ -15,6 +15,8 @@ vertical: false
 
 ## 人文類
 
+[一天世界](https://blog.yitianshijie.net/)
+
 [读书小站](https://ibooks.org.cn/)
 
 [海德沙龙](https://headsalon.org/)　〔非常不錯〕
@@ -66,6 +68,8 @@ vertical: false
 [Parimal Satyal](https://neustadt.fr/)　a designer and occasional writer living in Paris. I’m also interested in aviation, cross-cultural exchange,  languages, science, computer history, the small/open web and the  European Union. 〔文章挺有意思〕
 
 ## 生活類
+
+[夏泉的後院](https://www.hxueh.net/2017-tweets/)　〔值得一看〕
 
 [西樓](http://www.westtower.cn/)
 
