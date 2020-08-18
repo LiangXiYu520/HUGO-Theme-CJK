@@ -7,6 +7,7 @@
   --yellow: #ffda56;
   --brown: #c49d10;
   --shallowblue:#e1f3ff;
+  --bgpink: #fee8da;
   --red: #f27144;
   {{ $all2 := slice }}
       {{ range .Site.Data.color }}
@@ -161,14 +162,6 @@ b{
   -webkit-text-emphasis-position: over right;
   text-emphasis-position: over right;
 }
-q{
-background: var(--shallowblue)}
-q:before {
-  content:none
-}
-q:after {
-  content:none
-}
 v{
   border-bottom: .1em dashed var(--brown);
   margin: 0 .2em
@@ -319,13 +312,13 @@ letter-spacing: .333em;
 font-size: 1.8em;
 line-height: 1.5}
 h3{
-  font-size: 1.35em;
+  font-size: 1.55em;
   line-height: 1.6;
 letter-spacing: .1em}
 h4{
   font-size: 1.25em;
   line-height: 1.6;
-  letter-spacing: .1em
+  letter-spacing: 0
   }
 h5{
   font-size: 1em}
@@ -416,15 +409,24 @@ line-height: 1.6
          border-bottom-right-radius: .5em;
    }
 blockquote {
-background: var(--shallowblue);
+background: var(--bgpink);
 margin: 0;
-padding:1px 1em ;
-border-radius: 1em}
+padding: 1px .5em;
+border-radius: 1.5em
+}
 .vertical blockquote {
   padding:.2em 0;
   margin-top:2em;
   border-radius:0
 }
+q{
+  background: var(--bgpink)}
+  q:before {
+    content:none
+  }
+  q:after {
+    content:none
+  }
 main {
   flex-grow: 1}
 img {

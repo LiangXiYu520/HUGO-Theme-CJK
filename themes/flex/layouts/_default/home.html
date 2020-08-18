@@ -81,9 +81,9 @@
     </h1>
   <h2>最近發布 Latest</h2>
 <div class="discover-wrap">
-<div class="discover">
+<div class="discover column3">
   {{ $latest := slice }}
-  {{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+  {{ range first 6 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
   {{ $latest = $latest | append . }}
   <div class="discover-grid">
 {{ if .Params.img }}
@@ -378,22 +378,16 @@
   <div class="discover-des" style="margin-top:-5.5em">按修改時閒排序</div>
   <div class="discover-wrap">
   <div class="discover">
-    {{ range  (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
+    {{ range (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
     <div class="discover-grid">
       <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
       <div class="discover-grid-sub">
-      <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
+      <time class="archive-info">{{ .Lastmod.Format "2006-01-02" }}</time>
         <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
         <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
       </div>
       </div>
     {{ end }}
-  <span>
-    <span class="archive-info">2019-11-14</span>
-    <h3 style="margin:0;font-size:1.2em"><a href="https://xtools.wmflabs.org/pages/zh.wikisource.org/Kujihhoe?uselang=zh#"  target="_blank">維基文庫</a></h3>
-    <span class="des2 home">平時上課的錄文，有四篇，放在維基文庫</span>
-  </span>
-    </div>
   </div>
 </section>
 
@@ -401,13 +395,14 @@
   <h1 id="data"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
   <h2 id="zanfu">赫赫讚府</h2>
+  {{- with $des := index (.Site.Data.taxo ) "赫赫讚府" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
   <div class="discover-des" style="margin-bottom:8em">可以郵箱聯繫我</div>
       <h2><a href="/xuekan" target="_blank">春秋學刊</a></h2>
       <div class="des">北師大歷史學院本科生學術刊物</div>
       <div class="discover-des">最近發布</div>
       <div class="discover-wrap">
-        <div class="discover">
-      {{ range first 4 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
+        <div class="discover column3">
+      {{ range first 3 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
       <div class="discover-grid">
         <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
         <div class="discover-grid-sub">
@@ -422,15 +417,21 @@
     <h2><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h2>
     <div class="des">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
     這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
-    <div class="discover-wrap">
-      <div class="discover">
-    {{ range .Site.Taxonomies.toc.Alphabetical }}
-    <div>
-      <a href="{{ .Page.Permalink }}" target="_blank">{{- .Page.Title | safeHTML -}}</a>
-    </div>
-      {{ end }}
-    </div>
-  </div>
+  <div class="discover-des">隨機生成 Random</div> 
+  <div class="discover-wrap">
+    <div class="discover">   
+{{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "qinpu")) -}}
+<div>
+<span>
+<span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+<div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+{{ if .Params.description }}<span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
+</span>
+</div>
+{{- end -}}
+</div>
+</div>
+
 
   <h2 id="database">其他</h2>
   <div class="discover-wrap">
@@ -445,6 +446,14 @@
     </div>
     </div>
   {{ end }}
+  <div class="discover-grid">
+    <div class="archive-card-container"><div class="post-card" style="background-image: url(https://pic.imgdb.cn/item/5f3be3d414195aa59410edd7.jpg)"></div></div>
+    <div class="discover-grid-sub">
+<time class="archive-info">2019-11-14</time>
+<div class="discover-item"><a href="https://xtools.wmflabs.org/pages/zh.wikisource.org/Kujihhoe?uselang=zh#"  target="_blank">維基文庫</a></div>
+<div class="des2 home">平時上課的錄文，有四篇，放在維基文庫</div>
+</div>
+</div>
   </div>
   </div>
 </section>
