@@ -1,16 +1,16 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫网摘｜人與社會｜微信討伐"
+title: "我來幫你刷微博｜微信討伐"
 date: 2020-08-17
 author: ["柯棋瀚整理"]
-netsort: ["人與社會"]
+netsort: ["我來幫你刷微博"]
 categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-wechat
 description: '看看人們是怎樣駡微信的，各種角度駡的都有，眞爽。引文有刪節。姊妹篇：[博客帶給我什麼？](/post/258-whyblogging)'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f3a84e414195aa594ab7a38.jpg'
+img: 'https://pic.imgdb.cn/item/5f3d26f414195aa594b781c1.jpg'
 ---
 
 微信隨感：

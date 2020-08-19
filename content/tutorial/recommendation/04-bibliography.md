@@ -5,7 +5,7 @@ title: "資源｜歷史學參考書目"
 date: 2020-06-02
 author: ["柯棋瀚整理"]
 categories: ["史"]
-tutorial: ["資源"]
+tutosort: ["資源"]
 url: recommendation/bibliography-history
 description: '本科時候存的資料，這裏整理一下。都是從老師、學長那攢下來的。趙老師說一堆參考書中讀一兩本卽可；二十四史讀完史記卽可。'
 img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984815.jpg'

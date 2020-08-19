@@ -5,7 +5,7 @@ title: "資源｜政治學參考書目"
 date: 2020-08-02
 author: ["柯棋瀚整理"]
 categories: ["襍"]
-tutorial: ["資源"]
+tutosort: ["資源"]
 url: recommendation/bibliography-politics
 description: '自由主義'
 draft: true

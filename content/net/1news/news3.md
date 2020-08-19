@@ -1,15 +1,16 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫网摘｜人與社會｜三：準備好健康碼常態化了吗？"
+title: "我來幫你刷微博｜三：準備好健康碼常態化了吗？"
 date: 2020-07-20
 author: ["柯棋瀚整理"]
-netsort: ["人與社會"]
+netsort: ["我來幫你刷微博"]
 categories: ["襍"]
+tags: ["觀點"]
 url: net/news-3
 description: '「带你出来，就是为了让你不仅看到都市的摩天大厦，还看到自然之美，知道天外有天。钱虽然重要，但又怎能跟大自然熏陶出的胸襟和视野相比？」目錄：教育，文化與文明，飲食與健康，人與自然，科技。'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f1d65d814195aa594b09799.jpg'
+img: 'https://pic.imgdb.cn/item/5f3d26f414195aa594b781be.jpg'
 ---
 
 ## 封面

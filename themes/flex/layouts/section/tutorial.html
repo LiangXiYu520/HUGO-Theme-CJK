@@ -4,7 +4,7 @@
   <header class="Heading">
       <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">敎程</h1>
   {{- $length := len .Data.Pages }}
-  {{- with $des := index (.Site.Data.taxo ) "赫赫指北" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+  {{- with $des := index (.Site.Data.taxo ) "赫赫指南" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
 <section class="des1" style="margin-bottom: -5em">
 凡 {{ $length  }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
@@ -12,7 +12,7 @@
 </section>
 </div>
 <main>
-  {{ range .Site.Taxonomies.tutorial.Alphabetical.Reverse  }}
+  {{ range .Site.Taxonomies.tutosort.Alphabetical.Reverse  }}
   {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
    {{ $leng := len .Pages }}
   <h2 id="{{- .Page.Title | safeHTML -}}">{{ .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2>

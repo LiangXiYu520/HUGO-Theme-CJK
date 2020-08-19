@@ -4,7 +4,7 @@ type: 'tutorial'
 title: "資源｜blogroll"
 author: ["柯棋瀚整理"]
 categories: ["站務"]
-tutorial: ["資源"]
+tutosort: ["資源"]
 date: 2020-04-30
 lastmod: 2020-08-03
 description: '我收集的一些比較有意思的博客'

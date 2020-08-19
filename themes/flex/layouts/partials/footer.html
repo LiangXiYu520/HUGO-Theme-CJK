@@ -17,14 +17,18 @@
     {{ end }}
     </div>
     <div class="col1">
+      <div class="col1">刊物</div>
+      {{ range .Site.Menus.nav2 }}
+      <div class="col1"><a href="{{  .URL  }}"><span class="col1-title">{{ .Name | safeHTML }}</span></a></div>
+      {{ end }}
     <div class="col1">知識</div>
-    {{ range .Site.Menus.nav2 }}
+    {{ range .Site.Menus.nav3 }}
     <div class="col1"><a href="{{  .URL  }}"><span class="col1-title">{{ .Name | safeHTML }}</span></a></div>
     {{ end }}
     </div>
     <div class="col1" style="margin-top:1em">
     <div class="col1">數據庫</div>
-    {{ range .Site.Menus.nav3 }}
+    {{ range .Site.Menus.nav4 }}
     <div class="col1"><a href="{{  .URL  }}"><span class="col1-title">{{ .Name | safeHTML }}</span></a></div>
     {{ end }}
     </div>

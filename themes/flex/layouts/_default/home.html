@@ -274,6 +274,51 @@
 </div>
 </div>
 </section>
+<section class="section section4">
+  <h1 id="magazine"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">刊</span>物
+  </h1>
+  <h2><a href="/net" target="_blank">赫赫网摘</a></h2>  
+  {{- with $des := index (.Site.Data.taxo ) "赫赫网摘" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
+           <div class="discover-des">最近發布 Latest</div>
+           <div class="discover-wrap">
+           <div class="discover">
+             {{- range first 4 (where .Site.RegularPages.ByDate.Reverse "Type" "net") -}}
+             <div class="discover-grid">
+               {{ if .Params.img }}
+               <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+               {{ end }}
+               <div class="discover-grid-sub">
+               <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
+                 <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
+                 <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+               </div>
+               </div>
+           {{ end }}
+               </div>
+              </div>
+
+              <h2><a href="/xuekan" target="_blank">春秋學刊</a></h2>
+              <div class="des">由北師大歷史學院主辦、春秋學社承辦的以本科生为主體的學術性校内刊物。我只是個搬運工</div>
+              <div class="discover-des">最近發布</div>
+              <div class="discover-wrap">
+                <div class="discover column3">
+              {{ range first 3 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
+              <div class="discover-grid">
+                <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+                <div class="discover-grid-sub">
+                  <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+                  <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
+                </div>
+                </div>
+              {{ end }}
+              </div>
+              </div>
+         <h2>即將於 2023 秊推出的？月刊</h2>
+         <div class="des">?</div>
+         <br>
+         <br>
+</section>
+
 <section class="section section2">
   <h1 id="wiki"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
@@ -306,33 +351,13 @@
   {{ end }}
         </div>
         </div>
-  <h2><a href="/net" target="_blank">赫赫网摘</a></h2>  
- {{- with $des := index (.Site.Data.taxo ) "网文" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
-          <div class="discover-des">最近發布 Latest</div>
-          <div class="discover-wrap">
-          <div class="discover">
-            {{- range first 4 (where .Site.RegularPages.ByDate.Reverse "Type" "net") -}}
-            <div class="discover-grid">
-              {{ if .Params.img }}
-              <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
-              {{ end }}
-              <div class="discover-grid-sub">
-              <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
-                <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-                <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
-              </div>
-              </div>
-          {{ end }}
-              </div>
-             </div>
-  
 
    <h2><a href="/tutorial" target="_blank">敎程</a></h2>
-          <div class="des">赫赫指北｜搭建基本的知識框架；資源｜一些信息聚合</div>
+          <div class="des">赫赫指南｜搭建基本的知識框架；資源｜一些信息聚合</div>
           <div class="discover-des">隨機生成 Random</div>
           <div class="discover-wrap">
             <div class="discover">
-              {{- range first 2 (shuffle (where .Site.Taxonomies.tutorial.赫赫指北 "Type" "tutorial")) -}}
+              {{- range first 2 (shuffle (where .Site.Taxonomies.tutosort.赫赫指南 "Type" "tutorial")) -}}
               <div class="discover-grid">
                 <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
                 <div class="discover-grid-sub">
@@ -342,7 +367,7 @@
                 </div>
                 </div>
             {{ end }}
-            {{- range first 2 (shuffle (where .Site.Taxonomies.tutorial.資源 "Type" "tutorial")) -}}
+            {{- range first 2 (shuffle (where .Site.Taxonomies.tutosort.資源 "Type" "tutorial")) -}}
             <div class="discover-grid">
               <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
               <div class="discover-grid-sub">
@@ -397,23 +422,7 @@
   <h2 id="zanfu">赫赫讚府</h2>
   {{- with $des := index (.Site.Data.taxo ) "赫赫讚府" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
   <div class="discover-des" style="margin-bottom:8em">可以郵箱聯繫我</div>
-      <h2><a href="/xuekan" target="_blank">春秋學刊</a></h2>
-      <div class="des">北師大歷史學院本科生學術刊物</div>
-      <div class="discover-des">最近發布</div>
-      <div class="discover-wrap">
-        <div class="discover column3">
-      {{ range first 3 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
-      <div class="discover-grid">
-        <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
-        <div class="discover-grid-sub">
-          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-          <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
-        </div>
-        </div>
-      {{ end }}
-      </div>
-      </div>
- 
+
     <h2><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h2>
     <div class="des">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
     這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>

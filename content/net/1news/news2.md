@@ -1,17 +1,17 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫网摘｜人與社會｜二：要接手韭菜樓盤嗎？"
+title: "我來幫你刷微博｜二：要接手韭菜樓盤嗎？"
 date: 2020-06-20
 lastmod: 2020-08-17
 author: ["柯棋瀚整理"]
-netsort: ["人與社會"]
+netsort: ["我來幫你刷微博"]
 categories: ["襍"]
 tags: ["觀點"]
 url: net/news-2
 description: '「棚改之后的全民上车恐慌，大量小城市高位接盘的新城市人，赔上了可能一生的代价。但是，这也许就是他们当下的快乐呢。」目錄：中式人，科技，健康，政要。'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f1d268314195aa5948ae2c9.jpg'
+img: 'https://pic.imgdb.cn/item/5f3d26f414195aa594b781c6.jpg'
 ---
 
 ## 封面：你要接手韭菜樓盤嗎？

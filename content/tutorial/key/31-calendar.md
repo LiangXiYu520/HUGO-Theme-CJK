@@ -1,14 +1,14 @@
 ---
 layout: 'tutorial'
 type: 'tutorial'
-title: "赫赫指北｜古代曆法一"
+title: "赫赫指南｜古代曆法一"
 date: 2019-05-04
 lastmod: 2019-08-08
 url: 163
 author: ["柯棋瀚學"]
 categories: ["史"]
 tags: ["厤筭"]
-tutorial: ["赫赫指北"]
+tutosort: ["赫赫指南"]
 description: '介佋幾部蚤㫷厤灋，主要是<v>殷曆</v>和<v>三統曆</v>。我也是門外漢，敬請方家指正。'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f26c13414195aa59498481f.jpg'

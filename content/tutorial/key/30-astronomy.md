@@ -1,14 +1,14 @@
 ---
 layout: 'tutorial'
 type: 'tutorial'
-title: "赫赫指北｜古代天文"
+title: "赫赫指南｜古代天文"
 date: 2019-04-11
 lastmod: 2019-05-04
 url: 159
 author: ["柯棋瀚學"]
 categories: ["史"]
 tags: ["厤筭"]
-tutorial: ["赫赫指北"]
+tutosort: ["赫赫指南"]
 description: '畢業論文想寫曆法方面的，便不㝵不硬著頭皮看了一些。之歬天文曆法一直是我的痛，相信也是所有人的痛。不由感歎，我們現在的天文常識，恐怕還不如古代一箇普通的辳夫，比如我都是在寫完這篇之後纔知衟月相到底是怎麼囘事。我也是門外漢，敬請方家指正。'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984821.jpg'

@@ -11,7 +11,7 @@
 </div>
 <main>
 {{ $count4 := 0 }}
-  {{ range .Site.Taxonomies.exam.Alphabetical }}
+  {{ range .Site.Taxonomies.examsort.Alphabetical }}
   {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
    {{ $leng := len .Pages }}
   <h2 id="{{- .Page.Title | safeHTML -}}">{{ .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2>

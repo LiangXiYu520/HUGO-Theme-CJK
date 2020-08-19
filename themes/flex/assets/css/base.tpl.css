@@ -1320,8 +1320,10 @@ color: var(--brown)}
       float: none;
       margin:auto;
     }
-    .toc.sticky {position:relative;
-    top: none;}
+    .toc.sticky {
+      position: relative;
+      float:none;
+    top: none}
 .Tags {
       border: .2em solid var(--black);
       border-radius: 1.7rem;
