@@ -79,53 +79,72 @@
 <section class="section section1">
     <h1 id="discover"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
     </h1>
-  <h2>最近發布 Latest</h2>
-<div class="discover-wrap">
-<div class="discover column3">
+    <div class="home-latest-wrap">
+    <div class="home-latest-grid">
   {{ $latest := slice }}
   {{ range first 6 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
   {{ $latest = $latest | append . }}
-  <div class="discover-grid">
-{{ if .Params.img }}
-<div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
-{{ end }}
-<div class="discover-grid-sub">
-  <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
-  <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-  <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
-  <div class="des2 home">
-    {{- with .Params.author -}}
-        {{ range . }}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-        <a href="/author/{{ $name }}">@{{- $name -}}</a>
-        {{- end -}}
-        {{- end -}}
+  <div class="article-front">
+    <div class="article-card-container">
+    {{ if .Params.img }}
+<div class="article-card-content" style="background-image: url({{ .Params.img }})"></div>
+  {{ else }}
+  <div class="article-card-content" style="background-image: url(https://pic.imgdb.cn/item/5f2d412814195aa594f276a3.jpg)"></div>
+  {{ end }}
+</div>
+<div class="article-info">
+<div class="des1 des-article">
+<time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-info">
+{{ .Date.Format "2006-01-02" }}
+{{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "2006-01-02" }}{{ end }}</time>
+</div>
+<div class="des1 des-article discover-item"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML | markdownify }}</a></div>
+<div class="des1 des-article">
+  {{ .Params.description | safeHTML  | markdownify }}
+  </div>
+<div class="des1 des-article">
+{{- with .Params.author -}}
+    <span class="des2">作者</span>
+    {{- range . -}}
+    {{- $name := . -}}
+    {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+    <span><a href="/author/{{ $name }}">@{{- $name -}}</a></span>
     {{- end -}}
-    {{- with .Params.categories -}}
-        {{- range . -}}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-          　<a href="/categories/{{ $name }}"  target="_blank">[{{- $name -}}]</a>
-        {{- end -}}
-        {{- end -}}
     {{- end -}}
-    {{- with .Params.series -}}
+{{- end -}}
+{{- with .Params.series -}}
+    　<span class="des2">系列</span>
     {{- range . -}}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-      　<a href="/series/{{ $name }}"  target="_blank">{{- $name -}}｜</a>
+    <span><a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
+    {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- with .Params.tags -}}
+    　<span class="des2">標籤</span>
+    {{- range . -}}
+    {{- $name := . -}}
+    {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
+    <span><a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
+    {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- with .Params.notes -}}
+    　<span class="des2">備註</span>
+    {{ range . }}
+    {{- $name := . -}}
+    {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
+    <span><a href="/notes/{{ $name }}">({{- $name -}})</a></span>
     {{ end -}}
     {{ end }}
 {{- end }}
-  </div>
 </div>
 </div>
-  {{ end }}
-  </div>
 </div>
-
-  <h2 style="margin-bottom: 1em">最近修改 Recently Modified</h2>
+{{ end }}
+</div>
+<div class="home-latest-grid">
   {{ $1lastmod := slice }}
   {{ $lastmod := slice }}
 {{ range   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post")  }}
@@ -144,7 +163,6 @@
   <div class="discover-grid-sub">
     <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
     <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
     <div class="des2 home">
       {{- with .Params.author -}}
           {{ range . }}
@@ -174,6 +192,8 @@
   </div>
   </div>
 {{ end }}
+</div>
+</div>
 </div>
 </div>
 <h2 style="margin-top: 2em;">分類 Categories</h2>
