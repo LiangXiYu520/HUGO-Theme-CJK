@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://kqh.me/sitemap.xml
+
+Disallow: /zanfu/

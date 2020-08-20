@@ -1,0 +1,332 @@
+<!doctype html><html lang=zh-hk><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="經過艱苦卓絕的試驗，網站第四版終於完工了！現在介紹一下本站各類推薦中用到的算法。本人不懂編程，這裏只是瞎貓撞上死耗子。源碼直接在我 <a href=&#34;https://github.com/kujihhoe/HUGO-Theme-CJK&#34; targrt=&#34;_blank&#34;>Github</a> 上找就可以，分別在 home.html 和 single.html。後來發現有些寫麻煩了，懶得改了。"><meta name=generator content="Hugo 0.74.3"><title>article recommendation in Hugo 文章推薦舉例 | 赫赫文王</title><link rel=canonical href=/223/><link rel=stylesheet href=/css/base.min.12a1d856f8021d31175b61b3ae863e77eccebbffb2a736993085eee19a00e237.css integrity="sha256-EqHYVvgCHTEXW2GzroY+d+zOu/+ypzaZMIXu4ZoA4jc=" crossorigin=anonymous></head><body><div class=heading-wrap><nav class=banner-wrap><div class=banner><a href=/#gallery>作品</a>
+<details><summary>網誌</summary><div style="margin:auto -.5em auto 1em"><a href=/#discover>發現</a></div><div style="margin:auto -.5em auto 1em"><a href=/post>歸檔</a></div></details><details><summary>知識</summary><div style="margin:auto -.5em auto 1em"><a href=/net>赫赫网摘</a></div><div style="margin:auto -.5em auto 1em"><a href=/xuekan>春秋學刊</a></div></details><details><summary>數據庫</summary><div style="margin:auto -.5em auto 1em"><a href=/read>赫赫蠹書</a></div><div style="margin:auto -.5em auto 1em"><a href=/tutorial>赫赫指南</a></div><div style="margin:auto -.5em auto 1em"><a href=/exam>考試筆記</a></div></details></div><div class="banner banner1"><input id=algolia-autocomplete placeholder="【Algolia 搜索】輸入後無需回車" class=search></div></nav><br><br><header class=Heading><span class="Heading-title finder"><a href=/>赫赫文王</a>»<a href=/post>网誌</a>»<a class=DocSearch-lvl0 href=/categories/%e7%ab%99%e5%8b%99>站務</a>»</span><h1 class="DocSearch-lvl1 Heading-title article">article recommendation in Hugo 文章推薦舉例</h1><div class=des>經過艱苦卓絕的試驗，網站第四版終於完工了！現在介紹一下本站各類推薦中用到的算法。本人不懂編程，這裏只是瞎貓撞上死耗子。源碼直接在我 <a href=https://github.com/kujihhoe/HUGO-Theme-CJK targrt=_blank>Github</a> 上找就可以，分別在 home.html 和 single.html。後來發現有些寫麻煩了，懶得改了。</div></header><section class=article-front><div class=article-card-container><div class=article-card-content style=background-image:url(https://pic.imgdb.cn/item/5f22212d14195aa594dfd532.jpg)></div></div><div class=article-info><div class="des1 des-article"><time datetime=2020-04-14>2020-04-14
+> 2020-08-06</time></div><div class="des1 des-article"><span>4598 字</span>
+<span class=svg><a href=https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/post/223%e7%ae%97%e6%b3%95.md target=_blank><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></span></div><div class="des1 des-article"><span class=des2>作者</span><span><a href=/author/%e6%9f%af%e6%a3%8b%e7%80%9a>@柯棋瀚</a></span>　<span class=des2>標籤</span><span><a href=/tags/coding>#coding</a></span></div><div class="des1 des-article"><span class=des2>版權 </span><a rel="license noopener" href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank>CC BY-NC-SA 4.0</a>，非商業用途可隨意使用</div></section><nav class=pagi-wrap><div class=pagi><span class=.pagi-prev>← <a href=/224/>article statistics in Hugo 文章統計舉例</a></span>
+<span class=.pagi-next><a href=/225/><v>廣陵散</v>「世有二譜」說新釋　綱要</a> →</span></div></nav></div><main><div><aside class="toc sticky"><li class=toc-item><nav id=TableOfContents><ul><li><a href=#一級難度>一級難度</a><ul><li><a href=#作品>作品</a></li></ul></li><li><a href=#二級難度>二級難度</a><ul><li><a href=#最近修改>最近修改</a></li><li><a href=#封面置頂>封面置頂</a></li><li><a href=#其他作者>其他作者</a></li><li><a href=#過去與未來的的本周>過去與未來的的本周</a></li></ul></li><li><a href=#三級難度>三級難度</a><ul><li><a href=#分類>分類</a></li><li><a href=#您可能喜歡>您可能喜歡</a></li><li><a href=#沒有喜歡的這裏呢>沒有喜歡的？這裏呢</a></li></ul></li><li><a href=#推廣>推廣</a></li></ul></nav></li></aside><article class="DocSearch-content vertical-false"><p>本站的索引 taxonomies 有分類 categories、系列 series、標籤 tags、作者 author、備註 notes。每篇文章都有 1 箇分類、0-1 個系列、0-3 個標籤、0-1 箇備註。分爲网誌、讀書、作品、春秋學刊等 <code>section</code>。</p><h2 id=一級難度>一級難度</h2><p>從簡單的開始說。以下都是主葉中的。</p><h3 id=作品>作品</h3><img src=https://pic.imgdb.cn/item/5e952d72c2a9a83be5821683.jpg><p>「作品」的 <code>section</code> 是 <code>gallery</code>。按修改時間倒序列出所有 <code>type</code> 是 <code>gallery</code> 的文章：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{ range  (where .Site.RegularPages.ByLastmod.Reverse &#34;Type&#34; &#34;gallery&#34;) }}
+    &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style=color:#f92672>a</span>&gt;
+{{ end }}
+</code></pre></div><h2 id=二級難度>二級難度</h2><h3 id=最近修改>最近修改</h3><img src=https://pic.imgdb.cn/item/5e952d72c2a9a83be582167f.jpg><p>思路如下：</p><ol><li>按最近修改時間倒序，列出所有文章</li><li>篩選出所有發布時間和修改時間不一致的文章</li><li>排除最近發布出現的文章</li><li>列出前 4 項</li></ol><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{ $latest := slice }}
+{{ range first 8 (where .Site.RegularPages.ByPublishDate.Reverse &#34;Type&#34; &#34;post&#34;) }}
+    {{ $latest = $latest | append . }}
+{{ end }}  
+
+{{ $1lastmod := slice }}
+{{ $lastmod := slice }}
+{{ range (where .Site.RegularPages.ByLastmod.Reverse &#34;Type&#34; &#34;post&#34;) }}
+    {{ if ne .Lastmod .Date }}
+        {{ $1lastmod = $1lastmod | append . }}
+        {{ $lastmod = $1lastmod | complement $latest }}
+    {{ end }}
+{{ end }}
+
+{{ range first 4 $lastmod }}
+    &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style=color:#f92672>a</span>&gt;
+{{ end }}
+</code></pre></div><p>最簡單的方法就是直接按修改時間倒序列出，但是大部分都會和最近發布重複，就顯得沒意義了。</p><h3 id=封面置頂>封面置頂</h3><img src=https://pic.imgdb.cn/item/5f2b679414195aa594429671.jpg><p>4 張圖片，我這樣安排：1 張除了網址之外的最近發布；2 張除了網址之外的最近修改；隨機 1 張年度 🔝。</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{- range first 1 (where .Site.RegularPages.ByDate.Reverse &#34;Type&#34; &#34;in&#34; site.Params.otherSections) -}}
+    &lt;<span style=color:#f92672>div</span>&gt;
+        &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span><span style=color:#a6e22e>target</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;_blank&#34;</span>&gt;
+            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;recommendation-card&#34;</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;background-image: url({{ .Params.img }})&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+        &lt;/<span style=color:#f92672>a</span>&gt;
+    &lt;/<span style=color:#f92672>div</span>&gt;
+{{ end }}
+
+{{ $sitelastmod := slice }}
+{{ range (where .Site.RegularPages.ByLastmod.Reverse &#34;Type&#34; &#34;in&#34; site.Params.otherSections) }}
+    {{ if ne .Lastmod .Date }}
+        {{ $sitelastmod = $sitelastmod | append . }}
+    {{ end }}
+{{ end }}
+
+{{ range first 2 $sitelastmod }}
+    &lt;<span style=color:#f92672>div</span>&gt;
+        &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span><span style=color:#a6e22e>target</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;_blank&#34;</span>&gt;
+            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;recommendation-card&#34;</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;background-image: url({{ .Params.img }})&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+        &lt;/<span style=color:#f92672>a</span>&gt;
+    &lt;/<span style=color:#f92672>div</span>&gt;
+{{ end }}
+
+{{ range first 1 (shuffle ( .Site.Menus.top)) }}
+    &lt;<span style=color:#f92672>div</span>&gt;
+        &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Page.Permalink }}&#34;</span>  <span style=color:#a6e22e>target</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;_blank&#34;</span>&gt;
+            &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;recommendation-card&#34;</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;background-image: url({{ .Page.Params.img }})&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+        &lt;/<span style=color:#f92672>a</span>&gt;
+    &lt;/<span style=color:#f92672>div</span>&gt;
+{{ end }}
+</code></pre></div><p>當然，你先要在全站配置文件中加上：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml>[<span style=color:#a6e22e>params</span>]
+  <span style=color:#a6e22e>otherSections</span> = [<span style=color:#e6db74>&#34;exam&#34;</span>,<span style=color:#e6db74>&#34;gallery&#34;</span>,<span style=color:#e6db74>&#34;net&#34;</span>,<span style=color:#e6db74>&#34;read&#34;</span>]  
+</code></pre></div><h3 id=其他作者>其他作者</h3><img src=https://pic.imgdb.cn/item/5e952d72c2a9a83be5821686.jpg width=400><p>同理，還有其他作者：</p><ol><li>列出所有作者</li><li>篩選出不是「柯棋瀚」「柯棋瀚整理」的作者</li><li>隨機列出這些作者及他們的文章</li></ol><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{ $author := slice }}
+{{ range .Site.Taxonomies.author.ByCount }}
+    {{ if ne .Page.Title  [&#34;柯棋瀚&#34;] [&#34;柯棋瀚整理&#34;] }}
+        {{ $author = $author | append . }}
+    {{ end }}
+{{ end }}
+{{ range $author  | shuffle  }}
+    &lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Page.RelPermalink }}&#34;</span>&gt;{{ .Page.Title }}&lt;/<span style=color:#f92672>a</span>&gt;
+    {{ range .Pages  | shuffle }}
+        &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+    {{ end }}
+{{ end }}
+</code></pre></div><h3 id=過去與未來的的本周>過去與未來的的本周</h3><p>文章頁面下的「過去的本周」，簡單粗暴用了査表法。<code>.Unix</code> 語法見 <a href=https://gohugo.io/functions/unix/>https://gohugo.io/functions/unix/</a>，是從 1970-01-01 開始累加的秒數。</p><p>我這當然不是準確的「本周」，我算的是向前後加減三天。一天 86,400s，一年 315,360s，一閏年 316,224s。我將弟 4、8 年設爲閏年。于是思路很簡單了：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{ $1date := sub .Date.Unix 31276800  }}
+{{ $2date := sub .Date.Unix 31795200 }}
+{{ $3date := sub .Date.Unix 62812800 }}
+{{ $4date := sub .Date.Unix  63331200 }}
+{{ $5date := sub .Date.Unix 94348800 }}
+{{ $6date := sub .Date.Unix  94867200 }}
+{{ $7date := sub .Date.Unix 125971200 }}
+{{ $8date := sub .Date.Unix 126489600 }}
+{{ $9date := sub .Date.Unix 157507200 }}
+{{ $10date := sub .Date.Unix 158025600 }}
+{{ $11date := sub .Date.Unix 189043200 }}
+{{ $12date := sub .Date.Unix 189561600 }}
+{{ $13date := sub .Date.Unix 220579200 }}
+{{ $14date := sub .Date.Unix  221097600 }}
+{{ $15date := sub .Date.Unix 252201600 }}
+{{ $16date := sub .Date.Unix  252720000 }}
+{{ $21date := add .Date.Unix 31276800  }}
+{{ $22date := add .Date.Unix 31795200 }}
+{{ $23date := add .Date.Unix 62812800 }}
+{{ $24date := add .Date.Unix  63331200 }}
+{{ $25date := add .Date.Unix 94348800 }}
+{{ $26date := add .Date.Unix  94867200 }}
+{{ $27date := add .Date.Unix 125971200 }}
+{{ $28date := add .Date.Unix 126489600 }}
+{{ $29date := add .Date.Unix 157507200 }}
+{{ $30date := add .Date.Unix 158025600 }}
+{{ $31date := add .Date.Unix 189043200 }}
+{{ $32date := add .Date.Unix 189561600 }}
+{{ $33date := add .Date.Unix 220579200 }}
+{{ $34date := add .Date.Unix  221097600 }}
+{{ $35date := add .Date.Unix 252201600 }}
+{{ $36date := add .Date.Unix  252720000 }}
+&lt;<span style=color:#f92672>ul</span>&gt;
+{{ range  (where .Site.RegularPages.ByDate &#34;Type&#34; &#34;post&#34;) }}
+{{ $currentdate := .Date.Unix }}
+{{ if and (ge $currentdate $2date) (le $currentdate $1date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $4date) (le $currentdate $3date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $6date) (le $currentdate $5date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $8date) (le $currentdate $7date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $10date) (le $currentdate $9date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $12date) (le $currentdate $11date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $14date) (le $currentdate $13date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $16date) (le $currentdate $15date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $21date) (le $currentdate $22date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $23date) (le $currentdate $24date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $25date) (le $currentdate $26date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $27date) (le $currentdate $28date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $29date) (le $currentdate $30date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $31date) (le $currentdate $32date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $33date) (le $currentdate $34date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ else if and (ge $currentdate $35date) (le $currentdate $36date) }}
+&lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .RelPermalink }}&#34;</span>&gt;{{ .Title | safeHTML }}&lt;/<span style=color:#f92672>a</span>&gt; &lt;<span style=color:#f92672>time</span>&gt;{{  .Date.Format &#34;2006-01-02&#34; }}&lt;/<span style=color:#f92672>time</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+{{ end }}
+{{ end }}
+&lt;/<span style=color:#f92672>ul</span>&gt;
+</code></pre></div><h2 id=三級難度>三級難度</h2><h3 id=分類>分類</h3><img src=https://pic.imgdb.cn/item/5e999ffcc2a9a83be5d3a737.jpg><p>主葉上「分類」的目的是讓新讀者快速瞭解网誌所有文章類型，所以我想在每個分類下面生成兩項最近發布和兩項隨機推薦。同時，分類後面有「赫赫指南」和「資源」兩個系列，需要把它們排除了。大槩思路如下：</p><ol><li>隨機排列所有分類</li><li>生成兩項最近發布</li><li>隨機生成兩項系列不是「赫赫指南」和「資源」的項目</li></ol><p>具體思路見代碼塊中的註釋。</p><img src=https://pic.imgdb.cn/item/5e9a7628c2a9a83be56e26f4.jpg width=300><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=color:#75715e>&lt;!--  1、生成所有系列不是赫赫指南｜資源｜的文章。 --&gt;</span>
+{{ $series := slice }}
+{{ $1series := slice }}
+{{ $2series := slice }}
+{{ range .Site.Taxonomies.series.赫赫指南 }}
+    {{ $1series = $1series | append .Page }}
+{{ end }}
+{{ range .Site.Taxonomies.series.資源 }}
+    {{ $2series = $2series | append .Page }}
+{{ end }}
+{{ with (where .Site.RegularPages &#34;Type&#34; &#34;post&#34;) }}
+    {{ $series = . | complement $1series $2series }}
+{{ end }}
+<span style=color:#75715e>&lt;!--  2、隨機排列所有分類 --&gt;</span>
+{{ $allCate := where .Site.Taxonomies.categories &#34;Type&#34; &#34;post&#34; }}
+{{ range $allCate.ByCount  | shuffle }}
+    {{ $first2 := slice }}
+    {{ $thisCateinSeries := slice }}
+    {{ $end := slice }}
+    {{ $thisCate := slice }}
+<span style=color:#75715e>&lt;!-- 3、生成兩項最近發布  --&gt;</span>    
+    {{ range first 2 .Pages }}
+        {{ $first2 = $first2 | append . }}
+    {{ end }}
+<span style=color:#75715e>&lt;!-- 4、生成 3 和 1 的交集，卽在最近兩項中排除系列是赫赫指南｜資源｜的  --&gt;</span>    
+    {{ $First2inSeries :=  intersect $series $first2  }}
+<span style=color:#75715e>&lt;!-- 5、生成這個分類下所有文章  --&gt;</span>    
+    {{ range .Pages | shuffle }}
+        {{ $thisCate = $thisCate | append . }}
+    {{ end }}
+<span style=color:#75715e>&lt;!-- 6、生成 5 和 1 的交集，卽在這個分類所有文章中排除系列是赫赫指南｜資源｜的 --&gt;</span>    
+    {{ $thisCateinSeries := intersect $thisCate $series }}
+<span style=color:#75715e>&lt;!-- 7、生成 6 和 4 的補集，卽在這個分類所有文章中排除系列是赫赫指南｜資源｜的，以及最近兩項  --&gt;</span>    
+    {{ $end := $thisCateinSeries | complement $First2inSeries  }}
+    &lt;<span style=color:#f92672>ol</span>&gt;
+<span style=color:#75715e>&lt;!-- 8、結果  --&gt;</span>         
+        &lt;<span style=color:#f92672>h2</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Page.Permalink }}&#34;</span>&gt;{{ .Page.Title | safeHTML  }}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>h2</span>&gt;
+        &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;discover-des&#34;</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;margin-top:.5em;text-align:left&#34;</span>&gt;最近發布&lt;/<span style=color:#f92672>div</span>&gt;
+        {{ range $first2 }}
+            &lt;<span style=color:#f92672>div</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title | safeHTML  }}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+        {{ end }}
+        &lt;<span style=color:#f92672>div</span>&gt;隨機推薦&lt;/<span style=color:#f92672>div</span>&gt;
+        {{ range first 2 $end | shuffle }}
+            &lt;<span style=color:#f92672>div</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title | safeHTML  }}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
+        {{ end }}
+    &lt;/<span style=color:#f92672>ol</span>&gt;
+{{ end }}
+</code></pre></div><h3 id=您可能喜歡>您可能喜歡</h3><p>以下是各文章下面的推薦。</p><img src=https://pic.imgdb.cn/item/5e999ffcc2a9a83be5d3a739.jpg width=700><p><b>是從 <a href=https://ops.tips/blog/article-recommendation-using-hugo/>ops.tips</a> 那移植過來的</b>，非常感謝。（安利一句，這網站挺好看的）進行了三處改進：</p><ol><li>他只算了 <code>tags</code>，我加上了 <code>categories</code>、<code>series</code>。<code>notes</code> 不列入計算</li><li>加權計算，系列｜的權重比 [分類] #標籤 髙</li><li>根據相關文章篇數，實行梯度強弱相關度</li></ol><p>首先看第二點。本站的情況是，如果兩篇文章的系列相同，那關聯度是最高的，我們可以據此設置 <b>加權</b>，系列占 4，分類、標籤占 3。有如下可能：</p><table><thead><tr><th>分類 3</th><th>系列 4</th><th>標籤 3</th><th>總分</th></tr></thead><tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>0</td><td>1</td><td>3</td></tr><tr><td>0</td><td>0</td><td>2</td><td>6</td></tr><tr><td>0</td><td>0</td><td>3</td><td>9</td></tr><tr><td>0</td><td>1</td><td>0</td><td>4</td></tr><tr><td>0</td><td>1</td><td>1</td><td>7</td></tr><tr><td>0</td><td>1</td><td>2</td><td>10</td></tr><tr><td>0</td><td>1</td><td>3</td><td>13</td></tr><tr><td>1</td><td>0</td><td>0</td><td>3</td></tr><tr><td>1</td><td>0</td><td>1</td><td>6</td></tr><tr><td>1</td><td>0</td><td>2</td><td>9</td></tr><tr><td>1</td><td>0</td><td>3</td><td>12</td></tr><tr><td>1</td><td>1</td><td>0</td><td>7</td></tr><tr><td>1</td><td>1</td><td>1</td><td>10</td></tr><tr><td>1</td><td>1</td><td>2</td><td>13</td></tr><tr><td>1</td><td>1</td><td>3</td><td>16</td></tr></tbody></table><p><code>0,3,4,6,7,9,10,12,13,16</code> 10 種情況。我們設置 <code>3</code> <code>4</code> <code>6</code> <code>7</code> <code>9</code> <code>10</code> <code>13</code> 7 檔。</p><p>第三點，如果一個系列篇數很多，超過了 10 篇，那推薦裏面全是這箇系列的，其他一些相關但關聯度弱一些的文章就不會出現。爲改進這個問題，我們可以用強弱相關度相結合的方法。分三種情況。</p><ol><li>相關篇數少於 10：直接順序排列前 10 篇。</li><li>相關篇數 11—20：順序排列前 5 篇；弟 6—10 篇隨機選取 2 篇；弟 11—20 篇隨機選取 3 篇</li><li>相關篇數多於 21：順序排列前 5 篇；弟 6—20 篇隨機選取 3 篇；弟 21—30 篇隨機選取 2 篇</li></ol><p>思路如下：</p><ol><li>列出本文章之外的所有文章</li><li>加權計算本文章和其他文章的索引重合度</li><li>按索引重合度進行排序</li><li>分別生成前 5 項、6—10 項、11—20 項、6—20 項、21—30 項</li><li>根據不同情況，進行隨機選取。</li></ol><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{ $current := . }}
+{{ $articles := where (where $.Site.Pages &#34;.Kind&#34; &#34;eq&#34; &#34;page&#34; ) &#34;.Title&#34; &#34;!=&#34; $current.Title }}
+{{ $3relevant := slice }}
+{{ $4relevant := slice }}
+{{ $6relevant := slice }}
+{{ $7relevant := slice }}
+{{ $9relevant := slice }}
+{{ $10relevant := slice }}
+{{ $13relevant := slice }}
+{{ $recommend := slice }}
+{{ $5recommend := slice }}
+{{ $10recommend := slice }}
+{{ $20recommend := slice }}
+{{ $30recommend := slice }}
+{{ $6to10recommend := slice }}
+{{ $6to20recommend := slice }}
+{{ $11to20recommend := slice }}
+{{ $21to30recommend := slice }}
+<span style=color:#75715e>&lt;!-- 加權計算索引重合度 --&gt;</span>
+{{ range $idx, $article := $articles }}
+    {{ $1intersection := len (intersect $article.Params.series $current.Params.series) }}
+    {{ $1weighted := mul 4 $1intersection }}
+    {{ $2intersection := len (intersect $article.Params.categories $current.Params.categories) }}
+    {{ $2weighted := mul 3 $2intersection }}
+    {{ $3intersection := len (intersect $article.Params.tags $current.Params.tags) }}
+    {{ $3weighted := mul 3 $3intersection }}
+    {{ $4weighted  := add $1weighted $2weighted }}
+    {{ $5weighted  := add $3weighted $4weighted }}
+    {{ if (ge $5weighted 13) }}
+        {{ $13relevant = $13relevant | append $article }}
+        {{ else if (ge $5weighted 10) }}
+            {{ $10relevant = $10relevant | append $article }}
+        {{ else if (eq $5weighted 9) }}
+            {{ $9relevant = $9relevant | append $article }}
+        {{ else if (eq $5weighted 7) }}
+            {{ $7relevant = $7relevant | append $article }}
+        {{ else if (eq $5weighted 6) }}
+            {{ $6relevant = $6relevant | append $article }}
+        {{ else if (eq $5weighted 4) }}
+            {{ $4relevant = $4relevant | append $article }}
+        {{ else if (eq $5weighted 3) }}
+            {{ $3relevant = $3relevant | append $article }}
+        {{ end }}
+{{ end }}
+<span style=color:#75715e>&lt;!-- 據索引重合度排列相關文章 --&gt;</span>
+{{ range $13relevant }}
+    {{ $recommend = $recommend | append . }}
+{{ end }}
+{{ range $10relevant }}
+    {{ $recommend = $recommend | append . }}
+{{ end }}
+{{ range $9relevant }}
+    {{ $recommend = $recommend | append . }}
+{{ end }}
+{{ range $7relevant }}
+    {{ $recommend = $recommend | append . }}
+{{ end }}
+{{ range $6relevant }}
+    {{ $recommend = $recommend | append . }}
+{{ end }}
+{{ range $4relevant }}
+    {{ $recommend = $recommend | append . }}
+{{ end }}
+{{ range $3relevant }}
+    {{ $recommend = $recommend | append . }}
+{{ end }}
+<span style=color:#75715e>&lt;!-- 列出數量區間 --&gt;</span>
+{{- range shuffle (first 5 $recommend) -}}
+    {{ $5recommend = $5recommend | append . }}
+{{ end }}
+{{- range shuffle (first 10 $recommend) -}}
+    {{ $10recommend = $10recommend | append . }}
+{{ end }}
+{{ range shuffle (first 20 $recommend)  }}
+    {{ $20recommend = $20recommend | append . }}
+{{ end }}
+{{ range shuffle (first 30 $recommend) }}
+    {{ $30recommend = $30recommend | append . }}
+{{ end }}
+{{ $6to10recommend = $10recommend | complement  $5recommend | shuffle }}
+{{ $6to20recommend = $20recommend | complement  $5recommend | shuffle }}
+{{ $11to20recommend = $20recommend | complement  $10recommend | shuffle }}
+{{ $21to30recommend = $30recommend | complement  $20recommend | shuffle }}
+<span style=color:#75715e>&lt;!-- 根據相關文章篇數進行條件判斷 --&gt;</span>
+{{ if ge (len $recommend) 21 }}
+    &lt;<span style=color:#f92672>ul</span>&gt;
+    &lt;<span style=color:#f92672>div</span>&gt;強相關&lt;/<span style=color:#f92672>div</span>&gt;
+    {{- range first 5 $recommend -}}
+        &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{- .Title | safeHTML | markdownify -}}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+    {{ end }}
+    &lt;<span style=color:#f92672>div</span>&gt;隨機次強相關&lt;/<span style=color:#f92672>div</span>&gt;
+    {{- range first 3 $6to20recommend -}}
+        &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{- .Title | safeHTML | markdownify -}}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+    {{ end }}
+    &lt;<span style=color:#f92672>div</span>&gt;隨機弱相關&lt;/<span style=color:#f92672>div</span>&gt;
+    {{- range first 2  $21to30recommend  -}}
+        &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{- .Title | safeHTML | markdownify -}}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+    {{ end }}
+    &lt;/<span style=color:#f92672>ul</span>&gt;
+        {{ else if ge (len $recommend) 11 }}
+        &lt;<span style=color:#f92672>ul</span>&gt;
+        &lt;<span style=color:#f92672>div</span>&gt;強相關&lt;/<span style=color:#f92672>div</span>&gt;
+        {{- range first 5 $recommend -}}
+            &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{- .Title | safeHTML | markdownify -}}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+        {{ end }}
+        &lt;<span style=color:#f92672>div</span>&gt;隨機次強相關&lt;/<span style=color:#f92672>div</span>&gt;
+        {{- range first 2 $6to10recommend -}}
+            &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{- .Title | safeHTML | markdownify -}}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+        {{ end }}
+        &lt;<span style=color:#f92672>div</span>&gt;隨機弱相關&lt;/<span style=color:#f92672>div</span>&gt;
+        {{- range first 3 $11to20recommend -}}
+            &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{- .Title | safeHTML | markdownify -}}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+        {{ end }}
+        &lt;/<span style=color:#f92672>ul</span>&gt;
+            {{ else if le (len $recommend) 10 }}
+            &lt;<span style=color:#f92672>ul</span>&gt;
+            &lt;<span style=color:#f92672>div</span>&gt;強相關&lt;/<span style=color:#f92672>div</span>&gt;
+            {{- range first 10 $recommend -}}
+                &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{- .Title | safeHTML | markdownify -}}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+            {{ end }}
+            &lt;/<span style=color:#f92672>ul</span>&gt;
+{{ end }}
+</code></pre></div><p>以 <a href=/blog/2018/10/29/mgwfts.html>蒙文通的經史觀——<v>經學抉原</v>讀後（附摘錄）</a> 爲例。未加權：</p><ul><li>錢穆<v>經學通論</v>摘錄</li><li>陳壁生諸書摘錄</li><li>周予同諸篇摘錄</li><li><v>北京讀經說記</v>述要</li><li>梁啓超<v>中國近三百年學術史</v>述要</li><li>鄭玄地位的升降——<v>禮是鄭學</v>讀後</li><li>蔗糖消費的社會性——<v>甜與權力</v>讀後</li><li>維柯與康德的史學思想——<v>新科學</v>讀後</li><li>霍布斯鮑姆筆下的蘇聯模式──<v>極端的年代</v>讀後</li><li><v>公羊傳</v>齊襄復讎事詮釋史</li></ul><p>加權之後：</p><ul><li>錢穆<v>經學通論</v>摘錄</li><li>陳壁生諸書摘錄</li><li>周予同諸篇摘錄</li><li><v>北京讀經說記</v>述要</li><li>梁啓超<v>中國近三百年學術史</v>述要</li><li>鄭玄地位的升降——<v>禮是鄭學</v>讀後</li><li>蔗糖消費的社會性——<v>甜與權力</v>讀後</li><li>維柯與康德的史學思想——<v>新科學</v>讀後</li><li>霍布斯鮑姆筆下的蘇聯模式──<v>極端的年代</v>讀後</li><li>艾因哈德筆下的査理大帝——<v>査理大帝傳</v>讀後</li></ul><p>區別不大。只有最後一項不一樣，被換成了讀書筆記。再加入了強弱相關度之後，後 5 項：</p><ul><li>蔗糖消費的社會性——甜與權力讀後</li><li>于山水古琴練習曲集指要</li><li>保罗·芮恩施平民政治的基本原理述要</li><li>雷次宗略注喪服經傳疏議</li><li>資源｜文史類網路學術資源</li></ul><p>出現了不是讀書｜系列的內容。效果不錯。</p><p>以 <a href=/blog/2018/01/20/gcxs.html>走之前去髙 雄走一走</a> 爲例，分類：[生活]，系列：立言記｜，標籤：#臺灣。直接列出重合度前十：</p><ul><li>在輔仁大學交換是怎樣的體驗？</li><li>臺灣的幾箇孔廟</li><li>2018 二〇一八</li><li>我❤府城──府城客運</li><li>故宮和蘆洲</li><li>星爸星媽的天空</li><li>基 kee 隆 lung</li><li>動物園狂發照片</li><li>兩次遊行</li><li>臺灣ㄟ大學隨拍</li></ul><p>都是立言記｜的內容。結合了強弱相關度之後的後 5 項：</p><ul><li>樂山大佛的石窟</li><li>動物園狂發照片</li><li>星爸星媽的天空</li><li>一些㒳厈詞彙、讀音對照</li><li>臺灣訪琴記</li></ul><p>效果不錯。</p><h3 id=沒有喜歡的這裏呢>沒有喜歡的？這裏呢</h3><p>在此基礎上，我們可以有代表性地生成與此不相關的文章：</p><ol><li>列出所有分類，每個分類隨機產生一項文章</li><li>生成所有不是本文章、分類系列有重合的文章，及其他 <code>section</code> 的文章</li><li>生成 1 和 2 的交集</li><li>在這一交集中隨機產生 5 項文章</li></ol><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>{{ $categories := slice }}
+{{ range .Site.Taxonomies.categories.ByCount }}
+    {{ with .Pages | shuffle }}
+        {{ $cate := . }}
+        {{ range first 1 $cate }}
+            {{ $categories =  $categories | append  . }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ $current := slice }}
+{{ $current = $current | append . }}
+{{ $other := $.Site.RegularPages |  complement $current $recommendedArticles (where .Site.RegularPages &#34;Type&#34; &#34;gallery&#34;) (where .Site.RegularPages &#34;Type&#34; &#34;block&#34;)  (where .Site.RegularPages &#34;Type&#34; &#34;zanfu&#34;) (where .Site.RegularPages &#34;Type&#34; &#34;xuekan&#34;) | shuffle }}
+{{ $others := intersect  $categories  $other }}
+&lt;<span style=color:#f92672>ul</span>&gt;
+    {{  range first 5 $others | shuffle }}
+        &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ .Permalink }}&#34;</span>&gt;{{- .Title -}}&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+    {{ end }}
+&lt;/<span style=color:#f92672>ul</span>&gt;
+</code></pre></div><p>隨機推薦下面一行有個坑，如果直接寫成這樣：</p><pre><code>{{ range .Site.Taxonomies.categories.ByCount }}
+    {{ range first 1 .Pages | shuffle }}  
+        {{ $categories =  $categories | append  . }}
+    {{ end }}
+{{ end }}
+</code></pre><p>是不能隨機的，產生的都是各分類中發布時間最近的一項文章。所以我用了迂迴的方法。</p><h2 id=推廣>推廣</h2><p>如果配合 GitHub Actions，定時重新生成，那這些隨機的推薦可以讓靜態網頁變成半動態網頁，豈不美哉！</p><p>案：本站已實現 <a href=/226>定時生成</a>。</p></article></div><div class=comment-wrap><div class=comment><p>評論系統：<a href=https://open.saintic.com/openservice/isso target=_blank>诏预Isso开放服务</a>。本站對您在使用該系統時產生的隱私問題不負責任。郵件提醒可能歸爲<b>垃圾郵件</b>，請注意査收</p><script defer data-isso=https://open.saintic.com/isso/f8fn21 data-isso-max-comments-top=50 data-isso-reveal-on-click=50 src=https://open.saintic.com/isso/f8fn21/js/embed.min.js></script><section id=isso-thread></section></div></div><nav class="section section6"><h2>隨機推薦</h2><div class=discover-wrap style="margin:2em auto 3em"><div class=discover><span><a href=https://kqh.me/224/ target=_blank><div class=recommendation-card style=background-image:url(https://pic.imgdb.cn/item/5f22212d14195aa594dfd52e.jpg)></div></a></span></span><span><a href=https://kqh.me/privacy/ target=_blank><div class=recommendation-card style=background-image:url(https://pic.imgdb.cn/item/5f1d14fb14195aa5947f1922.jpg)></div></a></span></span><span><a href=https://kqh.me/226/ target=_blank><div class=recommendation-card style=background-image:url(https://pic.imgdb.cn/item/5f1fbec214195aa59489e8c3.jpg)></div></a></span></span><span><a href=https://kqh.me/180/ target=_blank><div class=recommendation-card style=background-image:url(https://pic.imgdb.cn/item/5f22e72114195aa5943e5774.jpg)></div></a></span></span><span><span class=archive-info><time>2018-12-21</time> > 20-04-30</span>　<div class=discover-item><a href=https://kqh.me/149/ class=archive-post-link target=_blank>本站排版說明及示例葉面</a></div><div class="des2 home"><a style=font-size:.9em href=/author/%e6%9f%af%e6%a3%8b%e7%80%9a>@柯棋瀚</a>&nbsp<a style=font-size:.9em href=/categories/%e7%ab%99%e5%8b%99 target=_blank>[站務]</a></div></span><span><a href=https://kqh.me/blog/2018/10/03/vznm.html target=_blank><div class=recommendation-card style=background-image:url(https://pic.imgdb.cn/item/5f22e72114195aa5943e5771.jpg)></div></a></span></span><span><a href=https://kqh.me/blog/2017/10/04/shuoming.html target=_blank><div class=recommendation-card style=background-image:url(https://pic.imgdb.cn/item/5f257a5214195aa5942f33ed.jpg)></div></a></span></span><span><span class=archive-info><time>2017-06-21</time></span>　<div class=discover-item><a href=https://kqh.me/blog/2018/06/11/shuibushi.html class=archive-post-link target=_blank>敦煌文書 P.2507<v>水部式</v>校釋</a></div><div class="des2 home"><a style=font-size:.9em href=/author/%e6%9f%af%e6%a3%8b%e7%80%9a>@柯棋瀚</a>&nbsp<a style=font-size:.9em href=/categories/%e5%8f%b2 target=_blank>[史]</a></div></span></div></div><h2>過去與未來的本周</h2><div class=recommend><div><a href=/post/237/>中國書法的藝術表現（髙一爛文）</a> <time class=archive-info>2013-04-12</time></div><div><a href=/160/>人與時代（髙一尬文）</a> <time class=archive-info>2013-04-18</time></div></div></nav></main><footer class=footer-wrapper><nav class=col><div class=col1><div class=col1><a href=/><span class=col1-title>主頁</span></a></div><div class=col1><a href=/about/><span class="col1-title col2">關於</span></a><div>20-08-16</div></div><div class=col1><a href=/privacy/><span class="col1-title col2">隱私安全</span></a><div>20-06-07</div></div><div class=col1><a href=/links/><span class="col1-title col2">友鏈</span></a><div>20-08-13</div></div><div class=col1><a href=/release/><span class="col1-title col2">更新日誌</span></a><div>20-08-18</div></div><div class=col1><a href=/donate/><span class="col1-title col2">捐助我</span></a><div>20-08-12</div></div></div><div class=col1><div class=col1><a href=/#gallery><span class=col1-title>作品</span></a></div><div class=col1>网誌</div><div class=col1><a href=/#discover><span class=col1-title>發現</span></a></div><div class=col1><a href=/post><span class=col1-title>歸檔</span></a></div></div><div class=col1><div class=col1>刊物</div><div class=col1><a href=/net><span class=col1-title>赫赫网摘</span></a></div><div class=col1><a href=/xuekan><span class=col1-title>春秋學刊</span></a></div><div class=col1>知識</div><div class=col1><a href=/read><span class=col1-title>赫赫蠹書</span></a></div><div class=col1><a href=/tutorial><span class=col1-title>赫赫指南</span></a></div><div class=col1><a href=/exam><span class=col1-title>考試筆記</span></a></div></div><div class=col1 style=margin-top:1em><div class=col1>數據庫</div><div class=col1><a href=/#zanfu><span class=col1-title>赫赫讚府</span></a></div><div class=col1><a href=/qinpu><span class=col1-title>琴譜文本</span></a></div><div class=col1><a href=/#database><span class=col1-title>其他</span></a></div></div></nav><nav class=col><ul style=margin-top:.4em><h2>分類<span style=color:#d2c600;font-size:.7em> 12</span></h2><li><a href=https://kqh.me/categories/%E5%8F%B2/>史 72</a></li><li><a href=https://kqh.me/categories/%E7%B6%93/>經 71</a></li><li><a href=https://kqh.me/categories/%E7%94%9F%E6%B4%BB/>生活 47</a></li><li><a href=https://kqh.me/categories/%E7%90%B4/>琴 43</a></li><li><a href=https://kqh.me/categories/%E8%A5%8D/>襍 29</a></li><li><a href=https://kqh.me/categories/%E5%93%B2%E7%A4%BE%E7%A7%91/>哲社科 18</a></li><li><a href=https://kqh.me/categories/%E7%AB%99%E5%8B%99/>站務 16</a></li><li><a href=https://kqh.me/categories/%E6%9B%B8/>書 9</a></li><li><a href=https://kqh.me/categories/%E6%BC%A2%E8%AA%9E/>漢語 9</a></li><li><a href=https://kqh.me/categories/%E9%8C%84%E9%9F%B3/>錄音 9</a></li><li><a href=https://kqh.me/categories/%E6%96%87/>文 8</a></li><li><a href=https://kqh.me/categories/%E5%BD%AB%E6%A2%93/>彫梓 6</a></li></ul><ul style=margin-top:.4em><h2>系列<span style=color:#d2c600;font-size:.7em> 15</span></h2><li><a href=https://kqh.me/series/%E8%AC%9B%E9%96%92%E8%AD%9A/>講閒譚 18</a></li><li><a href=https://kqh.me/series/%E7%AB%8B%E8%A8%80%E8%A8%98/>立言記 16</a></li><li><a href=https://kqh.me/series/%E3%A2%A7%E8%80%95%E8%A8%98/>㢧耕記 15</a></li><li><a href=https://kqh.me/series/%E7%B4%80%E6%97%A5/>紀日 15</a></li><li><a href=https://kqh.me/series/%E6%96%BF%E8%A8%98/>斿記 9</a></li><li><a href=https://kqh.me/series/%E8%A7%80%E5%BE%8C/>觀後 9</a></li><li><a href=https://kqh.me/series/%E4%B8%AD%E5%AD%B8/>中學 7</a></li><li><a href=https://kqh.me/series/%E3%A2%A7%E8%80%95%E7%9F%A5%E8%81%9E/>㢧耕知聞 6</a></li><li><a href=https://kqh.me/series/%E5%A2%A8%E6%B1%A0%E8%A8%98/>墨池記 5</a></li><li><a href=https://kqh.me/series/%E8%A8%AA%E7%90%B4%E8%A8%98/>訪琴記 4</a></li><li><a href=https://kqh.me/series/%E9%9B%A9%E8%8B%A5%E8%A8%98/>雩若記 3</a></li><li><a href=https://kqh.me/series/%E5%B0%BC%E5%87%A5%E8%A8%98/>尼凥記 1</a></li><li><a href=https://kqh.me/series/%E6%97%A0%E8%A1%BA%E8%A8%98/>无衺記 1</a></li><li><a href=https://kqh.me/series/%E7%8E%A8%E5%A3%B4%E8%A8%98/>玨壴記 1</a></li><li><a href=https://kqh.me/series/%E9%9A%B1%E9%BA%9F%E8%A8%98/>隱麟記 1</a></li></ul><ul style=margin-top:.4em><h2>作者<span style=color:#d2c600;font-size:.7em> 11</span></h2><li><a href=https://kqh.me/author/%E6%9F%AF%E6%A3%8B%E7%80%9A/>柯棋瀚 164</a></li><li><a href=https://kqh.me/author/%E6%9F%AF%E6%A3%8B%E7%80%9A%E5%AD%B8/>柯棋瀚學 91</a></li><li><a href=https://kqh.me/author/%E6%9F%AF%E6%A3%8B%E7%80%9A%E6%95%B4%E7%90%86/>柯棋瀚整理 67</a></li><li><a href=https://kqh.me/author/%E6%9F%AF%E6%A3%8B%E7%80%9A%E9%8C%84%E5%85%A5/>柯棋瀚錄入 23</a></li><li><a href=https://kqh.me/author/%E6%9F%AF%E6%A3%8B%E7%80%9A%E5%87%BA%E5%93%81/>柯棋瀚出品 8</a></li><li><a href=https://kqh.me/author/%E7%99%BD%E9%BA%B5%E9%A5%85%E9%A0%AD/>白麵饅頭 2</a></li><li><a href=https://kqh.me/author/%E5%90%B3%E7%89%A7/>吳牧 1</a></li><li><a href=https://kqh.me/author/%E6%A5%8A%E9%91%92%E7%90%AA/>楊鑒琪 1</a></li><li><a href=https://kqh.me/author/%E6%BD%98%E8%A5%BF%E9%BA%93/>潘西麓 1</a></li><li><a href=https://kqh.me/author/%E7%91%9A%E7%92%89%E7%90%B4%E7%A4%BE/>瑚璉琴社 1</a></li><li><a href=https://kqh.me/author/%E8%A7%A3%E8%88%AA/>解航 1</a></li><h2>備註<span style=color:#d2c600;font-size:.7em> 1</span></h2><li><a href=https://kqh.me/notes/%E8%AA%B2%E6%A5%AD/>課業 41</a></li><h2><a href=/tags>標籤<span style=font-size:.7em> 43</span></a></h2></ul></nav><div class=Footer>訂閱｜<a href=/index.xml target=_blank style=font-weight:700>RSS</a>　<a href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target=_blank style=font-weight:700>SUBSCRIBE</a>　<a href=/sitemap.xml target=_blank>sitemap</a><br>copyright <a href=/>赫赫文王</a>　2017-10-03 > 2020<br>power <a href=https://gohugo.io target=_blank>Hugo</a>　theme <a href=https://github.com/kujihhoe/HUGO-Theme-CJK target=_blank>CJK</a>　host <a href=https://app.netlify.com/sites/kqh/deploys target=_blank>Netlify</a><div style="margin:1em auto">——— <a href=/about>關 於</a> ———</div><ul><li>email&iMessage // me [at] kqh.me</li><li>PGP // <a href="/kujihhoe (E2269D07) public.asc" target=_blank>E2269D07</a></li><li><a href=/223>文章推薦算法</a></li><li><a href=/224>文章統計算法</a></li><li><a href=/149>板式</a></li><li>1671</li></ul><script async src="https://www.googletagmanager.com/gtag/js?id=UA-108451819-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-108451819-1');</script><script src=https://cdn.jsdelivr.net/gh/instantpage/instant.page@3.0.0/instantpage.min.js defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js></script><script type=text/javascript>docsearch({apiKey:'9b538ac6c3dacb030efa8d971bf15d1f',indexName:'kqh',inputSelector:'#algolia-autocomplete',debug:false});</script></div></footer></body></html>
