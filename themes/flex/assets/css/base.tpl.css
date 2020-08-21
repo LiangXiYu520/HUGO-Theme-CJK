@@ -258,11 +258,15 @@ border-bottom: none;
   .vertical h3{
     margin:3.5em 2em 0 0
   }
+  .verticlal-false-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 .vertical-false{
      margin: 0 auto 5.5em;
      max-width: 40em;
      font-family: var(--sans)
-
   } 
 .toc{
      max-height:96vh;
@@ -272,18 +276,20 @@ border-bottom: none;
      margin-right:.5em;
      font-family: var(--sans);
    }
-  .toc.sticky {
-   max-width: 14.5em; 
-    float: right; 
-    position: -webkit-sticky;
+
+.toc-verticlal-false{
   position: sticky;
-  top: .3em;
-  border:1px solid var(--gray);
-  border-radius: 1.5em
+  top:1em;
+  flex: 0 1 10em;
+   margin:0 .2em .2em -1em;
+   padding:.5em;
+  border-right:2px solid var(--yellow);
+  max-height: 93vh;
+  overflow: scroll;
 }
-  .toc ul{
-  font-size: .9em;
-  line-height: 1.5;
+
+  .toc ul{ 
+  line-height: 1.8;
   font-weight: bold
   }
   .toc-item ul a{
@@ -293,7 +299,8 @@ border-bottom: none;
     color:var(--brown)
      }
   .toc-item ul li ul {
-    font-size: 1em;
+    font-size: .9em;
+    line-height: 1.6;
     margin-left:-1.5em;
     font-weight: normal;
   }
@@ -1068,7 +1075,7 @@ margin-left:8px
     text-align:justify;
     }
 .column2 {
-    grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17em, 30em));
     gap:3em 2.5em;
    } 
 .column2 ul{
@@ -1259,7 +1266,7 @@ color: var(--brown)}
 .svg a{
   box-shadow:none}
 .svg a svg{  width:1.1em}
-@media screen and (max-width:900px){
+@media screen and (max-width:970px){
   .sectionh1{
     font-size:3.5em
   }
@@ -1335,14 +1342,14 @@ display: block;
     .vertical-false{
           padding: .5em;
           margin: 4em auto}
+.toc-verticlal-false{        
+  position: relative;
+    top: none
+}
     .toc{
       float: none;
       margin:auto;
     }
-    .toc.sticky {
-      position: relative;
-      float:none;
-    top: none}
 .Tags {
       border: .2em solid var(--black);
       border-radius: 1.7rem;

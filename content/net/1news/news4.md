@@ -13,6 +13,8 @@ vertical: false
 img: 'https://pic.imgdb.cn/item/5f3deff414195aa594530d36.jpg'
 ---
 
+轉眼就第四期了。
+
 ## 封面：美國雙標嗎？
 
 <v>[明白人权与人道的区别，就不会说美国袒护沙特、打压萨达姆](https://mp.weixin.qq.com/s/jGrD6x2oj8J4o8gb7dhNDQ)</v>，老虱杂货铺，2020-05-21：
