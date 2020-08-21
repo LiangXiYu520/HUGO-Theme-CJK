@@ -50,8 +50,8 @@
     </section>
   </div>
 
-  <div class="discover-wrap" style="margin-top: -9em;">
-    <div class="discover">
+  <div class="discover-wrap">
+    <div class="discover margin-cover">
       {{- range first 2 (where .Site.RegularPages.ByDate.Reverse "Type" "in" site.Params.otherSections) -}}
       <div>
         <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})"></div></a>
@@ -82,7 +82,7 @@
     <div class="home-latest-wrap">
     <div class="home-latest-grid">
   {{ $latest := slice }}
-  {{ range first 6 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+  {{ range first 7 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
   {{ $latest = $latest | append . }}
   <div class="article-front">
     <div class="article-card-container">
@@ -97,18 +97,29 @@
 <time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-info">
 {{ .Date.Format "2006-01-02" }}
 {{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "2006-01-02" }}{{ end }}</time>
-</div>
-<div class="des1 des-article discover-item"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML | markdownify }}</a></div>
-<div class="des1 des-article">
-  {{ .Params.description | safeHTML  | markdownify }}
-  </div>
-<div class="des1 des-article">
+<div style="float:right">
 {{- with .Params.author -}}
     <span class="des2">作者</span>
     {{- range . -}}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
     <span><a href="/author/{{ $name }}">@{{- $name -}}</a></span>
+    {{- end -}}
+    {{- end -}}
+{{- end -}}
+</div>
+</div>
+<div class="des1 des-article discover-item mar0"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML | markdownify }}</a></div>
+<div class="des1 des-article">
+  {{ .Params.description | safeHTML  | markdownify }}
+  </div>
+<div class="des1 des-article">
+  {{- with .Params.categories -}}
+    <span class="des2">分類</span>
+    {{- range . -}}
+    {{- $name := . -}}
+    {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
+    <span><a href="/categories/{{ $name }}">{{- $name -}}｜</a></span>
     {{- end -}}
     {{- end -}}
 {{- end -}}
@@ -155,7 +166,7 @@
 {{ end }}
 <div class="discover-wrap">
   <div class="discover">
-{{ range first 4 $lastmod }}
+{{ range first 5 $lastmod }}
 <div class="discover-grid">
   {{ if .Params.img }}
   <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
@@ -301,7 +312,7 @@
   {{- with $des := index (.Site.Data.taxo ) "赫赫网摘" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
            <div class="discover-des">最近發布 Latest</div>
            <div class="discover-wrap">
-           <div class="discover">
+           <div class="discover column2">
              {{- range first 4 (where .Site.RegularPages.ByDate.Reverse "Type" "net") -}}
              <div class="discover-grid">
                {{ if .Params.img }}
