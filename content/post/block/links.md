@@ -24,21 +24,20 @@ vertical: false
 ## 導航推廣
 
 <div class="vertical-false">
-本站收錄於以下博客衟杭：
 
-[十秊之約](https://www.foreverblog.cn)　<n>20181114　這天數了一下，成員二百一十多箇。如果願意的話，我們可以把數字擴大兩倍，中國目前活躍的各類箇人獨立博客可能有六百箇</n>
+本站收錄於以下博客導航：
 
-[博客志 - 優秀箇人獨立博客導航](http://www.jetli.com.cn)　<n>20191117　耶✌️</n>
+- [十秊之約](https://www.foreverblog.cn)　<n>20181114　這天數了一下，成員二百一十多箇。如果願意的話，我們可以把數字擴大兩倍，中國目前活躍的各類箇人獨立博客可能有六百箇</n>
+- [博客志 - 優秀箇人獨立博客導航](http://www.jetli.com.cn)　<n>20191117　耶✌️</n>
+- [Blog We](https://blogwe.com/allblogs.html)　<n>20190309—20190929　<a href="https://blogwe.com/kqh-me.html" target="\_blank">收錄葉</a></n>
+- [博客樹](https://manman.qian.lu/bokeshu)　<n>20181111</n>
+- [个站商店](http://storeweb.cn)　<n>20181030　<a href="https://storeweb.cn/site/one/661" target="\_blank">收錄葉</a></n>
+- [大头针网址](https://dtz9.org/#cat-8)　<n>時間未知</n>
 
-[Blog We](https://blogwe.com/allblogs.html)<n>20190309—20190929　<a href="https://blogwe.com/kqh-me.html" target="\_blank">收錄葉</a></n>
+本站 RSS <b>被</b>公開訂閱的列表：
 
-[博客樹](https://manman.qian.lu/bokeshu)<n>20181111</n>
-
-[个站商店](http://storeweb.cn)　<n>20181030　<a href="https://storeweb.cn/site/one/661" target="\_blank">收錄葉</a></n>
-
-[奇草導航](https://www.qicao.cn/?keyword=%E8%B5%AB%E8%B5%AB%E6%96%87%E7%8E%8B)
-
-[大头针网址](https://dtz9.org/#cat-8)　<n>時間未知</n>
+- [十年之约](http://rss.foreverblog.cn)
+- [个站商店](https://storeweb.cn/navigator/rss)
 
 </div>
 
@@ -59,5 +58,7 @@ vertical: false
 ~~[他與她的夢](https://cncyu.cn/) 2018-11-10 與其臨淵羨魚，不如退而結網 202008網站似乎掛了~~
 
 ~~[那束陽光](https://eveaz.com) 2018-10-30 寫寫自己的故事，想想自己的未來！ 202008友鏈被刪~~
+
+~~[奇草導航](https://www.qicao.cn/?keyword=%E8%B5%AB%E8%B5%AB%E6%96%87%E7%8E%8B) 7-15 網站已關閉~~
 
 </div>
