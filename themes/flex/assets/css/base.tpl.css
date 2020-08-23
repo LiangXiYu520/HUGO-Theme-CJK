@@ -280,7 +280,7 @@ border-bottom: none;
 .toc-verticlal-false{
   position: sticky;
   top:1em;
-  flex: 0 1 10em;
+  flex: 0 1 16em;
    margin:0 .2em .2em -1em;
    padding:.5em;
   border-right:2px solid var(--yellow);
@@ -289,7 +289,7 @@ border-bottom: none;
 }
 
   .toc ul{ 
-  line-height: 1.8;
+  line-height: 1.6;
   font-weight: bold
   }
   .toc-item ul a{
@@ -1266,7 +1266,17 @@ color: var(--brown)}
 .svg a{
   box-shadow:none}
 .svg a svg{  width:1.1em}
-@media screen and (max-width:970px){
+@media screen and (max-width:1090px){
+  .toc-verticlal-false{        
+    position: relative;
+      top: none
+  }
+}
+@media screen and (max-width:900px){
+  .toc{
+    float: none;
+    margin:auto;
+  }
   .sectionh1{
     font-size:3.5em
   }
@@ -1342,14 +1352,6 @@ display: block;
     .vertical-false{
           padding: .5em;
           margin: 4em auto}
-.toc-verticlal-false{        
-  position: relative;
-    top: none
-}
-    .toc{
-      float: none;
-      margin:auto;
-    }
 .Tags {
       border: .2em solid var(--black);
       border-radius: 1.7rem;

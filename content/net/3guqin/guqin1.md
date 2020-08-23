@@ -9,7 +9,7 @@ categories: ["琴"]
 url: net/qin-1
 description: '「這種琴人間的相依相存，琴曲間的相融相匯，正是川派琴界一路走來，終能繁盛至今的重要原因。」'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f1e2e6a14195aa59470e977.jpg'
+img: 'https://pic.imgdb.cn/item/5f42203c160a154a674c9527.jpg'
 ---
 
 ## 碎忆台湾
