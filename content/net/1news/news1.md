@@ -10,7 +10,7 @@ tags: ["觀點"]
 url: net/news-1
 description: '「选择与弱势群众、与老百姓、与人民站在一起，在食腐动物面前，为弱者说不；在倾斜的天平上，为正义加码。要知道，为自由、平等、公正、法治而呐喊，正是你我存在的意义。」'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f3d26f414195aa594b781c4.jpg'
+img: 'https://pic.imgdb.cn/item/5f432bd7160a154a67cd4374.jpg'
 ---
 
 ## 封面：照亮他人還是吞噬自己？
