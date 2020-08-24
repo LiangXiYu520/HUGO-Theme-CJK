@@ -1,15 +1,15 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫网摘｜文史｜四：學術發表的未來"
+title: "赫赫文史网摘｜四：學術發表的未來"
 date: 2020-08-21
 author: ["柯棋瀚整理"]
-netsort: ["文史"]
+netsort: ["赫赫文史网摘"]
 categories: ["史"]
 url: net/history-4
 description: '「杂志学刊越来越从一个俱乐部性质变成一个锦标赛性质的东西。学术话语被单一化以后，生态变得非常单薄，可以玩的就只剩下标签了。」目錄：徐峰<v>論語「各言爾志」章新解</v>；冯茜<v>礼学研究重在揭示古人生活中的价值信念</v>；葛兆光<v>对于现实保持批评立场， 是每一个人文学者都应秉持的</v>；刘家和<v>学史的基本问题</v>；雜談。'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f3f42e914195aa594ace037.jpg'
+img: 'https://pic.imgdb.cn/item/5f424cfd160a154a676079d7.jpg'
 ---
 
 ## 封面：项飙<v>学术发表的未来</v>

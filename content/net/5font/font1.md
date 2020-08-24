@@ -10,7 +10,7 @@ categories: ["彫梓"]
 url: net/font-1
 description: '目錄：字體，一本书的版式诞生记⋯⋯'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f1e2e6a14195aa59470e96d.jpg'
+img: 'https://pic.imgdb.cn/item/5f424cfd160a154a676079ca.jpg'
 ---
 
 ## 字體

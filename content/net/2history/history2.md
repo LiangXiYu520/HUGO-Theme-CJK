@@ -1,15 +1,15 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫网摘｜文史｜二：將彼此的歷史記憶安排在同一張年表"
+title: "赫赫文史网摘｜二：將彼此的歷史記憶安排在同一張年表"
 date: 2020-06-21
 author: ["柯棋瀚整理"]
-netsort: ["文史"]
+netsort: ["赫赫文史网摘"]
 categories: ["史"]
 url: net/history-2
 description: '「當兩個文明相遇時，如何將彼此的歷史記憶安排在同一張通代年表裏，這是相互理解的需要。」目錄：陳志遠老師、重新認識儒家、說文；認識施派；「輕學術」。'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f1d5d2a14195aa594ab15a5.jpg'
+img: 'https://pic.imgdb.cn/item/5f424e48160a154a67610b82.jpg'
 ---
 
 ## 封面：將彼此的歷史記憶安排在同一張年表

@@ -1,15 +1,15 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫网摘｜文史｜三：屈原也不是那麼潔白無瑕"
+title: "赫赫文史网摘｜三：屈原也不是那麼潔白無瑕"
 date: 2020-07-21
 author: ["柯棋瀚整理"]
-netsort: ["文史"]
+netsort: ["赫赫文史网摘"]
 categories: ["史"]
 url: net/history-3
 description: '過端午節，就看看屈原的科普。「美好的信念可以让人有主心骨，会变得坚强。」目錄：屈原，制度史，禮學，文化與學術史，雜談。'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f1d5d2a14195aa594ab15a8.jpg'
+img: 'https://pic.imgdb.cn/item/5f424cfd160a154a676079cc.jpg'
 ---
 
 ## 封面：屈原
