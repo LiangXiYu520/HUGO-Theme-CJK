@@ -4,7 +4,7 @@ title: "錄音小白問荅"
 date: 2020-08-25
 categories: ["錄音"]
 description: '有關全指向、海邊環境錄音、設備選擇。'
-url: /post/recording-q&a
+url: /post/recording-que
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f451f0b160a154a6777ce16.jpg'
 ---
