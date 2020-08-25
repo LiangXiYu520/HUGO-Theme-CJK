@@ -498,5 +498,17 @@
   </div>
 </section>
   </main>
-  {{ partial "comments.html" . }}
+  <div class="comment-wrap">
+    <div class="comment">
+  <div id="hyvor-talk-view"></div>
+  <script type="text/javascript">
+      var HYVOR_TALK_WEBSITE = 1727; 
+      var HYVOR_TALK_CONFIG = {
+          url: "https://kqh.me",
+          id: "000000"
+      };
+  </script>
+  <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+  </div>
+  </div>
 {{ end }}

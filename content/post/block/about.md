@@ -5,7 +5,7 @@ author: ["柯棋瀚"]
 categories: ["站務"]
 title: "關於"
 date: 2017-10-04
-lastmod: 2020-08-16
+lastmod: 2020-08-24
 menu:
   main:
     weight: 1
@@ -23,7 +23,7 @@ vertical: false
 
 ## 技術
 
-- 【支持】託管於 ~~<a href="https://pages.github.com" target="\_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="\_blank">kitian616</a> 提供网誌主題模板 Text[jane](https://github.com/xianmin/hugo-theme-jane)，~~，主題基於 Flex 修改。~~<a href="https://tw.godaddy.com/" target="\_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="\_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~評論模塊爲 [詔預Isso開放服務](https://open.saintic.com/openservice/isso) ~~[Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。古琴關注數統計用的 [Substats](https://sspai.com/post/59593) api。
+- 【支持】託管於 ~~<a href="https://pages.github.com" target="\_blank">Github Pages</a>~~ [netlify](https://www.netlify.com) 平臺，由 ~~<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>~~ [hugo](https://gohugo.io/) 引擎驅動，~~<a href="https://github.com/kitian616/jekyll-TeXt-theme" target="\_blank">kitian616</a> 提供网誌主題模板 Text[jane](https://github.com/xianmin/hugo-theme-jane)，~~，主題基於 Flex 修改。~~<a href="https://tw.godaddy.com/" target="\_blank">GoDaddy</a>~~ [dynadot](https://www.dynadot.com) 提供域名，~~<a href="https://www.cloudflare.com/" target="\_blank">Cloudflare</a>~~ netlify 提供 DNS 解析、SSL，<a href="https://git-lfs.github.com/" target="\_blank">Git LFS</a> 提供文件存儲，<a href="https://portal.qiniu.com/dora" target="\_blank">~~七牛雲~~</a>圖牀采用 [聚合圖牀](https://www.superbed.cn)，~~<a href="http://busuanzi.ibruce.info/" target="\_blank">不蒜子</a> 提供全站 UV、PV 統計<n>自 20171021 開始，目前不顯示，因爲跟谷歌的比誤差有點大</n>~~ 評論模塊爲 [Hyvor Talk](https://talk.hyvor.com) ~~[詔預Isso開放服務](https://open.saintic.com/openservice/isso) [Valine](https://valine.js.org) [Gitalk](https://gitalk.github.io/)，leancloud 提供文章點擊量統計<n>20181026 之歬爲 UV，之後開始累加 PV</n>，採用 [Google AdSense ](https://www.google.com/adsense/) 廣告~~，流量分析採用 Google Analytics，全部博文存儲於 IPFS 分布式系統。古琴關注數統計用了 [Substats](https://sspai.com/post/59593) api。
 - 【隱私】見 [本站的隱私、安全、速度 privacy policy](/privacy)
 - 【檢索】1、本站已支持 Algolia，歡迎使用！2、直接用 <a href="https://www.google.com/search?q=site:kqh.me" target="\_blank">Google</a><n>Google 收錄得又全又快</n>，例子：`site:kqh.me 芋圓`，中閒記得加空格。搜索引擎對网葉內容的更新不會很頻繁，很可能我修改了一些內容，但沒有被收錄，衟致搜索結果不準確。
 - 【大事記】見 [更新](/release)
@@ -33,7 +33,7 @@ vertical: false
 
 ## 內容
 
-本站結構：
+本站分五大板塊：
 
 ```
 赫赫文王 ──────────── 主葉
@@ -51,16 +51,17 @@ vertical: false
   │      ╰─ 作者 ───╯
   ├─ 知識
   │  ├─ 赫赫蠹書
-  │  ├─ 赫赫網摘
   │  ├─ 敎程
   │  │  ├─ 赫赫指南
   │  │  ╰─ 資源
   │  ╰─ 考試複習、課堂筆記
+  ├─ 刊物
+  │  ├─ 赫赫网摘
+  │  ╰─ 春秋學刊
   ├─ 作品
   ╰─ 數據庫
      ├─ （赫赫讚府）
      ├─ 傳世琴譜數字文本化工程
-     ├─ 春秋學刊
      ╰─ 其他   
 ```
 
@@ -104,16 +105,21 @@ vertical: false
 
 - 課業：上課的作業。這一部分完全可以不用看，沒什麼價値，完全用來湊字數。放在這裏不過是爲了方便有需要的同學可以拿來用，以減少一些寫課程論文的不必要的時閒浪費，也算是對大學浪費的時閒一箇小小的交代。想想我爲了交作業，寫了多少垃圾，浪費了多少寶貴旹閒啊。至於版權的問題，如果用來當作業素材的話，隨便複製粘貼就是。至於在網上傳播用，則遵循本网誌一貫的 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
 
+
+### 刊物
+
+- 赫赫网摘：收集、節錄、整理平時看到的値得收藏的文章報導，讓碎片閱讀稍微有點意義的嘗試。【發布時閒】我來幫你刷微博：每月 20 日；赫赫文史网摘：每月 21 日；其他：不定期。引文有所刪節，不再另行說明
+- 春秋學刊：北師大歷史學院本科生學術刊物<v>春秋學刊</v>的目次<n>半秊刊。我只是個搬運工</n>
+
 ### 知識
 
-- 讀書：讀書筆記
+- 赫赫蠹書：讀書筆記
 - 赫赫指南：搭建知識框架
 - 資源：一些信息聚合
 - 考試：考試複習資料
 
 ### 數據庫
 
-- ~~赫赫讚府：收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引~~
-- 春秋學刊：北師大歷史學院本科生學術刊物<v>春秋學刊</v>的目次<n>半秊刊，至少未來幾年我還在師大就會繼續㪅</n>
+- （赫赫讚府：收集網路評論等，按主題進行編排，爲當下的厤㕜提供一些索引）
 - 傳世琴譜數字文本化工程：希望有生之年能夠繼續
 - 文庫：一些標點作業

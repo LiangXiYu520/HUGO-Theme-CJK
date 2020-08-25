@@ -4,6 +4,7 @@ type: 'block'
 author: ["柯棋瀚"]
 title: "隱私安全"
 date: 2020-06-07
+lastmod: 2020-08-25
 categories: ["站務"]
 tags: ["coding"]
 menu:
@@ -11,26 +12,26 @@ menu:
     weight: 2
 description: '我有必要將本站所有涉及隱私的情況完全透明展示給您。'
 vertical: false
-url: privacy
+url: /privacy
 img: 'https://pic.imgdb.cn/item/5f1d14fb14195aa5947f1922.jpg'
 ---
 
 ## 隱私
 
-以下服務會直接記錄您的信息（高敏感）：
+以下服務會爲高敏感：
 
-- 诏预 Isso 評論服务（國內網站，我無法直接管理）
-- Google Analytics 流量分析（由我直接管理）
-
-以下服務可能會記錄您的 IP 地址（中敏感）：
-
-- 托管於 Netlify（我無法直接管理）
 - 聚合圖牀（國內網站，我無法直接管理）
+
+以下服務會記錄您的 IP 地址（中敏感）：
+
+- Google Analytics 流量分析（由我直接管理）
+- Hyvor Talk 評論（斯里蘭卡的公司，由我直接管理）
+- 托管於 Netlify（我無法直接管理）
 
 還使用了如下腳本（低敏感）：
 
 - Algolia 搜索（我無法管理）
-- InstantPage（我無法管理）
+- InstantPage 快速加載（我無法管理）
 
 ## 安全
 
@@ -88,9 +89,9 @@ SRI, Subresource Integrity 是一個核對清單，將遠程加載資源的 sha 
 ## 速度
 
 - 使用 [InstantPage](https://instant.page/) 腳本，實現站內預加載
-- 生成時使用 `hugo --minify`，把 css、js 壓縮到最小
-- js 放在最後，竝使用延遲加載、異步加載
-- 無框架；無多餘 js
+- 生成時使用 `hugo --gc --minify`，把 css、js 壓縮到最小
+- js 放在最後，竝使用延遲、異步加載
+- 無框架；無不必要的 js
 
 PageSpeed Insights：電腦上全站各頁面平均 98。非常好。
 

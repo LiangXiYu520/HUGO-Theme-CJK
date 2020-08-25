@@ -5,7 +5,7 @@ author: ["柯棋瀚"]
 categories: ["站務"]
 title: "更新日誌"
 date: 2017-10-05
-lastmod: 2020-08-18
+lastmod: 2020-08-25
 url: release
 menu:
   main:
@@ -1931,3 +1931,9 @@ html5 語意標籤改造。
 修復主頁刊物手機下溢出的小瑕疵。
 
 調整橫排目錄，從 float 改成 flex 布局。
+
+#### 8-24
+
+4.7.17
+
+評論系統換到 [Hyvor Talk](https://talk.hyvor.com)
