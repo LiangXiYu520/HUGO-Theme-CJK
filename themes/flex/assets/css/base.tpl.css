@@ -477,31 +477,6 @@ code{
   border:.15em solid var(--black);
   background: var(--bg);
 }
-.home-heading{
-  padding: 2em  1em 3em;
-  margin: -1em 0 0;
-  height: 21em;
-  writing-mode: vertical-rl;
-}
-{{ $all := slice }}
-    {{ range .Site.Data.color }}
-    {{ range .color }}
-    {{ $all = $all | append . }}
-    {{ end }}
-    {{ end }}
-{{ with $all | shuffle }}
-{{ range first 1 . }}
-.home-heading h1{
-  margin: 0;
-  padding:0;
-  text-shadow: -2px -3px 0 #2b2b2b;
-text-align: left;
-letter-spacing: .15em;
-font-size: 4.5em;
-color: {{ . }};
-}
-{{ end }}
-{{ end }}
 .heading-wrap{
   padding: 2em  1em 3em;
   margin: -1em 0 0
@@ -934,14 +909,13 @@ padding:auto .5em
 .home-cover{
   background-image: url("{{ . }}");
   background-size:cover;
-  display: inline-flex;
-  justify-content:space-between;
-  min-height:85vh;
-  width:80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 1040px;
   border-radius:2em;
   margin: auto;
-  padding: .6em 1em;
+  padding: 2em .5em 2em;
   animation-name: footer;
   animation-duration:1.5s;
   animation-iteration-count:infinite;
@@ -954,58 +928,85 @@ padding:auto .5em
   }
 {{ end }}
 {{ end }}
-.label{
-  color:#2b2b2b;
-font-size: 1.2em;
-font-weight: bold;
-letter-spacing: .3em;
-text-align: left;
-margin-left:8px
-}
-.sentence{
-  color: var(--gray);
-  padding-right:16px;
+
+.cover-items{
+  flex: 0 1 23em;
+  margin: 20px;
   text-align: left;
-  line-height: 1.6;
-  border-right: 1px solid #787878
 }
-.sentence1{
-  font-size:1.2em;
-  text-align: left;
-  text-align: justify;
-  text-justify: inter-ideograph
+{{ $all := slice }}
+    {{ range .Site.Data.color }}
+    {{ range .color }}
+    {{ $all = $all | append . }}
+    {{ end }}
+    {{ end }}
+{{ with $all | shuffle }}
+{{ range first 1 . }}
+.cover-items h1{
+  margin: 0 auto .1em;
+letter-spacing: .15em;
+font-size: 4.5em;
+line-height: 1;
+color: {{ . }};
 }
-.sentence2{
-  font-size:.8em;
+{{ end }}
+{{ end }}
+.board{
+  background:var(--section1);
+  border-radius:1em;
+  padding:.5em .5em 0;
+  margin:1em auto
 }
-.timestamp{
+.cover-right{
     font-family: var(--serif);
   color:#787878;
-  text-align: left;
   font-size: .9em;
   line-height: 1;
-  writing-mode:horizontal-tb
+  text-align: left;
 }
-.timestamp table{
+.cover-right table{
+  margin:0;
   border:none;
-  margin:1em 0 0
   }
-.timestamp table  td {
+.cover-right table td{
     border:none;
-    padding: .2em 1em 0 0}
+    padding: .2em 1em 0 0
+  }
+  .label{
+    color:#2b2b2b;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: .3em;
+  text-align: center;
+  padding-bottom:10px;
+  border-bottom: 3px solid #787878;
+  }
+    .sentence{
+      color: var(--gray);
+      padding-top:16px;
+      line-height: 1.6;
+      border-top: 1px solid #787878
+    }
+    .sentence1{
+      font-size:1.2em;
+       }
+    .sentence2{
+      font-size:.8em;
+    }   
 .big{
+  text-align: left;
   font-weight: bold;
   color:rgba(0,0,0,0);
   -webkit-text-stroke: 1px var(--gray)
 }
 .big1{
-  font-size: 10em
+  font-size: 8em
 }
 .big2{
-    font-size: 6em
+    font-size: 5em
 }
 .big3{
-  font-size: 4em
+  font-size: 3.5em
 }
 .section{
   padding:3em 1em 2em
@@ -1289,18 +1290,7 @@ color: var(--brown)}
   .banner{
     font-size: .9em
   }
-  .timestamp{
-    line-height: 1.6;
-    margin: 0 auto auto .5em
-  }
-  .home-heading{
-    padding: .1em  .5em 1em;
-    margin:1em 0 3em
-  }
-  .home-heading h1{
-    text-shadow: -2px -3px 0 #2b2b2b;
-    font-size: 4em
-  }
+  
   .home-latest-wrap{
 display: block;
   }
@@ -1391,18 +1381,14 @@ display: block;
   .section{
     padding:1.5em .25em .5em
   }
+  .label{
+    font-size: 1em;
+  }
   .sentence{
     font-size:.85em;
   }
   .margin-cover{
     margin-top:0
-  }
-  .home-cover{
-    display: block;
-    min-height:110vh
-  }
-  .home-heading{
-    float: right
   }
   .discover.gallery ol{
     min-width:90%

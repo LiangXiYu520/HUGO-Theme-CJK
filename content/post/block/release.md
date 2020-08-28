@@ -5,7 +5,7 @@ author: ["柯棋瀚"]
 categories: ["站務"]
 title: "更新日誌"
 date: 2017-10-05
-lastmod: 2020-08-25
+lastmod: 2020-08-28
 url: release
 menu:
   main:
@@ -1937,3 +1937,9 @@ html5 語意標籤改造。
 4.7.17
 
 評論系統換到 [Hyvor Talk](https://talk.hyvor.com)
+
+#### 8-28
+
+4.7.18
+
+調整封面，取消原來的竪排，太亂了。

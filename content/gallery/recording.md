@@ -26,8 +26,8 @@ img: 'https://pic.imgdb.cn/item/5f37a56014195aa594fabf5d.jpg'
 
 2020 年 8 月 5 日啓用全新 logo：
 
-<img src="https://pic.imgdb.cn/item/5f2b49cf14195aa59436aa85.jpg" width="240">
-　　<img src="https://pic.imgdb.cn/item/5f2a7c7514195aa594e5cbbc.jpg" width="240">
+<img src="https://pic.imgdb.cn/item/5f486024160a154a679159bb.jpg" width="240">
+　　<img src="https://pic.imgdb.cn/item/5f4860a4160a154a67917a88.jpg" width="240">
 
 原來的話筒可以退役了。
 

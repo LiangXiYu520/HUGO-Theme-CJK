@@ -2,36 +2,12 @@
     <main class="home">
       <div class="home-wrap">
       <section class="home-cover">
-        <div class="timestamp">
-          <div class="subscribe-wrap des1">
-            <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
-          　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
-          </div>
-          {{ $page := where site.RegularPages "Type" "in" site.Params.mainSections }}
-          {{ dateFormat "2006-01-02 15:04" now.UTC }} UTC　顏色隨機組合，不必在意搭配
-          {{- $length := len $page }}
-          {{ $count := 0 }}{{ range $page }}{{ $count = add $count .WordCount }}{{ end }}{{ $count1 := div $count 1000 }}
-    <table>
-      <tr>
-        <td style="text-align:right">凡 /千字</td><td><span class="big big1">{{- $count1 }}</span></td>
-       </tr>
-       <tr>
-        <td style="text-align:right">/篇</td><td><span class="big big1">{{ $length }}</span></td>
-       </tr>
-      <tr>
-        <td style="text-align:right">篇均 /字</td><td><span class="big big2">{{ div $count $length }}</span></td>
-      </tr>
-      <tr>
-        <td style="text-align:right">已運行 /日</td><td><span class="big big3">{{ div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 }}</span></td>
-      </tr>
-     <tr>
-      <td style="text-align:right">橫跨 /秊</td><td><span class="big big3">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{ len . }}{{- end -}}</span></td>
-      </tr>
-    </table>
-      </div>
-        <div class="home-heading">
+        <div class="cover-items">
           <h1>赫赫文王</h1>
-          <div class="label">永嘉田家後🌝　生於九七秊🌖長于錦官城🌗　讀的歷史系🌚</div>
+          <div class="label">永嘉田家後🌝　生於九七秊🌖<br>
+            長于錦官城🌗　讀的歷史系🌚</div>
+          <div style="line-height:.2">　</div>
+            <div class="discover-des" style="border-top: 1px solid #787878">v4.7.18　{{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</div>  
           <div class="sentence">
           {{ $all := slice }}
               {{ range .Site.Data.sentence  }}
@@ -46,7 +22,37 @@
           {{ end }}
           {{ end }}
           </div>
+          <div class="board"><center><strong>站慶三周秊活動來襲！</strong></center>
+          <p class="discover-des">距離三周秊站慶還有 {{ div (sub (time "2020-10-03T22:30:00.00+10:00").Unix now.Unix) 86400 }} 日</p>
+          <p>2020 年 10 月 3—5 號三日之中，只要在本站任意頁面留言，並將快遞地址發到我郵箱，卽可獲得神祕禮物一分。禮物將於 12 號前寄出（如因疫情影響無法寄快遞，將順延）。</p>
           </div>
+          </div>
+        <div class="cover-items cover-right">
+          <div class="subscribe-wrap des1" style="margin-top:0">
+            <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
+          　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
+          </div>
+          {{ $page := where site.RegularPages "Type" "in" site.Params.mainSections }}
+          {{- $length := len $page }}
+          {{ $count := 0 }}{{ range $page }}{{ $count = add $count .WordCount }}{{ end }}{{ $count1 := div $count 1000 }}
+    <table>
+      <tr>
+        <td style="text-align:right">凡 /千字</td><td><span class="big big1">{{- $count1 -}}</span></td>
+       </tr>
+       <tr>
+        <td style="text-align:right">/篇</td><td><span class="big big1">{{- $length -}}</span></td>
+       </tr>
+      <tr>
+        <td style="text-align:right">篇均 /字</td><td><span class="big big2">{{- div $count $length -}}</span></td>
+      </tr>
+      <tr>
+        <td style="text-align:right">已運行 /日</td><td><span class="big big3">{{- div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 -}}</span></td>
+      </tr>
+     <tr>
+      <td style="text-align:right">橫跨 /秊</td><td><span class="big big3">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{- len . -}}{{- end -}}</span></td>
+      </tr>
+    </table>
+      </div>
     </section>
   </div>
 
@@ -158,7 +164,7 @@
 <div class="home-latest-grid">
   {{ $1lastmod := slice }}
   {{ $lastmod := slice }}
-{{ range   (where .Site.RegularPages.ByLastmod.Reverse "Type" "post")  }}
+{{ range (where .Site.RegularPages.ByLastmod.Reverse "Type" "post") }}
 {{ if ne .Lastmod .Date }}
 {{ $1lastmod = $1lastmod | append . }}
 {{ $lastmod = $1lastmod | complement $latest }}
@@ -280,7 +286,7 @@
   {{- with $icon := index $.Site.Data.icon .Page.Title -}}<span class="icon" style="background-image: url({{- $icon.icon -}})"></span>{{- end -}}
   <h3><a href="{{ .Page.RelPermalink }}" target="_blank">{{ .Page.Title | safeHTML }}</a></h3>
   </div>
-  {{ range .Pages  | shuffle }}
+  {{ range .Pages | shuffle }}
 <div style="margin-top:.8em"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
 {{ end }}
 </span>
