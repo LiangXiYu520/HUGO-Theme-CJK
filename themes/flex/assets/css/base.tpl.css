@@ -944,7 +944,7 @@ padding:auto .5em
 {{ range first 1 . }}
 .cover-items h1{
   margin: 0 auto .1em;
-letter-spacing: .15em;
+letter-spacing: .05em;
 font-size: 4.5em;
 line-height: 1;
 color: {{ . }};
@@ -952,10 +952,12 @@ color: {{ . }};
 {{ end }}
 {{ end }}
 .board{
-  background:var(--section1);
   border-radius:1em;
   padding:.5em .5em 0;
-  margin:1em auto
+  margin:1em auto;
+  -webkit-backdrop-filter: blur(5px);	
+  backdrop-filter: blur(6px);
+  box-shadow:  0 0 10px 0 var(--shallowgray);
 }
 .cover-right{
     font-family: var(--serif);
@@ -1377,6 +1379,9 @@ display: block;
   .home h1{
     font-size:3.7em;
     letter-spacing: 0;
+  }
+  .cover-items{
+    margin: 0;
   }
   .section{
     padding:1.5em .25em .5em
