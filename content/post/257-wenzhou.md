@@ -1,18 +1,18 @@
 ---
 author: ["柯棋瀚"]
-title: "溫州閒逛"
+title: "溫州閒逛一：小箬村、華蓋山，大羅山"
 date: 2020-07-11
 lastmod: 2020-07-20
 categories: ["生活"]
 series: ["斿記"]
 tags: ["江南"]
-description: '目錄：漁船標宋，華蓋山，大羅山'
+description: '水文一篇，不用看。'
 img: 'https://pic.imgdb.cn/item/5f1c56ad14195aa594df772c.jpg'
 ---
 
 ## 漁船標宋
 
-這裏的海邊沒什麼好看的。
+這海邊沒什麼好看的。
 
 漁船上的字，非常古早味，就拍下來稍微處理了一下。如果做成字體一定很有意思。
 
@@ -22,11 +22,7 @@ img: 'https://pic.imgdb.cn/item/5f1c56ad14195aa594df772c.jpg'
 
 ![](https://pic.imgdb.cn/item/5f0916d614195aa59419755b.jpg)
 
-
-
 <img src="https://pic.imgdb.cn/item/5f09188a14195aa59419f0f0.jpg" width="700">
-
-
 
 <img src="https://pic.imgdb.cn/item/5f09188a14195aa59419f0f2.jpg" width="700">
 
