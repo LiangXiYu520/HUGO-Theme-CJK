@@ -5,8 +5,8 @@ author: ["柯棋瀚"]
 categories: ["站務"]
 title: "更新日誌"
 date: 2017-10-05
-lastmod: 2020-08-28
-url: release
+lastmod: 2020-09-01
+url: /release
 menu:
   main:
     weight: 4
@@ -1943,3 +1943,7 @@ html5 語意標籤改造。
 4.7.18
 
 調整封面，取消原來的竪排，太亂了。
+
+9-01
+
+調整 figcaption 字體。

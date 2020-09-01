@@ -450,7 +450,8 @@ figure{
   }  
 figcaption{
   text-align: center;
-  color: var(--gray);
+  color: var(--shallowgray);
+  font-weight: bold;
   font-family: var(--sans);
   font-size: .9em;
   line-height: 1.6;
