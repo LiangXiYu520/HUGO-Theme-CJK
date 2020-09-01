@@ -4,7 +4,7 @@ title: "溫州閒逛一：洞頭、小箬村"
 date: 2020-07-11
 lastmod: 2020-09-01
 categories: ["生活"]
-series: ["斿記"]
+series: ["去走走"]
 tags: ["江南"]
 description: '水文一篇，不用看。這篇是關於海的。'
 img: 'https://pic.imgdb.cn/item/5f1c56ad14195aa594df772c.jpg'
