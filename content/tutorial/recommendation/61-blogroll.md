@@ -6,7 +6,7 @@ author: ["柯棋瀚整理"]
 categories: ["站務"]
 tutosort: ["資源"]
 date: 2020-04-30
-lastmod: 2020-08-03
+lastmod: 2020-09-01
 description: '我收集的一些比較有意思的博客'
 url: recommendation/blogroll
 img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96003.jpg' 
@@ -156,6 +156,8 @@ https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開�
 [HONGFEI](https://xiaohongfei.com/)　〔有國外旅行攻略〕
 
 ## 設計類
+
+https://practicaltypography.com/ 一位排版設計師。這網站相當於一本電子書。网站排版也值得好好學習。
 
 https://www.re-design.cn/
 
