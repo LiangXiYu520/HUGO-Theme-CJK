@@ -4,7 +4,7 @@
       <header class="Heading">
         {{ $termName := .Data.Singular }}
         {{ $type := .Type }}
-            <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»<a class="DocSearch-lvl0" href="/qinpu">琴譜數字文本化</a>»
+            <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#data">數據庫</a>»<a class="DocSearch-lvl0" href="/qinpu">琴譜數字文本化</a>»
               {{- with .Params.toc -}}
                   {{- range . -}}
                   {{- $name := . -}}
@@ -13,34 +13,34 @@
                   {{- end -}}
                   {{- end -}}
               {{- end -}}
-            </span><h1 class="DocSearch-lvl1 Heading-title article">{{- .Title | safeHTML | markdownify -}}</h1>
+            </span><h1 class="DocSearch-lvl1 heading-title a1 article">{{- .Title | safeHTML | markdownify -}}</h1>
       {{ if .Description }}
-      <div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
+      <div class="des a1">{{ .Params.Description | safeHTML | markdownify }}</div>
       {{ end }}
       </header>
     <section class="article-front-noimg">
-    <div class="des1">
+    <div class="des1 a1">
     <time datetime="{{ .Date.Format "2006-01-02" }}">
   {{ .Date.Format "2006-01-02" }}
 {{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "2006-01-02" }}{{ end }}</time>　
   <span>{{- .WordCount }} 字</span>
  {{ partial "sourcecode.html" . }}
     </div>
-    <div class="des1">
+    <div class="des1 a1">
     {{- with .Params.author -}}
         {{ range . }}
         {{- $name := . -}}
         {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-        <span class="des1-cate"> <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
+        <span class="des1 a1-cate"> <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
         {{- end -}}
         {{- end -}}
     {{- end -}}
   </div>
-<div class="des1">
+<div class="des1 a1">
     {{- if .Params.contentCopyright -}}
-    <span class="des2">版權 </span>{{ .Params.contentCopyright | safeHTML }}
+    <span class="des2 a1">版權 </span>{{ .Params.contentCopyright | safeHTML }}
     {{- else -}}
-    <span class="des2">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
+    <span class="des2 a1">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
     {{- end -}}
 </div>
 </section>

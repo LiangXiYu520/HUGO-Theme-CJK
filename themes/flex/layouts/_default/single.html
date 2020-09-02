@@ -3,7 +3,7 @@
     {{ partial "heading.html" . }}
     {{ partial "article-front.html" . }}
     <nav class="pagi-wrap">
-    <div class="pagi">
+    <div class="pagi a1">
       {{ with .PrevInSection }}
         <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a></span>
         {{- end }}

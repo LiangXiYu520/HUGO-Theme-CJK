@@ -7,7 +7,7 @@
           <div class="label">永嘉田家後🌝　生於九七秊🌖<br>
             長于錦官城🌗　讀的歷史系🌚</div>
           <div style="line-height:.2">　</div>
-            <div class="discover-des" style="border-top: 1px solid #787878">v4.7.18　{{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</div>  
+            <div class="discover-des" style="border-top: 1px solid #787878">v4.7.19　{{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</div>  
           <div class="sentence">
           {{ $all := slice }}
               {{ range .Site.Data.sentence  }}
@@ -58,7 +58,7 @@
   </div>
 
   <div class="discover-wrap">
-    <div class="discover margin-cover">
+    <div class="discover a1 margin-cover">
       {{- range first 2 (where .Site.RegularPages.ByDate.Reverse "Type" "in" site.Params.otherSections) -}}
       <div>
         <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})"></div></a>
@@ -84,7 +84,7 @@
 
 
 <section class="section section1">
-    <h1 id="discover"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
+    <h1 id="discover a1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
     </h1>
     <div class="home-latest-wrap">
     <div class="home-latest-grid">
@@ -100,13 +100,13 @@
   {{ end }}
 </div>
 <div class="article-info">
-<div class="des1 des-article">
-<time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-info">
+<div class="des1 a1 des-article">
+<time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-info a1">
 {{ .Date.Format "2006-01-02" }}
 {{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "2006-01-02" }}{{ end }}</time>
 <div style="float:right">
 {{- with .Params.author -}}
-    <span class="des2">作者</span>
+    <span class="des2 a1">作者</span>
     {{- range . -}}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
@@ -116,13 +116,13 @@
 {{- end -}}
 </div>
 </div>
-<div class="des1 des-article discover-item mar0"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML | markdownify }}</a></div>
-<div class="des1 des-article">
+<div class="des1 a1 des-article discover-item mar0"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML | markdownify }}</a></div>
+<div class="des1 a1 des-article">
   {{ .Params.description | safeHTML  | markdownify }}
   </div>
-<div class="des1 des-article">
+<div class="des1 a1 des-article">
   {{- with .Params.categories -}}
-    <span class="des2">分類</span>
+    <span class="des2 a1">分類</span>
     {{- range . -}}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
@@ -131,7 +131,7 @@
     {{- end -}}
 {{- end -}}
 {{- with .Params.series -}}
-    　<span class="des2">系列</span>
+    　<span class="des2 a1">系列</span>
     {{- range . -}}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
@@ -140,7 +140,7 @@
     {{- end -}}
 {{- end -}}
 {{- with .Params.tags -}}
-    　<span class="des2">標籤</span>
+    　<span class="des2 a1">標籤</span>
     {{- range . -}}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
@@ -149,7 +149,7 @@
     {{- end -}}
 {{- end -}}
 {{- with .Params.notes -}}
-    　<span class="des2">備註</span>
+    　<span class="des2 a1">備註</span>
     {{ range . }}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
@@ -172,16 +172,16 @@
 {{ end }}
 {{ end }}
 <div class="discover-wrap">
-  <div class="discover">
+  <div class="discover a1">
 {{ range first 5 $lastmod }}
 <div class="discover-grid">
   {{ if .Params.img }}
   <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
   {{ end }}
   <div class="discover-grid-sub">
-    <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+    <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
     <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    <div class="des2 home">
+    <div class="des3 a1">
       {{- with .Params.author -}}
           {{ range . }}
           {{- $name := . -}}
@@ -217,7 +217,7 @@
 <h2 style="margin-top: 2em;">分類 Categories</h2>
 <div class="discover-des">隨機 8 箇分類（凡 12 箇）</div>
 <div class="discover-wrap">
-<div class="discover">
+<div class="discover a1">
   {{ $auth := slice }}
   {{ $1auth := slice }}
   {{ range .Site.Taxonomies.author.ByCount }}
@@ -274,7 +274,7 @@
     <h2>其他作者 More Authors</h2>
     <center><strong>！歡迎踴躍投稿！稿費沒有嘻嘻</strong></center>
     <br>
-  <div class="discover">
+  <div class="discover a1">
 {{ $author := slice }}
 {{ range .Site.Taxonomies.author.ByCount }}
 {{ if ne .Page.Title  "柯棋瀚" "柯棋瀚整理"  "柯棋瀚錄入" "柯棋瀚出品" "柯棋瀚學" }}
@@ -296,7 +296,7 @@
 <h2>年度 🔝 of the Year</h2>
 <div class="discover-des">以每年10月3日爲界，按瀏覽量排序。瀏覽量不等於質量，以下排序不代表博主意願。排除索引、非原創頁面</div>
 <div class="discover-wrap top">
-<div class="discover">
+<div class="discover a1">
 <ol>
   <h3>2017-2018</h3>
   {{ range .Site.Menus.top2018  }}
@@ -316,19 +316,19 @@
   <h1 id="magazine"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">刊</span>物
   </h1>
   <h2><a href="/net" target="_blank">赫赫网摘</a></h2>  
-  {{- with $des := index (.Site.Data.taxo ) "赫赫网摘" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
+  {{- with $des := index (.Site.Data.taxo ) "赫赫网摘" -}}<div class="des a1">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
            <div class="discover-des">最近發布 Latest</div>
            <div class="discover-wrap">
-           <div class="discover column2">
+           <div class="discover a1 column2">
              {{- range first 4 (where .Site.RegularPages.ByDate.Reverse "Type" "net") -}}
              <div class="discover-grid">
                {{ if .Params.img }}
                <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
                {{ end }}
                <div class="discover-grid-sub">
-               <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
+               <span class="archive-info a1"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
                  <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-                 <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+                 <div class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</div>
                </div>
                </div>
            {{ end }}
@@ -336,15 +336,15 @@
               </div>
 
               <h2><a href="/xuekan" target="_blank">春秋學刊</a></h2>
-              <div class="des">由北師大歷史學院主辦、春秋學社承辦的以本科生为主體的學術性校内刊物。我只是個搬運工</div>
+              <div class="des a1">由北師大歷史學院主辦、春秋學社承辦的以本科生为主體的學術性校内刊物。我只是個搬運工</div>
               <div class="discover-des">最近發布</div>
               <div class="discover-wrap">
-                <div class="discover column3">
+                <div class="discover a1 column3">
               {{ range first 3 (where .Site.Taxonomies.categories.目錄 "Type" "xuekan") }}
               <div class="discover-grid">
                 <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
                 <div class="discover-grid-sub">
-                  <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+                  <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
                   <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
                 </div>
                 </div>
@@ -352,7 +352,7 @@
               </div>
               </div>
          <h2>即將於 2023 秊推出的？月刊</h2>
-         <div class="des">?</div>
+         <div class="des a1">?</div>
          <br>
          <br>
 </section>
@@ -361,20 +361,20 @@
   <h1 id="wiki"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">知</span>識
   </h1>
   <h2><a href="/read" target="_blank">赫赫蠹書</a></h2>
-<div class="des">【述要】用十分之一的字數槩述原書內容【讀後】類似書評</div>
+<div class="des a1">【述要】用十分之一的字數槩述原書內容【讀後】類似書評</div>
   <div class="discover-des">最近發布 Latest</div>
   <div class="discover-wrap">
-  <div class="discover">
+  <div class="discover a1">
     {{- range first 8 (where .Site.RegularPages.ByDate.Reverse "Type" "read") -}}
     <div class="discover-grid">
       {{ if .Params.img }}
       <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
       {{ end }}
       <div class="discover-grid-sub">
-      <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
+      <span class="archive-info a1"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
         <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
-        <div class="des2 home">
+        <div class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</div>
+        <div class="des3 a1">
           {{- with .Params.book -}}
               {{ range . }}
               {{- $name := . -}}
@@ -391,17 +391,17 @@
         </div>
 
    <h2><a href="/tutorial" target="_blank">敎程</a></h2>
-          <div class="des">赫赫指南｜搭建基本的知識框架；資源｜一些信息聚合</div>
+          <div class="des a1">赫赫指南｜搭建基本的知識框架；資源｜一些信息聚合</div>
           <div class="discover-des">隨機生成 Random</div>
           <div class="discover-wrap">
-            <div class="discover">
+            <div class="discover a1">
               {{- range first 2 (shuffle (where .Site.Taxonomies.tutosort.赫赫指南 "Type" "tutorial")) -}}
               <div class="discover-grid">
                 <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
                 <div class="discover-grid-sub">
-                <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
+                <span class="archive-info a1"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
                   <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-                  <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+                  <div class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</div>
                 </div>
                 </div>
             {{ end }}
@@ -409,9 +409,9 @@
             <div class="discover-grid">
               <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
               <div class="discover-grid-sub">
-              <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
+              <span class="archive-info a1"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
                 <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-                <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+                <div class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</div>
               </div>
               </div>
           {{ end }}
@@ -419,16 +419,16 @@
                </div>
 
   <h2><a href="/exam" target="_blank">考試課堂筆記</a></h2>
-          <div class="des">整理的考試複習資料。世界上最沒用的東西</div> 
+          <div class="des a1">整理的考試複習資料。世界上最沒用的東西</div> 
           <div class="discover-des">隨機生成 Random</div> 
           <div class="discover-wrap">
-            <div class="discover">   
+            <div class="discover a1">   
   {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "exam")) -}}
   <div>
     <span>
-      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+      <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
       <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    {{ if .Params.description }}<span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
+    {{ if .Params.description }}<span class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
     </span>
 </div>
   {{- end -}}
@@ -440,14 +440,14 @@
   <h1 id="gallery"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品</h1>
   <div class="discover-des" style="margin-top:-5.5em">按修改時閒排序</div>
   <div class="discover-wrap">
-  <div class="discover">
+  <div class="discover a1">
     {{ range (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
     <div class="discover-grid">
       <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
       <div class="discover-grid-sub">
-      <time class="archive-info">{{ .Lastmod.Format "2006-01-02" }}</time>
+      <time class="archive-info a1">{{ .Lastmod.Format "2006-01-02" }}</time>
         <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+        <div class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</div>
       </div>
       </div>
     {{ end }}
@@ -458,21 +458,21 @@
   <h1 id="data"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
   <h2 id="zanfu">赫赫讚府</h2>
-  {{- with $des := index (.Site.Data.taxo ) "赫赫讚府" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
+  {{- with $des := index (.Site.Data.taxo ) "赫赫讚府" -}}<div class="des a1">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
   <div class="discover-des" style="margin-bottom:8em">可以郵箱聯繫我</div>
 
     <h2><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h2>
-    <div class="des">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
+    <div class="des a1">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
     這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
   <div class="discover-des">隨機生成 Random</div> 
   <div class="discover-wrap">
-    <div class="discover">   
+    <div class="discover a1">   
 {{- range first 4 (shuffle (where .Site.RegularPages.ByDate "Type" "qinpu")) -}}
 <div>
 <span>
-<span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+<span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
 <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-{{ if .Params.description }}<span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
+{{ if .Params.description }}<span class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
 </span>
 </div>
 {{- end -}}
@@ -482,23 +482,23 @@
 
   <h2 id="database">其他</h2>
   <div class="discover-wrap">
-    <div class="discover">
+    <div class="discover a1">
   {{ range first 8 (where .Site.RegularPages "Type" "database") }}
   <div class="discover-grid">
     <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
     <div class="discover-grid-sub">
-      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+      <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
       <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
-      <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+      <div class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</div>
     </div>
     </div>
   {{ end }}
   <div class="discover-grid">
     <div class="archive-card-container"><div class="post-card" style="background-image: url(https://pic.imgdb.cn/item/5f3be3d414195aa59410edd7.jpg)"></div></div>
     <div class="discover-grid-sub">
-<time class="archive-info">2019-11-14</time>
+<time class="archive-info a1">2019-11-14</time>
 <div class="discover-item"><a href="https://xtools.wmflabs.org/pages/zh.wikisource.org/Kujihhoe?uselang=zh#"  target="_blank">維基文庫</a></div>
-<div class="des2 home">平時上課的錄文，有四篇，放在維基文庫</div>
+<div class="des3 a1">平時上課的錄文，有四篇，放在維基文庫</div>
 </div>
 </div>
   </div>

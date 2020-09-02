@@ -2,11 +2,11 @@
 <div class="heading-wrap">
   {{ partialCached "banner.html" . }}
   <header class="Heading">
-      <span class="Heading-title finder"><a href="/">赫赫文王</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">网誌</h1>
+      <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">网誌</h1>
   </header>
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
-<section class="des1">
+<section class="des1 a1">
 凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">网誌</span><span class="rss2">RSS</span></a>
 </section>

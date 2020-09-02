@@ -13,7 +13,7 @@
       <body>
         <nav class="u-background">
           <div class="u-wrapper">
-            <ul class="Banner">
+            <ul class="banner a1">
               <li class="Banner-item Banner-item--title">
                 <a class="Banner-link u-clickable" href="{{ absURL nil }}">{{ site.Title }}</a>
               </li>
@@ -28,7 +28,7 @@
         <main>
           <div class="u-wrapper">
             <div class="u-padding">
-              <h2 class="Heading-title">
+              <h2 class="heading-title a1">
                 <a class="u-clickable" href="{link}" rel="bookmark"><xsl:value-of select="title" /></a>
               </h2>
               {{ with site.Params.rss }}

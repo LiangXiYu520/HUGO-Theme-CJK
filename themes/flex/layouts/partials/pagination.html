@@ -1,5 +1,5 @@
 <div class="pagination-wrap">
-<nav class="pagination">
+<nav class="pagination a1">
     {{- $paginator := .Paginate .Pages.ByDate.Reverse (index 50) }}
     {{ range $paginator.Pagers }}
     <span {{ if eq . $paginator }} class="active" {{end}}>

@@ -2,7 +2,7 @@
 {{- $length := len .Data.Pages }}
 {{ $count4 := add 0 (mul 50 (sub $paginator.PageNumber 1)) }}
 <div class="discover-wrap">
-  <div class="discover">
+  <div class="discover a1">
     {{ range sort $paginator.Pages "File.Path" }} 
     {{ if .Params.img }}
   <div class="discover-grid">
@@ -10,10 +10,10 @@
       <div class="archive-left archive-left-card">{{ $count4 = add $count4 1  }}{{ $count4 }}</div>
     </div></div>
     <div class="discover-grid-sub">
-      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+      <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
       <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-      <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
-      <div class="des2 home">
+      <span class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</span>
+      <div class="des3 a1">
         {{- with .Params.author -}}
             {{ range . }}
             {{- $name := . -}}
@@ -32,9 +32,9 @@
   <div>
         <div class="archive-left">{{ $count4 = add $count4 1  }}{{ $count4 }}</div>
         <span>
-          <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+          <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
           <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-          {{if .Params.description }}<span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
+          {{if .Params.description }}<span class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
         </span>
     </div>
     {{ end }} 

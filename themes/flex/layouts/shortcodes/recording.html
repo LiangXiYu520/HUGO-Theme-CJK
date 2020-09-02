@@ -8,11 +8,11 @@
 </div>
 </div>
 <div class="discover-grid-sub">
-<time class="archive-info">production {{ .productiontime }}</time>
-{{ if .recordingtime }}<br><time class="archive-info">recording {{ .recordingtime }}</time>{{ end }}
+<time class="archive-info a1">production {{ .productiontime }}</time>
+{{ if .recordingtime }}<br><time class="archive-info a1">recording {{ .recordingtime }}</time>{{ end }}
 <div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
 <listen><a hrer="{{ .netease }}" target="_blank">網易</a></listen>　<listen><a href="{{ .himalaya }}" target="_blank">喜馬拉雅</a></listen>　<listen><a href="{{ .soundcloud }}" target="_blank">SoundCloud</a></listen>
-<div class="des2 home">{{ .description | safeHTML | markdownify }}</div>
+<div class="des3 a1">{{ .description | safeHTML | markdownify }}</div>
 </div>
 </div>
 {{ end }}

@@ -2,18 +2,18 @@
 <div class="heading-wrap">
   {{ partialCached "banner.html" . }}
   <header class="Heading">
-      <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">赫赫蠹書</h1>
-{{- with $des := index (.Site.Data.taxo ) "赫赫蠹書" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+      <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">赫赫蠹書</h1>
+{{- with $des := index (.Site.Data.taxo ) "赫赫蠹書" -}}<div class="des a1">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
-<section class="des1">
+<section class="des1 a1">
 凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">赫赫蠹書</span><span class="rss2">RSS</span></a>
 </section>
 </div>
   <main>
-<div class="archive-wrapper" style="margin:-1em auto -3em">
+<div class="archive-wrapper a1" style="margin:-1em auto -3em">
   {{ range .Site.Taxonomies.book.Alphabetical  }}
   <a href="#{{- .Page.Title -}}" style="box-shadow:none;margin-right:1em;word-break:keep-all;font-family:var(--sans)">{{ .Page.Title | safeHTML }}</a>
   {{ end }}
@@ -24,11 +24,11 @@
        {{ $leng1 := len .Pages }}
       <h2 id="踐行社會主義核心價値觀"style="text-align:left"><span style="background:var(--red);color:var(--bg);padding:.3em 0 .1em">踐行社會主義核心價値觀</span><span class="des3" style="font-family:var(--codesans);letter-spacing:0">　凡 {{ $leng1 }} 篇　{{- $count7 }} 字　篇均 {{ div $count7 $leng1 }} 字</span></h2>
 {{ end }}
-      <div class="des2" style="margin-top:-2em;color:var(--red);font-weight:bold">富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
+      <div class="des2 a1" style="margin-top:-2em;color:var(--red);font-weight:bold">富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
   </div>
   
 <div class="discover-wrap" style="margin:4em auto 0">
-  <div class="discover">
+  <div class="discover a1">
     {{ range .Site.Taxonomies.step.Alphabetical  }}
     {{ range sort .Pages "File.Path" }}
     <div class="discover-grid">
@@ -36,11 +36,11 @@
       <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
       {{ end }}
       <div class="discover-grid-sub">
-      <span class="archive-info"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}
-        <span class="des2 step">{{ .Params.step }}</span>  
+      <span class="archive-info a1"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}
+        <span class="des2 des-step">{{ .Params.step }}</span>  
       </span>
         <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</div>
+        <div class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</div>
       </div>
       </div>
   {{ end }}
@@ -54,7 +54,7 @@
 {{ if ne .Page.Title  "踐行社會主義核心價値觀" }}
 <h2 id="{{- .Page.Title | safeHTML -}}">{{ .Page.Title | safeHTML }}<span class="des3" style="font-family:var(--codesans);letter-spacing:0">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2>
 <div class="discover-wrap">
-  <div class="discover">  
+  <div class="discover a1">  
 
 {{ range sort .Pages "File.Path" }}
 
@@ -63,18 +63,18 @@
   <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
   </div></div>
   <div class="discover-grid-sub">
-    <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+    <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
     <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    <span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>
+    <span class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</span>
   </div>
   </div>
 {{ else }}
 
   <div>
     <span>
-      <span class="archive-info"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+      <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
       <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-      {{if .Params.description }}<span class="des2 home">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
+      {{if .Params.description }}<span class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
     </span>
 </div>
 {{ end }}

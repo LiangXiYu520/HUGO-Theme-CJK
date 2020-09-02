@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="heading-wrap">
   {{ partial "heading.html" . }}
-<section class="des1">
+<section class="des1 a1">
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
 凡 {{ $length }} 篇　{{- $count }} 字　篇均 {{ div $count $length }} 字

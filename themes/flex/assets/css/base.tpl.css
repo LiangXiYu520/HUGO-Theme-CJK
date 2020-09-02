@@ -1,14 +1,14 @@
 :root{
   --bg: #fffae8;
   --bggray:#f2f2f2;
-  --black: #2b2b2b;
   --shallowgray: #b6b5b5;
   --gray: #787878;
+  --black: #2b2b2b;
   --yellow: #ffda56;
-  --brown: #c49d10;
-  --shallowblue:#e1f3ff;
   --bgpink: #fee8da;
   --red: #f27144;
+  --blue:#2fa0ff;
+  --bgblue:#e1f3ff;
   {{ $all2 := slice }}
       {{ range .Site.Data.color }}
       {{ range .color1 }}
@@ -38,8 +38,7 @@
     --shallowgray: #7e7e7e;
     --gray: #969696;
     --yellow: #6f5600;
-    --brown: #907000;
-    --shallowblue:#003d55;
+    --bgblue:#003d55;
     --section1:#003d55;
     --section2:black;
     --section3:#450000;
@@ -81,12 +80,6 @@ body {
 font-size: 1.7em;
 margin:-1em auto 0
       }
-      .home h2 a{
-        box-shadow: inset 0 -0.5em var(--yellow)
-        }
-      .home h2 a:hover{
-          box-shadow: none
-        }
     p {
       margin:1.3em auto
     }
@@ -141,20 +134,34 @@ hr{
 a{
   color:var(--black);
   text-decoration:none;
-box-shadow: inset 0 -0.5em var(--yellow);
 -webkit-transition: .2s;
 transition: .2s}
-a:hover{box-shadow: none
+a:after{
+  content:"↩";
+  color:var(--blue)
 }
-.a1{box-shadow:  none
+a:hover{
+  background:var(--bgblue);
+  border-radius:.2em
 }
-.a1:hover{color:var(--brown);
-    } 
+.a1 a:after{
+  content:none
+}
+.a2 a{
+  color:#fffae8
+}
+.a2 a:after{
+  content:none
+}
+.a2 a:hover{
+  color:var(--black)
+}
 strong{
   background: var(--red);
   padding: .1em;
   color:var(--bg);
-font-weight:normal;}
+font-weight:normal;
+border-radius: .2em;}
 b{
   font-weight: normal;
   -webkit-text-emphasis-style:'◍';
@@ -163,7 +170,7 @@ b{
   text-emphasis-position: over right;
 }
 v{
-  border-bottom: .15em dashed var(--brown);
+  border-bottom: .15em dashed var(--gray);
   margin: 0 .2em
 }
 n{
@@ -183,16 +190,13 @@ listen{
   font-weight: bold;
   font-size: 1em;
     margin:  0 7px}
-listen a{
-  box-shadow: none}
-listen:hover{
-  border: 1px var(--brown) solid;
-  color: var(--brown)}
+listen a:after{
+  content: none}
 .vertical listen{
     padding: .5em .2em .3em;
         margin: .5em 0 }
-.vertical  listen a{
-  box-shadow: none}
+.vertical listen a:after{
+  content: none}
 date{
   margin: 0  .5em ;
   padding: .3em .7em .2em;
@@ -227,16 +231,8 @@ margin: 0 1em 5.5em -1em
     background-color: var(--bg);
    border: .15em solid var(--yellow);
    border-radius: 2em}
-.vertical a{
-  color:var(--black);
-  text-decoration:none;
-box-shadow: inset  -0.5em  0 var(--yellow);
-}
-.vertical a:hover{
-box-shadow:none
-  }
 .vertical v{
-  border-left: .15em dashed var(--brown);
+  border-left: .15em dashed var(--gray);
 border-bottom: none;
   margin:.2em 0
 }
@@ -292,11 +288,8 @@ border-bottom: none;
   line-height: 1.6;
   font-weight: bold
   }
-  .toc-item ul a{
-       box-shadow:  none
-     }
-     .toc-item ul a:hover{
-    color:var(--brown)
+  .toc-item ul a:after{
+       content: none
      }
   .toc-item ul li ul {
     font-size: .9em;
@@ -340,40 +333,34 @@ h6{
   line-height: 1.7;
   color:var(--gray);
   margin: .5em 1em auto}
-.des a{
-  box-shadow:  none}
-  .des a:hover{
-      color:var(--brown);
-  }
 .des1{
   margin: 0 auto;
   text-align:center;
   font-size: .9em;
   font-family: var(--codesans)
 } 
+.des1 a{
+  font-size: 1em;
+     font-weight: bold;
+     margin-left:.4em;
+     letter-spacing: .1em
+    }
 .des2{
   color:var(--gray);
   font-size:.9em}
-  .des2.home{
-word-break: break-all;
-font-family: var(--sans);
-text-align: justify;
-line-height: 1.6
+  .des3{
+  color:var(--gray);
+ font-size:.9em;
+ word-break: break-all;
+ font-family: var(--sans);
+ text-align: justify;
+ line-height: 1.6
     }
-.des2.step{
+des-step{
   font-family: var(--sans);
   float:right;  
   font-size: 1em;
           }   
-.des1 a{
-  font-size: 1em;
-     font-weight: bold;
-     box-shadow: none;
-     margin-left:.4em;
-     letter-spacing: .1em}
-.des1 a:hover{
-  color:var(--brown)
-}
 .des1-cate a{
   margin-left:.4em;
    font-weight: bold;
@@ -418,7 +405,8 @@ line-height: 1.6
 blockquote {
 background: var(--bgpink);
 margin: 0 0 0 2em;
-padding:0 .2em
+padding:0 .2em;
+border-radius:.5em
 }
 .vertical blockquote {
   padding:.2em 0;
@@ -485,15 +473,15 @@ code{
 .Heading {
   text-align:center;
   align-items: baseline}
-.Heading-title {
+.heading-title {
   margin: 1.5rem 0.5rem 0 0}
-.Heading-title.taxo{
+.heading-title.taxo{
   font-size: 6em;
   letter-spacing:.0}
-.Heading-title.finder{
+.heading-title.finder{
   font-size:1.2em;font-weight:bold;letter-spacing:.15em
 }
-  .Heading-title.article{
+  .heading-title.article{
     font-size: 3.2em;
     letter-spacing:.0}
 .article-front{
@@ -546,32 +534,6 @@ display: flex;
   margin: auto;
   flex:1;
 }
-.Tags {
-  max-width: 32em;
-  max-height:35em;
-  color:var(--gray);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  overflow: scroll;
-  list-style: none;
-  margin: 7em auto 0;
-  padding: .8em 1em .5em;
-    text-align:left;
-font-size:.9em;
-line-height: 1.6;
-background-color: var(--bg);
-  border: .5em solid var(--black);
-border-radius: 2.5rem}
-.Tags a{
-  text-decoration: none;
-  box-shadow:none;
-  color:black}
-.Tags a:hover{
- color:black}
 .Tags-item {
   margin: 2em 0 ;
   padding: .2em;
@@ -602,12 +564,7 @@ text-align:left;
 -webkit-column-count:4;
 column-count:4
 }
-.cate a{
-  box-shadow: none;
-  font-weight: normal}
-  .cate a:hover{
-  color:var(--brown)
-  }
+.cate a{font-weight: normal}
 .cate-wrap{
   font-size: 1em;
 list-style:none}
@@ -623,24 +580,9 @@ list-style:none}
   flex-flow: row wrap;
 background: #2b2b2b;
 }
-.col1{
-  font-size:.9em;
-  color:#b6b5b5;
-  margin:1em .5em 0;
-  line-height: 1.2}
-.col1-title{
-  font-weight: bold;
-  font-size: 1.4em;
-  color: #fffae8}
-.col1-title:hover{
-    color:var(--brown);
-  -webkit-transition: .4s;
-  transition: .4s}
-.col2{
-    font-size: 1.3em}
-.col {
+.col{
   text-align: left;
-    margin: -.35em auto 1em;
+    margin: 0 1em 1em;
   display:flex;
   color: #fffae8}
 .col ul{
@@ -656,28 +598,21 @@ text-align: left}
       line-height: 1.6}
 .col a{
   font-size: .9em;
-box-shadow:none;
-    color: #fffae8}
-.col a:hover{
-  color:var(--brown)
-}
-.Footer {
+    color: #fffae8
+  }
+.footer {
   text-align: center;
   margin: 1.3em auto 2em;
   font-size: .85em;
   font-family:var(--codesans);
   color:#b6b5b5;
   line-height: 1.6;
-max-width: 27em}
-.Footer a{
-box-shadow:none;
-  color: #fffae8}
-.Footer li{
+max-width: 27em
+}
+.footer li{
   text-align: left;
-  word-break: break-all}
-.Footer a:hover{
-  color:var(--brown)}
-
+  word-break: break-all
+}
 .u-clickable {
   font-weight: normal;
   text-decoration: none;
@@ -696,7 +631,6 @@ padding-bottom: .7em
 .banner.banner1{
   float: right}
 .banner a{
-  box-shadow:none;
   margin-right:.5em
 }
 .banner details{
@@ -706,8 +640,6 @@ padding-bottom: .7em
 .banner details summary{
   font-weight: normal;
 }
-  .banner a:hover{
-    color:var(--brown)}
 .banner2{
   margin-left:1.2em}
 .archive-wrapper{
@@ -722,10 +654,8 @@ background-color: var(--bg)
     margin: 1.5em auto;
 line-height: 1.4;
 color:var(--gray)}
-.archive-wrap a{ box-shadow:none;
-color:var(--gray)}
-.archive-wrap  a:hover{
-color:var(--brown)
+.archive-wrap a{
+color:var(--gray)
 }
 .archive-left{
     font-family: var(--codesans);
@@ -750,11 +680,8 @@ color: var(--yellow)
   color:var(--gray);
   font-family: var(--codesans)}
 .archive-info a{
-  box-shadow:none;
-    color:var(--gray)}
-.archive-info a:hover{
-  box-shadow:none;
-  color:var(--brown)}
+    color:var(--gray)
+  }
 .archive-info-author{
 margin: auto}
 .time{
@@ -776,29 +703,12 @@ margin: auto}
   line-height: 1.6;
   font-family: var(--sans)
 }
-  .comment a{
-    box-shadow: none;
-    color:var(--gray)
-  }
-  .comment a:hover{
-  color:var(--brown)
-  }
-  .comment p a{
-    box-shadow: inset 0 -0.5em var(--yellow);
-    color:var(--black)
-  }
-  .comment p a:hover{
-    box-shadow: none
-  }
 .recommend{
   text-align:center;
   line-height:1.9
 }
-.recommend  a{
-box-shadow: none;
-color:var(--black)}
-.recommend  a:hover{
-  color:var(--brown)
+.recommend a{
+color:var(--black)
 }
 .footnote-ref{
   font-size: .8em}
@@ -848,9 +758,7 @@ justify-content: space-between;
 flex-flow: row wrap;
 margin:2em 1em 0 1em}
 .pagi a{
-  box-shadow: none;
   font-weight: bold}
-.pagi a:hover  {color: var(--brown)}
 .pagi:hover{
       padding: 0px 8px
     }
@@ -860,7 +768,7 @@ margin:2em 1em 0 1em}
   margin: 0 auto 2em;
   display: inline-block;
   font-family: var(--codesans)}
-  .pagination  a {
+  .pagination a {
     background-color: var(--bg);
       font-size: .9em;
       margin: 0 .6em;
@@ -889,11 +797,6 @@ margin:2em 1em 0 1em}
   letter-spacing: 0;
     font-family: var(--codesans)
   }
-.des3{
-    font-size: .5em;
-    font-weight: normal;
-    color:var(--gray);
-}
 {{ $img := slice }}
     {{ range .Site.Data.image }}
     {{ range .image }}
@@ -1132,10 +1035,8 @@ line-height: 1.6;
 max-width: 28em
 }
 .discover a{
-  border:none;
-box-shadow:none;}
-.discover a:hover{
-    color:var(--brown)}
+  border:none
+}
 .gallery{
   margin: 0 2em 2em;
   display: -webkit-box;
@@ -1164,18 +1065,6 @@ max-width: 1800px
   margin: 0 1em}
 .paper-wrap {
   margin: 0 auto
-}
-.paper-wrap a{
-  box-shadow: none
-}
-.paper-wrap a:hover{
- color:var(--black)
-}
-.paper-wrap h1 a{
-box-shadow:none
-}
-.paper-wrap h1 a:hover{
-  color:var(--brown)
 }
 .paper-card{
   padding: 1em;
@@ -1256,19 +1145,12 @@ box-shadow:none
    background-size:contain;
   width:16em;
   height:25em}
-.paper-card p listen a{
- box-shadow:none}
-.paper-card p a{
-  box-shadow: inset 0 -0.5em var(--yellow)
-      }
-.paper-card a:hover{
-box-shadow:none;
-color: var(--brown)}
 .paper-card h2{text-align: center}
 .paper-card a{
   border:none}
-.svg a{
-  box-shadow:none}
+.svg a:after{
+  content:none
+}
 .svg a svg{  width:1.1em}
 @media screen and (max-width:1090px){
   .toc-verticlal-false{        
@@ -1299,13 +1181,13 @@ display: block;
   }
   .count{
     margin: 0em auto}
-  .Heading-title.taxo{
+  .heading-title.taxo{
     font-size: 4em
   }
-    .Heading-title.finder{
+    .heading-title.finder{
       font-size:1em;letter-spacing:0
     }
-    .Heading-title.article{
+    .heading-title.article{
       font-size: 2em}
     .des{
       font-size: 1.3em;

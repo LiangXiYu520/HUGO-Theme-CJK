@@ -5,7 +5,7 @@ author: ["柯棋瀚"]
 categories: ["站務"]
 title: "更新日誌"
 date: 2017-10-05
-lastmod: 2020-09-01
+lastmod: 2020-09-02
 url: /release
 menu:
   main:
@@ -1094,7 +1094,7 @@ Hugo 0.57.1
 
 ##### 4.1.7
 
-`.archive-info a`
+`.archive-info a1 a`
 
 調整 list 那幾箇標籤。
 
@@ -1947,3 +1947,9 @@ html5 語意標籤改造。
 9-01
 
 調整 figcaption 字體。
+
+#### 9-02
+
+4.7.19
+
+更換超鏈接樣式，從原來的 box-shadow 改成後面加一個藍色 ↩。把原來每個class都要單獨聲明鏈接格式，改成統一在class後面加個 a1。耗費了兩個多小時。

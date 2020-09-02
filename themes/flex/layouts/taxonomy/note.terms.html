@@ -2,13 +2,13 @@
 <div class="heading-wrap">
   {{ partialCached "banner.html" . }}
 <header class="Heading">
-      <span class="Heading-title finder"><a href="/">赫赫文王</a>»<a href="/xuekan">网誌</a>»</span><h1 class="Heading-title taxo" style="font-size:3.2em">備註</h1>
+      <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/xuekan">网誌</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">備註</h1>
 </header>
 </div>
   <main>
 
    <section class="u-wrap">
-	  <div class="cate">
+	  <div class="cate a1">
     {{ range .Data.Terms.Alphabetical }}
       <li class="cate-wrap"><a class="Tags-link u-clickable" href="{{ .Page.RelPermalink }}">{{ .Page.Title | safeHTML  }} {{ .Count }}</a></li>
     {{ end }}
