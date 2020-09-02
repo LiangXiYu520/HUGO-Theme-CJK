@@ -5,7 +5,7 @@
 {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
 {{ $leng := len .Pages }}
 <section>
-<div class="year"><h2>{{ .Key }}<span class="des3">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2></div>
+<div class="year"><h2>{{ .Key }}<span class="des4">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2></div>
 <div class="discover-wrap">
   <div class="discover a1">
   {{- range .Pages -}}

@@ -170,7 +170,7 @@ b{
   text-emphasis-position: over right;
 }
 v{
-  border-bottom: .15em dashed var(--gray);
+  border-bottom: .1em dashed var(--gray);
   margin: 0 .2em
 }
 n{
@@ -232,7 +232,7 @@ margin: 0 1em 5.5em -1em
    border: .15em solid var(--yellow);
    border-radius: 2em}
 .vertical v{
-  border-left: .15em dashed var(--gray);
+  border-left: .1em dashed var(--gray);
 border-bottom: none;
   margin:.2em 0
 }
@@ -356,6 +356,13 @@ h6{
  text-align: justify;
  line-height: 1.6
     }
+ .des4{
+   font-family:var(--codesans);
+   letter-spacing:0;
+   font-size:.5em;
+   font-weight:normal;
+   color:var(--gray)
+}   
 des-step{
   font-family: var(--sans);
   float:right;  
@@ -413,7 +420,9 @@ border-radius:.5em
   margin:2em 0 0 0
 }
 q{
-  background: var(--bgpink)}
+  background: var(--bgpink);
+  border-radius: .2em;
+}
   q:before {
     content:none
   }
