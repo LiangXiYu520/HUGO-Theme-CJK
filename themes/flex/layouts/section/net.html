@@ -4,9 +4,9 @@
   <header class="Heading">
       <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#magazine">刊物</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">赫赫网摘</h1>
   {{- $length := len .Data.Pages }}
-  {{- with $des := index (.Site.Data.taxo ) "赫赫网摘" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+  {{- with $des := index (.Site.Data.taxo ) "赫赫网摘" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
-<section class="des1 a1">
+<section class="des-base a1">
 凡 {{ $length  }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">赫赫网摘</span><span class="rss2">RSS</span></a>
 </section>
@@ -22,9 +22,9 @@
 <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
 {{ end }}
 <div class="discover-grid-sub">
-    <span class="archive-info a1"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
+    <span class="des-base des-des a1"><time>{{- .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" -}}{{ end }}</span>
       <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-      <span class="des3">{{ .Params.description | safeHTML  | markdownify }}</span>
+      <span class="des-base">{{ .Params.description | safeHTML  | markdownify }}</span>
     </div>
     </div>
       {{ end }}

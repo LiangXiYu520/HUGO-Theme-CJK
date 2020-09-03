@@ -7,7 +7,7 @@
   {{- $xuekan := where .Site.Taxonomies.categories.目錄 "Type" "xuekan" }}
   {{- $length := len $xuekan  }}
   {{ $leng2 := sub (len .Data.Pages) (len $xuekan) }}
-<section class="des1 a1">
+<section class="des-base a1">
 凡 {{ $length }} 期　{{ $leng2 }} 篇　{{- with .Data.Pages.GroupByDate "2006" -}}橫跨 {{ len . }} 年{{- end -}}　
 <a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">春秋學刊</span><span class="rss2">RSS</span></a>
 　</section>
@@ -22,7 +22,7 @@
           <div class="archive-left archive-left-card">{{ $leng = sub $leng 1  }}{{ $leng }}</div>
         </div></div>
         <div class="discover-grid-sub">
-          <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+          <span class="des-base des-des a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
           <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
         </div>
         </div>
@@ -54,9 +54,9 @@
    {{ range (where .Site.Taxonomies.categories.編務 "Type" "xuekan") }}
                <div class="archive-wrap a1">
                  <div class="archive-right">
-           <span class="archive-title" style="margin-left:0">
-             <time class="archive-info a1">{{ .Page.Date.Format "2006-01-02" }}</time>　
-             <a href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML }}</a></span>
+           <span>
+             <time class="des-base des-des">{{ .Page.Date.Format "2006-01-02" }}</time>　
+             <a style="color:var(--black)" href="{{ .Page.Permalink }}" target="_blank">{{ .Page.Title | safeHTML }}</a></span>
            </div>
      </div>{{ end }}
      <br>

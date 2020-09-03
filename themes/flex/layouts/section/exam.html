@@ -3,9 +3,9 @@
   {{ partialCached "banner.html" . }}
   <header class="Heading">
       <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">考試課堂筆記</h1>
-{{- with $des := index (.Site.Data.taxo ) "考試" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+{{- with $des := index (.Site.Data.taxo ) "考試" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
-<section class="des1 a1" style="margin-bottom: -5em">凡 {{ len .Data.Pages }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count (len .Data.Pages) }} 字
+<section class="des-base a1" style="margin-bottom: -5em">凡 {{ len .Data.Pages }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count (len .Data.Pages) }} 字
 　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">考試課堂筆記</span><span class="rss2">RSS</span></a>
 </section>
 </div>
@@ -14,16 +14,17 @@
   {{ range .Site.Taxonomies.examsort.Alphabetical }}
   {{ $count6 := 0 }}{{ range .Pages }}{{ $count6 = add $count6 .WordCount  }}{{ end }}
    {{ $leng := len .Pages }}
-  <h2 id="{{- .Page.Title | safeHTML -}}">{{ .Page.Title | safeHTML }}<span class="des4">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</span></h2>
+  <h2 style="margin-bottom:0" id="{{- .Page.Title | safeHTML -}}">{{ .Page.Title | safeHTML }}</h2>
+    <div class="des-base">　凡 {{ $leng }} 篇　{{- $count6 }} 字　篇均 {{ div $count6 $leng }} 字</div>
   <div class="discover-wrap">
     <div class="discover a1">
   {{ range sort .Pages "File.Path" }} 
   <div>
     <div class="archive-left">{{ $count4 = add $count4 1  }}{{ $count4 }}</div>
     <span>
-      <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
+      <span class="des-base des-des a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
       <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-      {{if .Params.description }}<span class="des3">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
+      {{if .Params.description }}<span class="des-base">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
     </span>
 </div>
   {{ end }}

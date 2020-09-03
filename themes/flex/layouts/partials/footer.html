@@ -6,26 +6,26 @@
         {{ end }}
         {{ range .Site.Menus.main }}
         <li><a href="{{ .URL  }}">{{- .Name | safeHTML -}}</a>
-      <div class="des3" style="margin-top:-.5em;font-size:.7em">{{ .Page.Lastmod.Format "06-01-02" }}</div></li>  
+      <div class="des-base des-des" style="margin-top:-.5em;font-size:.7em">{{ .Page.Lastmod.Format "06-01-02" }}</div></li>  
         {{ end }}
      </ul>
      <ul style="margin-top:.85em;font-size:1.2em">
       <a href="/#gallery">作品</a>
-      <div class="des3" style="font-size:.7em">网誌</div>
+      <div class="des-base des-des" style="font-size:.7em">网誌</div>
     {{ range .Site.Menus.nav1 }}
     <li><a href="{{  .URL  }}">{{- .Name | safeHTML -}}</a></li>
     {{ end }}
-      <div class="des3" style="font-size:.7em">刊物</div>
+      <div class="des-base des-des" style="font-size:.7em">刊物</div>
       {{ range .Site.Menus.nav2 }}
       <li><a href="{{  .URL  }}">{{ .Name | safeHTML }}</a></li>
       {{ end }}
       </ul>
       <ul style="margin-top:1em;font-size:1.2em">
-    <div class="des3" style="font-size:.7em">知識</div>
+    <div class="des-base des-des" style="font-size:.7em">知識</div>
     {{ range .Site.Menus.nav3 }}
     <li><a href="{{  .URL  }}">{{ .Name | safeHTML }}</a></li>
     {{ end }}
-    <div class="des3" style="font-size:.7em">數據庫</div>
+    <div class="des-base des-des" style="font-size:.7em">數據庫</div>
     {{ range .Site.Menus.nav4 }}
     <li><a href="{{  .URL  }}">{{ .Name | safeHTML }}</a></li>
     {{ end }}

@@ -1,10 +1,12 @@
 <nav class="pagi-wrap">
   <div class="pagi a1">
     {{ with .PrevInSection }}
-      <span class="pagi-item pagi-prev">← <a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a></span>
+      <a class="pagi-item pagi-prev" href="{{ .RelPermalink }}"><span class="des-base des-des">«« 上篇</span><br>
+        {{- .Title | safeHTML | markdownify -}}</a>
       {{- end }}
   {{ with .NextInSection }}
-        <span class="pagi-item pagi-next"><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> →</span>
+      <a class="pagi-item pagi-next" href="{{ .RelPermalink }}"><span class="des-base des-des">下篇 »»</span><br>
+        {{- .Title | safeHTML | markdownify -}}</a>
   {{- end }}
   </div>
 </nav>

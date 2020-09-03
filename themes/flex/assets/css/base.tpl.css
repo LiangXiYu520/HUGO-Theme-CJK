@@ -326,7 +326,7 @@ h6{
   font-size: 1em;
   color: var(--shallowgray)
 }
-.des{
+.des-taxo{
   font-size:1.2em;
   font-weight: 200;
   text-align: center;
@@ -334,46 +334,40 @@ h6{
   color:var(--gray);
   margin: .5em 1em auto
 }
-.des1{
+.des-base{
+  text-align: center;
   margin: 0 auto;
-  text-align:center;
   font-size: .9em;
-  font-family: var(--codesans)
+  line-height: 1.6;
+  font-family: var(--codesans);
+  color:var(--gray);
 } 
-.des1 a{
-  font-size: 1em;
-     font-weight: bold;
-     margin-left:.4em;
-     letter-spacing: .1em
-    }
-.des2{
-  color:var(--gray);
-  font-size:.9em
+.des-des{
+  text-align:justify;
+  margin:0
 }
-  .des3{
+.des-tag a{
+  font-size: 1em;
+  color:var(--black);
+  margin-left:.5em
+}
+.?{
   color:var(--gray);
- font-size:.9em;
  word-break: break-all;
- font-family: var(--sans);
  text-align: justify;
  line-height: 1.6
-    }
- .des4{
-   font-family:var(--codesans);
+}
+.??{
    letter-spacing:0;
    font-size:.5em;
    font-weight:normal;
    color:var(--gray)
 }   
-des-step{
+.des-step{
   font-family: var(--sans);
   float:right;  
   font-size: 1em;
           }   
- .des-article{
-  margin:.2em 0;
-  text-align: left;
-}
  .subscribe-wrap{
    text-align: left;
    margin:1.5em 0 1.5em 0;
@@ -404,7 +398,8 @@ des-step{
       border-right:  .1em solid var(--black);
       border-bottom:  .1em solid var(--black);
       border-top-right-radius: .5em;
-         border-bottom-right-radius: .5em;
+      border-bottom-right-radius: .5em;
+      font-weight: bold;
    }
 blockquote {
 background: var(--bgpink);
@@ -654,6 +649,9 @@ padding-bottom: .7em
   max-width: 45em;
 background-color: var(--bg)
 }
+.archive-wrapper h2{
+  margin-bottom:0
+}
 .archive-wrap{
     list-style: none;
     text-align: center;
@@ -675,13 +673,6 @@ color: var(--yellow)
 }
 .archive-title{
   margin-left: .5em
-}
-.archive-info{
-  text-align: left;
-  font-size: .9em;
-  margin: auto .3em auto 0em;
-  color:var(--gray);
-  font-family: var(--codesans)
 }
 .archive-info-author{
 margin: auto}
@@ -750,7 +741,6 @@ background-color: var(--bg)}
   font-size: .9em;
   line-height: 1.7}
 .pagi-wrap{
-  background:var(--section3)
 }
 .pagi{
   line-height: 1.5;
@@ -758,14 +748,19 @@ background-color: var(--bg)}
   display: flex;
   flex-wrap: wrap;
 justify-content: space-between;
-margin:2em 1em 0 1em
-}
-.pagi a{
-  font-weight: bold
+font-weight: bold
 }
 .pagi-item{
   flex: 1 1 200px;
-  margin:1em
+  padding:1em .5em
+}
+.pagi-item:hover{
+  background:var(--section2);
+  border-radius:0
+}
+.pagi-item a:hover{
+  background:var(--section2);
+  border-radius:0
 }
 .pagi-prev{
   text-align: left;
@@ -1023,7 +1018,8 @@ color: {{ . }};
   line-height:1.3;
   font-weight: bold;
   font-size: 1.2em;
-  font-family: var(--serif)
+  font-family: var(--serif);
+  text-align: left;
 }
 .discover-item a{
   margin: 0
@@ -1035,15 +1031,6 @@ color: {{ . }};
   margin:.6em auto ; 
   font-weight: normal;
   font-size: 1em
-}
-.discover-des{
-  text-align: center;
-margin: 0 auto;
-color:var(--gray);
-font-size: .85em;
-  font-family: var(--sans);
-line-height: 1.6;
-max-width: 28em
 }
 .discover a{
   border:none
@@ -1200,7 +1187,7 @@ display: block;
     }
     .heading-title.article{
       font-size: 2em}
-    .des{
+    .des-taxo{
       font-size: 1.3em;
       margin: .5em  0 auto}
 .archive-wrapper{

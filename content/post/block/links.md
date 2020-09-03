@@ -17,7 +17,7 @@ vertical: false
 
 ## 有鄰
 
-<div class="des1 a1">已下爲互換了友鏈的小伙伴<n>大致按添加時間排列</n></div>
+<div class="des-base a1">已下爲互換了友鏈的小伙伴<n>大致按添加時間排列</n></div>
 
 {{< links >}}
 
@@ -43,7 +43,7 @@ vertical: false
 
 ## 師友們
 
-<div class="des1 a1">已下爲我的老師、朋友們的平臺<n>獨立博客優先</n></div>
+<div class="des-base a1">已下爲我的老師、朋友們的平臺<n>獨立博客優先</n></div>
 
 {{< wechatfriends >}}
 

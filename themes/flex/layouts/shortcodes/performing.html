@@ -8,10 +8,10 @@
 </div>
 </div>
 <div class="discover-grid-sub">
-<time class="archive-info a1">{{ .date }}</time>
+<time class="des-base des-des a1">{{ .date }}</time>
 <div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
-<div class="des3">{{ .description | safeHTML  | markdownify }}</div>
-{{ if .quote }}<div class="des3"><blockquote>{{ .quote | safeHTML  | markdownify }}</blockquote></div>{{ end }}
+<div class="des-base des-des">{{ .description | safeHTML  | markdownify }}</div>
+{{ if .quote }}<div class="des-base"><blockquote>{{ .quote | safeHTML  | markdownify }}</blockquote></div>{{ end }}
 </div>
 </div>
 {{ end }}

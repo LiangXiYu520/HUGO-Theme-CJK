@@ -7,72 +7,72 @@
   {{ end }}
 </div>
 <div class="article-info">
-<div class="des1 a1 des-article">
+<div class="des-base des-des a1">
 <time datetime="{{ .Date.Format "2006-01-02" }}">
 {{ .Date.Format "2006-01-02" }}
 {{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "2006-01-02" }}{{ end }}</time>
 </div>
-<div class="des1 a1 des-article">
+<div class="des-base des-des a1">
 <span>{{- .WordCount }} 字</span>
 {{ partial "sourcecode.html" . }}
 </div>
-<div class="des1 a1 des-article">
+<div class="des-base des-des des-tag a1">
 {{- with .Params.author -}}
-    <span class="des2 a1">作者</span>
+    <span>作者
     {{- range . -}}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-    <span><a href="/author/{{ $name }}">@{{- $name -}}</a></span>
+    <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
     {{- end -}}
     {{- end -}}
 {{- end -}}
 {{- with .Params.auth -}}
 
-<span class="des2 a1">作者</span>
+<span>作者
 {{ range . }}
 {{- $name := . -}}
 {{- with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) -}}
-<span><a href="/auth/{{ $name }}">@{{- $name -}}</a></span>
+<a href="/auth/{{ $name }}">@{{- $name -}}</a></span>
 {{ end -}}
 {{ end }}
 {{- end }}
 
 {{- with .Params.from -}}
-　<span class="des2 a1">來源</span>
+　<span>來源
 {{ range . }}
 {{- $name := . -}}
 {{- with $.Site.GetPage "term" (printf "from/%s" $name) | default ($.Site.GetPage "term" (printf "from/%s" ($name | urlize))) -}}
-<span><a href="/from/{{ $name }}">«{{- $name -}}</a></span>
+<a href="/from/{{ $name }}">«{{- $name -}}</a></span>
 {{ end -}}
 {{ end }}
 {{- end }}
 
 {{- with .Params.series -}}
-    　<span class="des2 a1">系列</span>
+    　<span>系列
     {{- range . -}}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-    <span><a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
+    <a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
     {{- end -}}
     {{- end -}}
 {{- end -}}
 
 {{- with .Params.tags -}}
-    　<span class="des2 a1">標籤</span>
+    　<span>標籤
     {{- range . -}}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
-    <span><a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
+    <a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
     {{- end -}}
     {{- end -}}
 {{- end -}}
 
 {{- with .Params.book -}}
-        　<span class="des2 a1">學科</span>
+        　<span>學科
         {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "term" (printf "book/%s" $name) | default ($.Site.GetPage "term" (printf "book/%s" ($name | urlize))) -}}
-        <span class="des1 a1-cate"><a href="/read#{{ $name }}">#{{- $name -}}</a></span>
+       <a href="/read#{{ $name }}">#{{- $name -}}</a>
         {{- end -}}
         {{- end -}}
     {{- end }}
@@ -80,27 +80,27 @@
         {{- range . -}}
         {{- $name := . -}}
         {{- with $.Site.GetPage "term" (printf "step/%s" $name) | default ($.Site.GetPage "term" (printf "step/%s" ($name | urlize))) -}}
-        <span class="des1 a1-cate"><a href="/read#{{ $name }}">{{- $name -}}</a></span>
+     <a href="/read#{{ $name }}">{{- $name -}}</a></span>
         {{- end -}}
         {{- end -}}
     {{- end -}}
 
 {{- with .Params.notes -}}
-    　<span class="des2 a1">備註</span>
+    　<span>備註
     {{ range . }}
     {{- $name := . -}}
     {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
-    <span><a href="/notes/{{ $name }}">({{- $name -}})</a></span>
+    <a href="/notes/{{ $name }}">({{- $name -}})</a></span>
     {{ end -}}
     {{ end }}
 {{- end }}
 </div>
 
-<div class="des1 a1 des-article">
+<div class="des-base des-des des-tag a1">
 {{- if .Params.contentCopyright -}}
-<span class="des2 a1">版權 </span>{{ .Params.contentCopyright | safeHTML }}
+<span>版權 </span>{{ .Params.contentCopyright | safeHTML }}
 {{- else -}}
-<span class="des2 a1">版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
+<span>版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
 {{- end -}}
 </div>
 </section>
