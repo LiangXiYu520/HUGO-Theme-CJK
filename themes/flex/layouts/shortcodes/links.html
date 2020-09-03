@@ -10,8 +10,8 @@
 <div class="discover-grid-sub">
 <time class="archive-info a1">{{ .date }}</time>
 <div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
-{{ if .description }}<div class="des3 a1">{{ .description | safeHTML  | markdownify }}</div>{{ end }}
-{{ if .mydescription }}<div class="des3 a1"style="font-family:var(--serif);margin-top:1em">{{ .mydescription | safeHTML  | markdownify }}</div>{{ end }}
+{{ if .description }}<div class="des3">{{ .description | safeHTML  | markdownify }}</div>{{ end }}
+{{ if .mydescription }}<div class="des3"style="font-family:var(--serif);margin-top:1em">{{ .mydescription | safeHTML  | markdownify }}</div>{{ end }}
 </div>
 </div>
 </a>

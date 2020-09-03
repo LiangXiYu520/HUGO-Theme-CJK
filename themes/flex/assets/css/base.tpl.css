@@ -132,7 +132,7 @@ hr{
     background: var(--yellow);
   border-radius: 1em}
 a{
-  color:var(--black);
+  color:inherit;
   text-decoration:none;
 -webkit-transition: .2s;
 transition: .2s}
@@ -332,7 +332,8 @@ h6{
   text-align: center;
   line-height: 1.7;
   color:var(--gray);
-  margin: .5em 1em auto}
+  margin: .5em 1em auto
+}
 .des1{
   margin: 0 auto;
   text-align:center;
@@ -347,7 +348,8 @@ h6{
     }
 .des2{
   color:var(--gray);
-  font-size:.9em}
+  font-size:.9em
+}
   .des3{
   color:var(--gray);
  font-size:.9em;
@@ -356,6 +358,10 @@ h6{
  text-align: justify;
  line-height: 1.6
     }
+.des3 a:after{
+      content:"↩";
+      color:var(--blue)
+    }  
  .des4{
    font-family:var(--codesans);
    letter-spacing:0;
@@ -368,11 +374,6 @@ des-step{
   float:right;  
   font-size: 1em;
           }   
-.des1-cate a{
-  margin-left:.4em;
-   font-weight: bold;
-   letter-spacing: .1em;
- }
  .des-article{
   margin:.2em 0;
   text-align: left;
@@ -662,8 +663,6 @@ background-color: var(--bg)
     text-align: center;
     margin: 1.5em auto;
 line-height: 1.4;
-color:var(--gray)}
-.archive-wrap a{
 color:var(--gray)
 }
 .archive-left{
@@ -678,19 +677,16 @@ color: var(--yellow)
   margin: .2em 0 0 .3em;
   -webkit-text-stroke: 1px #2b2b2b;
 }
-.archive-title {
-  margin-left: .5em}
-.archive-title a{
-  color: var(--black)}
-.archive-info {
+.archive-title{
+  margin-left: .5em
+}
+.archive-info{
   text-align: left;
   font-size: .9em;
   margin: auto .3em auto 0em;
   color:var(--gray);
-  font-family: var(--codesans)}
-.archive-info a{
-    color:var(--gray)
-  }
+  font-family: var(--codesans)
+}
 .archive-info-author{
 margin: auto}
 .time{
@@ -699,13 +695,13 @@ margin: auto}
   font-size: .8em}
   .comment-wrap{
     background-color: var(--section2);
-    margin: 0 auto 0;
+    margin: 0 auto;
     width: 100vw;  
   }
   .comment{
     padding-top: 4em ;
     padding-bottom: 4em;
-    margin: 4em auto 0;
+    margin: 0 auto;
   max-width:{{ with site.Params.width }} {{ . }}{{ end }};
   color:var(--black);
   font-size: .9em;
@@ -758,22 +754,32 @@ background-color: var(--bg)}
   font-size: .9em;
   line-height: 1.7}
 .pagi-wrap{
-  text-align:center}
+  background:var(--section3)
+}
 .pagi{
   line-height: 1.5;
   font-size: 1em;
   display: flex;
+  flex-wrap: wrap;
 justify-content: space-between;
-flex-flow: row wrap;
-margin:2em 1em 0 1em}
+margin:2em 1em 0 1em
+}
 .pagi a{
-  font-weight: bold}
-.pagi:hover{
-      padding: 0px 8px
-    }
+  font-weight: bold
+}
+.pagi-item{
+  flex: 1 1 200px;
+  margin:1em
+}
+.pagi-prev{
+  text-align: left;
+}
+.pagi-next{
+  text-align: right;
+}
 .pagination-wrap{
     text-align: center}
-.pagination {
+.pagination{
   margin: 0 auto 2em;
   display: inline-block;
   font-family: var(--codesans)}
@@ -791,7 +797,7 @@ margin:2em 1em 0 1em}
       text-decoration: none}
   .pagination a:hover{
     border: 2px solid var(--bg)}
-  .pagination   .active a{
+  .pagination .active a{
       color: var(--yellow);
       cursor: default;
       font-weight: 800;
@@ -1090,8 +1096,8 @@ max-width: 1800px
   display: flex;
   -webkit-box-orient: horizontal;
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap}
-
+  flex-flow: row wrap
+}
 .recommendation-card{
   background-size:cover;
   border-radius:1em;
@@ -1243,7 +1249,7 @@ display: block;
       margin: 3em auto 1em}
   .comment{
   padding: .5em;
-  margin: 5em auto 0}
+  margin: 0 auto}
 .pagination {
   margin: 0 auto 2em}
   .footer-wrapper{

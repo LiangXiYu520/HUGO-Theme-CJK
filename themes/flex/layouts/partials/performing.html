@@ -4,8 +4,8 @@
   <div class="discover-grid-sub">
   <time class="archive-info a1">{{ .date }}</time>
     <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .title | safeHTML | markdownify -}}</a></div>
-    <div class="des3 a1">{{ .description | safeHTML  | markdownify }}</div>
-    <div class="des3 a1">{{ .quote | safeHTML  | markdownify }}</div>
+    <div class="des3">{{ .description | safeHTML  | markdownify }}</div>
+    <div class="des3">{{ .quote | safeHTML  | markdownify }}</div>
   </div>
   </div>
 {{ end }}

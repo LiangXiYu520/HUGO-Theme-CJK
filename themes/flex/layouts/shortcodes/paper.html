@@ -10,7 +10,7 @@
 <div class="discover-grid-sub">
 <time class="archive-info a1">出版 {{ .productiontime }}</time>　<code>{{ .category }}</code>
 <div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
-<div class="des3 a1">{{ .description | safeHTML | markdownify }}</div>
+<div class="des3">{{ .description | safeHTML | markdownify }}</div>
 </div>
 </div>
 {{ end }}

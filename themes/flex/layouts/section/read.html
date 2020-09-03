@@ -3,7 +3,7 @@
   {{ partialCached "banner.html" . }}
   <header class="Heading">
       <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">赫赫蠹書</h1>
-{{- with $des := index (.Site.Data.taxo ) "赫赫蠹書" -}}<div class="des a1">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+{{- with $des := index (.Site.Data.taxo ) "赫赫蠹書" -}}<div class="des">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
   {{- $length := len .Data.Pages }}
   {{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}
@@ -40,7 +40,7 @@
         <span class="des2 des-step">{{ .Params.step }}</span>  
       </span>
         <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</div>
+        <div class="des3">{{ .Params.description | safeHTML  | markdownify }}</div>
       </div>
       </div>
   {{ end }}
@@ -65,7 +65,7 @@
   <div class="discover-grid-sub">
     <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
     <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-    <span class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</span>
+    <span class="des3">{{ .Params.description | safeHTML  | markdownify }}</span>
   </div>
   </div>
 {{ else }}
@@ -74,7 +74,7 @@
     <span>
       <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
       <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-      {{if .Params.description }}<span class="des3 a1">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
+      {{if .Params.description }}<span class="des3">{{ .Params.description | safeHTML  | markdownify }}</span>{{ end }}
     </span>
 </div>
 {{ end }}

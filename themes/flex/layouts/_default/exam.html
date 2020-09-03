@@ -5,7 +5,7 @@
 <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»<a class="DocSearch-lvl0" href="/exam">考試課堂筆記</a>»</span><h1 class="DocSearch-lvl1 heading-title a1 article">{{- .Title | safeHTML | markdownify -}}</h1>
 </div>
 {{ if .Description }}
-<div class="des a1">{{ .Params.Description | safeHTML | markdownify }}</div>
+<div class="des">{{ .Params.Description | safeHTML | markdownify }}</div>
 {{ end }}
 <section class="article-front-noimg">
   <div class="des1 a1">
@@ -27,20 +27,10 @@
       　請勿轉載，自己參考一下卽可
       </div>
     </section>
-
-    <nav class="pagi-wrap">
-    <div class="pagi a1">
-      {{ with .PrevInSection }}
-        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a></span>
-        {{- end }}
-    {{ with .NextInSection }}
-          　<span class=".pagi-next"><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> →</span>
-    {{- end }}
-    </div></nav>
-
     </header>
     <main>
-{{ partial "content.html" . }}   
+{{ partial "content.html" . }}
+    {{ partial "prevnext.html" . }}   
 {{ partial "comments.html" . }}
 
 </main>

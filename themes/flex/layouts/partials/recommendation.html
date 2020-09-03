@@ -94,7 +94,7 @@
         <span>
           <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
           <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-          <div class="des3 a1">
+          <div class="des3">
             {{- with .Params.author -}}
                 {{ range . }}
                 {{- $name := . -}}
@@ -133,7 +133,7 @@
       <span>
           <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
           <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-          <div class="des3 a1">
+          <div class="des3">
             {{- with .Params.author -}}
                 {{ range . }}
                 {{- $name := . -}}
@@ -172,7 +172,7 @@
     <span>
         <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
         <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des3 a1">
+        <div class="des3">
           {{- with .Params.author -}}
               {{ range . }}
               {{- $name := . -}}
@@ -212,7 +212,7 @@
     <span>
         <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
         <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des3 a1">
+        <div class="des3">
           {{- with .Params.author -}}
               {{ range . }}
               {{- $name := . -}}
@@ -251,7 +251,7 @@
     <span>
         <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
         <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des3 a1">
+        <div class="des3">
           {{- with .Params.author -}}
               {{ range . }}
               {{- $name := . -}}
@@ -290,7 +290,7 @@
     <span>
         <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
         <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des3 a1">
+        <div class="des3">
           {{- with .Params.author -}}
               {{ range . }}
               {{- $name := . -}}
@@ -330,7 +330,7 @@
     <span>
         <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
         <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des3 a1">
+        <div class="des3">
           {{- with .Params.author -}}
               {{ range . }}
               {{- $name := . -}}
@@ -383,7 +383,7 @@
   <span>
       <span class="archive-info a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
       <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-      <div class="des3 a1">
+      <div class="des3">
         {{- with .Params.author -}}
             {{ range . }}
             {{- $name := . -}}

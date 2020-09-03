@@ -2,19 +2,10 @@
     <div class="heading-wrap">
     {{ partial "heading.html" . }}
     {{ partial "article-front.html" . }}
-    <nav class="pagi-wrap">
-    <div class="pagi a1">
-      {{ with .PrevInSection }}
-        <span class=".pagi-prev">← <a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a></span>
-        {{- end }}
-    {{ with .NextInSection }}
-          <span class=".pagi-next"><a href="{{ .RelPermalink }}">{{- .Title | safeHTML | markdownify -}}</a> →</span>
-    {{- end }}
-    </div>
-  </nav>
     </div>
     <main>
-{{ partial "content.html" . }}   
+{{ partial "content.html" . }}
+{{ partial "prevnext.html" . }}   
 {{ partial "comments.html" . }}   
 {{ partial "recommendation.html" . }}    
 </main>
