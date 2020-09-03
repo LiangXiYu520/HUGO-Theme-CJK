@@ -358,10 +358,6 @@ h6{
  text-align: justify;
  line-height: 1.6
     }
-.des3 a:after{
-      content:"↩";
-      color:var(--blue)
-    }  
  .des4{
    font-family:var(--codesans);
    letter-spacing:0;
