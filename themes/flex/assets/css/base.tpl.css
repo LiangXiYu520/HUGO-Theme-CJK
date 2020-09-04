@@ -6,6 +6,7 @@
   --black: #2b2b2b;
   --yellow: #ffda56;
   --bgpink: #fee8da;
+  --bgpink1:#feefe6;
   --red: #f27144;
   --blue:#2fa0ff;
   --bgblue:#e1f3ff;
@@ -406,7 +407,7 @@ h6{
       font-weight: bold;
    }
 blockquote {
-background: var(--bgpink);
+background: var(--bgpink1);
 margin: 0 0 0 2em;
 padding:0 .2em;
 border-radius:.5em
