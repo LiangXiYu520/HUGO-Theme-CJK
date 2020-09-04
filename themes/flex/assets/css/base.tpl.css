@@ -134,11 +134,14 @@ hr{
 a{
   color:inherit;
   text-decoration:none;
--webkit-transition: .2s;
-transition: .2s}
+-webkit-transition: .3s;
+transition: .3s;
+}
 a:after{
-  content:"↩";
-  color:var(--blue)
+  content:"⟲";
+  color:var(--blue);
+  vertical-align: super;
+  font-size:.9em
 }
 a:hover{
   background:var(--bgblue);
@@ -148,7 +151,8 @@ a:hover{
   content:none
 }
 .a2 a{
-  color:#fffae8
+  color:#fffae8;
+  padding: 0
 }
 .a2 a:after{
   content:none
@@ -739,8 +743,7 @@ color: var(--black);
 background-color: var(--bg)}
 .footnotes{
   font-size: .9em;
-  line-height: 1.7}
-.pagi-wrap{
+  line-height: 1.7
 }
 .pagi{
   line-height: 1.5;
