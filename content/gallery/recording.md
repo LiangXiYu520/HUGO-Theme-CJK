@@ -9,7 +9,7 @@ lastmod: 2020-08-05
 url: recording
 description: '日常生活中，耳朵聽到的聲音往往被我们忽畧。現在，我将在這裏發布我的實地錄音，帶領你重新理解聆聽，感受聲音的強大表現力。請在安静的地方戴著耳機聽。<br>In daily life, the sound heard by the ear is often overlooked by us. Now, I will post my field recording here, trying to lead everyone re-understand listening, and feel the expressive power of the sound. Please wear headphones in a quiet place when listening.'
 des: '在日常生活中，耳朵聽到的聲音往往被我们忽畧。而現在，我将帶大家重新理解聆聽，感受聲音的彊大表現力。'
-img: 'https://pic.imgdb.cn/item/5f37a56014195aa594fabf5d.jpg'
+img: 'https://pic.imgdb.cn/item/5f54f441160a154a6723d801.jpg'
 ---
 
 <div class="vertical-false">
