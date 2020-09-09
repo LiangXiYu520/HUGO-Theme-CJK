@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "<v>聯邦黨人文集</v>述要 *The Federalist Papers*"
+title: "《聯邦黨人文集》述要 *The Federalist Papers*"
 date: 2020-03-18
 book: ["踐行社會主義核心價値觀"]
 categories: ["哲社科"]

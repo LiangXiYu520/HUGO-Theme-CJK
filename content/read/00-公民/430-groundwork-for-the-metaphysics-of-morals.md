@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "康德<v>道德形而上學奠基</v>述要 Kant *Groundwork for the Metaphysics of Morals*"
+title: "康德《道德形而上學奠基》述要 Kant *Groundwork for the Metaphysics of Morals*"
 date: 2018-06-01
 book: ["踐行社會主義核心價値觀"]
 categories: ["哲社科"]

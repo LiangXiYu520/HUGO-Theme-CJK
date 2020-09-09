@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "康德<v>世界公民觀點之下的普遍歷史觀念</v>述要 Kant *Idee zu einer allgemeinen Geschichte in weltbürgerlicher Absicht*"
+title: "康德《世界公民觀點之下的普遍歷史觀念》述要 Kant *Idee zu einer allgemeinen Geschichte in weltbürgerlicher Absicht*"
 date: 2018-06-16
 book: ["踐行社會主義核心價値觀"]
 categories: ["哲社科"]

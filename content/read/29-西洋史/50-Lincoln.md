@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "<v>牛津通識讀本：林肯</v>述要 Allen C. Guelzo *Lincoln: A Very Short Introduction*"
+title: "《牛津通識讀本：林肯》述要 Allen C. Guelzo *Lincoln: A Very Short Introduction*"
 date: 2020-05-30
 categories: ["史"]
 book: ["29西洋史"]

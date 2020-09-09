@@ -1,7 +1,7 @@
 ---
 type: "xuekan"
 layout: "xuekan"
-title: "<v>春秋學刊</v>2020年春季卷目次"
+title: "《春秋學刊》2020年春季卷目次"
 date: 2020-09-06
 categories: ["目錄"]
 img: 'https://pic.imgdb.cn/item/5f561ad1160a154a675d0a1c.jpg'

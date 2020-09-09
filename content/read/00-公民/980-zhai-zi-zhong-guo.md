@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "誰是中國人──<v>殊方未遠</v>讀後"
+title: "誰是中國人──《殊方未遠》讀後"
 date: 2017-01-11
 lastmod: 2017-01-11
 book: ["踐行社會主義核心價値觀"]

@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "家族、秩序與權力——<v>鄕土中國</v>讀後"
+title: "家族、秩序與權力——《鄕土中國》讀後"
 date: 2020-01-15
 book: ["踐行社會主義核心價値觀"]
 step: ["9愛國"]

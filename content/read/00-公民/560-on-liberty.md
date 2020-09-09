@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "約翰·密爾<v>論自由</v> 述要 John Stuart Mill *On Liberty*"
+title: "約翰·密爾《論自由》 述要 John Stuart Mill *On Liberty*"
 date: 2020-04-28
 book: ["踐行社會主義核心價値觀"]
 categories: ["哲社科"]

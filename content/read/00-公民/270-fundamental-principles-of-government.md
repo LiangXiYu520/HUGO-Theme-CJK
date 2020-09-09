@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "保罗·芮恩施<v>平民政治的基本原理</v>述要 Paul S. Reinsch *The Fundamental Principles of Government*"
+title: "保罗·芮恩施《平民政治的基本原理》述要 Paul S. Reinsch *The Fundamental Principles of Government*"
 date: 2020-03-20
 book: ["踐行社會主義核心價値觀"]
 categories: ["哲社科"]

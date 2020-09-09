@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "托馬斯·內格爾<v>人的問題</v>述要 Thomas Nagel *Mortal Questions*"
+title: "托馬斯·內格爾《人的問題》述要 Thomas Nagel *Mortal Questions*"
 date: 2020-05-07
 book: ["踐行社會主義核心價値觀"]
 categories: ["哲社科"]

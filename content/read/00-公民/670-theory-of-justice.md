@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "約翰·羅爾斯<v>正義論</v>述要 John Rawls *A Theory of Justice*"
+title: "約翰·羅爾斯《正義論》述要 John Rawls *A Theory of Justice*"
 date: 2020-05-25
 book: ["踐行社會主義核心價値觀"]
 categories: ["哲社科"]

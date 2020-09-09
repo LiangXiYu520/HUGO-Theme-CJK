@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "邊沁<v>政府片論</v>述要<n>附導言</n> Jeremy Bentham *a fragment on government*"
+title: "邊沁《政府片論》述要（附導言） Jeremy Bentham *a fragment on government*"
 date: 2020-07-23
 book: ["踐行社會主義核心價値觀"]
 categories: ["哲社科"]

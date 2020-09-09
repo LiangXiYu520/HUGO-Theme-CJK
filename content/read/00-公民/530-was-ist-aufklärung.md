@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "康德<v>回答這個問題：什麼是啓蒙</v>述要 Kant *Beantwortung der Frage: Was ist Aufklärung?*"
+title: "康德《回答這個問題：什麼是啓蒙》述要 Kant *Beantwortung der Frage: Was ist Aufklärung?*"
 date: 2020-05-01
 lastmod: 2020-05-01
 book: ["踐行社會主義核心價値觀"]

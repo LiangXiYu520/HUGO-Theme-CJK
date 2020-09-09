@@ -2,7 +2,7 @@
 layout: "read"
 type: "read"
 author: ["柯棋瀚學"]
-title: "羅伯特·達爾<v>論民主</v>述要 Robert A. Dahl *On Democracy*"
+title: "羅伯特·達爾《論民主》述要 Robert A. Dahl *On Democracy*"
 date: 2020-03-22
 lastmod: 2020-03-22
 book: ["踐行社會主義核心價値觀"]
