@@ -1,13 +1,13 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫网摘｜實地錄音"
+title: "赫赫网摘｜實地錄音二"
 date: 2020-10-06
 url: /net/recording2
 author: ["柯棋瀚整理"]
 netsort: ["其他"]
 categories: ["錄音"]
-description: '整理一下看到的一些自己感興趣的實地錄音 field recording 的相關信息。'
+description: ''
 vertical: false
 img: ''
 draft: true
