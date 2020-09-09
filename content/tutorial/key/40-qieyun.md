@@ -1,7 +1,7 @@
 ---
 layout: 'tutorial'
 type: 'tutorial'
-title: "赫赫指南｜切韻語音"
+title: "赫赫金鑰｜切韻語音"
 date: 2018-08-15
 lastmod: 2018-08-23
 url: blog/2018/08/15/qpyy.html
@@ -12,10 +12,10 @@ menu:
 author: ["柯棋瀚學"]
 categories: ["漢語"]
 tags: ["小學"]
-tutosort: ["赫赫指南"]
+tutosort: ["赫赫金鑰"]
 description: '如有不同，以 PDF 爲準。這是<v>切韻</v>系統的，以實用性的擬音爲重點，以方便記憶每箇字在<v>廣韻</v>的位置。網頁排版很糟糕，可以下載 <a href="https://github.com/kujihhoe/blog-files/raw/master/切韻語音入門.pdf" target="\_blank">PDF</a>。'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984823.jpg'
+img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be65.jpg'
 ---
 
 本文基礎：以嚴實博士的[<v>中古漢語語音教程</v>](https://www.youtube.com/playlist?list=PL3D56C369F16E43D0) 爲基礎。他沒講蟹、止、深、臻、梗、曾摄，我自己補充出來，例字是反切下字。嚴實的 [拼音方案](https://zh.wikipedia.org/wiki/User:Polyhedron/中古漢語拼音)，優點是系統性非常強，不過我也進行了很多調整。以及文中提到的一些論文。這些字的拼音我一箇箇査的廣韻。可能有理解錯誤之處，還請指正。擬音是眾說紛紜，這裏只是一箇大概的情況，嚴實說的確定程度，聲母：>80%，介母、主元音：60-70%，韻尾：90%，聲調：50%。奉上 [韻典網](http://ytenx.org/kyonh/yonhngix)，良心，[IPA](http://www.ipachart.com/)，用來查音標。

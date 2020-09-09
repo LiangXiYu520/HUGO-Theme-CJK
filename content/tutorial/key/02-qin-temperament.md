@@ -1,17 +1,17 @@
 ---
 layout: 'tutorial'
 type: 'tutorial'
-title: "赫赫指南｜琴律學"
+title: "赫赫金鑰｜琴律學"
 date: 2018-03-07
 lastmod: 2019-11-10
 url: blog/2018/03/07/qinlv.html
 author: ["柯棋瀚學"]
 categories: ["琴"]
 tags: ["琴理"]
-tutosort: ["赫赫指南"]
+tutosort: ["赫赫金鑰"]
 description: '整理自：陳應時<v>琴律學</v>，上海音樂學院出版社，2015 年。其實這本書不僅在說琴律學，更在說琴調學，琴律學是基於科學計算，无甚大異議，但琴調學一直是箇問題，本文的琴調學觀點暫且完全遵照陳應時，其實這也是琴界通行的觀點。在看本篇之前請一定先看<v>西方律學入門</v>。'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f26c13414195aa59498482e.jpg'
+img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be4e.jpg'
 ---
 
 ## 一、

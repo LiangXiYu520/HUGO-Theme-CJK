@@ -62,7 +62,7 @@ examsort = "examsort"
               url = "/read"
            
   [[menu.nav3]]
-              name = "赫赫指南"
+              name = "赫赫金鑰"
               weight = 8
               url = "/tutorial"
   [[menu.nav3]]

@@ -4,7 +4,7 @@
   <header class="Heading">
       <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">敎程</h1>
   {{- $length := len .Data.Pages }}
-  {{- with $des := index (.Site.Data.taxo ) "赫赫指南" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+  {{- with $des := index (.Site.Data.taxo ) "赫赫金鑰" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
 <section class="des-base a1" style="margin-bottom: -5em">
 凡 {{ $length  }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
