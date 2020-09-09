@@ -328,3 +328,5 @@ LEMAX《[青年意识形态初探](https://mp.weixin.qq.com/s/4FaBlqKY0R-OvxoCGH
 [MacOS 的安全和隐私指南](https://github.com/drduh/macOS-Security-and-Privacy-Guide/blob/master/README-cn.md)
 
 [湾区日报是如何运作的？](https://wanqu.co/b/7/%E6%B9%BE%E5%8C%BA%E6%97%A5%E6%8A%A5%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E4%BD%9C%E7%9A%84/) 堪稱完美的發布流程。
+
+[新冠的额外死亡数](https://yufree.cn/cn/2020/09/05/excess-deaths/) 社會是一個系統，不能只看一個疾病直接導致的死亡人數。「瑞典确实没封国封城，经济没停，但多死了接近6000人，比平时死亡率高了17%，好在现在恢复正常了」「英国，高出正常死亡率24%，目前已恢复正常」「美国，多死了接近20万人，比平时死亡率高了18%，巴西也是这个数」「南美很多国家，例如秘鲁，高了134%」
