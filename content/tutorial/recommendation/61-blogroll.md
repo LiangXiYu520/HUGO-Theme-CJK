@@ -8,7 +8,7 @@ tutosort: ["資源"]
 date: 2020-04-30
 lastmod: 2020-09-11
 description: '我收集的一些比較有意思的博客'
-url: recommendation/blogroll
+url: /recommendation/blogroll
 img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96003.jpg' 
 vertical: false
 ---

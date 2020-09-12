@@ -161,6 +161,8 @@ img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984817.jpg'
 
 ### 其他
 
+[中央研究院數位文化中心開放資料平台](https://data.ascdc.tw/data.php)
+
 [中國歷代墓誌數據庫](http://csid.zju.edu.cn/tomb/)　浙大圖書館主辦
 
 [國際敦煌項目](http://idp.nlc.cn/database/search_results.a4d?uid=-77351689816;random=41)
