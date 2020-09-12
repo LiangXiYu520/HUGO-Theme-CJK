@@ -12,7 +12,9 @@ vertical: false
 draft: true
 ---
 
-《[经验与互联网丨陈嘉映与项飙对话实录（上）](https://mp.weixin.qq.com/s/aNUWWXsh3DaLUUljmUdL1A)》，单读，8-28
+George Orwell [Politics and the English Language](https://www.orwell.ru/library/essays/politics/english/e_polit/) 〔英文〕如何寫文章？寫於 1946年
+
+《[经验与互联网丨陈嘉映与项飙对话实录](https://mp.weixin.qq.com/s/aNUWWXsh3DaLUUljmUdL1A)》，单读，8-28
 
 
 许楠：我的第一个问题是，两位老师觉得对话为什么是必要的、重要的？在当今时代，对话的价值是什么？我们该如何看待对话的意义？我们先请项老师来回答。

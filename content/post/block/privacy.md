@@ -4,7 +4,7 @@ type: 'block'
 author: ["柯棋瀚"]
 title: "隱私安全"
 date: 2020-06-07
-lastmod: 2020-08-25
+lastmod: 2020-09-11
 categories: ["站務"]
 tags: ["coding"]
 menu:
@@ -98,3 +98,7 @@ PageSpeed Insights：電腦上全站各頁面平均 98。非常好。
 <img src="https://pic.imgdb.cn/item/5ea00617c2a9a83be5709ceb.jpg" width="700">
 
 <img src="https://pic.imgdb.cn/item/5ea00617c2a9a83be5709ced.jpg" width="700">
+
+## 環保
+
+經過 [測試](https://www.websitecarbon.com/website/kqh-me-181/)，赫赫文王的碳排放比 74% 的網頁更少，每次點擊釋放 0.42g CO2。

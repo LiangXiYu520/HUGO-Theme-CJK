@@ -1,12 +1,12 @@
 ---
 layout: 'tutorial'
 type: 'tutorial'
-title: "資源｜blogroll"
+title: "資源｜博客列表 blogroll"
 author: ["柯棋瀚整理"]
 categories: ["站務"]
 tutosort: ["資源"]
 date: 2020-04-30
-lastmod: 2020-09-01
+lastmod: 2020-09-11
 description: '我收集的一些比較有意思的博客'
 url: recommendation/blogroll
 img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f96003.jpg' 
@@ -32,6 +32,8 @@ vertical: false
 [書-會-兒的博客](http://blog.sina.com.cn/pengyong)　〔中央民族大學歷史文化學院院長彭勇敎授〕
 
 [詹衛東箇人主葉](http://ccl.pku.edu.cn/doubtfire/)　〔北大一位語言學敎授〕
+
+[Tom MacWright](https://macwright.com/reading/)　〔很多書的讀後〕
 
 ## 文蓺類
 
@@ -66,6 +68,8 @@ vertical: false
 [Tonis Foto Haus](https://www.tonichan.xyz)　Amateur Photographer. Novice Data Scientist.Zhejiang University, Chu Ko Chen Honors College.
 
 [Parimal Satyal](https://neustadt.fr/)　a designer and occasional writer living in Paris. I’m also interested in aviation, cross-cultural exchange,  languages, science, computer history, the small/open web and the  European Union. 〔文章挺有意思〕
+
+[uses this](https://usesthis.com/)　〔一個採訪別人的網站，已經有一千多個人的故事了〕
 
 ## 生活類
 
@@ -105,6 +109,8 @@ vertical: false
 
 ## 技術類
 
+https://blog.notryan.com/ 這個純文本界面，非常別緻
+
 https://armstrong.viyf.org/about
 
 [哲科文 Jerkwin](http://jerkwin.github.io/tags/)　〔雖然界面很古董，但內容，也太高產了吧〕
@@ -143,7 +149,10 @@ https://armstrong.viyf.org/about
 
 https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開！
 
+[LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com/)　〔不知道怎麼分類，一個用太陽能的網站〕
+
 [Ryan0up'S Blog](https://ryanc.cc)　一个完美主義者，名曰 RYAN0UP。<n>友鏈於 20181027，2019 年 6 月再看，沒有友鏈了</n>
+
 
 ## 旅行類
 
@@ -185,7 +194,13 @@ https://www.re-design.cn/
 
 [tonsky](https://tonsky.me/)　I’m Nikita. Here I write about programming and UI design
 
-[voshart](https://voshart.com/)　一位VR設計師的博客，有羅馬帝國元首的相貌復原
+[voshart](https://voshart.com/)　〔一位VR設計師的博客，有羅馬帝國元首的相貌復原〕
+
+[noticing](https://kottke.org/newsletter/)　〔關於設計、生活的週報〕
+
+[alistapart](https://alistapart.com/)　〔有關前端設計的媒體網站，很多作家聚在一起的那種〕
+
+[jack mcdade](https://jackmcdade.com/)　〔創意網頁設計〕
 
 ## 老字號
 
@@ -215,9 +230,21 @@ https://www.re-design.cn/
 
 [博文历史列表](https://liebiao.qian.lu/)　〔格子老師運營的，有 RSS 聚合〕
 
-[寻我](https://seekbetter.me/?sort=recommend&mode=blog&page=1)　优秀个人独立博客
+[寻我](https://seekbetter.me/)　优秀个人独立博客〔20200912 提交〕
 
 [优秀博客集锦](https://woodwhales.cn/2018/12/22/002/)
+
+下爲英語世界計算機博客列表：
+
+https://blogs.sirodoht.com/ 
+
+https://jlelse.blog/blogroll/
+
+https://www.distinctly.pink/blogroll.html
+
+https://www.paritybit.ca/links
+
+https://whimsical.club/　〔製作精良〕
 
 ### 播客
 
