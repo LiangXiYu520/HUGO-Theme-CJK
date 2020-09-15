@@ -3,11 +3,12 @@ layout: 'tutorial'
 type: 'tutorial'
 title: "資源｜歷史學參考書目"
 date: 2020-06-02
+lastmod: 2020-09-15
 author: ["柯棋瀚整理"]
 categories: ["史"]
 tutosort: ["資源"]
-url: recommendation/bibliography-history
-description: '本科時候存的資料，這裏整理一下。都是從老師、學長那攢下來的。趙老師說一堆參考書中讀一兩本卽可；二十四史讀完史記卽可。'
+url: /recommendation/bibliography-history
+description: '本科時候存的資料，都是從老師、學長那攢下來的。趙老師說一堆參考書中讀一兩本卽可；二十四史讀完史記卽可。還有一些是網上的。'
 img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984815.jpg'
 ---
 
@@ -1624,6 +1625,10 @@ img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984815.jpg'
 191. 马背上的朝廷：巡幸与清朝统治的建构,1680—1785 [美]张勉治 著 董建中 译
 192. 申不害：公元前四世纪中国的政治哲学家 [美]顾立雅 著 马腾 译
 193. 晋武帝司马炎 [日]福原启郎 著 陆帅 译
+
+## 天文學史
+
+[伯鹩氏的豆列](https://www.douban.com/doulist/1310754/)
 
 ## 古希腊史
 

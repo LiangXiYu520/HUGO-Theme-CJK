@@ -141,7 +141,9 @@ img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984811.jpg'
 
 [臺灣聲景協會](https://www.soundscape.org.tw/articles/)　〔專注於大自然的聲音風景，以保護生物多樣性爲宗旨。〕
 
-[Bivouac Recording](http://www.bivouacrecording.cn/)　一个实地录音品牌且提供录音服务的公司，致力于在中国推进独立现场录音项目。Terence是生活在上海的美国人、录音师和声音艺术家，经营着一个叫“Bivouac Recording”的实地录音厂牌。〔感覺找到了組織！B 站上有兩集他的 [vlog](https://www.bilibili.com/video/av38721879/?spm_id_from=333.788.videocard.0)〕
+[Bivouac Recording](http://www.bivouacrecording.com/)　一个实地录音品牌且提供录音服务的公司，致力于在中国推进独立现场录音项目。Terence是生活在上海的美国人、录音师和声音艺术家，经营着一个叫“Bivouac Recording”的实地录音厂牌。〔感覺找到了組織！B 站上有兩集他的 [vlog](https://www.bilibili.com/video/av38721879/?spm_id_from=333.788.videocard.0)〕
+
+[haupt](https://hauptmikrofon.de/) 　〔3D錄音〕
 
  [<v>成都印象</v>](http://news.sina.com.cn/o/2017-12-03/doc-ifyphkhm0026206.shtml)、[<v>廈門──聲音印象</v>](http://mp.weixin.qq.com/s/qi2sSb04QpU7xpVrpiywqg)　〔中央人民廣播電臺中國之聲製作。緫感覺有濃濃的「新聞味」，我是不傾向於這樣的，有點太官方了。看到他們的裝備，錄音機是日系的錄音筆，好簡陋。話筒沒認出來。〕
 

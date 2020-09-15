@@ -54,3 +54,9 @@ Rycote 的支架，用於小型錄音筆。
 <img src="https://images.squarespace-cdn.com/content/v1/55ddc2abe4b09069ee81cf83/1596556768412-7T8EXEMZN7JAQ0TZN2GZ/ke17ZwdGBToddI8pDm48kEvRvRnVY5Z0LBBF8FZ16Od7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Uc_DGj-mQSs3j8CEnNGHtfHRuDA-0VP93SH400vyyOmhDd0XdrpHeLWS7YYzpHs1IQ/rivers+event.jpg?format=1500w" width="700">
 
 [Answering your field recording questions in one to one sessions](https://mindful-audio.com/blog/learn-field-recording-sessions)
+
+
+
+## 論文
+
+https://hauptmikrofon.de/HW/Wittek%20Ambience%20%2015102013.pdf
