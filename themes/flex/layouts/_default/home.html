@@ -1,13 +1,21 @@
 {{ define "main" }}
     <main class="home">
       <div class="home-wrap">
+        <div class="board">
+          <p style="font-size: 2em;font-weight: bold;text-align: center">站慶三周秊讀者感恩！</p>
+        <p class="des-base">距離三周秊站慶還有 {{ div (sub (time "2020-10-03T22:30:00.00+10:00").Unix now.Unix) 86400 }} 日</p>
+        <p>卽日起到 10 月 5 日，只要在本站任意頁面留言，並將快遞地址發到我郵箱，卽可獲得禮物一分（下圖書籤、海報），並成爲本站會員，書籤上的編號卽爲會員編號。至於會員權益嘛，說不定以後就有了呢。</p>
+        </div>
+        <img src="https://pic.imgdb.cn/item/5f60b5d2160a154a67382187.jpg" alt="text" width="600">
+        <img src="https://pic.imgdb.cn/item/5f60da9d160a154a6741c6fa.jpg" alt="text" width="400">
+        <br><br><br><br>
       <section class="home-cover">
         <div class="cover-items">
           <h1>赫赫文王<img src="https://pic.imgdb.cn/item/5f4a6aba160a154a671efb24.png" height="70" style="border:none;border-radius:0"></h1>
           <div class="label">永嘉田家後🌝　生於九七秊🌖<br>
             長于錦官城🌗　讀的歷史系🌚</div>
           <div style="line-height:.2">　</div>
-            <div class="des-base" style="border-top: 1px solid #787878">v4.7.21　{{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</div>  
+            <div class="des-base" style="border-top: 1px solid #787878">v4.7.22　{{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</div>  
           <div class="sentence">
           {{ $all := slice }}
               {{ range .Site.Data.sentence  }}
@@ -21,12 +29,7 @@
           <div class="sentence1">{{- index $1all 0 -}}<span class="sentence2">（{{- index $1all 1 | safeHTML -}}）</span></div>
           {{ end }}
           {{ end }}
-          </div>
-          <div class="board">
-            <center><strong>站慶三周秊讀者感恩！</strong></center>
-          <p class="des-base">距離三周秊站慶還有 {{ div (sub (time "2020-10-03T22:30:00.00+10:00").Unix now.Unix) 86400 }} 日</p>
-          <p>2020 年 10 月 3—5 號三日之中，只要在本站任意頁面留言，並將快遞地址發到我郵箱，卽可獲得神祕禮物一分，並成爲本站會員，禮物上的編號卽爲會員編號。禮物將於 12 號前寄出（如因疫情影響無法寄快遞，將順延）。至於會員權益嘛，說不定以後就有了呢。</p>
-          </div>
+          </div>          
           </div>
         <div class="cover-items cover-right">
           <div class="subscribe-wrap des-base a1" style="margin-top:0">

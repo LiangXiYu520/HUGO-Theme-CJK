@@ -57,7 +57,7 @@
           <span class="des-base des-des a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
           <div class="discover-item"><a href="{{ .Permalink }}" class="archive-post-link"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
           <span class="des-base">{{ .Params.description | safeHTML  | markdownify }}</span>
-          <div class="des-base">
+          <div class="des-base des-des des-tag">
             {{- with .Params.author -}}
                 {{ range . }}
                 {{- $name := . -}}

@@ -353,7 +353,7 @@ h6{
 .des-tag a{
   font-size: 1em;
   color:var(--black);
-  margin-left:.5em
+  margin-right:.5em
 }
 .?{
   color:var(--gray);
@@ -490,15 +490,11 @@ code{
     font-size: 3.2em;
     letter-spacing:.0}
 .article-front{
-  background:var(--bggray);
-  padding: 0;
   margin: 2em auto 0;
   max-width:42em;
-  border-radius: 1.3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  box-shadow: 0 0 16px 0 var(--gray);
 }
 .article-front-noimg{
   background:var(--bggray);
@@ -508,7 +504,7 @@ code{
   padding: 1em;
 }
 .article-info{
-  padding:.3em 1em .7em;
+  padding-left:1em;
   line-height: 1.5;
   width:50%;
   -webkit-box-sizing: border-box;
@@ -525,10 +521,7 @@ display: flex;
   justify-content: space-between;
 }
 .article-card-content{
-  border-top-left-radius:1.3em;
-  border-bottom-left-radius:1.3em;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius:.6em;
   padding-bottom: 62.5%;
   background-size:cover;
 }
@@ -865,12 +858,9 @@ color: {{ . }};
 {{ end }}
 {{ end }}
 .board{
-  border-radius:1em;
-  padding:.5em .5em 0;
-  margin:1em auto;
-  -webkit-backdrop-filter: blur(5px);	
-  backdrop-filter: blur(6px);
-  box-shadow:  0 0 10px 0 var(--shallowgray);
+  max-width: 30em;
+  margin:1em auto 4em;
+  text-align: left;
 }
 .cover-right{
     font-family: var(--serif);
@@ -1009,12 +999,10 @@ color: {{ . }};
       font-family: var(--codeserif)
   }
   .discover-grid{
-    border-radius: 1.3em;
-    box-shadow:  0 0 10px 0  var(--gray);
-    background:var(--bggray);
+  
   }
   .discover-grid-sub{
-    padding:0 .5em .8em
+    padding:0 
   }
 .discover-item{
   margin:.5em 0 .5em;
@@ -1086,7 +1074,7 @@ max-width: 1800px
 }
 .recommendation-card{
   background-size:cover;
-  border-radius:1em;
+  border-radius:.6em;
   box-shadow:  0 0 10px 0  var(--gray);
   padding-bottom: 62.5%
 }
@@ -1099,8 +1087,7 @@ max-width: 1800px
   background-size:cover;
   background-repeat: no-repeat;
   border: none;
-  border-top-left-radius:1.24em;
-  border-top-right-radius: 1.24em;
+  border-radius: .6em;
   margin-bottom: .4em;
   background-position: center;
 }s

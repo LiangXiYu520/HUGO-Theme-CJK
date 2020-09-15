@@ -1630,6 +1630,10 @@ img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984815.jpg'
 
 [伯鹩氏的豆列](https://www.douban.com/doulist/1310754/)
 
+## 2020新書
+
+[笑客的豆列](https://www.douban.com/doulist/121037591/)
+
 ## 古希腊史
 
  倪老師
