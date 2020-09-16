@@ -418,6 +418,8 @@ border-radius:.5em
 q{
   background: var(--bgpink);
   border-radius: .2em;
+  padding: .1em;
+  margin:0 .25em
 }
   q:before {
     content:none
@@ -425,6 +427,10 @@ q{
   q:after {
     content:none
   }
+.vertical q{
+    padding: .1em;
+    margin: .25em 0
+  } 
 main {
   flex-grow: 1}
 img {
