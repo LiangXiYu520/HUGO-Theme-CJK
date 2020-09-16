@@ -9,14 +9,9 @@
         <img src="https://pic.imgdb.cn/item/5f60b5d2160a154a67382187.jpg" alt="text" width="600">
         <img src="https://pic.imgdb.cn/item/5f60da9d160a154a6741c6fa.jpg" alt="text" width="400">
         <br><br><br><br>
-      <section class="home-cover">
-        <div class="cover-items">
-          <h1>赫赫文王<img src="https://pic.imgdb.cn/item/5f4a6aba160a154a671efb24.png" height="70" style="border:none;border-radius:0"></h1>
-          <div class="label">永嘉田家後🌝　生於九七秊🌖<br>
-            長于錦官城🌗　讀的歷史系🌚</div>
-          <div style="line-height:.2">　</div>
-            <div class="des-base" style="border-top: 1px solid #787878">v4.7.22　{{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</div>  
-          <div class="sentence">
+        <div class="home-cover">
+        <img src="https://pic.imgdb.cn/item/5f617d4b160a154a67601d26.png" alt="text" style="border: none;" width="500">
+        <div class="sentence">
           {{ $all := slice }}
               {{ range .Site.Data.sentence  }}
               {{ range  .sentence }}
@@ -29,35 +24,34 @@
           <div class="sentence1">{{- index $1all 0 -}}<span class="sentence2">（{{- index $1all 1 | safeHTML -}}）</span></div>
           {{ end }}
           {{ end }}
-          </div>          
-          </div>
-        <div class="cover-items cover-right">
-          <div class="subscribe-wrap des-base a1" style="margin-top:0">
-            <a class="rss3" href="/index.xml" target="_blank"><span class="rss1">feed</span><span class="rss2">RSS</span></a>
-          　<a class="rss3" href="https://kujihhoe.us17.list-manage.com/subscribe/post?u=3fb7b2733301fbcf39ec69597&id=6819d3d05d" target="_blank"><span class="rss1">Mail</span><span class="rss2">SUBSCRIBE</span></a>
-          </div>
+          </div>  
+         <div>
+         
           {{ $page := where site.RegularPages "Type" "in" site.Params.mainSections }}
           {{- $length := len $page }}
           {{ $count := 0 }}{{ range $page }}{{ $count = add $count .WordCount }}{{ end }}{{ $count1 := div $count 1000 }}
     <table>
+         <tr><td colspan="2">v4.7.22　{{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</td>
+         </tr>
       <tr>
-        <td style="text-align:right">凡 /千字</td><td><span class="big big1">{{- $count1 -}}</span></td>
+        <td style="text-align:right">凡 /千字</td><td><span class="big">{{- $count1 -}}</span></td>
        </tr>
        <tr>
-        <td style="text-align:right">/篇</td><td><span class="big big1">{{- $length -}}</span></td>
+        <td style="text-align:right">/篇</td><td><span class="big">{{- $length -}}</span></td>
        </tr>
       <tr>
-        <td style="text-align:right">篇均 /字</td><td><span class="big big2">{{- div $count $length -}}</span></td>
+        <td style="text-align:right">篇均 /字</td><td><span class="big">{{- div $count $length -}}</span></td>
       </tr>
       <tr>
-        <td style="text-align:right">已運行 /日</td><td><span class="big big3">{{- div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 -}}</span></td>
+        <td style="text-align:right">已運行 /日</td><td><span class="big">{{- div (sub now.Unix (time "2017-10-03T10:30:00.00+10:00").Unix ) 86400 -}}</span></td>
       </tr>
      <tr>
-      <td style="text-align:right">橫跨 /秊</td><td><span class="big big3">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{- len . -}}{{- end -}}</span></td>
+      <td style="text-align:right">橫跨 /秊</td><td><span class="big">{{- with .Site.RegularPages.GroupByDate "2006" -}}{{- len . -}}{{- end -}}</span></td>
       </tr>
     </table>
       </div>
-    </section>
+    </div>
+    
   </div>
 
   <div class="discover-wrap">
