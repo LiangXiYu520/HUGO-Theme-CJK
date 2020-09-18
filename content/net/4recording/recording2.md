@@ -13,6 +13,18 @@ img: ''
 draft: true
 ---
 
+ I understand the attraction of a stereo mic for ease of use, but most stereo mics (except the expensive ones) lock you into one angle / spacing which may sound fabulous in some circumstances and mediocre to awful in others. One size does not fit all situations, and what will give you a great recording in a good concert hall may not be a good choice for at home and vice versa.
+
+For instance, my favorite piano recordings by far are made with spaced omnis. I'm talking about a concert grand on full stick in a great hall where you want to capture the acoustic space properly as well as render the full tonal range of the instrument. But try that in a typical small home practice studio such as what I have, and you will likely end up with an awful recording swamped by an overabundance of early reflections.
+
+Conversely, X/Y cardioids (such as what you get on cheap stereo mics) sound terribly narrow and flat in pretty much any classical concert recording situation. But in the small home studio situation where you want to minimize the sound of the too-small room in your recording, you can set your X/Y array quite close and get a pretty decent recording.
+
+Now, if you get a pair of separate mics, that gives you the ability to alter the angle and spacing to your heart's content, dialing in the amount of acoustic you want (or do not) want to capture. No stereo mic will ever give you that level of flexibility. If you don't know all of the arrangements or what adjusting angles and spacing actually does, hang around here and you'll learn a lot about those things. Once you learn more about this, you'll quickly wish you had bought separate mics.
+
+The best thing for home recording of a piano in this situation is probably a spaced pair of good figure-8 mics which will have deep nulls to cancel the ceiling and sidewall reflections in a home studio. Then when you are in a nice concert hall, you can align them together for a mid-side Blumlein recording and be able to manipulate the stereo image and direct / diffuse ratio in post. That's the closest thing to an all-purpose mic setup that would work for you, but it's also going to be the most expensive. A pair of Sennheiser MKH 30 is on my to-buy list when I have a spare $2500...
+
+Sorry this turned into such a long post. Here's the TL:DR: The Superlux S502 will probably sound great in a concert situation as long as it's properly placed and you're in a good hall. But it will probably *not* sound great in your home, since it's going to grab too many early reflections from very close walls and ceilings.
+
 ## 作品
 
 @ [George Vlad](@theGeorgeVlad) 2020-08-27

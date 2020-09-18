@@ -145,6 +145,8 @@ AT4022 似乎也不錯：
 
 似乎聲音差別並不大，最大的不同是舒伯樂的底噪大一些。然而它們價格差了十多倍。
 
+> I was randomly reading a forum post at gearslutz.com and I came across a thread about the Superlux S502.  People were raving about it and they posted some sound examples.  It’s pretty damn amazing for the price!  I’ve used this mic for many of the videos on the site.  I’ve miked grand pianos, upright pianos, drums, percussion and more with this cheapie and the results are spectacular!  Now, I’m not going to say that this mic would win the A/B comparison against the Schoeps which costs over 20 times as much… What I am saying though, is that for the price, I haven’t heard anything sound this good…even at twice the price!  [⤴](https://www.mymusicmasterclass.com/schoeps-stereo-mic-clone-for-under-200-i-love-it/)
+
 ### 大小振膜的區別
 
 > 和直观想象不同的一点是，振膜面积并不显著影响麦克风的灵敏度。现在手机里的硅麦克风振膜直径不到1mm，灵敏度和传统电容麦克风相当。
