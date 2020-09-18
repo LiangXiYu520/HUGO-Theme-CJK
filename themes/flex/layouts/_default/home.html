@@ -31,7 +31,7 @@
           {{- $length := len $page }}
           {{ $count := 0 }}{{ range $page }}{{ $count = add $count .WordCount }}{{ end }}{{ $count1 := div $count 1000 }}
     <table>
-         <tr><td colspan="2">v4.7.22　{{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</td>
+         <tr><td colspan="2">v4.7.23　{{ dateFormat "2006-01-02 15:04" now.UTC }} UTC</td>
          </tr>
       <tr>
         <td style="text-align:right">凡 /千字</td><td><span class="big">{{- $count1 -}}</span></td>
@@ -434,7 +434,27 @@
 </section>
 <section class="section section3">
   <h1 id="gallery"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品</h1>
-  <div class="des-base" style="margin-top:-5.5em">按修改時閒排序</div>
+  <h2><a href="/recording" target="_blank">實地錄音：情形於聲 The Faint field recording</a></h2>
+  <div class="des-taxo"><img src="https://pic.imgdb.cn/item/5f64a1ec160a154a674dedf2.jpg" width="250">
+    <br>日常生活中，耳朵聽到的聲音往往被我们忽畧。我将在這裏發布我的實地錄音，帶領你重新理解聆聽，感受聲音的強大表現力。</div>
+  <div class="des-base">最近發布</div>
+  <div class="discover-wrap">
+    <div class="discover a1 column3">
+  {{ range first 3 (where .Site.RegularPages "Type" "recording") }}
+  <div class="discover-grid">
+    <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})"></div></div>
+    <div class="discover-grid-sub">
+      <span class="des-base des-des"><time>{{ .Date.Format "2006-01-02" }}</time></span>
+      <span class="des-base des-step" >{{ .Params.recordingtag }}</span>
+      <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
+      <div class="des-base des-des">{{ .Params.description | safeHTML | markdownify }}</div>
+      <div class="listen"><a href="{{- .Params.netease -}}" target="_blank"><span class="listen-symbol">●</span>listen</a></div>
+    </div>
+    </div>
+  {{ end }}
+  </div>
+  </div> 
+  <div class="des-base">按修改時閒排序</div>
   <div class="discover-wrap">
   <div class="discover a1">
     {{ range (where .Site.RegularPages.ByLastmod.Reverse "Type" "gallery") }}
@@ -443,11 +463,12 @@
       <div class="discover-grid-sub">
       <time class="des-base des-des">{{ .Lastmod.Format "2006-01-02" }}</time>
         <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>
-        <div class="des-base des-des">{{ .Params.description | safeHTML  | markdownify }}</div>
+        <div class="des-base des-des">{{ .Params.description | safeHTML | markdownify }}</div>
       </div>
       </div>
     {{ end }}
   </div>
+</div>
 </section>
 
 <section class="section section4">

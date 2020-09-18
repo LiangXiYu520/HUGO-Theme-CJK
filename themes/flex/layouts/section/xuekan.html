@@ -30,7 +30,7 @@
           </div>
     </div>
        <section class="archive-wrapper" style="margin:-5em auto 0">
-         {{ partial "invitation.html" .  | markdownify }}
+         {{ partial "invitation.html" . | markdownify }}
          </section>
        <section class="archive-wrapper" style="font-size:.9em;margin:4em auto">
 <h1 style="margin-bottom:-.7em">分類<span style="color:#8c8c8c;font-size:.7em;letter-spacing:0"> {{ len  (where .Site.Taxonomies.subject "Type" "xuekan") }}</span></h1>

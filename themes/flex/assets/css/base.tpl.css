@@ -185,17 +185,30 @@ u{
 border-bottom: .15em solid var(--shallowgray);
 text-decoration: none;
 margin: 0 .1em}
-listen{
-  border-radius:.5em;
-  border: 1px var(--black) solid;
-  padding: .1em .2em .15em .4em;
+.listen-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between  
+}
+.listen{
   font-family: var(--sans);
-  letter-spacing: .2em;
-  font-weight: bold;
-  font-size: 1em;
-    margin:  0 7px}
-listen a:after{
+  font-weight: 100;
+  font-size: .9em;
+  margin-top: 1em;
+  }
+.listen a:after{
   content: none}
+  .listen a:hover{
+    background-color: var(--red);
+    border-radius: 0;
+    color: var(--bg); 
+  }  
+ .listen-symbol{
+   margin-right:.25em;
+   color:var(--bg);
+   background-color: var(--red);
+   padding: 0 .4em;
+ }
 .vertical listen{
     padding: .5em .2em .3em;
         margin: .5em 0 }
@@ -355,22 +368,9 @@ h6{
   color:var(--black);
   margin-right:.5em
 }
-.?{
-  color:var(--gray);
- word-break: break-all;
- text-align: justify;
- line-height: 1.6
-}
-.??{
-   letter-spacing:0;
-   font-size:.5em;
-   font-weight:normal;
-   color:var(--gray)
-}   
 .des-step{
   font-family: var(--sans);
-  float:right;  
-  font-size: 1em;
+  float:right    
           }   
  .subscribe-wrap{
    text-align: left;
@@ -525,6 +525,11 @@ display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+.bold{
+  font-weight: bold;
+  color:var(--black);
+  margin-right:.6em
 }
 .article-card-content{
   border-radius:.6em;
@@ -1146,13 +1151,8 @@ display: block;
             }
   .article-info{
           width:100%;
-        display: block
-        }
-        .article-card-content{
-          border-top-left-radius:1.3em;
-          border-bottom-left-radius:0;
-          border-top-right-radius: 1.3em;
-          border-bottom-right-radius: 0;
+        display: block;
+      padding-left: 0;  
         }
         .article-card-container{
           width:100%;

@@ -8,7 +8,7 @@
 </div>
 </div>
 <div class="discover-grid-sub">
-<time class="des-base des-des a1">出版 {{ .productiontime }}</time>　<code>{{ .category }}</code>
+<time class="des-base des-des a1">{{ .productiontime }}</time><code class="des-step">{{ .category }}</code>
 <div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
 <div class="des-base des-des">{{ .description | safeHTML | markdownify }}</div>
 </div>

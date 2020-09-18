@@ -11,8 +11,9 @@
 <time class="des-base des-des a1">production {{ .productiontime }}</time>
 {{ if .recordingtime }}<br><time class="des-base des-des a1">recording {{ .recordingtime }}</time>{{ end }}
 <div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
-<listen><a hrer="{{ .netease }}" target="_blank">網易</a></listen>　<listen><a href="{{ .himalaya }}" target="_blank">喜馬拉雅</a></listen>　<listen><a href="{{ .soundcloud }}" target="_blank">SoundCloud</a></listen>
+<listen><a hrer="{{ .netease }}" target="_blank">網易</a></listen>　<listen><a href="{{ .himalaya }}" target="_blank">喜馬拉雅</a></listen>　<listen><a href="{{ .bilibili }}" target="_blank">bilibili</a></listen>
 <div class="des-base des-des">{{ .description | safeHTML | markdownify }}</div>
+<div class="des-base des-des">{{ .endescription | safeHTML | markdownify }}</div>
 </div>
 </div>
 {{ end }}

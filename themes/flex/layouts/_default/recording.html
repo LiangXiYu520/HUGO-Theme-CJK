@@ -1,0 +1,62 @@
+{{ define "main" }}
+    <div class="heading-wrap">
+      {{ partialCached "banner.html" . }}
+      <header class="Heading">
+            <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#gallery">作品</a>»<a class="DocSearch-lvl0" href="/recording">實地錄音</a>»</span>
+            <h1 class="DocSearch-lvl1 heading-title a1 article">{{- .Title | safeHTML | markdownify -}}</h1>
+        </header>
+        <section class="article-front">
+          <div class="article-card-container">
+          {{ if .Params.img }}
+      <div class="article-card-content" style="background-image: url({{ .Params.img }})"></div>
+        {{ else }}
+        <div class="article-card-content" style="background-image: url(https://pic.imgdb.cn/item/5f2d412814195aa594f276a3.jpg)"></div>
+        {{ end }}
+      </div>
+      <div class="article-info">
+      <div class="des-base des-des a1">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">
+        <span class="bold">publish</span>{{ .Date.Format "2006-01-02" }}
+      {{- with .Params.recordingtime -}}
+      <br><span class="bold">recording</span>{{ . }}{{ end }}</time>
+      </div>
+       <div class="des-base des-des des-tag a1">
+      {{- with .Params.author -}}
+          <span>
+          {{- range . -}}
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
+          <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
+          {{- end -}}
+          {{- end -}}
+      {{- end -}}
+          　<span>{{- .Params.recordingtag -}}</span>             
+        </div>
+      <div class="des-base des-des des-tag a1">
+        <span class="bold">duration</span>{{- .Params.duration -}}
+      {{- with .Params.sourceduration -}}
+      <br><span class="bold">source duration</span>{{ . }}
+      {{ end }}                       
+        </div>
+      <div class="des-base des-des des-tag a1">
+        <span class="bold">gear</span>{{ .Params.gear }}
+      </div>
+    </div>
+    </section>
+    </div>
+    <main>
+  <div class="verticlal-false-wrap">
+   <article class="DocSearch-content vertical-false">
+     <div class="listen-wrap">
+    <span class="listen"><a href="{{- .Params.netease -}}" target="_blank"><span class="listen-symbol">●</span>netease</a></span>
+    <span class="listen"><a href="{{- .Params.himalaya -}}" target="_blank"><span class="listen-symbol">●</span>himalaya</a></span>
+    <span class="listen"><a href="{{- .Params.bilibili -}}" target="_blank"><span class="listen-symbol">●</span>bilibili</a></span>
+     </div>
+     <hr>
+    {{ .Content }}
+   </article>
+  </div>
+{{ partial "prevnext.html" . }}
+{{ partial "comments.html" . }}
+</main>
+{{ end }}

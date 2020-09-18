@@ -16,7 +16,8 @@
   <div class="discover-grid">
     <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
       <div class="archive-left archive-left-card">{{ $count4 = sub $count4 1  }}{{ $count4 }}</div>
-    </div></div>
+    </div>
+  </div>
     <div class="discover-grid-sub">
       <span class="des-base des-des a1"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
       <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>

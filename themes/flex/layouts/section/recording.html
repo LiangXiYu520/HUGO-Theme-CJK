@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{- $paginator := .Paginate (where .Pages "Type" "post") (index 50) }}
+{{- $length := len .Data.Pages }}
+{{ $count4 := sub (add $length 1 ) (mul 50 (sub $paginator.PageNumber 1)) }}
+<div class="heading-wrap">
+  {{ partialCached "banner.html" . }}
+  <header class="Heading">
+      <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#gallery">作品</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">實地錄音：情形於聲 The Faint field recording</h1>
+   {{- with $des := index (.Site.Data.taxo ) "實地錄音" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
+  </header>
+<section class="des-base a1">
+凡 {{ $length  }} 篇　{{ $count := 0 }}{{ range .Pages }}{{ $count = add $count .WordCount  }}{{ end }}{{ $count }} 字　篇均 {{ div $count $length }} 字
+　<a class="rss3" href="{{- .Permalink -}}index.xml" target="_blank"><span class="rss1">情形於聲</span><span class="rss2">RSS</span></a>
+</section>
+</div>
+<main>
+  <div class="vertical-false">
+    {{ partial "recording.html" . | markdownify }}
+  </div>
+     <div class="discover-wrap">
+      <div class="discover a1 column3">  
+        {{ range (where .Site.RegularPages "Type" "recording") }}  
+    <div class="discover-grid">
+      <div class="archive-card-container"><div class="post-card" style="background-image: url({{ .Params.img }})">
+        <div class="archive-left archive-left-card">{{ $count4 = sub $count4 1  }}{{ $count4 }}</div>
+      </div>
+    </div>      
+      <div class="discover-grid-sub">
+        <span class="des-base des-des"><time>{{ .Date.Format "2006-01-02" }}</time></span>
+        <span class="des-base des-step" >{{ .Params.recordingtag }}</span>
+        <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
+        <div class="des-base des-des">{{ .Params.description | safeHTML | markdownify }}</div>
+        <div class="listen"><a href="{{- .Params.netease -}}" target="_blank"><span class="listen-symbol">●</span>listen</a></div>
+      </div>
+      </div>
+      {{ end }}
+     </div>
+    </div> 
+
+ </main>
+{{ end }}
