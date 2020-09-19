@@ -1,5 +1,5 @@
 {{ $count := 0 }}
-<div class="discover-wrap"><div class="discover column6">
+<div class="discover-wrap"><div class="discover column6 a1">
   {{ range $.Site.Data.links.blogfriends }}
 <a href="{{ .href }}" target="_blank"><div class="discover-grid">
 <div class="archive-card-container">
@@ -8,7 +8,7 @@
 </div>
 </div>
 <div class="discover-grid-sub">
-<time class="des-base des-des a1">{{ .date }}</time>
+<time class="des-base des-des">{{ .date }}</time>
 <div class="discover-item">{{- .title | safeHTML | markdownify -}}</div>
 {{ if .description }}<div class="des-base des-des">{{ .description | safeHTML  | markdownify }}</div>{{ end }}
 {{ if .mydescription }}<div class="des-base"style="font-family:var(--serif);margin-top:1em">{{ .mydescription | safeHTML  | markdownify }}</div>{{ end }}
