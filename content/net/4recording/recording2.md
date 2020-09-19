@@ -53,6 +53,10 @@ Sorry this turned into such a long post. Here's the TL:DR: The Superlux S502 wil
 
 ## 器材
 
+——音頻應用1911聽說不錯
+
+——2017-10-26Jason任：我覺得品質和定位太尷尬。他只能說還行，品質吊打不了主流中端聲卡自帶話放。價格也限制了其品質的提升。要是能做到三千多價位，品質再提上去點，沒准就有實用價值了。
+
 Rycote 的支架，用於小型錄音筆。
 
 <img src="https://pic.imgdb.cn/item/5f5832fa160a154a67d255db.jpg" width="500">

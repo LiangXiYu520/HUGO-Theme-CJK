@@ -85,7 +85,7 @@
     <div class="home-latest-wrap">
     <div class="home-latest-grid">
   {{ $latest := slice }}
-  {{ range first 7 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
+  {{ range first 6 (where .Site.RegularPages.ByPublishDate.Reverse "Type" "post") }}
   {{ $latest = $latest | append . }}
   <div class="article-front">
     <div class="article-card-container">

@@ -41,19 +41,19 @@
       <div class="des-base des-des des-tag a1">
         <span class="bold">gear</span>{{ .Params.gear }}
       </div>
+      <div class="des-base des-des des-tag a1">
+        <span class="bold">LISTEN ▸</span>
+        <span class="listen"><a href="{{- .Params.netease -}}" target="_blank">netease</a></span>
+        <span class="listen"><a href="{{- .Params.himalaya -}}" target="_blank">himalaya</a></span>
+        <span class="listen"><a href="{{- .Params.bilibili -}}" target="_blank">bilibili</a></span>
+      </div>
     </div>
     </section>
     </div>
     <main>
   <div class="verticlal-false-wrap">
    <article class="DocSearch-content vertical-false">
-     <div class="listen-wrap">
-    <span class="listen"><a href="{{- .Params.netease -}}" target="_blank"><span class="listen-symbol">●</span>netease</a></span>
-    <span class="listen"><a href="{{- .Params.himalaya -}}" target="_blank"><span class="listen-symbol">●</span>himalaya</a></span>
-    <span class="listen"><a href="{{- .Params.bilibili -}}" target="_blank"><span class="listen-symbol">●</span>bilibili</a></span>
-     </div>
-     <hr>
-    {{ .Content }}
+      {{ .Content }}
    </article>
   </div>
 {{ partial "prevnext.html" . }}
