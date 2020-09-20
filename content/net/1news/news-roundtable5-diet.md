@@ -1,8 +1,8 @@
 ---
 layout: "net"
 type: "net"
-title: "我來幫你刷微博｜圓桌五：人應該吃什麼？"
-date: 2020-09-27
+title: "我來幫你刷微博｜圓桌五：我們應該吃什麼？"
+date: 2020-09-25
 author: ["柯棋瀚整理"]
 netsort: ["我來幫你刷微博"]
 categories: ["襍"]
@@ -10,11 +10,12 @@ tags: ["觀點"]
 url: /net/news-diet
 description: ''
 vertical: false
-img: ''
-draft: true
+img: 'https://pic.imgdb.cn/item/5f671006160a154a67e6e880.jpg'
 ---
 
+朋友圈，2020-09-17：
 
+> 想起来前几日夜宿重庆时，早上起来在一个中学路边店里吃小面和茶鸡蛋。看到很多学生早饭就是一碗小面，没有鸡蛋等高蛋白食品。我想说这些孩子的家长们，营养意识太淡薄了！营养成就身体，视野成就认知，这才是人生最大的本钱。
 
 @ ieaber，2020-08-25：
 
