@@ -5,7 +5,8 @@
 <div class="heading-wrap">
   {{ partialCached "banner.html" . }}
   <header class="Heading">
-      <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#gallery">作品</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">實地錄音：情形於聲 The Faint field recording</h1>
+      <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#gallery">作品</a>»</span>
+      <h1 class="a1"><img src="https://pic.imgdb.cn/item/5f66a325160a154a67cd236e.png" width="250" alt="實地錄音：情形於聲 The Faint field recording" style="border:none"></h1>
    {{- with $des := index (.Site.Data.taxo ) "實地錄音" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
 <section class="des-base a1">
