@@ -2,7 +2,7 @@
 <div class="heading-wrap">
   {{ partialCached "banner.html" . }}
   <header class="Heading">
-      <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="heading-title a1 taxo" style="font-size:3.2em">赫赫蠹書</h1>
+      <span class="heading-title a1 finder"><a href="/">赫赫文王</a>»<a href="/#wiki">知識</a>»</span><h1 class="heading-title taxo" style="font-size:3.2em">赫赫蠹書</h1>
 {{- with $des := index (.Site.Data.taxo ) "赫赫蠹書" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }}
   </header>
   {{- $length := len .Data.Pages }}
