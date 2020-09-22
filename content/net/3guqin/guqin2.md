@@ -1,8 +1,8 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫网摘｜古琴二"
-date: 2020-07-22
+title: "赫赫琴网｜二："
+date: 2020-09-28
 author: ["柯棋瀚整理"]
 netsort: ["其他"]
 categories: ["琴"]

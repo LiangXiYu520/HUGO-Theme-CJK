@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫网摘｜實地錄音一"
+title: "赫赫實地錄音月報｜一："
 date: 2019-10-06
 lastmod: 2020-06-02
 url: /182
