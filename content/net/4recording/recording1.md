@@ -1,14 +1,14 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫實地錄音月報｜一："
+title: "實地錄音月報｜一：全指向指南"
 date: 2019-10-06
 lastmod: 2020-06-02
 url: /182
 author: ["柯棋瀚整理"]
 netsort: ["其他"]
 categories: ["錄音"]
-description: '整理一下看到的一些自己感興趣的實地錄音 field recording 的相關信息。目錄：全指向，麥克風，制式，錄音機，經歷，其他。'
+description: '【目錄】全指向；麥克風；制式；錄音機；經歷；其他。'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f4327d9160a154a67cae2dc.jpg'
 ---

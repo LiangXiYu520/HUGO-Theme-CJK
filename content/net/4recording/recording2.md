@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫實地錄音月報｜二："
+title: "實地錄音月報｜二："
 date: 2020-10-01
 url: /net/recording2
 author: ["柯棋瀚整理"]
