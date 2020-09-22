@@ -41,6 +41,10 @@ img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984811.jpg'
 
 <img src="https://pic.superbed.cn/item/5d97064d451253d178a30684.jpg" width="100">　微信公眾號【線所】一箇實驗電臺〔有箇聲音檔案系列。〕
 
+[音乐制作的理性与感性](https://zhuanlan.zhihu.com/c_1025432401891184640)　〔一位錄音專業同學的專欄〕
+
+[Jason任的研究所](https://zhuanlan.zhihu.com/c_135099407)　〔不用多說〕
+
 ##### 豆瓣
 
 從以下朋友中得出的道理是：不能把平臺放在豆瓣上⋯⋯
