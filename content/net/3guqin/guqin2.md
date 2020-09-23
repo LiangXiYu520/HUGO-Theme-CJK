@@ -4,7 +4,7 @@ type: "net"
 title: "赫赫琴网｜二："
 date: 2020-09-28
 author: ["柯棋瀚整理"]
-netsort: ["其他"]
+netsort: ["赫赫琴网"]
 categories: ["琴"]
 url: net/qin-2
 description: ''

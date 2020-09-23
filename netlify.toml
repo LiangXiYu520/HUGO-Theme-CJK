@@ -22,3 +22,142 @@ from = "https://kqh.netlify.com/*"
 to = "https://kqh.me/:splat"
 status = 301
 force = true
+
+[[redirects]]
+from = "https://kqh.me/blog/2018/05/19/zaoyin.html"
+to = "https://thefaint.kqh.me/blog/1:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/blog/2018/05/09/mixpre.html"
+to = "https://thefaint.kqh.me/blog/2:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/blog/2017/12/23/shiyin.html"
+to = "https://thefaint.kqh.me/blog/3:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/189"
+to = "https://thefaint.kqh.me/blog/4:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/185"
+to = "https://thefaint.kqh.me/blog/5:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/post/recording-que"
+to = "https://thefaint.kqh.me/blog/6:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/blog/2018/05/19/shebei.html"
+to = "https://thefaint.kqh.me/gear:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/181"
+to = "https://thefaint.kqh.me/bookmark:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/182"
+to = "https://thefaint.kqh.me/monthly/1:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/1"
+to = "https://thefaint.kqh.me/notes/1:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/2"
+to = "https://thefaint.kqh.me/notes/2:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/3"
+to = "https://thefaint.kqh.me/notes/3:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/4"
+to = "https://thefaint.kqh.me/notes/4:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/5"
+to = "https://thefaint.kqh.me/notes/5:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/6"
+to = "https://thefaint.kqh.me/notes/6:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/7"
+to = "https://thefaint.kqh.me/notes/7:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/8"
+to = "https://thefaint.kqh.me/notes/8:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/9"
+to = "https://thefaint.kqh.me/notes/9:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/10"
+to = "https://thefaint.kqh.me/notes/10:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/11"
+to = "https://thefaint.kqh.me/notes/11:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/12"
+to = "https://thefaint.kqh.me/notes/12:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/13"
+to = "https://thefaint.kqh.me/notes/13:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://kqh.me/recording/14"
+to = "https://thefaint.kqh.me/notes/14:splat"
+status = 301
+force = true
+
