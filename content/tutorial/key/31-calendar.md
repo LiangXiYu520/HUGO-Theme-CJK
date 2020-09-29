@@ -4,7 +4,7 @@ type: 'tutorial'
 title: "赫赫金鑰｜古代曆法一"
 date: 2019-05-04
 lastmod: 2019-08-08
-url: 163
+url: /163
 author: ["柯棋瀚學"]
 categories: ["史"]
 tags: ["厤筭"]
