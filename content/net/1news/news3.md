@@ -8,12 +8,12 @@ netsort: ["我來幫你刷微博"]
 categories: ["襍"]
 tags: ["觀點"]
 url: net/news-3
-description: '「带你出来，就是为了让你不仅看到都市的摩天大厦，还看到自然之美，知道天外有天。钱虽然重要，但又怎能跟大自然熏陶出的胸襟和视野相比？」目錄：教育，文化與文明，飲食與健康，人與自然，科技。'
+description: '「健康码的延续当然传达着巨大危机的信号，这是行政系统以前所未有的效率和能力彻底挤占个人生活的开始。」【目錄】封面：你做好一直使用“健康码”的准备了吗；教育；文化與文明；飲食；人與自然；科技。'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f3d26f414195aa594b781be.jpg'
 ---
 
-## 封面
+## 封面：你做好一直使用“健康码”的准备了吗？
 
 李厚辰 [你做好一直使用“健康码”的准备了吗？](https://mp.weixin.qq.com/s?__biz=MzA3MDM3NjE5NQ==&mid=2650852403&idx=1&sn=9d6b411c3f31b2b5dbecc826f5eab74c&chksm=84c9a25fb3be2b492d992f2dd70abffaabf16f4837432b34ac1c61ad92397d1b270b067ac4f4&mpshare=1&scene=1&srcid=&sharer_sharetime=1586236188829&sharer_shareid=71ac9ff405764acd9ea540f47cebb9bf&key=c05971ee34d9bb825a040847ea7512760c0f370eb160ea58a8dbeffeeca79711040ade1ec2ec0db349f9563447ce6261d71610d5747d629e8c2e5fa7ede7abdffc019cd5180c8ab7e9e42b86fb22345f&ascene=1&uin=ODI1NTgwNTEz&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=A8WuevhUUmPsBHRLKOgi7Kw%3D&pass_ticket=srivQJzEB7D%2FWDn7wMx1oUPc8pk9BmeKsUM4Sl35T9rya1eMy%2Bn8ExdXJZcG3TGb)，看理想，2020-04-07
 

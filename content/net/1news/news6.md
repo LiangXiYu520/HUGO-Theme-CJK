@@ -8,7 +8,7 @@ netsort: ["我來幫你刷微博"]
 categories: ["襍"]
 tags: ["觀點"]
 url: net/news-6
-description: '「」<b>目錄</b>。'
+description: '「」【目錄】。'
 vertical: false
 img: ''
 ---
