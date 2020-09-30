@@ -7,7 +7,7 @@ author: ["柯棋瀚整理"]
 netsort: ["赫赫文史网摘"]
 categories: ["史"]
 url: net/history-3
-description: '過端午節，就看看屈原的科普。「美好的信念可以让人有主心骨，会变得坚强。」【目錄】屈原，制度史，禮學，文化與學術史，雜談。'
+description: '過端午節，就看看屈原的科普。「美好的信念可以让人有主心骨，会变得坚强。」【目錄】封面：屈原；制度史；禮學；文化與學術史；雜談。'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f424cfd160a154a676079cc.jpg'
 ---
