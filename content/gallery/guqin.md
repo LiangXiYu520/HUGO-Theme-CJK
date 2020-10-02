@@ -12,7 +12,7 @@ description: '網易雲上的是 2018 秊四月初錄的，不怎麼滿意，在
 視頻發在 B 站上 <a href="https://space.bilibili.com/176570453" target="_blank">赫赫文王</a> <img src="https://img.shields.io/badge/dynamic/json?color=c41011&label=bilibili%E9%97%9C%E6%B3%A8&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D176570453"  height="23px">'
 des: '古琴錄音錄像'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f280b9714195aa594f95ff0.jpg'
+img: 'https://pic.imgdb.cn/item/5f76b0a1160a154a674c7080.jpg'
 ---
 
 這裏什麼都沒有
