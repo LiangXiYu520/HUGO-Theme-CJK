@@ -9,7 +9,7 @@ lastmod: 2020-08-12
 menu:
   main:
     weight: 5
-url: donate
+url: /donate
 img: 'https://pic.imgdb.cn/item/5f32a72314195aa594bb9374.jpg'
 vertical: false
 ---
