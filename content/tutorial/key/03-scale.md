@@ -7,8 +7,8 @@ lastmod: 2019-11-10
 url: blog/2017/12/01/yinlv.html
 menu:
   top:
-  top2018:
-    weight: 6
+  top2020:
+    weight: 2
 author: ["柯棋瀚學"]
 categories: ["琴"]
 tags: ["琴理"]

@@ -1,9 +1,6 @@
 {{ define "main" }}
     <main class="home">
       <div class="home-wrap">
-        
-        
-     
         <div class="home-cover">
         <img src="https://pic.imgdb.cn/item/5f617d4b160a154a67601d26.png" alt="text" style="border: none;" width="500">
         <div class="sentence">
@@ -51,7 +48,10 @@
 
   <div class="discover-wrap">
     <div class="discover a1 margin-cover">
-      {{- range first 2 (where .Site.RegularPages.ByDate.Reverse "Type" "in" site.Params.otherSections) -}}
+      <div>
+        <a href="https://item.taobao.com/item.htm?id=629774535457"target="_blank"><div class="recommendation-card" style="background-image: url(https://pic.imgdb.cn/item/5f8449191cd1bbb86b095fdc.jpg)"></div></a>
+      </div>
+      {{- range first 1 (where .Site.RegularPages.ByDate.Reverse "Type" "in" site.Params.otherSections) -}}
       <div>
         <a href="{{ .Permalink }}"target="_blank"><div class="recommendation-card" style="background-image: url({{ .Params.img }})"></div></a>
           </div>
@@ -297,7 +297,13 @@
 <ol>
   <h3>2018-2019</h3>
   {{ range .Site.Menus.top2019  }}
-      <li><a href="{{  .Page.Permalink  }}"  target="_blank">{{ .Name | safeHTML }}</a></li>
+      <li><a href="{{ .Page.Permalink }}"  target="_blank">{{ .Name | safeHTML }}</a></li>
+  {{ end }}
+</ol>
+<ol>
+  <h3>2019-2020</h3>
+  {{ range .Site.Menus.top2020  }}
+      <li><a href="{{ .Page.Permalink }}"  target="_blank">{{ .Name | safeHTML }}</a></li>
   {{ end }}
 </ol>
 </div>
@@ -429,9 +435,6 @@
 </section>
 <section class="section section3">
   <h1 id="gallery"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">作</span>品</h1>
-  <h2 class="a1"><a href="https://thefaint.cc" target="_blank"><img src="https://pic.imgdb.cn/item/5f6ad331160a154a67a8feac.png" width="100" style="border:none"></a></h2>
-  <div class="des-taxo">實地錄音：情形於聲 The Faint field recording｜一個隱秘的聲音王國</div>
-  <hr>
   <div class="des-base">按修改時閒排序</div>
   <div class="discover-wrap">
   <div class="discover a1">
