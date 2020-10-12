@@ -950,7 +950,7 @@ padding:auto .5em
  .discover-wrap.top ol{
   line-height: 1.9
  }
-  .discover {
+  .discover{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(12.5em, 1fr));
     gap:3em 1.5em;
@@ -959,7 +959,7 @@ padding:auto .5em
     line-height: 1.3;
     text-align:justify;
     }
-.column2 {
+.column2{
     grid-template-columns: repeat(auto-fit, minmax(17em, 30em));
     gap:3em 2.5em;
    } 
