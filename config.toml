@@ -42,7 +42,7 @@ examsort = "examsort"
    [[menu.nav]]
      name = "成爲會員"
      weight = 2
-     url = "https://item.taobao.com/item.htm?spm=a230r.1.14.20.481d246aLzo0xU&id=629774535457"    
+     url = "https://item.taobao.com/item.htm?id=629774535457"    
   [[menu.nav1]]
      name = "發現"
      weight = 3
