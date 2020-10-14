@@ -588,7 +588,7 @@ title: "Hello world!<n>20181115</n>"
 date: 2017-10-04
 lastmod: 2018-11-21
 categories: ["站務"]
-url: blog/2017/10/04/shuoming.html
+url: /blog/2017/10/04/shuoming.html
 ---
 ```
 

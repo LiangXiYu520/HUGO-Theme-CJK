@@ -6,7 +6,7 @@ date: 2020-08-15
 author: ["柯棋瀚整理"]
 categories: ["琴"]
 netsort: ["赫赫琴网"]
-url: net/wanghuade
+url: /net/wanghuade
 description: '輯錄所有網路、報刊、論文有關王華德的信息。'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f36b00c14195aa594bfcc93.jpg'

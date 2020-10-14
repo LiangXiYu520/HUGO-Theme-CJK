@@ -5,7 +5,7 @@ date: 2017-10-04
 lastmod: 2017-10-05
 categories: ["站務"]
 tags: ["公吿"]
-url: blog/2017/10/04/shuoming.html
+url: /blog/2017/10/04/shuoming.html
 description: "！！建站啦！！"
 img: 'https://pic.imgdb.cn/item/5f257a5214195aa5942f33ed.jpg'
 ---

@@ -91,7 +91,7 @@ menu:
     url: about/
     weight: 1
   - name: Posts
-    url: post/
+    url: /post/
     weight: 2
   - name: Tags
     url: tags/

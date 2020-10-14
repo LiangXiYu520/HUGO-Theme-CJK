@@ -7,7 +7,7 @@ lastmod: 2020-09-01
 author: ["柯棋瀚整理"]
 netsort: ["其他"]
 categories: ["彫梓"]
-url: net/font-1
+url: /net/font-1
 description: '目錄：字體，一本书的版式诞生记⋯⋯'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f424cfd160a154a676079ca.jpg'

@@ -6,7 +6,7 @@ date: 2020-05-22
 author: ["柯棋瀚整理"]
 netsort: ["赫赫琴网"]
 categories: ["琴"]
-url: net/qin-1
+url: /net/qin-1
 description: '「這種琴人間的相依相存，琴曲間的相融相匯，正是川派琴界一路走來，終能繁盛至今的重要原因。」'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f424cfd160a154a676079d2.jpg'

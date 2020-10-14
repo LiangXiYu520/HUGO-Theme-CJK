@@ -6,7 +6,7 @@ categories: ["漢語"]
 title: "作品｜讀切韻"
 date: 2018-07-01
 lastmod: 2019-03-20
-url: reading
+url: /reading
 description: '暑假突肰對古音感興趣，上古音難度太大，那就中古音吧，便用了半箇月來突擊，知道了一箇大槩。用古音讀書豈不是很美妙的事情？<br>
 我的 B 站頻道：<a href="https://space.bilibili.com/176570453/channel/detail?cid=70633" target="\_blank">讀切韻擬音</a>'
 des: '讀<v>切韻</v>擬音。純娛樂向，沒有學術價值。'

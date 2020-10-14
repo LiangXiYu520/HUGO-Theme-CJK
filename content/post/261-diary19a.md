@@ -7,7 +7,7 @@ categories: ["生活"]
 series: ["紀日"]
 tags: ["閒凥記趣"]
 description: '從日記中輯出來的。一些有意思的小片段。'
-url: post/diary19a
+url: /post/diary19a
 img: 'https://pic.imgdb.cn/item/5f2b990d14195aa59456c0f4.jpg'
 ---
 

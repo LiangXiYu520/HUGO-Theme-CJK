@@ -23,7 +23,7 @@
       {{ $count7 := 0 }}{{ range .Pages }}{{ $count7 = add $count7 .WordCount  }}{{ end }}
        {{ $leng1 := len .Pages }}
       <h2 id="踐行社會主義核心價値觀"style="background:var(--red);color:var(--bg);padding:.3em 0 .1em">踐行社會主義核心價値觀</h2>
-      <div class="des-base" style="color:var(--red);font-weight:bold;font-family:var(--serif) ;">富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
+      <div class="des-base" style="color:var(--red);font-weight:bold;font-family:var(--serif) ;">【會員專區】富強、民主、文明、和諧；自由、平等、公正、法治；愛國、敬業、誠信、友善</div>
       <div class="des-base">　凡 {{ $leng1 }} 篇　{{- $count7 }} 字　篇均 {{ div $count7 $leng1 }} 字</div>
 {{ end }}
   </div>
