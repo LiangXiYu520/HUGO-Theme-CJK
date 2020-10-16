@@ -4,7 +4,7 @@ type: 'tutorial'
 title: "赫赫金鑰｜切韻語音"
 date: 2018-08-15
 lastmod: 2018-08-23
-url: /blog/2018/08/15/qpyy.html
+url: /key/qieyun
 menu:
   top:
   top2019:

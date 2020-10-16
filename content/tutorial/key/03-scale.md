@@ -4,7 +4,7 @@ type: 'tutorial'
 title: "赫赫金鑰｜調學"
 date: 2017-12-01
 lastmod: 2019-11-10
-url: /blog/2017/12/01/yinlv.html
+url: /key/03
 menu:
   top:
   top2020:

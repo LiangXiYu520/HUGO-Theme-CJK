@@ -4,7 +4,7 @@ type: 'tutorial'
 title: "赫赫金鑰｜碣石調幽蘭"
 date: 2018-02-27
 lastmod: 2019-01-13
-url: /blog/2018/02/27/youlan.html
+url: /key/orchid
 author: ["柯棋瀚學"]
 categories: ["琴"]
 tags: ["琴譜"]

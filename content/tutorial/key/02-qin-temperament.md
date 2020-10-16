@@ -4,7 +4,7 @@ type: 'tutorial'
 title: "赫赫金鑰｜琴律學"
 date: 2018-03-07
 lastmod: 2019-11-10
-url: /blog/2018/03/07/qinlv.html
+url: /key/02
 author: ["柯棋瀚學"]
 categories: ["琴"]
 tags: ["琴理"]

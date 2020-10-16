@@ -1,5 +1,6 @@
 {{ define "main" }}
     <main class="home">
+      <section>
       <div class="home-wrap">
         <div class="home-cover">
         <img src="https://pic.imgdb.cn/item/5f617d4b160a154a67601d26.png" alt="text" style="border: none;" width="500">
@@ -49,7 +50,7 @@
   <div class="discover-wrap">
     <div class="discover a1 margin-cover">
       <div>
-        <a href="https://item.taobao.com/item.htm?id=629774535457"target="_blank"><div class="recommendation-card" style="background-image: url(https://pic.imgdb.cn/item/5f8721b81cd1bbb86b89320a.jpg)"></div></a>
+        <a href="https://item.taobao.com/item.htm?id=629774535457"target="_blank"><div class="recommendation-card" style="background-image: url(https://pic.imgdb.cn/item/5f895e791cd1bbb86b899d8c.jpg)"></div></a>
       </div>
       {{- range first 1 (where .Site.RegularPages.ByDate.Reverse "Type" "in" site.Params.otherSections) -}}
       <div>
@@ -72,8 +73,13 @@
       </a></div>
       {{ end }}
           </div>
-    </div> 
-
+        </div> 
+        <div class="verticlal-false-wrap">
+          <article class="vertical-false">
+        {{ partial "member.html" . | markdownify }}
+      </article>
+        </div>
+      </section>
 <section class="section section1">
     <h1 id="discover a1"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»<a href="/post" target="_blank">网誌</a>»</span><span style="letter-spacing:.2em">發</span>現
     </h1>
@@ -458,9 +464,10 @@
   </h1>
   <h2 id="zanfu">赫赫讚府</h2>
   {{- with $des := index (.Site.Data.taxo ) "赫赫讚府" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
-  <div class="des-base" style="margin-bottom:8em">【會員專區】</div>
-
-    <h2><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h2>
+  <div class="des-base" style="margin-bottom:1em">【會員專區】</div>
+<center><img src="https://media.githubusercontent.com/media/kujihhoe/blog-files/master/zanfu01.jpg" alt="text" width="900"></center>    
+<br><br><br>
+<h2><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h2>
     <div class="des-taxo">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
     這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
   <div class="des-base">隨機生成 Random</div> 

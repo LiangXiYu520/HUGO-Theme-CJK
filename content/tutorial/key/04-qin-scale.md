@@ -3,7 +3,7 @@ layout: 'tutorial'
 type: 'tutorial'
 title: "赫赫金鑰｜琴調學"
 date: 2018-03-10
-url: /blog/2018/03/10/qindiao.html
+url: /key/04
 author: ["柯棋瀚學"]
 categories: ["琴"]
 tags: ["琴理"]
