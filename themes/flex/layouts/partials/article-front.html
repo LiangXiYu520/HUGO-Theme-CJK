@@ -17,90 +17,90 @@
 {{ partial "sourcecode.html" . }}
 </div>
 <div class="des-base des-des des-tag a1">
-{{- with .Params.author -}}
+{{ with .Params.author }}
     <span>作者
-    {{- range . -}}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-    <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
-    {{- end -}}
-    {{- end -}}
-{{- end -}}
-{{- with .Params.auth -}}
+    {{ range . }}
+    {{ $name := . }}
+    {{ with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) }}
+    <a href="/author/{{ $name }}">@{{ $name }}</a></span>
+    {{ end }}
+    {{ end }}
+{{ end }}
+{{ with .Params.auth }}
 
 <span>作者
 {{ range . }}
-{{- $name := . -}}
-{{- with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) -}}
-<a href="/auth/{{ $name }}">@{{- $name -}}</a></span>
-{{ end -}}
+{{ $name := . }}
+{{ with $.Site.GetPage "term" (printf "auth/%s" $name) | default ($.Site.GetPage "term" (printf "auth/%s" ($name | urlize))) }}
+<a href="/auth/{{ $name }}">@{{ $name }}</a></span>
 {{ end }}
-{{- end }}
+{{ end }}
+{{ end }}
 
-{{- with .Params.from -}}
+{{ with .Params.from }}
 　<span>來源
 {{ range . }}
-{{- $name := . -}}
-{{- with $.Site.GetPage "term" (printf "from/%s" $name) | default ($.Site.GetPage "term" (printf "from/%s" ($name | urlize))) -}}
-<a href="/from/{{ $name }}">«{{- $name -}}</a></span>
-{{ end -}}
+{{ $name := . }}
+{{ with $.Site.GetPage "term" (printf "from/%s" $name) | default ($.Site.GetPage "term" (printf "from/%s" ($name | urlize))) }}
+<a href="/from/{{ $name }}">«{{ $name }}</a></span>
 {{ end }}
-{{- end }}
+{{ end }}
+{{ end }}
 
-{{- with .Params.series -}}
+{{ with .Params.series }}
     　<span>系列
-    {{- range . -}}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-    <a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
-    {{- end -}}
-    {{- end -}}
-{{- end -}}
+    {{ range . }}
+    {{ $name := . }}
+    {{ with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) }}
+    <a href="/series/{{ $name }}">{{ $name }}｜</a></span>
+    {{ end }}
+    {{ end }}
+{{ end }}
 
-{{- with .Params.tags -}}
+{{ with .Params.tags }}
     　<span>標籤
-    {{- range . -}}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
-    <a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
-    {{- end -}}
-    {{- end -}}
-{{- end -}}
+    {{ range . }}
+    {{ $name := . }}
+    {{ with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) }}
+    <a href="/tags/{{ $name }}">#{{ $name }}</a></span>
+    {{ end }}
+    {{ end }}
+{{ end }}
 
-{{- with .Params.book -}}
+{{ with .Params.book }}
         　<span>學科
-        {{- range . -}}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "book/%s" $name) | default ($.Site.GetPage "term" (printf "book/%s" ($name | urlize))) -}}
-       <a href="/read#{{ $name }}">#{{- $name -}}</a>
-        {{- end -}}
-        {{- end -}}
-    {{- end }}
-    {{- with .Params.step -}}
-        {{- range . -}}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "term" (printf "step/%s" $name) | default ($.Site.GetPage "term" (printf "step/%s" ($name | urlize))) -}}
-     <a href="/read#{{ $name }}">{{- $name -}}</a></span>
-        {{- end -}}
-        {{- end -}}
-    {{- end -}}
+        {{ range . }}
+        {{ $name := . }}
+        {{ with $.Site.GetPage "term" (printf "book/%s" $name) | default ($.Site.GetPage "term" (printf "book/%s" ($name | urlize))) }}
+       <a href="/read#{{ $name }}">#{{ $name }}</a>
+        {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ with .Params.step }}
+        {{ range . }}
+        {{ $name := . }}
+        {{ with $.Site.GetPage "term" (printf "step/%s" $name) | default ($.Site.GetPage "term" (printf "step/%s" ($name | urlize))) }}
+     <a href="/read#{{ $name }}">{{ $name }}</a></span>
+        {{ end }}
+        {{ end }}
+    {{ end }}
 
-{{- with .Params.notes -}}
+{{ with .Params.notes }}
     　<span>備註
     {{ range . }}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
-    <a href="/notes/{{ $name }}">({{- $name -}})</a></span>
-    {{ end -}}
+    {{ $name := . }}
+    {{ with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) }}
+    <a href="/notes/{{ $name }}">({{ $name }})</a></span>
     {{ end }}
-{{- end }}
+    {{ end }}
+{{ end }}
 </div>
 
 <div class="des-base des-des des-tag a1">
-{{- if .Params.contentCopyright -}}
+{{- if .Params.contentCopyright }}
 <span>版權 </span>{{ .Params.contentCopyright | safeHTML }}
-{{- else -}}
+{{- else }}
 <span>版權 </span>{{ .Site.Params.contentCopyright | safeHTML }}
-{{- end -}}
+{{ end }}
 </div>
 </section>

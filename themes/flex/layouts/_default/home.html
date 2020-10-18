@@ -102,15 +102,15 @@
 {{ .Date.Format "2006-01-02" }}
 {{ if ne .Date .Lastmod }}> {{ .Lastmod.Format "2006-01-02" }}{{ end }}</time>
 <span class="des-base des-des des-tag a1" style="float:right">
-{{- with .Params.author -}}
+{{ with .Params.author }}
     <span>作者
-    {{- range . -}}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) -}}
-    <a href="/author/{{ $name }}">@{{- $name -}}</a></span>
-    {{- end -}}
-    {{- end -}}
-{{- end -}}
+    {{ range . }}
+    {{ $name := . }}
+    {{ with $.Site.GetPage "term" (printf "author/%s" $name) | default ($.Site.GetPage "term" (printf "author/%s" ($name | urlize))) }}
+    <a href="/author/{{ $name }}">@{{ $name }}</a></span>
+    {{ end }}
+    {{ end }}
+{{ end }}
     </span>
 </div>
 <div class="discover-item a1 mar0"><a href="{{ .Permalink }}" target="_blank">{{ .Title | safeHTML | markdownify }}</a></div>
@@ -118,42 +118,42 @@
   {{ .Params.description | safeHTML | markdownify }}
   </div>
 <div class="des-base des-des des-tag a1">
-  {{- with .Params.categories -}}
+  {{ with .Params.categories }}
     <span>分類
-    {{- range . -}}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) -}}
-    <a href="/categories/{{ $name }}">{{- $name -}}｜</a></span>
-    {{- end -}}
-    {{- end -}}
-{{- end -}}
-{{- with .Params.series -}}
+    {{ range . }}
+    {{ $name := . }}
+    {{ with $.Site.GetPage "term" (printf "categories/%s" $name) | default ($.Site.GetPage "term" (printf "categories/%s" ($name | urlize))) }}
+    <a href="/categories/{{ $name }}">[{{ $name }}]</a></span>
+    {{ end }}
+    {{ end }}
+{{ end }}
+{{ with .Params.series }}
     　<span>系列
-    {{- range . -}}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) -}}
-   <a href="/series/{{ $name }}">{{- $name -}}｜</a></span>
-    {{- end -}}
-    {{- end -}}
-{{- end -}}
-{{- with .Params.tags -}}
+    {{ range . }}
+    {{ $name := . }}
+    {{ with $.Site.GetPage "term" (printf "series/%s" $name) | default ($.Site.GetPage "term" (printf "series/%s" ($name | urlize))) }}
+   <a href="/series/{{ $name }}">{{ $name }}｜</a></span>
+    {{ end }}
+    {{ end }}
+{{ end }}
+{{ with .Params.tags }}
     　<span>標籤
-    {{- range . -}}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) -}}
-    <a href="/tags/{{ $name }}">#{{- $name -}}</a></span>
-    {{- end -}}
-    {{- end -}}
-{{- end -}}
-{{- with .Params.notes -}}
+    {{ range . }}
+    {{ $name := . }}
+    {{ with $.Site.GetPage "term" (printf "tags/%s" $name) | default ($.Site.GetPage "term" (printf "tags/%s" ($name | urlize))) }}
+    <a href="/tags/{{ $name }}">#{{ $name }}</a></span>
+    {{ end }}
+    {{ end }}
+{{ end }}
+{{ with .Params.notes }}
     　<span>備註
     {{ range . }}
-    {{- $name := . -}}
-    {{- with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) -}}
-    <a href="/notes/{{ $name }}">({{- $name -}})</a></span>
-    {{ end -}}
+    {{ $name := . }}
+    {{ with $.Site.GetPage "term" (printf "notes/%s" $name) | default ($.Site.GetPage "term" (printf "notes/%s" ($name | urlize))) }}
+    <a href="/notes/{{ $name }}">({{ $name }})</a></span>
     {{ end }}
-{{- end }}
+    {{ end }}
+{{ end }}
 </div>
 </div>
 </div>
