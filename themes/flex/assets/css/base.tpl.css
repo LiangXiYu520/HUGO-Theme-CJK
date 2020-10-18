@@ -354,6 +354,13 @@ h6{
   font-size: 1em;
   color: var(--shallowgray)
 }
+.member-wrap{
+  border: .3em solid var(--red);
+  border-radius: 1.7em;
+  padding-top:3em;
+  max-height: 19.5em;
+  overflow: scroll;
+}
 .des-taxo{
   font-size:1.2em;
   font-weight: 200;
