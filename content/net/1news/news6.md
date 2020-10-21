@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "我來幫你刷微博｜六：特色科技讓人蒙羞"
+title: "我來幫你刷微博 #006：特色科技讓人蒙羞"
 date: 2020-10-20
 author: ["柯棋瀚整理"]
 netsort: ["我來幫你刷微博"]
@@ -10,7 +10,7 @@ tags: ["觀點"]
 url: /net/news-6
 description: '「我和大爷一起等了半小时，抱怨这套预约系统如何糟烂，以至于培养出了革命友谊，最后挥手告别并祝愿对方有一个美好的周末。」【目錄】一槽：特色科技讓人蒙羞；人；學；經濟；輕鬆一刻；歷史、故事。'
 vertical: false
-img: 'https://pic.imgdb.cn/item/5f8e43b61cd1bbb86bcb9e1d.jpg'
+img: 'https://pic.imgdb.cn/item/5f8e478b1cd1bbb86bcc52f0.jpg'
 ---
 
 「赫赫网摘」之「我來幫你刷微博」爲會員專區，按主題收集整理平時看到的値得收藏的文章報導，讓碎片閱讀稍微有點意義的嘗試。【發布時閒】每月 20 日。引文有所刪節，不再另行說明。解鎖完整會員權益，請購買赫赫文王 [終身會員大禮包](https://item.taobao.com/item.htm?id=629774535457)。
