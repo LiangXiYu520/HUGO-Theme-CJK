@@ -10,6 +10,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-wechat
 description: '本文爲「赫赫網摘」試讀頁面。看看人們是怎樣駡微信的，各種角度駡的都有，眞爽。引文有刪節。姊妹篇：[博客帶給我什麼？](/post/258-whyblogging)'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f3d26f414195aa594b781c1.jpg'
 ---

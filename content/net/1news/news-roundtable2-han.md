@@ -9,6 +9,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-han
 description: '中文出什麼問題了？我們應該怎麼辦？'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f656346160a154a6779eefc.jpg'
 ---

@@ -9,6 +9,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-6
 description: '「成年之初，思考速度慢，一分钟只能看300字；过几年，熟悉了，或者练多了，信息加工速度可以翻倍，达到600字/分。如果过了七八年，好比过了一万小时专业思考训练，概念网络多层次多方向扩展，信息可以在自建概念网络快速扩散、链接、重组」【目錄】一譚：增加時間的密度；人；學；經濟；輕鬆一刻；歷史、故事。'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f9118561cd1bbb86bab094a.jpg'
 ---

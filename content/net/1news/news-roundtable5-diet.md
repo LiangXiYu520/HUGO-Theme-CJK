@@ -9,6 +9,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-diet
 description: '「男性并不比女性强壮，他们只是比我们吃得更多更好而已。少吃肉的确会让孩子变得更加虚弱，就算那是一个分泌雄激素的男孩子。」'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f671006160a154a67e6e880.jpg'
 ---

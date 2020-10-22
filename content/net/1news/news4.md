@@ -9,6 +9,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-4
 description: '「明白了人权与人道的区别和联系，就不会轻易认为，美国偏袒沙特、打压萨达姆，是因为沙特给钱，萨达姆不给钱。沙特虽然存在人权问题，但是那里没有大量屠杀库尔德人的人道主义危机。」【目錄】封面：美國雙標嗎；人；笨蛋；經濟；文化；文明；歷史；眼睛；存目。'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f3deff414195aa594530d36.jpg'
 ---

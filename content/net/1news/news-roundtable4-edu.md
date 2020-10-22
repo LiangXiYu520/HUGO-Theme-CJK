@@ -9,6 +9,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-edu
 description: '中國的教育有什麼問題？我們應該怎樣教育後生？教育的本質是什麼？「人生最大的幸福莫过于在人生的中途、富有创造力的壮年，发现自己此生的使命。」【目錄】內卷；思維；靈魂；品德；愛。'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f671006160a154a67e6e883.jpg'
 ---

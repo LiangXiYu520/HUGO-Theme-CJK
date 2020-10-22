@@ -9,6 +9,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-3
 description: '「健康码的延续当然传达着巨大危机的信号，这是行政系统以前所未有的效率和能力彻底挤占个人生活的开始。」【目錄】封面：你做好一直使用“健康码”的准备了吗；教育；文化與文明；飲食；人與自然；科技。'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f3d26f414195aa594b781be.jpg'
 ---

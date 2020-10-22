@@ -10,6 +10,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-2
 description: '「而在广大的乡村地区，人民善良的一塌糊涂！而且我觉得真正的泰国美女全在乡村里。你会看见非常美的女人，比那些日韩明星还要漂亮很多。」【目錄】故事：到泰國去；科技；健康；政要；他鄕；審美。'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f911f331cd1bbb86bac3fa6.jpg'
 ---

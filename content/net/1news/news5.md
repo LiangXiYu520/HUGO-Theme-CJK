@@ -9,6 +9,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-5
 description: '「是不是中央银行以后也会有一个专门的 DevOps 部门？但是，这种赚不到钱、技术难度大、工程师薪水又极高的业务，国有单位能搞好吗？」【目錄】一題：數字貨幣是什麼；經濟；知識；人；科技私隱；輕鬆一刻；政治；歷史；存目。'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f66e87f160a154a67dcfaae.jpg'
 ---

@@ -10,6 +10,7 @@ categories: ["襍"]
 tags: ["觀點"]
 url: /net/news-chinese
 description: '中國有怎樣的優秀傳統文化？中國人有怎樣的良好精神風貌？中國社會有怎樣的美好道德品質？'
+ContentCopyright: '本文禁止轉載'
 vertical: false
 img: 'https://pic.imgdb.cn/item/5f670921160a154a67e4df21.jpg'
 ---
