@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "我來幫你刷微博｜五：數字貨幣是什麼？"
+title: "我來幫你刷微博 #05：數字貨幣是什麼？"
 date: 2020-09-20
 author: ["柯棋瀚整理"]
 netsort: ["我來幫你刷微博"]

@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "我來幫你刷微博｜四：美國雙標嗎？"
+title: "我來幫你刷微博 #04：美國雙標嗎？"
 date: 2020-08-20
 author: ["柯棋瀚整理"]
 netsort: ["我來幫你刷微博"]
