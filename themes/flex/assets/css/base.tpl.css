@@ -873,6 +873,11 @@ padding:auto .5em
     padding: 0 .5em;
     text-align: left
   }
+  .home-contact{
+    color:var(--bg);
+    background: var(--gray);
+    text-align: center;
+  }
   .big{
     color: var(--black);
     font-weight: bold;
