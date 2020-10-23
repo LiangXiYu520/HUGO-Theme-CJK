@@ -1985,3 +1985,9 @@ html5 語意標籤改造。
 9-23
 
 建立新網站 thefaint.kqh.me，把所有與錄音有關的全部搬過去。
+
+—— thefaint.cc
+
+10-23
+
+調整郵件訂閱，增加 thefaint 選項。
