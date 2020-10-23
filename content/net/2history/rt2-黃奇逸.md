@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫文史网摘｜黃奇逸"
+title: "赫赫文史网摘｜圓桌二：黃奇逸"
 date: 2020-06-11
 author: ["柯棋瀚整理"]
 netsort: ["赫赫文史网摘"]

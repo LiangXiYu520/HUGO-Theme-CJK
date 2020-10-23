@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫文史网摘｜西式中文"
+title: "赫赫文史网摘｜圓桌一：西式中文"
 date: 2020-05-24
 lastmod: 2020-06-17
 author: ["柯棋瀚整理"]

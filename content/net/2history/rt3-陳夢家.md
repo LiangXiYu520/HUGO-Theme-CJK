@@ -1,7 +1,7 @@
 ---
 layout: "net"
 type: "net"
-title: "赫赫文史网摘｜陳夢家"
+title: "赫赫文史网摘｜圓桌三：陳夢家"
 date: 2020-08-23
 author: ["柯棋瀚整理"]
 netsort: ["赫赫文史网摘"]
