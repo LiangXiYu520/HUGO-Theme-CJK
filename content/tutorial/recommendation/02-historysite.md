@@ -13,3 +13,5 @@ draft: true
 ---
 
 [上海書評](https://www.thepaper.cn/list_26878) 澎湃出品
+
+[DEEPL](https://www.deepl.com/) 世界上最好的翻譯工具
