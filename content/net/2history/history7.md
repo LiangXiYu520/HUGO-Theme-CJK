@@ -2,7 +2,7 @@
 layout: "net"
 type: "net"
 title: "赫赫文史网摘｜七："
-date: 2020-10-23
+date: 2020-11-21
 author: ["柯棋瀚整理"]
 netsort: ["赫赫文史网摘"]
 categories: ["史"]
@@ -10,7 +10,10 @@ url: /net/history-7
 description: '這期封面以「」【目錄】'
 vertical: false
 img: ""
+draft: true
 ---
+
+蛋蛋熱帖，2019-12-18：[感觉最近很多高龄想读博逃避现实的，”时代变了，大人“](https://www.oiegg.com/viewthread.php?tid=2149989)
 
 ## 項飆
 
