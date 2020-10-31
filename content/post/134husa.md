@@ -14,51 +14,51 @@ img: 'https://pic.imgdb.cn/item/5f22a7ab14195aa594227230.jpg'
 
 請外地人做問卷。
 
-<center><img src="https://www.superbed.cn/pic/5be7c5f89dc6d6863d2d3801" width="500"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c5f89dc6d6863d2d3801" width="500"></center>
 
 我們主要在一位師傅的廠裏進行調査。
 
 鍛坯。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6679dc6d6863d2d380e" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6679dc6d6863d2d380e" width="300"></center>
 
-<center><img src="https://www.superbed.cn/pic/5be7c6c29dc6d6863d2d3818" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6c29dc6d6863d2d3818" width="300"></center>
 
 打磨。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6c29dc6d6863d2d3819" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6c29dc6d6863d2d3819" width="300"></center>
 
 好酷
 
-<center><img src="https://www.superbed.cn/pic/5be7c64c9dc6d6863d2d380c" width="600"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c64c9dc6d6863d2d380c" width="600"></center>
 
 那師傅說只有他會這種工藝。似乎是在上面走銅絲什麼的。他頗引以爲傲。
 
-<center><img src="https://www.superbed.cn/pic/5be7c64c9dc6d6863d2d380b" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c64c9dc6d6863d2d380b" width="300"></center>
 
 有一天我們去了一箇寺廟，第一次見識到東南亞風情的寺廟。嚮導是箇長得很雲南的靑秊人，他似乎說這裏盛行佛教，可以讓人們向譱。
 
-<center><img src="https://www.superbed.cn/pic/5be7c5f89dc6d6863d2d3803" width="600"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c5f89dc6d6863d2d3803" width="600"></center>
 
-<center><img src="https://www.superbed.cn/pic/5be7c6139dc6d6863d2d3804" width="600"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6139dc6d6863d2d3804" width="600"></center>
 
 樹上不知挂的何。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6139dc6d6863d2d3806" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6139dc6d6863d2d3806" width="300"></center>
 
 塔。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6369dc6d6863d2d3807" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6369dc6d6863d2d3807" width="300"></center>
 
 功德碑
 
-<center><img src="https://www.superbed.cn/pic/5be7c6369dc6d6863d2d3808" width="700"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6369dc6d6863d2d3808" width="700"></center>
 
 還參觀過一箇博物館，一些銀器，最搞笑的是有一箇上面是電匘宋體字，結果說是幾百秊歬的東西。
 
 ## 二、食物們
 
-![米線](https://www.superbed.cn/pic/5be7c4dc9dc6d6863d2d37fb)
+![米線](https://pic.imgdb.cn/pic/5be7c4dc9dc6d6863d2d37fb)
 
 最令我難忘的是喫的。㝡好喫的是五圓一碗的米線或餌絲。米線脃，餌絲糯，那滋味，我現在寫的時候正在吞口水。
 
@@ -72,107 +72,107 @@ img: 'https://pic.imgdb.cn/item/5f22a7ab14195aa594227230.jpg'
 
 類似酸筍。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6e49dc6d6863d2d381b" width="500"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6e49dc6d6863d2d381b" width="500"></center>
 
 一種酸甜口的。
 
-<center><img src="https://www.superbed.cn/pic/5be7c7139dc6d6863d2d381e" width="600"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c7139dc6d6863d2d381e" width="600"></center>
 
 這裏定期有趕集。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6679dc6d6863d2d3810"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6679dc6d6863d2d3810"></center>
 
 我們也去買了很多喫的，有點類似豌豆黃的東西：
 
-<center><img src="https://www.superbed.cn/pic/5be7c5e09dc6d6863d2d37ff" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c5e09dc6d6863d2d37ff" width="300"></center>
 
 配上蘸水的烤肉，眞幸福啊！可爲何覺得比不上米線裏的烤肉？
 
-<center><img src="https://www.superbed.cn/pic/5be7c67c9dc6d6863d2d3811" ></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c67c9dc6d6863d2d3811" ></center>
 
 稀豆粉。有點類似北亰的茶湯。
 
-<center><img src="https://www.superbed.cn/pic/5be7c67c9dc6d6863d2d3812" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c67c9dc6d6863d2d3812" width="300"></center>
 
 烤餌塊。
 
-<center><img src="https://www.superbed.cn/pic/5be7c67c9dc6d6863d2d3813" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c67c9dc6d6863d2d3813" width="300"></center>
 
 也有賣喝的。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6e49dc6d6863d2d381c" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6e49dc6d6863d2d381c" width="300"></center>
 
 這是用什麼裹的米線和一些配料。那天我們坐鄕閒大巴去一箇地方，買了這箇，在那喫午飯，很髒很多蒼蠅，幸好沒拉肚子。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6e49dc6d6863d2d381d" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6e49dc6d6863d2d381d" width="300"></center>
 
 囘到縣城之後買的什麼糕。
 
-<center><img src="https://www.superbed.cn/pic/5be7c7469dc6d6863d2d3824" width="250"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c7469dc6d6863d2d3824" width="250"></center>
 
 路上喫的最後一頓飯，很隆重。
 
-<center><img src="https://www.superbed.cn/pic/5be7c7469dc6d6863d2d3826" width="600"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c7469dc6d6863d2d3826" width="600"></center>
 
 ## 三、環境
 
 公交車上的，這是傣語吧。
 
-<center><img src="https://www.superbed.cn/pic/5be7c4dc9dc6d6863d2d37fd" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c4dc9dc6d6863d2d37fd" width="300"></center>
 
 戶撒在丘陵上，雲低得就在頭頂，經常下毛毛雨，空气無比清新，樹木无比䋣盛。
 
 這箇小鎭的主要街道。右邊是楙密的竹林。
 
-<center><img src="https://www.superbed.cn/pic/5be7c5e09dc6d6863d2d3800" width="700"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c5e09dc6d6863d2d3800" width="700"></center>
 
 雲霧繚繞。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6139dc6d6863d2d3805" width="700"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6139dc6d6863d2d3805" width="700"></center>
 
 田裏的墳。
 
-<center><img src="https://www.superbed.cn/pic/5be7c6a69dc6d6863d2d3815" width="800"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6a69dc6d6863d2d3815" width="800"></center>
 
 多麼美好的景象！世外桃源！
 
-<center><img src="https://www.superbed.cn/pic/5be7c6c29dc6d6863d2d381a" width="800"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6c29dc6d6863d2d381a" width="800"></center>
 
 最喜歡這張，何等壯觀啊。要是沒有電線桿就好了。
 
-![](https://www.superbed.cn/pic/5be7dd109dc6d6863d2d3843)
+![](https://pic.imgdb.cn/pic/5be7dd109dc6d6863d2d3843)
 
 小奶貓一隻
 
-<center><img src="https://www.superbed.cn/pic/5be7c6a69dc6d6863d2d3816" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c6a69dc6d6863d2d3816" width="300"></center>
 
 睡覺的阿黃。
 
-<center><img src="https://www.superbed.cn/pic/5be7c5f89dc6d6863d2d3802" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c5f89dc6d6863d2d3802" width="300"></center>
 
 
 囘程。
 
-<center><img src="https://www.superbed.cn/pic/5be7c7139dc6d6863d2d3820" width="400"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c7139dc6d6863d2d3820" width="400"></center>
 
 遇到霧了。
 
-<center><img src="https://www.superbed.cn/pic/5be7c72d9dc6d6863d2d3821" width="500"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c72d9dc6d6863d2d3821" width="500"></center>
 
 手機的定位。
 
-<center><img src="https://www.superbed.cn/pic/5be7c72d9dc6d6863d2d3822" width="300"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c72d9dc6d6863d2d3822" width="300"></center>
 
 路上。
 
-<center><img src="https://www.superbed.cn/pic/5be7c72d9dc6d6863d2d3823" width="600"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c72d9dc6d6863d2d3823" width="600"></center>
 
 
 昆明機場。這一幕太美。那早子凡姐姐硬要把我送到機場，自己再囘旅館。到成都，媽媽在出租車上很焦急地說我又瘦了。
 
-<center><img src="https://www.superbed.cn/pic/5be7c75e9dc6d6863d2d3828" width="700"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c75e9dc6d6863d2d3828" width="700"></center>
 
-<center><img src="https://www.superbed.cn/pic/5be7c75e9dc6d6863d2d3827" width="700"></center>
+<center><img src="https://pic.imgdb.cn/pic/5be7c75e9dc6d6863d2d3827" width="700"></center>
 
 已下是旁白文稿：
 

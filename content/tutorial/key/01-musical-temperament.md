@@ -294,7 +294,7 @@ C 大調中，C 和 D 之間的兩箇半音我們選 #<u>  C</u>（多一箇空�
 
 純律：
 
-<img src="https://pic1.superbed.cn/item/5d4a8b85451253d178cb5006.jpg" alt="text">
+<img src="https://pic.imgdb.cn/item/5d4a8b85451253d178cb5006.jpg" alt="text">
 
 B─F 爲減五度，64/45 ，610 音分，F─B 爲增四度，45/32 ，590 音分D─<u>A</u> 爲狹五度，40/27 ，680 音分。
 

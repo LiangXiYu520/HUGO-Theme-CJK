@@ -95,7 +95,7 @@ img: 'https://pic.imgdb.cn/item/5f3d26f414195aa594b781c1.jpg'
 
 「微信簡直是在破壞互聯網秩序」：
 
-<img src="https://www.superbed.cn/pic/5becb5a19dc6d61ad66ee225" width="600">
+<img src="https://pic.imgdb.cn/pic/5becb5a19dc6d61ad66ee225" width="600">
 
 Magecow<v>[微信如何重塑我的社交生活](https://sspai.com/post/62159)</v>，2020-08-19：
 

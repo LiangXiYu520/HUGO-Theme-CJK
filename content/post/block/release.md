@@ -713,11 +713,11 @@ Google AdSense 被封了，原來是我自己點得太多。算了，不申訴�
 
 把配置文件裏的 CDN 打開，速度一下就飆升：
 
-<img src="https://api.superbed.cn/pic/5c064dffc4ff9e05833a147a" width="800px">
+<img src="https://pic.imgdb.cn/pic/5c064dffc4ff9e05833a147a" width="800px">
 
 眞是意想不到。
 
-<img src="https://api.superbed.cn/pic/5c07f67dc4ff9e3acfc1ae76" width="800px">
+<img src="https://pic.imgdb.cn/pic/5c07f67dc4ff9e3acfc1ae76" width="800px">
 
 <img src="https://ww1.sinaimg.cn/large/007iUjdily1fxvo6twi1fj313h0u0td8.jpg" width="600px">
 
