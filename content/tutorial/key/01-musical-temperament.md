@@ -1,7 +1,7 @@
 ---
 layout: 'tutorial'
 type: 'tutorial'
-title: "赫赫金鑰｜西方律學"
+title: "赫赫金鑰｜律學"
 date: 2017-12-11
 lastmod: 2019-11-10
 url: /key/01
