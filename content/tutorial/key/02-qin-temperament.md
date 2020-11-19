@@ -27,7 +27,7 @@ img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be4e.jpg'
 下表後文還會提到，這是一箇簡化版。明確每箇徽位的位置是討論琴律學的前提。
 
 <center><a href="https://pic.imgdb.cn/pic/5be2e6139dc6d6b928f1a2a0" target="\_blank"><img src="https://pic.imgdb.cn/pic/5be2e6139dc6d6b928f1a2a0"   width="100%" alt="text"></a></center>
-那麼我們也可以據此瞭解按音八度音徽位<n>錄自<v>于山水古琴練習曲集</v>，殊途同歸嘛</n>：
+那麼我們也可以據此瞭解按音八度音徽位<n>錄自<v>于水山古琴練習曲集</v>，殊途同歸嘛</n>：
 
 |        |        |        |
 | ------ | ------ | ------ |
