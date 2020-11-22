@@ -6,7 +6,7 @@ date: 2020-12-21
 author: ["柯棋瀚整理"]
 netsort: ["赫赫文史网摘"]
 categories: ["史"]
-url: /net/history-7
+url: /net/history-8
 description: '這期封面以「」【目錄】'
 vertical: false
 img: ""

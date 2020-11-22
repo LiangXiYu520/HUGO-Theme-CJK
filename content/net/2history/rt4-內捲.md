@@ -6,7 +6,7 @@ date: 2020-10-25
 author: ["柯棋瀚整理"]
 netsort: ["赫赫文史网摘"]
 categories: ["史"]
-url: /net/history-7
+url: /net/history-rt4
 description: '這期圓桌一共三篇訪談，又以老鄕項飆的訪談開篇。【目錄】内卷是一种不允许失败和退出的竞争；围炉夜话｜绩点内外：我们因何内卷，又何以自由？；那些保研失败的人后来都怎么样了'
 vertical: false
 img: "https://pic.imgdb.cn/item/5f928e3d1cd1bbb86bf3fc4c.jpg"
