@@ -153,8 +153,9 @@ https://zhangwei.online/fullstack/zh　這黑白介面好酷。而且是秒開�
 
 [Ryan0up'S Blog](https://ryanc.cc)　一个完美主義者，名曰 RYAN0UP。<n>友鏈於 20181027，2019 年 6 月再看，沒有友鏈了</n>
 
-
 ## 旅行類
+
+https://nataliamok.com/ 似乎是提供移民資訊的
 
 [賢民的比特記憶](https://www.xianmin.org)　〔麗江民宿老闆，發起「捍衛開放的互聯網」〕
 
