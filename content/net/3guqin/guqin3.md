@@ -2,7 +2,7 @@
 layout: "net"
 type: "net"
 title: "赫赫琴网｜三："
-date: 2021-01-23
+date: 2021-12-23
 author: ["柯棋瀚整理"]
 netsort: ["赫赫琴网"]
 categories: ["琴"]
@@ -14,14 +14,6 @@ draft: true
 ---
 
 [老易谈音乐：《唐诗欣赏与录音》](https://mp.weixin.qq.com/s?__biz=MjM5OTU5MjkzOA==&mid=2651280286&idx=1&sn=fefa1b45ec533f373658bafd1f90d0c2)，雨果唱片，2020-11-19。廣東電台的訪談。但是沒什麼乾貨，一些幕後故事可以瞭解。比如錄樂隊，嗩吶的聲音太大，最好的辦法不是調低話筒音量，而是讓嗩吶往後移一點。
-
-Hi there! Sorry to bother you. I'm a recordist from China. I ordered an MC59O pair on 11th, Oct. I don't know How long is your production cycle? When will they be ready to ship approximately?
-
-請問你們的製作週期是多久呢？
-
-
-
-
 
 葉鴻霈
 11月17日 09:50  · 
@@ -375,3 +367,9 @@ http://blog.udn.com/huuhuuhang/127040630 刘有恒，2019.5.31于台北
 >
 > 我已经毕业，在被告知琴社被如此抹黑直至解散时和一些社员一样疑惑、震惊与沮丧交加。我们承认有人出于愤怒言语有失，当时在群聊里发表了不当言论，虽然立即有历任社长指出不能人身攻击，只能说理，但我们仍在此为之道歉，并保证不曾有人直接去找刘艺老师骂人。琴社组织松散，这几个月本应是在社团内选定下一任社长、正式移交工作的时候，但在新旧交替之际蒙此重创，已再难谈及复苏。我在询问了事情经过后较为详尽地知道了来龙去脉，同历任社长及社员们不愿自己曾经做出的努力不仅就此付之一炬，还要蒙受这样的不白之冤。因此我写下此文，与琴社内外任何在校学生无关。我已无力企盼什么，只求雁过留声，也感谢曾给琴社提供过帮助的各位老师、同学。
 
+## 曲薦
+
+〔本期開始開闢這個欄目〕
+
+- [衛仲樂《梅花三弄》](https://www.bilibili.com/video/BV1cT4y1L7jd)，耳目一新，天馬行空的想法。我覺得衛仲樂完全被低估了，他的影響低於實際水平。
+- 周嘉輝同學的吳版 [瀟湘](https://www.bilibili.com/video/BV1QT4y1L7sp)，非常精彩。人也非常好看。
