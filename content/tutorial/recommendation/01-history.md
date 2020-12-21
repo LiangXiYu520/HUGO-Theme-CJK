@@ -3,10 +3,10 @@ layout: 'tutorial'
 type: 'tutorial'
 title: "資源｜文史類學術"
 date: 2019-10-28
-lastmod: 2019-12-10
+lastmod: 2020-12-21
 author: ["柯棋瀚整理"]
 categories: ["經"]
-url: 188
+url: /188
 tutosort: ["資源"]
 description: '硏一上期公共必修課<v>人文社科信息檢索與管理</v>期中作業。這項作業還是很有用，藉此機會把收藏夾裏的東西整理一下分享給大家，歡迎補充。「文史類」並不是指所有的中文和歷史類，而是傳統的經史小學硏究，就我而言專指經學。國內的數據庫只面對機構用戶開放，但我還是希望能夠限量免費向公眾開放。<br>感謝端端同學的補充。'
 img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984817.jpg'
@@ -101,13 +101,17 @@ img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984817.jpg'
 
 [學衡](http://www.xueheng.net)　有四庫、四部叢刊、道藏、大正藏、續藏經。有一個古籍對勘的功能，很有意思。但問題是都需要數字化的文本⋯⋯
 
-[漢達文庫](http://www.chant.org/)　剛剛聽說，不知道能不能用。
+[漢達文庫](http://www.chant.org/)　非常棒！！我們學校買了這個。分類：甲骨文、金文、竹簡帛書、先秦兩漢、魏晉南北朝、類書，有圖文對照。
+
+[Accelon开放古籍平台简介](https://mp.weixin.qq.com/s/vgxXVfCsvF2gw-LsanBRBQ)　一個軟件，好像佛經比較多
 
 [中庸資料彙編](http://47.105.202.165:8080/)　似乎是教育史一個博士生做的數據庫。沒有域名，阿里雲的服務器。還是很厲害了。
 
 ### 古籍影印
 
 [中華古籍資源庫](http://mylib.nlc.cn/web/guest/shanbenjiaojuan)　國圖主辦，發布國圖臧善本。
+
+[書法大師](http://www.sfds.cn/)　國學大師在2020-12新上線的數據庫，很多很多書法字帖！！強烈推薦！
 
 ### 電子書
 
