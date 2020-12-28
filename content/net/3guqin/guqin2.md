@@ -12,9 +12,9 @@ vertical: false
 img: 'https://pic.imgdb.cn/item/5f919ec31cd1bbb86bc95914.jpg'
 ---
 
-## 琴會：《西麓堂》本《阳春》按彈雜記
+## 【琴會】西麓堂本陽春按彈雜記
 
-宥园《[心有千树万山春](https://mp.weixin.qq.com/s/64vZrnWdV8SYiHtnw6XC8A)》，宥园的缦生活，2020-09-19 ● 我重新對文章結構進行編排
+宥园《[心有千树万山春](https://mp.weixin.qq.com/s/64vZrnWdV8SYiHtnw6XC8A)》，宥园的缦生活，2020-09-19 〔我重新對文章結構進行編排〕
 
 > 西麓堂前的阳春编织于几百年前，风景旧貌只汪芝一人识之。后世按弹者通过自己的审音辨调去摸象寻幽，所证得的终不过是各家心中的春田。东山魁夷说，谁的心中都不存在一样的风景。既然风景不一样，那么以流行的析世经验去辨各家作品的轩轾，便是妄作。所以友声集十二则，非关景色孰浓孰淡，而只是作为十二幅不同春景图的导览词，存说于兹。
 >
@@ -336,7 +336,7 @@ img: 'https://pic.imgdb.cn/item/5f919ec31cd1bbb86bc95914.jpg'
 
 ### 牛为子期我伯牙
 
-宥园的缦生活，2020-06-24 [↩](https://mp.weixin.qq.com/s/gSrzqk89lrvjOONI4HfJIQ) ● 髙人啊 
+宥园的缦生活，2020-06-24 [↩](https://mp.weixin.qq.com/s/gSrzqk89lrvjOONI4HfJIQ) 〔髙人啊〕
 
 > 一、伯牙的弱点是「需要子期」。
 >
