@@ -177,6 +177,9 @@ img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984817.jpg'
 
 [漢學研究中心](ccs.ncl.edu.tw/)
 
+一个学长做的英文电子书查询网站世界喵：worldmiao.com 
+链接了Z-library, eBook Databases, Google Books, Library Genesis, Open Library, Memory of the World, 古登堡电子书计划、无产阶级图书馆几个大的电子书数据库
+
 ## 箇人
 
 [楊朝明](http://blog.sina.com.cn/qfsdyangchaoming) 教授的新浪博客，不過 2015 秊之後就停更了⋯⋯
