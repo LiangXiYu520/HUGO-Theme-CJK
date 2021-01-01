@@ -4,7 +4,7 @@ type: 'tutorial'
 title: "赫赫金鑰｜曆學二：古四分曆、三統曆"
 date: 2019-05-04
 lastmod: 2020-12-28
-url: /163
+url: /tutorial/calendar2
 author: ["柯棋瀚學"]
 categories: ["史"]
 tags: ["厤筭"]

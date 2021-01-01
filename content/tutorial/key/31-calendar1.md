@@ -47,84 +47,38 @@ img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be4b.jpg'
 
 
 
-
-
-## 網路資源
-
-
-
-[https://kanasimi.github.io/CeJS/_test%20suite/era.htm](https://kanasimi.github.io/CeJS/_test suite/era.htm)
-
-東亞各王朝紀年與公曆間之轉換，包括中西曆轉換。現已完成 246 BCE–2100 CE 之中曆、太平天曆、日本元号、Âm lịch (越南陰曆)等之轉換工作；並已針對某些紀年，如秦漢歷、唐肅宗、武后、太平天囯等時期作特殊處理。
-
-
-
-伊利諾伊大學廖育棟教授，大概是70年代生人。https://publish.illinois.edu/ytliu/
-
-
-
-[月相和二十四節氣的計算](https://ytliu0.github.io/ChineseCalendar/docs/sunMoon_chinese.pdf) PDF文檔，相對論都用上了，完全不是我所能及。
-
-
-
-https://ytliu0.github.io/ChineseCalendar/Julian_chinese.html
-
-儒略日——日干支轉換器
-
-
-
-https://ytliu0.github.io/ChineseCalendar/index_chinese.html
-
-公曆**——**農曆轉換器 **(**公元前**722**年**—**公元**2200**年**)**
-
-
-
-https://github.com/suchowan/when_exe/blob/e21141c61740c636ce6fbad65c980572253af6ef/lib/when_exe/region/chinese/twins.rb#L106
-
-
-
-http://www.bsm.org.cn/show_article.php?id=2372
-
-
-
-https://www.asahi-net.or.jp/~dd6t-sg/
-
-日本曆學會？
-
-
-
-戴震《釋天》《迎日推策記》《九道八行說》
-
-
-
-学校图书馆有《武陵山人遗书》中国科学技术典籍通汇第二冊。第一冊也可以收下。http://www.hxpdf.com/content/?84.html
-
-
-
-
-
-
-
-我們第一步工作是確定真實歷史的時間。按照鄭玄曆表，成王崩在公元前1027年，査張培瑜《先秦史曆表》，四月辛亥朔，十四日甲子，十五日乙丑。劉歆認為在公元前974年，查表，六月壬申朔，
-
-不用說清代學者，就算是現代學者也無法明確告訴我們成王發布顧命的確切年月日。所以我們現在要探討的是從曆術討論中透露出的經學理念。
-
-張表用的是建子
-
-張表《冬至合朔時日表》的數據就是後面《時日朔閏表》「實」一行。
-
 ## 參考資料
 
 赫赫金鑰曆學系列參考資料如下：
 
-1. <u>王鳴盛</u>《尙書後案》
-2. <u>林金泉</u>[《易緯乾鑿度的曆法與積秊》](http://bec001.web3.ncku.edu.tw/var/file/142/1142/img/2248/5401.pdf)，《成大中文學報》2016 秊 9 月。（還想吐槽一下，爲何我們的㫷刊電子化進程不能加快一點，大多數㫷刊只能在知網上下，如果不是高校的人，還㝵給錢啊。人家臺灣的論文，直接谷歌就出來了。還有，什麼時候知網能開發一箇評論功能呢？一定很好玩。）
-3. 《史記》《曆書》（中華書局新點校本）
-4. 《漢書》《律曆志》曆的部分（中華書局老點校本（雖然新的還沒出））
-5. <u>張聞玉</u>《古代天文曆法講座》（廣西師大出版社，2008 秊）
-6. <u>張培瑜</u>《中國古代曆法》（中國科學技術出版社，2007 秊）
-7. <u>劉洪濤</u>《古代曆法計筭法》（南開大學出版社，2003 秊）
-8. <u>劉操南</u>《古代天文曆法釋證》（浙江大學出版社，2009 秊）
-9. <u>張齊明</u>《易緯乾鑿度與「甲寅元」之争》（《國學學刊》2016 秊第 1 期）
+### 網路工具
 
-## 
+- 偶然間發現了<u>伊利諾伊大學</u> [廖育棟教授](https://publish.illinois.edu/ytliu/) 的網站，他的專業是統計學，大概是70年代生人。有：
+
+  - [古六曆計算法](https://ytliu0.github.io/ChineseCalendar/guliuli_chinese.html)
+
+  - [月相和二十四節氣的計算](https://ytliu0.github.io/ChineseCalendar/docs/sunMoon_chinese.pdf) PDF文檔，相對論都用上了，完全不是我所能及。
+  - [儒略日—日干支轉換器](https://ytliu0.github.io/ChineseCalendar/Julian_chinese.html)
+  - [公曆——農曆轉換器公元前722年—公元2200年](https://ytliu0.github.io/ChineseCalendar/index_chinese.html)
+
+- 還有這位 kanasimi 先生的 [東亞各王朝紀年與公曆轉換](https://kanasimi.github.io/CeJS/_test suite/era.htm)，現已完成 246 BCE–2100 CE 之中曆、太平天曆、日本元号、Âm lịch (越南陰曆)等之轉換工作，並已針對某些紀年，如秦漢歷、唐肅宗、武后、太平天囯等時期作特殊處理。
+
+- 這是廖教授和 kanasimi 先生在 GitHub 上的 [issue](https://github.com/ytliu0/ChineseCalendar/issues/2)。
+
+- 似乎是 [日本曆學會](https://www.asahi-net.or.jp/~dd6t-sg/) ？這是 [twins.rb](https://github.com/suchowan/when_exe/blob/e21141c61740c636ce6fbad65c980572253af6ef/lib/when_exe/region/chinese/twins.rb#L106) 代碼，但好像過於簡單？不知道是用來做什麼的。
+
+### 書籍
+
+- 《史記》《曆書》（中華書局新點校本）
+- 《漢書》《律曆志》曆的部分
+- 張培瑜《中國先秦史曆表》
+- 張培瑜《三千年曆日天象》
+- <u>張聞玉</u>《古代天文曆法講座》（廣西師大出版社，2008 秊）
+- <u>張培瑜</u>《中國古代曆法》（中國科學技術出版社，2007 秊）
+- <u>劉洪濤</u>《古代曆法計筭法》（南開大學出版社，2003 秊）
+- <u>劉操南</u>《古代天文曆法釋證》（浙江大學出版社，2009 秊）
+
+### 論文
+
+- 許名瑲 [青川郝家坪秦牘《田律》曆日考釋](http://www.bsm.org.cn/show_article.php?id=2372)，簡帛網，2015-11-24。有比較詳盡的古六曆算法。
+- <u>張齊明</u>《易緯乾鑿度與「甲寅元」之争》（《國學學刊》2016 秊第 1 期），<u>林金泉</u>[《易緯乾鑿度的曆法與積秊》](http://bec001.web3.ncku.edu.tw/var/file/142/1142/img/2248/5401.pdf)，《成大中文學報》2016 秊 9 月。（還想吐槽一下，爲何我們的㫷刊電子化進程不能加快一點，大多數㫷刊只能在知網上下，如果不是高校的人，還㝵給錢啊。人家臺灣的論文，直接谷歌就出來了。還有，什麼時候知網能開發一箇評論功能呢？一定很好玩。）
