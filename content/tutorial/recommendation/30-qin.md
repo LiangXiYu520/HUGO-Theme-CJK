@@ -3,14 +3,18 @@ layout: 'tutorial'
 type: 'tutorial'
 title: "資源｜古琴網站"
 date: 2020-05-01
-lastmod: 2020-08-14
+lastmod: 2021-01-02
 author: ["柯棋瀚整理"]
 categories: ["琴"]
 tutosort: ["資源"]
-url: recommendation/qin
-description: '這些都是好幾年前收藏的，現在再打開，好多都掛了。網絡世界眞是轉瞬即逝。給自己看的，沒什麼價値'
-img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984813.jpg'
+url: /recommendation/qin
+description: '這些都是好幾年前收藏的，現在再打開，好多都掛了。網絡世界眞是轉瞬即逝。給自己看的，沒什麼價値。'
+img: 'https://pic.imgdb.cn/item/5f26c13414195aa594984813.jpg'	
 ---
+
+## 數據庫
+
+- 上海音樂學院 [中国与东亚古谱数据库网站](ceanotation.www.shcmusic.edu.cn)，目前打不開。新聞見 [中国古代音乐史研究的一项基础工程 上音“中国与东亚古谱数据库网站”上线](https://www.shcmusic.edu.cn/view_0.aspx?cid=409&id=61)，2019-03-05
 
 ## 網站
 
@@ -44,4 +48,4 @@ https://organic.cpu.edu.cn/chimusic/琴/ 一个神奇的網站，這是古琴錄
 
 [画中琴•李寿墓线刻壁画（唐）_弹琴论道](http://blog.sina.com.cn/s/blog_c4f3c7040102uxnr.html)
 
-[琴齋記事（甲午七月初九）](https://www.douban.com/note/386515104/)
+[琴齋記事（甲午七月初九）](https://www.douban.com/note/386515104/)]

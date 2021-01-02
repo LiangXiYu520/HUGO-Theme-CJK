@@ -1,7 +1,7 @@
 ---
 layout: 'tutorial'
 type: 'tutorial'
-title: "赫赫金鑰｜古代天文"
+title: "赫赫金鑰｜天學"
 date: 2019-04-11
 lastmod: 2019-05-04
 url: /159

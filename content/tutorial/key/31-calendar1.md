@@ -56,8 +56,8 @@ img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be4b.jpg'
 - 偶然間發現了<u>伊利諾伊大學</u> [廖育棟教授](https://publish.illinois.edu/ytliu/) 的網站，他的專業是統計學，大概是70年代生人。有：
 
   - [古六曆計算法](https://ytliu0.github.io/ChineseCalendar/guliuli_chinese.html)
-
-  - [月相和二十四節氣的計算](https://ytliu0.github.io/ChineseCalendar/docs/sunMoon_chinese.pdf) PDF文檔，相對論都用上了，完全不是我所能及。
+- [月相和二十四節氣的計算](https://ytliu0.github.io/ChineseCalendar/docs/sunMoon_chinese.pdf) PDF文檔，相對論都用上了，完全不是我所能及。
+  - [月相和二十四節氣時刻](https://ytliu0.github.io/ChineseCalendar/sunMoon_chinese.html)
   - [儒略日—日干支轉換器](https://ytliu0.github.io/ChineseCalendar/Julian_chinese.html)
   - [公曆——農曆轉換器公元前722年—公元2200年](https://ytliu0.github.io/ChineseCalendar/index_chinese.html)
 
