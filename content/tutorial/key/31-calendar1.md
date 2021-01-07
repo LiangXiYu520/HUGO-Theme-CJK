@@ -45,8 +45,6 @@ img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be4b.jpg'
 
 > 自[漢武帝](https://zh.wikipedia.org/wiki/汉武帝)正式使用[年號](https://zh.wikipedia.org/wiki/年号)，頒佈[太初曆](https://zh.wikipedia.org/wiki/太初曆)，改用夏正以後，後世兩千多年的帝王一般只改[年號](https://zh.wikipedia.org/wiki/年号)而不改正朔，只有[武則天](https://zh.wikipedia.org/wiki/武则天)，[太平天國](https://zh.wikipedia.org/wiki/太平天国)等改正朔。很多文獻都稱，今日所用之[華夏曆法](https://zh.wikipedia.org/wiki/華夏曆法)就是夏曆，但現行華夏曆法已有演變，事實上今日之曆法只是沿用了夏正，而沒有用夏朔。夏以天明為朔，商以[雞鳴](https://zh.wikipedia.org/wiki/雞鳴)為朔，周以[夜半](https://zh.wikipedia.org/wiki/夜半)為朔，體現了計時的進步；因為天明時間受[天氣](https://zh.wikipedia.org/wiki/天气)、[季節](https://zh.wikipedia.org/wiki/季节)影響，雞鳴也不準確，而夜半則可用天文觀測精確確定，自周朝始，華夏一直以夜半為日之分界。[↩](https://zh.wikipedia.org/zh-hant/%E6%AD%A3%E6%9C%94)
 
-
-
 ## 參考資料
 
 赫赫金鑰曆學系列參考資料如下：
@@ -55,7 +53,7 @@ img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be4b.jpg'
 
 - 偶然間發現了<u>伊利諾伊大學</u> [廖育棟教授](https://publish.illinois.edu/ytliu/) 的網站，他的專業是統計學，大概是70年代生人。有：
 
-  - [古六曆計算法](https://ytliu0.github.io/ChineseCalendar/guliuli_chinese.html)
+  - [古六曆計算法](c)
 - [月相和二十四節氣的計算](https://ytliu0.github.io/ChineseCalendar/docs/sunMoon_chinese.pdf) PDF文檔，相對論都用上了，完全不是我所能及。
   - [月相和二十四節氣時刻](https://ytliu0.github.io/ChineseCalendar/sunMoon_chinese.html)
   - [儒略日—日干支轉換器](https://ytliu0.github.io/ChineseCalendar/Julian_chinese.html)
