@@ -54,14 +54,15 @@ img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be4b.jpg'
 - 偶然間發現了<u>伊利諾伊大學</u> [廖育棟教授](https://publish.illinois.edu/ytliu/) 的網站，他的專業是統計學，大概是70年代生人。有：
 
   - [古六曆計算法](c)
-- [月相和二十四節氣的計算](https://ytliu0.github.io/ChineseCalendar/docs/sunMoon_chinese.pdf) PDF文檔，相對論都用上了，完全不是我所能及。
+  - [月相和二十四節氣的計算](https://ytliu0.github.io/ChineseCalendar/docs/sunMoon_chinese.pdf) PDF文檔，相對論都用上了，完全不是我所能及。
+  
   - [月相和二十四節氣時刻](https://ytliu0.github.io/ChineseCalendar/sunMoon_chinese.html)
   - [儒略日—日干支轉換器](https://ytliu0.github.io/ChineseCalendar/Julian_chinese.html)
   - [公曆——農曆轉換器公元前722年—公元2200年](https://ytliu0.github.io/ChineseCalendar/index_chinese.html)
-
+  - [大統曆的定朔](https://ytliu0.github.io/ChineseCalendar/MingCalendar_simp.html)
 - 還有這位 kanasimi 先生的 [東亞各王朝紀年與公曆轉換](https://kanasimi.github.io/CeJS/_test suite/era.htm)，現已完成 246 BCE–2100 CE 之中曆、太平天曆、日本元号、Âm lịch (越南陰曆)等之轉換工作，並已針對某些紀年，如秦漢歷、唐肅宗、武后、太平天囯等時期作特殊處理。
 
-- 這是廖教授和 kanasimi 先生在 GitHub 上的 [issue](https://github.com/ytliu0/ChineseCalendar/issues/2)，有 JS 代碼。
+- 這是廖教授和 kanasimi 先生在 GitHub 上的 [issue](https://github.com/ytliu0/ChineseCalendar/issues/2)，有 JS 代碼。我發現原來他的算法就是授時曆的算法。看來授時曆不僅僅是廢掉了上元積年，其實是更換了計算思路
 
 - 似乎是 [日本曆學會](https://www.asahi-net.or.jp/~dd6t-sg/) ？這是 [twins.rb](https://github.com/suchowan/when_exe/blob/e21141c61740c636ce6fbad65c980572253af6ef/lib/when_exe/region/chinese/twins.rb#L106) 代碼，但好像過於簡單？不知道是用來做什麼的。
 
