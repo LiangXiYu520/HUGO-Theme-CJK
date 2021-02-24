@@ -47,8 +47,6 @@ img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be4b.jpg'
 
 ## 參考資料
 
-赫赫金鑰曆學系列參考資料如下：
-
 ### 網路工具
 
 - 偶然間發現了<u>伊利諾伊大學</u> [廖育棟教授](https://publish.illinois.edu/ytliu/) 的網站，他的專業是統計學，大概是70年代生人。有：
@@ -62,6 +60,8 @@ img: 'https://pic.imgdb.cn/item/5f58f07c160a154a6741be4b.jpg'
 - 還有這位 kanasimi 先生的 [東亞各王朝紀年與公曆轉換](https://kanasimi.github.io/CeJS/_test suite/era.htm)，現已完成 246 BCE–2100 CE 之中曆、太平天曆、日本元号、Âm lịch (越南陰曆)等之轉換工作，並已針對某些紀年，如秦漢歷、唐肅宗、武后、太平天囯等時期作特殊處理。
 - 這是廖教授和 kanasimi 先生在 GitHub 上的 [issue](https://github.com/ytliu0/ChineseCalendar/issues/2)，有 JS 代碼。我發現原來他的算法就是授時曆的算法。看來授時曆不僅僅是廢掉了上元積年，其實是更換了計算思路
 - 似乎是 [日本曆學會](https://www.asahi-net.or.jp/~dd6t-sg/) ？這是 [twins.rb](https://github.com/suchowan/when_exe/blob/e21141c61740c636ce6fbad65c980572253af6ef/lib/when_exe/region/chinese/twins.rb#L106) 代碼，但好像過於簡單？不知道是用來做什麼的。
+- [壽星天文曆](http://www.nongli.net/sxwnl/)：天文實曆。
+- 香港天文臺 [1901—2100中西曆對照表](https://www.weather.gov.hk/tc/gts/time/conversion.htm)
 
 ### 書籍
 
