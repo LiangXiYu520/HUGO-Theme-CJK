@@ -1,8 +1,12 @@
 name: github pages
 
 on:
+  push:
+    branches:
+      - master
+
   schedule:
-  - cron: '58 */12 * * *'
+    - cron: '58 */12 * * *'
 
 jobs:
   deploy:
