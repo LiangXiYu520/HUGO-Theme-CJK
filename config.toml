@@ -7,13 +7,18 @@ disablePathToLower = true
 hasCJKLanguage = true
 uglyURLs = false
 rssLimit = 20
+
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+
+[markup.goldmark]
+
+[markup.goldmark.renderer]
+unsafe = true
+
 [markup.tableOfContents]
-        startLevel = 2
-        endLevel = 3
+startLevel = 2
+endLevel = 3
+
 [taxonomies]
 author = "author"
 tag = "tags"
@@ -29,72 +34,106 @@ step = "step"
 netsort = "netsort"
 tutosort = "tutosort"
 examsort = "examsort"
-[author]                  # essential
-  name = "柯棋瀚"
-[sitemap]                 # essential
-  changefreq = "weekly"
-  priority = 0.5
-  filename = "sitemap.xml"
-  [[menu.nav]]
-     name = "主頁"
-     weight = 1
-     url = "/"
-   [[menu.nav]]
-     name = "成爲會員"
-     weight = 2
-     url = "https://item.taobao.com/item.htm?id=629774535457"    
-  [[menu.nav1]]
-     name = "發現"
-     weight = 3
-     url = "/#discover"
-  [[menu.nav1]]
-        name = "歸檔"
-        weight = 4
-        url = "/post"
-  [[menu.nav2]]
-              name = "赫赫网摘"
-              weight = 5
-              url = "/net"  
+
+[author] # essential
+name = "柯棋瀚"
+
+[sitemap] # essential
+changefreq = "weekly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[[menu.nav]]
+name = "主頁"
+weight = 1
+url = "/"
+
+[[menu.nav]]
+name = "成爲會員"
+weight = 2
+url = "https://item.taobao.com/item.htm?id=629774535457"
+
+[[menu.nav1]]
+name = "發現"
+weight = 3
+url = "/#discover"
+
+[[menu.nav1]]
+name = "歸檔"
+weight = 4
+url = "/post"
+
 [[menu.nav2]]
-               name = "春秋學刊"
-               weight = 6
-               url = "/xuekan"           
-      
-  [[menu.nav3]]
-              name = "赫赫蠹書"
-              weight = 7
-              url = "/read"
-           
-  [[menu.nav3]]
-              name = "赫赫金鑰"
-              weight = 8
-              url = "/tutorial"
-  [[menu.nav3]]
-           name = "考試筆記"
-           weight = 9
-           url = "/exam"
-  
- [[menu.nav4]]
-      name = "赫赫讚府"
-      weight = 10
-      url = "/#zanfu"
-  [[menu.nav4]]
-         name = "琴譜文本"
-         weight = 11
-         url = "/qinpu"
-   [[menu.nav4]]
-         name = "其他"
-         weight = 12
-         url = "/#database"       
+name = "赫赫网摘"
+weight = 5
+url = "/net"
+
+[[menu.nav2]]
+name = "春秋學刊"
+weight = 6
+url = "/xuekan"
+
+[[menu.nav3]]
+name = "赫赫蠹書"
+weight = 7
+url = "/read"
+
+[[menu.nav3]]
+name = "赫赫金鑰"
+weight = 8
+url = "/tutorial"
+
+[[menu.nav3]]
+name = "考試筆記"
+weight = 9
+url = "/exam"
+
+[[menu.nav4]]
+name = "赫赫曆藏"
+weight = 11
+url = "https://cal.kqh.me"
+
+[[menu.nav4]]
+name = "赫赫讚府"
+weight = 14
+url = "/#zanfu"
+
+[[menu.nav4]]
+name = "赫赫琴藏"
+weight = 15
+url = "/qinpu"
+
+[[menu.nav4]]
+name = "其他"
+weight = 16
+url = "/#database"
+
 [params]
-  mainSections = ["post","block","exam","gallery","net","read","tutorial","database"]  
-  otherSections = ["exam","gallery","recording","net","read","tutorial","database"]  
-  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
-  vertical = true
-  width ="45rem"          # Any length in CSS syntax
-  summaries= false      # Set to true to show summaries of posts on homepage
-  divider= false        #\a0 Set to false to remove divider below posts on homepage
-  schema= false         # Set to true to add Schema.org metadata
-  opengraph= false      # Set to true to add Open Graph metadata
-  twittercards= false   # Set to true to add Twitter Cards metadata
+mainSections = [
+  "post",
+  "block",
+  "exam",
+  "gallery",
+  "net",
+  "read",
+  "tutorial",
+  "database"
+]
+otherSections = [
+  "exam",
+  "gallery",
+  "recording",
+  "net",
+  "read",
+  "tutorial",
+  "database"
+]
+contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a>，非商業用途可隨意使用'
+vertical = true
+width = "45rem" # Any length in CSS syntax
+summaries = false # Set to true to show summaries of posts on homepage
+divider = false #\a0 Set to false to remove divider below posts on homepage
+schema = false # Set to true to add Schema.org metadata
+opengraph = false # Set to true to add Open Graph metadata
+twittercards = false # Set to true to add Twitter Cards metadata
 repository = "https://github.com/kujihhoe/HUGO-Theme-CJK/blob/master/content/"

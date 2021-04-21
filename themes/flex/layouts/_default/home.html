@@ -462,12 +462,16 @@
 <section class="section section4">
   <h1 id="data"><span style="font-size:.25em;letter-spacing:.25em">赫赫文王»</span><span style="letter-spacing:.2em">數據</span>庫
   </h1>
+  <h2 id="zanfu">赫赫曆藏（中國古曆編製器）</h2>
+  {{- with $des := index (.Site.Data.taxo ) "赫赫曆藏" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
+  <center><img src="https://pic.imgdb.cn/item/607fd9e402af4a6ed4fda019.jpg" alt="text" width="900"></center>  
+  <br><br><br> 
   <h2 id="zanfu">赫赫讚府</h2>
   {{- with $des := index (.Site.Data.taxo ) "赫赫讚府" -}}<div class="des-taxo">{{- $des.des | safeHTML | markdownify -}}</div>{{ end }} 
   <div class="des-base" style="margin-bottom:1em">【會員專區】</div>
 <center><img src="https://media.githubusercontent.com/media/kujihhoe/blog-files/master/zanfu01.jpg" alt="text" width="900"></center>    
 <br><br><br>
-<h2><a href="/qinpu" target="_blank">傳世琴譜數字文本化工程</a></h2>
+<h2><a href="/qinpu" target="_blank">赫赫琴藏（傳世琴譜數字文本化工程）</a></h2>
     <div class="des-taxo">是學術性的而非音樂性的，不提供流行樂譜。減字譜的數字文本化將爲深入化的古琴研究提供基礎。
     這項工程前無古人，需要耗費巨大的精力。我目前沒這功夫，眞正啓動可能要等到四五秊之後，現在處於預備狀態</div>
   <div class="des-base">隨機生成 Random</div> 
@@ -495,7 +499,7 @@
     <div class="discover-grid-sub">
       <span class="des-base des-des"><time>{{ .Date.Format "2006-01-02" }}</time>{{ if ne .Date .Lastmod }} > {{ .Lastmod.Format "06-01-02" }}{{ end }}</span>　
       <div class="discover-item"><a href="{{ .Permalink }}"  target="_blank">{{- .Title | safeHTML | markdownify -}}</a></div>    
-      <div class="des-base des-des">{{ .Params.description | safeHTML  | markdownify }}</div>
+      <div class="des-base des-des">{{ .Params.description | safeHTML | markdownify }}</div>
     </div>
     </div>
   {{ end }}
@@ -521,10 +525,7 @@
   <div id="hyvor-talk-view"></div>
   <script type="text/javascript">
       var HYVOR_TALK_WEBSITE = 1727; 
-      var HYVOR_TALK_CONFIG = {
-          url: "https://kqh.me",
-          id: "000000"
-      };
+      var HYVOR_TALK_CONFIG = {url: "https://kqh.me", id: "000000"};
   </script>
   <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
   </div>

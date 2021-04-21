@@ -511,9 +511,9 @@ code{
 .heading-title.finder{
   font-size:1.2em;font-weight:bold;letter-spacing:.15em
 }
-  .heading-title.article{
-    font-size: 3.2em;
-    letter-spacing:.0}
+.heading-title.article{
+  font-size: 3.2em;
+  letter-spacing:.0}
 .article-front{
   margin: 2em auto 0;
   max-width:53em;
@@ -535,8 +535,8 @@ code{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -566,9 +566,9 @@ display: flex;
 .Tags-item {
   margin: 2em 0 ;
   padding: .2em;
-text-align: right;
-font-size:.9em;
-border-top:1px solid var(--black)
+  text-align: right;
+  font-size:.9em;
+  border-top:1px solid var(--black)
 }
 .Tags-item-vertical{
   margin: 0 2em ;
@@ -579,19 +579,20 @@ border-top:1px solid var(--black)
 .Tags-item-vertical strong{
   color:var(--gray)}
 .Tags-item strong{
-  color:var(--gray)}
-  .u-wrap{
-    max-width:{{ with site.Params.width }} {{ . }}{{ end }};
-    margin:auto
-  }
+  color:var(--gray)
+}
+.u-wrap{
+  margin:auto;
+  max-width:{{ with site.Params.width }} {{ . }}{{ end }};
+}
 .cate{
-font-family:  var(--codesans);
+  font-family:  var(--codesans);
   margin: 2em auto 5em;
-font-size: 1.1em;
-text-align:left;
--moz-column-count:4;
--webkit-column-count:4;
-column-count:4
+  font-size: 1.1em;
+  text-align:left;
+  -moz-column-count:4;
+  -webkit-column-count:4;
+  column-count:4
 }
 .cate a{font-weight: normal}
 .cate-wrap{

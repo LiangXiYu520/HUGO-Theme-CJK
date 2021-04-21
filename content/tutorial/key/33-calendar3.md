@@ -2,9 +2,8 @@
 author: ["柯棋瀚"]
 title: "赫赫金鑰｜曆學三：後漢四分曆、授時曆"
 date: 2021-01-11
-categories: ["史"]
+categories: ["曆"]
 series: ["赫赫金鑰"]
-tags: ["厤筭"]
 url: /tutorial/calendar3
 description: '介紹了後漢《四分曆》、元《授時曆》。似乎跨度有點大。'
 img: 'https://pic.imgdb.cn/item/5ffb9be73ffa7d37b3c6336c.jpg'
